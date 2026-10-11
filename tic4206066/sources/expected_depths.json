@@ -1,0 +1,553 @@
+{
+ "script": "s110_final.py --calibrate",
+ "provenance": {
+  "run_utc": "2026-10-05T19:30:22+00:00",
+  "script": "s110_final.py",
+  "script_sha256": "ee77ce1afaf3ff31cfff8576b89de15ab77cc49615af5d340a5685d0bd99717e",
+  "deps_sha256": {
+   "lcio.py": "6514f6a0d60e20bfec14ba658d9aa74c5507f27613d36696f883d8ec1a994823",
+   "pixloc_lib.py": "145c69dd21522c4456ab38484f89265a537eb6b83c471e0dca41cac31054601d"
+  },
+  "ephemeris_sha256": "b6f09b57395085608ddc9ed3d334521575de167b493f9b2cf7b1201567c273ef",
+  "versions": {
+   "python": "3.12.13",
+   "machine": "arm64",
+   "system": "Darwin",
+   "numpy": "2.5.3",
+   "astropy": "8.0.1",
+   "scipy": "1.18.1",
+   "wotan": "1.10",
+   "numba": "0.67.0",
+   "llvmlite": "0.49.0",
+   "TESS_PRF": "0.1.3"
+  },
+  "expected_depths_sha256": "1c665a2bb391c9c21aca9575986da5859cd604997a82b9457e811ac201206a77",
+  "inputs": {
+   "hlsp_tess-spoc_tess_phot_0000000004206066-s0006_tess_v1_lc.fits": "ac7736ea403e33360c53f88b5f22bb4e41c8235fe17ff2cdb934ba474037882e",
+   "tess2020324010417-s0032-0000000004206066-0200-s_lc.fits": "764dad34b3bbd467eef973a1d09f640a97321824e6739ac6a0c69cf40c31b0e7",
+   "hlsp_qlp_tess_ffi_s0098-0000000004206066_tess_v01_llc.fits": "a034136697b4f75765a91503107f55a455b365d19cd270ed633845efcdcb188e"
+  }
+ },
+ "ephemeris": {
+  "A": {
+   "P": 3.1827844492913377,
+   "T0": 3998.7348271847636,
+   "T14": 0.07793952258513782
+  },
+  "B": {
+   "P": 11.132745380039134,
+   "T0": 4000.8658739613074,
+   "T14": 0.06908750357336403
+  }
+ },
+ "per_sector": {
+  "S6": {
+   "file": "hlsp_tess-spoc_tess_phot_0000000004206066-s0006_tess_v1_lc.fits",
+   "product": "spoc",
+   "flux": "PDCSAP_FLUX",
+   "A": {
+    "depth_ppm": 444.63936831126705,
+    "err_ppm": 64.6877771171805,
+    "n_counted": 4,
+    "n_not_tested": 3,
+    "n_pool_windows": 338,
+    "events": [
+     {
+      "epoch": -795,
+      "tc": 1468.42118999815,
+      "coverage": 0.8018849927090967,
+      "baseline_left": 3,
+      "baseline_right": 8,
+      "depth_ppm": 530.7499137939819,
+      "counted": false,
+      "status": "not tested: in an edge zone (within W/2 of a segment end) or between segments"
+     },
+     {
+      "epoch": -794,
+      "tc": 1471.6039744474415,
+      "coverage": 1.0691799902787957,
+      "baseline_left": 7,
+      "baseline_right": 6,
+      "depth_ppm": 506.9506228845278,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -793,
+      "tc": 1474.7867588967329,
+      "coverage": 0.8018849927090967,
+      "baseline_left": 6,
+      "baseline_right": 9,
+      "depth_ppm": 610.7692853279945,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -792,
+      "tc": 1477.9695433460242,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": -791,
+      "tc": 1481.1523277953156,
+      "coverage": 1.0691799902787957,
+      "baseline_left": 8,
+      "baseline_right": 7,
+      "depth_ppm": 396.91288665721913,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -790,
+      "tc": 1484.335112244607,
+      "coverage": 1.0691799902787957,
+      "baseline_left": 8,
+      "baseline_right": 7,
+      "depth_ppm": 263.92467837532683,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -789,
+      "tc": 1487.517896693898,
+      "coverage": 0.5345899951393979,
+      "baseline_left": 9,
+      "baseline_right": 9,
+      "depth_ppm": 565.5251887803913,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     }
+    ]
+   },
+   "B": {
+    "depth_ppm": 585.53169172193,
+    "err_ppm": 137.2999641881306,
+    "n_counted": 1,
+    "n_not_tested": 1,
+    "n_pool_windows": 307,
+    "events": [
+     {
+      "epoch": -227,
+      "tc": 1473.7326726924239,
+      "coverage": 1.206171502657091,
+      "baseline_left": 7,
+      "baseline_right": 8,
+      "depth_ppm": 585.53169172193,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -226,
+      "tc": 1484.865418072463,
+      "coverage": 0.6030857513285455,
+      "baseline_left": 8,
+      "baseline_right": 7,
+      "depth_ppm": 613.1829582003423,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     }
+    ]
+   }
+  },
+  "S32": {
+   "file": "tess2020324010417-s0032-0000000004206066-0200-s_lc.fits",
+   "product": "spoc",
+   "flux": "PDCSAP_FLUX",
+   "A": {
+    "depth_ppm": 436.9094429651498,
+    "err_ppm": 86.97790564514598,
+    "n_counted": 6,
+    "n_not_tested": 2,
+    "n_pool_windows": 387,
+    "events": [
+     {
+      "epoch": -573,
+      "tc": 2174.9993377408273,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 127,
+      "baseline_right": 126,
+      "depth_ppm": 550.1973968767837,
+      "counted": false,
+      "status": "not tested: in an edge zone (within W/2 of a segment end) or between segments"
+     },
+     {
+      "epoch": -572,
+      "tc": 2178.182122190118,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 126,
+      "baseline_right": 127,
+      "depth_ppm": 742.3602977633115,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -571,
+      "tc": 2181.36490663941,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 126,
+      "baseline_right": 126,
+      "depth_ppm": 584.8212149969223,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -570,
+      "tc": 2184.547691088701,
+      "coverage": 1.015757656193327,
+      "baseline_left": 126,
+      "baseline_right": 126,
+      "depth_ppm": 291.704199844478,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -569,
+      "tc": 2187.7304755379923,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 126,
+      "baseline_right": 126,
+      "depth_ppm": 492.08446131498994,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -568,
+      "tc": 2190.9132599872837,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 127,
+      "baseline_right": 126,
+      "depth_ppm": 354.5736116813414,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -567,
+      "tc": 2194.096044436575,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 126,
+      "baseline_right": 127,
+      "depth_ppm": 155.91287218985616,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": -566,
+      "tc": 2197.2788288858665,
+      "coverage": 0.9979373464355494,
+      "baseline_left": 126,
+      "baseline_right": 126,
+      "depth_ppm": 233.47119096917,
+      "counted": false,
+      "status": "not tested: in an edge zone (within W/2 of a segment end) or between segments"
+     }
+    ]
+   },
+   "B": {
+    "depth_ppm": null,
+    "err_ppm": null,
+    "n_counted": 0,
+    "n_not_tested": 3,
+    "n_pool_windows": 410,
+    "events": [
+     {
+      "epoch": -164,
+      "tc": 2175.0956316348893,
+      "coverage": 1.005179202462848,
+      "baseline_left": 112,
+      "baseline_right": 112,
+      "depth_ppm": 661.9627137227635,
+      "counted": false,
+      "status": "not tested: in an edge zone (within W/2 of a segment end) or between segments"
+     },
+     {
+      "epoch": -163,
+      "tc": 2186.228377014929,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": -162,
+      "tc": 2197.3611223949674,
+      "coverage": 1.005179202462848,
+      "baseline_left": 112,
+      "baseline_right": 112,
+      "depth_ppm": 672.4857957506325,
+      "counted": false,
+      "status": "not tested: in an edge zone (within W/2 of a segment end) or between segments"
+     }
+    ]
+   }
+  },
+  "S98": {
+   "file": "hlsp_qlp_tess_ffi_s0098-0000000004206066_tess_v01_llc.fits",
+   "product": "qlp",
+   "flux": "SYS_RM_FLUX",
+   "A": {
+    "depth_ppm": 449.9959961924288,
+    "err_ppm": 47.756116815088575,
+    "n_counted": 8,
+    "n_not_tested": 8,
+    "n_pool_windows": 392,
+    "events": [
+     {
+      "epoch": -1,
+      "tc": 3995.5520427354722,
+      "coverage": 0.980115977566221,
+      "baseline_left": 76,
+      "baseline_right": 0,
+      "depth_ppm": 978.262065605473,
+      "counted": false,
+      "status": "not tested: no baseline on one side (T3)"
+     },
+     {
+      "epoch": 0,
+      "tc": 3998.7348271847636,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 76,
+      "baseline_right": 75,
+      "depth_ppm": 435.8021699879533,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 1,
+      "tc": 4001.917611634055,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 76,
+      "baseline_right": 40,
+      "depth_ppm": 702.1852010974383,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 2,
+      "tc": 4005.1003960833464,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 3,
+      "tc": 4008.2831805326377,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 4,
+      "tc": 4011.465964981929,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 76,
+      "baseline_right": 76,
+      "depth_ppm": 309.8118080158141,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 5,
+      "tc": 4014.6487494312205,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 76,
+      "baseline_right": 76,
+      "depth_ppm": 488.2635046369321,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 6,
+      "tc": 4017.8315338805114,
+      "coverage": 0.0,
+      "baseline_left": 46,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 7,
+      "tc": 4021.014318329803,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 8,
+      "tc": 4024.197102779094,
+      "coverage": 0.11880193667469345,
+      "baseline_left": 35,
+      "baseline_right": 2,
+      "depth_ppm": -416.3578048985705,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 9,
+      "tc": 4027.3798872283855,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 76,
+      "baseline_right": 76,
+      "depth_ppm": 392.29940186613635,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 10,
+      "tc": 4030.562671677677,
+      "coverage": 0.8019130725541809,
+      "baseline_left": 48,
+      "baseline_right": 42,
+      "depth_ppm": 431.1965589453015,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 11,
+      "tc": 4033.7454561269683,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 12,
+      "tc": 4036.9282405762597,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 13,
+      "tc": 4040.111025025551,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 75,
+      "baseline_right": 76,
+      "depth_ppm": 463.1913897398254,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 14,
+      "tc": 4043.2938094748424,
+      "coverage": 1.0098164617348944,
+      "baseline_left": 75,
+      "baseline_right": 74,
+      "depth_ppm": 377.2179352500293,
+      "counted": true,
+      "status": "counted"
+     }
+    ]
+   },
+   "B": {
+    "depth_ppm": 994.5164988542366,
+    "err_ppm": 98.06254066741832,
+    "n_counted": 2,
+    "n_not_tested": 3,
+    "n_pool_windows": 393,
+    "events": [
+     {
+      "epoch": 0,
+      "tc": 4000.8658739613074,
+      "coverage": 1.0051781162691957,
+      "baseline_left": 67,
+      "baseline_right": 67,
+      "depth_ppm": 874.5528957644356,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 1,
+      "tc": 4011.9986193413465,
+      "coverage": 1.0051781162691957,
+      "baseline_left": 67,
+      "baseline_right": 68,
+      "depth_ppm": 1114.4801019440376,
+      "counted": true,
+      "status": "counted"
+     },
+     {
+      "epoch": 2,
+      "tc": 4023.1313647213856,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 3,
+      "tc": 4034.2641101014246,
+      "coverage": 0.0,
+      "baseline_left": 0,
+      "baseline_right": 0,
+      "depth_ppm": null,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     },
+     {
+      "epoch": 4,
+      "tc": 4045.396855481464,
+      "coverage": 0.5025890581345979,
+      "baseline_left": 31,
+      "baseline_right": 32,
+      "depth_ppm": 700.4398539357526,
+      "counted": false,
+      "status": "not tested: coverage < 80 %"
+     }
+    ]
+   }
+  }
+ },
+ "expected": {
+  "A": {
+   "primary_S6_S32": [
+    441.8864439053863,
+    51.90610479429046
+   ],
+   "primary_sectors_used": [
+    "S6",
+    "S32"
+   ],
+   "upper_S98": [
+    449.9959961924288,
+    47.756116815088575
+   ]
+  },
+  "B": {
+   "primary_S6_S32": [
+    585.53169172193,
+    137.2999641881306
+   ],
+   "primary_sectors_used": [
+    "S6"
+   ],
+   "upper_S98": [
+    994.5164988542366,
+    98.06254066741832
+   ]
+  }
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "note": "Frozen ephemeris of the final S110 pre-registration. BTJD = BJD_TDB - 2457000. UTC strings are calendar labels of the barycentric times, not arrival times at the spacecraft.",
+ "A": {
+  "P": 3.1827844492913377,
+  "T0": 3998.7348271847636,
+  "T14": 0.07793952258513782,
+  "cov_T0_P": [
+   [
+    5.92021537678332e-06,
+    8.622534066185073e-09
+   ],
+   [
+    8.622534066185074e-09,
+    2.5785946571274003e-11
+   ]
+  ],
+  "source": "item 03 transit times (T3 rule, B modelled jointly, D13), WLS with injection-calibrated errors (03_signalA/out/linear_ephemeris_calibrated.json 'adopted'); T14 = MCMC median (mcmc_summary.json)",
+  "sigma_pred_rule": "per-epoch sigma from the full (T0, P) covariance, no extra factor (errors are injection-calibrated)",
+  "epochs": [
+   {
+    "epoch": 109,
+    "tc_btjd": 4345.65833215752,
+    "tc_utc_calendar": "2026-11-01 03:46:50.716",
+    "sigma_pred_min": 4.099902957332481
+   },
+   {
+    "epoch": 110,
+    "tc_btjd": 4348.841116606811,
+    "tc_utc_calendar": "2026-11-04 08:10:03.292",
+    "sigma_pred_min": 4.10568794547544
+   },
+   {
+    "epoch": 111,
+    "tc_btjd": 4352.023901056102,
+    "tc_utc_calendar": "2026-11-07 12:33:15.869",
+    "sigma_pred_min": 4.111477798940263
+   },
+   {
+    "epoch": 112,
+    "tc_btjd": 4355.206685505394,
+    "tc_utc_calendar": "2026-11-10 16:56:28.445",
+    "sigma_pred_min": 4.117272497201592
+   },
+   {
+    "epoch": 113,
+    "tc_btjd": 4358.3894699546845,
+    "tc_utc_calendar": "2026-11-13 21:19:41.021",
+    "sigma_pred_min": 4.123072019832325
+   },
+   {
+    "epoch": 114,
+    "tc_btjd": 4361.572254403976,
+    "tc_utc_calendar": "2026-11-17 01:42:53.598",
+    "sigma_pred_min": 4.128876346503175
+   },
+   {
+    "epoch": 115,
+    "tc_btjd": 4364.755038853267,
+    "tc_utc_calendar": "2026-11-20 06:06:06.174",
+    "sigma_pred_min": 4.134685456982214
+   },
+   {
+    "epoch": 116,
+    "tc_btjd": 4367.937823302559,
+    "tc_utc_calendar": "2026-11-23 10:29:18.750",
+    "sigma_pred_min": 4.140499331134429
+   },
+   {
+    "epoch": 117,
+    "tc_btjd": 4371.12060775185,
+    "tc_utc_calendar": "2026-11-26 14:52:31.327",
+    "sigma_pred_min": 4.146317948921274
+   }
+  ]
+ },
+ "B": {
+  "P": 11.132745380039134,
+  "T0": 4000.8658739613074,
+  "T14": 0.06908750357336403,
+  "source": "joint-fit ephemeris of v1/v2, unchanged (14_signalB/out/signalB.json 'ephemeris_B_used')",
+  "sigma_pred_rule": "1.5 x the joint-fit MCMC per-epoch sigma, as in v2 (B timing errors are not injection-calibrated)",
+  "epochs": [
+   {
+    "epoch": 31,
+    "tc_btjd": 4345.980980742521,
+    "tc_utc_calendar": "2026-11-01 11:31:27.554",
+    "sigma_pred_min": 4.0649999999999995
+   },
+   {
+    "epoch": 32,
+    "tc_btjd": 4357.1137261225595,
+    "tc_utc_calendar": "2026-11-12 14:42:36.754",
+    "sigma_pred_min": 4.0845
+   },
+   {
+    "epoch": 33,
+    "tc_btjd": 4368.246471502599,
+    "tc_utc_calendar": "2026-11-23 17:53:45.955",
+    "sigma_pred_min": 4.1055
+   }
+  ]
+ }
+}
