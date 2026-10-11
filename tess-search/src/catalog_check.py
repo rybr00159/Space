@@ -17,8 +17,11 @@ def check_one(r, radius=150.0):
             per = float(h["period"]) if h["period"] not in (None, "") else np.nan
         except (TypeError, ValueError):
             per = np.nan
+        eb_cat = any(k in str(h["cat"]) for k in ("EB", "Kostov", "Rowan", "IJspeert", "Prsa"))
         if np.isfinite(per) and known.period_match(float(r["P"]), per, tol=0.005, kmax=4):
             match.append(tag)
+        elif eb_cat and h["sep"] <= 21:
+            match.append(tag + "(EB catalogue, within 1 px)")
         elif h["sep"] <= 25:
             near.append(tag)
     return dict(tic=int(r["tic"]), viz_match=";".join(match), viz_near=";".join(near))
