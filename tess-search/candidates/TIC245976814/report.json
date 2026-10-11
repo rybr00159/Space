@@ -1,0 +1,907 @@
+{
+ "tic": 245976814,
+ "star": {
+  "Tmag": 11.6135,
+  "Teff": 6121.0,
+  "rad": 1.28527,
+  "mass": null,
+  "d": 348.913,
+  "ra": 268.15108109599,
+  "dec": -36.4173890471344,
+  "contratio": 1.75117791
+ },
+ "sectors": [
+  [
+   39,
+   "QLP",
+   600.0,
+   0.00398178878156454
+  ],
+  [
+   66,
+   "QLP",
+   200.0,
+   0.004943859617921885
+  ],
+  [
+   93,
+   "QLP",
+   200.0,
+   0.0050418546445735735
+  ],
+  [
+   104,
+   "QLP",
+   200.0,
+   0.0016607220294220062
+  ]
+ ],
+ "joint_bls": {
+  "snr": 14.523654023190394,
+  "P": 0.5070755855129837,
+  "t0": 2362.45825829383,
+  "dur": 0.06167135499482235,
+  "depth": 0.0011497961946895273,
+  "second": 14.161791841138648,
+  "n": 1062,
+  "baseline": 1842.243593709939
+ },
+ "fit": {
+  "P": 0.5070757303397011,
+  "P_err": 1.3200203944493416e-06,
+  "t0": 2362.4568297193487,
+  "t0_err": 0.004293972145582481,
+  "rp": 0.03153071283652689,
+  "rp_err": 0.03381430667184774,
+  "a": 2.3332318206918594,
+  "a_err": 8.565014349217947,
+  "b": 0.44641230926299774,
+  "b_err": 8.175831762131702,
+  "dchi2": 198.62828221420023,
+  "npts": 8143
+ },
+ "rp_earth": 4.421329790255658,
+ "rho_fit": 0.6626821900863694,
+ "rho_tic": NaN,
+ "per_sector": [
+  {
+   "sector": 39,
+   "prov": "QLP",
+   "depth_ppm": 1132.5266866342165,
+   "err_ppm": 233.81868823715124,
+   "n_tr": 39,
+   "oddeven_sig": 0.05658625029633421,
+   "sec_sig": -1.1379819918889222,
+   "oot_rms": 1.042345562292837
+  },
+  {
+   "sector": 66,
+   "prov": "QLP",
+   "depth_ppm": 1538.5699182185465,
+   "err_ppm": 266.55504646450413,
+   "n_tr": 38,
+   "oddeven_sig": 0.18115128718043683,
+   "sec_sig": 2.4239060038290825,
+   "oot_rms": 1.7902817731303082
+  },
+  {
+   "sector": 93,
+   "prov": "QLP",
+   "depth_ppm": 1322.2673981956311,
+   "err_ppm": 264.2649886431227,
+   "n_tr": 41,
+   "oddeven_sig": 0.8461640775266567,
+   "sec_sig": -0.7949732174810737,
+   "oot_rms": 0.8103882043801554
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "depth_ppm": 1136.2726471925155,
+   "err_ppm": 85.5315360428243,
+   "n_tr": 43,
+   "oddeven_sig": 0.5298004340621323,
+   "sec_sig": -0.5234606053477106,
+   "oot_rms": 1.5705223143381333
+  }
+ ],
+ "combined": {
+  "n_tr": 161,
+  "n_tr_any": 165,
+  "max_event_frac": 0.08621360832325214,
+  "depth": 0.001270396987566147,
+  "depth_err": 0.00013332597897762046,
+  "sigma_dur": 0.0012231314142576218,
+  "snr_red": 13.178903342671703,
+  "red_ratio": 0.7372737749580468,
+  "oddeven_sig": 0.6626151679550953,
+  "sec_depth": 2.2332454475915142e-05,
+  "sec_sig": 0.16664772513918003,
+  "oot_dip_ratio": 0.20830719476981863,
+  "oot_dip_sig": 1.9870198428128585,
+  "oot_rms_ratio": 1.2486136768205818,
+  "shape_ratio": 0.8287133109894429
+ },
+ "held_out": [
+  {
+   "sector": 39,
+   "prov": "QLP",
+   "depth": 0.0011443806531534761,
+   "snr": 4.868926703261978,
+   "n_tr": 39,
+   "P_pred": 0.5070757303397011
+  },
+  {
+   "sector": 66,
+   "prov": "QLP",
+   "depth": 0.001101266874639184,
+   "snr": 4.0770763958502645,
+   "n_tr": 38,
+   "P_pred": 0.5070785631650102
+  },
+  {
+   "sector": 93,
+   "prov": "QLP",
+   "depth": 0.0012451085412097385,
+   "snr": 4.711590996608326,
+   "n_tr": 41,
+   "P_pred": 0.5070757303397011
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "depth": -0.00027388069437883633,
+   "snr": -3.2232660592922566,
+   "n_tr": 43,
+   "P_pred": 0.5074359289619425
+  }
+ ],
+ "gaia": [
+  {
+   "source_id": 4040383624926997888,
+   "sep": 0.07697778943336521,
+   "phot_g_mean_mag": 12.104207038879395,
+   "phot_rp_mean_mag": 11.542511940002441,
+   "tmag_est": 11.442511558532715,
+   "ruwe": 4.082637310028076,
+   "parallax": 3.1485123978090077,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629346870016,
+   "sep": 2.962413781172535,
+   "phot_g_mean_mag": 19.862348556518555,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629259823488,
+   "sep": 4.294171572679918,
+   "phot_g_mean_mag": 20.14944839477539,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629300946560,
+   "sep": 4.674486110876731,
+   "phot_g_mean_mag": 19.62482452392578,
+   "phot_rp_mean_mag": 17.67864418029785,
+   "tmag_est": 17.578643798828125,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629300926976,
+   "sep": 4.872442935646697,
+   "phot_g_mean_mag": 19.480798721313477,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": 0.9600380063056946,
+   "parallax": -1.4421077494780816,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629260129152,
+   "sep": 5.399558547344274,
+   "phot_g_mean_mag": 20.120826721191406,
+   "phot_rp_mean_mag": 19.073400497436523,
+   "tmag_est": 18.973400115966797,
+   "ruwe": 1.203934669494629,
+   "parallax": 0.4511392083607605,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629257968640,
+   "sep": 5.789913118311162,
+   "phot_g_mean_mag": 19.635717391967773,
+   "phot_rp_mean_mag": 18.222675323486328,
+   "tmag_est": 18.1226749420166,
+   "ruwe": 1.4908050298690796,
+   "parallax": -0.669797974134245,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629302916992,
+   "sep": 5.942088207403369,
+   "phot_g_mean_mag": 20.29949188232422,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629257988992,
+   "sep": 6.1575650903647565,
+   "phot_g_mean_mag": 19.54560089111328,
+   "phot_rp_mean_mag": 17.846786499023438,
+   "tmag_est": 17.74678611755371,
+   "ruwe": 1.6168529987335205,
+   "parallax": 0.25569653142892695,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629257970560,
+   "sep": 6.291387681311305,
+   "phot_g_mean_mag": 19.3104190826416,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": 0.9867902398109436,
+   "parallax": -0.03889853507675611,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629346916992,
+   "sep": 6.326298531280517,
+   "phot_g_mean_mag": 20.180747985839844,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629300914816,
+   "sep": 6.469649798946634,
+   "phot_g_mean_mag": 20.32408905029297,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629257970432,
+   "sep": 6.530431758578993,
+   "phot_g_mean_mag": 19.649324417114258,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629302915328,
+   "sep": 6.834768224212256,
+   "phot_g_mean_mag": 20.364768981933594,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629346916864,
+   "sep": 6.9915724996043735,
+   "phot_g_mean_mag": 19.58123016357422,
+   "phot_rp_mean_mag": 18.318368911743164,
+   "tmag_est": 18.218368530273438,
+   "ruwe": 0.9734477400779724,
+   "parallax": 0.8923568671237838,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629346870144,
+   "sep": 7.017647810410499,
+   "phot_g_mean_mag": 19.142038345336914,
+   "phot_rp_mean_mag": 17.698713302612305,
+   "tmag_est": 17.598712921142578,
+   "ruwe": 1.0653232336044312,
+   "parallax": 0.2335578456041027,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629257993600,
+   "sep": 7.8766918490684965,
+   "phot_g_mean_mag": 19.92349624633789,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": 0.9755454063415527,
+   "parallax": -1.018456599295483,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629260242560,
+   "sep": 7.886789441672996,
+   "phot_g_mean_mag": 20.432323455810547,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629257959296,
+   "sep": 7.992111585865428,
+   "phot_g_mean_mag": 19.610980987548828,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629257987968,
+   "sep": 7.999165883953989,
+   "phot_g_mean_mag": 19.02843475341797,
+   "phot_rp_mean_mag": 18.318771362304688,
+   "tmag_est": 18.21877098083496,
+   "ruwe": 1.0524317026138306,
+   "parallax": 0.4918725246148844,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629257962624,
+   "sep": 8.163130058436808,
+   "phot_g_mean_mag": 19.326921463012695,
+   "phot_rp_mean_mag": 17.98805809020996,
+   "tmag_est": 17.888057708740234,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383629257959424,
+   "sep": 8.211170695953191,
+   "phot_g_mean_mag": 19.64800262451172,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  },
+  {
+   "source_id": 4040383629257970048,
+   "sep": 8.409133323696311,
+   "phot_g_mean_mag": 19.26611328125,
+   "phot_rp_mean_mag": 18.076208114624023,
+   "tmag_est": 17.976207733154297,
+   "ruwe": 1.0665550231933594,
+   "parallax": 0.7267924126442242,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383251300876672,
+   "sep": 8.908256571265898,
+   "phot_g_mean_mag": 19.9716854095459,
+   "phot_rp_mean_mag": 18.68328285217285,
+   "tmag_est": 18.583282470703125,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": true
+  },
+  {
+   "source_id": 4040383251300867328,
+   "sep": 8.9140067845205,
+   "phot_g_mean_mag": 19.886672973632812,
+   "phot_rp_mean_mag": NaN,
+   "tmag_est": NaN,
+   "ruwe": NaN,
+   "parallax": NaN,
+   "can_mimic": false
+  }
+ ],
+ "vizier": [
+  {
+   "cat": "VSX",
+   "sep": 143.85,
+   "period": 0.31826,
+   "type": "RRC",
+   "id": "OGLE-BLG-RRLYR-05447"
+  },
+  {
+   "cat": "VSX",
+   "sep": 143.77,
+   "period": 0.406959,
+   "type": "EC",
+   "id": "OGLE-BLG-ECL-149250"
+  },
+  {
+   "cat": "VSX",
+   "sep": 149.06,
+   "period": null,
+   "type": "RS",
+   "id": "Gaia DR3 4040383178253629056"
+  },
+  {
+   "cat": "VSX",
+   "sep": 145.72,
+   "period": 0.819815,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-149432"
+  },
+  {
+   "cat": "VSX",
+   "sep": 103.06,
+   "period": 4.710925,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-149613"
+  },
+  {
+   "cat": "VSX",
+   "sep": 95.14,
+   "period": 0.727253,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-149750"
+  },
+  {
+   "cat": "VSX",
+   "sep": 106.95,
+   "period": 53.41,
+   "type": "E",
+   "id": "Gaia DR3 4040383521914927616"
+  },
+  {
+   "cat": "VSX",
+   "sep": 109.0,
+   "period": 0.339215,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-149913"
+  },
+  {
+   "cat": "VSX",
+   "sep": 84.37,
+   "period": null,
+   "type": "S",
+   "id": "Gaia DR3 4040383526221916288"
+  },
+  {
+   "cat": "VSX",
+   "sep": 103.34,
+   "period": 0.389835,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-149993"
+  },
+  {
+   "cat": "VSX",
+   "sep": 142.36,
+   "period": 0.384783,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-150309"
+  },
+  {
+   "cat": "VSX",
+   "sep": 49.67,
+   "period": null,
+   "type": "RS",
+   "id": "Gaia DR3 4040383315692806528"
+  },
+  {
+   "cat": "VSX",
+   "sep": 77.64,
+   "period": 1.509004,
+   "type": "ELL",
+   "id": "OGLE-BLG-ELL-009227"
+  },
+  {
+   "cat": "VSX",
+   "sep": 31.03,
+   "period": 0.493473,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-150806"
+  },
+  {
+   "cat": "VSX",
+   "sep": 40.77,
+   "period": 0.489393,
+   "type": "EC",
+   "id": "OGLE-BLG-ECL-150857"
+  },
+  {
+   "cat": "VSX",
+   "sep": 21.13,
+   "period": 7.6916,
+   "type": "E",
+   "id": "Gaia DR3 4040383251300886912"
+  },
+  {
+   "cat": "VSX",
+   "sep": 129.36,
+   "period": 5.8666,
+   "type": "E",
+   "id": "Gaia DR3 4040383938538827392"
+  },
+  {
+   "cat": "VSX",
+   "sep": 83.44,
+   "period": 0.461793,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-151049"
+  },
+  {
+   "cat": "VSX",
+   "sep": 76.46,
+   "period": 1.28657,
+   "type": "ROT",
+   "id": "Gaia DR3 4040383663662154368"
+  },
+  {
+   "cat": "VSX",
+   "sep": 34.73,
+   "period": 9.4143,
+   "type": "E",
+   "id": "Gaia DR3 4040382873386606208"
+  },
+  {
+   "cat": "VSX",
+   "sep": 90.44,
+   "period": 154.4,
+   "type": "SR|M",
+   "id": "Gaia DR3 4040382426709892608"
+  },
+  {
+   "cat": "VSX",
+   "sep": 71.72,
+   "period": 0.896355,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-151807"
+  },
+  {
+   "cat": "VSX",
+   "sep": 98.68,
+   "period": 0.318076,
+   "type": "EC",
+   "id": "OGLE-BLG-ECL-152342"
+  },
+  {
+   "cat": "VSX",
+   "sep": 80.91,
+   "period": 0.384518,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-152366"
+  },
+  {
+   "cat": "VSX",
+   "sep": 96.5,
+   "period": 0.449879,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-152480"
+  },
+  {
+   "cat": "VSX",
+   "sep": 139.79,
+   "period": null,
+   "type": "L",
+   "id": "Gaia DR3 4040383766739953792"
+  },
+  {
+   "cat": "VSX",
+   "sep": 105.67,
+   "period": 0.365756,
+   "type": "E",
+   "id": "OGLE-BLG-ECL-152508"
+  },
+  {
+   "cat": "VSX",
+   "sep": 98.52,
+   "period": null,
+   "type": "L",
+   "id": "Gaia DR3 4040383006455244160"
+  },
+  {
+   "cat": "VSX",
+   "sep": 98.35,
+   "period": 0.40633,
+   "type": "EC",
+   "id": "OGLE-BLG-ECL-152715"
+  },
+  {
+   "cat": "VSX",
+   "sep": 134.74,
+   "period": null,
+   "type": "L",
+   "id": "Gaia DR3 4040382598508465408"
+  },
+  {
+   "cat": "ASAS-SN var",
+   "sep": 143.83,
+   "period": null,
+   "type": "ROT:",
+   "id": "284863"
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 96.512,
+   "period": 0.449887022470918,
+   "type": null,
+   "id": 4040382800358133632
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 98.279,
+   "period": 0.40633120520782273,
+   "type": null,
+   "id": 4040382838983739648
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 34.732,
+   "period": 9.414254501046743,
+   "type": null,
+   "id": 4040382873386606208
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 40.914,
+   "period": 0.4893989745054388,
+   "type": null,
+   "id": 4040383247034427008
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 21.2,
+   "period": 7.691616017285412,
+   "type": null,
+   "id": 4040383251300886912
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 31.07,
+   "period": 0.49347681019107,
+   "type": null,
+   "id": 4040383315692811264
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 106.961,
+   "period": 53.40648350439133,
+   "type": null,
+   "id": 4040383521914927616
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 71.529,
+   "period": 0.8963345178151524,
+   "type": null,
+   "id": 4040383663662150784
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 105.543,
+   "period": 0.36576240438197644,
+   "type": null,
+   "id": 4040383762433410688
+  },
+  {
+   "cat": "Gaia DR3 EB",
+   "sep": 129.366,
+   "period": 5.866569755008976,
+   "type": null,
+   "id": 4040383938538827392
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 90.511,
+   "period": null,
+   "type": "LPV",
+   "id": 4040382426709892608
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 134.792,
+   "period": null,
+   "type": "LPV",
+   "id": 4040382598508465408
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 96.512,
+   "period": null,
+   "type": "ECL",
+   "id": 4040382800358133632
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 98.279,
+   "period": null,
+   "type": "ECL",
+   "id": 4040382838983739648
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 34.732,
+   "period": null,
+   "type": "ECL",
+   "id": 4040382873386606208
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 98.382,
+   "period": null,
+   "type": "LPV",
+   "id": 4040383006455244160
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 149.071,
+   "period": null,
+   "type": "RS",
+   "id": 4040383178253629056
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 40.914,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383247034427008
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 21.2,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383251300886912
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 49.662,
+   "period": null,
+   "type": "RS",
+   "id": 4040383315692806528
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 31.07,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383315692811264
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 143.863,
+   "period": null,
+   "type": "RR",
+   "id": 4040383384432979328
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 106.961,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383521914927616
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 84.401,
+   "period": null,
+   "type": "S",
+   "id": 4040383526221916288
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 71.529,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383663662150784
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 105.543,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383762433410688
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 139.711,
+   "period": null,
+   "type": "LPV",
+   "id": 4040383766739953792
+  },
+  {
+   "cat": "Gaia DR3 var class",
+   "sep": 129.366,
+   "period": null,
+   "type": "ECL",
+   "id": 4040383938538827392
+  }
+ ],
+ "known_on_star": [],
+ "localisation": [
+  {
+   "sector": 104,
+   "n_transits": 45,
+   "target_px": [
+    7.857242424583912,
+    7.376339153382652
+   ],
+   "diff_centroid": [
+    7.796594831133712,
+    7.582044686671964
+   ],
+   "direct_centroid": [
+    6.779177045892211,
+    7.870440387266226
+   ],
+   "offset_px": [
+    -0.06064759345020043,
+    0.2057055332893123
+   ],
+   "offset_arcsec": 4.503650473178314,
+   "err_px": [
+    0.04322411724638751,
+    0.14549037241288978
+   ],
+   "offset_sigma": 1.0582826214864918
+  },
+  {
+   "sector": 93,
+   "n_transits": 45,
+   "target_px": [
+    7.173522457235453,
+    7.774966639091051
+   ],
+   "diff_centroid": [
+    NaN,
+    NaN
+   ],
+   "direct_centroid": [
+    6.108747846801315,
+    7.373417938514446
+   ],
+   "offset_px": [
+    NaN,
+    NaN
+   ],
+   "offset_arcsec": NaN,
+   "err_px": [
+    0.39485818467043204,
+    0.39857807171475174
+   ],
+   "offset_sigma": NaN
+  },
+  {
+   "sector": 66,
+   "n_transits": 41,
+   "target_px": [
+    7.193311906098529,
+    7.817915358211742
+   ],
+   "diff_centroid": [
+    6.559478737785299,
+    8.550274431303924
+   ],
+   "direct_centroid": [
+    6.189879270955897,
+    7.322587731145529
+   ],
+   "offset_px": [
+    -0.6338331683132301,
+    0.7323590730921818
+   ],
+   "offset_arcsec": 20.339606315333207,
+   "err_px": [
+    0.3003158972453596,
+    0.3222990735455526
+   ],
+   "offset_sigma": 2.794478302071747
+  }
+ ]
+}

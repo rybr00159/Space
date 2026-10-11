@@ -63,4 +63,5 @@ if __name__ == "__main__":
                          loc=[(L["sector"], round(L["offset_arcsec"], 1), round(L["offset_sigma"], 1)) for L in r.get("localisation", [])],
                          gaia=g, **nov))
         print(tic, "done", flush=True)
-    json.dump(rows, open(f"{W}/vet/eb_final.json", "w"), indent=1, default=lambda x: x.item() if hasattr(x, "item") else str(x))
+    out = os.environ.get("EB_FINAL_OUT", f"{W}/vet/eb_final.json")
+    json.dump(rows, open(out, "w"), indent=1, default=lambda x: x.item() if hasattr(x, "item") else str(x))

@@ -15,6 +15,11 @@ W = "/home/user/work"
 SKIP = ("IV/38", "IV/39", "J/AJ/155/39", "I/355/epphot", "I/358/varisum")
 VAR = ("EB*", "SB*", "V*", "Ro*", "RR*", "dS*", "BY*", "RS*", "Pu*", "LP*", "Mi*", "sr*", "Ce*", "WU*", "Al*", "El*", "**", "gD*")
 
+# visual review of fold plots (vet/eb_contact_*.png): sinusoidal variables or inconsistent folds, not EBs
+REJECT_VISUAL = {237329004, 166225041, 60829240, 422003560, 387291911}
+# periods fixed by eclipse timing (equal eclipses folded on half/quarter of the orbit)
+PERIOD_FIX = {100666720: 7.341134, 49617965: 3.765198}
+
 known = set()
 for f in glob.glob(f"{W}/results/new_s0*.csv"):
     n = pd.read_csv(f); known |= set(n[n.viz_known].tic.astype(int))
@@ -43,6 +48,8 @@ d["ok"] = (d.nsec >= 2) & d.on_target & (d.prim >= 0.005) & d.coherent & d.novel
 # (only when nothing comparable already sits at phase 0.5, i.e. the second eclipse family is on the same grid)
 d["P_doubled"] = (d.alt_ratio < 0.88) & (d.prim >= 0.01) & (d.sec / d.prim < 0.5)
 d.loc[d.P_doubled, "P"] = 2 * d.loc[d.P_doubled, "P"]
+for t, p in PERIOD_FIX.items(): d.loc[d.tic == t, "P"] = p
+d["ok"] &= ~d.tic.isin(REJECT_VISUAL)
 d["duty"] = d.dur_h / (d.P * 24)
 d["kind"] = np.where((d.duty < 0.12) & (d.P > 0.8), "detached", "contact/ellipsoidal")
 # drop period twins within 3' (keep the better-localised)
