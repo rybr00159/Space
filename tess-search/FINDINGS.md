@@ -100,3 +100,14 @@ Kostov+25 table 2 (unvetted NN list); SIMBAD plain star. Depths are from QLP/TES
 - TIC 231663104: distant M giant (d~5.6 kpc), VSX irregular variable; inconsistent depths, odd/even 11.5 sigma
 - TIC 139285753: blend (38" offset at 10.5 sigma in S68), inconsistent depths
 - TIC 61898320: on target but transit far too short for the R=1.83 Rsun star (rho_fit 8.8 vs 0.20) -> blended EB
+- Follow-up tests after Gemini 3.1 Pro review (which argued the 8.2" companion is the source):
+  * Directional centroid test with Gaia positions propagated to each sector's epoch, offsets converted to sky coordinates
+    (offset_test.py): companion lies at (+7.9", -2.2"); a loss on it should shift the difference-image centroid by
+    ~+5..+8" in RA every sector. Measured RA offsets: -2.8, 0.0, +3.4, -3.8, -1.0" (S29, S69, S96, S103, S104).
+    Total chi2 over 5 sectors (10 dof): target 10.9, companion 21.8 -> 8.2" companion disfavoured (delta chi2 ~ 11, ~3 sigma).
+  * No ellipsoidal/phase-curve modulation: cos(2 pi phase) amplitude -29 +- 25 ppm (3-sigma limit ~80 ppm), cos(4 pi) -12 +- 23 ppm.
+    Rules out a bright near-equal-mass EB companion (would give hundreds of ppm); a faint late-M + late-M EB contributing
+    < ~3 % of the light (eclipses >~10 %, (R1+R2)/a ~ 0.08 -> ~0.6 h eclipses) remains allowed.
+  * Pair is a known co-moving wide binary (SUPERWIDE, Hartman & Lepine 2020, J/ApJS/247/66); not in WDS; no Gaia NSS solution.
+- Updated verdict: real, previously unreported transit-like signal on the K dwarf or an unresolved companion of it;
+  planet (TP 7 %, STP 25 % in TRICERATOPS) not excluded; SEB with a faint late-M binary companion most likely.
