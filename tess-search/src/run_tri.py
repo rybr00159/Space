@@ -18,6 +18,14 @@ for k in np.unique(idx):
     if s.sum() >= 3: tb.append(time_d[s].mean()); fb.append(flux[s].mean()); eb.append(ferr[s].mean() / np.sqrt(s.sum()))
 tb, fb, eb = map(np.array, (tb, fb, eb))
 target = tr.target(ID=tic, sectors=sectors, search_radius=10)
+import os
+if os.environ.get("TRI_MASS"):  # fill missing TIC stellar parameters for the target (row 0)
+    target.stars.loc[0, "mass"] = float(os.environ["TRI_MASS"])
+if os.environ.get("TRI_RAD"):
+    target.stars.loc[0, "rad"] = float(os.environ["TRI_RAD"])
+if os.environ.get("TRI_PLX"):
+    target.stars.loc[0, "plx"] = float(os.environ["TRI_PLX"])
+print(target.stars.head(5)[["ID", "Tmag", "Teff", "rad", "mass", "sep (arcsec)"]].to_string(), flush=True)
 apertures = None
 target.calc_depths(tdepth=float(1 - np.min(np.convolve(fb, np.ones(3) / 3, "same"))), all_ap_pixels=apertures)
 target.calc_probs(time=tb, flux_0=fb, flux_err_0=float(np.median(eb)), P_orb=P, parallel=False, N=200000, verbose=0)

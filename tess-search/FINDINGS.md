@@ -52,3 +52,51 @@ SuperWASP (Thiemann+21), Gao+25 TESS periodic variables, IJspeert+24, WISE varia
 - Difference image on target to ~1-3"
 - NOT in Kostov+25 table 2 (the unvetted NN list) nor any EB/variable catalogue
 - GPT-5.5 review: (c) likely false positive as a planet; plausible unresolved EB
+
+## Newly characterised eclipsing binaries — summary table (eb_final.py)
+
+All: on target in TESScut difference images; no entry in any vetted EB/variable catalogue within 21"; flagged only in
+Kostov+25 table 2 (unvetted NN list); SIMBAD plain star. Depths are from QLP/TESS-SPOC/SPOC data averaged (pipelines dilute differently).
+
+| TIC | Name | T | P (d) | T0 (BTJD) | primary | secondary @ phase | e cos w | Gaia RUWE | note |
+|---|---|---|---|---|---|---|---|---|---|
+| 143042674 | TYC 7034-792-1 | 10.69 | 5.044136 ± 0.000112 | 1413.8299 | 2.2 % | 0.09 % @ 0.502 | +0.004 | 0.97 | G + M dwarf; Gaia RV amplitude 35 km/s |
+| 123267483 | TYC 7006-2246-1 | 10.46 | 7.273221 ± 0.000002 | 1388.6223 | 31.8 % | 27.79 % @ 0.485 | -0.024 | 1.22 |  |
+| 80064194 | TYC 8394-1748-1 | 10.55 | 5.810694 ± 0.000001 | 1658.6291 | 19.1 % | 7.27 % @ 0.500 | -0.000 | 1.23 |  |
+| 122543151 | CD-31  1060 | 9.95 | 7.483459 ± 0.000001 | 1386.5798 | 17.6 % | 10.61 % @ 0.452 | -0.075 | 4.43 | eccentric; RUWE 4.4 suggests tertiary |
+| 179677500 | TYC 7000-227-1 | 10.82 | 7.911417 ± 0.000003 | 1359.2084 | 11.1 % | 3.31 % @ 0.568 | +0.106 | 1.25 | eccentric |
+| 143345010 | TYC 7940-1151-1 | 10.63 | 2.669561 ± 0.000001 | 1660.4571 | 7.0 % | 1.47 % @ 0.500 | -0.000 | 1.93 | Gaia NSS=1, RV amplitude 140 km/s (binarity known, eclipses new) |
+| 89040715 | TYC 8003-1087-1 | 11.02 | 4.621055 ± 0.000001 | 1326.3282 | 5.9 % | 3.31 % @ 0.502 | +0.004 | 8.17 | RUWE 8.2 suggests tertiary |
+| 200247352 |  | 11.03 | 3.338011 ± 0.000001 | 1659.3141 | 3.7 % | 1.31 % @ 0.500 | -0.000 | - | no Gaia parallax (2-parameter solution) |
+| 231286114 | TYC 8054-890-1 | 10.55 | 2.020458 ± 0.000000 | 1386.4481 | 1.3 % | 0.77 % @ 0.500 | -0.000 | 0.89 | shallow; grazing or diluted |
+
+### TIC 281705082 (T=11.43, G/K dwarf) — rejected: blend from a neighbour ~40-47" away
+- P = 1.457797 d, recovered in 8/8 other sectors (2018-2026), but depth varies with pipeline/aperture (523-1898 ppm)
+- Difference image offset 39" (11 sigma) in S104, 29" (2.9 sigma) in S96 -> eclipse is on a neighbour
+  (Gaia stars at 46" T~15.6 and 48" T~14.6); fit needs b~1 and rho* 0.11 vs TIC 1.41 -> not this star
+- Likely an uncatalogued faint EB on the neighbour, not a planet
+
+### Other planet-track rejections
+- TIC 117545527: signal 37" off target; neighbour is in IJspeert+24 TESS OBAF EB catalogue
+- TIC 382526005: inconsistent depths (-22..316 ppm), 5.7 sigma secondary, variable star
+- TIC 156015928: odd/even 4.8 sigma, secondary 4.3 sigma, variability
+- TIC 166810584: inconsistent depths across sectors; EB catalogue entry within 21"
+
+### TIC 155991187 (K dwarf, T=11.81) — new robust transit-like signal in a likely triple system; most likely an EB
+- Gaia DR3 4975693262795009152: G=12.58, BP-RP 1.57, plx 6.58 +- 0.26 mas (~152 pc), **RUWE 21.1** (unresolved companion
+  very likely), 54 RVS transits, rv_amplitude_robust 14 km/s, rv_chisq_pvalue 0.65 (RV not significantly variable)
+- Co-moving M-dwarf companion at 8.2" (Gaia DR3 4975693262795009024, G=15.88, plx 6.74, same proper motion) -> ~1200 au
+- P = 0.5012110 d (12.03 h), depth ~2.8-3.1 ppt consistent in S2, S29, S69, S96, S103, S104 (2018-2026); odd/even 0.3 sigma,
+  no secondary (43 +- 50 ppm), flat out of transit; transit fit Rp/R* = 0.066, b = 0.91 (grazing), a/R* = 3.1 +- 0.3
+  -> rho* 1.6 solar (K dwarf ~2.1; an M-dwarf host would be ~8)
+- Difference image offset 3.6-7.2" (<= 1.5 sigma); the 8.2" companion is only 0.31 px away, so TESS pixels cannot separate them
+- Not in TOI/CTOI/TCE lists, not in Kostov+25 table 2, no EB/variable catalogue match (VSX/Gaia list the star only as a
+  rotational/solar-like variable)
+- TRICERATOPS (M=0.68, R=0.69, plx 6.58 supplied): FPP 0.93, NFPP 0.0; SEBx2P 0.60, STP 0.25, PEBx2P 0.08, TP 0.07
+- Verdict: real astrophysical signal, previously unreported; most likely an eclipsing binary within the system
+  (P_EB = 1.0024 d with equal eclipses) rather than a planet; needs high-resolution imaging + RVs
+
+### More planet-track rejections
+- TIC 231663104: distant M giant (d~5.6 kpc), VSX irregular variable; inconsistent depths, odd/even 11.5 sigma
+- TIC 139285753: blend (38" offset at 10.5 sigma in S68), inconsistent depths
+- TIC 61898320: on target but transit far too short for the R=1.83 Rsun star (rho_fit 8.8 vs 0.20) -> blended EB

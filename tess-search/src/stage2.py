@@ -137,7 +137,9 @@ def run(cand):
 
 
 def _run(cand):
-    tic, P, dur, s0 = int(cand["tic"]), float(cand["P"]), float(cand["dur"]), int(cand["sector"])
+    tic, P, dur = int(cand["tic"]), float(cand["P"]), float(cand["dur"])
+    disc = {int(x) for x in str(cand["sector"]).split(",")}  # discovery sector(s): never counted as confirmation
+    s0 = min(disc)
     secs = load_all(tic)
     if not secs: return dict(tic=tic, error="no data")
     rng = np.random.default_rng(tic % 2 ** 32)
@@ -145,13 +147,13 @@ def _run(cand):
     for s in secs:
         r = sector_test(s, P, dur, rng=rng); r.update(sector=s["sector"], prov=s["prov"], sigma=s["sigma"])
         per.append(r)
-    others = [r for r in per if r["sector"] != s0 and np.isfinite(r["snr"])]
+    others = [r for r in per if r["sector"] not in disc and np.isfinite(r["snr"])]
     j = joint_fit(secs, P, dur)
     # per-sector depth at the joint ephemeris
     for s, r in zip(secs, per):
         d = diagnostics(s["t"], s["f"], j["P"], j["t0"], j["dur"], s["sigma"])
         r.update(depth_joint=d["depth"], depth_err=d["depth_err"], ntr_joint=d["n_tr"])
-    tc = [s for s in secs if s["sector"] != s0]
+    tc = [s for s in secs if s["sector"] not in disc]
     jo = joint_fit(tc, P, dur) if tc else None  # ephemeris without the discovery sector
     from scipy.stats import chi2
     fisher = float(-2 * np.sum(np.log([r["fap"] for r in others]))) if others else np.nan
@@ -162,12 +164,12 @@ def _run(cand):
         de = 1 / np.sqrt(wts.sum())
     else:
         dm = de = np.nan
-    disc = next((r for r in per if r["sector"] == s0), None)
+    disc_rec = next((r for r in per if r["sector"] == s0), None)
     return dict(tic=tic, n_sectors=len(secs), sectors=[r["sector"] for r in per],
                 n_other=len(others), n_other_sig=int(sum(r["fap"] <= 0.01 for r in others)),
                 fisher=fisher, p_comb=float(chi2.sf(fisher, 2 * len(others))) if others else np.nan,
                 other_depth=dm, other_depth_err=de, other_depth_snr=dm / de if de == de and de > 0 else np.nan,
-                disc_depth=disc["depth_joint"] if disc else np.nan,
+                disc_depth=disc_rec["depth_joint"] if disc_rec else np.nan,
                 joint=j, others_only=jo, per=per)
 
 
