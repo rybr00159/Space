@@ -21,13 +21,18 @@ def get(z, i, wins):
     off = z["off"]; t = z["time"][off[i]:off[i + 1]].astype(float); f = z["flux"][off[i]:off[i + 1]].astype(float)
     m = np.ones(len(t), bool)
     for a, b in wins.get(int(z["camccd"][i][0]), []): m &= ~((t > a) & (t < b))
+    # mask 0.75 d after and before every gap > 0.5 d (orbit starts/ends repeat every ~13.7 d and fake long periods)
+    g = np.where(np.diff(t) > 0.5)[0]
+    edges = [t[0]] + [t[k] for k in g] + [t[k + 1] for k in g] + [t[-1]]
+    for e in edges: m &= np.abs(t - e) > 0.75
     return detrend(t[m], f[m])
 
 
 def one(args):
     tic, t, f = args
     try:
-        b, _ = search_robust(t, f, max_mask=2, pmax=min(25.0, (t.max() - t.min()) / 2))
+        # short periods were already searched in the single-sector S105 run; the combined baseline adds 5-25 d
+        b, _ = search_robust(t, f, max_mask=2, pmin=5.0, pmax=min(25.0, (t.max() - t.min()) / 2))
         r = {k: b.get(k, np.nan) for k in KEYS}; r["tic"] = tic
         return r
     except Exception as e:

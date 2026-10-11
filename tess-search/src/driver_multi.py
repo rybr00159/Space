@@ -30,7 +30,9 @@ def main():
         d = diagnostics(t, f, r.P, r.t0, r.dur, s)
         rows.append(dict(tic=r.tic, **{f"m_{k}": v for k, v in d.items()}))
     c = c.merge(pd.DataFrame(rows), on="tic")
-    c = c[(c.m_snr_red >= 9) & (c.m_n_tr >= 3) & (c.m_max_event_frac <= 0.5) & (c.m_depth > 0)].copy()
+    # two-transit signals at 5-25 d are dominated by residual systematics (~12 % of random stars pass S/N 9),
+    # so require >= 3 transits (periods up to ~16 d) and a slightly higher S/N than the single-sector search
+    c = c[(c.m_depth > 0) & (c.m_n_tr >= 3) & (c.m_snr_red >= 10) & (c.m_max_event_frac <= 0.5)].copy()
     ks = c.apply(lambda r: known.known_signals(int(r.tic), r.P), axis=1)
     c["known_on_star"] = ks.map(lambda x: ";".join(x[0][:6])); c["known_match"] = ks.map(lambda x: ";".join(x[1][:6]))
     c["is_known"] = c.known_match.str.len() > 0; c["sector"] = "104,105"

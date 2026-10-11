@@ -111,3 +111,19 @@ Kostov+25 table 2 (unvetted NN list); SIMBAD plain star. Depths are from QLP/TES
   * Pair is a known co-moving wide binary (SUPERWIDE, Hartman & Lepine 2020, J/ApJS/247/66); not in WDS; no Gaia NSS solution.
 - Updated verdict: real, previously unreported transit-like signal on the K dwarf or an unresolved companion of it;
   planet (TP 7 %, STP 25 % in TRICERATOPS) not excluded; SEB with a faint late-M binary companion most likely.
+- TIC 101820625: 0.85 % deep, secondary 20.7 sigma, Rp 24 Re -> EB (possibly on a neighbour: 17-22" offsets at ~2.5 sigma)
+- TIC 100566758: Rp 11.7 Re, secondary 5.6 sigma, VSX RS CVn variable -> EB / active binary, not a planet
+
+### Sector 104 planet-track survivors (all rejected so far)
+- TIC 371800580, 218560701: M giants at 2.6-3.1 kpc (Teff ~3250 K, no TIC radius) -> not planet hosts of interest
+- TIC 65096543: offsets 16" at 3.1-3.6 sigma in two sectors -> blend (crowded field with several VSX EBs)
+- TIC 200133198: depth varies 306-581 ppm, 15.7" offset (2 sigma), Gaia/VSX EB 31" away -> likely contaminated
+- TIC 123507075: duration too long for the star (rho_fit 0.06 vs 1.41), anti-secondary, variable -> not a transit on target
+- TIC 218690437: Rp 28 Re, b 1.14, secondary 5.5 sigma -> grazing EB
+
+## EB curation (eb_select.py + visual review of fold plots)
+- 123 EB analyses -> 35 pass cuts (>= 2 sectors, on target <= 2.5 sigma, primary >= 0.5 %, coherent ephemeris, no catalogue)
+- Visual review removed 5 (pure sinusoids = rotation/pulsation: TIC 237329004, 166225041, 60829240, 422003560; inconsistent fold: 387291911)
+- Period fixes: TIC 100666720 (M dwarf, alternating 6.4 % / 5.0 % eclipses in every sector) P = 7.3411 d, not 3.67;
+  TIC 49617965 four equal ~4 % eclipses per 15.06 d -> P = 7.5304 d (equal eclipses; 3.7652 d spacing)
+- => 30 newly characterised EBs (to be finalised after Sector 104 completes)
