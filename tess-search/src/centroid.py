@@ -28,7 +28,12 @@ def cutout(ra, dec, sector, size=15):
                 time.sleep(5 * 2 ** a)
         else:
             return None
-    return fits.open(path)
+    # read fully into memory and delete the file unless asked to keep it (cutouts are 20-40 MB each and filled the disk)
+    hd = fits.open(path, memmap=False); hd.readall()
+    if not os.environ.get("KEEP_TESSCUT"):
+        try: os.remove(path)
+        except OSError: pass
+    return hd
 
 
 def diff_image(hdul, P, t0, dur):

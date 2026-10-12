@@ -24,7 +24,7 @@ def novelty(r):
 
 if __name__ == "__main__":
     for sector in sys.argv[1:]:
-        s = f"s{int(sector):04d}"
+        s = "multi" if sector == "multi" else f"s{int(sector):04d}"
         f = f"{W}/results/new_{s}.csv"
         if not os.path.exists(f): continue
         c = pd.read_csv(f); c = c[(c.track == "eb") & ~c.viz_known]
@@ -38,5 +38,5 @@ if __name__ == "__main__":
         print(f"{s}: {len(c)} uncatalogued-by-period EB candidates; {len(nov)} pass broad novelty")
         for t in nov.tic:
             if not os.path.exists(f"{W}/vet/EB_TIC{int(t)}/eb.json"):
-                subprocess.run([f"{W}/venv/bin/python", "eb_analysis.py", str(int(t)), str(int(sector))], cwd=f"{W}/src",
+                subprocess.run([f"{W}/venv/bin/python", "eb_analysis.py", str(int(t)), sector], cwd=f"{W}/src",
                                capture_output=True, timeout=1800)

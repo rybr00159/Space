@@ -162,8 +162,9 @@ def analyse(tic, P, t0, dur, star, outdir):
 
 
 if __name__ == "__main__":
-    tic = int(sys.argv[1]); sector = int(sys.argv[2])
-    c = pd.read_csv(f"{W}/results/new_s{sector:04d}.csv"); r = c[c.tic == tic].iloc[0].to_dict()
+    tic = int(sys.argv[1]); tag = sys.argv[2]  # a sector number, or "multi" for the combined S104+S105 search
+    src = f"{W}/results/new_multi.csv" if tag == "multi" else f"{W}/results/new_s{int(tag):04d}.csv"
+    c = pd.read_csv(src); r = c[c.tic == tic].iloc[0].to_dict()
     star = {k: (float(r[k]) if pd.notna(r[k]) else None) for k in ("Tmag", "Teff", "rad", "mass", "d", "ra", "dec", "contratio")}
     res = analyse(tic, r["P"], r["t0"], r["dur"], star, f"{W}/vet/EB_TIC{tic}")
     print(json.dumps({k: res.get(k) for k in ("P", "dur_h", "depth_prim", "depth_sec", "phase_sec", "sec_sig", "alt_depths", "known_signals", "vizier_variability_15", "simbad_30", "localisation")}, indent=1, default=str))

@@ -130,7 +130,12 @@ lists, or any variable-star catalogue.
   Alternate dips match and there is no secondary eclipse.
 - **Location:** on target in Sector 104, but 20″ off target (2.8σ) in Sector 66.
 - **Blend risk:** faint Gaia stars 5–6″ away could mimic the dip if they are eclipsing binaries.
-- **Status:** TRI_PLACEHOLDER. Needs ground-based photometry that can separate the neighbours.
+- **TRICERATOPS:** false-positive probability 0.19, with a planet on the target the most likely scenario (54 %).
+  That formally counts as a "likely planet" by TRICERATOPS's own criteria.
+- **But a directional pixel test points elsewhere.** In Sectors 39 and 66 the dip falls about 21″ south-east of the
+  target, on a G = 15.3 star 16.6″ away that would need only a ~2 % eclipse to produce the whole signal.
+  Sector 104 prefers the target, but overall the neighbour fits better (χ² 12.6 vs 19.6 for 6 degrees of freedom).
+- **Verdict:** most likely an eclipsing binary on that neighbour. Ground photometry separating the 16.6″ star would settle it.
 
 Most other planet-like signals were ruled out. They were blends located 15–45″ off target, eclipsing binaries
 (secondary eclipses, unequal alternate dips), δ Scuti pulsation troughs, rotational variables, distant giants, or

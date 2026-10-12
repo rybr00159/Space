@@ -17,7 +17,8 @@ for k in np.unique(idx):
     s = idx == k
     if s.sum() >= 3: tb.append(time_d[s].mean()); fb.append(flux[s].mean()); eb.append(ferr[s].mean() / np.sqrt(s.sum()))
 tb, fb, eb = map(np.array, (tb, fb, eb))
-target = tr.target(ID=tic, sectors=sectors, search_radius=10)
+import os as _os
+target = tr.target(ID=tic, sectors=sectors, search_radius=int(_os.environ.get("TRI_RADIUS", 10)))
 import os
 if os.environ.get("TRI_MASS"):  # fill missing TIC stellar parameters for the target (row 0)
     target.stars.loc[0, "mass"] = float(os.environ["TRI_MASS"])

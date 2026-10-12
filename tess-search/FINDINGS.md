@@ -36,6 +36,7 @@ SuperWASP (Thiemann+21), Gao+25 TESS periodic variables, IJspeert+24, WISE varia
 
 ### TIC 146284379 = CD-33 815 — shallow EB (nature unclear: grazing or blended)
 - P = 3.85379 d, primary 0.54 %, secondary 0.13 % at phase 0.500; sectors 3, 30, 97, 104
+- Not in the final table: eclipse timing is incoherent (rms 92 min) because the 0.5 % eclipses are too shallow to time well
 
 ## Rejected / known (examples)
 - TIC 281639741 (CD-55 151): Gaia DR3 SB2 orbit -> known binary
@@ -125,5 +126,43 @@ Kostov+25 table 2 (unvetted NN list); SIMBAD plain star. Depths are from QLP/TES
 - 123 EB analyses -> 35 pass cuts (>= 2 sectors, on target <= 2.5 sigma, primary >= 0.5 %, coherent ephemeris, no catalogue)
 - Visual review removed 5 (pure sinusoids = rotation/pulsation: TIC 237329004, 166225041, 60829240, 422003560; inconsistent fold: 387291911)
 - Period fixes: TIC 100666720 (M dwarf, alternating 6.4 % / 5.0 % eclipses in every sector) P = 7.3411 d, not 3.67;
-  TIC 49617965 four equal ~4 % eclipses per 15.06 d -> P = 7.5304 d (equal eclipses; 3.7652 d spacing)
-- => 30 newly characterised EBs (to be finalised after Sector 104 completes)
+  TIC 49617965: P = 3.765198 d (primary 3.7 %, secondary 0.22 % at phase 0.5; BLS first found 4x the period)
+- => 30 newly characterised EBs (first batch)
+- Second batch, after the Sector 104 EB triage finished (193 analyses -> 52 pass cuts, 22 new):
+  - Visual review removed 5 more: TIC 351349985, 206360252, 119045231 (sinusoids; BLS locked onto a harmonic of a
+    rotational or pulsating variable) and TIC 314437829, 219931386 (low-amplitude double waves with no distinct eclipse:
+    W UMa or ellipsoidal or two-spot rotation cannot be told apart, so not claimed)
+  - TIC 406279367: odd eclipses shallower than even ones in all 8 sectors (by 0.25-0.33 %, ~7 sigma combined) and
+    nothing at phase 0.5 of the search period (< 0.01 %) -> orbit is 2 x 1.562732 = 3.125464 d with near-equal eclipses
+  - TIC 6598941 (TYC 8382-1377-1): flat-bottomed 1.7 % eclipse, P = 2.1196 d, on a 1.86 R_sun F star (TIC) -> companion
+    ~0.25 R_sun (~2.4 R_Jup), too large for a planet; secondary 0.08 % at phase ~0.5 in all 4 sectors, far deeper than a
+    hot Jupiter's dayside would give (~0.02 %) -> low-mass star (EBLM-like)
+  - TIC 63594264: eclipse depth 4.3 % in S13/S39 but 2.9 % in S104 (secondary scales with it) -> dilution differs between
+    sectors; centroid within 1.9 sigma. Kept with a caveat
+  - => 17 added, 47 in total
+
+### TIC 245976814 (F/G star, T=11.6, crowded bulge-direction field) — new transit-like signal; most likely a blend
+- P = 0.5070757 d, 1.1-1.5 ppt consistent in S39, S66, S93, S104 (2021-2026); odd/even 0.7 sigma, secondary 0.2 sigma;
+  rho_fit 0.66 vs ~0.52 expected; not a TOI/CTOI/TCE, not in Kostov+25, no SIMBAD entry
+- TRICERATOPS (M=1.12, R=1.29, plx=2.87 supplied): FPP 0.19, NFPP 0.0; TP 0.54, BEBx2P 0.17, DTP 0.15, PTP 0.12
+  (formally "likely planet" by Giacalone+21 criteria, FPP < 0.5 and NFPP < 1e-3)
+- BUT directional difference-image test (epoch-corrected positions, on-sky offsets): S39 and S66 both put the flux loss
+  ~21" to the south-east (+13.9/-16.3" and +13.5/-15.1"), matching a G=15.3 Gaia star 16.6" away (needs only ~2.3 %
+  eclipses): chi2 on-target 13.7 and 4.9 vs 2.2 and 1.6 for that star; S104 prefers the target (0.9 vs 8.8).
+  Total (6 dof): target 19.6, neighbour 12.6. ~20 faint Gaia stars (G 19-20.4) also lie within 8".
+- Verdict: real, previously unreported periodic signal, but most likely an eclipsing binary on the G=15.3 neighbour;
+  not claimed as a planet. Seeing-limited ground photometry separating the 16.6" star would settle it.
+
+### Sector 104 recurrence survivors not covered above (40 with p_comb < 1e-3; found in the final bookkeeping pass)
+The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivors:
+- Distant giants (Gaia radius_gspphot 113-278 R_sun, or 3-6.5 kpc away, where T = 10-12 means absolute magnitude
+  -1 to -3, i.e. a giant), so a periodic dip cannot be a planet transit on them: TIC 382930116, 60304199, 23594093, 326418285, 121581606, 217175116,
+  332194501, 57250866, 348041216, 348168019, 213895533, 56614513, 332189784, 469404629, 61797685
+- TIC 201598744 (G star, 0.99 %): secondary 489 ppm at 9 sigma, b = 0.91, Rp >= 1.75 R_Jup -> grazing EB
+- TIC 339451799 (G dwarf, 3.0 %): odd/even 5.2 sigma, fitted density 35x the star's -> EB
+- TIC 234511777 (M0 dwarf at 129 pc, Gaia RUWE 8.5; 0.65 %): odd/even 14.8 sigma, strongly variable -> EB at 2 x 0.96462 d
+- TIC 367745648: 27" offset at 8.5 sigma in S103, depth varies 7x between sectors -> blend
+- TIC 263447699 (TIC giant, Gaia RUWE 22.5): odd/even 3.8 sigma, fitted density 0.05 solar -> EB or giant
+- TIC 97012825: 32" offset at 9.1 sigma (S103) and 24" at 5.2 sigma (S93); TIC contamination ratio 1.4 -> blend
+- TIC 1542186739 (Gaia G = 11.06 at ~830 pc, so M_G ~ 1.5: evolved): grazing fit (b = 1.17), depth differs 2.4x between
+  sectors, and a 0.75 d orbit would graze the surface of a ~3 R_sun star -> not a planet
