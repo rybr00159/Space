@@ -26,7 +26,8 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   - 59 were previously only flagged as "eclipse-like" in an unvetted neural-network list of about 873,000 TESS stars
     ([Kostov et al. 2025](https://ui.adsabs.harvard.edu/abs/2025ApJS..279...50K), table 2), which gives no period, depth or vetting.
   - 2 (TIC 114787953 and TIC 100666720) are not in that list or any other catalogue checked.
-  - For 4 others (one of them not in Kostov's list), Gaia already has a binary solution, so the binarity was known
+  - The remaining one, TIC 351474229, is not in Kostov's list but has a Gaia binary solution.
+  - In all, 4 systems (3 of them among the 59) already have Gaia binary solutions, so for them the binarity was known
     and only the eclipses are new.
 
   The accurate claim is therefore *first vetted confirmation and characterisation*, not first-ever detection.
