@@ -3,6 +3,17 @@
 An independent search of public NASA TESS data, run by Claude Code in October 2026, inspired by the
 [TIC 4206066 Reddit post](../tic4206066/). The goal was to find a planet or star nobody had reported.
 
+> **Status update (2026-10-12): TIC 87055304 is under re-examination and should not be treated as a planet candidate.**
+> A deeper pixel-level analysis shows that the transit signal most likely comes from the star 8.9″ away
+> (TIC 87055315, about 1.8 mag fainter), not from TIC 87055304. Evidence:
+> - two-source fits to the difference images in all five sectors;
+> - per-pixel depth maps;
+> - injection tests run end to end on the real pixel data.
+>
+> The earlier statement below that this neighbour is "excluded at more than 6σ" came from a quick centroid method that
+> could not separate two stars 0.43 pixels apart; it is wrong. An independent confirmation with separate code and
+> simultaneous PSF photometry is in progress. The text below is kept unchanged until that finishes.
+
 ## Results
 
 - **158,263 stars searched.** These were dwarf and subgiant stars in TESS Sectors 104 and 105, observed April to June
