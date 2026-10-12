@@ -11,7 +11,8 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
 - **The search found real signals.** 528 of its candidates matched planets, TOIs, pipeline alerts or eclipsing binaries
   that were already known.
 - **One new, uncatalogued planet candidate: TIC 87055304** (TYC 7912-71-1). It is a giant-planet-sized transit every
-  4.136 days around an evolved F/G star, and it passed every test available from TESS and Gaia data. TRICERATOPS rates
+  4.136 days around an evolved F/G star, and it passed every test available from TESS and Gaia data. The transiting
+  body could be a giant planet, a brown dwarf, or a blended eclipsing binary. TRICERATOPS rates
   it a "likely planet" (false-positive probability 0.037). It is not validated: radial velocities are needed to
   measure the companion's mass. See [below](#new-planet-candidate-tic-87055304).
 - **No new planet could be validated.** 168 planet-like signals were tested for recurrence in every other TESS sector
@@ -40,7 +41,7 @@ catalogue on VizieR or SIMBAD. It is not validated.
 |---|---|
 | Period | 4.136195 ± 0.000007 d |
 | Mid-transit | BTJD 1658.4133 ± 0.0027 (next windows predictable to ±8 min) |
-| Depth | 3,580 ± 120 ppm, flat-bottomed (≈ 5,400 ppm after removing light from neighbours) |
+| Depth | 3,600–4,200 ppm, flat-bottomed, in the four sectors with the same QLP aperture; 2,900 ppm in Sector 104, which used a smaller one. Neighbours add ~50 % more light, so the undiluted depth is roughly 5,500 ppm |
 | Sectors | 13, 39, 66, 93, 104 (2019–2026) |
 | Geometry | b = 0.85 ± 0.04, a/R★ = 4.3 ± 0.4, so the host has 0.06 times the Sun's density: an evolved subgiant |
 | Companion size | 1.2–1.4 R_Jup if the star is 1.8 R☉ (TIC); 1.8–2.2 R_Jup if it is 2.7 R☉ (transit density) |
@@ -51,6 +52,8 @@ catalogue on VizieR or SIMBAD. It is not validated.
   - No ellipsoidal or beaming signal above the ~200 ppm noise floor.
   - The difference images put the source on the target (1–2″, 0.3σ) and exclude the only bright neighbour
     (T = 13.5, 9″) at more than 6σ.
+  - Two faint stars 4–5″ away (T ≈ 17.8) are too close for the pixel test to exclude. Either would need an 81–91 %
+    eclipse to cause the signal, which is unlikely but possible.
 - **Gaia radial velocities:** constant over 6 epochs (p = 0.93). That disfavours a companion of more than about 50
   Jupiter masses orbiting this star; a 1 M_Jup planet would give only ~106 m/s.
 - **TRICERATOPS:** false-positive probability 0.037 and nearby-false-positive probability below 10⁻⁴, with a
@@ -58,6 +61,7 @@ catalogue on VizieR or SIMBAD. It is not validated.
   NFPP < 0.05), but short of validation (FPP < 0.015).
 - **Risks:**
   - Gaia RUWE is 18.8, so the star has an unresolved companion that could itself host an eclipsing binary.
+  - The sector-to-sector depth spread is larger than the noise, which could come from apertures, dilution or a blend.
   - The host's radius is uncertain (1.2–3.5 R☉ depending on the method), so the companion could be larger than any
     known planet.
 
@@ -139,7 +143,7 @@ in [`candidates/final_figs/`](candidates/final_figs/).
 | 179677500 | TYC 7000-227-1 | 10.82 | 7.911417 | 11.1 % | 3.31 % (0.568) | 5 | detached | eccentric |
 | 327599302 | - | 11.77 | 5.020329 | 10.8 % | 2.83 % (0.500) | 10 | detached | Gaia RV amplitude 142 km/s |
 | 404124262 | UCAC2  10760330 | 11.45 | 7.59867 | 10.8 % | 0.83 % (0.505) | 5 | detached | flat-bottomed (total) primary eclipse; cool companion (secondary 8 % of primary); found by the combined two-sector search |
-| 80453626 | UCAC4 227-000753 | 11.75 | 3.337312 | 10.2 % | 5.72 % (0.500) | 7 | detached | found by the combined two-sector search |
+| 80453626 | UCAC4 227-000753 | 11.75 | 3.337312 | 10.2 % | 5.72 % (0.500) | 7 | detached | found by the combined two-sector search at twice its period (6.675 d; that search starts at 5 d) |
 | 304444218 | - | 11.45 | 3.241675 | 10.1 % | 2.92 % (0.500) | 4 | detached |  |
 | 218359654 | TYC 7892-1121-1 | 11.10 | 1.391544 | 9.3 % | 7.27 % (0.502) | 3 | detached | plx 0.85 mas: luminous primary (subgiant or giant?); RUWE 7.6 |
 | 406279367 | TYC 9119-1863-1 | 11.27 | 3.125464 | 7.8 % | 7.47 % (0.500) | 8 | detached | near-equal eclipses; odd and even depths differ in all 8 sectors, so the orbit is twice the search period; Gaia RV amplitude 175 km/s |
@@ -210,15 +214,13 @@ catalogue.
 
 **TIC 320686138** (G star, T = 11.8, [Fe/H] = +0.41)
 
-- **Signal:** P = 11.91415 d, about 3,700 ppm, 9 transits in 5 sectors from 2019 to 2026.
-- **Tests passed:**
-  - The dip is on target and there is no secondary eclipse.
-  - Gaia's radial velocities are constant, so the G star itself has no massive companion.
-- **Against a planet:**
-  - The 2.2-hour transit is only 0.37 times as long as a central one, so the orbit is nearly grazing.
-  - The best fit is a deeply grazing body.
-  - TRICERATOPS gives a false-positive probability of 0.98. The likely explanation is twin grazing eclipses every
-    23.8 days on an unresolved companion star.
+- **Signal:** P = 11.91415 d, about 3,700 ppm, 9 transits in 5 sectors from 2019 to 2026. The dip is on target, and
+  Gaia's radial velocities are constant.
+- **Why it is not a planet:**
+  - The 2.2-hour transit is nearly grazing.
+  - TRICERATOPS gives a false-positive probability of 0.98.
+  - An independent review pointed to the phase-0.5 panel, and a closer look found a secondary eclipse of
+    1,531 ± 155 ppm at phase 0.511, present in all 10 epochs.
 
 **TIC 158159741** looked promising (P = 1.807 d, 1.7 ppt, on target), but its transit is V-shaped and nearly grazing.
 A 3.6″ neighbour could produce it, and TRICERATOPS gives a false-positive probability of 0.89.
@@ -237,7 +239,7 @@ binaries (secondary eclipses, unequal alternate dips, grazing fits, companions l
 - **Planet-like:**
   - 4 were not recovered in any older sector.
   - 1 is an eclipsing binary at twice the period (alternate dips differ at 11σ).
-  - 1 is TIC 320686138, most likely a grazing eclipsing binary (see above).
+  - 1 is TIC 320686138, an eclipsing binary with a 0.15 % secondary eclipse (see above).
 - **Binary-like:** 53 passed the broad novelty check. 6 passed every cut and the visual review and are in the table
   above, including the two most eccentric systems.
 
@@ -254,12 +256,13 @@ binaries (secondary eclipses, unequal alternate dips, grazing fits, companions l
 | Recurrence | Every other TESS sector of the star (SPOC 2-min, TESS-SPOC or QLP), searched near the period and compared with the same search at random periods | `stage2.py` |
 | Vetting | Transit-model fit and stellar density, held-out sectors, TESScut difference imaging (including a directional test), Gaia neighbours, TRICERATOPS, ellipsoidal limits, Gaia RV/RUWE/NSS. Final depths from SAP or PDCSAP flux with a transit-masked detrend | `vet.py`, `vet_report.py`, `vet_summary.py`, `centroid.py`, `offset_test.py`, `run_tri.py` |
 | Binaries | Eclipse timing, primary and secondary depths, secondary phase, quality cuts, visual review of every fold | `eb_analysis.py`, `eb_select.py`, `eb_final.py`, `eb_merge.py`, `review_sheets.py`, `final_plots.py` |
-| Independent review | Adversarial reviews by GPT-5.5 and Gemini 3.1 Pro via OpenRouter, $0.86 total. They prompted the Kostov+25 catalogue check, the directional centroid test, better wording, and fixes to two periods and the figure set | `review.py`, [`reviews/`](reviews/) |
+| Independent review | Four adversarial reviews (GPT-5.5 three times, Gemini 3.1 Pro once) via OpenRouter, $1.30 total. They prompted the Kostov+25 catalogue check, the directional centroid test, better wording, fixes to two periods and the figure set, and the search that found TIC 320686138's secondary eclipse | `review.py`, [`reviews/`](reviews/) |
 
 ## Caveats
 
 - **Novelty is limited to what is searchable online:** VizieR, SIMBAD, MAST, ExoFOP and the NASA Exoplanet Archive.
-  A signal could still appear in a paper, survey database or observer report that none of these index.
+  A signal could still appear in a paper, survey database or observer report that none of these index. ZTF does not
+  observe below declination −30°, where all but one of the binaries lie; its VizieR catalogues were in the sweep anyway.
 - **TESS pixels are 21″ wide,** so the pixel test cannot separate stars a few arcseconds apart, and unresolved
   companions can never be excluded with TESS data alone.
 - **QLP's detrended flux underestimates long transits.** It overshoots around each transit and can cut the depth by up

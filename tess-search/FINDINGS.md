@@ -229,7 +229,7 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
 - Risks: RUWE 18.8 (unresolved companion that could host an EB); host size uncertain, so the companion could be > 2 R_Jup
 - Follow-up: RVs (a 1 M_Jup planet gives K ~ 106 m/s); high-resolution imaging
 
-### TIC 320686138 (G star, T = 11.8, [Fe/H] +0.41) — downgraded: most likely a grazing EB
+### TIC 320686138 (G star, T = 11.8, [Fe/H] +0.41) — rejected: eclipsing binary (secondary eclipse found)
 - P = 11.91415 +- 0.00003 d, ~3,700 ppm (SAP/PDCSAP), 2.2 h, 9 transits in 5 sectors 2019-2026; on target (0.3-1.1
   sigma); no secondary (4 +- 160 ppm); odd/even ~1.3 sigma after allowing for the excess per-transit scatter
 - The duration is 0.37x that of a central transit, so the orbit is near-grazing. The free fit prefers Rp/R* 0.34 with
@@ -237,3 +237,7 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
 - Gaia RV constant over 12 epochs (p = 0.77): no massive companion around the G star itself
 - TRICERATOPS (clean light curve): FPP 0.98 (SEBx2P 0.86, EBx2P 0.10, TP 0.007) -> most likely two near-equal grazing
   eclipses at 23.8 d on an unresolved companion; not a planet candidate worth claiming
+- Settled by the round-4 review's prompt to inspect the phase-0.5 panel: a secondary eclipse of 1,531 +- 155 ppm at
+  phase 0.511 (3.1 h after half phase, so e cos w ~ 0.017), present in all 10 epochs from 2019 to 2026. The original
+  secondary check sat exactly at phase 0.5 with a +-0.65 h window and missed it. -> EB (primary 0.37 % is below the
+  0.5 % cut for the EB table)
