@@ -225,6 +225,11 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
 - Companion radius 0.067 R* (diluted) to 0.082 R* (undiluted): 1.2-1.4 R_Jup if R* = 1.8, 1.8-2.2 R_Jup if R* = 2.7
 - TRICERATOPS (QLP DET light curve, TIC star): FPP 0.037, NFPP < 1e-4 (TP 0.78, PTP 0.16, STP 0.04) -> "likely planet"
   by its criteria (validation needs FPP < 0.015)
+- TRICERATOPS rerun with the clean SAP light curve and R* = 2.7 R_sun (the transit density): FPP 0.52, NFPP < 1e-5
+  (TP 0.38, EB 0.31, PEB 0.18, PTP 0.08, DEB 0.03). The larger star makes the transiting body star-sized, so on-target
+  EB scenarios gain. TRICERATOPS ignores RVs; Gaia's flat RVs (6 epochs, p = 0.93) argue against an EB on this star
+  (a stellar companion at 4.1 d gives K >~ 10-20 km/s). FPP is therefore 0.04-0.52 depending on R*, and the candidate
+  is not validated
 - Not a TOI/CTOI (none within 3'), not a SPOC TCE, not in Kostov+25, Green+23 score 0, no variability catalogue
 - Risks: RUWE 18.8 (unresolved companion that could host an EB); host size uncertain, so the companion could be > 2 R_Jup
 - Follow-up: RVs (a 1 M_Jup planet gives K ~ 106 m/s); high-resolution imaging

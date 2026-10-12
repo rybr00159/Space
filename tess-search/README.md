@@ -12,9 +12,12 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   that were already known.
 - **One new, uncatalogued planet candidate: TIC 87055304** (TYC 7912-71-1). It is a giant-planet-sized transit every
   4.136 days around an evolved F/G star, and it passed every test available from TESS and Gaia data. The transiting
-  body could be a giant planet, a brown dwarf, or a blended eclipsing binary. TRICERATOPS rates
-  it a "likely planet" (false-positive probability 0.037). It is not validated: radial velocities are needed to
-  measure the companion's mass. See [below](#new-planet-candidate-tic-87055304).
+  body could be a giant planet, a brown dwarf, or an eclipsing binary.
+  - TRICERATOPS gives a false-positive probability of 0.04 with the catalogue stellar radius, but 0.52 with the larger
+    radius the transit implies.
+  - The extra false-positive probability is an eclipsing binary on the star itself, which Gaia's flat radial
+    velocities argue against.
+  - It is not validated: radial velocities are needed. See [below](#new-planet-candidate-tic-87055304).
 - **No new planet could be validated.** 168 planet-like signals were tested for recurrence in every other TESS sector
   from 2018 to 2026, and every one that recurred was vetted. Five more repeating signals are new but most likely not
   planets: TIC 155991187, 72651793, 245976814, 158159741 and 320686138.
@@ -56,9 +59,16 @@ catalogue on VizieR or SIMBAD. It is not validated.
     eclipse to cause the signal, which is unlikely but possible.
 - **Gaia radial velocities:** constant over 6 epochs (p = 0.93). That disfavours a companion of more than about 50
   Jupiter masses orbiting this star; a 1 M_Jup planet would give only ~106 m/s.
-- **TRICERATOPS:** false-positive probability 0.037 and nearby-false-positive probability below 10⁻⁴, with a
-  planet on the target the most likely scenario (78 %). That is a "likely planet" by its criteria (FPP < 0.5 and
-  NFPP < 0.05), but short of validation (FPP < 0.015).
+- **TRICERATOPS:** the result depends on the star's size.
+  - With the TIC radius (1.8 R☉) and QLP's light curve, the false-positive probability (FPP) is 0.037 and a planet is
+    the most likely scenario (78 %).
+  - With the clean SAP light curve and the 2.7 R☉ radius the transit implies, the FPP is 0.52. A planet (38 %) is
+    still the single most likely scenario, but an eclipsing binary on the star itself rises to 31 %, plus 18 % for one
+    diluted by a bound companion.
+  - TRICERATOPS does not use radial velocities. Gaia's flat ones argue against an eclipsing binary on this star: a
+    stellar companion on a 4.1-day orbit would move it by tens of km/s.
+  - Discounting those scenarios would leave mostly planet scenarios, but that is an informal argument, not a
+    validation.
 - **Risks:**
   - Gaia RUWE is 18.8, so the star has an unresolved companion that could itself host an eclipsing binary.
   - The sector-to-sector depth spread is larger than the noise, which could come from apertures, dilution or a blend.
