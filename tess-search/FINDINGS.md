@@ -308,4 +308,5 @@ Full account: tess-search/tic87055304/README.md and tic87055304/analysis/.
   - 72651793: 0.918 / 0.399
   - 158159741: 0.873 / 0.162
   - 320686138: 0.981 / 0.250
-  - 155991187 and 245976814: pending
+  - 155991187: 0.988 / 0.335
+  - 245976814: 0.844 / 0.814 (spread over many nearby stars; on-target planet 0.11)

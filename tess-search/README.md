@@ -218,7 +218,9 @@ catalogue.
 
 - **Signal:** P = 0.5070757 d, 1.1–1.5 ppt, consistent in 4 sectors from 2021 to 2026, on an F/G star (T = 11.6).
   Alternate dips match and there is no secondary eclipse.
-- **TRICERATOPS:** the earlier value (FPP 0.19) came from the buggy runner, which dropped all nearby-star scenarios. The corrected run in this crowded field is still in progress.
+- **TRICERATOPS (corrected):** false-positive probability 0.84, of which 0.81 is spread over many nearby stars in
+  this crowded field; the on-target planet scenario gets 0.11. The earlier value (0.19) came from the buggy runner,
+  which dropped all nearby-star scenarios.
 - **But a directional pixel test points elsewhere.** In Sectors 39 and 66 the dip falls about 21″ south-east of the
   target, on a G = 15.3 star 16.6″ away that would need only a ~2 % eclipse to produce the whole signal.
   Sector 104 prefers the target, but overall the neighbour fits better (χ² 12.6 vs 19.6 for 6 degrees of freedom).

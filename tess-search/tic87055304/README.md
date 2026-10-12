@@ -219,7 +219,7 @@ localisation information.
 | 87055304 | 0.037 / 0 (and 0.52 / 0) | **0.977 / 0.977** | Eclipsing binaries on nearby stars |
 | 155991187 | 0.93 / 0 | **0.988 / 0.335** | STP 0.39; SEB 0.20; NEBx2P on the 8.2″ companion 0.20 |
 | 72651793 | 0.86 / 0 | **0.918 / 0.399** | NEB on TIC 72651798 0.32; SEB 0.22 |
-| 245976814 | 0.19 / 0 | in progress (crowded field) | |
+| 245976814 | 0.19 / 0 | **0.844 / 0.814** | Spread over many nearby stars; on-target planet 0.11 |
 | 158159741 | 0.89 / 0.014 | **0.873 / 0.162** | SEBx2P 0.39 |
 | 320686138 | 0.98 / 0 | **0.981 / 0.250** | SEBx2P 0.55 (a secondary eclipse was also found directly) |
 
