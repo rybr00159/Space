@@ -196,7 +196,7 @@ in [`candidates/final_figs/`](candidates/final_figs/).
 | 115242114 | TYC 7527-529-1 | 11.52 | 3.935908 | 1.1 % | 0.17 % (0.500) | 5 | detached | RUWE 46, plx 0.16 mas (astrometry unreliable) |
 | 33445288 | TYC 6431-1534-1 | 10.99 | 0.7986 | 4.2 % | 1.85 % (0.500) | 4 | contact/ellipsoidal | eclipses on top of ellipsoidal variation; Gaia NSS solution exists (binarity known; eclipses new); Gaia RV amplitude 176 km/s |
 | 76440895 | - | 11.26 | 0.677319 | 3.0 % | 1.95 % (0.502) | 6 | contact/ellipsoidal | well-separated eclipses; grouped with close binaries only because P < 0.8 d; RUWE 11.5 |
-| 351474229 | - | 11.92 | 0.8775 | 2.8 % | 2.31 % (0.508) | 6 | contact/ellipsoidal | eclipses on top of ellipsoidal variation; Gaia NSS solution exists (binarity known; eclipses new); not in Kostov+25 table 2; Gaia RV amplitude 243 km/s |
+| 351474229 | - | 11.92 | 0.8775 | 2.3 % | 2.76 % (0.492) | 6 | contact/ellipsoidal | sharp eclipse on top of ellipsoidal variation; the broad minimum at phase 0.49 is as deep (2.8 %) because the ellipsoidal dip adds to it; Gaia NSS solution exists (binarity known; eclipses new); not in Kostov+25 table 2; Gaia RV amplitude 243 km/s |
 | 32398505 | TYC 7003-400-1 | 11.50 | 0.601493 | 2.0 % | 0.34 % (0.505) | 4 | contact/ellipsoidal |  |
 | 114787953 | TYC 7951-1401-1 | 11.74 | 0.60577 | 1.0 % | 0.67 % (0.500) | 3 | contact/ellipsoidal | not in Kostov+25 table 2 |
 | 71315603 | CD-44 14744 | 11.02 | 0.507699 | 0.6 % | 0.30 % (0.500) | 3 | contact/ellipsoidal |  |

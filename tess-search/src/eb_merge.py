@@ -31,7 +31,7 @@ NOTES = {
 # finer phase scan (0.0025 steps, wider window): secondary centred at 0.500, 570 +- 47 ppm
 # 63594264 and 33445288: the automatic search returned the primary eclipse wing; the secondaries sit at phase 0.50
 PHASE_FIX = {124358211: (0.0040, 0.503), 217228307: (0.0033, 0.487), 304770656: (0.0073, 0.489), 343895671: (0.2765, 0.501),
-             351474229: (0.0276, 0.492), 363482012: (0.0673, 0.500), 379508029: (float("nan"), float("nan")),
+             363482012: (0.0673, 0.500), 379508029: (float("nan"), float("nan")),
              217276354: (0.287, 0.526), 412733784: (0.0051, 0.517), 6598941: (0.057e-2, 0.5), 63594264: (0.6e-2, 0.5), 33445288: (1.85e-2, 0.5)}
 
 

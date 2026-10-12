@@ -265,3 +265,5 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
   Gaia NSS solution
 - TIC 218815113 (F star, 0.5 %): secondary 798 ppm at 4.3 sigma, 17" offsets at 2.6-4.0 sigma (S66, S104), neighbours
   outshine the target in the aperture (TIC contamination ratio 1.36) -> blended EB
+- TIC 351474229: the window-averaged depth of the broad ellipsoidal minimum (2.8 %) exceeds that of the sharp eclipse
+  (2.3 %), so the automatic swap in eb_merge.py put phase 0 on the wrong feature; T0 was reset by hand to the sharp eclipse
