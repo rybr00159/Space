@@ -28,7 +28,12 @@ if os.environ.get("TRI_PLX"):
     target.stars.loc[0, "plx"] = float(os.environ["TRI_PLX"])
 print(target.stars.head(5)[["ID", "Tmag", "Teff", "rad", "mass", "sep (arcsec)"]].to_string(), flush=True)
 apertures = None
-target.calc_depths(tdepth=float(1 - np.min(np.convolve(fb, np.ones(3) / 3, "same"))), all_ap_pixels=apertures)
+# transit depth in the aperture light curve. Earlier versions used np.convolve(..., "same"), whose zero-padded
+# edges gave ~0.33 regardless of the data; that made every nearby star need a >100 % eclipse, so TRICERATOPS
+# dropped all nearby false-positive scenarios (NFPP = 0). Use the 'valid' smoothing, or an explicit TRI_DEPTH.
+tdepth = float(os.environ["TRI_DEPTH"]) if os.environ.get("TRI_DEPTH") else float(1 - np.min(np.convolve(fb, np.ones(3) / 3, "valid")))
+print("tdepth used:", tdepth, flush=True)
+target.calc_depths(tdepth=tdepth, all_ap_pixels=apertures)
 target.calc_probs(time=tb, flux_0=fb, flux_err_0=float(np.median(eb)), P_orb=P, parallel=False, N=200000, verbose=0)
 res = dict(FPP=float(target.FPP), NFPP=float(target.NFPP))
 df = target.probs

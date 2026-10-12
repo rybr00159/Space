@@ -13,6 +13,12 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
 > The earlier statement below that this neighbour is "excluded at more than 6σ" came from a quick centroid method that
 > could not separate two stars 0.43 pixels apart; it is wrong. An independent confirmation with separate code and
 > simultaneous PSF photometry is in progress. The text below is kept unchanged until that finishes.
+>
+> **All TRICERATOPS numbers below are also being recomputed.** A bug in our runner (`src/run_tri.py`) passed TRICERATOPS
+> a transit depth of about 33 % instead of the real ~0.1–0.5 %. With that depth, every nearby star would have needed an
+> eclipse deeper than 100 %, so all nearby-star false-positive scenarios were silently dropped, and every run reported
+> NFPP = 0. The false-positive probabilities quoted below therefore leave out nearby eclipsing binaries.
+> Corrected runs are in progress.
 
 ## Results
 
