@@ -1,0 +1,5 @@
+S13 prf nT=6: free offset from target (E,N)=(+11.46,+6.01)" boot sd=(7.34,1.26); s_par=1.32+-0.47; f_N=1.58+-0.61; dchi2(T-N)=84.6; amp=13.3 e/s; chi2/dof=1.85; 28s
+S39 prf nT=5: free offset from target (E,N)=(+7.11,+5.47)" boot sd=(0.44,0.73); s_par=0.95+-0.05; f_N=0.95+-0.04; dchi2(T-N)=85.0; amp=15.0 e/s; chi2/dof=0.26; 23s
+S66 prf nT=5: free offset from target (E,N)=(+6.77,+4.36)" boot sd=(1.33,0.86); s_par=0.84+-0.16; f_N=0.82+-0.16; dchi2(T-N)=67.1; amp=14.6 e/s; chi2/dof=0.73; 23s
+S93 prf nT=5: free offset from target (E,N)=(+6.70,+6.77)" boot sd=(0.92,0.70); s_par=1.01+-0.11; f_N=0.97+-0.08; dchi2(T-N)=125.5; amp=12.6 e/s; chi2/dof=0.95; 25s
+S104 prf nT=5: free offset from target (E,N)=(+4.44,+6.66)" boot sd=(0.70,0.94); s_par=0.83+-0.08; f_N=0.78+-0.10; dchi2(T-N)=64.1; amp=12.3 e/s; chi2/dof=0.47; 21s

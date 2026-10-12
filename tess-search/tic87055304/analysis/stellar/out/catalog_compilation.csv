@@ -1,0 +1,20 @@
+source,method,uses_plx,Teff,logg,feh,R,M,d_pc,ext,note
+"TIC v8.2 (Stassun+19, Paegert+21)","dereddened colour-Teff spline ('splin', 'dered'); d not from a DR2 parallax (plx field empty)",no (plx empty) / unclear,7276 (no error),-,-,1.79,-,464,-,Teff inconsistent with every other estimate; lumclass DWARF
+Gaia DR2 Apsis-Priam,BP-RP/G colours (ML),no,5768 (5392-6306),-,-,-,-,1/plx = 285 (plx 3.512+-0.735),A_G 0.059,DR2 excess noise 2.96 mas
+Gaia DR3 GSP-Phot MARCS (adopted 'best'),"XP + G + parallax likelihood, MARCS library",yes (likelihood),5696 (5687-5719),3.50,-0.52,3.49,-,998 (995-1004),A0 0.166,5.1 sigma from the DR3 parallax; MCMC intervals unrealistically narrow
+Gaia DR3 GSP-Phot PHOENIX,"same, PHOENIX library",yes,6054 (6038-6067),4.31,-0.40,1.09,-,334 (324-344),A0 0.309,lower log-posterior than MARCS (-1483 vs -1124)
+Gaia DR3 GSP-Phot A-stars library,"same, A library",yes,6058 (6039-6074),3.68,-0.37,2.80,-,843 (840-857),A0 0.390,log-posterior -2651
+Gaia DR3 FLAME,"L from G, parallax, BC; R from L + GSP-Phot Teff; M, age from tracks",yes (directly),(GSP-Phot),-,-,1.24 (1.12-1.47),0.95 (0.91-1.00),(parallax),-,"L 1.45 Lsun, age 11.2 Gyr, evolstage 380"
+Gaia DR3 MSC (two-star model),"XP + parallax, unresolved binary of two stars",yes,5391 + 5724 (very broad),4.27 / 4.50,-0.15,-,-,458 (344-575),A0 0.27,both components dwarfs
+Gaia DR3 ESP-HS / RVS template,XP spectral type; RVS template (rv_atm_param_origin 111),-,SpT F ; RVS template 5500,RVS template 3.5,RVS template -1.0,-,-,-,-,"RVS template parameters are coarse grid nodes, not an independent determination"
+Bailer-Jones+21 (EDR3),geometric / photogeometric distance prior x parallax,yes,-,-,-,-,-,rgeo 365 (328-415); rpgeo 359 (318-394),-,no RUWE-dependent inflation
+Bailer-Jones+18 (DR2),distance prior x DR2 parallax,yes,-,-,-,-,-,310 (232-467),-,
+"StarHorse 2019 (Anders+19, DR2)","Bayesian isochrone fit, photometry + DR2 parallax",yes,6188 (5831-6635),4.31 (4.05-4.49),-0.32,-,1.01 (0.87-1.24),415 (367-727),A_V 0.44,
+"StarHorse 2021 (Anders+22, EDR3)","Bayesian isochrone fit, photometry + EDR3 parallax",yes,5905 (5853-6213),4.22 (3.95-4.42),-0.31,-,0.97 (0.89-1.07),395 (288-524),A_V 0.29,fidelity 0.85
+SHBoost (Khalatyan+24),XGBoost on XP + photometry + 5p astrometry,yes (feature),5869 +- 122,4.29 +- 0.13,-0.11 +- 0.10,-,1.02 +- 0.08,(StarHorse21),A_V 0.29 +- 0.10,
+"Zhang, Green & Rix 2023","data-driven XP forward model + 2MASS/WISE, parallax as likelihood",yes (likelihood),5887 +- 63,4.28 +- 0.08,-0.40 +- 0.10,-,-,plx_post 2.888 +- 0.275 mas -> 346 pc,E 0.086 +- 0.013,XP-only parallax implied ~3.0 +- 0.4 mas if Gaia plx enters as independent Gaussian (see README)
+"Andrae, Rix & Chandra 2023 (XGBoost)",XGBoost on XP + CatWISE (+ parallax feature),yes (feature),5498,4.31,-0.15,-,-,-,-,no per-star errors
+Huson+25 (Gaia Net),neural network on XP spectra,not stated,5834 +- 67,4.19 +- 0.02,-0.28 +- 0.02,-,-,-,-,formal errors likely underestimated
+Ye+25 (FERRE fit of corrected XP spectra),synthetic-spectrum fit to XP shape,no,6073 (sys +-167),4.26 (sys +-0.40),-0.15 (sys +-0.19),-,-,-,-,parallax-independent; logg precision 0.4 dex
+Huang+22 (SkyMapper DR2 + Gaia colours),photometric Teff/[Fe/H]; dwarf/giant class,no (RUWE 18.8; distance flag 'TO'),6031 +- 67,class: dwarf,-0.27 +- 0.12,-,-,2401 +- 480 (flag TO; not meaningful),E(B-V)SFD 0.116,
+"This work: SED (CK04 + F99), 14 bands","Gaia, SkyMapper DR4, 2MASS, WISE W1/W2; jitter",no,5924 +221/-192,4.65 +0.25/-0.37,-0.43 +0.14/-0.16,0.3342 x d/100pc,-,-,A_V 0.26 +0.15/-0.14,theta = 0.0311 +- 0.0006 mas; Fbol 3.960e-10 erg/s/cm2

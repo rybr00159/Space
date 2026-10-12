@@ -1,0 +1,98 @@
+13 prf local_r2.5 dx=-0.033 dy=0.024  (dE,dN)=(-0.65,0.53)"  FT=3658 FN=396 N/T=0.108 (cat 0.190) chi2/n=0.0
+13 prf local_r3 dx=-0.028 dy=0.032  (dE,dN)=(-0.55,0.68)"  FT=3601 FN=441 N/T=0.122 (cat 0.190) chi2/n=0.1
+13 prf local_r4 dx=-0.035 dy=0.021  (dE,dN)=(-0.70,0.47)"  FT=3589 FN=466 N/T=0.130 (cat 0.190) chi2/n=0.5
+13 prf local_r5 dx=-0.040 dy=0.017  (dE,dN)=(-0.80,0.39)"  FT=3579 FN=455 N/T=0.127 (cat 0.190) chi2/n=1.0
+13 prf local_r4_ratiofix dx=-0.043 dy=0.012  (dE,dN)=(-0.86,0.28)"  FT=3445 FN=653 N/T=0.190 (cat 0.190) chi2/n=0.5
+13 prf external_2.5-8 dx=-0.088 dy=-0.014  (dE,dN)=(-1.79,-0.23)"  FT=675 FN=0 N/T=0.000 (cat 0.190) chi2/n=2.1
+13 gauss local_r2.5 dx=-0.020 dy=0.128  (dE,dN)=(-0.35,2.68)"  FT=2878 FN=0 N/T=0.000 (cat 0.190) chi2/n=1.7
+13 gauss local_r3 dx=-0.025 dy=0.131  (dE,dN)=(-0.44,2.74)"  FT=2866 FN=0 N/T=0.000 (cat 0.190) chi2/n=1.8
+13 gauss local_r4 dx=-0.070 dy=0.067  (dE,dN)=(-1.39,1.45)"  FT=2668 FN=0 N/T=0.000 (cat 0.190) chi2/n=4.0
+13 gauss local_r5 dx=-0.079 dy=0.068  (dE,dN)=(-1.58,1.47)"  FT=2651 FN=0 N/T=0.000 (cat 0.190) chi2/n=4.2
+13 gauss local_r4_ratiofix dx=-0.088 dy=0.046  (dE,dN)=(-1.77,1.03)"  FT=2418 FN=459 N/T=0.190 (cat 0.190) chi2/n=4.2
+13 gauss external_2.5-8 dx=-0.110 dy=0.007  (dE,dN)=(-2.23,0.24)"  FT=-0 FN=0 N/T=nan (cat 0.190) chi2/n=5.0
+   star 6720986204578421888 T=11.74 resid (dE,dN)=(0.15,0.01)"
+   star 6720986204578643712 T=12.97 resid (dE,dN)=(0.25,0.37)"
+   star 6720985139426682240 T=11.79 resid (dE,dN)=(-1.00,0.02)"
+   star 6721027298825509760 T=12.13 resid (dE,dN)=(0.39,-0.24)"
+   star 6720986208895208960 T=13.54 resid (dE,dN)=(0.06,-0.54)"
+   blend photocentre prf offT (E,N)=(0.73,0.70)" s_par=0.108 (catalog flux ratio predicts 0.159)
+   blend photocentre gauss offT (E,N)=(0.93,1.02)" s_par=0.147 (catalog flux ratio predicts 0.159)
+39 prf local_r2.5 dx=-0.060 dy=0.015  (dE,dN)=(-1.19,0.18)"  FT=3377 FN=713 N/T=0.211 (cat 0.190) chi2/n=0.2
+39 prf local_r3 dx=-0.057 dy=0.017  (dE,dN)=(-1.14,0.23)"  FT=3488 FN=581 N/T=0.167 (cat 0.190) chi2/n=0.3
+39 prf local_r4 dx=-0.041 dy=0.035  (dE,dN)=(-0.86,0.63)"  FT=3582 FN=547 N/T=0.153 (cat 0.190) chi2/n=0.7
+39 prf local_r5 dx=-0.031 dy=0.026  (dE,dN)=(-0.65,0.46)"  FT=3651 FN=390 N/T=0.107 (cat 0.190) chi2/n=1.4
+39 prf local_r4_ratiofix dx=-0.049 dy=0.029  (dE,dN)=(-1.01,0.49)"  FT=3478 FN=660 N/T=0.190 (cat 0.190) chi2/n=0.7
+39 prf external_2.5-8 dx=0.004 dy=0.027  (dE,dN)=(0.04,0.57)"  FT=2113 FN=0 N/T=0.000 (cat 0.190) chi2/n=3.1
+39 gauss local_r2.5 dx=0.005 dy=0.189  (dE,dN)=(-0.22,3.86)"  FT=2847 FN=0 N/T=0.000 (cat 0.190) chi2/n=3.4
+39 gauss local_r3 dx=0.016 dy=0.157  (dE,dN)=(0.04,3.22)"  FT=2938 FN=0 N/T=0.000 (cat 0.190) chi2/n=5.6
+39 gauss local_r4 dx=0.042 dy=0.157  (dE,dN)=(0.54,3.27)"  FT=2970 FN=0 N/T=0.000 (cat 0.190) chi2/n=6.9
+39 gauss local_r5 dx=0.044 dy=0.128  (dE,dN)=(0.64,2.69)"  FT=3029 FN=0 N/T=0.000 (cat 0.190) chi2/n=6.5
+39 gauss local_r4_ratiofix dx=-0.000 dy=0.107  (dE,dN)=(-0.18,2.17)"  FT=2578 FN=489 N/T=0.190 (cat 0.190) chi2/n=7.8
+39 gauss external_2.5-8 dx=0.018 dy=0.053  (dE,dN)=(0.25,1.11)"  FT=0 FN=0 N/T=nan (cat 0.190) chi2/n=9.0
+   star 6720986204578421888 T=11.74 resid (dE,dN)=(-0.21,0.03)"
+   star 6720986204578643712 T=12.97 resid (dE,dN)=(-0.11,0.21)"
+   star 6720985139426682240 T=11.79 resid (dE,dN)=(1.27,-0.64)"
+   star 6721027298825509760 T=12.13 resid (dE,dN)=(-0.51,0.33)"
+   star 6720986208895208960 T=13.54 resid (dE,dN)=(-19.03,-6.70)"
+   blend photocentre prf offT (E,N)=(0.81,0.83)" s_par=0.124 (catalog flux ratio predicts 0.159)
+   blend photocentre gauss offT (E,N)=(0.82,0.83)" s_par=0.124 (catalog flux ratio predicts 0.159)
+66 prf local_r2.5 dx=-0.043 dy=0.045  (dE,dN)=(-0.95,0.87)"  FT=3619 FN=554 N/T=0.153 (cat 0.190) chi2/n=0.1
+66 prf local_r3 dx=-0.045 dy=0.037  (dE,dN)=(-0.99,0.69)"  FT=3562 FN=589 N/T=0.165 (cat 0.190) chi2/n=0.1
+66 prf local_r4 dx=-0.031 dy=0.051  (dE,dN)=(-0.72,1.01)"  FT=3720 FN=418 N/T=0.112 (cat 0.190) chi2/n=0.5
+66 prf local_r5 dx=-0.027 dy=0.057  (dE,dN)=(-0.65,1.15)"  FT=3776 FN=343 N/T=0.091 (cat 0.190) chi2/n=1.0
+66 prf local_r4_ratiofix dx=-0.043 dy=0.038  (dE,dN)=(-0.94,0.72)"  FT=3501 FN=664 N/T=0.190 (cat 0.190) chi2/n=0.6
+66 prf external_2.5-8 dx=0.006 dy=0.058  (dE,dN)=(0.03,1.23)"  FT=-0 FN=0 N/T=nan (cat 0.190) chi2/n=3.0
+66 gauss local_r2.5 dx=-0.038 dy=0.032  (dE,dN)=(-0.84,0.62)"  FT=2850 FN=-0 N/T=-0.000 (cat 0.190) chi2/n=1.7
+66 gauss local_r3 dx=-0.048 dy=0.035  (dE,dN)=(-1.04,0.65)"  FT=2841 FN=0 N/T=0.000 (cat 0.190) chi2/n=2.5
+66 gauss local_r4 dx=-0.076 dy=0.098  (dE,dN)=(-1.72,1.93)"  FT=2738 FN=0 N/T=0.000 (cat 0.190) chi2/n=6.0
+66 gauss local_r5 dx=-0.073 dy=0.098  (dE,dN)=(-1.66,1.93)"  FT=2758 FN=0 N/T=0.000 (cat 0.190) chi2/n=6.2
+66 gauss local_r4_ratiofix dx=-0.098 dy=0.062  (dE,dN)=(-2.13,1.14)"  FT=2388 FN=453 N/T=0.190 (cat 0.190) chi2/n=7.7
+66 gauss external_2.5-8 dx=-0.028 dy=0.083  (dE,dN)=(-0.72,1.69)"  FT=0 FN=86817 N/T=nan (cat 0.190) chi2/n=6.4
+   star 6720986204578421888 T=11.74 resid (dE,dN)=(-0.15,0.00)"
+   star 6720986204578643712 T=12.97 resid (dE,dN)=(-0.19,-0.05)"
+   star 6720985139426682240 T=11.79 resid (dE,dN)=(1.18,-0.53)"
+   star 6720985349901722880 T=12.38 resid (dE,dN)=(-0.00,-0.51)"
+   star 6721027298825509760 T=12.13 resid (dE,dN)=(-0.26,0.16)"
+   star 6720986208895208960 T=13.54 resid (dE,dN)=(4.43,4.55)"
+   blend photocentre prf offT (E,N)=(0.63,0.66)" s_par=0.096 (catalog flux ratio predicts 0.159)
+   blend photocentre gauss offT (E,N)=(0.84,0.69)" s_par=0.115 (catalog flux ratio predicts 0.159)
+93 prf local_r2.5 dx=-0.025 dy=0.007  (dE,dN)=(-0.53,0.11)"  FT=3485 FN=0 N/T=0.000 (cat 0.190) chi2/n=0.0
+93 prf local_r3 dx=-0.037 dy=0.046  (dE,dN)=(-0.83,0.90)"  FT=3596 FN=527 N/T=0.147 (cat 0.190) chi2/n=0.2
+93 prf local_r4 dx=-0.022 dy=0.036  (dE,dN)=(-0.52,0.73)"  FT=3683 FN=99 N/T=0.027 (cat 0.190) chi2/n=0.6
+93 prf local_r5 dx=-0.026 dy=0.051  (dE,dN)=(-0.62,1.02)"  FT=3693 FN=379 N/T=0.103 (cat 0.190) chi2/n=0.9
+93 prf local_r4_ratiofix dx=-0.039 dy=0.037  (dE,dN)=(-0.87,0.72)"  FT=3491 FN=662 N/T=0.190 (cat 0.190) chi2/n=0.7
+93 prf external_2.5-8 dx=0.004 dy=0.045  (dE,dN)=(0.02,0.94)"  FT=0 FN=0 N/T=nan (cat 0.190) chi2/n=2.5
+93 gauss local_r2.5 dx=0.036 dy=0.103  (dE,dN)=(0.59,2.22)"  FT=3026 FN=0 N/T=0.000 (cat 0.190) chi2/n=0.3
+93 gauss local_r3 dx=0.027 dy=0.100  (dE,dN)=(0.40,2.14)"  FT=3027 FN=0 N/T=0.000 (cat 0.190) chi2/n=1.6
+93 gauss local_r4 dx=0.012 dy=0.084  (dE,dN)=(0.12,1.78)"  FT=2978 FN=0 N/T=0.000 (cat 0.190) chi2/n=4.6
+93 gauss local_r5 dx=0.004 dy=0.098  (dE,dN)=(-0.07,2.06)"  FT=2997 FN=27 N/T=0.009 (cat 0.190) chi2/n=4.3
+93 gauss local_r4_ratiofix dx=-0.010 dy=0.059  (dE,dN)=(-0.30,1.21)"  FT=2658 FN=504 N/T=0.190 (cat 0.190) chi2/n=5.0
+93 gauss external_2.5-8 dx=-0.011 dy=0.049  (dE,dN)=(-0.30,1.01)"  FT=0 FN=5053 N/T=nan (cat 0.190) chi2/n=6.1
+   star 6720986204578421888 T=11.74 resid (dE,dN)=(-0.21,0.02)"
+   star 6720986204578643712 T=12.97 resid (dE,dN)=(-0.07,-0.16)"
+   star 6720985139426682240 T=11.79 resid (dE,dN)=(1.02,0.16)"
+   star 6720985349901722880 T=12.38 resid (dE,dN)=(0.43,-0.34)"
+   star 6721027298825509760 T=12.13 resid (dE,dN)=(-0.17,-0.19)"
+   star 6720986208895208960 T=13.54 resid (dE,dN)=(-19.87,-13.77)"
+   blend photocentre prf offT (E,N)=(0.09,0.14)" s_par=0.017 (catalog flux ratio predicts 0.159)
+   blend photocentre gauss offT (E,N)=(0.95,0.98)" s_par=0.144 (catalog flux ratio predicts 0.159)
+104 prf local_r2.5 dx=-0.024 dy=0.110  (dE,dN)=(2.02,-1.24)"  FT=3805 FN=-0 N/T=-0.000 (cat 0.190) chi2/n=0.0
+104 prf local_r3 dx=0.032 dy=0.108  (dE,dN)=(1.18,-2.05)"  FT=3483 FN=646 N/T=0.185 (cat 0.190) chi2/n=0.3
+104 prf local_r4 dx=0.037 dy=0.113  (dE,dN)=(1.17,-2.19)"  FT=3488 FN=627 N/T=0.180 (cat 0.190) chi2/n=1.1
+104 prf local_r5 dx=0.034 dy=0.110  (dE,dN)=(1.18,-2.10)"  FT=3493 FN=631 N/T=0.181 (cat 0.190) chi2/n=1.5
+104 prf local_r4_ratiofix dx=0.039 dy=0.112  (dE,dN)=(1.13,-2.20)"  FT=3473 FN=659 N/T=0.190 (cat 0.190) chi2/n=1.1
+104 prf external_2.5-8 dx=0.016 dy=0.104  (dE,dN)=(1.35,-1.74)"  FT=0 FN=99 N/T=nan (cat 0.190) chi2/n=2.2
+104 gauss local_r2.5 dx=-0.013 dy=0.113  (dE,dN)=(1.90,-1.43)"  FT=2673 FN=0 N/T=0.000 (cat 0.190) chi2/n=0.0
+104 gauss local_r3 dx=-0.033 dy=0.095  (dE,dN)=(1.93,-0.87)"  FT=2666 FN=114 N/T=0.043 (cat 0.190) chi2/n=1.3
+104 gauss local_r4 dx=-0.032 dy=0.072  (dE,dN)=(1.55,-0.56)"  FT=2736 FN=0 N/T=0.000 (cat 0.190) chi2/n=3.7
+104 gauss local_r5 dx=-0.027 dy=0.065  (dE,dN)=(1.38,-0.54)"  FT=2729 FN=0 N/T=0.000 (cat 0.190) chi2/n=5.0
+104 gauss local_r4_ratiofix dx=-0.010 dy=0.068  (dE,dN)=(1.18,-0.84)"  FT=2549 FN=483 N/T=0.190 (cat 0.190) chi2/n=3.9
+104 gauss external_2.5-8 dx=-0.002 dy=0.089  (dE,dN)=(1.38,-1.25)"  FT=42582 FN=90707 N/T=2.130 (cat 0.190) chi2/n=7.5
+   star 6720986204578421888 T=11.74 resid (dE,dN)=(-0.02,-0.02)"
+   star 6720986204578643712 T=12.97 resid (dE,dN)=(-0.29,-0.61)"
+   star 6720985139426682240 T=11.79 resid (dE,dN)=(-0.45,1.12)"
+   star 6720985624779482752 T=12.37 resid (dE,dN)=(-0.39,0.17)"
+   star 6721027298825509760 T=12.13 resid (dE,dN)=(0.21,-0.34)"
+   star 6720986208895208960 T=13.54 resid (dE,dN)=(0.13,-0.09)"
+   blend photocentre prf offT (E,N)=(1.15,1.18)" s_par=0.174 (catalog flux ratio predicts 0.159)
+   blend photocentre gauss offT (E,N)=(1.13,0.98)" s_par=0.158 (catalog flux ratio predicts 0.159)

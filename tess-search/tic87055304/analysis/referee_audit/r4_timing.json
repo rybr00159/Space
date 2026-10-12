@@ -1,0 +1,350 @@
+{
+ "13": {
+  "tesscut_time_keys": {
+   "TIMEREF": "SOLARSYSTEM",
+   "TASSIGN": "SPACECRAFT",
+   "TIMESYS": "TDB",
+   "BJDREFI": 2457000,
+   "BJDREFF": 0.0,
+   "TIMEUNIT": "d"
+  },
+  "tesscut_minus_qlp_nearest_s": {
+   "median": -11.42074936433346,
+   "mad": 2.3572849608171964
+  },
+  "pair_aperture_dt0_d": -0.0029999999999999957,
+  "pair_aperture_dt0_err_d": 0.002999999999999999,
+  "pair_aperture_depth_ppt": 2.8254243223715134,
+  "n_transits_used": 6,
+  "ephemeris_sigma_d": 0.0027000362960523327,
+  "depth_vs_shift": {
+   "shift_d": [
+    -0.4,
+    -0.35,
+    -0.3,
+    -0.25,
+    -0.2,
+    -0.15,
+    -0.1,
+    -0.05,
+    -0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+   ],
+   "depth_ppt": [
+    -0.3266200104815131,
+    -0.8004489631242351,
+    -1.363469473810093,
+    -1.325006780298313,
+    -1.012013321433877,
+    -0.5364921428947231,
+    0.8421754009836827,
+    1.9776502694940123,
+    2.8208504149004043,
+    1.993692082402876,
+    0.6945701769705933,
+    -0.4713914812172884,
+    -0.7191130257926754,
+    -0.6446260322675176,
+    -0.6282491897977239,
+    -0.33608329198814824,
+    -0.20301775087232585
+   ]
+  },
+  "flag_frac_in_transit": 0.14285714285714285,
+  "flag_frac_near_oot": 0.125,
+  "flag_frac_all": 0.15757575757575756,
+  "flag_bits_in_transit_counts": {
+   "2048": 9
+  },
+  "n_in_transit_cadences": 63,
+  "centroidpy_oot_frac_inside_true_transit": 0.0,
+  "centroidpy_oot_frac_inside_transit_T14_0.21": 0.08333333333333333,
+  "centroidpy_vs_context_ephemeris_offset_min": -2.4056989356904523
+ },
+ "39": {
+  "tesscut_time_keys": {
+   "TIMEREF": "SOLARSYSTEM",
+   "TASSIGN": "SPACECRAFT",
+   "TIMESYS": "TDB",
+   "BJDREFI": 2457000,
+   "BJDREFF": 0.0,
+   "TIMEUNIT": "d"
+  },
+  "tesscut_minus_qlp_nearest_s": {
+   "median": -5.447450563951861,
+   "mad": 5.993133402080275
+  },
+  "pair_aperture_dt0_d": 0.0020000000000000018,
+  "pair_aperture_dt0_err_d": 0.0022499999999999985,
+  "pair_aperture_depth_ppt": 2.9369967855124197,
+  "n_transits_used": 5,
+  "ephemeris_sigma_d": 0.002962013504358142,
+  "depth_vs_shift": {
+   "shift_d": [
+    -0.4,
+    -0.35,
+    -0.3,
+    -0.25,
+    -0.2,
+    -0.15,
+    -0.1,
+    -0.05,
+    -0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+   ],
+   "depth_ppt": [
+    -0.35749740123952056,
+    -0.6860251135713641,
+    -1.0383685772204525,
+    -1.0494695621579015,
+    -0.9394828580273473,
+    -0.43683932047790536,
+    0.8277236603913706,
+    2.1576235960408563,
+    2.934760598953725,
+    2.2627532339743346,
+    0.9503792224086618,
+    -0.2951165076458221,
+    -0.6474133711816031,
+    -0.6947804511777439,
+    -0.7025467517042103,
+    -0.6329036428512934,
+    -0.4190580933022846
+   ]
+  },
+  "flag_frac_in_transit": 0.1728395061728395,
+  "flag_frac_near_oot": 0.20198675496688742,
+  "flag_frac_all": 0.22892498066511988,
+  "flag_bits_in_transit_counts": {
+   "128": 1,
+   "2048": 27
+  },
+  "n_in_transit_cadences": 162,
+  "centroidpy_oot_frac_inside_true_transit": 0.011111111111111112,
+  "centroidpy_oot_frac_inside_transit_T14_0.21": 0.08888888888888889,
+  "centroidpy_vs_context_ephemeris_offset_min": -3.630791313626105
+ },
+ "66": {
+  "tesscut_time_keys": {
+   "TIMEREF": "SOLARSYSTEM",
+   "TASSIGN": "SPACECRAFT",
+   "TIMESYS": "TDB",
+   "BJDREFI": 2457000,
+   "BJDREFF": 0.0,
+   "TIMEUNIT": "d"
+  },
+  "tesscut_minus_qlp_nearest_s": {
+   "median": -19.10200936763431,
+   "mad": 0.1230455789482221
+  },
+  "pair_aperture_dt0_d": 0.004500000000000004,
+  "pair_aperture_dt0_err_d": 0.0020000000000000018,
+  "pair_aperture_depth_ppt": 2.895437875360207,
+  "n_transits_used": 5,
+  "ephemeris_sigma_d": 0.00365059570481312,
+  "depth_vs_shift": {
+   "shift_d": [
+    -0.4,
+    -0.35,
+    -0.3,
+    -0.25,
+    -0.2,
+    -0.15,
+    -0.1,
+    -0.05,
+    -0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+   ],
+   "depth_ppt": [
+    -0.3504003476163879,
+    -0.8013933766022959,
+    -1.2774753213340888,
+    -1.3458980989598037,
+    -1.2148019415169016,
+    -0.6610350483228452,
+    0.671734118014982,
+    1.9748393152460797,
+    2.8872732788001794,
+    2.2161246397403707,
+    0.9185084270008959,
+    -0.32001821517262696,
+    -0.7951232306840805,
+    -0.7938920188029195,
+    -0.7414891427509096,
+    -0.22293046663687713,
+    0.15020160811017455
+   ]
+  },
+  "flag_frac_in_transit": 0.15696649029982362,
+  "flag_frac_near_oot": 0.18970047293746717,
+  "flag_frac_all": 0.28377488892545666,
+  "flag_bits_in_transit_counts": {
+   "128": 8,
+   "2048": 81
+  },
+  "n_in_transit_cadences": 567,
+  "centroidpy_oot_frac_inside_true_transit": 0.011647254575707155,
+  "centroidpy_oot_frac_inside_transit_T14_0.21": 0.09484193011647254,
+  "centroidpy_vs_context_ephemeris_offset_min": -4.891496842901688
+ },
+ "93": {
+  "tesscut_time_keys": {
+   "TIMEREF": "SOLARSYSTEM",
+   "TASSIGN": "SPACECRAFT",
+   "TIMESYS": "TDB",
+   "BJDREFI": 2457000,
+   "BJDREFF": 0.0,
+   "TIMEUNIT": "d"
+  },
+  "tesscut_minus_qlp_nearest_s": {
+   "median": -19.844445929629728,
+   "mad": 0.4400229241582565
+  },
+  "pair_aperture_dt0_d": -0.0029999999999999957,
+  "pair_aperture_dt0_err_d": 0.002250000000000002,
+  "pair_aperture_depth_ppt": 2.2795981182992255,
+  "n_transits_used": 5,
+  "ephemeris_sigma_d": 0.004577162439765493,
+  "depth_vs_shift": {
+   "shift_d": [
+    -0.4,
+    -0.35,
+    -0.3,
+    -0.25,
+    -0.2,
+    -0.15,
+    -0.1,
+    -0.05,
+    -0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+   ],
+   "depth_ppt": [
+    -0.9598198971135388,
+    -1.0691280680491284,
+    -0.8577936557499247,
+    -0.9660624138596301,
+    -0.9388701030243726,
+    -0.6736115984175499,
+    0.39200151794482685,
+    1.5142541124901694,
+    2.273833581495041,
+    1.8129777104558114,
+    0.6724264253092259,
+    -0.19124382309861385,
+    0.021895710889066007,
+    0.41733390448550645,
+    -1.0685739102588674,
+    -0.8785730338161771,
+    -0.5074874178644633
+   ]
+  },
+  "flag_frac_in_transit": 0.15217391304347827,
+  "flag_frac_near_oot": 0.16386326641345633,
+  "flag_frac_all": 0.11903684258169639,
+  "flag_bits_in_transit_counts": {
+   "8": 1,
+   "32": 3,
+   "2048": 81,
+   "16384": 81
+  },
+  "n_in_transit_cadences": 552,
+  "centroidpy_oot_frac_inside_true_transit": 0.02023608768971332,
+  "centroidpy_oot_frac_inside_transit_T14_0.21": 0.09274873524451939,
+  "centroidpy_vs_context_ephemeris_offset_min": -6.152202370867599
+ },
+ "104": {
+  "tesscut_time_keys": {
+   "TIMEREF": "SOLARSYSTEM",
+   "TASSIGN": "SPACECRAFT",
+   "TIMESYS": "TDB",
+   "BJDREFI": 2457000,
+   "BJDREFF": 0.0,
+   "TIMEUNIT": "d"
+  },
+  "tesscut_minus_qlp_nearest_s": {
+   "median": 53.734387492295355,
+   "mad": 21.328466103295796
+  },
+  "pair_aperture_dt0_d": -0.0029999999999999957,
+  "pair_aperture_dt0_err_d": 0.002749999999999999,
+  "pair_aperture_depth_ppt": 2.459396896301516,
+  "n_transits_used": 6,
+  "ephemeris_sigma_d": 0.00506978115898507,
+  "depth_vs_shift": {
+   "shift_d": [
+    -0.4,
+    -0.35,
+    -0.3,
+    -0.25,
+    -0.2,
+    -0.15,
+    -0.1,
+    -0.05,
+    -0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+   ],
+   "depth_ppt": [
+    -0.15754453966481496,
+    -0.18859548059477454,
+    -0.20448292552059136,
+    -0.23177657504005755,
+    -0.5964092556834758,
+    0.24114436715382562,
+    0.8443798199742949,
+    1.9092556322551653,
+    2.462544045593758,
+    1.5330536373245505,
+    0.446466421403623,
+    -0.7670281071364602,
+    -1.141857958292093,
+    -1.3554192893988861,
+    -1.3612097098612417,
+    -0.6677739667345453,
+    -0.4092846788900807
+   ]
+  },
+  "flag_frac_in_transit": 0.0,
+  "flag_frac_near_oot": 0.06279620853080568,
+  "flag_frac_all": 0.10661797452569698,
+  "flag_bits_in_transit_counts": {},
+  "n_in_transit_cadences": 426,
+  "centroidpy_oot_frac_inside_true_transit": 0.016366612111292964,
+  "centroidpy_oot_frac_inside_transit_T14_0.21": 0.0867430441898527,
+  "centroidpy_vs_context_ephemeris_offset_min": -6.757625929894857
+ }
+}

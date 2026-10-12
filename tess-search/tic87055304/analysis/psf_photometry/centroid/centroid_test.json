@@ -1,0 +1,72 @@
+{
+ "13": {
+  "meas_along_mpx": 0.9555984719762025,
+  "err_along_mpx": 0.20085935205242128,
+  "meas_perp_mpx": 0.24158451385094382,
+  "err_perp_mpx": 0.199855562649537,
+  "pred_target_along_mpx": -0.8439063619605826,
+  "pred_nb_along_mpx": 0.6301679699339822,
+  "pred_target_perp_mpx": -0.16382996993726337,
+  "pred_nb_perp_mpx": 0.021539594194156388,
+  "chi2_target": 84.37917121260682,
+  "chi2_nb": 3.8372631443407164,
+  "frac_along": 1.2207693974454858
+ },
+ "39": {
+  "meas_along_mpx": 1.1895513696070987,
+  "err_along_mpx": 0.23155994774123997,
+  "meas_perp_mpx": 0.11682809072834631,
+  "err_perp_mpx": 0.13834454442682664,
+  "pred_target_along_mpx": -0.47368004453968177,
+  "pred_nb_along_mpx": 1.3709814565814429,
+  "pred_target_perp_mpx": -0.29377571711055045,
+  "pred_nb_perp_mpx": -0.11046090400171653,
+  "chi2_target": 60.40044157156062,
+  "chi2_nb": 3.313077209411512,
+  "frac_along": 0.9016458646401646
+ },
+ "66": {
+  "meas_along_mpx": 1.1221123043316497,
+  "err_along_mpx": 0.23415166851154492,
+  "meas_perp_mpx": 0.3104014923933457,
+  "err_perp_mpx": 0.3247718134195503,
+  "pred_target_along_mpx": -0.1996340811787325,
+  "pred_nb_along_mpx": 1.3612474984116971,
+  "pred_target_perp_mpx": -0.01885409169988661,
+  "pred_nb_perp_mpx": 0.22217257308010083,
+  "chi2_target": 32.89190924066972,
+  "chi2_nb": 1.1168211375381694,
+  "frac_along": 0.8467947875054072
+ },
+ "93": {
+  "meas_along_mpx": 0.8039071311778847,
+  "err_along_mpx": 0.17770673816408375,
+  "meas_perp_mpx": 0.3592549958344321,
+  "err_perp_mpx": 0.16206726262792356,
+  "pred_target_along_mpx": -0.17119058408535517,
+  "pred_nb_along_mpx": 1.0317117387128443,
+  "pred_target_perp_mpx": 0.07609002882354857,
+  "pred_nb_perp_mpx": 0.1584439146431143,
+  "chi2_target": 33.161186525603014,
+  "chi2_nb": 3.1785713384314045,
+  "frac_along": 0.8106208598840854
+ },
+ "104": {
+  "meas_along_mpx": 1.149623030517923,
+  "err_along_mpx": 0.1743325853395141,
+  "meas_perp_mpx": -0.03094721185277818,
+  "err_perp_mpx": 0.1242676579622223,
+  "pred_target_along_mpx": -0.4744351188931354,
+  "pred_nb_along_mpx": 1.4612621270850499,
+  "pred_target_perp_mpx": -0.03253953588136443,
+  "pred_nb_perp_mpx": 0.09121360315039469,
+  "chi2_target": 86.78543213729797,
+  "chi2_nb": 4.161937495487756,
+  "frac_along": 0.8390042155535313
+ },
+ "total": {
+  "chi2_target": 297.61814068773816,
+  "chi2_nb": 15.607670325209558,
+  "dof": 10
+ }
+}

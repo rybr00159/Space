@@ -1,0 +1,15 @@
+start {'T0': np.float64(3271.528413), 'P': np.float64(4.136194), 'k': np.float64(0.062307), 'b': np.float64(0.86592), 'rho': np.float64(0.063589), 'u1': np.float64(0.184645), 'u2': np.float64(0.287479), 'c13': np.float64(-0.000167), 'c39': np.float64(-0.000366), 'c66': np.float64(-7.9e-05), 'c93': np.float64(3.3e-05), 'c104': np.float64(0.000131), 'lns13': np.float64(-6.757925), 'lns39': np.float64(-6.264814), 'lns66': np.float64(-5.646245), 'lns93': np.float64(-5.791992), 'lns104': np.float64(-6.041945)} 28691.211528016018
+2000 steps, max tau 50 (lns66), acc 0.396, 113s
+4000 steps, max tau 59 (k), acc 0.391, 226s
+6000 steps, max tau 62 (rho), acc 0.388, 339s
+8000 steps, max tau 65 (rho), acc 0.389, 452s
+10000 steps, max tau 66 (rho), acc 0.387, 569s
+12000 steps, max tau 65 (rho), acc 0.389, 685s
+14000 steps, max tau 65 (rho), acc 0.387, 797s
+16000 steps, max tau 64 (rho), acc 0.387, 910s
+18000 steps, max tau 64 (rho), acc 0.388, 1025s
+20000 steps, max tau 65 (rho), acc 0.387, 1138s
+22000 steps, max tau 64 (rho), acc 0.389, 1254s
+24000 steps, max tau 65 (rho), acc 0.389, 1364s
+26000 steps, max tau 65 (b), acc 0.390, 1477s
+DONE subgiant {'k': (0.0621, 0.00105, 0.00107), 'b': (0.85985, 0.01964, 0.01579), 'rho': (0.06718, 0.0101, 0.01263), 'a': (4.4084, 0.23307, 0.26056), 'inc': (78.75533, 0.85839, 0.86711), 'depth_ppm': (3627.00219, 86.99794, 87.8728), 'T14_h': (4.57379, 0.11102, 0.12273), 'T23_h': (2.74091, 0.16334, 0.15385), 'u1': (0.19079, 0.05363, 0.05417), 'u2': (0.29125, 0.04502, 0.04597)}

@@ -1,0 +1,201 @@
+{
+ "late2026_partial": [
+  {
+   "epoch": 646,
+   "BTJD_A": 4330.39522,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-10-16 21:30",
+   "best_site": "SAAO",
+   "frac_T14_observable": 0.23
+  },
+  {
+   "epoch": 647,
+   "BTJD_A": 4334.53141,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-10-21 00:47",
+   "best_site": "CTIO",
+   "frac_T14_observable": 0.49
+  },
+  {
+   "epoch": 649,
+   "BTJD_A": 4342.8038,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-10-29 07:20",
+   "best_site": "SSO",
+   "frac_T14_observable": 0.04
+  },
+  {
+   "epoch": 650,
+   "BTJD_A": 4346.94,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-11-02 10:37",
+   "best_site": "SSO",
+   "frac_T14_observable": 0.28
+  },
+  {
+   "epoch": 652,
+   "BTJD_A": 4355.21239,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-11-10 17:10",
+   "best_site": "SAAO",
+   "frac_T14_observable": 0.13
+  },
+  {
+   "epoch": 653,
+   "BTJD_A": 4359.34858,
+   "sigma_A_min": 7.6,
+   "UTC_mid": "2026-11-14 20:26",
+   "best_site": "SAAO",
+   "frac_T14_observable": 0.04
+  }
+ ],
+ "ephemeris_A": {
+  "P": 4.136195,
+  "eP": 7e-06,
+  "T0": 1658.41325,
+  "eT0": 0.0027
+ },
+ "ephemeris_B": {
+  "P": 4.136191870953917,
+  "eP": 5.283871358781808e-06,
+  "T0_Eref": 3271.5306201495378,
+  "eT0": 0.0010325441796512655,
+  "E_ref": 390,
+  "corr": -0.06173554146456702
+ },
+ "T14_h": 4.347979479071364,
+ "window_rule": "target alt > 30 deg and Sun alt < -12 deg from T1 - 1 h to T4 + 1 h",
+ "n_visible": 10,
+ "events": [
+  {
+   "epoch": 693,
+   "BTJD_A": 4524.79638,
+   "sigma_A_min": 8.0,
+   "BTJD_B": 4524.79674,
+   "sigma_B_min": 2.7,
+   "UTC_mid": "2027-04-29 07:00",
+   "full_window_visible": {
+    "CTIO": true,
+    "SAAO": false,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 698,
+   "BTJD_A": 4545.47736,
+   "sigma_A_min": 8.0,
+   "BTJD_B": 4545.4777,
+   "sigma_B_min": 2.7,
+   "UTC_mid": "2027-05-19 23:19",
+   "full_window_visible": {
+    "CTIO": false,
+    "SAAO": true,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 700,
+   "BTJD_A": 4553.74975,
+   "sigma_A_min": 8.1,
+   "BTJD_B": 4553.75009,
+   "sigma_B_min": 2.7,
+   "UTC_mid": "2027-05-28 05:51",
+   "full_window_visible": {
+    "CTIO": true,
+    "SAAO": false,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 703,
+   "BTJD_A": 4566.15834,
+   "sigma_A_min": 8.1,
+   "BTJD_B": 4566.15866,
+   "sigma_B_min": 2.7,
+   "UTC_mid": "2027-06-09 15:39",
+   "full_window_visible": {
+    "CTIO": false,
+    "SAAO": false,
+    "SSO": true
+   }
+  },
+  {
+   "epoch": 705,
+   "BTJD_A": 4574.43073,
+   "sigma_A_min": 8.1,
+   "BTJD_B": 4574.43105,
+   "sigma_B_min": 2.7,
+   "UTC_mid": "2027-06-17 22:11",
+   "full_window_visible": {
+    "CTIO": false,
+    "SAAO": true,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 707,
+   "BTJD_A": 4582.70312,
+   "sigma_A_min": 8.1,
+   "BTJD_B": 4582.70343,
+   "sigma_B_min": 2.8,
+   "UTC_mid": "2027-06-26 04:43",
+   "full_window_visible": {
+    "CTIO": true,
+    "SAAO": false,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 710,
+   "BTJD_A": 4595.1117,
+   "sigma_A_min": 8.1,
+   "BTJD_B": 4595.11201,
+   "sigma_B_min": 2.8,
+   "UTC_mid": "2027-07-08 14:31",
+   "full_window_visible": {
+    "CTIO": false,
+    "SAAO": false,
+    "SSO": true
+   }
+  },
+  {
+   "epoch": 712,
+   "BTJD_A": 4603.38409,
+   "sigma_A_min": 8.2,
+   "BTJD_B": 4603.38439,
+   "sigma_B_min": 2.8,
+   "UTC_mid": "2027-07-16 21:04",
+   "full_window_visible": {
+    "CTIO": false,
+    "SAAO": true,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 714,
+   "BTJD_A": 4611.65648,
+   "sigma_A_min": 8.2,
+   "BTJD_B": 4611.65678,
+   "sigma_B_min": 2.8,
+   "UTC_mid": "2027-07-25 03:37",
+   "full_window_visible": {
+    "CTIO": true,
+    "SAAO": false,
+    "SSO": false
+   }
+  },
+  {
+   "epoch": 721,
+   "BTJD_A": 4640.60984,
+   "sigma_A_min": 8.2,
+   "BTJD_B": 4640.61012,
+   "sigma_B_min": 2.8,
+   "UTC_mid": "2027-08-23 02:32",
+   "full_window_visible": {
+    "CTIO": true,
+    "SAAO": false,
+    "SSO": false
+   }
+  }
+ ]
+}

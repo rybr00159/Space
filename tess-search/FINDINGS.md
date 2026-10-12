@@ -276,3 +276,36 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
 - TIC 21880444: offsets 21-26" at 3.5-5.2 sigma (S13, S39), fitted density 36x too high -> blend
 - TIC 172722554: secondary 1,683 ppm at 12.6 sigma, 44" offset at 14 sigma (S103) -> blended EB
 - => all 18 rejected; every Sector 104 recurrence survivor (p_comb < 1e-3) has now been vetted
+
+## CORRECTION (2026-10-12): TIC 87055304 withdrawn; the signal is on TIC 87055315 (EBLM-type eclipsing binary)
+Full account: tess-search/tic87055304/README.md and tic87055304/analysis/.
+
+**Localisation.**
+- First-round two-source fits, pixel-depth maps and injections (tic87/transit) all put the signal on the 9.33"
+  neighbour Gaia DR3 6720986208895208960 = TIC 87055315 (G 14.02; 1.29 kpc).
+- Independent PRF localisation (loc_independent): joint position 0.66" from the neighbour, 8.8" from the target;
+  injection-calibrated z_T = 8.6-10.1 (count floor 3.9 sigma); all 26 transits point to the neighbour.
+- Simultaneous PSF photometry (psf_photometry): f_target = 0.16 [0.07, 0.25] +- 0.075 sys, so f = 1 is excluded at
+  7.5 sigma; target PSF depth 0.64 +- 0.36 ppt.
+- Referee (referee_audit):
+  - no shared WCS, registration, jitter or timing systematic;
+  - model-free pixel test 6.4 sigma (4.9 conservative; 3.1 most conservative envelope).
+- Adopted: target excluded at >= 5 sigma.
+
+**The neighbour-hosted eclipse (neighbour/).**
+- Depth 21.4 +- 0.6 ppt on a 1.93 +- 0.09 R_sun star; companion 0.269 +- 0.013 R_sun = 2.61 R_Jup.
+- Twin EB at 2P excluded (4.7-5.8 sigma); occultation T_b < 3510 K.
+- TRICERATOPS on TIC 87055315: FPP = 1.000.
+- Not in any catalogue searched.
+
+**Errors found in our own pipeline.**
+- src/centroid.py is biased toward the target, and S66/S93 were dominated by scattered light.
+- The ">6 sigma exclusion of the 9" neighbour" divided by the floor-free err_px; the code's own sigma gives ~2.4. It was
+  invalid.
+- src/run_tri.py passed tdepth ~0.33 (np.convolve 'same' edge effect), so every nearby-star scenario was dropped and
+  NFPP was 0 in every run. Fixed; corrected runs are in tri/fixed/:
+  - 87055304: FPP 0.977, NFPP 0.977
+  - 72651793: 0.918 / 0.399
+  - 158159741: 0.873 / 0.162
+  - 320686138: 0.981 / 0.250
+  - 155991187 and 245976814: pending

@@ -1,0 +1,5 @@
+S13 nominal: N=1112 free=13 Ft med 3089.6 Fn med 1049.3 corr(Ft,Fn) formal -0.915 reg rms dx 0.0233 dy 0.0581 chi2/pix 57.07 (2s)
+S39 nominal: N=2991 free=12 Ft med 3777.0 Fn med 277.1 corr(Ft,Fn) formal -0.906 reg rms dx 0.0210 dy 0.0322 chi2/pix 64.87 (4s)
+S66 nominal: N=8705 free=14 Ft med 3715.4 Fn med 385.1 corr(Ft,Fn) formal -0.845 reg rms dx 0.0184 dy 0.0385 chi2/pix 9.90 (11s)
+S93 nominal: N=9732 free=14 Ft med 3505.9 Fn med 563.9 corr(Ft,Fn) formal -0.839 reg rms dx 0.0165 dy 0.0604 chi2/pix 10.57 (11s)
+S104 nominal: N=10030 free=14 Ft med 3493.5 Fn med 581.7 corr(Ft,Fn) formal -0.800 reg rms dx 0.0127 dy 0.0517 chi2/pix 6.31 (12s)

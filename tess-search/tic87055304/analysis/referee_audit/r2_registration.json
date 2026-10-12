@@ -1,0 +1,152 @@
+{
+ "13": {
+  "info": {
+   "loc_indep_local_r4": {
+    "frac_info_pair_along_u": 0.9701973965837781,
+    "frac_flux_pair": 0.4145269511903527,
+    "n_pix": 48
+   },
+   "loc_indep_external_2.5_8": {
+    "frac_info_pair_along_u": 0.0024046129517137885,
+    "frac_flux_pair": 0.013204730055281947,
+    "n_pix": 179
+   },
+   "psfphot_field_r_gt_3": {
+    "frac_info_pair_along_u": 0.0002918570319661941,
+    "frac_flux_pair": 0.0038509381973589577,
+    "n_pix": 415
+   }
+  },
+  "sep_px": 0.45883641523512947,
+  "registration_error_needed_px": 0.38542258879750874,
+  "wcs_only_fieldstar_offset_px": [
+   -0.05551125182672286,
+   -0.050445945837246785
+  ],
+  "wcs_only_fieldstar_offset_sem_px": [
+   0.04764858595715082,
+   0.03350905843401181
+  ],
+  "wcs_only_offset_along_u_px": -0.07482149319789329
+ },
+ "39": {
+  "info": {
+   "loc_indep_local_r4": {
+    "frac_info_pair_along_u": 0.9679791727703337,
+    "frac_flux_pair": 0.42751599159899684,
+    "n_pix": 47
+   },
+   "loc_indep_external_2.5_8": {
+    "frac_info_pair_along_u": 0.0035188238160724257,
+    "frac_flux_pair": 0.016371595873047266,
+    "n_pix": 174
+   },
+   "psfphot_field_r_gt_3": {
+    "frac_info_pair_along_u": 0.00044571009515800603,
+    "frac_flux_pair": 0.004833965644848808,
+    "n_pix": 414
+   }
+  },
+  "sep_px": 0.46731288835170987,
+  "registration_error_needed_px": 0.3925428262154363,
+  "wcs_only_fieldstar_offset_px": [
+   0.07816786680776477,
+   -0.10694031800073778
+  ],
+  "wcs_only_fieldstar_offset_sem_px": [
+   0.10319091934019546,
+   0.19577940904070706
+  ],
+  "wcs_only_offset_along_u_px": -0.005000824132300779
+ },
+ "66": {
+  "info": {
+   "loc_indep_local_r4": {
+    "frac_info_pair_along_u": 0.8453785910873933,
+    "frac_flux_pair": 0.4073673917282812,
+    "n_pix": 47
+   },
+   "loc_indep_external_2.5_8": {
+    "frac_info_pair_along_u": 0.0012052960591227044,
+    "frac_flux_pair": 0.013284952032482998,
+    "n_pix": 178
+   },
+   "psfphot_field_r_gt_3": {
+    "frac_info_pair_along_u": 0.00014723871289597636,
+    "frac_flux_pair": 0.0035482332788888,
+    "n_pix": 414
+   }
+  },
+  "sep_px": 0.4502471785830944,
+  "registration_error_needed_px": 0.3782076300097993,
+  "wcs_only_fieldstar_offset_px": [
+   0.13066022897526042,
+   -0.01353328736412579
+  ],
+  "wcs_only_fieldstar_offset_sem_px": [
+   0.06676350758273593,
+   0.03273137768811272
+  ],
+  "wcs_only_offset_along_u_px": 0.09070270172111916
+ },
+ "93": {
+  "info": {
+   "loc_indep_local_r4": {
+    "frac_info_pair_along_u": 0.847066468340313,
+    "frac_flux_pair": 0.39754942355078504,
+    "n_pix": 50
+   },
+   "loc_indep_external_2.5_8": {
+    "frac_info_pair_along_u": 0.0019436573276539772,
+    "frac_flux_pair": 0.01356144565790829,
+    "n_pix": 182
+   },
+   "psfphot_field_r_gt_3": {
+    "frac_info_pair_along_u": 9.416087124194047e-05,
+    "frac_flux_pair": 0.002781211869952595,
+    "n_pix": 412
+   }
+  },
+  "sep_px": 0.45047620894470386,
+  "registration_error_needed_px": 0.37840001551355124,
+  "wcs_only_fieldstar_offset_px": [
+   -0.03584521201863059,
+   0.005444802239749334
+  ],
+  "wcs_only_fieldstar_offset_sem_px": [
+   0.048021473606245875,
+   0.0442749250383227
+  ],
+  "wcs_only_offset_along_u_px": -0.023639671644900884
+ },
+ "104": {
+  "info": {
+   "loc_indep_local_r4": {
+    "frac_info_pair_along_u": 0.8834415447462437,
+    "frac_flux_pair": 0.39186578366425645,
+    "n_pix": 51
+   },
+   "loc_indep_external_2.5_8": {
+    "frac_info_pair_along_u": 0.0012225948770179177,
+    "frac_flux_pair": 0.014526590382212903,
+    "n_pix": 181
+   },
+   "psfphot_field_r_gt_3": {
+    "frac_info_pair_along_u": 4.818659497368738e-05,
+    "frac_flux_pair": 0.002244496672735514,
+    "n_pix": 413
+   }
+  },
+  "sep_px": 0.4492392516312348,
+  "registration_error_needed_px": 0.3773609713702372,
+  "wcs_only_fieldstar_offset_px": [
+   0.011295378441136206,
+   0.1463339340891227
+  ],
+  "wcs_only_fieldstar_offset_sem_px": [
+   0.06959392532472593,
+   0.06882357530909583
+  ],
+  "wcs_only_offset_along_u_px": -0.009218812827630856
+ }
+}

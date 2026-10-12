@@ -1,0 +1,22 @@
+{
+ "best_offset_arcsec_EN": [
+  6.199999999999914,
+  6.799999999999912
+ ],
+ "neighbour_offset_arcsec_EN": [
+  6.651956378154943,
+  6.707732595109635
+ ],
+ "dist_best_to_nb_arcsec": 0.4612784861232939,
+ "dist_best_to_target_arcsec": 9.202173656261749,
+ "dchi2_at_target": 173.02510053164585,
+ "dchi2_at_neighbour": 0.9761063640810228,
+ "one_sigma_E_range": [
+  5.199999999999918,
+  6.999999999999911
+ ],
+ "one_sigma_N_range": [
+  5.999999999999915,
+  7.599999999999909
+ ]
+}

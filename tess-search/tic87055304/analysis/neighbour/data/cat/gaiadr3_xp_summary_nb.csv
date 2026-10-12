@@ -1,0 +1,2 @@
+source_id,solution_id,bp_n_relevant_bases,bp_relative_shrinking,bp_n_measurements,bp_n_rejected_measurements,bp_standard_deviation,bp_chi_squared,bp_n_transits,bp_n_contaminated_transits,bp_n_blended_transits,rp_n_relevant_bases,rp_relative_shrinking,rp_n_measurements,rp_n_rejected_measurements,rp_standard_deviation,rp_chi_squared,rp_n_transits,rp_n_contaminated_transits,rp_n_blended_transits
+6720986208895208960,4545469030156206080,7,0.99999213,1167,1,1.0692531,1271.3522,20,0,0,6,0.99999344,1401,6,1.0364352,1445.8706,24,0,0

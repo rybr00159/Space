@@ -1,0 +1,11 @@
+S13 smear050: N=1112 free=13 Ft med 4809.0 Fn med 689.6 corr(Ft,Fn) formal -0.940 reg rms dx 0.0302 dy 0.0707 chi2/pix 2878.98 (3s)
+S39 smear050: N=2991 free=12 Ft med 6363.9 Fn med -1263.2 corr(Ft,Fn) formal -0.945 reg rms dx 0.0268 dy 0.0393 chi2/pix 713.61 (4s)
+S66 smear050: N=8705 free=14 Ft med 7080.4 Fn med -1770.0 corr(Ft,Fn) formal -0.929 reg rms dx 0.0234 dy 0.0493 chi2/pix 491.35 (11s)
+S93 smear050: N=9732 free=14 Ft med 5222.7 Fn med 37.1 corr(Ft,Fn) formal -0.931 reg rms dx 0.0231 dy 0.0802 chi2/pix 302.78 (12s)
+S104 smear050: N=10030 free=14 Ft med 6569.4 Fn med -1288.8 corr(Ft,Fn) formal -0.919 reg rms dx 0.0172 dy 0.0671 chi2/pix 366.35 (14s)
+S13 [smear050] ntr=6 dFt=-3.96+-9.18 dFn=21.54+-10.01 (rho -0.96) f_t=-0.225+-0.518 | depth t(psf) -0.82+-1.91 ppt n(psf) 31.2+-14.5 ppt; n(cat) 24.6+-11.4; pair 3.20+-0.51 ppt; Fn/Ft psf 0.143
+S39 [smear050] ntr=5 dFt=-0.75+-5.06 dFn=21.14+-4.52 (rho -0.91) f_t=-0.037+-0.250 | depth t(psf) -0.12+-0.79 ppt n(psf) -16.7+-3.6 ppt; n(cat) 25.8+-5.5; pair 3.97+-0.42 ppt; Fn/Ft psf -0.198
+S66 [smear050] ntr=4 dFt=-2.73+-8.68 dFn=20.46+-6.01 (rho -0.79) f_t=-0.154+-0.525 | depth t(psf) -0.39+-1.23 ppt n(psf) -11.6+-3.4 ppt; n(cat) 24.3+-7.1; pair 3.36+-1.10 ppt; Fn/Ft psf -0.249
+S93 [smear050] ntr=4 dFt=0.26+-4.30 dFn=16.18+-3.68 (rho -0.93) f_t=0.016+-0.261 | depth t(psf) 0.05+-0.83 ppt n(psf) 407.8+-92.8 ppt; n(cat) 19.3+-4.4; pair 3.12+-0.35 ppt; Fn/Ft psf 0.008
+S104 [smear050] ntr=4 dFt=-3.07+-5.87 dFn=20.74+-5.30 (rho -0.96) f_t=-0.174+-0.340 | depth t(psf) -0.47+-0.89 ppt n(psf) -16.2+-4.1 ppt; n(cat) 24.6+-6.3; pair 3.34+-0.36 ppt; Fn/Ft psf -0.195
+COMBINED [smear050]: f_target = -0.073 [-0.224, 0.070] (1-sigma); chi2(f=1) 72.7, chi2(f=0) 0.6, chi2min 0.3 (dof 4); depth_t(psf) -0.22+-0.44 ppt; depth_n(psf) -13.5+-2.1 ppt; depth_n(cat) 22.8+-2.7 ppt; pair 3.39+-0.20 ppt

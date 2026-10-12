@@ -1,0 +1,7 @@
+win0.5 {'P': 4.13619, 'k': 0.06288, 'b': 0.86782, 'rho': 0.06167, 'depth_ppm': 3690.31653, 'T14_h': 4.63837, 'T23_h': 2.66662}
+win2.0 {'P': 4.13619, 'k': 0.06249, 'b': 0.86726, 'rho': 0.06286, 'depth_ppm': 3645.28882, 'T14_h': 4.60838, 'T23_h': 2.66701}
+Traceback (most recent call last):
+  File "/home/user/work/tic87/transit/detrend_sys.py", line 188, in <module>
+    print(v, {k: (round(val, 5) if isinstance(val, float) else val) for k, val in out[v].items() if k in ("k", "b", "rho", "depth_ppm", "T14_h", "T23_h", "P")}, flush=True)
+                                                                                  ~~~^^^
+KeyError: 'mask0.40'

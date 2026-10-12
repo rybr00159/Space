@@ -1,0 +1,36 @@
+{
+ "weights": [
+  0.06795372906938582,
+  0.212157279774889,
+  0.09183974023356728,
+  0.04776302690528666,
+  0.5802862240168711
+ ],
+ "s_par_real": 0.9106020364687033,
+ "s_par_T_mean": -0.02443958452453301,
+ "s_par_T_std": 0.10292327640759222,
+ "s_par_N_mean": 0.9913312152392556,
+ "s_par_N_std": 0.08755103806329759,
+ "z_T": 9.084841190736347,
+ "z_N": -0.9220813431382364,
+ "frac_T_sims_ge_real": 0.0,
+ "frac_N_sims_le_real": 0.16545,
+ "dchi2_sum_real": 437.73313758560056,
+ "dchi2_T_mean": -435.373575755869,
+ "dchi2_T_std": 103.3657027114005,
+ "dchi2_N_mean": 440.86710935053685,
+ "dchi2_N_std": 114.28855379278365,
+ "z_dchi2_T": 8.446773837345297,
+ "z_dchi2_N": -0.02742157163541057,
+ "frac_T_sims_dchi2_ge_real": 0.0,
+ "lnLR_TN_combined_spar_gauss": -41.00381463471641,
+ "lnLR_TN_combined_dchi2_gauss": -35.57316494614791,
+ "sum_lnLR_spar": -55.02885499870653,
+ "sum_lnLR_EN": -58.72480923824803,
+ "sum_lnLR_dchi2": -52.3983658037405
+}
+S13: s_par real +1.374 | H_T +0.267+-0.493 (z=+2.2, p_emp=0.0633) | H_N +1.195+-0.340 (z=+0.5) | lnLR_TN gauss -2.8 kde -2.2; EN2d lnLR -1.0 (mahal T 2.6, N 2.5); dchi2 lnLR -4.7
+S39: s_par real +0.994 | H_T -0.036+-0.164 (z=+6.3, p_emp=0.0000) | H_N +1.010+-0.192 (z=-0.1) | lnLR_TN gauss -19.6 kde -119.9; EN2d lnLR -19.8 (mahal T 6.3, N 0.4); dchi2 lnLR -16.0
+S66: s_par real +0.842 | H_T -0.073+-0.250 (z=+3.7, p_emp=0.0117) | H_N +0.935+-0.292 (z=-0.3) | lnLR_TN gauss -6.5 kde -5.5; EN2d lnLR -10.6 (mahal T 4.7, N 0.7); dchi2 lnLR -3.6
+S93: s_par real +1.031 | H_T -0.113+-0.250 (z=+4.6, p_emp=0.0017) | H_N +0.913+-0.405 (z=+0.3) | lnLR_TN gauss -9.9 kde -68.1; EN2d lnLR -10.2 (mahal T 4.6, N 0.5); dchi2 lnLR -12.3
+S104: s_par real +0.827 | H_T -0.038+-0.149 (z=+5.8, p_emp=0.0000) | H_N +0.977+-0.116 (z=-1.3) | lnLR_TN gauss -16.2 kde -50.9; EN2d lnLR -17.2 (mahal T 6.0, N 1.5); dchi2 lnLR -15.8

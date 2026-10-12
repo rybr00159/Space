@@ -1,0 +1,5 @@
+S13 gauss nT=6: free offset from target (E,N)=(+7.87,+5.83)" boot sd=(1.07,0.91); s_par=1.03+-0.14; f_N=1.08+-0.16; dchi2(T-N)=47.3; amp=10.1 e/s; chi2/dof=1.12; 16s
+S39 gauss nT=5: free offset from target (E,N)=(+6.33,+5.42)" boot sd=(0.25,0.68); s_par=0.88+-0.05; f_N=0.86+-0.03; dchi2(T-N)=66.8; amp=10.5 e/s; chi2/dof=0.65; 13s
+S66 gauss nT=5: free offset from target (E,N)=(+6.62,+3.85)" boot sd=(1.15,0.87); s_par=0.79+-0.15; f_N=0.81+-0.14; dchi2(T-N)=65.5; amp=10.3 e/s; chi2/dof=1.36; 16s
+S93 gauss nT=5: free offset from target (E,N)=(+5.46,+7.68)" boot sd=(0.71,0.75); s_par=0.99+-0.09; f_N=0.95+-0.07; dchi2(T-N)=128.3; amp=9.8 e/s; chi2/dof=0.90; 15s
+S104 gauss nT=5: free offset from target (E,N)=(+4.94,+6.07)" boot sd=(0.44,0.99); s_par=0.82+-0.07; f_N=0.79+-0.07; dchi2(T-N)=96.5; amp=8.9 e/s; chi2/dof=0.64; 15s

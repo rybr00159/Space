@@ -1,0 +1,40 @@
+13 cam/ccd 1 1 det 1.0 PA(+x) 92.2 PA(+y) 1.4 nb vec px [0.317 0.332] PA 44.9 sep 9.37" | tess-point vec [0.317 0.332] diff [-0.     -0.0001] | ext1-ext2 target [0. 0.]
+    actual_wcs                     median dist 0.125 px  rms 0.161  peak flux 469  (n=7)
+    mirror_x_about_target          median dist 2.152 px  rms 1.969  peak flux 311  (n=7)
+    mirror_y_about_target          median dist 1.640 px  rms 1.765  peak flux 332  (n=7)
+    transpose_about_target         median dist 1.893 px  rms 1.989  peak flux 353  (n=7)
+    rot180_about_target            median dist 2.007 px  rms 1.793  peak flux 376  (n=7)
+    array_transposed_[x,y]_swap    median dist 1.807 px  rms 1.704  peak flux 353  (n=7)
+39 cam/ccd 1 2 det 1.0 PA(+x) 83.8 PA(+y) 355.2 nb vec px [0.367 0.29 ] PA 44.9 sep 9.39" | tess-point vec [0.367 0.29 ] diff [ 0.0003 -0.0001] | ext1-ext2 target [0. 0.]
+    actual_wcs                     median dist 0.243 px  rms 0.677  peak flux 409  (n=10)
+    mirror_x_about_target          median dist 1.607 px  rms 1.606  peak flux 287  (n=10)
+    mirror_y_about_target          median dist 1.556 px  rms 1.562  peak flux 284  (n=9)
+    transpose_about_target         median dist 1.745 px  rms 1.567  peak flux 307  (n=10)
+    rot180_about_target            median dist 1.712 px  rms 1.766  peak flux 266  (n=9)
+    array_transposed_[x,y]_swap    median dist 1.559 px  rms 1.727  peak flux 324  (n=10)
+66 cam/ccd 1 2 det 1.0 PA(+x) 85.4 PA(+y) 355.7 nb vec px [0.343 0.292] PA 44.8 sep 9.41" | tess-point vec [0.343 0.292] diff [-0.      0.0001] | ext1-ext2 target [0. 0.]
+    actual_wcs                     median dist 0.083 px  rms 0.237  peak flux 498  (n=8)
+    mirror_x_about_target          median dist 1.514 px  rms 1.508  peak flux 248  (n=8)
+    mirror_y_about_target          median dist 1.497 px  rms 1.621  peak flux 290  (n=8)
+    transpose_about_target         median dist 1.661 px  rms 1.709  peak flux 275  (n=8)
+    rot180_about_target            median dist 1.253 px  rms 1.615  peak flux 259  (n=8)
+    array_transposed_[x,y]_swap    median dist 1.659 px  rms 1.708  peak flux 275  (n=8)
+93 cam/ccd 1 2 det 1.0 PA(+x) 85.6 PA(+y) 355.9 nb vec px [0.342 0.294] PA 44.8 sep 9.44" | tess-point vec [0.342 0.294] diff [-0.0001  0.    ] | ext1-ext2 target [0. 0.]
+    actual_wcs                     median dist 0.132 px  rms 0.164  peak flux 442  (n=7)
+    mirror_x_about_target          median dist 1.703 px  rms 1.689  peak flux 245  (n=7)
+    mirror_y_about_target          median dist 1.707 px  rms 1.600  peak flux 300  (n=7)
+    transpose_about_target         median dist 1.855 px  rms 1.678  peak flux 281  (n=7)
+    rot180_about_target            median dist 1.797 px  rms 1.696  peak flux 294  (n=7)
+    array_transposed_[x,y]_swap    median dist 1.606 px  rms 1.699  peak flux 282  (n=7)
+104 cam/ccd 1 3 det 1.0 PA(+x) 223.9 PA(+y) 133.5 nb vec px [-0.449  0.006] PA 44.8 sep 9.45" | tess-point vec [-0.449  0.006] diff [0.0001 0.    ] | ext1-ext2 target [0. 0.]
+    actual_wcs                     median dist 0.203 px  rms 0.298  peak flux 525  (n=8)
+    mirror_x_about_target          median dist 1.518 px  rms 1.595  peak flux 281  (n=8)
+    mirror_y_about_target          median dist 1.609 px  rms 1.703  peak flux 283  (n=8)
+    transpose_about_target         median dist 1.831 px  rms 1.706  peak flux 251  (n=8)
+    rot180_about_target            median dist 1.346 px  rms 1.364  peak flux 294  (n=8)
+    array_transposed_[x,y]_swap    median dist 1.501 px  rms 1.564  peak flux 302  (n=8)
+13 n=7 mean resid (dx,dy) px [-0.056 -0.05 ] rms [0.117 0.082] | tess-point target minus cutout px [-0.946 -0.004]
+39 n=10 mean resid (dx,dy) px [ 0.078 -0.107] rms [0.31  0.587] | tess-point target minus cutout px [-1.107  0.051]
+66 n=8 mean resid (dx,dy) px [ 0.131 -0.014] rms [0.177 0.087] | tess-point target minus cutout px [-0.986  0.043]
+93 n=7 mean resid (dx,dy) px [-0.036  0.005] rms [0.118 0.108] | tess-point target minus cutout px [-1.001  0.048]
+104 n=8 mean resid (dx,dy) px [0.011 0.146] rms [0.184 0.182] | tess-point target minus cutout px [ 0.756 -0.409]

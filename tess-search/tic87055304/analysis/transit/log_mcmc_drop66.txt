@@ -1,0 +1,4 @@
+start {'T0': np.float64(3271.527234), 'P': np.float64(4.136195), 'k': np.float64(0.061459), 'b': np.float64(0.864588), 'rho': np.float64(0.066848), 'u1': np.float64(0.193808), 'u2': np.float64(0.293869), 'c13': np.float64(-0.000193), 'c39': np.float64(-0.000391), 'c93': np.float64(8e-06), 'c104': np.float64(0.000105), 'lns13': np.float64(-6.75363), 'lns39': np.float64(-6.263275), 'lns93': np.float64(-5.791297), 'lns104': np.float64(-6.044209)} 19603.80119135277
+2000 steps, max tau 55 (rho), acc 0.386, 107s
+4000 steps, max tau 67 (rho), acc 0.383, 213s
+6000 steps, max tau 79 (rho), acc 0.386, 321s

@@ -1,0 +1,2 @@
+_table,_r,GaiaDR3,RA_ICRS,DE_ICRS,Teff,e_Teff,[Fe/H],e_[Fe/H],logg,e_logg,Ext,e_Ext,Plx,e_Plx,Quality,Chi2,ln(Prior),ConfTeff,Conf[Fe/H],Conflogg
+J/MNRAS/524/1855/xpparams,0.084,6720986208895208960,272.609,-43.993633,5.8256,0.0579,0.0472,0.0696,3.8711,0.0331,0.1127,0.0133,0.7396,0.0225,0,32.65625,1.3721,0.9438,0.9873,0.9561

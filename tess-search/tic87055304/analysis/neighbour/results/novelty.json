@@ -1,0 +1,349 @@
+{
+ "exofop": {
+  "tois": [],
+  "ctois": [],
+  "planet_parameters": [],
+  "imaging": [],
+  "spectroscopy": [],
+  "time_series": [],
+  "files": [],
+  "stellar_companions": [],
+  "keys": [
+   "basic_info",
+   "coordinates",
+   "tois",
+   "ctois",
+   "planet_units",
+   "planet_parameters",
+   "stellar_units",
+   "stellar_parameters",
+   "stellar_companions_units",
+   "stellar_companions",
+   "magnitudes",
+   "imaging_units",
+   "imaging",
+   "spectroscopy_units",
+   "spectroscopy",
+   "time_series_units",
+   "time_series",
+   "files"
+  ],
+  "star_names": "TIC 87055315, 2MASS J18102616-4359369, Gaia DR2 6720986208895208960, Gaia DR3 6720986208895208960, UCAC4 231-157456, WISE J181026.17-435936.9",
+  "notes": "no notes field present in the JSON"
+ },
+ "vizier": {
+  "Kostov25_table2": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "J/ApJS/279/50/table2"
+   ],
+   "columns": [
+    "TIC",
+    "RAJ2000",
+    "DEJ2000",
+    "Tmag"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "Kostov25_table3": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "J/ApJS/279/50/table3"
+   ],
+   "columns": [
+    "TIC",
+    "RAJ2000",
+    "DEJ2000",
+    "Tmag",
+    "Per",
+    "T0-pri",
+    "Depth-pri",
+    "Dur-pri",
+    "T0-sec",
+    "Phase",
+    "Depth-sec",
+    "Dur-sec",
+    "Sect",
+    "RUWE",
+    "AEN",
+    "AENS",
+    "Teff",
+    "Comm",
+    "Simbad"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "Kostov25_table4": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "J/ApJS/279/50/table4"
+   ],
+   "columns": [
+    "TIC",
+    "RAJ2000",
+    "DEJ2000",
+    "Per-TESS",
+    "T0-TESS",
+    "Per-Gaia",
+    "Ratio1",
+    "Per-ASAS",
+    "Ratio2",
+    "Per-ATLAS",
+    "Ratio3",
+    "Per-VSX",
+    "Ratio4",
+    "Per-WISE",
+    "Ratio5",
+    "Per-ZTF",
+    "Ratio6"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "VSX": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "B/vsx/vsx"
+   ],
+   "columns": [
+    "OID",
+    "Name",
+    "V",
+    "RAJ2000",
+    "DEJ2000",
+    "Type",
+    "l_max",
+    "max",
+    "u_max",
+    "n_max",
+    "f_min",
+    "l_min",
+    "min",
+    "u_min",
+    "n_min",
+    "l_Period",
+    "Period",
+    "u_Period",
+    "Sp"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "ASASSN_var": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "II/366/catv2021"
+   ],
+   "columns": [
+    "ASASSN-V",
+    "RAJ2000",
+    "DEJ2000",
+    "Vmag",
+    "Amp",
+    "Per",
+    "Type",
+    "Prob",
+    "HJD",
+    "Plx",
+    "e_Plx",
+    "pmRA",
+    "e_pmRA",
+    "pmDE",
+    "e_pmDE",
+    "Vt",
+    "Dist",
+    "WISEA",
+    "J-K",
+    "W1-W2",
+    "APASS",
+    "B-V",
+    "E(B-V)",
+    "Ref",
+    "GaiaDR3"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "GaiaDR3_vari_EB": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "I/358/veb"
+   ],
+   "columns": [
+    "Source",
+    "SolID",
+    "Rank",
+    "TimeRef",
+    "Freq",
+    "magModRef",
+    "PhaseGauss1",
+    "sigPhaseGauss1",
+    "DepthGauss1",
+    "PhaseGauss2",
+    "sigPhaseGauss2",
+    "DepthGauss2",
+    "AmpCHP",
+    "PhaseCHP",
+    "ModelType",
+    "Nparam",
+    "rchi2",
+    "PhaseE1",
+    "DurE1",
+    "DepthE1",
+    "PhaseE2",
+    "DurE2",
+    "DepthE2",
+    "RA_ICRS",
+    "DE_ICRS"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "GaiaDR3_vari_classifier": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "I/358/vclassre"
+   ],
+   "columns": [
+    "Source",
+    "SolID",
+    "Classifier",
+    "Class",
+    "RA_ICRS",
+    "DE_ICRS"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "GaiaDR3_vari_summary": {
+   "catalogue_exists": false,
+   "tables_seen": [],
+   "columns": [],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "Prsa22_TESS_EB": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "J/ApJS/258/16/tess-ebs"
+   ],
+   "columns": [
+    "TIC",
+    "m_TIC",
+    "RAJ2000",
+    "DEJ2000",
+    "pmRA",
+    "pmDE",
+    "Tmag",
+    "BJD0",
+    "e_BJD0",
+    "Per",
+    "e_Per",
+    "Morph",
+    "Wp-pf",
+    "Dp-pf",
+    "Phip-pf",
+    "Ws-pf",
+    "Ds-pf",
+    "Phis-pf",
+    "Wp-2g",
+    "Dp-2g",
+    "Phip-2g",
+    "Ws-2g",
+    "Ds-2g",
+    "Phis-2g",
+    "TESSebs"
+   ],
+   "cone3": 0,
+   "cone21": 0
+  },
+  "Green23_table2": {
+   "catalogue_exists": true,
+   "tables_seen": [
+    "J/MNRAS/522/29/table2"
+   ],
+   "columns": [
+    "TIC",
+    "RAJ2000",
+    "DEJ2000",
+    "Score",
+    "a1c",
+    "e_a1c",
+    "a2c",
+    "e_a2c",
+    "a3c",
+    "e_a3c",
+    "a1s",
+    "e_a1s",
+    "a3s",
+    "e_a3s",
+    "Porb",
+    "chisq"
+   ],
+   "cone3": 0,
+   "cone21": 1,
+   "cone21_rows": [
+    {
+     "_table": "J/MNRAS/522/29/table2",
+     "_r": 8.971,
+     "recno": 1599190,
+     "TIC": 87055304,
+     "RAJ2000": 272.60655699,
+     "DEJ2000": -43.99537103,
+     "Score": 0.0,
+     "a1c": -0.000603856,
+     "e_a1c": 6.72005e-05,
+     "a2c": -0.000160038,
+     "e_a2c": 6.71863e-05,
+     "a3c": -0.000272943,
+     "e_a3c": 6.72751e-05,
+     "a1s": 0.000647077,
+     "e_a1s": 6.96312e-05,
+     "a3s": 8.82874e-05,
+     "e_a3s": 6.7283e-05,
+     "Porb": 2.042146,
+     "chisq": 5.84349
+    }
+   ]
+  },
+  "Green23_TIC87055315": "not in table2",
+  "Green23_TIC87055304": [
+   {
+    "recno": 1599190,
+    "TIC": 87055304,
+    "RAJ2000": 272.60655699,
+    "DEJ2000": -43.99537103,
+    "Score": 0.0,
+    "a1c": -0.000603856,
+    "e_a1c": 6.72005e-05,
+    "a2c": -0.000160038,
+    "e_a2c": 6.71863e-05,
+    "a3c": -0.000272943,
+    "e_a3c": 6.72751e-05,
+    "a1s": 0.000647077,
+    "e_a1s": 6.96312e-05,
+    "a3s": 8.82874e-05,
+    "e_a3s": 6.7283e-05,
+    "Porb": 2.042146,
+    "chisq": 5.84349
+   }
+  ]
+ },
+ "gaia_dr3_archive_rows": {
+  "vari_summary": 0,
+  "vari_eclipsing_binary": 0,
+  "vari_classifier_result": 0,
+  "nss_two_body_orbit": 0,
+  "nss_acceleration_astro": 0,
+  "nss_non_linear_spectro": 0,
+  "nss_vim_fl": 0
+ },
+ "simbad": {
+  "Gaia DR3 6720986208895208960": "no SIMBAD object",
+  "TIC 87055315": "no SIMBAD object",
+  "2MASS J18102616-4359369": "no SIMBAD object",
+  "cone10": "none"
+ }
+}

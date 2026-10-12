@@ -1,0 +1,2 @@
+source_id,catwise_w1,catwise_w2,in_training_sample,mh_xgboost,teff_xgboost,logg_xgboost
+6720986204578421888,10.595999999999998,10.633,False,-0.152,5498.4,4.309

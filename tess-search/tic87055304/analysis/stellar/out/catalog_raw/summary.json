@@ -1,0 +1,23 @@
+{
+ "summary": {
+  "TIC82_viz": "1 rows in ['IV/39/tic82']",
+  "BJ21": "1 rows in ['I/352/gedr3dis']",
+  "BJ18": "1 rows in ['I/347/gaia2dis']",
+  "StarHorse19": "1 rows in ['I/349/starhorse']",
+  "StarHorse21": "1 rows in ['I/354/starhorse2021']",
+  "SHBoost24": "1 rows in ['V/160/shboost']",
+  "Zhang23": "1 rows in ['J/MNRAS/524/1855/xpparams']",
+  "Huson25": "1 rows in ['J/ApJ/984/58/table1']",
+  "Ye25": "1 rows in ['J/A+A/695/A75/catalog']",
+  "Kordopatis23": "1 rows in ['J/A+A/669/A104/catalog']",
+  "Huang22": "1 rows in ['J/ApJ/925/164/catalog']",
+  "Bai19": "no match within 5 arcsec",
+  "Andrae23": "no match within 5 arcsec",
+  "RAVE6": "no match within 5 arcsec",
+  "GALAH3": "no match within 5 arcsec",
+  "GALAH4": "no match within 5 arcsec",
+  "GSPC": "1 rows in ['I/360/syntphot']",
+  "Hardegree25_none": "no match within 5 arcsec"
+ },
+ "dr2_source_id": 6720986204578421888
+}

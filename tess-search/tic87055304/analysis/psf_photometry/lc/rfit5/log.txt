@@ -1,0 +1,11 @@
+S13 rfit5: N=1112 free=22 Ft med 3108.6 Fn med 1035.5 corr(Ft,Fn) formal -0.919 reg rms dx 0.0233 dy 0.0581 chi2/pix 40.73 (2s)
+S39 rfit5: N=2991 free=21 Ft med 3745.1 Fn med 329.5 corr(Ft,Fn) formal -0.909 reg rms dx 0.0210 dy 0.0322 chi2/pix 39.71 (6s)
+S66 rfit5: N=8705 free=22 Ft med 3710.1 Fn med 408.9 corr(Ft,Fn) formal -0.860 reg rms dx 0.0184 dy 0.0385 chi2/pix 7.60 (16s)
+S93 rfit5: N=9732 free=22 Ft med 3516.0 Fn med 575.4 corr(Ft,Fn) formal -0.852 reg rms dx 0.0165 dy 0.0604 chi2/pix 7.46 (19s)
+S104 rfit5: N=10030 free=22 Ft med 3495.1 Fn med 581.6 corr(Ft,Fn) formal -0.815 reg rms dx 0.0127 dy 0.0517 chi2/pix 5.05 (19s)
+S13 [rfit5] ntr=6 dFt=-1.96+-3.45 dFn=15.17+-3.53 (rho -0.93) f_t=-0.148+-0.263 | depth t(psf) -0.63+-1.11 ppt n(psf) 14.7+-3.4 ppt; n(cat) 23.0+-5.3; pair 3.19+-0.37 ppt; Fn/Ft psf 0.333
+S39 [rfit5] ntr=5 dFt=4.66+-3.11 dFn=11.58+-2.49 (rho -0.93) f_t=0.287+-0.178 | depth t(psf) 1.25+-0.83 ppt n(psf) 35.2+-7.5 ppt; n(cat) 17.8+-3.8; pair 3.99+-0.30 ppt; Fn/Ft psf 0.088
+S66 [rfit5] ntr=4 dFt=2.55+-3.32 dFn=12.37+-2.92 (rho -0.92) f_t=0.171+-0.216 | depth t(psf) 0.69+-0.89 ppt n(psf) 30.3+-7.2 ppt; n(cat) 18.8+-4.4; pair 3.62+-0.35 ppt; Fn/Ft psf 0.110
+S93 [rfit5] ntr=4 dFt=2.22+-2.95 dFn=11.35+-2.17 (rho -0.94) f_t=0.163+-0.207 | depth t(psf) 0.63+-0.84 ppt n(psf) 19.8+-3.8 ppt; n(cat) 17.4+-3.3; pair 3.31+-0.28 ppt; Fn/Ft psf 0.163
+S104 [rfit5] ntr=5 dFt=2.69+-2.04 dFn=11.10+-1.62 (rho -0.93) f_t=0.195+-0.140 | depth t(psf) 0.77+-0.58 ppt n(psf) 19.1+-2.8 ppt; n(cat) 17.1+-2.5; pair 3.38+-0.27 ppt; Fn/Ft psf 0.166
+COMBINED [rfit5]: f_target = 0.168 [0.080, 0.252] (1-sigma); chi2(f=1) 132.4, chi2(f=0) 5.5, chi2min 1.9 (dof 4); depth_t(psf) 0.67+-0.36 ppt; depth_n(psf) 19.6+-1.8 ppt; depth_n(cat) 18.0+-1.6 ppt; pair 3.51+-0.14 ppt

@@ -1,0 +1,137 @@
+{
+ "eleanor_identical_raw_flux": true,
+ "eleanor_identical_corr_flux": true,
+ "eleanor_identical_ap_mask": true,
+ "eleanor_centroid_diff_px": [
+  0.3057594299316406,
+  0.3174629211425781
+ ],
+ "qlp_linear_map_nb_vs_target": {
+  "k": 1.510533622411444,
+  "c": -0.002326023962805573,
+  "corr": 0.2634936638408066,
+  "rms_resid": 0.010585379395498749,
+  "rms_nb": 0.010973158453201225
+ },
+ "qlp_err_ratio_nb_over_target": 5.392310932411464,
+ "qlp_aperture_centre_diff_px": [
+  0.07269287109375,
+  0.1453857421875
+ ],
+ "qlp_bkg_ratio": 0.9563964082736984,
+ "qlp_target": {
+  "sap": {
+   "depth": 0.003915071542319369,
+   "err": 0.0002710839589275476,
+   "n_tr": 6
+  },
+  "ksp": {
+   "depth": 0.0038875414599367766,
+   "err": 0.00027221088392499564,
+   "n_tr": 6
+  }
+ },
+ "qlp_neighbour": {
+  "sap": {
+   "depth": 0.021653301064548578,
+   "err": 0.0014435543502634828,
+   "n_tr": 6
+  },
+  "ksp": {
+   "depth": 0.02122989037889435,
+   "err": 0.001444055165294935,
+   "n_tr": 6
+  }
+ },
+ "eleanor_target": {
+  "raw": {
+   "depth": 0.002927298546738001,
+   "err": 0.0005104320001812108,
+   "n_tr": 6
+  },
+  "corr": {
+   "depth": 0.003094383629226404,
+   "err": 0.0004395303056157091,
+   "n_tr": 6
+  },
+  "pca": {
+   "depth": 0.0030698584431089935,
+   "err": 0.0004144284176555446,
+   "n_tr": 6
+  }
+ },
+ "eleanor_neighbour": {
+  "raw": {
+   "depth": 0.0029272981770876645,
+   "err": 0.0005104319994972169,
+   "n_tr": 6
+  },
+  "corr": {
+   "depth": 0.003094370973821757,
+   "err": 0.000439527107143588,
+   "n_tr": 6
+  },
+  "pca": {
+   "depth": 0.003069858325444603,
+   "err": 0.0004144284741469199,
+   "n_tr": 6
+  }
+ },
+ "aperture_predictions_s13": {
+  "centred_on_target_r1.25": {
+   "frac_target": 0.6181048657288024,
+   "frac_nb": 0.19550395525155262,
+   "depth_H_target_raw": 0.002592611701306532,
+   "depth_H_nb_raw": 0.0023907162017730854,
+   "depth_H_target_decontaminated": 0.004194452826786284,
+   "depth_H_nb_decontaminated": 0.003867816505463375,
+   "dilution_factor": 1.6178484516877376
+  },
+  "centred_on_target_r2.0": {
+   "frac_target": 0.5497294878374724,
+   "frac_nb": 0.18212536028315485,
+   "depth_H_target_raw": 0.002305814404227663,
+   "depth_H_nb_raw": 0.002227116321112081,
+   "depth_H_target_decontaminated": 0.004194452826786285,
+   "depth_H_nb_decontaminated": 0.004051294992148079,
+   "dilution_factor": 1.819076513311671
+  },
+  "centred_on_target_r2.5": {
+   "frac_target": 0.4210828392602292,
+   "frac_nb": 0.14259138882341138,
+   "depth_H_target_raw": 0.001766212105446263,
+   "depth_H_nb_raw": 0.0017436759427952697,
+   "depth_H_target_decontaminated": 0.004194452826786284,
+   "depth_H_nb_decontaminated": 0.004140933280156017,
+   "dilution_factor": 2.374829622021238
+  },
+  "centred_on_nb_r1.25": {
+   "frac_target": 0.5735618925235406,
+   "frac_nb": 0.20487966956854714,
+   "depth_H_target_raw": 0.0024057783014322562,
+   "depth_H_nb_raw": 0.002505366936547193,
+   "depth_H_target_decontaminated": 0.011742396434446358,
+   "depth_H_nb_decontaminated": 0.012228479974724702,
+   "dilution_factor": 4.880913768095605
+  },
+  "centred_on_nb_r2.0": {
+   "frac_target": 0.45592394388358776,
+   "frac_nb": 0.15958680991174676,
+   "depth_H_target_raw": 0.0019123514752220662,
+   "depth_H_nb_raw": 0.0019515041092359924,
+   "depth_H_target_decontaminated": 0.011983142443160668,
+   "depth_H_nb_decontaminated": 0.0122284799747247,
+   "dilution_factor": 6.266182026904422
+  },
+  "centred_on_nb_r2.5": {
+   "frac_target": 0.42420196062612203,
+   "frac_nb": 0.14471568100949062,
+   "depth_H_target_raw": 0.0017792951128765217,
+   "depth_H_nb_raw": 0.001769652807253204,
+   "depth_H_target_decontaminated": 0.012295109282316363,
+   "depth_H_nb_decontaminated": 0.012228479974724704,
+   "dilution_factor": 6.910101193072636
+  }
+ },
+ "note": "QLP/eleanor flux fractions use the S13 PRF scene (TESS_PRF at Gaia positions, field registration); 'decontaminated' = depth after removing all flux except the named star's own, i.e. what a contamination-corrected light curve of that star would show."
+}

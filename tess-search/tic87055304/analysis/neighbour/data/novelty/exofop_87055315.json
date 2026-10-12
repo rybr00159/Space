@@ -1,0 +1,290 @@
+{
+    "basic_info": {
+        "tic_id": "87055315",
+        "star_names": "TIC 87055315, 2MASS J18102616-4359369, Gaia DR2 6720986208895208960, Gaia DR3 6720986208895208960, UCAC4 231-157456, WISE J181026.17-435936.9",
+        "confirmed_planets": "",
+        "k2_campaign": "",
+        "tic_contamination_ratio": "none"
+    },
+    "coordinates": {
+        "ra": "272.60902337669103",
+        "dec": "-43.993632427339499",
+        "galactic_long": "349.2309",
+        "galactic_lat": "-11.69951",
+        "ecliptic_long": "272.0045",
+        "ecliptic_lat": "-20.57248",
+        "pm_ra": ".550493",
+        "pm_ra_error": ".063733",
+        "pm_dec": "-5.73701",
+        "pm_dec_error": ".0522015"
+    },
+    "tois": [
+
+    ],
+    "ctois": [
+
+    ],
+    "planet_units": {
+        "epoch": "BJD",
+        "per": "days",
+        "dep_m": "mmag",
+        "dep_p": "ppm",
+        "dur": "hrs",
+        "inc": "deg",
+        "imp": "",
+        "rr": "",
+        "ar": "",
+        "rad": "R_Earth",
+        "mass": "M_Earth",
+        "ins": "Earth flux",
+        "eqt": "K",
+        "dens": "g\/cm^3",
+        "sma": "AU",
+        "ecc": "",
+        "arg": "",
+        "time": "BJD",
+        "vsa": "m\/s",
+        "snr": ""
+    },
+    "planet_parameters": [
+
+    ],
+    "stellar_units": {
+        "teff": "K",
+        "logg": "",
+        "srad": "R_Sun",
+        "logr": "",
+        "sindex": "",
+        "halpha": "",
+        "vsini": "km\/s",
+        "rotper": "days",
+        "met": "",
+        "mass": "M_Sun",
+        "dens": "g\/cm^3",
+        "lum": "L_Sun",
+        "otime": "BJD",
+        "rv": "m\/s",
+        "dist": "pc",
+        "age": "Gyr",
+        "snr": ""
+    },
+    "stellar_parameters": [
+        {
+            "prov": "tic",
+            "prov_title": "TESS Input Catalog Stellar Parameters",
+            "prov_num": "1"
+        },
+        {
+            "tel": "",
+            "inst": "",
+            "teff": "5821",
+            "teff_e": "122",
+            "logg": "3.89894",
+            "logg_e": null,
+            "srad": "1.90615",
+            "srad_e": null,
+            "logr": "",
+            "logr_e": "",
+            "sindex": "",
+            "sindex_e": "",
+            "halpha": "",
+            "halpha_e": "",
+            "vsini": "",
+            "vsini_e": "",
+            "rotper": "",
+            "rotper_e": "",
+            "met": null,
+            "met_e": null,
+            "mass": "1.05",
+            "mass_e": null,
+            "dens": 0.213764,
+            "dens_e": "",
+            "lum": "3.758376",
+            "lum_e": null,
+            "otime": "",
+            "otime_e": "",
+            "rv": "",
+            "rv_e": "",
+            "dist": "1269.93",
+            "dist_e": "63.975",
+            "age": "",
+            "age_e": "",
+            "snr": "",
+            "snr_e": "",
+            "fitq": "",
+            "snotes": "TIC v8.2",
+            "sdate": "2019-04-15",
+            "suser": "TESS project",
+            "sgroup": "",
+            "stag": ""
+        }
+    ],
+    "stellar_companions_units": {
+        "sep": "arcsec",
+        "pa": "E of N (deg)",
+        "filt": "",
+        "dmag": "",
+        "odate": "UT"
+    },
+    "stellar_companions": [
+
+    ],
+    "magnitudes": [
+        {
+            "band": "TESS",
+            "value": "13.5466",
+            "value_e": "0.0061",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "tmag"
+        },
+        {
+            "band": "V",
+            "value": "14.154",
+            "value_e": "0.08",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "vmag"
+        },
+        {
+            "band": "Gaia",
+            "value": "14.0379",
+            "value_e": "0.000437",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "gaiamag"
+        },
+        {
+            "band": "J",
+            "value": "12.81",
+            "value_e": "0.026",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "jmag"
+        },
+        {
+            "band": "H",
+            "value": "12.556",
+            "value_e": "0.032",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "hmag"
+        },
+        {
+            "band": "K",
+            "value": "12.471",
+            "value_e": "0.034",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "kmag"
+        },
+        {
+            "band": "WISE 3.4 micron",
+            "value": "12.32",
+            "value_e": "0.033",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "w1mag"
+        },
+        {
+            "band": "WISE 4.6 micron",
+            "value": "12.363",
+            "value_e": "0.037",
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "w2mag"
+        },
+        {
+            "band": "WISE 12 micron",
+            "value": "12.23",
+            "value_e": null,
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "w3mag"
+        },
+        {
+            "band": "WISE 22 micron",
+            "value": "8.384",
+            "value_e": null,
+            "mnotes": "TIC v8.2",
+            "mdate": "2019-04-15",
+            "muser": "TESS project",
+            "mgroup": "",
+            "mtag": "",
+            "mtabname": "w4mag"
+        }
+    ],
+    "imaging_units": {
+        "itel": "",
+        "iinst": "",
+        "ifilt": "",
+        "itype": "",
+        "ipix": "arcsec",
+        "ipsf": "arcsec",
+        "icont": "",
+        "idate": "UT"
+    },
+    "imaging": [
+
+    ],
+    "spectroscopy_units": {
+        "stel": "",
+        "sinst": "",
+        "ssres": "R",
+        "swave": "",
+        "ssnr1": "",
+        "ssnr2": "",
+        "sapp": "",
+        "sdate": "UT"
+    },
+    "spectroscopy": [
+
+    ],
+    "time_series_units": {
+        "tstel": "",
+        "tscam": "",
+        "tsfilt": "",
+        "tspix": "arcsec",
+        "tspsf": "arcsec",
+        "tspar": "pixel",
+        "tstcov": "",
+        "tsmag": "",
+        "tsdate": "UT",
+        "tsdur": "m",
+        "tsnum": "",
+        "tstype": ""
+    },
+    "time_series": [
+
+    ],
+    "files": [
+
+    ]
+}

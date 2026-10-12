@@ -1,0 +1,16 @@
+GALEX_GUVcat (II/335/gr6xy): no source within 15"
+GALEX_DR5 (II/312/ais): no source within 15"
+APASS9 (II/336/apass9): 1 rows, r = 1.06
+SMSS_DR1 (II/358/smss): 5 rows, r = 0.35, 9.01, 9.80, 11.41, 13.00
+SMSS_DR4 (II/379/smssdr4): 6 rows, r = 0.40, 3.75, 8.92, 11.27, 12.84, 14.43
+Tycho2 (I/259/tyc2): 1 rows, r = 1.28
+2MASS (II/246/out): 4 rows, r = 0.21, 9.02, 12.89, 14.76
+AllWISE (II/328/allwise): 2 rows, r = 0.47, 9.05
+CatWISE (II/365/catwise): 4 rows, r = 0.41, 8.91, 12.30, 14.98
+DENIS (B/denis/denis): no source within 15"
+UCAC4 (I/322A/out): 2 rows, r = 0.22, 9.00
+GaiaDR3 (I/355/gaiadr3): 13 rows, r = 0.43, 4.38, 5.28, 8.91, 9.14, 9.87, 10.43, 10.82
+VHS (II/367/vhs_dr5): 10 rows, r = 0.28, 5.14, 5.84, 9.02, 9.88, 10.49, 10.86, 11.41
+unWISE (II/363/unwise): 4 rows, r = 0.42, 9.05, 12.41, 12.65
+VPHAS (II/341/vphasp): no source within 15"
+XMM_OM (II/370/xmmom6s): no source within 15"

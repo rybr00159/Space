@@ -1,0 +1,22 @@
+{
+ "source": "Claret 2017 J/A+A/600/A30 table25 (ATLAS, quadratic, LSM, xi=2), via transit/claret2017_table25_full.csv",
+ "Teff_range": [
+  5250,
+  6000
+ ],
+ "logg_range": [
+  3.8,
+  4.2
+ ],
+ "MH": [
+  -0.5,
+  0.0
+ ],
+ "n_grid": 40,
+ "u1_mean": 0.30594350000000003,
+ "u1_sd": 0.045326583106978686,
+ "u2_mean": 0.2721555,
+ "u2_sd": 0.021669403450428348,
+ "u1_prior_sigma": 0.06748702939197906,
+ "u2_prior_sigma": 0.054493697304343704
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "sector": 13,
+  "chi2_ratio_target": 92.61625711467525,
+  "chi2_ratio_neighbour": 7.836027546073295,
+  "dof": 8
+ },
+ {
+  "sector": 39,
+  "chi2_ratio_target": 92.09102549397804,
+  "chi2_ratio_neighbour": 8.832856038218953,
+  "dof": 8
+ },
+ {
+  "sector": 66,
+  "chi2_ratio_target": 81.86637490105608,
+  "chi2_ratio_neighbour": 11.42512738056654,
+  "dof": 8
+ },
+ {
+  "sector": 93,
+  "chi2_ratio_target": 141.79661550914184,
+  "chi2_ratio_neighbour": 13.03397578941592,
+  "dof": 8
+ },
+ {
+  "sector": 104,
+  "chi2_ratio_target": 91.05072609289597,
+  "chi2_ratio_neighbour": 15.743122322854287,
+  "dof": 8
+ }
+]

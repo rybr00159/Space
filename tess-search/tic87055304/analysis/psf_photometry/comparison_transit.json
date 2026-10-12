@@ -1,0 +1,192 @@
+{
+ "note": "Comparison made AFTER all psf_photometry numbers were produced (independence rule).",
+ "f_target": {
+  "mine_nominal": {
+   "f_best": 0.16300000000000003,
+   "f_lo": 0.07400000000000007,
+   "f_hi": 0.248,
+   "chi2_min": 1.3605479980642272,
+   "chi2_f1": 134.01457644908947,
+   "chi2_f0": 4.555086123414364
+  },
+  "mine_per_sector": {
+   "13": [
+    -0.12430819647302624,
+    0.26176390881691564
+   ],
+   "39": [
+    0.22851403644626234,
+    0.1687279101922973
+   ],
+   "66": [
+    0.18165031450943214,
+    0.2285553232820936
+   ],
+   "93": [
+    0.16398972275300278,
+    0.21677698386387326
+   ],
+   "104": [
+    0.19227462850100407,
+    0.14166001283277918
+   ]
+  },
+  "transit_twosource_combined": {
+   "mean": 0.020565829755397697,
+   "err": 0.03903156385350952,
+   "chi2": 11.838091758966328
+  },
+  "transit_twosource_per_sector": {
+   "13": [
+    0.0004001026519649321,
+    0.09488977250601088
+   ],
+   "39": [
+    -0.10320028887025959,
+    0.09176229793930639
+   ],
+   "66": [
+    0.010775238195023911,
+    0.08595597232196438
+   ],
+   "93": [
+    -0.1171833959182802,
+    0.08524490912199467
+   ],
+   "104": [
+    0.254397863266411,
+    0.08068265691464135
+   ]
+  }
+ },
+ "aperture_chi2": {
+  "transit_concentric_apertures": {
+   "13": {
+    "frac_target": [
+     18.93711428158373,
+     8
+    ],
+    "frac_neighbour": [
+     10.22322357755477,
+     8
+    ]
+   },
+   "39": {
+    "frac_target": [
+     29.961532516386047,
+     8
+    ],
+    "frac_neighbour": [
+     1.8901490866689583,
+     8
+    ]
+   },
+   "66": {
+    "frac_target": [
+     53.30616603538121,
+     8
+    ],
+    "frac_neighbour": [
+     5.546703017065072,
+     8
+    ]
+   },
+   "93": {
+    "frac_target": [
+     70.80527565491602,
+     8
+    ],
+    "frac_neighbour": [
+     36.757956397439486,
+     8
+    ]
+   },
+   "104": {
+    "frac_target": [
+     17.954763806777848,
+     8
+    ],
+    "frac_neighbour": [
+     9.730358829451484,
+     8
+    ]
+   }
+  },
+  "transit_total_target": 190.96485229504486,
+  "transit_total_nb": 64.14839090817976,
+  "mine_named_eps0p05_total_target": 63.05074233721663,
+  "mine_named_eps0p05_total_nb": 3.463313204096069,
+  "mine_named_dof": 15,
+  "mine_pixelmap_eps0p05_total_target": 188.3145060475076,
+  "mine_pixelmap_eps0p05_total_nb": 53.161195310407884,
+  "mine_pixelmap_dof": 96
+ },
+ "neighbour_own_lcs": {
+  "transit_qlp_ratio": [
+   5.527706633152597,
+   0.4732278716200489
+  ],
+  "transit_eleanor_ratio": [
+   0.9999984248086151,
+   0.09733769538027687
+  ],
+  "mine_qlp_depths_ppt": {
+   "target": 3.915071542319369,
+   "nb": 21.65330106454858,
+   "ratio": 5.53075488672187
+  },
+  "mine_eleanor_identical": true
+ },
+ "localisation": {
+  "mine_pixelmap_combined": {
+   "best_offset_arcsec_EN": [
+    5.7999999999999154,
+    6.399999999999913
+   ],
+   "neighbour_offset_arcsec_EN": [
+    6.651956378154943,
+    6.707732595109635
+   ],
+   "dist_best_to_nb_arcsec": 0.9058305693516844,
+   "dist_best_to_target_arcsec": 8.637129152675552,
+   "dchi2_at_target": 141.62498103727086,
+   "dchi2_at_neighbour": 1.2578025537200705,
+   "one_sigma_E_range": [
+    4.999999999999918,
+    6.799999999999912
+   ],
+   "one_sigma_N_range": [
+    5.599999999999916,
+    7.39999999999991
+   ]
+  },
+  "transit_prf_localize_combined": {
+   "E": 4.177781693263479,
+   "E_err": 0.24681591252836654,
+   "N": 3.3014155340728553,
+   "N_err": 0.2958733706056128,
+   "chi2_scatter_E": 16.322139365668605,
+   "chi2_scatter_N": 19.09425471393099,
+   "dof": 4,
+   "dist_target_arcsec": 5.324772709251073,
+   "sigma_from_target": 20.273605492457197,
+   "sigma_from_neighbour": 14.834798938732574,
+   "neighbour_E_N": [
+    6.593695943266262,
+    6.599573773254974
+   ],
+   "scatter_inflation": 2.104055431767412,
+   "sigma_from_target_infl": 9.635490199717465,
+   "sigma_from_neighbour_infl": 7.050574198167063
+  },
+  "comment": "transit/prf_localize.py places the source between the stars (E 4.2, N 3.3 arcsec; 7 sigma from the neighbour). Its PRF/WCS registration was fitted on the out-of-transit image with FREE fluxes for the target and neighbour, which is degenerate with the pair centroid along the target-neighbour axis. In S104 its x-registration (along the separation, which is along -x there) differs from the field-star registration used here by ~0.24 px, while the perpendicular (y) component agrees (0.112 vs 0.105 px). With field-star registration (pair excluded) the pixel-map source is 0.9 arcsec from the neighbour. transit/localize_twosource.py (ratio fixed to Gaia) agrees with this work.",
+  "transit_prf_localize_S104_registration_implied_px": [
+   -0.207,
+   0.112
+  ],
+  "mine_S104_field_registration_px": [
+   0.0313406019524334,
+   0.10546758666830898
+  ]
+ }
+}

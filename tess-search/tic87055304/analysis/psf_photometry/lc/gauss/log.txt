@@ -1,0 +1,16 @@
+  S13: Gaussian PSF sigma = 0.593 px
+S13 gauss: N=1112 free=13 Ft med 2431.3 Fn med 637.5 corr(Ft,Fn) formal -0.899 reg rms dx 0.0148 dy 0.0420 chi2/pix 626.94 (1s)
+  S39: Gaussian PSF sigma = 0.636 px
+S39 gauss: N=2991 free=12 Ft med 2862.9 Fn med 264.4 corr(Ft,Fn) formal -0.898 reg rms dx 0.0157 dy 0.0242 chi2/pix 583.93 (2s)
+  S66: Gaussian PSF sigma = 0.558 px
+S66 gauss: N=8705 free=14 Ft med 3438.4 Fn med -310.4 corr(Ft,Fn) formal -0.871 reg rms dx 0.0135 dy 0.0284 chi2/pix 90.48 (6s)
+  S93: Gaussian PSF sigma = 0.584 px
+S93 gauss: N=9732 free=14 Ft med 2881.9 Fn med 297.5 corr(Ft,Fn) formal -0.881 reg rms dx 0.0126 dy 0.0512 chi2/pix 81.12 (6s)
+  S104: Gaussian PSF sigma = 0.550 px
+S104 gauss: N=10030 free=14 Ft med 2928.2 Fn med 196.3 corr(Ft,Fn) formal -0.849 reg rms dx 0.0100 dy 0.0383 chi2/pix 100.85 (7s)
+S13 [gauss] ntr=6 dFt=0.04+-2.66 dFn=9.17+-2.13 (rho -0.90) f_t=0.004+-0.289 | depth t(psf) 0.02+-1.10 ppt n(psf) 14.4+-3.3 ppt; n(cat) 18.8+-4.4; pair 3.01+-0.44 ppt; Fn/Ft psf 0.262
+S39 [gauss] ntr=5 dFt=2.34+-1.89 dFn=9.85+-1.52 (rho -0.78) f_t=0.192+-0.145 | depth t(psf) 0.82+-0.66 ppt n(psf) 37.2+-5.8 ppt; n(cat) 19.7+-3.0; pair 3.89+-0.36 ppt; Fn/Ft psf 0.092
+S66 [gauss] ntr=4 dFt=3.14+-5.54 dFn=7.89+-3.60 (rho -0.94) f_t=0.285+-0.448 | depth t(psf) 0.92+-1.62 ppt n(psf) -26.5+-12.1 ppt; n(cat) 15.8+-7.2; pair 3.53+-0.68 ppt; Fn/Ft psf -0.087
+S93 [gauss] ntr=4 dFt=1.45+-2.38 dFn=8.92+-2.02 (rho -0.92) f_t=0.140+-0.223 | depth t(psf) 0.51+-0.83 ppt n(psf) 29.2+-6.6 ppt; n(cat) 17.6+-4.0; pair 3.26+-0.28 ppt; Fn/Ft psf 0.106
+S104 [gauss] ntr=5 dFt=1.34+-1.71 dFn=8.69+-1.33 (rho -0.88) f_t=0.134+-0.163 | depth t(psf) 0.46+-0.58 ppt n(psf) 44.1+-6.8 ppt; n(cat) 17.5+-2.7; pair 3.21+-0.26 ppt; Fn/Ft psf 0.067
+COMBINED [gauss]: f_target = 0.147 [0.054, 0.236] (1-sigma); chi2(f=1) 127.2, chi2(f=0) 2.8, chi2min 0.4 (dof 4); depth_t(psf) 0.55+-0.36 ppt; depth_n(psf) 22.6+-2.4 ppt; depth_n(cat) 18.2+-1.6 ppt; pair 3.34+-0.15 ppt
