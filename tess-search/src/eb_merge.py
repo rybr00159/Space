@@ -13,6 +13,11 @@ NOTES = {
     90919279: "slightly eccentric (secondary at phase 0.513)",
     76440895: "well-separated eclipses; grouped with close binaries only because P < 0.8 d",
     33445288: "eclipses on top of ellipsoidal variation",
+    # combined S104+S105 search
+    100378891: "eccentric (secondary at phase 0.357, e cos w ~ -0.22)",
+    139256801: "highly eccentric (secondary at phase 0.722, e cos w ~ +0.35)",
+    404124262: "flat-bottomed (total) primary eclipse; cool companion (secondary 8 % of primary)",
+    281740175: "flat-bottomed (total) primary eclipse; cool companion; secondary at phase 0.514",
 }
 # finer phase scan (0.0025 steps, wider window): secondary centred at 0.500, 570 +- 47 ppm
 # 63594264 and 33445288: the automatic search returned the primary eclipse wing; the secondaries sit at phase 0.50

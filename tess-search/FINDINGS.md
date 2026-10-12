@@ -166,3 +166,74 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
 - TIC 97012825: 32" offset at 9.1 sigma (S103) and 24" at 5.2 sigma (S93); TIC contamination ratio 1.4 -> blend
 - TIC 1542186739 (Gaia G = 11.06 at ~830 pc, so M_G ~ 1.5: evolved): grazing fit (b = 1.17), depth differs 2.4x between
   sectors, and a 0.75 d orbit would graze the surface of a ~3 R_sun star -> not a planet
+- TIC 122017198 (F star, 0.38 %): secondary 637 ppm at 5.3 sigma, 12" offset at 3.1 sigma in S104, TIC contamination
+  ratio 0.72 -> EB, probably blended
+- TIC 30775686: 30-35" offsets at 7.7-10.7 sigma in three sectors, odd/even 4.3 sigma -> blend of a neighbouring EB
+- TIC 119943912 (2.3 R_sun F star): on target, but the fit needs a 2.6 R_Jup companion on a grazing orbit (b = 0.93),
+  with a 230 ppm secondary at 3.1 sigma -> stellar companion (grazing EB), not a planet
+- TIC 112079520: offsets 16" (4.6 sigma, S104) and 22" (5.1 sigma, S66), depth varies 2.5x, secondary 6.2 sigma -> blended EB
+- TIC 213812460: odd/even 8.9 sigma, 29" offset at 8.8 sigma (S103), depth varies 2.7x -> blended EB at twice the period
+- TIC 123912679: secondary 483 ppm at 4.8 sigma, b = 0.95, fitted density 7x too low, offsets 10-16" at ~3 sigma,
+  depth varies 2.6x -> blended EB
+- TIC 232873972 (0.538 d): neighbours contribute ~2x the target's flux (TIC contamination ratio 1.94), 30" offset at
+  3.9 sigma (S104), strong phase variation (brightening at phase 0.5, 5 sigma) -> blended variable
+- TIC 200959803: odd/even 15.5 sigma, 42-46" offsets at ~4-5 sigma -> blended EB at twice the period
+- TIC 64352125: 25-41" offsets at 3.5-6.8 sigma, depth varies 6x -> blend
+- TIC 49442138: grazing fit (b = 1.08), odd/even 4.3 sigma, 27" offsets at ~4 sigma -> blended EB
+- TIC 469039599 (0.603 d): ~3 sigma offsets of 12-20" in both measured sectors, neighbours outshine the target in the
+  aperture (TIC contamination ratio 1.24), depth varies 2x -> blend
+- TIC 247736519 (11,100 K star): only a grazing fit works (b = 1.2) -> grazing EB
+- TIC 216975471: odd/even 5.0 sigma, 28" offset at 5.7 sigma (S104), other sectors only a quarter as deep -> blend
+- TIC 217581961 (K dwarf): fitted density 50x too low for the star, 34" offset at 10.5 sigma (S93) -> blend
+
+### Novelty check added late: Green+23 ellipsoidal candidates (J/MNRAS/522/29)
+- Table 2 lists every TESS target they processed, with a candidate score; the all-VizieR keyword sweep cannot flag it
+  because its table description ("Results for all TESS input targets") names no variability.
+- 33 of the 47 EBs are in it, all with Score <= 0.19 (none is one of their ~15,000 candidates). TIC 87055304: Score 0.0.
+- TIC 158159741 (G star, T = 11.1; P = 1.80689 d, 1.7 ppt, 5 sectors): on target in 3 difference images and no
+  odd/even or secondary, but the fit is near-grazing (b = 0.95, V-shaped); Gaia RUWE 6.6 with an astrometric
+  acceleration solution and a 34 km/s RV range over 19 epochs (hierarchical system); a T ~ 16.7 star 3.6" away could
+  produce the dip with a ~32 % eclipse. TRICERATOPS FPP 0.89 (SEBx2P 0.57) -> most likely an EB, not a planet
+
+## Combined Sector 104+105 search (39,999 stars in both sectors; periods 5-25 d)
+- 410 candidates after rescoring (>= 3 transits, red-noise S/N >= 10): 340 EB-like, 42 variable, 28 planet-like.
+  After known-signal and VizieR checks, 6 new planet-like and 118 new EB-like signals.
+- Planet-like: TIC 128972240, 183588924, 220015693, 231063191 not recovered in any other sector (systematics);
+  TIC 387292667 odd/even 11.2 sigma and grazing (b = 1.2) -> EB at 2 x 9.645 d; TIC 320686138 -> candidate (below).
+- EB-like: 53 passed broad novelty; 6 passed every cut and visual review and were added to the EB table (53 total),
+  all detached with periods 3.3-15.5 d, including two strongly eccentric systems (TIC 100378891, 139256801).
+
+## QLP DET_FLUX depth bias (found while vetting)
+- For transits lasting several hours, QLP's detrended flux (DET_FLUX / KSPSAP_FLUX) overshoots around each transit
+  (+0.5-1 ppt "shoulders") and underestimates the depth, by up to 60 % in some sectors (TIC 320686138, S104: DET 1,698
+  ppm vs SAP 4,078 ppm). Depth-consistency checks across sectors must therefore use SAP flux with a transit-masked
+  detrend; the candidate dossiers below do.
+
+## New planet candidates (not validated)
+### TIC 87055304 = TYC 7912-71-1 (T = 11.7, F/G star; Gaia DR3 6720986204578421888)
+- P = 4.136195 +- 0.000007 d, T0 = BTJD 1658.4133 +- 0.0027; 5 sectors (S13, S39, S66, S93, S104; 2019-2026)
+- SAP-flux transit: 3,580 +- 120 ppm (TIC contamination ratio 0.51, so ~5,400 ppm undiluted), flat-bottomed,
+  b = 0.85 +- 0.04, a/R* = 4.3 +- 0.4 -> host density 0.063 solar (circular): an evolved F/G subgiant (Gaia GSP-Phot:
+  R = 3.5, log g = 3.5; TIC R = 1.79; FLAME R = 1.24 uses a parallax degraded by RUWE 18.8)
+- Odd/even 3,529 vs 3,624 ppm (0.4 sigma); secondary at phase 0.5: 109 +- 203 ppm; no secondary anywhere in phase
+  (a phase-0.39 feature is one scattered-light event at the start of S104); no ellipsoidal or beaming signal above the
+  ~200 ppm noise floor set by fitting 40 unrelated periods
+- Difference images on target (S66 1.1", S104 1.7", both 0.3 sigma); the T = 13.5 star 9" away is excluded at > 6
+  sigma by S66; the T ~ 17.8 stars at 4-5" would need 81-91 % eclipses
+- Gaia DR3 RVs: 6 epochs, robust amplitude 5.2 km/s, constant (p = 0.93) -> a companion orbiting this star with
+  K >~ 5 km/s (>~ 50 M_Jup) is disfavoured
+- Companion radius 0.067 R* (diluted) to 0.082 R* (undiluted): 1.2-1.4 R_Jup if R* = 1.8, 1.8-2.2 R_Jup if R* = 2.7
+- TRICERATOPS (QLP DET light curve, TIC star): FPP 0.037, NFPP < 1e-4 (TP 0.78, PTP 0.16, STP 0.04) -> "likely planet"
+  by its criteria (validation needs FPP < 0.015)
+- Not a TOI/CTOI (none within 3'), not a SPOC TCE, not in Kostov+25, Green+23 score 0, no variability catalogue
+- Risks: RUWE 18.8 (unresolved companion that could host an EB); host size uncertain, so the companion could be > 2 R_Jup
+- Follow-up: RVs (a 1 M_Jup planet gives K ~ 106 m/s); high-resolution imaging
+
+### TIC 320686138 (G star, T = 11.8, [Fe/H] +0.41) — downgraded: most likely a grazing EB
+- P = 11.91415 +- 0.00003 d, ~3,700 ppm (SAP/PDCSAP), 2.2 h, 9 transits in 5 sectors 2019-2026; on target (0.3-1.1
+  sigma); no secondary (4 +- 160 ppm); odd/even ~1.3 sigma after allowing for the excess per-transit scatter
+- The duration is 0.37x that of a central transit, so the orbit is near-grazing. The free fit prefers Rp/R* 0.34 with
+  b 1.26 (chi2 845) over a b = 0.93, 1.0 R_Jup planet at the stellar density (chi2 851)
+- Gaia RV constant over 12 epochs (p = 0.77): no massive companion around the G star itself
+- TRICERATOPS (clean light curve): FPP 0.98 (SEBx2P 0.86, EBx2P 0.10, TP 0.007) -> most likely two near-equal grazing
+  eclipses at 23.8 d on an unresolved companion; not a planet candidate worth claiming
