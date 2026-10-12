@@ -18,15 +18,16 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   - The extra false-positive probability is an eclipsing binary on the star itself, which Gaia's flat radial
     velocities argue against.
   - It is not validated: radial velocities are needed. See [below](#new-planet-candidate-tic-87055304).
-- **No new planet could be validated.** 168 planet-like signals were tested for recurrence in every other TESS sector
+- **No new planet could be validated.** 190 planet-like signals were tested for recurrence in every other TESS sector
   from 2018 to 2026, and every one that recurred was vetted. Five more repeating signals are new but most likely not
   planets: TIC 155991187, 72651793, 245976814, 158159741 and 320686138.
-- **53 eclipsing or close binary stars, characterised for the first time.** Each is a star with a companion star whose
+- **62 eclipsing or close binary stars, characterised for the first time.** Each is a star with a companion star whose
   orbital period and eclipses had never been published.
-  - 51 were previously only flagged as "eclipse-like" in an unvetted neural-network list of about 873,000 TESS stars
+  - 59 were previously only flagged as "eclipse-like" in an unvetted neural-network list of about 873,000 TESS stars
     ([Kostov et al. 2025](https://ui.adsabs.harvard.edu/abs/2025ApJS..279...50K), table 2), which gives no period, depth or vetting.
   - 2 (TIC 114787953 and TIC 100666720) are not in that list or any other catalogue checked.
-  - For 3 others, Gaia already has a binary solution, so the binarity was known and only the eclipses are new.
+  - For 4 others (one of them not in Kostov's list), Gaia already has a binary solution, so the binarity was known
+    and only the eclipses are new.
 
   The accurate claim is therefore *first vetted confirmation and characterisation*, not first-ever detection.
 
@@ -111,6 +112,8 @@ count against it. High-resolution imaging would show the companion.
 **TIC 100666720: a pair of M dwarfs 122 pc away**
 
 - 7.341134-day orbit, with alternating 6.4 % and 5.0 % eclipses that are consistent in every sector.
+- Three more M-dwarf pairs were found later: TIC 343895671 (3.02 d, 31 % and 28 % eclipses), and TIC 212554303 and
+  316096209, whose true orbits (1.198 d and 2.296 d) were also revealed by unequal alternate eclipses.
 - The search first found half this period. Each sector's odd and even eclipses have different depths, which shows the
   true orbit is twice as long. TYC 9119-1863-1 (TIC 406279367) is a second case, with near-equal eclipses.
 - Not in any catalogue checked.
@@ -125,11 +128,11 @@ count against it. High-resolution imaging would show the companion.
   - TIC 217276354, at 0.526.
   - TYC 8341-933-1 (TIC 217648205), at 0.38; it also shows visible pulsations.
 
-## All 53 binaries
+## All 62 binaries
 
 Periods come from eclipse timing across 2018–2026. Depths are averages over pipelines, which dilute differently.
 For every system the pixel check places the eclipse on the target, within 2.5σ of its catalogue position.
-For 38 of the 53, no Gaia star within 42″ is bright enough to cause the eclipse.
+For 40 of the 62, no Gaia star within 42″ is bright enough to cause the eclipse.
 Full numbers are in [`candidates/new_eclipsing_binaries.csv`](candidates/new_eclipsing_binaries.csv) and folded light curves
 in [`candidates/final_figs/`](candidates/final_figs/).
 
@@ -139,7 +142,9 @@ in [`candidates/final_figs/`](candidates/final_figs/).
 | 100378891 | 2MASS J20310324-5307568 | 11.99 | 11.20054 | 38.1 % | 8.37 % (0.357) | 5 | detached | eccentric (secondary at phase 0.357, e cos w ~ -0.22); found by the combined two-sector search |
 | 146708570 | - | 11.49 | 4.732100 | 34.2 % | 22.60 % (0.500) | 5 | detached | Gaia RV amplitude 121 km/s; RUWE 15 |
 | 123267483 | TYC 7006-2246-1 | 10.46 | 7.273221 | 31.8 % | 27.79 % (0.485) | 4 | detached | near-twin |
+| 343895671 | - | 12.66 | 3.020022 | 31.4 % | 27.65 % (0.501) | 7 | detached | M-dwarf pair, near-twin |
 | 217276354 | - | 11.52 | 6.89185 | 27.2 % | 28.70 % (0.526) | 3 | detached | near-twin; eccentric (secondary at phase 0.526); Gaia RV amplitude 116 km/s |
+| 316096209 | SIPS J1840-4010 | 12.83 | 2.296088 | 24.9 % | 24.16 % (0.500) | 3 | detached | M-dwarf pair (3,100 K); odd and even eclipses differ in all 3 sectors, so the orbit is twice the search period; an equally bright star 3.2" away (T~12.8) cannot be separated by TESS, so either could be the eclipsing pair |
 | 234968334 | UCAC2   4235460 | 11.93 | 7.685760 | 23.8 % | 9.23 % (0.500) | 5 | detached | Gaia RV amplitude 108 km/s; RUWE 37.9; found by the combined two-sector search |
 | 139256801 | TYC 8448-663-1 | 10.69 | 15.523717 | 21.6 % | 16.10 % (0.722) | 7 | detached | highly eccentric (secondary at phase 0.722, e cos w ~ +0.35); found by the combined two-sector search |
 | 80064194 | TYC 8394-1748-1 | 10.55 | 5.810694 | 19.1 % | 7.26 % (0.500) | 4 | detached |  |
@@ -161,12 +166,15 @@ in [`candidates/final_figs/`](candidates/final_figs/).
 | 372170356 | - | 11.72 | 2.835650 | 7.2 % | 1.31 % (0.500) | 7 | detached | Gaia RV amplitude 159 km/s; RUWE 10.5 |
 | 143345010 | TYC 7940-1151-1 | 10.63 | 2.669561 | 7.0 % | 1.47 % (0.500) | 4 | detached | Gaia NSS solution exists (binarity known; eclipses new) |
 | 180444443 | TYC 7001-246-1 | 11.19 | 2.497060 | 6.9 % | 1.05 % (0.502) | 6 | detached |  |
+| 363482012 | - | 12.21 | 3.68671 | 6.7 % | 4.93 % (0.500) | 6 | detached | M dwarf (3,800 K) |
 | 281740175 | UCAC4 155-000744 | 11.79 | 11.05219 | 6.3 % | 0.53 % (0.515) | 10 | detached | flat-bottomed (total) primary eclipse; cool companion; secondary at phase 0.514; RUWE 9.2; found by the combined two-sector search |
 | 412733784 | - | 11.02 | 3.854711 | 6.2 % | 0.51 % (0.517) | 6 | detached | slightly eccentric (secondary at phase 0.517); RUWE 6.9 |
 | 89040715 | TYC 8003-1087-1 | 11.02 | 4.621055 | 5.9 % | 3.31 % (0.502) | 4 | detached | RUWE 8.2 (tertiary?) |
+| 304770656 | - | 11.86 | 3.16020 | 5.9 % | 0.73 % (0.489) | 5 | detached | flat-bottomed (total) primary eclipse; secondary at phase 0.489; Gaia RV amplitude 106 km/s |
 | 100666720 | - | 13.39 | 7.341134 | 5.8 % | 0.14 % (0.117) | 4 | detached | M-dwarf pair, 122 pc; alternating 6.4 % / 5.0 % eclipses, so the orbit is twice the search period |
 | 48939280 | - | 13.25 | 2.73651 | 5.5 % | 3.72 % (0.500) | 4 | detached | M-dwarf pair |
 | 128677131 | - | 11.53 | 1.251952 | 5.4 % | 2.78 % (0.500) | 5 | detached |  |
+| 212554303 | UCAC4 191-166535 | 11.89 | 1.198154 | 5.0 % | 4.68 % (0.500) | 6 | detached | M-dwarf pair; odd and even eclipses differ in all 6 sectors, so the orbit is twice the search period; an equally bright star 2.4" away (T~11.8) cannot be separated by TESS, so either could be the eclipsing pair |
 | 217648205 | TYC 8341-933-1 | 10.54 | 7.61104 | 4.5 % | 0.31 % (0.382) | 6 | detached | eccentric (secondary at phase 0.38); pulsations visible; G=13.7 star 3.8" away cannot be separated by TESS |
 | 90919279 | TYC 7914-380-1 | 11.73 | 7.392323 | 4.2 % | 1.45 % (0.512) | 4 | detached | slightly eccentric (secondary at phase 0.513); a T~13.5 star 5.1" away could produce the eclipse and cannot be separated by TESS; Gaia RV amplitude 126 km/s |
 | 63594264 | TYC 7907-2230-1 | 11.38 | 1.813884 | 4.2 % | 0.60 % (0.500) | 3 | detached | eclipse 4.3 % deep in S13/S39 but 2.9 % in S104: dilution differs between sectors |
@@ -177,14 +185,18 @@ in [`candidates/final_figs/`](candidates/final_figs/).
 | 49617965 | TYC 7016-804-1 | 11.35 | 3.76520 | 3.7 % | 0.22 % (0.500) | 3 | detached | cool companion (secondary 6 % of primary); BLS first found 4x the period |
 | 200247352 | - | 11.03 | 3.338011 | 3.7 % | 1.31 % (0.500) | 5 | detached |  |
 | 197985960 | - | 11.74 | 3.329832 | 3.0 % | 2.45 % (0.500) | 7 | detached |  |
+| 124358211 | - | 11.88 | 0.845550 | 2.9 % | 0.40 % (0.503) | 5 | detached | RUWE 13.2 |
 | 278802197 | TYC 7999-451-1 | 11.79 | 1.061827 | 2.8 % | 1.35 % (0.502) | 4 | detached | Gaia NSS solution exists (binarity known; eclipses new) |
+| 379508029 | - | 11.96 | 1.097569 | 2.5 % |  % () | 7 | detached | no secondary detected (< 0.04 %); the orbit could be twice this period if the two eclipses are identical; a T~14.2 star 3.9" away could also produce the eclipse |
 | 143042674 | TYC 7034-792-1 | 10.69 | 5.044137 | 2.2 % | 0.09 % (0.502) | 2 | detached | G + M-dwarf companion (EBLM-like); Gaia RV amplitude 35 km/s |
+| 217228307 | - | 11.89 | 0.8298 | 1.8 % | 0.33 % (0.487) | 5 | detached | out-of-eclipse modulation (spots or reflection); crowded field: 16 Gaia stars within 42" are bright enough to produce the eclipse |
 | 6598941 | TYC 8382-1377-1 | 11.18 | 2.11961 | 1.7 % | 0.06 % (0.500) | 4 | detached | F star + low-mass companion (EBLM-like): flat-bottomed eclipse, companion ~0.25 solar radii; Gaia RV amplitude 62 km/s, as expected for a ~0.25 solar-mass companion (a planet would give < 1 km/s) |
 | 261500541 | CD-66  2541 | 9.77 | 3.126963 | 1.6 % | 0.09 % (0.502) | 11 | detached | grazing; cool companion (secondary 5 % of primary) |
 | 231286114 | TYC 8054-890-1 | 10.55 | 2.020458 | 1.3 % | 0.77 % (0.500) | 4 | detached |  |
 | 115242114 | TYC 7527-529-1 | 11.52 | 3.935908 | 1.1 % | 0.17 % (0.500) | 5 | detached | RUWE 46, plx 0.16 mas (astrometry unreliable) |
 | 33445288 | TYC 6431-1534-1 | 10.99 | 0.7986 | 4.2 % | 1.85 % (0.500) | 4 | contact/ellipsoidal | eclipses on top of ellipsoidal variation; Gaia NSS solution exists (binarity known; eclipses new); Gaia RV amplitude 176 km/s |
 | 76440895 | - | 11.26 | 0.677319 | 3.0 % | 1.95 % (0.502) | 6 | contact/ellipsoidal | well-separated eclipses; grouped with close binaries only because P < 0.8 d; RUWE 11.5 |
+| 351474229 | - | 11.92 | 0.8775 | 2.8 % | 2.31 % (0.508) | 6 | contact/ellipsoidal | eclipses on top of ellipsoidal variation; Gaia NSS solution exists (binarity known; eclipses new); not in Kostov+25 table 2; Gaia RV amplitude 243 km/s |
 | 32398505 | TYC 7003-400-1 | 11.50 | 0.601493 | 2.0 % | 0.34 % (0.505) | 4 | contact/ellipsoidal |  |
 | 114787953 | TYC 7951-1401-1 | 11.74 | 0.60577 | 1.0 % | 0.67 % (0.500) | 3 | contact/ellipsoidal | not in Kostov+25 table 2 |
 | 71315603 | CD-44 14744 | 11.02 | 0.507699 | 0.6 % | 0.30 % (0.500) | 3 | contact/ellipsoidal |  |
@@ -237,7 +249,7 @@ A 3.6″ neighbour could produce it, and TRICERATOPS gives a false-positive prob
 
 Every other planet-like signal that recurred was ruled out. They were blends located 10–46″ off target, eclipsing
 binaries (secondary eclipses, unequal alternate dips, grazing fits, companions larger than 2 R_Jup), distant giants
-(17 of them), δ Scuti pulsation troughs, rotational variables, or dips too long or too short for the star. See
+(24 of them), δ Scuti pulsation troughs, rotational variables, or dips too long or too short for the star. See
 [`FINDINGS.md`](FINDINGS.md).
 
 ## Combined two-sector search
@@ -297,7 +309,7 @@ binaries (secondary eclipses, unequal alternate dips, grazing fits, companions l
 | `src/` | Pipeline code |
 | `FINDINGS.md` | Working log: every candidate examined and why it was kept or rejected |
 | `candidates/new_eclipsing_binaries.csv` | Final binary table: coordinates, Gaia data, ephemerides, depths, localisation, neighbours |
-| `candidates/final_figs/` | Folded light curves for all 53 binaries, plus contact sheets |
+| `candidates/final_figs/` | Folded light curves for all 62 binaries, plus contact sheets |
 | `candidates/TIC87055304/` | The planet candidate: vetting report, clean-flux fit, figures, TRICERATOPS |
 | `candidates/TIC*/`, `candidates/EB_TIC*/` | Vetting plots and numbers for other candidates |
 | `reviews/` | Dossiers sent for independent review, and the reviews |

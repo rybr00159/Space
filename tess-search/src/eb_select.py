@@ -17,9 +17,10 @@ VAR = ("EB*", "SB*", "V*", "Ro*", "RR*", "dS*", "BY*", "RS*", "Pu*", "LP*", "Mi*
 
 # visual review of fold plots (vet/eb_contact_*.png): sinusoidal variables or inconsistent folds, not EBs
 REJECT_VISUAL = {237329004, 166225041, 60829240, 422003560, 387291911,
-                 351349985, 206360252, 314437829, 219931386, 119045231}
+                 351349985, 206360252, 314437829, 219931386, 119045231,
+                 218655462, 268886954}
 # periods fixed by eclipse timing (equal eclipses folded on half/quarter of the orbit)
-PERIOD_FIX = {100666720: 7.341134, 49617965: 3.765198, 406279367: 2 * 1.562732}
+PERIOD_FIX = {100666720: 7.341134, 49617965: 3.765198, 406279367: 2 * 1.562732, 212554303: 2 * 0.599077, 316096209: 2 * 1.148044}
 
 known = set()
 for f in glob.glob(f"{W}/results/new_s0*.csv") + glob.glob(f"{W}/results/new_multi.csv"):

@@ -246,3 +246,22 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
   phase 0.511 (3.1 h after half phase, so e cos w ~ 0.017), present in all 10 epochs from 2019 to 2026. The original
   secondary check sat exactly at phase 0.5 with a +-0.65 h window and missed it. -> EB (primary 0.37 % is below the
   0.5 % cut for the EB table)
+
+### Final Sector 104 driver pass (18 more recurrence survivors with p_comb < 1e-3)
+- Distant giants: TIC 194792481, 214494772, 213237492 (Teff ~3,200 K at 2.5-9.5 kpc), 111366822 (Gaia R 148 R_sun),
+  234754204, 196375549, 125767306 (BP-RP 5-7 with parallax ~0: reddened giants)
+- TIC 218663210 (M dwarf at 86 pc, P = 0.789 d, 0.8 %): 41-46" offsets at 10 sigma (S12, S39), fitted density 20x too
+  low -> blend
+- TIC 57645079 (M dwarf at 136 pc, P = 4.929 d, 0.8 %): transit 2.2x too long for the star (density 11x too low), 9"
+  offset at 2.7 sigma (S66) -> most likely a blend
+
+### EB batch 5 (final Sector 104 triage pass: 456 candidates, 131 pass broad novelty, 64 pass cuts)
+- Visual rejects: TIC 218655462 (inconsistent fold), 268886954 (noisy fold, eclipse timing rms 234 min)
+- Period doubled from odd/even depths: TIC 212554303 (6/6 sectors, 13 sigma) -> 1.198154 d; TIC 316096209 (3/3, 8 sigma)
+  -> 2.296088 d (both M-dwarf pairs, each with an equally bright star 2-3" away)
+- Deeper eclipse moved to primary: TIC 363482012, 351474229
+- TIC 379508029: no secondary (< 0.04 %), odd/even inconclusive -> period ambiguous (P or 2P), kept with a note
+- 9 added -> 62 EBs (56 detached, 6 contact/ellipsoidal); 59 in Kostov+25 table 2; TIC 351474229 is not, but has a
+  Gaia NSS solution
+- TIC 218815113 (F star, 0.5 %): secondary 798 ppm at 4.3 sigma, 17" offsets at 2.6-4.0 sigma (S66, S104), neighbours
+  outshine the target in the aperture (TIC contamination ratio 1.36) -> blended EB
