@@ -267,3 +267,12 @@ The first S104 pass vetted only the small-dip dwarf hosts. The remaining survivo
   outshine the target in the aperture (TIC contamination ratio 1.36) -> blended EB
 - TIC 351474229: the window-averaged depth of the broad ellipsoidal minimum (2.8 %) exceeds that of the sharp eclipse
   (2.3 %), so the automatic swap in eb_merge.py put phase 0 on the wrong feature; T0 was reset by hand to the sharp eclipse
+- TIC 365836059: only a grazing fit works (b = 1.2), odd/even 3.8 sigma -> grazing EB
+- TIC 365086729 (0.650 d): odd/even 9.5 sigma, grazing -> EB at twice the period
+- TIC 246721728 (9,200 K star): 41" offset at 7.5 sigma (S104), fitted density 13x too low, depth varies 2.6x -> blend
+- TIC 32899487: 33" offset at 7.4 sigma (S66), near-grazing, depth varies 2.5x -> blend
+- TIC 63610172 (0.556 d): 48" offset at 9.4 sigma, neighbours give 2.5x the target's flux, depth varies 8x -> blend
+- TIC 143766264 (0.511 d, 430 ppm): secondary 270 ppm at 8.6 sigma, fitted density 23x too high -> EB or variable
+- TIC 21880444: offsets 21-26" at 3.5-5.2 sigma (S13, S39), fitted density 36x too high -> blend
+- TIC 172722554: secondary 1,683 ppm at 12.6 sigma, 44" offset at 14 sigma (S103) -> blended EB
+- => all 18 rejected; every Sector 104 recurrence survivor (p_comb < 1e-3) has now been vetted
