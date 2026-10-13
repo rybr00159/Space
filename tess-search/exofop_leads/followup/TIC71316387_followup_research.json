@@ -1,0 +1,979 @@
+[
+ {
+  "options": [
+   {
+    "method": "Archival high-resolution imaging search by coordinates (no new observations)",
+    "facility_instrument": "ExoFOP-TESS target page (imaging/companion tables); ESO Science Archive (raw + ObsCore TAP); Gemini Observatory Archive; Keck KOA TAP (NIRC2, OSIRIS, NIRES, HIRES, KPF); MAST CAOM; VizieR WDS; Gaia DR3 TAP; NOIRLab Astro Data Archive",
+    "what_it_would_tell_us": "Whether any AO or speckle data already exist that could show the companion, or rule it out, at no cost.",
+    "capability_for_this_target": "Result as of 2026-10-13: no high-resolution imaging exists. ExoFOP: the imaging, spectroscopy, stellar_companions and time_series tables are all empty. The only entry is CTOI TIC 71316387.01 (P = 0.6518369 d, exactly half the 1.3037 d EB period; depth 5495 ppm; disposition PC; 'High-probability planet with RAVEN, Lafarga et al. 2026'; created 2026-08-27). It is not a TOI. ESO raw archive: 0 files in a box about +-60\" around the star. ESO ObsCore within 11\": only seeing-limited VISTA/VHS J and Ks frames (about 1\" resolution) plus catalogues. Gemini archive: 0 within 60\" or 120\". The query syntax was checked on Orion, which returned 500 rows. KOA: 0 within 60\". MAST: only TESS, GALEX and HLSPs, so no HST or JWST. WDS: no entry within 60\". Gaia DR3: the only other source within 30\" is at 18.2\" (G = 16.87, parallax 1.23 mas, so unrelated). The NOIRLab Astro Data Archive could not be queried (connection reset, then HTTP 503), so it is not verified. HRCam results on TESS targets are normally posted to ExoFOP anyway. The star is not mentioned in the SOAR 2024-25 speckle paper or in SOAR TESS Survey III. Gaia DR3 hints: ipd_frac_multi_peak = 41 and RUWE = 1.03, and I computed a corrected BP/RP flux excess C* = +0.018, about 2.5 sigma (Riello et al. 2021 formula). That is a mild excess, consistent with extra light inside the BP/RP window.",
+    "access_route": "Free and open to anyone. The ExoFOP page is public; an ExoFOP account is needed only to upload or comment.",
+    "cost": "Free.",
+    "time_needed": "Done. Re-check after Gaia DR4 (2 Dec 2026).",
+    "lead_time": "Immediate.",
+    "sources": [
+     "https://exofop.ipac.caltech.edu/tess/target.php?id=71316387",
+     "https://archive.eso.org/tap_obs",
+     "https://archive.gemini.edu/searchform",
+     "https://koa.ipac.caltech.edu",
+     "https://mast.stsci.edu",
+     "https://gea.esac.esa.int/archive/",
+     "https://astroarchive.noirlab.edu",
+     "https://arxiv.org/abs/2605.01487",
+     "https://arxiv.org/abs/2608.26250"
+    ]
+   },
+   {
+    "method": "Speckle interferometry, I band (824/170 nm), optionally Stromgren y",
+    "facility_instrument": "SOAR 4.1 m / HRCam (Cerro Pachon); HRCam2 (CMOS) was tested on sky in Jan 2026",
+    "what_it_would_tell_us": "(a) Detects and locates the companion: separation, position angle and delta-I with about 0.1 mag precision. (b) With a second epoch about 1 yr later, it tests common proper motion. HRCam is the workhorse of TFOP SG3 in the south and has resolved many TESS EB hosts and hierarchical systems (e.g. Majewski et al. 2025/26 on quadruple EBs).",
+    "capability_for_this_target": "Diffraction limit 41 mas in I (27 mas in y). Pixel 15.3 mas (about 30 mas with the 2x2 binning used for TESS targets). Field 3.15\" standard, 6\" in TESS mode. Median 5-sigma delta-I limits from SOAR TESS Survey III (Table 2; 16th-84th percentile in brackets): 0.10\" 2.04 [1.90-2.10]; 0.20\" 4.04 [3.43-4.56]; 1.0\" 4.75 [3.95-5.35]; 1.5\" 5.28; 3.0\" 6.19. Expected contrast if the EB is a bound K/M pair at 297 pc (my estimate from the Pecaut-Mamajek dwarf table against the G0.5V primary): K7V+M0V delta-I 2.45; M0V+M1V 2.9; M1V+M2V 3.45; M2V+M3V 4.0. So HRCam should detect a bound pair beyond about 0.15-0.2\" (30-60 au) but probably not at 0.05-0.1\" unless delta-I is below about 2. T = 11.36 is well inside the survey's T <~ 13 range. Relative astrometry: internal median about 1.7 mas (sigma ~ 1.64*rho mas); floors for comparison with other instruments are 3.8 mas in separation and 0.95 deg in PA. Target altitude reaches 77 deg; about 6-10 h/night above airmass 2 from June to October.",
+    "access_route": "(1) TFOP SG3. New SOAR TESS-survey targets are chosen from the TOI catalogue, so a CTOI that is not a TOI is not picked up automatically. Ask the SG3 chair (David Ciardi) or the SOAR TESS team (Ziegler, Tokovinin, Briceno) to add it as a filler. The case to make is that it is a likely hierarchical triple with an EB, which suits Tokovinin's multiple-star programme. Note that TESS follow-up had only 1 night of SOAR partner time in 2024 and HRCam runs total about 10 nights/yr. (2) Formal proposal: HRCam is a visitor instrument, and the NOIRLab CfP says to contact the SOAR Director, Cesar Briceno, before applying. US/NOIRLab open-access time is open to all astronomers; non-US PIs must justify needing US facilities. Brazil, Chile, UNC and MSU astronomers use their own TACs. TFOP general membership: email Dave Latham, agreeing to the Charter and Publication Policy. Nothing was contacted or submitted.",
+    "cost": "No fee to propose or observe. HRCam takes about 300 targets/night, so one target uses about 1/300 of a night. No official SOAR cost per night was found. For scale only: MSU paid $6M (of a $43M project) for about 40 nights/yr over 20 years, about $7,500/night in 2004 USD, capital only (my arithmetic). That puts one HRCam target at roughly $25. SOAR proprietary period is 18 months.",
+    "time_needed": "About 5-10 min including slew: 2 cubes x 400 frames x 25 ms, plus a reference star.",
+    "lead_time": "Informal filler: possible in any HRCam run in season (now to about Nov 2026; then May-Dec 2027, best Jun-Oct). Formal route: NOIRLab 2027B deadline 31 Mar 2027 for Aug 2027-Jan 2028. The 2027A deadline (30 Sep 2026) has passed.",
+    "sources": [
+     "https://arxiv.org/abs/2608.26250",
+     "https://arxiv.org/abs/2605.01487",
+     "https://arxiv.org/abs/2511.07554",
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://noirlab.edu/science/observing-noirlab/proposals",
+     "https://noirlab.edu/science/observing-noirlab/observing-ctio/observing-soar/proposing-soar",
+     "https://tess.mit.edu/followup/",
+     "https://tess.mit.edu/followup/apply-join-tfop/",
+     "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+     "https://spartan.msu.edu/spartan-story-hub/news/2004/07/feature-the-skys-the-limit-for-new-soar-telescope"
+    ]
+   },
+   {
+    "method": "Dual-colour speckle imaging (simultaneous 562 nm and 832 nm, or 466/716 nm)",
+    "facility_instrument": "Gemini-South 8.1 m / Zorro (Cerro Pachon)",
+    "what_it_would_tell_us": "(a) The deepest optical option at the smallest separations; it can find the companion inside the SOAR 'speckle knee' at 0.03-0.15\". (b) The two simultaneous colours give a colour for the companion. That tests whether it sits on the same isochrone at 297 pc (bound) or is a background object, before any second epoch. (c) The colour constrains the companion's combined spectral type, for example K/M.",
+    "capability_for_this_target": "FWHM about 0.016\" at 500 nm and 0.025\" at 800 nm. The pipeline reduces a 2.5\" subarray, covering about 0.02-1.2\" around the star; the full speckle field is 6.7\". Faint limit about V 17 (r about 18 in good conditions). Typical 5-sigma contrast is 5-9 mag from the diffraction limit to 1.2\" (Howell & Furlan 2022); 832 nm gives better contrast than 562 nm. For a V = 11.6 star, a delta-mag 3-5 companion at about 0.05-1.2\" should be detectable, best in the 832 nm channel, where a K/M pair has delta about 2.5-4. This is above the TFOP SG3 benchmark of delta 5 at 0.5\". Separations of about 1.2-1.8\" are outside the standard reduction; ask for a larger subarray. Astrometric calibration: pixel scale +-0.21 mas, PA +-0.7 deg per run. Season: about 4-10 h/night above airmass 2 from May to November.",
+    "access_route": "(1) The Gemini speckle programme (PI Steve Howell, NASA Ames) observes TFOP targets in blocks; ask via TFOP SG3 or zorro@gemini.edu (not contacted). (2) Gemini Fast Turnaround, monthly: the PI must be affiliated with a US institution (open skies does NOT apply to FT), or with Canada, Argentina, Brazil, Korea or Japan. The PI or a delegate must review about 8 other proposals. At most 20 h/month per telescope. A non-professional cannot be FT PI but can be a co-I. (3) Regular semester US time: 'open to all astronomers worldwide', with non-US PIs explaining why US facilities are needed. (4) Gemini DDT: any time, from astronomers worldwide, usually <15 h, but it must be urgent and not doable via FT.",
+    "cost": "No fee. Gemini's own figure is 'each night ... worth about $33,000' (Gemini media facts, 22 Apr 2003, USD). That is roughly $55-60k in 2026 dollars by my rough CPI adjustment (not verified). About 25 min is therefore about $1.4k at 2003 value. No purchasable time.",
+    "time_needed": "About 20-25 min: 5 x 1-min sets at IQ70 (10 at IQ85) for mag 9-12, about 5 min acquisition, and a PSF standard of about 10 min (at least one per hour).",
+    "lead_time": "The October 2026 FT call (deadline 31 Oct) accepts Gemini-South RA 0-16 h only, so RA 22 h is excluded. The September call, which allowed RA 20.5-14.5 h, has closed. Feasible FT calls are likely those with deadlines from about March to August 2027 (my inference). Zorro is offered in blocks; there is one in Dec 2026. The 2027A regular deadline (1 Oct 2026) has passed. The 2027B NOIRLab deadline is 31 Mar 2027; the Gemini US 2027B date was not verified.",
+    "sources": [
+     "https://www.gemini.edu/instrumentation/alopeke-zorro",
+     "https://www.gemini.edu/instrumentation/alopeke-zorro/capability",
+     "https://www.gemini.edu/instrumentation/alopeke-zorro/proposal-preparation",
+     "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.871163/full",
+     "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.716560/full",
+     "https://www.gemini.edu/observing/phase-i/ft",
+     "https://www.gemini.edu/observing/phase-i/ft/ft-cfp",
+     "https://www.gemini.edu/observing/phase-i-proposing-time/standard-semester-program/2027a-call-proposals",
+     "https://www.gemini.edu/observing/phase-i/ddt",
+     "https://webarchive.gemini.edu/media/mediafacts.html"
+    ]
+   },
+   {
+    "method": "Near-IR adaptive optics imaging in J/H/Ks; optionally sparse-aperture masking (SAM) for separations below lambda/D",
+    "facility_instrument": "ESO VLT UT4 / ERIS-NIX (Paranal)",
+    "what_it_would_tell_us": "(a) Most sensitive to a red companion: a K/M pair is only about delta-K 1.2-2.5 against the G dwarf (my estimate). (b) Precise relative astrometry, a few mas or better at 8 m, for a 1-yr common-proper-motion test. (c) J-H-Ks colours of the companion test whether it is at the same distance and what it is made of.",
+    "capability_for_this_target": "NIX 13 mas pixels over 27\"x27\", or 27 mas over 55\"x55\". K-band lambda/D is about 57 mas; SAM masks reach inside that. ESO's table lists NGS mode for Gaia RP < 11, BP <= 19, airmass < 1.9. The target has RP = 11.28, just outside, so it may need LGS mode with the star as tip-tilt reference (TT 7-18 mag; K Strehl < 0.6). Check the user manual, which ESO calls definitive. For scale, an 8-10 m NIR AO system typically reaches >~4 mag at 0.1\" and >~7 mag at 0.5\" (Keck/NIRC2, Schlieder et al. 2021), so a delta-K about 2 companion would be detected beyond about 0.05-0.1\". Target maximum altitude 71.8 deg at Paranal; about 6-9 h/night above airmass 2 from June to October.",
+    "access_route": "ESO: 'proposals may be submitted by any group or individual' (CfP P118), using an ESO User Portal account. A proposal counts as Non-Member-State if more than 2/3 of applicants are from non-member institutes; this matters only in ties. ESO now runs a Yearly Cycle. The P118 deadline (22 Sep 2026, for 1 May 2027-30 Apr 2028) has passed, and 'the next call will be released in July 2027'. The Fast Track Channel takes VLT/VLTI Normal programmes of at most 30 h in service mode. FTC 117B is due 'late 2026' and covers at least 1 Mar-30 Apr 2027, when the target is poorly placed (about 1.7 h/night above 30 deg in mid-April). DDT can be submitted any time, is usually <5 h, and must show why it cannot wait for the next FTC.",
+    "cost": "No fee. ESO's own valuation for cash contributions is 83 kEUR per GTO night (2015 euros; Council GTO policy, Nov 2015), about US$92k at the ~1.11 $/EUR 2015 rate (not re-verified). A 1-h request is therefore about 8 kEUR of telescope value, assuming a ~10 h night. No purchasable time.",
+    "time_needed": "About 0.5-1 h including AO/LGS acquisition (estimate, not verified with the ESO ETC/overheads).",
+    "lead_time": "Realistically a future FTC call covering May-Oct 2027 (dates not yet announced), or the July 2027 regular call for P119. DDT only with an urgency case.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/eris/inst.html",
+     "https://www.eso.org/sci/observing/phase1/proposals.html",
+     "https://www.eso.org/sci/observing/phase1/p118/proposalsopen.html",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel.html",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel-117a.html",
+     "https://www.eso.org/sci/observing/policies/ddt_policy.html",
+     "https://www.eso.org/sci/observing/policies/Cou_1628_VLT_GTO_Policy_111115.pdf",
+     "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.628396/full"
+    ]
+   },
+   {
+    "method": "Extreme-AO imaging (classical imaging; coronagraph not needed for delta 3-5), IRDIS dual-band or IFS",
+    "facility_instrument": "ESO VLT UT3 / SPHERE (IRDIS, IFS)",
+    "what_it_would_tell_us": "Same as ERIS: detection, astrometry and NIR colours. The IFS adds a low-resolution (R about 30-50) YJH spectrum of the companion if it is within the 1.73\" IFS field.",
+    "capability_for_this_target": "IRDIS field 11\"x12.5\", 12.25 mas pixels. ESO's AO-performance table uses brackets of R = 0-9, 9-11 and >11 mag. The target (R about 11.3, G = 11.78) falls in the faintest bracket, so Strehl and contrast are reduced. Faint-star study: contrast drops strongly for G >~ 12.5, which the target is brighter than. Delta 3-5 at 0.1-1\" is well within SPHERE's capability even in degraded mode; it is designed for 1e-5 contrast at 0.1\" on bright stars.",
+    "access_route": "ESO, as for ERIS: anyone may propose; Yearly Cycle (next call July 2027), FTC (<=30 h), DDT.",
+    "cost": "No fee. Same ESO valuation of 83 kEUR/night (2015 EUR).",
+    "time_needed": "About 1 h (estimate, not verified).",
+    "lead_time": "As for ERIS.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/sphere/overview.html",
+     "https://www.eso.org/sci/facilities/paranal/instruments/sphere/inst.html",
+     "https://arxiv.org/abs/2204.11746",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf"
+    ]
+   },
+   {
+    "method": "Visible/near-IR extreme AO imaging",
+    "facility_instrument": "Magellan Clay 6.5 m / MagAO-X (Las Campanas)",
+    "what_it_would_tell_us": "Detection, astrometry and colours at about 20-40 mas resolution.",
+    "capability_for_this_target": "The MagAO-X pyramid WFS gives 'good correction ... even on faint I~10 mag guide stars in median ~0.65\" seeing' (WISPIT 2b paper). The target is I about 11.0, so performance is likely reduced; not verified. Delta 3-5 at >=0.1\" is plausible. Target maximum altitude 76 deg.",
+    "access_route": "NOIRLab community access to Magellan (NSF MSIP, 2023A through 2028A): 5 nights in 2027A, with 'all Magellan instruments, including PI instruments'. Open to all astronomers; non-US PIs must justify. MagAO-X is a PI-team instrument, so coordinate with that team. Otherwise Magellan time belongs to the partner institutions.",
+    "cost": "No fee. Cost per night not found.",
+    "time_needed": "<1 h (estimate).",
+    "lead_time": "NOIRLab 2027B deadline 31 Mar 2027. Whether MagAO-X runs in 2027B was not verified.",
+    "sources": [
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://arxiv.org/abs/2508.19046"
+    ]
+   },
+   {
+    "method": "Near-IR NGS AO imaging (feasibility check only)",
+    "facility_instrument": "Keck II / NIRC2 (Maunakea)",
+    "what_it_would_tell_us": "Would give detection and astrometry, but the southern options are far better for this star.",
+    "capability_for_this_target": "Poor. From latitude +19.8 the target peaks at 27.3 deg altitude (airmass 2.18). Keck II, which carries NIRC2, cannot point below 36.8 deg between azimuth 185.3 and 332.8 deg, so the target is lost just after it crosses the meridian. The window is about 2.9 h, from 18 deg rising to about 0.4 h past transit, at airmass 3.2-2.2. AO correction at that airmass would be much worse than the nominal >~4 mag at 0.1\" (not quantified). Not recommended.",
+    "access_route": "Keck time comes through Caltech, UC, UH and NASA partner TACs. NOIRLab's 2027A list does not include Keck.",
+    "cost": "Not verified: Yale Daily News (2009, search snippet only) gives NSF's estimate of about $100k/night including capital and a Yale purchase at $80k/night.",
+    "sources": [
+     "https://www2.keck.hawaii.edu/inst/common/TelLimits.html",
+     "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.628396/full",
+     "https://yaledailynews.com/blog/2009/02/25/yale-astronomers-stargaze-in-hawaii/"
+    ]
+   },
+   {
+    "method": "Southern AO imagers that are no longer available",
+    "facility_instrument": "Gemini-South GSAOI+GeMS; VLT NACO",
+    "what_it_would_tell_us": "No longer an option. Listed to avoid wasted effort.",
+    "capability_for_this_target": "GSAOI: 'GSAOI has been decommissioned and will no longer be offered' (Gemini page, modified 15 May 2026). Gemini-South's current list has no AO imager, so Zorro is the only high-resolution imager there. NACO was decommissioned at the end of P103 (last image 1 Oct 2019) and replaced by ERIS. Northern speckle (WIYN/NESSI at Kitt Peak) reaches only about 15 deg altitude at Dec -43, so it is not feasible.",
+    "access_route": "Not available.",
+    "cost": "Not applicable.",
+    "sources": [
+     "https://www.gemini.edu/instrumentation/gsaoi",
+     "https://www.gemini.edu/instrumentation/current-instruments",
+     "https://www.eso.org/sci/facilities/paranal/decommissioned/naco.html",
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals"
+    ]
+   },
+   {
+    "method": "Lucky imaging on 1-2 m telescopes (EMCCD, best-1% frame selection); also amateur lucky imaging",
+    "facility_instrument": "Danish 1.54 m / Two Colour Instrument (La Silla) as the best documented southern example; amateur 0.3-1 m telescopes",
+    "what_it_would_tell_us": "Could only test the outer part of the search region, about 0.5-4\".",
+    "capability_for_this_target": "Insufficient below about 0.5\". HITEP II with the Danish 1.54 m reached best-1% FWHM of 0.33-0.86\" on about 0.09\" pixels. 5-sigma limits in the red channel were, for example: 4.64 mag at 0.5\", 6.16 at 0.8\", 8.84 at 1.5\" in the best case (FWHM 0.33\"); 0.0 at 0.5\", 3.3 at 0.8\", 5.8 at 1.5\" in a typical case (FWHM 0.57\"). Gaia DR2's 50%-recoverability contour, theta50 = 0.5 + (dG/5)^2.5 arcsec, gives 0.78\" for dG = 3, 1.07\" for dG = 4, 1.5\" for dG = 5 and 1.83\" for the largest allowed dG = 5.6. Since Gaia lists nothing within 18\", the companion is most likely inside about 1-1.8\", exactly where 1-2 m lucky imaging and amateur equipment cannot reach delta 3-5.",
+    "access_route": "The Danish 1.54 m is run by a Danish/MiNDSTEp consortium and is not open to the public. A Carlsberg Foundation grant (CF25-1366) funds 2026 observations; the current state of the TCI was not verified. A collaborator with access would be needed. Amateur setups lack the resolution.",
+    "cost": "No public price found.",
+    "time_needed": "About 5-15 min of exposure.",
+    "lead_time": "Not applicable.",
+    "sources": [
+     "https://arxiv.org/abs/1709.07476",
+     "https://arxiv.org/abs/1603.03274",
+     "https://carlsbergfondet.dk/en/what-we-have-funded/cf25-1366",
+     "https://arxiv.org/abs/2608.26250"
+    ]
+   },
+   {
+    "method": "Second-epoch relative astrometry (common-proper-motion test), plus colour/isochrone association test",
+    "facility_instrument": "Same instrument as the first epoch, ideally (HRCam, Zorro or ERIS/SPHERE)",
+    "what_it_would_tell_us": "(b) Whether the companion is bound: it should share the primary's 38.55 mas/yr motion (pmRA +38.43, pmDec -3.09). An unrelated distant background star would instead shift by about 38 mas/yr westward (about 3 mas/yr north) relative to the G dwarf.",
+    "capability_for_this_target": "Orbital motion of a bound companion is small (my Kepler estimate, total mass about 2.1 Msun). At 30 au (0.10\"): P about 113 yr, at most about 5.6 mas/yr. At 100 au (0.34\"): about 3 mas/yr. At 300 au (1.0\"): about 1.8 mas/yr. These cannot mimic a 38 mas/yr background track. Per-epoch errors: SOAR floors of 3.8 mas in separation and 0.95 deg in PA, i.e. about 8 mas tangential at 0.5\", giving about 9-12 mas combined over two epochs. That means 1 yr (38 mas) is about 3-4 sigma and 2 yr is robust. Zorro (+-0.21 mas scale, +-0.7 deg PA) or 8-m AO (about 1-2 mas) give a clear answer after about 1 yr. Shortcut: the prior chance of any field star with G < 17.4 within 1\" is about 3e-4 (within 4\": about 4e-3). That comes from my Gaia DR3 count of 1095 stars per sq. deg near this position. Two-colour photometry (Zorro, or AO in JHK) also tests whether the companion's colours and magnitudes fit a K/M pair at 297 pc.",
+    "access_route": "Same routes as the first epoch. Ask for both epochs in one proposal, or request the second as a follow-up.",
+    "cost": "Same as one extra short observation.",
+    "time_needed": "Same as the first epoch.",
+    "lead_time": "At least about 12 months after the first epoch, i.e. the next observing season (prime season June-October; observable May-December). For example, epoch 1 in Jul-Oct 2027 and epoch 2 in Jul-Oct 2028.",
+    "sources": [
+     "https://exofop.ipac.caltech.edu/tess/target.php?id=71316387",
+     "https://arxiv.org/abs/2608.26250",
+     "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.716560/full",
+     "https://gea.esac.esa.int/archive/"
+    ]
+   },
+   {
+    "method": "Wait for and check Gaia DR4 (free)",
+    "facility_instrument": "Gaia DR4 (ESA), scheduled 2 December 2026",
+    "what_it_would_tell_us": "Might newly catalogue the companion. Epoch astrometry and epoch photometry (first time in DR4) could show a photocentre shift or the eclipses, at no cost and before any proposal is written.",
+    "capability_for_this_target": "Not verified for this star. A resolved detection is likely only if the separation is >~0.5-1\" and delta-G is small, per the Gaia contour above.",
+    "access_route": "Public archive.",
+    "cost": "Free.",
+    "time_needed": "Minutes.",
+    "lead_time": "About 7 weeks (2 Dec 2026).",
+    "sources": [
+     "https://www.cosmos.esa.int/web/gaia/news-2026"
+    ]
+   }
+  ],
+  "notes": "Scratch notes and downloaded pages are in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/followup/. Main files: notes_imaging.md, exofop_71316387.json, eso_raw.csv, eso_obscore.csv, mast.json, web/*.txt, pdf/*.txt.\n\nPhysics check (imaging part):\n- If the EB is a bound K7-M3 dwarf pair at 297 pc, the Pecaut-Mamajek table gives delta-V 3.4-5.5, delta-I 2.5-4.0 and delta-K 1.2-2.5 against the G0.5V primary. The primary's absolute magnitudes are M_V 4.29, M_I 3.61, M_K 2.98.\n- The EB's light fraction in I would then be about 2.5-9.5%. Matching the 0.57% eclipse depth would need an undiluted eclipse of about 6-22%, i.e. partial or grazing eclipses. That is plausible.\n- So the task's 'delta-mag about 3-5 in the optical, smaller in red/NIR' is confirmed. Near-IR AO is the most sensitive way to see it, followed by Zorro at 832 nm and then HRCam in I.\n- At 297 pc, 0.1\" is about 30 au.\n- The companion probably lies inside about 1.8\": Gaia DR3 lists nothing within 18\", and the Gaia 50%-recoverability contour reaches 1.83\" for the largest allowed delta-G of 5.6.\n- Gaia hints: ipd_frac_multi_peak = 41 and BP/RP excess C* = +0.018 (about 2.5 sigma, my calculation) suggest extra light. RUWE = 1.03 is normal.\n- If the separation is below about 0.03-0.05\" (under about 10-15 au), no imaging can resolve it and only spectroscopy can.\n\nObservability (my calculation, sun below -12 deg, hours/night above 30 deg altitude, 15th of each month):\n- Cerro Pachon: Apr 2.1, May 4.3, Jun 6.6, Jul 8.5, Aug 10.1, Sep 8.7, Oct 6.4, Nov 3.9, Dec 1.5; Jan-Mar 0. Paranal, Las Campanas and La Silla are similar.\n- Keck peaks at 27 deg.\n\nSuggested order for a non-professional (no one contacted, nothing submitted):\n1. Check Gaia DR4 on 2 Dec 2026.\n2. Post the result on ExoFOP once the account exists. Email the TFOP SG3 chair (David Ciardi) and/or the SOAR team (Tokovinin, Ziegler; SOAR Director Briceno for HRCam) to ask for HRCam or Zorro filler time.\n   - Make the case as a likely hierarchical EB triple. The CTOI's 0.65 d planet period is half the EB period.\n   - Because it is a CTOI, not a TOI, the standard SG3 queues will not pick it up automatically.\n3. Otherwise, find a professional collaborator to be PI:\n   - Gemini FT needs a US, Canada, Argentina, Brazil, Korea or Japan affiliation.\n   - NOIRLab 2027B (SOAR HRCam or Gemini-S Zorro via US open-skies time) has a deadline of 31 Mar 2027.\n   - ESO accepts proposals from 'any group or individual': FTC (at most 30 h), the next regular call in July 2027, or DDT.\n4. Take a second epoch at least about 1 yr later.\n\nCosts:\n- Proposals and data are free; in queue or service mode the out-of-pocket cost is $0.\n- No facility here sells high-resolution imaging time to individuals; no published price was found (not verified that none exists).\n- Value figures for context only: Gemini about $33k/night (2003 USD); VLT 83 kEUR/GTO night (2015 EUR); Keck about $80-100k/night (2009, snippet only, not verified); SOAR about $7.5k/night (2004 USD, capital only, my derivation).\n\nNot verified:\n- NOIRLab Astro Data Archive contents (server unreachable).\n- Exact Gemini US 2027B deadline.\n- Which FT months will offer Zorro at RA 22 h.\n- ERIS NGS performance at RP = 11.28.\n- MagAO-X performance at I about 11.\n- Current status of the Danish 1.54 m lucky imager.\n- Keck price, which came from a search snippet only."
+ },
+ {
+  "options": [
+   {
+    "method": "High-resolution optical spectroscopy, multi-epoch, phased at quadrature, analysed with broadening function / TODCOR (TRICOR for a triple-lined spectrum)",
+    "facility_instrument": "CHIRON on the SMARTS-GSU 1.5 m, CTIO (fiber mode R=27,400; 415-880 nm; 2.7 arcsec fiber)",
+    "what_it_would_tell_us": "Detects the lines of the brighter EB star (and, with enough S/N, the fainter one) as broad (vsini ~15-25 km/s) components moving about +/-90-115 km/s. Two quadrature epochs give K1, K2, the mass ratio and the EB systemic velocity gamma_EB, and confirm P = 1.3037 d. The EB velocity changes sign between phases 0.25 and 0.75, whereas for the CTOI's P = 0.652 d both of those phases would be conjunctions. The same spectra give RV_A of the G star to about 0.1 km/s for the bound test, and the best-fit template temperatures and light ratio give rough spectral types.",
+    "capability_for_this_target": "Dec -43 is well inside the 1.5 m limits (FAQ table: HA limit 4h15m E / 5h29m W at Dec -45). Exposure-time formula from the FAQ (eps = 0.05): S/N per 4 km/s pixel at 550 nm for V = 11.65 is about 36 in 900 s, 51 in 1800 s and 63 in 2700 s; scaling the empirical K-dwarf table gives 41 and 58. My PHOENIX-template simulation, for a bound companion at quadrature over 450-880 nm at R = 28k with a 100 K template mismatch for star A: an EB primary of about 3% of the light (K7/M0-like) is detected at sqrt(dchi2) ~10 at S/N 20 and ~20 at S/N 40, against spurious peaks of 3-8, with sigma_v about 2.5 / 1.3 km/s per epoch. A fainter case (~1.8%) needs S/N >= 40. The EB secondary (0.4-0.8% in the optical) needs S/N > 80-100 or stacked epochs. The 2.7 arcsec fiber takes in a companion at 0.1-1 arcsec. The FAQ says targets brighter than V = 12 are acquired routinely.",
+    "access_route": "(1) Buy time directly from SMARTS-GSU (Georgia State University / RECONS). The SMARTS page says partnerships are open to 'institutions, individuals, or groups of individuals', observing is done in service mode, and a login to the CHIRON scheduler is issued once time is purchased. (2) Join TFOP (observers apply to the subgroup chair; general members email Dave Latham) and ask the SG2 chair (Sam Quinn, CfA) whether an SG2 observer with CHIRON time would take a few quadrature spectra. Whether SG2 will observe a CTOI or EB target was not verified. (3) NOIRLab cannot offer SMARTS time in 2027A, and NN-EXPLORE offers no SMARTS time either.",
+    "cost": "USD 250 per hour of 1.5 m time; 'Time can be purchased for as little as a few thousand dollars' (SMARTS page, astro.gsu.edu/~thenry/SMARTS, undated, read 2026-10-13). A 6-epoch program of 1 x 1800 s per epoch plus overheads (5.5 min acquisition, 18 s readout, ThAr) is about 4 h, roughly USD 1,000 of time, but the minimum purchase is probably a few thousand USD. Confirm the current rate with chironhelp@astro.gsu.edu (the CHIRON site returned HTTP 503 on 2026-10-13).",
+    "lead_time": "Can be bought at any time; operations are a service queue. The schedule log shows CHIRON working in runs in Sep-Oct 2026 (nights #1784-1811, 10 Sep - 14 Oct 2026). The target is still up 2-5 h/night at airmass < 1.5 in Oct-Nov 2026, so 2-4 epochs this season are possible if arranged within weeks. Otherwise May-Dec 2027, best Jul-Oct.",
+    "time_needed": "Minimum 2 epochs (one per quadrature); recommended 4-6 epochs (2-3 at phase 0.20-0.30 and 2-3 at 0.70-0.80), each 1 x 1800-2700 s, reaching S/N 50-60 per 4 km/s pixel. Total about 3-5 h including overheads.",
+    "sources": [
+     "https://www.astro.gsu.edu/~thenry/SMARTS/",
+     "http://www.astro.gsu.edu/~thenry/SMARTS/CHIRON_FAQ.pdf",
+     "https://www.astro.gsu.edu/~thenry/SMARTS/1.5m.chiron.etc.fiber",
+     "http://www.astro.gsu.edu/~thenry/SMARTS/schedule.SMARTS4.htm",
+     "https://noirlab.edu/science/news/announcements/sci24060",
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://tess.mit.edu/followup/",
+     "https://tess.mit.edu/followup/apply-join-tfop/",
+     "https://ui.adsabs.harvard.edu/abs/1994ApJ...420..806Z",
+     "https://ui.adsabs.harvard.edu/abs/1995ApJ...452..863Z",
+     "https://arxiv.org/abs/astro-ph/0201214"
+    ]
+   },
+   {
+    "method": "High-resolution optical echelle spectroscopy (SB2/SB3 search, RVs at quadrature)",
+    "facility_instrument": "FEROS on the MPG/ESO 2.2 m, La Silla (R ~48,000, ~350-920 nm, 2.0 arcsec fibres)",
+    "what_it_would_tell_us": "Same as CHIRON: EB-component RVs (K1, K2, gamma_EB), RV_A, light ratio and template temperatures. Wider blue/red coverage helps check spectral types.",
+    "capability_for_this_target": "Dec -43 transits at about 76 deg altitude from La Silla. In my simulation over 450-690 nm at R = 48k, an EB primary of about 2.6% gave sqrt(dchi2) ~12 at S/N 20 and ~22 at S/N 40 (spurious 4-7), so resolution above ~25k brings no gain for 20 km/s-wide lines. Expected S/N for V = 11.65 is roughly 50-100 per resolution element in 20-30 min (rough scaling from the quoted 20% efficiency; not verified, no ETC run). A 2.0 arcsec fibre includes a companion at <~0.7 arcsec; one at ~1 arcsec is partly included depending on seeing.",
+    "access_route": "Not offered in ESO time: the ESO P118 Call lists only the 3.6 m and NTT at La Silla. 2.2 m time belongs to the Max Planck institutes. MPIA solicits 'MPIA guaranteed time' proposals under the MPIA-ESO agreement (1 Oct 2022 - 30 Sep 2028). In practice a non-professional needs an MPIA/MPG collaborator or a team already running FEROS programmes (e.g. TFOP SG2 members); I could not verify which groups have FEROS time in 2027.",
+    "cost": "No public price; telescope time is not sold (not verified). Collaboration route only.",
+    "lead_time": "The MPIA proposal deadline listed was 19 Dec 2025, for the next MPIA block (period not stated); the 2027 cycle dates were not verified.",
+    "time_needed": "4-6 quadrature epochs x ~20-30 min = about 2-3 h.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/lasilla/instruments/feros/overview.html",
+     "https://www.mpia.de/information-for-scientists/eso",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf"
+    ]
+   },
+   {
+    "method": "High-resolution optical spectroscopy (optionally simultaneous with near-IR NIRPS, YJH at R ~75-82k)",
+    "facility_instrument": "HARPS (+NIRPS) on the ESO 3.6 m, La Silla (HARPS R = 115,000, 378-691 nm, 1 arcsec fibres)",
+    "what_it_would_tell_us": "EB-component RVs and the G star's RV. NIRPS in Y/J/H would raise the EB's share of the light to ~8-15% (primary) and ~3-7% (secondary), letting both EB stars be measured and giving the mass ratio.",
+    "capability_for_this_target": "The ESO page quotes S/N 110 per pixel at 550 nm for V = 6 in 60 s; scaling gives ~32 per 0.8 km/s pixel in 900 s and ~45 in 1800 s (~70-100 per 4 km/s bin) for V = 11.65. That is enough for an EB primary of ~2.5%. HARPS stops at 691 nm, where the M dwarfs are faint. R = 115k is far more than needed. The 1 arcsec fibre (0.4/0.9 arcsec for NIRPS) can lose companion light if the separation is > ~0.5 arcsec (> ~0.2-0.45 arcsec for NIRPS).",
+    "access_route": "ESO regular call. ESO proposals 'may be submitted by any group or individual'; Non-Member-State proposals are allowed and lose only tie-breaks. However, HARPS/NIRPS are offered in Visitor/designated-visitor mode only, with a recommended minimum request of 3 nights. They are not offered for Monitoring or Fast-Track programmes. That makes them impractical for a few short epochs unless done through the HARPS/NIRPS time-share or a collaborator already observing there.",
+    "cost": "No fee for ESO time (competitive proposal). ESO values VLT time at 83 kEUR per GTO night (2015 EUR, Cou-1628); no 3.6 m figure was found.",
+    "lead_time": "P118 (1 May 2027 - 30 Apr 2028) deadline 22 Sep 2026 has passed; the next regular call (P119) is expected July 2027, for observations from May 2028. DDT is possible at any time but rarely granted for non-urgent work.",
+    "time_needed": "6 x ~30 min, but scheduled as visitor nights (>= 3 nights recommended).",
+    "sources": [
+     "https://www.eso.org/sci/facilities/lasilla/instruments/harps/overview.html",
+     "https://www.eso.org/sci/facilities/lasilla/instruments/nirps/overview.html",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf",
+     "https://www.eso.org/sci/observing/policies/ddt_policy.html",
+     "https://www.hq.eso.org/sci/observing/policies/Cou_1628_VLT_GTO_Policy_111115.pdf"
+    ]
+   },
+   {
+    "method": "High-resolution optical spectroscopy on an 8 m (fibre-fed ESPRESSO, or slit-fed UVES with the slit aligned on the companion's position angle)",
+    "facility_instrument": "ESPRESSO (VLT, HR 1-UT R ~140,000, 380-788 nm, 1.0 arcsec fibre, 11% efficiency) or UVES (VLT UT2, up to R ~110,000, 300-1100 nm, slit)",
+    "what_it_would_tell_us": "Very high S/N in short exposures, enough to reach the EB secondary in the optical (S/N > ~80-100 needed). Gives EB RVs, gamma_EB and RV_A; with UVES red settings, Halpha/TiO regions help with spectral types.",
+    "capability_for_this_target": "About 71.8 deg altitude at transit from Paranal. My estimate for ESPRESSO is S/N ~80+ per pixel in ~20 min for V = 11.65 (HARPS scaling with area and efficiency; not checked with the ESO ETC). ESPRESSO's 1 arcsec fibre and R = 140k are poorly matched: companion light is partly lost beyond ~0.5 arcsec and the resolution is wasted on broad lines. UVES with a 0.8-1.2 arcsec slit along the companion's PA (R ~40-50k) is the better choice.",
+    "access_route": "ESO Fast-Track Channel: VLT Normal programmes up to 30 h, service mode, open to 'any group or individual', distributed peer review (the PI must review 10 proposals). Also the regular yearly call, or DDT (any time; up to 5% of time, usually < 5 h, only for programmes that cannot wait for the next FTC).",
+    "cost": "No fee (competitive). Valuation: 83 kEUR per VLT night (2015 EUR, Cou-1628), roughly USD 9-10k per hour at an assumed 1.1-1.2 USD/EUR and ~10 h nights (my arithmetic; exchange rate not verified).",
+    "lead_time": "FTC 117B is to be released 'in late 2026', but it falls within P117 (ending 30 Apr 2027), when the target is not observable. The first useful ESO window is an FTC call covering ~Sep 2027 onwards (expected by analogy with FTC 117A; not announced) or the P119 call (July 2027, for May 2028+).",
+    "time_needed": "4-6 epochs x ~15-20 min shutter time plus ~10 min overhead, about 2-3 h.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/espresso/overview.html",
+     "https://www.eso.org/sci/facilities/paranal/instruments/uves/overview.html",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel-117a.html",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel.html",
+     "https://www.eso.org/sci/observing/policies/ddt_policy.html",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf"
+    ]
+   },
+   {
+    "method": "Robotic high-resolution spectroscopy (1 m network)",
+    "facility_instrument": "LCO NRES (R ~48-53k, 380-860 nm, ~2.6-2.8 arcsec fibre, V < 12 for ~10 m/s)",
+    "what_it_would_tell_us": "Would have suited 2-4 quadrature epochs (robotic timing windows), but the instrument is no longer available.",
+    "capability_for_this_target": "Discontinued. The LCO 2027A call (11 Sep 2026) says 'NRES spectrographs are no longer available'. The live status page lists only Sinistro imagers in the CTIO and SAAO 1 m domes and shows 'TLV NRES Decommissioned since 2026-08-01'. The NRES instrument page has not been updated. A query of the public LCO archive for frames covering the target returned no spectra (2026-10-13).",
+    "access_route": "None. LCO semester calls are also no longer open access: Open Access (Heising-Simons) now applies only to DDT and Key Projects. The remaining LCO spectrograph, FLOYDS on the 2 m (low resolution), is not useful for 1-3% companion lines.",
+    "cost": "n/a",
+    "lead_time": "n/a",
+    "time_needed": "n/a",
+    "sources": [
+     "https://lco.global/news/callforproposals2027a/",
+     "https://lco.global/observatory/status/",
+     "https://lco.global/observatory/instruments/nres/",
+     "https://archive-api.lco.global/frames/"
+    ]
+   },
+   {
+    "method": "High-resolution optical echelle spectroscopy on a 6.5 m (slit; orient along the companion's PA)",
+    "facility_instrument": "Magellan Clay MIKE (335-500 / 490-950 nm; R 83k/65k at 0.35 arcsec, about 28k/22k at 1 arcsec); PFS (precision-RV PI instrument)",
+    "what_it_would_tell_us": "High-S/N spectra in a few minutes reach the EB secondary in the red arm. Gives K1, K2, gamma_EB, RV_A and template temperatures. A 0.7-1 arcsec slit gives R ~22-40k, well matched to vsini ~20 km/s.",
+    "capability_for_this_target": "Las Campanas (lat -29) sees Dec -43 at ~76 deg altitude. Estimated S/N ~100 per resolution element in ~5-10 min for V = 11.65 (not verified; use the LCO slit-spectrograph ETC). The slit includes a 0.1-1 arcsec companion when aligned on its PA.",
+    "access_route": "Magellan time goes only to partner institutions (Carnegie, Harvard/CfA, MIT, Michigan, Arizona; CfA rules require CfA as primary affiliation), the Chilean community, and NOIRLab open access: 5 nights in 2027A through MSIP, running to 2028A, all instruments including PI instruments. PFS is available only through collaboration with its team (contact Steve Shectman two weeks before proposing). Observing is classical, so a non-professional would in practice need a partner collaborator. Small (~1 h) requests are hard to schedule (not verified).",
+    "cost": "No fee through NOIRLab or partners; no public per-night price found (not verified).",
+    "lead_time": "NOIRLab 2027B deadline is the last day of March 2027 (Aug 2027 - Jan 2028 semester); partner deadlines vary (CfA: 2nd Tuesday of April/October).",
+    "time_needed": "4-6 epochs x ~10 min plus overheads, about 1-1.5 h, but allocated in nights or half-nights.",
+    "sources": [
+     "https://www.lco.cl/wp-content/uploads/2022/08/MIKEhandout2022.pdf",
+     "https://lweb.cfa.harvard.edu/files/tac/2026B_MagInstr.txt",
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://pweb.gws.cfa.harvard.edu/people/optical-and-infrared-astronomy/time-allocation-committee/proposing-telescope-time",
+     "https://carnegiescience.edu/resources/scientists/telescope-time"
+    ]
+   },
+   {
+    "method": "High-resolution fibre spectroscopy on a 10 m-class queue telescope",
+    "facility_instrument": "SALT HRS, Sutherland (LR R ~16,200, MR R ~37,000, HR R ~65-69,000; fibres 2.23 arcsec for LR/MR and 1.56 arcsec for HR; ~370-890 nm)",
+    "what_it_would_tell_us": "SB2/SB3 detection, K1, K2, gamma_EB and RV_A. MR mode (R ~37k, 2.23 arcsec fibre) is well suited to broad M-dwarf lines and takes in a close companion.",
+    "capability_for_this_target": "From latitude -32.4 the target reaches ~79.5 deg altitude, but SALT can only observe in a fixed-elevation annulus, so tracks are limited to windows of roughly 1-2 h. Quadrature timing is constrained but feasible (not verified for this declination). Total transmission is ~3.0% (450 nm) to ~4.5% (750 nm) in MR (2013 predictions). Scaling suggests S/N ~100 per 4 km/s in ~10 min for V = 11.65 (my estimate; not verified with the SALT simulator).",
+    "access_route": "Partners only: South Africa (any PI at an African institution), US partner universities, Poland, India (IUCAA) and UK (Armagh). Plus NOIRLab's Rubin in-kind allocation of 50 h per year, which follows NOIRLab open-access rules.",
+    "cost": "No fee through NOIRLab or partner TACs. For reference, SALT operations cost is 'about ZAR 37,000 per hour (~$2,300 USD per hour)' (Chaboyer, SAAO AfAS slides, March 2026). That is the basis for multi-year partner purchases, not hourly sales to individuals. A 6-epoch program (~2 h with overheads) is worth about ZAR 74k (~USD 4.6k).",
+    "lead_time": "NOIRLab 2027B deadline is the last day of March 2027, for Aug 2027 - Jan 2028.",
+    "time_needed": "4-6 epochs x ~10-15 min plus acquisition, about 1.5-2 h.",
+    "sources": [
+     "https://salt.camk.edu.pl/PL/Aktualnosci/SALTHRS-SV-Call_final.pdf",
+     "https://events.saao.ac.za/event/13/contributions/574/attachments/96/141/Brian_Chaboyer_AfAS_2026.pdf",
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://astronomers.salt.ac.za/proposals/"
+    ]
+   },
+   {
+    "method": "High-resolution optical spectroscopy with strong red coverage",
+    "facility_instrument": "AAT 3.9 m Veloce (R = 80,000, 396-940 nm in three arms; 2.5 arcsec, 19-fibre IFU)",
+    "what_it_would_tell_us": "The red arm (596-940 nm) is where the K/M EB stars are brightest relative to the G star. In my 600-900 nm simulation the EB primary is ~4.5% and the secondary ~1.4% (bound case), and the secondary becomes detectable at S/N ~40-80. Gives K1, K2, gamma_EB, RV_A and spectral types.",
+    "capability_for_this_target": "Siding Spring (lat -31.3) sees Dec -43 at ~78 deg altitude. The AAT figure-of-merit table gives S/N 74-90 per resolution element at 758 nm in 1200 s for I/T = 11, which scales to ~63-76 for T = 11.36, and ~37-47 at 534 nm for V = 11.65. The 2.5 arcsec IFU includes a 0.1-1 arcsec companion. Veloce is offered shared-risk.",
+    "access_route": "Open time (25% of nights) is limited to Australian-based researchers through ATAC/AAL; the rest is consortium/key projects. Paid time is reportedly arranged through AAL (not verified: page returned 403). Travel or remote observing is the observer's responsibility.",
+    "cost": "No fee for open time; no public paid-night price found (not verified).",
+    "lead_time": "2027A deadline 16 Oct 2026 (Australian-based PIs, for Feb-Jul 2027); 2027B call expected ~April 2027 (not verified).",
+    "time_needed": "4-6 epochs x 20 min plus ~4 min overhead, about 2 h; ATAC asks requests to be multiplied by 1.5 for weather.",
+    "sources": [
+     "https://aat.anu.edu.au/science/instruments/current/veloce/overview",
+     "https://aat.anu.edu.au/science/2027a-call-proposals",
+     "https://aat.anu.edu.au/science/observing/apply-for-observing-time"
+    ]
+   },
+   {
+    "method": "High-resolution optical spectroscopy on an 8 m queue telescope",
+    "facility_instrument": "Gemini-South GHOST (R ~56,000 standard / 76,000 high; usable 383-1000 nm; 1.2 arcsec IFUs); reduced spectra supplied by Gemini",
+    "what_it_would_tell_us": "High-S/N composite spectra to 1000 nm in minutes: SB3 analysis, K1, K2 (the EB secondary is reachable in the red), gamma_EB, RV_A and spectral types.",
+    "capability_for_this_target": "Cerro Pachon reaches ~77 deg altitude; season May-Dec. Estimated S/N ~100 per resolution element in ~10 min for V = 11.65 (not verified; use the Gemini ITC). Caveat: the 1.2 arcsec IFU may lose light from a companion beyond ~0.5-0.6 arcsec. RV accuracy of 150-200 m/s without an RV standard is ample here.",
+    "access_route": "Gemini regular queue: US time is open to all astronomers worldwide (non-US applicants must explain why US facilities are needed). Fast Turnaround requires a PI from a US/CA/AR/BR/KR institution (not Chile or UH). DDT is open to any astronomer at any time.",
+    "cost": "No fee (competitive). Old Gemini fact sheet (archived, undated): 'each night ... worth about $33,000'.",
+    "lead_time": "2027A deadlines (30 Sep - 2 Oct 2026) have passed, and 2027A ends 31 Jul 2027 anyway. 2027B (Aug 2027 - Jan 2028) deadline expected ~end of March 2027 (by analogy; not verified). FT monthly if eligible.",
+    "time_needed": "4-6 epochs x ~10 min plus acquisition, about 1.5-2 h including baseline calibrations.",
+    "sources": [
+     "https://www.gemini.edu/instrumentation/ghost",
+     "https://www.gemini.edu/observing/phase-i-proposing-time/standard-semester-program/2027a-call-proposals",
+     "https://www.gemini.edu/observing/phase-i/ft",
+     "https://www.gemini.edu/observing/phase-i/ddt",
+     "https://webarchive.gemini.edu/media/mediafacts.html"
+    ]
+   },
+   {
+    "method": "High-resolution optical echelle spectroscopy on a 4 m (new instrument, shared-risk queue)",
+    "facility_instrument": "SOAR 4.1 m STELES (R ~50,000, ~310-960 nm; only the 0.8 arcsec slit in 2027A)",
+    "what_it_would_tell_us": "Same SB3/TODCOR science as CHIRON but with ~7x the collecting area: K1, K2, gamma_EB, RV_A and spectral types.",
+    "capability_for_this_target": "Cerro Pachon, ~77 deg altitude at transit. S/N for V = 11.65 is not verified (no ETC found); scaling by aperture suggests ~50-80 per resolution element in ~30 min. The 0.8 arcsec slit should be aligned on the companion's PA. Shared-risk: operational limits apply.",
+    "access_route": "NOIRLab open access (US share of SOAR). According to the NOIRLab brochure, US-allocated time is open to everyone regardless of affiliation; non-US applicants justify the need. Observations are made by the STELES/SOAR team in queue blocks.",
+    "cost": "No fee (competitive NOIRLab TAC).",
+    "lead_time": "2027A deadline (30 Sep 2026) has passed. 2027B deadline is the last day of March 2027 (Aug 2027 - Jan 2028), which covers the prime Aug-Nov window.",
+    "time_needed": "4-6 epochs x ~30-40 min, about 3-4 h.",
+    "sources": [
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://noirlab.edu/public/media/archives/brochures/pdf/brochure027.pdf",
+     "https://noirlab.edu/science/observing-noirlab/observing-ctio/observing-soar"
+    ]
+   },
+   {
+    "method": "Near-IR high-resolution spectroscopy, AO-fed long slit (slit along the companion's PA can also separate it spatially)",
+    "facility_instrument": "VLT CRIRES+ (0.95-5.3 um; R >= 46,000 with 0.4 arcsec slit or ~92,000 with 0.2 arcsec; 10 arcsec slit; MACAO AO)",
+    "what_it_would_tell_us": "In H/K a bound K/M pair is ~13-14% (EB primary) and ~5-6% (secondary) of the light (PHOENIX models). Both EB stars are detected, giving K1, K2, q, gamma_EB and spectral types from atomic and CO lines. With the slit on the companion's PA and separation >= ~0.2-0.3 arcsec, the EB spectrum is also spatially separated from the G star, proving directly which star eclipses.",
+    "capability_for_this_target": "Paranal, ~72 deg altitude. My simulation (H band, R = 45k, 100 K star-A template mismatch): S/N 30 per pixel gives sqrt(dchi2) ~25 for the EB primary and ~9 for the secondary (spurious ~10 / 2.6), sigma_v ~0.9 / 2.3 km/s. A fainter M0.5+M3 case still gives the secondary at S/N 30-60. K = 10.34, so S/N 30-60 per pixel in ~10-30 min is plausible (not verified with the ETC).",
+    "access_route": "ESO FTC (VLT, up to 30 h, service mode; any individual may apply), regular call, or DDT. CRIRES+ is listed for P118 on UT3.",
+    "cost": "No fee (competitive); valuation 83 kEUR per VLT night (2015 EUR).",
+    "lead_time": "As for the other VLT options: first realistic window Sep 2027 or later, via an FTC call for P118 (not yet announced) or DDT; P119 call July 2027.",
+    "time_needed": "2-4 epochs at quadrature x ~30 min shutter time plus ~15 min AO acquisition, about 2-3 h.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/crires/overview.html",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel-117a.html"
+    ]
+   },
+   {
+    "method": "Near-IR high-resolution spectroscopy: other options checked",
+    "facility_instrument": "Gemini-North IGRINS-2 (R ~45,000, H+K); Gemini-South IGRINS (visiting); Magellan WINERED (Y/J); NIRPS (see the HARPS entry)",
+    "what_it_would_tell_us": "Same NIR contrast gain as CRIRES+: both EB stars detected, mass ratio, spectral types.",
+    "capability_for_this_target": "IGRINS-2 is on Gemini NORTH. From Mauna Kea the target never rises above ~27 deg (airmass >= 2.2), so it is a poor choice. IGRINS commissioning showed S/N ~100 per resolution element at K = 13.5 in 3600 s, so K = 10.3 is easy in principle. The original IGRINS is 'Unavailable for proposals' at Gemini South. WINERED runs on Magellan Clay in 2026B (mid-Oct to mid-Nov and mid-Dec to Jan 16).",
+    "access_route": "IGRINS-2: Gemini queue (US time open worldwide) during IGRINS-2 blocks, but not recommended. WINERED: Magellan partners or collaboration (contact Andy McWilliam).",
+    "cost": "No fee (competitive) / collaboration.",
+    "lead_time": "Gemini 2027B ~March 2027 deadline (not verified); WINERED depends on run schedule.",
+    "time_needed": "~2-4 h for 4 epochs (IGRINS-2 at high airmass needs more).",
+    "sources": [
+     "https://www.gemini.edu/instrumentation/igrins-2",
+     "https://www.gemini.edu/instrumentation/igrins",
+     "https://lweb.cfa.harvard.edu/files/tac/2026B_MagInstr.txt"
+    ]
+   },
+   {
+    "method": "Intermediate-resolution UV-to-K spectroscopy in one shot (combined light, slit)",
+    "facility_instrument": "VLT X-shooter (300-2480 nm; VIS R = 18,400 and NIR R = 11,600 with 0.4 arcsec slits; NIR R = 8,100 with 0.6 arcsec; 11 arcsec slit)",
+    "what_it_would_tell_us": "Spectral types of the EB stars from TiO/CaH/VO bands, Na I, K I, CO and H2O. Velocity-resolved SB2 in the near-IR at quadrature: a ~200 km/s split is 7-8 resolution elements at R = 11,600. The UVB/VIS arms give RV_A to ~1-2 km/s (not verified).",
+    "capability_for_this_target": "My simulation (H band, R = 10,000, unresolved): EB primary sqrt(dchi2) ~19 at S/N 50 and ~36 at S/N 100; EB secondary ~6.5 at 50 and ~12 at 100; sigma_v ~1-2.7 km/s. With J = 10.7, S/N > 100 per pixel in ~5-10 min is expected (not verified with the ETC). Wavelength-calibration systematics of ~1-2 km/s limit the bound test (not verified).",
+    "access_route": "ESO FTC (up to 30 h, service), regular call or DDT; open to any individual.",
+    "cost": "No fee (competitive).",
+    "lead_time": "Same ESO calendar as above (first realistic window ~Sep 2027).",
+    "time_needed": "2-4 quadrature epochs x ~20-30 min including overheads, about 1-2 h.",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/xshooter/inst.html",
+     "https://www.eso.org/sci/facilities/paranal/instruments/xshooter/overview.html",
+     "https://www.eso.org/sci/observing/phase1/fast-track-channel-117a.html"
+    ]
+   },
+   {
+    "method": "AO integral-field spectroscopy: locates the companion AND gives its spectrum and RVs (spatially resolved)",
+    "facility_instrument": "VLT ERIS/SPIFFIER (J-K; R ~5,000 full band or ~10,000 half band; fields 0.8x0.8 arcsec at 12.5x25 mas spaxels, 3.2x3.2 or 8x8 arcsec)",
+    "what_it_would_tell_us": "Resolves a companion at ~0.05-1 arcsec and extracts its own spectrum, separately from the G star. This identifies the eclipsing source and gives near-IR spectral types (CO, Na, Ca, H2O). At quadrature at R ~10,000 (30 km/s) it can split the two EB components (~200 km/s apart) and give gamma_EB directly. Combined with imaging epochs it also adds common-proper-motion astrometry.",
+    "capability_for_this_target": "NGS AO on the star itself is marginal (Gaia RP = 11.28 versus the ~RP < 11 NGS guideline noted from the ERIS pages). The LGS mode, with the target as tip-tilt star (R = 7-18 allowed), works. A bound companion would have Ks ~11.6-12.9 (dK ~1.2-2.5). S/N for the extracted companion spectrum is not verified (needs the ETC); expect ~30-60 min per epoch.",
+    "access_route": "ESO FTC, regular call or DDT (any individual may apply).",
+    "cost": "No fee (competitive).",
+    "lead_time": "Same ESO calendar (first realistic ~Sep 2027).",
+    "time_needed": "1 epoch to locate and classify (~1 h); 2 quadrature epochs for RVs (~2-3 h total).",
+    "sources": [
+     "https://www.eso.org/sci/facilities/paranal/instruments/eris/overview.html",
+     "https://www.eso.org/sci/facilities/paranal/instruments/eris/inst.html",
+     "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf"
+    ]
+   },
+   {
+    "method": "Low/medium-resolution spectroscopy (optical R ~1,000-12,000; near-IR R ~3,500)",
+    "facility_instrument": "SOAR Goodman (R ~few 100 to 12,000) and TripleSpec 4.1 (0.9-2.4 um, R ~3,500) via the AEON queue; ANU 2.3 m WiFeS (R 3,000/7,000); LCO FLOYDS; SALT RSS",
+    "what_it_would_tell_us": "At best: a combined-light check for M-dwarf molecular bands (TiO, CaH, CO, H2O) in excess of a pure G-dwarf spectrum, and with WiFeS R = 7,000 at very high S/N, a crude SB detection of the EB primary at quadrature. Cannot provide a reliable gamma_EB for the bound test, nor the EB secondary.",
+    "capability_for_this_target": "My simulation at R = 7,000 (520-700 nm): the EB primary (~3%) needs S/N >~100 per pixel (sqrt(dchi2) 19 versus spurious 6.6), with sigma_v ~2-7 km/s; the EB secondary is not usable. TripleSpec R = 3,500 (86 km/s) barely separates the ~200 km/s split. Useful mainly as a cheap spectral-type and SED sanity check.",
+    "access_route": "SOAR AEON: NOIRLab open access. ANU 2.3 m: quarterly RSAA calls through LENS; in 2022, open-access time required >= 50% Australian-based proposers, with paid priority nights otherwise. FLOYDS: LCO (not open access for semester calls).",
+    "cost": "SOAR: no fee. ANU 2.3 m paid priority nights: AUD 1,200 (Australian) / AUD 2,000 (international) per night (2022 call); roughly USD 0.8k / 1.3k at an assumed ~0.65 USD/AUD; 2026 prices not verified.",
+    "lead_time": "NOIRLab 2027B deadline is the last day of March 2027; ANU 2.3 m 2026B deadline was 24 Apr 2026 (quarterly/semester calls).",
+    "time_needed": "1-3 epochs x 10-30 min.",
+    "sources": [
+     "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals",
+     "https://mailman.sydney.edu.au/pipermail/asa/Week-of-Mon-20220725/006359.html",
+     "https://mailman.sydney.edu.au/pipermail/asa/Week-of-Mon-20260406/007495.html",
+     "https://rsaa.anu.edu.au/observatories/telescopes/anu-23m-telescope",
+     "https://lco.global/news/callforproposals2027a/"
+    ]
+   },
+   {
+    "method": "Archival spectra and catalogue search (free)",
+    "facility_instrument": "ESO Science Archive, RAVE DR5/DR6, GALAH DR3/DR4, APOGEE DR17/SDSS DR19, SDSS optical (specObjAll), KOA, Gemini archive, LCO archive, ExoFOP; Gaia DR3 RVS; Gaia DR4 (planned 2 Dec 2026)",
+    "what_it_would_tell_us": "Existing spectra would give extra epochs for free. Gaia DR4 epoch RVS spectra (846-870 nm, R ~11,500) and per-transit RVs give a free, tighter constancy test of the G star. Stacking the transits that fall near quadrature might show the EB stars' Ca triplet, but low S/N makes this unlikely (my judgement).",
+    "capability_for_this_target": "Searches made 2026-10-13: ESO raw and ObsCore returned 0 spectra (only VISTA VHS images). VizieR within 10 arcsec: no RAVE DR5/DR6, APOGEE DR17, GALAH DR3/DR4 match. SDSS DR19: none at the position (347 APOGEE stars in the surrounding 11x10 deg box, so coverage exists). KOA, Gemini and LCO: none. ExoFOP: no spectroscopy, one CTOI with P = 0.6518 d. The NOIRLab Astro Data Archive (where CHIRON data live) was unreachable (connection reset), so not verified. Gaia DR3: RV -6.07 +/- 0.86 km/s from 15 transits, peak-to-peak 9.9 km/s, rv_chisq_pvalue 0.275, implying per-transit scatter ~2.6 km/s, so a reflex K >~5 km/s would have been noticed. Vbroad 7.2 +/- 8.7 km/s; no DR3 mean RVS spectrum (has_rvs = 0). The DR4 content page lists rvs_epoch_spectrum (6.9e9 records), rvs_epoch_parameters_single/double (the latter for double-lined transits), rvs_mean_spectrum and NSS orbit tables.",
+    "access_route": "Public archives; Gaia DR4 through the Gaia archive after release.",
+    "cost": "Free.",
+    "lead_time": "Gaia DR4 planned for 2 December 2026.",
+    "time_needed": "Hours of analysis.",
+    "sources": [
+     "https://www.cosmos.esa.int/en/web/gaia/dr4",
+     "https://www.cosmos.esa.int/web/gaia/news-2026",
+     "https://archive.eso.org/",
+     "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355",
+     "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/283",
+     "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/other/PASA/42.51",
+     "https://skyserver.sdss.org/dr19/",
+     "https://exofop.ipac.caltech.edu/tess/target.php?id=71316387",
+     "https://archive-api.lco.global/frames/"
+    ]
+   }
+  ],
+  "notes": "PHYSICS CHECK (spec_scripts/eb_physics.py, pairs.py, flux_frac.py; Pecaut & Mamajek colours):\n- Velocities: masses 0.4-0.8 + 0.3-0.6 Msun at P = 1.3036712 d give a = 4.5-5.6 Rsun. The more massive EB star has K1 ~75-95 km/s and the less massive K2 ~100-125 km/s (0.6+0.5 Msun: 91/110 km/s at sin i = 1; i ~81 deg for a 1.5 h grazing-ish eclipse). So the brief's 'K ~100-120 per component' is right for the less massive star, but the more massive one is ~85-95 km/s. The two EB stars are ~175-215 km/s apart at quadrature.\n- Rotation: synchronised vsini is ~12-26 km/s (15-23 km/s for 0.4-0.6 Rsun).\n- Eclipse depths: the 0.27/0.57 depth ratio (~0.47) implies a TESS-band surface-brightness ratio of ~0.5. That is consistent with pairs like K5+M0, K7+M2 or M0+M3.\n- Light shares if bound (same distance as the G0 dwarf): the EB's total light in V is ~1.4% (M1+M2), ~4% (K7+M1), ~5% (K7+M0) or ~9% (K5+M0). Per star in V, the EB primary is ~1-3.5% and the secondary only ~0.2-1%. The shares are ~2x larger in I/TESS and ~5-10x larger in H/K (EB primary ~9-15%, secondary ~3-7%). So 'lines 2-5% of the light in the optical' holds for the EB pair's total (if the EB primary is ~K7-M1), but the EB secondary in the optical is <~1%.\n\nS/N AND RESOLUTION (my PHOENIX-ACES template simulation; spec_scripts/phoenix_sim.py, outputs phoenix_opt.txt and phoenix_other.txt):\n- Setup: bound case at quadrature, TODCOR-like linear fit with realistic template mismatch.\n- Optical, R = 28k, 450-880 nm: an EB primary at ~3% needs S/N ~20-40 per 4 km/s pixel per epoch (sqrt(dchi2) 10-23 versus spurious 3-11; sigma_v ~1.3-2.5 km/s). An EB primary at ~1.8% needs S/N ~40-80. The EB secondary (0.4-0.8%) needs S/N > 80-100 or stacked epochs.\n- Resolution: R = 48k gives no gain over 28k; R ~15-25k is enough because the lines are ~20 km/s wide. At R = 7,000 you need S/N > 100 and get only 2-7 km/s velocities.\n- Near-IR: H or K band at R = 45k detects both EB stars at S/N 30-60. The near-IR is the way to get the mass ratio.\n- Main systematic: mismatch of the G-star template. A 0.5 dex [Fe/H] error makes the G star's residuals as large as the companion's signal. So first fit the G star's own Teff, logg, [Fe/H] and vsini, or build an empirical G-star template by disentangling across epochs (the EB lines move about +/-100 km/s between epochs; the G star does not).\n- Per-instrument S/N (snr_estimates.txt): CHIRON fiber gives 36/51/63 per pixel in 900/1800/2700 s; HARPS ~45 per pixel in 1800 s; Veloce ~63-76 per resolution element at 758 nm in 1200 s.\n- Cross-check: Kolbl et al. 2015 (AJ 149, 18; arXiv 1412.5259) report detecting companions down to ~1% of the primary's flux in Keck/HIRES spectra.\n- Not modelled: active K/M dwarfs in a 1.3 d orbit probably show Halpha and Ca II emission moving +/-100 km/s, which could be an extra tracer (plausible, not verified).\n\nEPOCHS:\n- Take spectra near quadrature, phases 0.20-0.30 and 0.70-0.80 measured from the primary eclipse. The earlier TESS fit gives T0 = BJD 2459067.3272 (my working value; confirm with the current ephemeris) and P = 1.3036712 d; P/2 = 15.64 h apart.\n- A window of +/-0.05 in phase (+/-1.56 h) keeps |RV - gamma| >= 0.95 K. Exposures up to ~45-60 min smear the velocity by <1 km/s.\n- With a known ephemeris and a circular orbit, 2 epochs (one per quadrature) solve K1, K2 and gamma. Recommend 4-6 epochs (2-3 per quadrature), plus optionally one at conjunction to help disentangling.\n- Expected precision: gamma_EB to ~1 km/s statistically, plus ~1-3 km/s template systematics.\n- Opportunities: from CTIO in Jun-Nov 2027, 114 nights have at least one quadrature window in darkness at airmass < 1.5 (visibility.py).\n\nBOUND TEST:\n- Compare gamma_EB with RV_A. Gaia gives -6.07 +/- 0.86 km/s; new spectra give ~0.1 km/s.\n- If the pair is bound at 30-300 AU, the orbital speed is <= 8.1/4.4/2.6 km/s (projected values are smaller), so expect |delta gamma| <~3-8 km/s.\n- A match supports a bound pair but does not prove it, since field stars can match by chance (that probability is not computed).\n- Strengthen it with a spectroscopic distance: spectral types plus the light ratio measured in two bands (optical and near-IR TODCOR alpha) should reproduce the bound prediction at 297 pc. Add common proper motion from the imaging topic.\n- Gravitational-redshift and convective-shift differences between the stars are below ~0.5 km/s (my estimate).\n\nAPERTURE CAVEAT: a 0.1-1 arcsec companion is inside 2-2.7 arcsec fibres (CHIRON, FEROS, Veloce, SALT MR). It can be partly lost in 1 arcsec fibres or slits and 1.2 arcsec IFUs (HARPS, ESPRESSO, GHOST, MIKE/UVES unless the slit is aligned on its PA). If the companion turns out to be 2-4 arcsec away, fibre spectra may miss it, so locate it first (imaging topic) or use ERIS/CRIRES+.\n\nSEASON AND CALENDAR (as of 2026-10-13):\n- Target observable May-Dec; best Jul-Oct, with 5-8 h/night at airmass < 1.5 from Chile, SAAO and Siding Spring. From Mauna Kea it never rises above 27 deg.\n- Closed or passed: ESO P118 (deadline 22 Sep 2026), NOIRLab/Gemini 2027A (30 Sep - 2 Oct 2026); LCO NRES is discontinued.\n- No NOIRLab SMARTS time in 2027A.\n- ESO FTC 117B falls in Mar-Apr 2027, when the target is not observable.\n- Practical routes:\n  (1) Join TFOP and ask SG2 (Sam Quinn); free.\n  (2) Buy ~4 h of CHIRON (USD 250/h on an undated GSU page; minimum 'a few thousand dollars'). Possibly 2-4 epochs still in Oct-Nov 2026, otherwise May-Dec 2027.\n  (3) NOIRLab 2027B, deadline last day of March 2027: SOAR STELES, Magellan, SALT.\n  (4) Gemini 2027B (~March 2027, not verified): GHOST.\n  (5) ESO FTC for Sep 2027 onwards (not yet announced) or DDT: X-shooter, CRIRES+, ERIS, UVES.\n  (6) Gaia DR4 on 2 Dec 2026: free.\n\nELIGIBILITY: ESO 'any group or individual'; Gemini US time 'open to all astronomers worldwide'; NOIRLab US time 'regardless of ... affiliation' (brochure). A non-professional can apply in principle, but in practice a professional co-I helps with Phase 2 and data reduction.\n\nUNVERIFIED: FEROS/MIKE/GHOST/SALT/STELES/CRIRES+/ERIS S/N values are my scalings, not ETC runs. The CHIRON price page is undated. The AAT paid-time page returned 403. The NOIRLab Astro Data Archive was unreachable. Currency conversions other than SALT's own figure use assumed rates.\n\nFILES (scratch): /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/followup/notes_spectroscopy.md, spec_scripts/phoenix_sim.py, phoenix_opt.txt, phoenix_other.txt, snr_estimates.txt, toy_ccf_out.txt, spec_scripts/visibility.py."
+ },
+ {
+  "options": [
+   {
+    "method": "Free archival: SuperWASP-South light curve, 2006-2008 (I already analysed it in this session)",
+    "facility_instrument": "SuperWASP-South (SAAO), public DR1 at the NASA Exoplanet Archive. Source 1SWASP J220333.07-425007.9: 19,585 points, 7 May 2006 to 29 May 2008, broad 400-700 nm band, 13.7\" pixels",
+    "what_it_would_tell_us": "Checks whether the eclipse shows up in the optical, about 18 years before TESS, and tests the ephemeris over that span. It gives only a rough colour constraint and cannot resolve the companion.",
+    "capability_for_this_target": "About 12-15 mmag scatter per point over 192 nights. I fitted a linear trend to each night and camera using only out-of-eclipse points, then fitted a V-shaped eclipse model (T14 = 1.55 h, T23 = 0.38 h) on my ephemeris (primary T0 = BJD 2460165.6704, P = 1.3036696 d). Primary depth = 3.9 +/- 2.0 mmag; secondary = -1.2 +/- 1.6 mmag. The errors come from fits at random phases. Injected 5.6/2.7 mmag eclipses were recovered at 95%. Result: a dip of about 2 sigma at the predicted primary time. It agrees with both the TESS depth (5.6 mmag) and the depth predicted in this band for a bound K/M pair (about 2-4 mmag), so it cannot decide between them. A first-pass version that subtracted nightly medians, with the in-eclipse points still included, gave a biased 1.7 mmag; I corrected that.",
+    "access_route": "Free public download, no account needed. The by-tile FITS path is given in the archive's bulk-download wget scripts.",
+    "cost": "$0. About 1 hour of analysis (already done).",
+    "time_needed": "Already done (scripts in the scratch folder)",
+    "lead_time": "Available now",
+    "sources": [
+     "https://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html",
+     "https://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPBulkDownload.html",
+     "https://exoplanetarchive.ipac.caltech.edu/data/ETSS/SuperWASP/FITS/DR1/tile330042/1SWASP%20J220333.07-425007.9.fits"
+    ]
+   },
+   {
+    "method": "Free archival: existing TESS data, and a check for future TESS sectors",
+    "facility_instrument": "TESS: SPOC, QLP and TICA FFI products at MAST; TESS-point Web Tool (WTV) and tess-point 0.9.5",
+    "what_it_would_tell_us": "The best TESS-band depths, odd/even depths and ephemeris, plus difference-image centroids (already done: source within about 4\"). TESS has one band only, so it gives no colour information.",
+    "capability_for_this_target": "WTV v2.6 (updated with Cycle 9, S108-121) and tess-point 0.9.5 (Years 1-10, S1-134) both list only S1, S28, S68, S95, S105 (13 Jun-11 Jul 2026) and S106 (11 Jul-9 Aug 2026). There is no coverage in Cycle 9 (to 19 Sep 2027) or in the provisional Year 10 sectors (S122-134). So there are no new TESS data before late 2028 at the earliest, and the pointings may still change.",
+    "access_route": "Free (MAST); the WTV needs no login",
+    "cost": "$0",
+    "time_needed": "None",
+    "lead_time": "Data already public; no future sectors",
+    "sources": [
+     "https://heasarc.gsfc.nasa.gov/wsgi-scripts/TESS/TESS-point_Web_Tool/TESS-point_Web_Tool/wtv_v2.0.py/",
+     "https://tess.mit.edu/tess-year-9-observations/",
+     "https://tess.mit.edu/public/files/TESS_orbit_times.csv",
+     "https://tess.mit.edu/observations/"
+    ]
+   },
+   {
+    "method": "Free: Gaia DR4 (released 2 Dec 2026): epoch photometry, epoch astrometry, source-environment analysis, acceleration solutions, RVS epoch data",
+    "facility_instrument": "Gaia DR4, 66 months of data (25 Jul 2014-20 Jan 2020). Tables: epoch_photometry (G/BP/RP per transit), epoch_astrometry, rvs_epoch_parameters_single/double, rvs_epoch_spectrum, xp_epoch_spectrum, gaia_source_environment (SEAPipe, 217 M rows), residual_image (7.0 M sources, central star removed), nss_acceleration_astro, nss_vim_fl (variability-induced movers), vari_eclipsing_binary",
+    "what_it_would_tell_us": "(a) Location: if the faint EB lies 0.1-1\" away, the light centre should shift during eclipses by about separation x depth (variability-induced mover). SEAPipe or residual_image could also show the companion directly. (b) Bound or not: an astrometric acceleration of the G star would mean a massive companion within about 30-50 AU. (c) EB type: comparing eclipse depths in BP and RP gives a weak colour test. The RVS epochs confirm the G star's constant RV; the EB's lines are too faint for RVS.",
+    "capability_for_this_target": "These are my estimates and are not verified. Gaia DR3 had 50 matched transits in 34 months, so DR4 should have about 100, of which about 3-5 fall in the primary eclipse. Expected depth in G is about 0.35-0.55%. The light-centre shift would be about 0.4 mas at 0.1\", 1.2 mas at 0.3\" and 4 mas at 1\". For comparison, per-CCD along-scan precision at G=12 is probably about 0.1-0.3 mas (not verified), so this could be the strongest free localisation test. SEAPipe's main gain is for companions inside about 0.5\"; it reconstructs 3\"x3\" images but does not run on every source. Acceleration: a 1.1 Msun EB at 30 AU would move the light centre by about 0.15 mas/yr^2, likely detectable; at 100 AU or more it would not be. Free check already done: Tycho-2, UCAC4 and UCAC5 proper motions (UCAC5: 39.4+/-0.9, -3.9+/-0.9 mas/yr) agree with Gaia EDR3 (38.503, -3.134) to about 1 mas/yr, which rules out only very close, massive companions.",
+    "access_route": "Free Gaia archive (ESA). TAP queries work without an account; epoch data come through DataLink.",
+    "cost": "$0. A few days of analysis.",
+    "time_needed": "Days of analysis after release",
+    "lead_time": "2 December 2026, about 7 weeks from now. DR5 is not expected before the end of 2030.",
+    "sources": [
+     "https://www.cosmos.esa.int/web/gaia/release",
+     "https://www.cosmos.esa.int/web/gaia/dr4",
+     "https://arxiv.org/abs/2310.03562",
+     "https://arxiv.org/abs/2604.04389",
+     "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/340"
+    ]
+   },
+   {
+    "method": "Free archival: ASAS-SN Sky Patrol and ATLAS forced photometry",
+    "facility_instrument": "ASAS-SN (g, V; 8\" pixels) and ATLAS (c, o bands; southern units at El Sauce, Chile and Sutherland, South Africa)",
+    "what_it_would_tell_us": "In principle, the eclipse depth in g/V/c/o over 2014-2026. In practice, probably nothing at this depth.",
+    "capability_for_this_target": "ASAS-SN: saturation begins around g ~ 12 (Hart et al. 2023), and this star has g ~ 11.9. Saturated stars show about 0.037 mag per-epoch scatter even with the neural-network method. With about 100 in-eclipse epochs, the formal depth error is a few mmag before systematics, so 0.3-0.57% eclipses are at best marginal. ATLAS: about 0.02 mag precision for bright stars (Tonry et al. 2018), and the star may be close to saturation (bright limit not verified). It will not detect 0.5% eclipses. I could not query the ASAS-SN API here (non-443 port blocked).",
+    "access_route": "ASAS-SN: free web or Python client. ATLAS: free after registration on the forced-photometry server.",
+    "cost": "$0",
+    "time_needed": "Hours",
+    "lead_time": "Now",
+    "sources": [
+     "https://arxiv.org/abs/2304.03791",
+     "https://arxiv.org/abs/2404.15405",
+     "https://fallingstar-data.com/forcedphot/",
+     "https://arxiv.org/abs/1802.00879",
+     "https://arxiv.org/abs/1804.02132"
+    ]
+   },
+   {
+    "method": "Multi-colour eclipse photometry on a commercial remote telescope: primary eclipse in B or V (blue) plus one eclipse in Ic (red)",
+    "facility_instrument": "iTelescope: T30 (Siding Spring, 0.51 m CDK, UvBVRcIc, 0.81\"/pix), T72 (Deep Sky Chile, Rio Hurtado, 0.51 m CDK, UBVRI, 0.36\"/pix) or T32 (Siding Spring, 0.43 m, V and Ic, CMOS)",
+    "what_it_would_tell_us": "How eclipse depth changes with colour, which gives the EB's temperature relative to the G star. From Pecaut-Mamajek colours, in the small-dilution limit, the ratio of a band's depth to the TESS depth would be: for an EB of G colour, 1.0 in every band; for an F-type EB, 1.26 in g' and 1.15 in V. Neither can be a bound pair of lower-main-sequence stars. For a bound pair at 297 pc (K5+K7 down to M2+M3) the ratio would be 0.45-0.15 in g', 0.62-0.26 in V, 0.82-0.47 in Rc, about 0.9 in i' and 1.10-1.22 in z'. A low blue depth fits a bound K/M pair but does not prove it is bound: a red background EB would look the same. Proving it is bound still needs imaging or the systemic RV.",
+    "capability_for_this_target": "Photon plus scintillation noise (Osborn et al. 2015) at airmass 1.2: about 1.5 mmag per minute (0.51 m) and 1.7 mmag (0.43 m). Per-eclipse depth error is about 0.25 mmag from white noise, or about 0.6 mmag with a typical 0.5 mmag red-noise floor. Predicted primary depth in g'/B: 5.6 mmag if the EB has G colour, versus 2.5 (K5+K7), 1.7 (K7+M0) or 1.0 (M1+M2) mmag if it is a bound pair. One good blue eclipse separates these at more than 5 sigma. In I/z' the difference is only 5.6 versus 6.4-6.7 mmag, which needs 2-4 eclipses. The 0.27% secondary in Ic would be about a 4-5 sigma detection per eclipse. Practical points: iTelescope charges about 1 minute of overhead per exposure (CCD), so use 60-120 s exposures. Whether you can defocus to avoid saturation is not verified.",
+    "access_route": "Any individual: online subscription, then reserve time slots. No proposal needed.",
+    "cost": "Prices in USD (1 point = $1), fetched 13 Oct 2026. Plans per 28 days: Plan-40 $39.95, Plan-90 $89.95, Plan-160 $159.95, Plan-290 $289.95, Plan-490 $489.95. Premium-telescope session rates: $61-118/h (Plan-40) down to $34-66/h (Plan-490). Exposure-billing table (undated): T30 $179/h (Plan-20) to $89/h (Plan-490); T72 $224/h to $112/h; T32 $162/h to $81/h. Each eclipse needs about 3.2 h (1.55 h eclipse plus at least 0.75 h before and after), so about $300-700 per eclipse. Two blue eclipses plus one red, about 10 h, would cost about US$900-1,800 (e.g. two Plan-490 cycles at $89/h, about $980). The free full-moon time is capped at 1-hour sessions, too short for an eclipse. The exact session rates page (pricing.itelescope.online) could not be fetched, so those are not verified.",
+    "time_needed": "About 10 telescope hours (2-3 eclipses), plus your own reduction",
+    "lead_time": "Can start immediately. Remaining 2026 primary eclipses (mid-eclipse, UT): Siding Spring 21 Oct 13:29, 25 Oct 11:21, 7 Nov 12:13; Chile 24 Oct 04:03, 28 Oct 01:55, 10 Nov 02:48. In 2027 there are 2-8 per month per site from May to November, most in Jul-Sep.",
+    "sources": [
+     "https://www.itelescope.net/standard-plans",
+     "https://www.itelescope.net/pricing-premium",
+     "https://www.itelescope.net/telescope-rates-exposure-premium-copy",
+     "https://support.itelescope.net/support/solutions/articles/222670-how-much-does-each-telescope-cost-to-use-",
+     "https://support.itelescope.net/support/solutions/articles/231917-telescope-30",
+     "https://support.itelescope.net/support/solutions/articles/254436-telescope-72",
+     "https://support.itelescope.net/support/solutions/articles/231919-telescope-32",
+     "https://www.itelescope.net/terms-of-use",
+     "https://arxiv.org/abs/1506.06921",
+     "http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+    ]
+   },
+   {
+    "method": "Bought queue time on the Las Cumbres Observatory (LCO) network: 0.35 m telescopes (QHY600) or 1 m telescopes (Sinistro, being upgraded to Sophia cameras)",
+    "facility_instrument": "LCO 0.35 m PlaneWave DeltaRho (2 at Siding Spring, 1 at SAAO, 2 at CTIO; filters B, V, u', g', r', i', zs). LCO 1 m (2 at Siding Spring, 3 at SAAO, 3 at CTIO; UBVRI and u'g'r'i'zs Y)",
+    "what_it_would_tell_us": "The same g'/i'/zs colour test, robotically scheduled across three southern sites, which gives more chances to catch an eclipse.",
+    "capability_for_this_target": "0.35 m: about 1.8 mmag per minute and about 0.6 mmag per eclipse with realistic red noise. 1 m: about 0.75 mmag per minute and about 0.33 mmag per eclipse. Either decides between a G-coloured and a K/M EB from one g' eclipse. With 1 m data, 3-4 eclipses would pin the EB temperature to about half a spectral subtype.",
+    "access_route": "Purchase agreement, contact observe@lco.global. The page does not state who is eligible; it covers time \"for scientific and educational purposes\".",
+    "cost": "USD, page updated 1 Sep 2026. 0.4 m class: $300/h plus a $3,500 admin fee for 20-99 h/yr. 1 m: $500/h plus $3,500 (20-99 h), or $450/h for 100+ h with no fee. 2 m time is not for sale. Time-critical windows cost +50%. Minimum spend: 20 h on the 0.35 m = $9,500; 20 h on the 1 m = $13,500. That is far more than this one star needs.",
+    "time_needed": "About 7-10 h actually needed, but the minimum purchase is 20 h",
+    "lead_time": "Agreements by 1 Dec 2026 for semester 2027A (Feb-Jul 2027; target season starts in May), or by 1 Jun 2027 for 2027B (Aug 2027-Jan 2028). Unused time does not carry over.",
+    "sources": [
+     "https://lco.global/sales/networktime/",
+     "https://lco.global/observatory/telescopes/0-4m/",
+     "https://lco.global/observatory/instruments/filters/",
+     "https://lco.global/observatory/sites/",
+     "https://lco.global/observatory/proposal/guidelines/"
+    ]
+   },
+   {
+    "method": "Free LCO Director's Discretionary Time (Open Access) for simultaneous four-colour eclipse photometry",
+    "facility_instrument": "MuSCAT4 on the 2 m Faulkes Telescope South (Siding Spring): g', r', i' and zs imaged simultaneously, 9.1'x9.1' field, 0.27\"/pix",
+    "what_it_would_tell_us": "Four-colour depths of both eclipses from the same exposures, the best version of the colour test. It gives the EB temperature, and combined with TESS a rough per-band EB flux fraction to compare with a bound pair (e.g. K7+M0 predicts 4.2% of the light in V and 9.5% in Ic).",
+    "capability_for_this_target": "About 0.5 mmag per minute in g'/i' (scintillation-limited) and about 0.3 mmag per eclipse. One primary eclipse alone gives g'/TESS depth to about 0.05, enough to tell K5, K7, M0 and M1 pairs apart. Simultaneous bands largely cancel weather and airmass systematics.",
+    "access_route": "LCO says Open Access, funded by the Heising-Simons Foundation, covers Director's Discretionary Time, \"for which anyone may apply\". DDT is meant for unforeseen targets-of-opportunity and for supporting other facilities. Decisions usually come within a week, and awarded time expires at the end of the semester. The regular 2027A call (deadline 26 Oct 2026) is open only to LCO's science family and to UCSB, IPAC and Tel Aviv University. Acceptance for a non-urgent EB is uncertain. A professional co-applicant, such as a TFOP SG1 member or the MuSCAT team, would help.",
+    "cost": "$0. 2 m time cannot be bought at any price.",
+    "time_needed": "About 7 h (one primary plus one secondary eclipse, about 3.3 h each with overheads)",
+    "lead_time": "Can apply any time. For 2026B (ends 31 Jan 2027) the Siding Spring windows are primaries on 21 Oct, 25 Oct and 7 Nov and secondaries on 23 Oct and 9 Nov 2026. Otherwise apply around April-May 2027 for May-Jul, or around July 2027 for Aug-Nov.",
+    "sources": [
+     "https://lco.global/observatory/proposals/open-access-program/",
+     "https://lco.global/observatory/process/",
+     "https://lco.global/news/call-for-proposals-2027a/",
+     "https://lco.global/observatory/instruments/muscat/"
+    ]
+   },
+   {
+    "method": "Free LCO time through education and citizen-science partners: NASA Exoplanet Watch, or the LCO Global Sky Partners programme",
+    "facility_instrument": "LCO 0.35 m network (QHY600; B, V, g', r', i', zs) at CTIO, SAAO and Siding Spring",
+    "what_it_would_tell_us": "The same g' versus i'/zs eclipse-depth test as the 0.35 m option above",
+    "capability_for_this_target": "As above: about 0.6 mmag per eclipse, so one g' eclipse decides between a G-coloured and a bound K/M EB at more than 5 sigma",
+    "access_route": "Exoplanet Watch (NASA citizen science): \"Exoplanet Watch is a member of the Global Sky Partners program. Our citizen scientists can request time on one of the Las Cumbres Observatory telescopes.\" It focuses on transiting exoplanets; whether it would accept a blended EB is not verified (ask through the project's data-request channel). Global Sky Partners: 500 h/yr on the 0.4 m network shared among education partners. At present only Pilot Partners (at most 10 h) are accepted, and only for structured education programmes; individuals with audiences under about 20 are directed to existing partners.",
+    "cost": "$0",
+    "time_needed": "About 7-10 h of 0.35 m time",
+    "lead_time": "Not stated (not verified); probably weeks",
+    "sources": [
+     "https://science.nasa.gov/citizen-science/exoplanet-watch/how-to-contribute/how-to-observe/",
+     "https://lco.global/education/partners/becoming-global-sky-partner/",
+     "https://lco.global/education/partners/"
+    ]
+   },
+   {
+    "method": "Amateur-professional robotic network: AAVSOnet proposal for a 0.61 m telescope in New Zealand",
+    "facility_instrument": "AAVSOnet OC61: 0.61 m f/14.8 at Mt John, NZ (latitude -43.99), QHY600, filters U, B, V, SG, SR, SI, SZ, 0.559\"/pix. The other AAVSOnet telescopes are unsuitable: BSM_S is only 0.18 m, and MPO61 in Texas sees the target no higher than 17 degrees.",
+    "what_it_would_tell_us": "The g' versus i'/z' eclipse-depth test",
+    "capability_for_this_target": "An excellent site for this target: at Mt John it passes about 1 degree from zenith and stays up all night during the season. About 1.25 mmag per minute and about 0.55 mmag per eclipse, so one SG eclipse is decisive. Status: an 8 Jun 2026 comment says \"OC61 offline with focuser issues. The focuser has been sent out for repair\". Check before proposing.",
+    "access_route": "Proposal to the AAVSOnet team through the AAVSO website. Membership in good standing is generally required. Recent allocations include TOI transit-timing proposals (e.g. #722, Aug 2026).",
+    "cost": "Telescope time is free. AAVSO dues on the 2018 form: US$75/yr plus a $10 application fee (reduced rate $37.50, developing countries $25). Current 2026 dues are not verified because the membership page was blocked.",
+    "time_needed": "About 7-10 h (2-3 eclipses)",
+    "lead_time": "Review takes weeks (not verified), plus waiting for the OC61 repair",
+    "sources": [
+     "https://apps.aavso.org/aavsonet/detail/oc61/no/",
+     "https://apps.aavso.org/aavsonet/",
+     "https://apps.aavso.org/aavsonet/detail/bsm_s/no/",
+     "https://apps.aavso.org/aavsonet/detail/mpo61/no/",
+     "https://aavso.org/node/78004",
+     "https://aavso.org/sites/default/files/NewMemberApplicationFormOT2018.pdf"
+    ]
+   },
+   {
+    "method": "Collaboration route: TESS Follow-up Observing Program (TFOP) Sub Group 1 seeing-limited photometry, or southern amateur eclipsing-binary groups",
+    "facility_instrument": "TFOP SG1 member observatories (0.3-2 m, many in Chile and Australia); Variable Stars South (RASNZ) Southern Eclipsing Binaries project; AAVSO forums",
+    "what_it_would_tell_us": "Multi-band eclipse depths, a refined ephemeris, and the standard SG1 checks for nearby eclipsing binaries, with results posted on ExoFOP",
+    "capability_for_this_target": "Telescopes of 0.3-1 m reach about 0.5-1 mmag per eclipse, which is enough for the blue-depth test. All Gaia stars within 18\" are too faint to matter (the nearest is G=16.9 at 18\"), so seeing-limited apertures will include the unresolved EB exactly as TESS does.",
+    "access_route": "Join TFOP: send an application to the SG1 chair, Karen Collins (CfA). Citizen-scientist applicants include 2-3 example light curves, an instrument description and their site's latitude and longitude; general members apply to Dave Latham. SG1 mainly follows TOIs, and this target is a CTOI flagged as a planet candidate at P/2 by RAVEN, so it may get low priority (not verified). Once your ExoFOP account is active, post the EB/blend finding (2P period, odd/even depths, SuperWASP check) as a comment on TIC 71316387 so observers see it. Variable Stars South runs a volunteer southern EB project using BVRI CCD photometry (2026 status not verified).",
+    "cost": "$0 (volunteer collaboration)",
+    "time_needed": "Depends on volunteers",
+    "lead_time": "Unpredictable; the 2027 season (May-Nov) is the realistic target",
+    "sources": [
+     "https://tess.mit.edu/followup/",
+     "https://tess.mit.edu/followup/apply-join-tfop/",
+     "https://exofop.ipac.caltech.edu/tess/target.php?id=71316387",
+     "https://apps.aavso.org/jaavso/article/3749"
+    ]
+   },
+   {
+    "method": "Other commercial remote telescopes, not recommended",
+    "facility_instrument": "Telescope Live (El Sauce, Chile and Australia), Chilescope (Chile), Skynet (UNC; PROMPT telescopes at CTIO)",
+    "what_it_would_tell_us": "In principle the same colour test",
+    "capability_for_this_target": "Telescope Live and Chilescope are aimed at astrophotography. Their filter sets are mostly LRGB or narrow-band, and time-series photometry is not their typical use. Skynet access is organised around member institutions.",
+    "access_route": "Telescope Live: subscription, with Advanced Requests on the Silver plan or above. Chilescope: points. Skynet: institutional membership.",
+    "cost": "Not verified for 2025-2026; the pages were blocked. Telescope Live help centre: 30-150 credits per hour; a 2021 review gave about \u00a31 per credit and a Silver plan of \u00a319/month. Chilescope (Sky & Telescope, Dec 2018): about 60 points/h at $1 per point for the 20-inch telescopes. All dated.",
+    "time_needed": "n/a",
+    "lead_time": "n/a",
+    "sources": [
+     "https://help.telescope.live/hc/en-us/articles/360002575477-What-are-the-monthly-subscriptions-available",
+     "https://astronomynow.com/2022/03/01/remote-imaging-with-telescope-live/",
+     "https://nxtbook.com/nxtbooks/aas/st_201812/index.php?startid=59",
+     "https://skynet.unc.edu"
+    ]
+   }
+  ],
+  "notes": "CHEAPEST USEFUL PLAN\n1. Free now: SuperWASP (done), TESS (done; no new sectors through at least S134 / late 2028), and a proper-motion consistency check (done; no acceleration at the ~1 mas/yr level).\n2. Free on 2 Dec 2026: Gaia DR4.\n   - Light-centre shift in epoch astrometry during eclipses: about 0.4-4 mas for a companion at 0.1-1\". This may locate the EB for free.\n   - SEAPipe / residual_image, which may detect the companion directly.\n   - nss_acceleration, which would flag a massive companion within ~30-50 AU.\n   - BP versus RP eclipse depths, a weak colour test.\n3. Decisive and cheap: one blue (B, V or g') primary eclipse plus one red (Ic/i'/z') eclipse on a 0.4-0.6 m southern telescope.\n   - iTelescope T30 or T72: about US$300-700 per eclipse, about $0.9-1.8k for three eclipses.\n   - Free alternatives: an LCO DDT request for MuSCAT4 (anyone may apply, acceptance uncertain), Exoplanet Watch's LCO allocation, or AAVSOnet OC61 (currently being repaired).\n   - Buying LCO time directly costs at least $9,500 (20 h on the 0.35 m) because of the minimum purchase.\n\nPRECISION NEEDED (photon plus scintillation, Osborn et al. 2015; airmass 1.2; V=11.65)\n- Per minute: 0.35 m ~1.8 mmag, 0.51 m ~1.5, 0.61 m ~1.25, 1 m ~0.75, 2 m MuSCAT ~0.5.\n- Per-eclipse depth error, including a red-noise floor: ~0.6 mmag (0.35-0.6 m), ~0.33 (1 m), ~0.3 (2 m).\n- Predicted primary depth in g'/B: 5.6 mmag if the EB is G-coloured or hotter (then it cannot be a bound lower-main-sequence pair). For a bound pair: 2.5 (K5+K7), 1.7 (K7+M0), 1.0 (M1+M2) mmag. In V: 0.26-0.62 x TESS depth.\n- So one blue eclipse at \u00b10.6 mmag decides at more than 5 sigma.\n- The red bands discriminate weakly: z' should be 1.10-1.22 x TESS depth, i.e. 6.2-6.8 mmag against 5.6 mmag, which needs 2-4 eclipses.\n- Pinning the EB temperature to about half a subtype needs g' depth to \u00b10.25-0.3 mmag: about 4 eclipses on 0.5 m, or 1 eclipse with MuSCAT4.\n- Caveat: a low blue depth does not by itself prove the EB is bound, because a red background EB looks the same. Proof of a bound system still needs common proper motion from imaging, or the same systemic RV.\n\nEPHEMERIS FOR PLANNING\n- Taken from the project's QLP multi-sector fit (S1/28/68/95/105): primary (deeper) T0 = BTJD 3165.67038 = BJD_TDB 2460165.6704 \u00b1 0.0007; P = 2 \u00d7 0.6518348 = 1.3036696 d.\n- Your value, P = 1.3036712 d, differs by about 1 minute by 2027. The O-C scatter is a few minutes.\n- Times below are UT mid-eclipse, requiring Sun below -12\u00b0 and target above 30\u00b0 altitude for \u00b11.25 h.\n- Remaining 2026 primaries:\n  - CTIO: 15 Oct 01:02, 24 Oct 04:03, 28 Oct 01:55, 10 Nov 02:48\n  - Siding Spring: 21 Oct 13:29, 25 Oct 11:21, 7 Nov 12:13\n  - SAAO: 22 Oct 20:46, 8 Nov 19:31, 21 Nov 20:24\n- Remaining 2026 secondaries:\n  - CTIO: 26 Oct, 12 Nov\n  - Siding Spring: 23 Oct, 9 Nov\n  - SAAO: 24 Oct, 6 Nov\n- 2027 primaries per month, CTIO/SSO/SAAO: May 2/2/2, Jun 3/3/5, Jul 6/6/7, Aug 7/8/7, Sep 6/6/7, Oct 3/3/4, Nov 0/1/1.\n\nPHYSICS CHECK OF THE BRIEF'S EXPECTATIONS (my arithmetic)\n- For 0.6+0.5 Msun at P = 1.3037 d: a = 5.18 Rsun and the total orbital speed is ~201 km/s.\n- For i ~ 80\u00b0 (grazing, b ~ 0.9): K1 ~ 90 and K2 ~ 110 km/s.\n- Synchronised rotation: v = 2\u03c0R/P \u2248 19-21 km/s for R \u2248 0.48-0.55 Rsun.\n- Light fraction of a bound pair at 297 pc (Pecaut-Mamajek 2022 table): K7+M0 4.2% (V) / 9.5% (Ic); M0+M1 2.2% / 6.3%; M1+M2 1.1% / 4.0%. This matches the brief's \"2-5% in the optical\" and shows the EB is brighter in the red.\n\nCAVEATS\n- iTelescope's exact session rates (pricing.itelescope.online) and current 2026 AAVSO dues could not be fetched: not verified.\n- The Telescope Live pages were blocked (403).\n- ASAS-SN could not be queried from here.\n- The Gaia DR4 astrometric and photometric estimates are mine.\n- No accounts were created and nothing was submitted.\n\nFILES (all under /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/followup/cheap/)\n- notes_cheap.md: all figures with URLs and fetch dates.\n- wasp/wasp_lc.fits, wasp_scan2.py and wasp_inject.py: the final SuperWASP analysis. wasp_scan.py is a superseded, biased first pass.\n- chromatic.py: depth-ratio predictions.\n- precision.py: noise budget.\n- eclipse_windows.py and ecl2026.py: observability.\n- viz/: VizieR proper-motion files.\n- dl/: saved web pages and PDFs."
+ },
+ {
+  "checked_claims": [
+   {
+    "claim": "Brief: V = 11.65 for TIC 71316387",
+    "status": "corrected",
+    "source": "VizieR I/259 (Tycho-2), II/336 (APASS DR9); Gaia DR3 TAP query 2026-10-13; Riello et al. 2021 G->V relation",
+    "correction": "V = 11.65 is the Tycho-2-based TIC value (VT = 11.78 +/- 0.17). APASS DR9 gives V = 11.857 +/- 0.026 and B-V = 0.636. Gaia DR3 (G = 11.775, BP-RP = 0.786, an exact G0V colour) gives V = 11.92 and Ic = 11.23. Use V of about 11.9. Every S/N estimate made with V = 11.65 is about 12% too optimistic."
+   },
+   {
+    "claim": "Gaia DR3: RV constant (-6.07 +/- 0.86 km/s, 15 transits, chi2 p = 0.275); ipd_frac_multi_peak = 41; RUWE = 1.03; corrected BP/RP excess C* = +0.018 (about 2.5 sigma)",
+    "status": "confirmed",
+    "source": "Gaia DR3 gaia_source TAP query, 2026-10-13 (https://gea.esac.esa.int/archive/)",
+    "correction": "My values: ruwe 1.0265, rv_amplitude_robust 9.9 km/s, vbroad 7.2 +/- 8.7 km/s, C* = 0.0181 with sigma 0.0073, i.e. 2.5 sigma. Also astrometric_excess_noise = 0.105 mas at 16.5 sigma, which is common for bright stars and is not a strong flag."
+   },
+   {
+    "claim": "ExoFOP: only CTOI TIC 71316387.01 (PC, RAVEN, created 2026-08-27, P = 0.6518369 d); no TOI; imaging, spectroscopy, companion and time-series tables empty",
+    "status": "confirmed",
+    "source": "https://exofop.ipac.caltech.edu/tess/target.php?id=71316387&json (re-fetched live 2026-10-13)"
+   },
+   {
+    "claim": "No archival high-resolution data: ESO raw and ObsCore empty apart from VISTA; Gemini archive empty within 60-120 arcsec",
+    "status": "confirmed",
+    "source": "ESO TAP https://archive.eso.org/tap_obs (dbo.raw box +-80\" returned 0); Gemini jsonsummary within 180\" returned 0, with the same syntax returning 500 rows on Orion",
+    "correction": "I did not re-query KOA, MAST or the NOIRLab Astro Data Archive."
+   },
+   {
+    "claim": "Spectroscopy notes: primary-eclipse T0 = BJD 2459067.3272",
+    "status": "corrected",
+    "source": "ExoFOP CTOI epoch; project odd/even vetting in /home/user/Space/tess-search/exofop_leads/vetting_results.json",
+    "correction": "BJD 2459067.3272 is the CTOI epoch, and it falls on the SHALLOW eclipse (odd event relative to the deep-eclipse T0 = BJD_TDB 2460165.6697, P = 1.3036712 d). Quadrature times (phases 0.25/0.75) are unchanged. Only the labels of which eclipse is primary swap. Use 2460165.6697 for the deep eclipse."
+   },
+   {
+    "claim": "Remaining 2026 deep-eclipse windows: SSO 21 Oct 13:29, 25 Oct 11:21, 7 Nov 12:13; CTIO 24 Oct 04:03, 28 Oct 01:55, 10 Nov 02:48; SAAO 22 Oct 20:46, 8 Nov 19:31, 21 Nov 20:24 UT. 2027 eclipses May-Nov, most in Jul-Sep",
+    "status": "confirmed",
+    "source": "my independent astropy calculation (checker/scripts/windows.py; Sun < -12 deg, altitude > 30 deg for +-1.3 h)",
+    "correction": "CTIO 15 Oct 01:02 is marginal, with ingress in twilight. Mt John (NZ) also gets 25 Oct and 24 Nov. 2027 counts per month (CTIO/SSO/SAAO): May 1/1/2, Jun 3/3/5, Jul 6/6/6, Aug 7/8/7, Sep 6/6/7, Oct 3/3/4, Nov 0/1/1."
+   },
+   {
+    "claim": "SMARTS/CHIRON: 1.5 m time at USD 250/hour; partnerships open to 'institutions, individuals, or groups of individuals'; 'as little as a few thousand dollars'; service observing",
+    "status": "confirmed",
+    "source": "https://www.astro.gsu.edu/~thenry/SMARTS/ (server Last-Modified 29 Jun 2026)",
+    "correction": "The exact minimum purchase is not stated; ask the SMARTS Director (Todd Henry)."
+   },
+   {
+    "claim": "CHIRON fiber mode R = 27,400, 2.7\" fiber, 'Targets brighter than V = 12 are acquired routinely', HA limits 4:15 E / 5:29 W at Dec -45, 5.5 min acquisition",
+    "status": "confirmed",
+    "source": "http://www.astro.gsu.edu/~thenry/SMARTS/CHIRON_FAQ.pdf"
+   },
+   {
+    "claim": "CHIRON S/N for V = 11.65: 36/51/63 per 4 km/s pixel in 900/1800/2700 s",
+    "status": "corrected",
+    "source": "CHIRON FAQ eq. 2 (eps = 0.05, F0 = 3.4e5, K = 2.5, RN = 5.5, mu = 4)",
+    "correction": "For V = 11.89 the same formula gives about 33/46/56 per pixel in 900/1800/2700 s (no sky, so dark or grey time)."
+   },
+   {
+    "claim": "CHIRON schedule: runs in Sep-Oct 2026 (nights 1784-1811, 10 Sep-14 Oct)",
+    "status": "corrected",
+    "source": "http://www.astro.gsu.edu/~thenry/SMARTS/schedule.SMARTS4.htm",
+    "correction": "The 1.5 m is scheduled to 18 Oct 2026 (night 1815), with another run 28 Oct-12 Nov 2026; the schedule is finalised to 14 Nov. CTIO quadrature windows in that run: 29 Oct 01:23 (phase 0.75), 31 Oct 00:19 (0.25), 9 Nov 03:20 (0.25) and 11 Nov 02:16 UT (0.75), each with 1.5-2.5 h at airmass < 1.6."
+   },
+   {
+    "claim": "iTelescope plans: Plan-40 $39.95, Plan-90 $89.95, Plan-160 $159.95, Plan-290 $289.95, Plan-490 $489.95 per 28 days; premium session rates $61-118/h (Plan-40) to $34-66/h (Plan-490)",
+    "status": "confirmed",
+    "source": "https://www.itelescope.net/standard-plans ; https://www.itelescope.net/pricing-premium (fetched 2026-10-13, USD; 1 point = US$1 per support article 222670)",
+    "correction": "How many points each plan includes is not stated on the fetched pages, so not verified."
+   },
+   {
+    "claim": "iTelescope exposure billing: T30 $179/h (Plan-20) to $89/h (Plan-490); T72 $224 to $112; T32 $162 to $81; reservation = 20 min + exposure + 1 min per exposure",
+    "status": "confirmed",
+    "source": "https://www.itelescope.net/telescope-rates-exposure-premium-copy ; https://support.itelescope.net/support/solutions/articles/222670",
+    "correction": "T32 is listed there with an FLI ProLine 16803 CCD, not CMOS (that page may be outdated). T30 (0.81\"/px, UvBVRcIc) has a non-anti-blooming CCD, so keep the peak below about 50% of full well. With exposure billing, one 3.3 h eclipse sequence (about 60 x 120 s exposures) is billed about 2 h of exposure, so about $180-360 per eclipse on T30 depending on plan."
+   },
+   {
+    "claim": "LCO purchase: 0.4 m $300/h + $3,500 admin (20-99 h/yr); 1 m $500/h + $3,500 (20-99 h) or $450/h (100+ h); time-critical +50%; 2 m not for sale; agreements by 1 Dec (A) / 1 Jun (B); unused time does not carry over",
+    "status": "confirmed",
+    "source": "https://lco.global/sales/networktime/ ('Updated 1 September 2026', USD)",
+    "correction": "The 20-h floor is implied by the lowest tier, so the minimum spends are $9,500 (0.4 m) and $13,500 (1 m)."
+   },
+   {
+    "claim": "LCO: semester open access suspended; 2027A call (posted 11 Sep 2026, deadline 26 Oct 2026) open only to the LCO science family plus UCSB, IPAC and Tel Aviv; DDT 'for which anyone may apply'; NRES no longer available",
+    "status": "confirmed",
+    "source": "https://lco.global/news/callforproposals2027a/ ; https://lco.global/observatory/proposals/open-access-program/ ; https://lco.global/observatory/process/ ; https://lco.global/observatory/status/",
+    "correction": "The DDT urgency justification applies only to proposers who are eligible for standard proposals. DDT is not for education or outreach. Decisions typically take under a week, and awarded time expires at the end of the current semester (2026B ends 31 Jan 2027). The URL lco.global/news/call-for-proposals-2027a/ returns 404; the correct one is /news/callforproposals2027a/."
+   },
+   {
+    "claim": "MuSCAT4 on the 2 m FTS (Siding Spring) images g', r', i' and zs simultaneously",
+    "status": "confirmed",
+    "source": "https://lco.global/observatory/instruments/muscat/"
+   },
+   {
+    "claim": "LCO Global Sky Partners: 500 h/yr of 0.4 m time shared by all partners; only Pilot Partners accepted; audiences under ~20 should join existing partners. Exoplanet Watch is a GSP member whose citizen scientists can request LCO time",
+    "status": "confirmed",
+    "source": "https://lco.global/education/partners/becoming-global-sky-partner/ ; https://science.nasa.gov/citizen-science/exoplanet-watch/how-to-contribute/how-to-observe/",
+    "correction": "Whether Exoplanet Watch would take an EB blend is not verified."
+   },
+   {
+    "claim": "NOIRLab: 2027A deadline 30 Sep 2026; B-semester deadline 'Last day of March' (so 31 Mar 2027 for Aug 2027-Jan 2028)",
+    "status": "confirmed",
+    "source": "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals ; https://noirlab.edu/science/observing-noirlab/proposals (updated 3 Mar 2026)"
+   },
+   {
+    "claim": "NOIRLab 2027A: no SMARTS time; Magellan 5 nights, all instruments including PI instruments (MSIP to 2028A); SALT 50 h/yr (Rubin in-kind); HRCam is a visitor instrument, contact SOAR Director Cesar Briceno before applying; STELES R ~50,000, shared risk",
+    "status": "confirmed",
+    "source": "https://noirlab.edu/science/observing-noirlab/proposals/call-for-proposals"
+   },
+   {
+    "claim": "NOIRLab US-allocated time open regardless of affiliation",
+    "status": "confirmed",
+    "source": "https://noirlab.edu/public/media/archives/brochures/pdf/brochure027.pdf ('equally open to everyone regardless of access to private facilities or affiliation')"
+   },
+   {
+    "claim": "Gemini 2027A: US deadline 30 Sep 2026 (other participants to 2-5 Oct); US time 'open to all astronomers worldwide including those at non-US institutions', who must explain why US facilities are needed",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/observing/phase-i-proposing-time/standard-semester-program/2027a-call-proposals (updated 29 Sep 2026)",
+    "correction": "The Gemini 2027B date is not posted. Gemini says it expects to use the new GPP system for 2027B. The US deadline normally matches NOIRLab's (31 Mar 2027), which is my inference."
+   },
+   {
+    "claim": "Gemini Fast Turnaround: PI must be from the USA, Canada, Argentina, Brazil, Korea or Japan; US open skies does not apply; at most 20 h/month per telescope; PI or delegate reviews ~8 proposals",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/observing/phase-i/ft",
+    "correction": "The 2027A call table lists FT as 'Open to PIs from US, CA, AR, BR & KR' (no Japan), and the October call notes Korea has used up its 26B FT time. Either way, an unaffiliated non-professional cannot be FT PI."
+   },
+   {
+    "claim": "Gemini October 2026 FT call: deadline 31 Oct, Gemini-South RA 0-16 h only, Zorro block in December",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/observing/phase-i/ft/ft-cfp"
+   },
+   {
+    "claim": "Gemini DDT: any time, astronomers worldwide, needs urgency or uniqueness and must not be possible via FT/regular calls",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/observing/phase-i/ddt",
+    "correction": "The 'usually <15 h' figure was not found on the page, so not verified."
+   },
+   {
+    "claim": "Gemini night 'worth about $33,000'",
+    "status": "confirmed",
+    "source": "https://webarchive.gemini.edu/media/mediafacts.html (archived page, about 2003, USD)",
+    "correction": "The '22 Apr 2003' date and the CPI-adjusted $55-60k are not verified."
+   },
+   {
+    "claim": "Zorro: 0.016\"/0.025\" FWHM at 500/800 nm; 2.5\" pipeline subarray (~1.2\" around the target); 6.7\" speckle field; mag 9-12 needs 5 (IQ70) or 10 (IQ85) one-minute integrations",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/instrumentation/alopeke-zorro ; /capability ; /proposal-preparation",
+    "correction": "The page allows IQ85 for V <~ 12, so IQ70 is not required at V = 11.9."
+   },
+   {
+    "claim": "Zorro typical 5-sigma contrast 5-9 mag from the diffraction limit to 1.2\"",
+    "status": "confirmed",
+    "source": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.871163/full (Howell & Furlan 2022)"
+   },
+   {
+    "claim": "Zorro astrometry (pixel scale +-0.21 mas, PA +-0.7 deg) gives a clear common-proper-motion answer after ~1 yr, better than SOAR",
+    "status": "corrected",
+    "source": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.716560/full",
+    "correction": "+-0.21 mas is the per-run uncertainty of a 0.0096\"/pixel scale (about 2%), and scale shifts of ~1% occur between runs. At 0.5\" that is ~10 mas radial plus ~6 mas tangential (0.7 deg), similar to SOAR's 3.8 mas / 0.95 deg floors. Expect ~3 sigma after 1 yr against a 38.6 mas/yr background track, and a robust result after 2 yr, unless 8-m AO (~1-3 mas) is used."
+   },
+   {
+    "claim": "SOAR TESS Survey III (Ziegler, Tokovinin, Briceno et al., Aug 2026) median 5-sigma delta-I: 0.10\" 2.04 [1.90-2.10]; 0.20\" 4.04 [3.43-4.56]; 1.0\" 4.75 [3.95-5.35]; 1.5\" 5.28; 3.0\" 6.19; floors 3.8 mas / 0.95 deg; I filter 824/170 nm, ~30 mas binned pixels, 6\" field; new targets selected from the TOI catalogue",
+    "status": "confirmed",
+    "source": "https://arxiv.org/abs/2608.26250 (PDF Table 2 and Sect. 2)"
+   },
+   {
+    "claim": "Keck NIRC2 typically reaches >~7 mag at 0.5\" and >~4 mag at 0.1\"",
+    "status": "confirmed",
+    "source": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.628396/full (Schlieder et al. 2021)"
+   },
+   {
+    "claim": "Keck II cannot point below 36.8 deg for azimuth 185.3-332.8 deg; target peaks at 27.3 deg from Maunakea",
+    "status": "confirmed",
+    "source": "https://www2.keck.hawaii.edu/inst/common/TelLimits.html ; geometry 90 - (19.83 + 42.84) = 27.3 deg"
+   },
+   {
+    "claim": "ESO: 'proposals may be submitted by any group or individual'; Non-Member-State if >2/3 of applicants are non-member; P118 deadline 22 Sep 2026 (1 May 2027-30 Apr 2028); next call mid-July 2027",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/observing/phase1/p118/CfP118.pdf (Sects. 1, 2.1, 5.3.2)"
+   },
+   {
+    "claim": "ESO Fast Track Channel: VLT/VLTI Normal programmes <=30 h, service mode, no La Silla, distributed peer review (10 reviews per proposal); FTC 117B released late 2026 covering at least 1 Mar-30 Apr 2027",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/observing/phase1/fast-track-channel.html ; https://www.eso.org/sci/observing/phase1/fast-track-channel-117a.html ; CfP118 Sect. 2.1",
+    "correction": "Whether an FTC call will cover P118 (from May 2027) is not announced, so unverifiable. FTC 117B covers a period when the target is barely observable, and proposals not allocated time in FTC 117A cannot be resubmitted to 117B."
+   },
+   {
+    "claim": "ESO DDT: any time, generally <5 h, only if it cannot wait for the next FTC",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/observing/policies/ddt_policy.html",
+    "correction": "The page adds: 'Very few non-time-critical DDT proposals are foreseen to be approved.'"
+   },
+   {
+    "claim": "HARPS/NIRPS offered in Visitor/Designated Visitor mode only, recommended minimum 3 nights at the 3.6 m, not in FTC",
+    "status": "confirmed",
+    "source": "CfP118 Sects. 2.4 and 4.7; FTC 117A page ('no time on La Silla telescopes')",
+    "correction": "The NIRPS laser frequency comb is not functional (CfP118)."
+   },
+   {
+    "claim": "ESO valuation 83 kEUR per GTO night (2015 euros)",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/observing/policies/Cou_1628_VLT_GTO_Policy_111115.pdf",
+    "correction": "About USD 92k at the 2015 rate (~1.11 USD/EUR; rate not re-verified). This is a valuation, not a price."
+   },
+   {
+    "claim": "ERIS: NGS mode needs Gaia RP < 11 (BP <= 19, airmass < 1.9); LGS needs a tip-tilt star of 7-18 mag, K Strehl < 0.6",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/facilities/paranal/instruments/eris/inst.html (the user manual is stated as definitive)",
+    "correction": "The target's RP = 11.28 puts it just outside NGS, so plan for LGS with the target as TT star."
+   },
+   {
+    "claim": "SPHERE: IRDIS 11\"x12.5\", 12.25 mas pixels; IFS 1.73\", R~30-50; faint-target performance drops for G >~ 12.5",
+    "status": "confirmed",
+    "source": "https://www.eso.org/sci/facilities/paranal/instruments/sphere/inst.html ; /overview.html ; https://arxiv.org/abs/2204.11746",
+    "correction": "The overview says R > 11 targets are allowed in service mode with seeing <= 1.0\", and coronagraphs should be avoided for R > 11, H > 9. The target (Rc ~11.55, H = 10.39) is in that regime."
+   },
+   {
+    "claim": "GSAOI decommissioned; NACO decommissioned at end of P103 (last image 1 Oct 2019)",
+    "status": "confirmed",
+    "source": "https://www.gemini.edu/instrumentation/gsaoi ; https://www.eso.org/sci/facilities/paranal/decommissioned/naco.html"
+   },
+   {
+    "claim": "Instrument specs: FEROS R~48,000, 20% efficiency, 2.0\" apertures; HARPS S/N 110/pixel at 550 nm for V = 6 in 60 s; CRIRES+ R 46,000/92,000 (0.4\"/0.2\" slits); NIRPS 0.4\"/0.9\" fibres (R 82k/75k); GHOST R 56k/76k, usable 383-1000 nm; IGRINS unavailable at Gemini South",
+    "status": "confirmed",
+    "source": "ESO FEROS, HARPS, CRIRES and NIRPS overview pages; https://www.gemini.edu/instrumentation/ghost ; https://www.gemini.edu/instrumentation/igrins",
+    "correction": "The HARPS S/N scaled to V = 11.9 is about 40 per pixel in 1800 s, not ~45."
+   },
+   {
+    "claim": "MPIA guaranteed time on the MPG/ESO 2.2 m (FEROS): MPIA-ESO agreement 1 Oct 2022-30 Sep 2028; last listed deadline 19 Dec 2025",
+    "status": "confirmed",
+    "source": "https://www.mpia.de/information-for-scientists/eso"
+   },
+   {
+    "claim": "SALT: operations cost 'about ZAR 37,000 per hour (~$2,300 USD per hour)'; South African time open to any PI from an African institution; HRS MR fibre 2.23\" (R~37k), HR 1.56\" (R~65-69k), MR transmission 3.0%/4.5% at 450/750 nm (2013 predictions)",
+    "status": "confirmed",
+    "source": "https://events.saao.ac.za/event/13/contributions/574/attachments/96/141/Brian_Chaboyer_AfAS_2026.pdf (Mar 2026); https://salt.camk.edu.pl/PL/Aktualnosci/SALTHRS-SV-Call_final.pdf",
+    "correction": "The ZAR 37k/h is the basis for 3-5-year partner purchases, not hourly sales to individuals."
+   },
+   {
+    "claim": "AAT 2027A deadline 16 Oct 2026 (Feb-Jul 2027); 25% open time for Australian-based researchers only",
+    "status": "confirmed",
+    "source": "https://aat.anu.edu.au/science/2027a-call-proposals (researcher's saved copy of 13 Oct 2026; the live page now redirects to a login, so I could not re-fetch it)"
+   },
+   {
+    "claim": "ANU 2.3 m paid priority nights AUD 1,200 (Australian) / 2,000 (international) (2022); quarterly calls; 2026B deadline 24 Apr 2026",
+    "status": "corrected",
+    "source": "https://mailman.sydney.edu.au/pipermail/asa/Week-of-Mon-20220725/006359.html ; https://mailman.sydney.edu.au/pipermail/asa/Week-of-Mon-20260406/007495.html",
+    "correction": "The 2022 prices and the 24 Apr 2026 deadline are confirmed. The 2026 call is per semester (2026B: 1 Aug 2026-31 Jan 2027), not quarterly. 2026 prices are not verified."
+   },
+   {
+    "claim": "AAVSO dues US$75/yr plus $10 fee (2018 form)",
+    "status": "corrected",
+    "source": "https://aavso.org/product/1 (via web search; aavso.org pages return 403 here)",
+    "correction": "The current product page lists annual membership at $95/yr (student/teacher $50, developing country $25). It is undated; check before paying."
+   },
+   {
+    "claim": "AAVSOnet OC61 (Mt John, NZ) offline with focuser issues (8 Jun 2026 comment)",
+    "status": "confirmed",
+    "source": "https://apps.aavso.org/aavsonet/detail/oc61/no/"
+   },
+   {
+    "claim": "TFOP: general members email Dave Latham and agree to the Charter and Publication Policy; observer applications go to the subgroup chairs (SG1 Karen Collins, SG2 Sam Quinn, SG3 David Ciardi); citizen scientists include 2-3 example results and the site's latitude and longitude",
+    "status": "confirmed",
+    "source": "https://tess.mit.edu/followup/ ; https://tess.mit.edu/followup/apply-join-tfop/"
+   },
+   {
+    "claim": "Gaia DR4 on 2 Dec 2026 (66 months of data) with epoch astrometry and photometry, nss_acceleration_astro, nss_vim_fl and source-environment tables",
+    "status": "confirmed",
+    "source": "https://www.cosmos.esa.int/web/gaia/news-2026 ; https://www.cosmos.esa.int/web/gaia/dr4",
+    "correction": "The Gaia archive is down from 25 Nov 2026 12:00 CET until 2 Dec 2026."
+   },
+   {
+    "claim": "No future TESS sectors: only S1, 28, 68, 95, 105, 106",
+    "status": "confirmed",
+    "source": "tess-point 0.9.5.post1 run by me (pip, 2026-10-13)"
+   },
+   {
+    "claim": "SuperWASP DR1 public at the NASA Exoplanet Archive",
+    "status": "confirmed",
+    "source": "https://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html (DR1 covers 2004-2008)"
+   },
+   {
+    "claim": "Gaia 50%-recoverability contour theta50 = 0.5 + (dG/5)^2.5 arcsec",
+    "status": "unverifiable",
+    "source": "No source found for this exact formula",
+    "correction": "A published Gaia detection curve, dG = 5.5(rho - 0.7)^0.4 (https://arxiv.org/pdf/1909.12700), gives rho = 0.92/1.15/1.49/1.75\" for dG = 3/4/5/5.6. That is within ~0.15\" of the researcher's numbers, and Ziegler et al. 2018 (https://arxiv.org/pdf/1806.10142) find recovery to 1\" at contrasts up to 6 mag. The conclusion 'companion most likely within ~1-1.8\"' stands; for a bound K/M pair (dG ~3-3.5) it is more like <~1\"."
+   },
+   {
+    "claim": "Chance of a G < 17.4 field star within 1\" ~3e-4 (4\": ~4e-3) from 1095 stars per sq. deg",
+    "status": "confirmed",
+    "source": "my arithmetic: 1095 x pi x (1/3600)^2 = 2.6e-4"
+   },
+   {
+    "claim": "MSU paid $6M of the $43M SOAR project for ~40 nights/yr over two decades",
+    "status": "confirmed",
+    "source": "https://spartan.msu.edu/spartan-story-hub/news/2004/07/feature-the-skys-the-limit-for-new-soar-telescope (2004)"
+   },
+   {
+    "claim": "Keck ~$80-100k per night (Yale Daily News 2009)",
+    "status": "unverifiable",
+    "source": "https://yaledailynews.com/blog/2009/02/25/yale-astronomers-stargaze-in-hawaii/ (HTTP 429)"
+   },
+   {
+    "claim": "Telescope Live / Chilescope prices (dated 2018-2022)",
+    "status": "unverifiable",
+    "source": "pages blocked or dated; not rechecked"
+   },
+   {
+    "claim": "MagAO-X 'good correction even on faint I~10 guide stars' (WISPIT 2b paper)",
+    "status": "unverifiable",
+    "source": "https://arxiv.org/abs/2508.19046 (quote not in the abstract; full text not checked)"
+   },
+   {
+    "claim": "SOAR proprietary period 18 months; HRCam ~300 targets/night; ~10 HRCam nights/yr; 1 night of TESS partner time in 2024; HRCam2 tested Jan 2026",
+    "status": "unverifiable",
+    "source": "not found on the NOIRLab SOAR pages or in arXiv:2608.26250 as fetched"
+   },
+   {
+    "claim": "Majewski et al. 2025 (quadruple EBs, DSSI + HRCam) and Tokovinin et al. 2026 (SOAR speckle 2024-25) exist",
+    "status": "confirmed",
+    "source": "https://arxiv.org/abs/2511.07554 ; https://arxiv.org/abs/2605.01487"
+   }
+  ],
+  "physics_check": "All numbers below are my own. Scripts are in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/followup/checker/scripts/ (physics.py, physics_v2.py, snr_info.py, windows.py, quad.py). Inputs: the Mamajek dwarf table (2022.04) and PHOENIX-ACES spectra.\n\n1) THE BRIGHT STAR\n- Distance modulus at 297 pc is 7.364. M_G = 4.41 and M_K = 2.98 match a G0V star (table values 4.33 and 3.04).\n- Correction: the brief's V = 11.65 is a Tycho-2 value. The right value is V \u2248 11.86-11.92 (APASS 11.857; Gaia-derived 11.92), with Ic \u2248 11.23.\n- So every S/N figure that assumed V = 11.65 is about 12% too high.\n\n2) VELOCITIES AND ROTATION (P = 1.3036712 d)\n- Tested pairs from K5+K7 down to M3+M4: separation a = 4.2-5.5 Rsun.\n- Inclination: a 1.5 h duration against a 1.5-2.4 h central duration means a grazing orbit, i \u2248 79-85 deg.\n- K velocities at i \u2248 81 deg:\n  - K5+K7: 101 / 110 km/s\n  - K7+M0: 96 / 108\n  - K7+M2: 81 / 117\n  - M0+M1: 92 / 105\n  - M0+M3: 75 / 115\n  - M1+M2: 89 / 101\n  - M2+M3: 83 / 98\n  - The brief's 0.6+0.5 Msun case: 91 / 110 km/s (i = 90 deg).\n- Verdict on the brief's 'K ~100-120 km/s per component': right only for the lighter star. The heavier one moves at about 75-100 km/s. The two stars are about 180-215 km/s apart at quadrature.\n- Synchronised v sin i: 14-27 km/s (about 24 km/s for K7, 22 for M0, 19 for M1, 17 for M2, 14 for M3). The brief's 15-25 km/s is confirmed.\n\n3) WHAT THE ECLIPSE DEPTHS SAY\n- The shallow/deep depth ratio is 0.47 \u00b1 0.02. That equals the ratio of the two stars' surface brightness in the TESS band.\n- Pairs that fit: K7+M2 (0.49), M0+M3 (0.54) and K7+M1 (0.57). Near-twin pairs give 0.7-0.86 and fit poorly.\n- So the mass ratio is likely about 0.6-0.7, giving K1 \u2248 75-90 and K2 \u2248 113-118 km/s.\n- If the pair is bound, its TESS-band light share is 5.7-8.8% for these pairs. The undiluted primary eclipse would then be about 6.5-10% deep.\n- That depth is consistent with a grazing eclipse. My circle-overlap estimate for K7+M2 at impact parameter b \u2248 0.7 gives about 8%. So the bound-triple picture holds together.\n\n4) LIGHT SHARES IF BOUND (each star / pair total, % of all light; corrected V)\n\n| Pair | V | Ic \u2248 TESS | J | K |\n|---|---|---|---|---|\n| K7+M0 | 3.3 / 5.2 | 6.9 / 11.6 | 10.6 / 18 | 14 / 24 |\n| K7+M2 | 3.4 / 3.9 | 7.1 / 9.0 | 11 / 14.6 | 14.8 / 19.9 |\n| M0+M3 | 1.9 / 2.1 | 5.1 / 6.1 | 8.1 / 10.4 | 11.5 / 14.7 |\n| M1+M2 | 0.9 / 1.4 | 3.0 / 5.0 | 5.2 / 9.0 | 7.5 / 13.0 |\n| M2+M3 | 0.5 / 0.75 | 2.1 / 3.2 | 3.9 / 6.2 | 5.7 / 9.1 |\n\n- The fainter star of the pair is only 0.2-1.9% in V, 1-5% in I and 3-10% in K.\n- Verdict on the brief's '2-5% in the optical': right for the pair's combined light with a K7-M0 primary. It is not true per star: the fainter star is under 1-2% in V.\n\n5) IMAGING CONTRAST NEEDED (bound case)\n\n| Band | Range over all pairs (mag) | Likely pairs (mag) |\n|---|---|---|\n| Gaia G | 2.0-4.4 | 3.0-3.5 |\n| I / 832 nm | 1.7-3.7 | 2.5-3.0 |\n| Ks | 0.9-2.5 | 1.5-1.9 |\n\n- SOAR HRCam's median limit is 2.04 mag at 0.10\" and 4.04 at 0.20\". It would therefore detect the companion beyond about 0.12-0.15\" (35-45 au).\n- Zorro at 832 nm and near-IR AO (\u22734 mag at 0.1\") reach about 0.03-0.06\".\n- Upper limit on the separation: at \u0394G \u2248 3-3.5, Gaia would normally resolve a companion beyond about 0.9-1.0\". Combined with ipd_frac_multi_peak = 41%, a bound companion most likely sits at about 0.1-1\".\n- A background companion is limited only by \u0394T < 5.6, i.e. it lies within about 1.7\".\n- Prior odds (my estimate): a chance field star with G < 17.4 within 1.5\" has probability about 6e-4, before even requiring it to be an eclipsing binary. A bound hierarchical triple is therefore strongly favoured a priori, but this is not a proof.\n\n6) SPECTROSCOPIC S/N\nMethod: matched-filter information content using PHOENIX templates, with the companion broadened to 20 km/s. Assumes white noise and a perfect template, so it is a floor.\n- A companion averaging 3% of the light over 450-880 nm at R = 28k needs S/N \u2248 23-24 per 4 km/s pixel for a 10-sigma detection, with \u03c3_v \u2248 1.4-1.5 km/s at S/N 30.\n- Over 450-690 nm at R = 48k it needs S/N \u2248 15 per 2 km/s pixel.\n- R above about 25k gains little for lines 20 km/s wide.\n- In practice, mismatch of the G-star template roughly doubles the requirement, to S/N \u2248 40-60 per pixel. This agrees with the researchers' simulation (S/N 20-40).\n- CHIRON at V = 11.9 delivers S/N \u2248 46 in 1800 s, enough for the brighter EB star (3-7% in the red).\n- The fainter EB star needs S/N \u2273 80-100 in the optical, stacked epochs, or the near-IR.\n- Near-IR, H band at R = 45k: a 3% component needs S/N \u2248 48-55, but the bound case gives 11-15% (brighter star) and 3.5-7% (fainter star). So S/N \u2248 15-40 detects both.\n- X-shooter-like R = 10k in H: a 3% component needs S/N \u2248 117, but a 12% one needs only about 30 (\u03c3_v \u2248 2-3 km/s).\n\n7) BOUND TESTS\n- Systemic velocity: at total mass \u2248 2.1-2.2 Msun, the relative orbital speed is about 8 / 4.4 / 2.6 km/s at 30 / 100 / 300 au. A bound pair must therefore show |\u03b3_EB \u2212 RV_A| \u2272 3-8 km/s. The G star's RV is \u22126.07 \u00b1 0.86 km/s from Gaia, or ~0.1 km/s from new spectra.\n- Common proper motion: a background star would move 38.6 mas/yr relative to the G star. Orbital motion of a bound companion is \u22722-6 mas/yr.\n- Per-epoch astrometric errors: about 6-11 mas at 0.5\" for SOAR or Zorro, and about 1-3 mas for 8-m AO. Two epochs a year apart give about 3 sigma; two years, or AO, are decisive.\n\n8) CHEAP COLOUR TEST\n- Primary-eclipse depth relative to the TESS depth, for bound K5+K7 down to M2+M3:\n  - V: 0.62-0.28\n  - G: 0.80-0.60\n  - Ic: 1.0-1.12\n  - J: 1.3-2.1\n  - Ks: 1.6-3.1\n- A G-coloured eclipsing binary would give 1.0 in every band.\n- So a V/B depth of about 1.6-3.5 mmag versus 5.6 mmag (a G-coloured or hotter binary) separates the cases with one good eclipse at \u00b10.6 mmag.",
+  "recommended_plan": "Ordered from free/cheap to most decisive. All prices were checked on 13 Oct 2026 and are in USD unless stated.\n\nSTEP 0 \u2014 FREE, AS SOON AS THE EXOFOP ACCOUNT IS APPROVED\nPost an observing note on TIC 71316387 / CTOI 71316387.01. It should say:\n- the true period is P = 1.3036712 d, and the deep eclipse falls at BJD_TDB 2460165.6697;\n- alternate depths are about 5,500 vs 2,500 ppm in all 6 sectors;\n- nothing is seen at phase 0.5;\n- Gaia RVS shows the G star's RV is constant;\n- difference-image centroids put the source within about 4\";\n- ipd_frac_multi_peak = 41%;\n- a likely interpretation is a hierarchical triple with a K/M eclipsing pair at about 0.1-1\".\n\nThis puts the result where TFOP observers look. Uploading files needs separate approval beyond the account.\n\nSTEP 1 \u2014 FREE, 2 DEC 2026: GAIA DR4\nGaia archive: https://www.cosmos.esa.int/web/gaia/dr4 (the archive is down from 25 Nov until release).\n- epoch_photometry: look for the eclipses in G, BP and RP. That is a free colour test.\n- epoch_astrometry and nss_vim_fl: look for a light-centre shift during eclipses, about 0.4-4 mas if the pair is 0.1-1\" away. That would locate it for free.\n- nss_acceleration_astro: a sign of a massive companion within about 30-50 au.\n- Source-environment and residual-image tables: may show the companion directly.\n\nSTEP 2 \u2014 CHEAP (about $180-1,000) OR FREE: MULTI-COLOUR ECLIPSE TIMING\nGoal: one blue (B, V or g') deep eclipse plus one red one.\n- If the blue depth is about 1.6-3.5 mmag, the pair is a bound-compatible K/M pair.\n- If it is about 5.6 mmag, the binary is G-coloured or hotter.\n\nOptions:\n(a) Apply now for free LCO Director's Discretionary Time on MuSCAT4 (2 m at Siding Spring, g'r'i'zs simultaneously).\n  - Policy: 'anyone may apply'; decisions usually come within a week; time expires 31 Jan 2027.\n  - Remaining 2026 deep eclipses at Siding Spring: 21 Oct 13:29, 25 Oct 11:21 and 7 Nov 12:13 UT.\n  - https://lco.global/observatory/process/\n(b) Rent iTelescope T30 (Siding Spring) or T72 (Chile).\n  - Rates: $89-179/h (T30) or $112-224/h (T72), billed on exposure time. That is about $180-600 per eclipse, depending on plan.\n  - Plans run $39.95-489.95 per 28 days.\n  - Use 60-120 s exposures; T30's CCD is not anti-blooming, so keep the star well below saturation.\n  - Chile deep eclipses: 24 Oct 04:03, 28 Oct 01:55, 10 Nov 02:48 UT. SAAO: 22 Oct, 8 Nov, 21 Nov.\n(c) Free routes:\n  - Exoplanet Watch's LCO allocation.\n  - AAVSOnet OC61 in New Zealand (currently being repaired; AAVSO dues about $95/yr).\n  - TFOP SG1 volunteers.\n\nDo NOT buy LCO time directly: the 20-h minimum makes it at least $9,500.\n\nSTEP 3 \u2014 DECISIVE SPECTROSCOPY THAT YOU CAN BUY: SMARTS 1.5 m / CHIRON\n- Price: $250/h; open to individuals; purchases from 'a few thousand dollars' (ask the SMARTS Director, Todd Henry, for the exact minimum). https://www.astro.gsu.edu/~thenry/SMARTS/\n- Request: 4-6 epochs \u00d7 1800-2700 s near quadrature (phases 0.20-0.30 and 0.70-0.80 from the deep eclipse). That is about 4-5 h including overheads, so roughly $1,000-1,250 of time, but likely the minimum purchase applies.\n- Expected S/N: about 46-56 per pixel at V = 11.9.\n- What it gives:\n  - the brighter EB star's lines and K1 (about 75-100 km/s);\n  - with luck K2 as well;\n  - the EB's systemic velocity, to compare with the G star's RV to about 0.1 km/s. They should differ by \u22723-8 km/s if the pair is bound;\n  - template temperatures, i.e. spectral types.\n- Timing: CHIRON runs 28 Oct-12 Nov 2026, with quadrature windows on 29 Oct, 31 Oct, 9 Nov and 11 Nov. That works only if an agreement is set up within about two weeks. Otherwise plan for Jul-Oct 2027.\n- You will need a collaborator familiar with broadening-function / TODCOR analysis. The reduced spectra come from the CHIRON pipeline.\n\nSTEP 4 \u2014 HIGH-RESOLUTION IMAGING VIA TFOP (free, but at TFOP's discretion)\n- Join as a general member (email Dave Latham, agreeing to the TFOP Charter and Publication Policy).\n- Then ask SG3 (David Ciardi) and the SOAR team (Ziegler, Tokovinin) for SOAR/HRCam speckle, or for the NASA Gemini speckle team's Zorro, as a filler target in the 2027 season (May-Nov, best Jul-Oct).\n- Caveats:\n  - New SOAR targets are chosen from the TOI catalogue, and this is a CTOI. An eclipsing binary is a planet false positive, so expect low priority.\n  - Pitch it as a likely hierarchical triple with a close eclipsing pair, which suits multiple-star programmes.\n  - The Gemini Zorro block in Dec 2026 is too late in the season for RA 22 h.\n- Expected contrast if bound: \u0394I \u2248 2.5-3.0. HRCam (2.0 mag at 0.1\", 4.0 at 0.2\") detects it beyond about 0.12-0.15\". Zorro or AO reach about 0.03-0.06\".\n\nSTEP 5 \u2014 FORMAL PROPOSALS WITH A PROFESSIONAL PI OR CO-I (free, competitive)\n- NOIRLab 2027B, deadline 31 Mar 2027 (Aug 2027-Jan 2028; US time open regardless of affiliation):\n  - SOAR HRCam (a visitor instrument: contact SOAR Director Cesar Briceno first);\n  - SOAR STELES spectroscopy (R 50k, shared risk);\n  - Gemini-South Zorro or GHOST.\n- Gemini Fast Turnaround: needs a PI at a US, Canada, Argentina, Brazil or Korea institution (Japan is listed on one Gemini page). RA 22 h is acceptable only in calls covering about May-Nov.\n- ESO ('any group or individual'): the next regular call is mid-July 2027, for May 2028 onwards. An FTC call covering P118 is not yet announced. DDT needs urgency.\n  - Best ESO choices: ERIS (LGS mode; the target is just too faint at RP 11.28 for natural-guide-star mode) imaging plus SPIFFIER spectra of the resolved companion, CRIRES+ in H/K, or X-shooter. In the near-IR both EB stars are 4-15% of the light, giving the mass ratio and spectral types.\n\nSTEP 6 \u2014 CONFIRM IT IS BOUND\n- Take a second imaging epoch at least 1 yr after the first, ideally 2 yr with speckle or 1 yr with 8-m AO. A bound companion shares the 38.6 mas/yr motion; a background star would lag by that amount.\n- Combined with a matching systemic RV and two-band (optical plus near-IR) contrasts that fit K/M dwarfs at 297 pc, that settles it.\n\nRealistic sequence for you:\n- Now: ExoFOP note, and either an LCO DDT request or one iTelescope eclipse in Oct-Nov 2026.\n- 2 Dec 2026: Gaia DR4.\n- Winter: join TFOP and find a professional collaborator; optionally buy CHIRON time for 2027.\n- Mar 2027: NOIRLab proposal with that collaborator.\n- Jul-Oct 2027: imaging epoch 1 plus spectra.\n- Jul-Oct 2028: imaging epoch 2.\n\nTotal out-of-pocket cost: $0 if everything goes through free channels. Roughly $200-1,000 for your own colour photometry, plus about $1,000-3,000 if you buy CHIRON time."
+ }
+]
