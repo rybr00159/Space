@@ -1,6 +1,6 @@
 # Existing ExoFOP planet candidates that look like eclipsing binaries
 
-*Status: vetting complete (2026-10-13); a third independent re-check is in progress. Nothing has been submitted anywhere. The draft notes below are for a human
+*Status: complete (2026-10-13). Nothing has been submitted anywhere. The draft notes below are for a human
 to review before anything is posted.*
 
 ## Summary
@@ -12,6 +12,8 @@ investigator, who ran the same tests on 5–7 known planets as controls, and was
 by an adversarial referee.
 
 **Ten of the 18 survived as eclipsing binaries or nearby-binary blends, and ExoFOP records this for none of them.**
+A third check, run separately on light curves fetched fresh from MAST, confirms nine of them strongly. The tenth,
+CTOI 327712163.01, stays only suggestive (2.7–4σ).
 All ten are still listed as planet candidates with no TFOP disposition. Seven come from published discovery papers:
 DTARPS (Melton et al. 2023), RAVEN (Lafarga et al. 2026), DIAmante (Montalto et al. 2020), Bryant & Van Eylen (2025)
 and Feinstein et al. (2019). Two of the RAVEN ones were uploaded in August 2026 as "high-probability planets".
@@ -48,6 +50,37 @@ radial velocities argue against the bright star itself being the eclipsing pair.
 from an unresolved companion or a background star, so the notes say "host not determined". 65450588 is similar: the
 eclipsing star is either bound to the target or unresolved from it. The exception is 382360740.01, whose Gaia orbit
 puts the companion on the target itself.
+
+## Third check: our own folds
+
+Light curves were fetched fresh from MAST: SPOC 2-min, then TESS-SPOC, then QLP, best available per sector. They were
+detrended with the eclipses masked and folded at the proposed period. Each eclipse's depth was measured event by
+event, with single corrupted events clipped. The difference is phase 0 minus phase 0.5, with a label-permutation
+null. Code: [`recheck_and_figures.py`](recheck_and_figures.py); numbers: [`recheck.json`](recheck.json).
+
+| CTOI | Folded at | Phase 0 depth (ppm) | Phase 0.5 depth (ppm) | Difference | Sectors with phase 0 deeper | Figure |
+|---|---|---|---|---|---|---|
+| 327712163.01 | 0.7807704 d | 8623 ± 75 | 8334 ± 75 | 2.7σ (permutation 2.7σ) | 8 of 8 | [fig](CTOI_327712163.01.png) |
+| 206599822.01 | 2.151597 d | 14350 ± 160 | 12125 ± 163 | 9.7σ (permutation 7.6σ) | 7 of 7 | [fig](CTOI_206599822.01.png) |
+| 71316387.01 | 1.303671 d | 5293 ± 111 | 2487 ± 91 | 19.6σ (permutation 8.6σ) | 3 of 3 | [fig](CTOI_71316387.01.png) |
+| 147285336.01 | 3.36999 d | 4639 ± 133 | 2233 ± 119 | 13.5σ (permutation 5.6σ) | 4 of 4 | [fig](CTOI_147285336.01.png) |
+| 234503282.01 | 2.876461 d | 14091 ± 127 | 11895 ± 66 | 15.4σ (permutation 9.5σ) | 10 of 10 | [fig](CTOI_234503282.01.png) |
+| 65450588.01 | 1.2973383 d | 7498 ± 167 | 5551 ± 137 | 9.0σ (permutation 6.8σ) | 2 of 2 | [fig](CTOI_65450588.01.png) |
+| 382360740.01 | 5.131133 d | 67831 ± 1278 | 6414 ± 203 | 47.4σ (permutation 7.2σ) | 6 of 6 | [fig](CTOI_382360740.01.png) |
+| 102064145.01 | 4.392547 d | 3384 ± 141 | 1167 ± 82 | 13.6σ (permutation 6.8σ) | 7 of 7 | [fig](CTOI_102064145.01.png) |
+| 218856662.01 | 1.1295 d | 1755 ± 104 | 301 ± 124 | 9.0σ (permutation 7.4σ) | 4 of 4 | [fig](CTOI_218856662.01.png) |
+| 100918213.01 | 0.5128982 d | 5312 ± 51 | 3253 ± 56 | 27.1σ (permutation 16.6σ) | 4 of 4 | [fig](CTOI_100918213.01.png) |
+
+For the three blends (102064145, 218856662, 100918213), the phase-0.5 depth is the neighbour's diluted secondary
+eclipse. For 218856662 it is small (about 300 ppm), as expected from that binary's Gaia eclipse depths. For
+382360740 the 6,400 ppm phase-0.5 dip is the M dwarf's own secondary eclipse. Figures for the four
+alternating-depth cases with the clearest signals: [71316387](CTOI_71316387.01.png),
+[147285336](CTOI_147285336.01.png), [234503282](CTOI_234503282.01.png), [206599822](CTOI_206599822.01.png).
+
+![CTOI 71316387.01](CTOI_71316387.01.png)
+
+*CTOI 71316387.01, a RAVEN "high-probability planet", folded at twice its catalogued period. Alternate dips are
+5,300 and 2,500 ppm deep. A planet would make every dip the same.*
 
 ## The other eight
 
@@ -109,5 +142,5 @@ ExoFOP notes are short. These drafts were written by the referees and checked ag
 ## Files
 
 - [`vetting_results.json`](vetting_results.json): investigators' and referees' full structured reports.
-- `CTOI_*.png` and `recheck.json` (being generated): our own folds at the proposed binary period, from light curves
-  fetched fresh from MAST, as a third independent check.
+- `CTOI_*.png`, [`recheck.json`](recheck.json) and [`recheck_and_figures.py`](recheck_and_figures.py): the third
+  check and its figures.

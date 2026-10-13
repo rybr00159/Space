@@ -352,3 +352,33 @@ completeness critic; outputs are in tess-search/reaudit/.
   upload and 16 others, including DTARPS, DIAmante and RAVEN candidates. TOIs 3288.01 and 6787.01 had weaker flags.
 - The same flags fire on about 5 of 42 known planets.
 - A vetting workflow with controls and a referee is running.
+
+**CTOI/TOI lead vetting (finished 2026-10-13).** Full report: tess-search/exofop_leads/.
+Each of the 18 leads went through an investigator (with 5-7 known-planet controls), an independent adversarial
+referee, and our own third re-check (recheck_and_figures.py).
+
+Ten are EBs or blends that ExoFOP does not record. All ten are still PC with no note.
+- Alternating-depth EBs at 2x the CTOI period:
+  - 71316387.01 (RAVEN): 5293 vs 2487 ppm, 19.6 sigma.
+  - 147285336.01 (RAVEN): 4639 vs 2233 ppm, 13.5 sigma.
+  - 234503282.01 (Feinstein+19): 14091 vs 11895 ppm, 15.4 sigma.
+  - 206599822.01 (DTARPS 219): 14350 vs 12125 ppm, 9.7 sigma.
+  - 65450588.01 (DIAmante): 7498 vs 5551 ppm, 9.0 sigma.
+  - 327712163.01 (DTARPS 368): 3.4% depth difference, 2.7 sigma in our check and ~4 sigma for the referee;
+    suggestive only.
+- EB on target:
+  - 382360740.01: 6.8% primary and 0.64% secondary, matching the Gaia SB1 orbit. The CTOI period and depth are wrong.
+- NEBs, confirmed against Gaia DR3 vari_eclipsing_binary periods and epochs:
+  - 102064145.01: neighbour Gaia DR3 4982105786405613952, 23" away, P 4.39255 d.
+  - 218856662.01: TIC 218856692, 10.6" away, P 1.12953 d.
+  - 100918213.01: Gaia DR3 4964530230474371968, 14" away, P 0.51290 d = 2x the CTOI period.
+
+Eight are not reportable.
+- Already documented on ExoFOP or in the literature:
+  - 88571421.01 and 115693377.01 (known EBLMs);
+  - 92352621.01 (WASP-94 A b leaking into WASP-94 B);
+  - 278536652.01 (Gaia SB1);
+  - 321044007.01 (the submitter already flagged it FP).
+- Planets:
+  - TOI 3288.01 (confirmed);
+  - TOI 6787.01 and TOI 2486.01. Their flags came from corrupted QLP light curves.

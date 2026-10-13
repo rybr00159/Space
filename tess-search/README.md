@@ -59,7 +59,9 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
 
 ## Can any of this go to ExoFOP?
 
-Not as a new candidate, at least not now. Checked against ExoFOP's own pages on 2026-10-13:
+Not as a new candidate. But **ten existing ExoFOP planet candidates turned out to be eclipsing binaries or blends
+that ExoFOP does not record**, and that information could go on ExoFOP as observing notes. Checked against ExoFOP's
+own pages on 2026-10-13:
 
 - **Community TOIs (CTOIs) now require publication.** Since 19 August 2026, ExoFOP accepts a new candidate only if
   it has been published in a peer-reviewed journal. A Research Note of the AAS also counts, but only if the detection
@@ -80,15 +82,25 @@ Not as a new candidate, at least not now. Checked against ExoFOP's own pages on 
   - A refereed variable-star journal (JAAVSO, OEJV, Peremennye Zvezdy) for the full list. VSX itself recommends
     this route for systematic searches. Any paper would need a human author and, under AAS rules, disclosure of AI
     use.
-- **Existing candidates that our data flag as possible binaries.** Our search recovered the signals of 94 existing
-  CTOIs on 71 stars. On 37 of those stars the automated classifier flagged unequal alternate dips or a secondary
-  eclipse at ≥ 5σ.
-  - 21 of the 37 come from one user's 2019 bulk uploads of obvious eclipsing binaries.
-  - The other 16 include published candidates from DTARPS, DIAmante, RAVEN and others.
-  - Two TOIs still listed as planet candidates showed weaker flags.
+- **Existing candidates that are really eclipsing binaries.** This is the one result that fits an existing ExoFOP
+  channel. Full write-up: [`exofop_leads/`](exofop_leads/).
+  - Our search recovered the signals of 94 existing CTOIs on 71 stars.
+  - 18 flagged CTOIs and TOIs were vetted. Each investigator ran known planets as controls, an adversarial referee
+    re-analysed each case with separate code, and we did a third check on light curves fetched fresh from MAST.
+    The 21 obvious binaries from one 2019 bulk upload were excluded.
+  - **10 survived:**
+    - Six are binaries at twice the catalogued period, whose alternate dips differ in depth. They include two RAVEN
+      "high-probability planets" uploaded in August 2026.
+    - One is an F star with an M-dwarf companion, eclipsing on the target.
+    - Three are light leaking in from catalogued eclipsing binaries 10–23″ away, whose Gaia periods and eclipse
+      times match.
+  - Nine are strong, at 9–47σ. One (CTOI 327712163.01) is only suggestive.
+  - ExoFOP lists all ten as planet candidates, with no note.
+  - The other 8 were real planets with corrupted light curves, or binaries already documented on ExoFOP.
 
-  The same flags fire on about 1 in 8 known planets, so these are leads, not findings. They are being vetted, with
-  known-planet controls and an adversarial referee; results will be added here.
+  An observing note needs no paper, but it needs an approved ExoFOP account. Alternatively, the candidates' authors
+  can be told directly. Draft notes are in [`exofop_leads/README.md`](exofop_leads/README.md); nothing has been
+  posted.
 
 Full policy notes: [`reaudit/exofop_policy.json`](reaudit/exofop_policy.json).
 
@@ -415,3 +427,4 @@ the investigators' and referee's reports, and the CTOI cross-match.
 | `candidates/TIC*/`, `candidates/EB_TIC*/` | Vetting plots and numbers for other candidates |
 | `reviews/` | Dossiers sent for independent review, and the reviews |
 | `reaudit/` | 2026-10-13 novelty re-audit and ExoFOP policy check: per-star prior periods, spot checks, referee and critic reports, CTOI cross-match |
+| `exofop_leads/` | Ten existing ExoFOP planet candidates shown to be eclipsing binaries or blends: vetting reports, independent re-check, figures, draft observing notes |
