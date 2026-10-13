@@ -1,0 +1,63 @@
+tic,P_ours,status,prior_period_source,other_notes,kostov_t2,maiz23_VarF,gaia_nss
+33445288,0.7985751294195186,prior period public (within 1%),"TARS 0.7985+-0.0035 d (P, 0.01%)",,True,VVV,1
+76440895,0.6773188542693129,prior period public (within 1%),"Green+23 t2 Porb 0.67658 d (P, 0.11%, Score 0.00)",,True,VVV,0
+351474229,0.8774638938298572,prior period public (within 1%),"Green+23 t2 Porb 0.87838 d (P, 0.10%, Score 0.00); TARS 0.8790+-0.0041 d (P, 0.18%)",,False,VVV,1
+32398505,0.6014929807426779,prior period public (within 1%),"Green+23 t2 Porb 0.60084 d (P, 0.11%, Score 0.00)",,True,VVV,0
+114787953,0.605775,prior period public (within 1%),"TARS 0.3029+-0.0007 d (P/2, 0.00%)",,False,VMV,0
+71315603,0.5076986965311869,prior period public (within 1%),"TESS-SPOC FFI DV S68 (P); TARS 0.2542+-0.0006 d (P/2, 0.14%)",,True,VNV,0
+314677221,3.275129565654693,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 3.226+-0.045 d is 1.5% off but within 1.1 sigma (imprecise, labelled rotation); Green+23 Porb 0.4087 d no match (75.0% from P/2)",True,VVV,0
+100378891,11.200537415103636,no prior period found,none,,True,VVV,0
+146708570,4.732100401326274,no prior period found,none,Green+23 Porb 9.2646 d no match (2.1% from 2P),True,VVV,0
+123267483,7.273220948965935,no prior period found,none,"TARS 21.797+-2.688 d does not match (49.8%, 2.7 sigma)",True,VVV,0
+343895671,3.0200216876689763,no prior period found,none,"TARS 3.852+-0.045 d does not match (27.6%, 18.6 sigma); Green+23 Porb 3.8035 d no match (25.9% from P)",True,VVV,0
+217276354,6.891851614174163,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 6.717+-0.264 d is 2.5% off but within 0.7 sigma (imprecise, labelled rotation)",True,VVV,0
+316096209,2.296088,prior period public (within 1%),"Green+23 t2 Porb 4.58214 d (2P, 0.22%, Score 0.02); TARS 2.2877+-0.0192 d (P, 0.37%)",,True,,0
+234968334,7.685760429389557,no prior period found,none,,True,,0
+139256801,15.523716950265348,no prior period found,none,"TARS 13.874+-0.776 d does not match (10.6%, 2.1 sigma); DV period(s) not matching: TCE 11.2037d",True,VVV,0
+80064194,5.810694352070723,prior period public (within 1%),TESS-SPOC FFI DV S67 (P),"TARS 6.728+-0.218 d does not match (15.8%, 4.2 sigma); Green+23 Porb 3.1947 d no match (10.0% from P/2)",True,VVV,0
+76224662,4.932277307646632,no prior period found,none,"TARS 5.473+-0.103 d does not match (11.0%, 5.2 sigma); Green+23 Porb 0.6166 d no match (75.0% from P/2)",True,VVV,0
+122543151,7.483458868516055,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 7.857+-0.358 d is 5.0% off but within 1.0 sigma (imprecise, labelled rotation)",True,VMV,0
+122203391,4.7143766144991215,no prior period found,none,Green+23 Porb 6.7659 d no match (28.2% from 2P),True,VVV,0
+114917180,2.4061299183713567,prior period public (within 1%),"TESS-SPOC FFI DV S68 (P/2); Green+23 t2 Porb 2.39783 d (P, 0.35%, Score 0.00); TARS 2.3935+-0.0181 d (P, 0.52%)",,True,VVV,0
+142274982,7.937190281034238,no prior period found,none,Green+23 Porb 4.1453 d no match (4.5% from P/2),True,VVV,0
+122852877,3.053671890547744,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 3.000+-0.039 d is 1.8% off but within 1.4 sigma (imprecise, labelled rotation); Green+23 Porb 5.9681 d no match (2.3% from 2P)",True,VVV,0
+197958602,5.417813642723629,no prior period found,none,,True,VVV,0
+179677500,7.911416728740397,prior period public (within 1%),TESS-SPOC FFI DV S69 (2P/P),"TARS 7.258+-0.154 d does not match (8.3%, 4.2 sigma); Green+23 Porb 1.6192 d no match (59.1% from P/2)",True,VVV,0
+327599302,5.020329320269807,prior period public (within 1%),TESS-SPOC FFI DV S67 (P),"TARS 5.276+-0.067 d does not match (5.1%, 3.8 sigma)",True,VVV,0
+404124262,7.598673799966745,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 7.776+-0.351 d is 2.3% off but within 0.5 sigma (imprecise, labelled rotation); Green+23 Porb 7.0141 d no match (7.7% from P)",True,NNM,0
+80453626,3.3373120864136427,prior period public (within 1%),"SPOC 2-min DV S104,105,106 (P/2); TESS-SPOC FFI DV S69 (P/2)",Green+23 Porb 0.5586 d no match (66.5% from P/2),True,VVV,0
+304444218,3.241674531500109,prior period public (within 1%),"Green+23 t2 Porb 3.22252 d (P, 0.59%, Score 0.00)","TARS 3.197+-0.036 d is 1.4% off but within 1.2 sigma (imprecise, labelled rotation)",True,VVV,0
+218359654,1.39154427433982,no prior period found,none,Green+23 Porb 0.2320 d no match (66.7% from P/2),True,VVV,0
+406279367,3.125464,prior period public (within 1%),TESS-SPOC FFI DV S67 (P/2),"TARS 3.083+-0.034 d is 1.4% off but within 1.3 sigma (imprecise, labelled rotation); Green+23 Porb 0.2083 d no match (86.7% from P/2)",True,VVV,0
+156003824,4.969439050115593,prior period public (within 1%),"TESS-SPOC FFI DV S69 (P); KELT Oelkers+18 t6 Prot 4.97092 d (P, 0.030%)","TARS 4.873+-0.082 d is 1.9% off but within 1.2 sigma (imprecise, labelled rotation); Green+23 Porb 4.8558 d no match (2.3% from P)",True,VVV,0
+372170356,2.8356495003100384,prior period public (within 1%),"Green+23 t2 Porb 2.82933 d (P, 0.22%, Score 0.00); TARS 2.8103+-0.0283 d (P, 0.89%)",,True,VVV,0
+143345010,2.669560901149537,prior period public (within 1%),"TESS-SPOC FFI DV S67 (P); Green+23 t2 Porb 5.35532 d (2P, 0.30%, Score 0.03); TARS 2.6527+-0.0220 d (P, 0.63%)",,True,VVV,1
+180444443,2.497059852394836,prior period public (within 1%),"TESS-SPOC FFI DV S69 (P); Green+23 t2 Porb 1.25086 d (P/2, 0.19%, Score 0.00)",,True,VVV,0
+363482012,3.686712553383865,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 3.843+-0.089 d is 4.2% off but within 1.8 sigma (imprecise, labelled rotation); Green+23 Porb 6.3801 d no match (13.5% from 2P)",True,VVV,0
+281740175,11.052189152353217,no prior period found,none,,True,VVV,0
+412733784,3.854711015711257,no prior period found,none,Green+23 Porb 0.2756 d no match (85.7% from P/2),True,VMV,0
+89040715,4.621055077118112,prior period public (within 1%),"KELT Oelkers+18 t6 Prot 2.31038 d (P/2, 0.006%)",Green+23 Porb 5.0344 d no match (8.9% from P),True,,0
+304770656,3.160201943782026,no prior period found,none,Green+23 Porb 2.9751 d no match (5.9% from P),True,VVV,0
+100666720,7.341134,no prior period found,none,"TARS 8.548+-0.423 d does not match (16.4%, 2.9 sigma)",False,VVV,0
+48939280,2.7365137249528906,no prior period within 1%; imprecise TARS value statistically consistent,none,"TARS 2.764+-0.024 d is 1.0% off but within 1.2 sigma (imprecise, labelled rotation)",True,VVV,0
+128677131,1.2519517158541356,prior period public (within 1%),"Green+23 t2 Porb 1.24963 d (P, 0.19%, Score 0.00)",,True,VVV,0
+212554303,1.198154,prior period public (within 1%),"TARS 1.1948+-0.0058 d (P, 0.28%)",,True,,0
+217648205,7.611042943636721,no prior period found,none,Green+23 Porb 0.3657 d no match (90.4% from P/2),True,VVV,0
+90919279,7.392322845587222,no prior period found,none,"TARS 6.368+-0.154 d does not match (13.9%, 6.7 sigma); Green+23 Porb 5.1396 d no match (30.5% from P)",True,VVV,0
+63594264,1.8138842571572853,prior period public (within 1%),TESS-SPOC FFI DV S39 (P),,True,VVV,0
+396957421,6.329212743790527,no prior period found,none,Green+23 Porb 8.2102 d no match (29.7% from P),True,,0
+314203738,3.3984406111472545,prior period public (within 1%),"Green+23 t2 Porb 3.39704 d (P, 0.04%, Score 0.02)",,True,VVV,0
+129032726,3.350564481043544,no prior period found,none,,True,,0
+320327029,4.440731553924256,prior period public (within 1%),TESS-SPOC FFI DV S67 (P),Green+23 Porb 5.2667 d no match (18.6% from P),True,,0
+49617965,3.765198,no prior period found,none,"TARS 4.298+-0.078 d does not match (14.2%, 6.8 sigma); Green+23 Porb 4.3912 d no match (16.6% from P)",True,VVV,0
+200247352,3.3380113950433934,no prior period found,none,Green+23 Porb 3.4066 d no match (2.1% from P),True,,0
+197985960,3.3298317539065434,prior period public (within 1%),TESS-SPOC FFI DV S68 (P/2),Green+23 Porb 1.6464 d no match (1.1% from P/2),True,VMV,0
+124358211,0.8455496725065762,no prior period found,none,,True,VVV,0
+278802197,1.0618270925622475,prior period public (within 1%),"TESS-SPOC FFI DV S68 (P/2); Green+23 t2 Porb 1.06208 d (P, 0.02%, Score 0.00); TARS 1.0621+-0.0058 d (P, 0.03%)",,True,VVV,1
+379508029,1.097569114879736,prior period public (within 1%),"Green+23 t2 Porb 2.20038 d (2P, 0.24%, Score 0.00)",,True,MVN,0
+143042674,5.044137,no prior period found,none,"TARS 5.797+-0.140 d does not match (14.9%, 5.4 sigma); Green+23 Porb 6.2554 d no match (24.0% from P)",True,VVV,0
+217228307,0.8297523335195147,prior period public (within 1%),"Green+23 t2 Porb 0.82903 d (P, 0.09%, Score 0.00)",,True,VVV,0
+6598941,2.119611076397124,prior period public (within 1%),"TARS 2.1353+-0.0207 d (P, 0.74%)",,True,VVV,0
+261500541,3.126962743093183,prior period public (within 1%),"TESS-SPOC FFI DV S56,67,68 (P); TARS 3.1334+-0.0426 d (P, 0.21%)",Green+23 Porb 3.0516 d no match (2.4% from P),True,VVV,0
+231286114,2.0204581124875296,no prior period found,none,,True,MMM,0
+115242114,3.9359080373046806,no prior period found,none,Green+23 Porb 4.2120 d no match (7.0% from P),True,VVV,0

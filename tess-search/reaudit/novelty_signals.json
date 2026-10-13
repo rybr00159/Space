@@ -1,0 +1,364 @@
+{
+ "objects": [
+  {
+   "tic": "87055315 (host of the signal first seen in TIC 87055304; P = 4.1361919 d, T0 = BTJD 3271.53062)",
+   "claim_tested": "The 4.136-d, 2.1% eclipse on TIC 87055315 (Gaia DR3 6720986208895208960, 2MASS J18102616-4359369) has never been reported anywhere. It appears diluted to about 0.4% in TIC 87055304 / TYC 7912-71-1. 'Never reported' means: no TOI, CTOI or TCE, no EB or variable-star catalogue entry, and no paper or web mention.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS target pages (JSON + HTML)",
+     "method": "curl target.php?id=TIC&json and the HTML page for 87055315, 87055304 and every TIC with T<16 within 60 arcsec or T<13.5 within 120 arcsec (part of the 98 stars fetched across all targets)",
+     "result": "Both stars have no TOIs, CTOIs, planet parameters, imaging, spectroscopy, time series, files or stellar companions. The HTML shows 'Observing Notes 0'. The only stellar parameters and magnitudes are from TIC v8.2. Every neighbour fetched is likewise empty."
+    },
+    {
+     "catalog": "ExoFOP nearby-target list",
+     "method": "download_nearbytarget.php?id=87055315&output=csv (167 stars, out to 59.9 arcsec); same for 87055304 (154 stars)",
+     "result": "The TOI column is empty for every star."
+    },
+    {
+     "catalog": "ExoFOP toi.csv (8151 rows, max TOI 7927.01) and ctoi.csv (5138 rows), both downloaded 2026-10-12",
+     "method": "Match by position, then by period anywhere on the sky (P, 2P, P/2, 3P, P/3 within 0.2%), then grep for the TIC and Gaia IDs",
+     "result": "The nearest TOI is TOI 6752.01 (TIC 87422071, P=11.36 d) at 23.7 arcmin. The nearest CTOI is at 59.6 arcmin. The nearest TOI with a matching period is TOI 1118.01, 210 arcmin away. Neither file contains the IDs. Caveat: the TOI list only reaches sector 99."
+    },
+    {
+     "catalog": "SPOC TCE bulk files at MAST (all 132 files on bulk_downloads_tce.html: single sectors s0001-s0107 plus multi-sector runs up to s0001-s0096; 341,351 TCEs)",
+     "method": "Matched ticid against all 673 TICs within 2 arcmin; matched period and harmonics (0.1%) anywhere on the sky, using TIC positions from MAST",
+     "result": "No TCEs on any TIC within 2 arcmin. The nearest TCE with a matching period is 356 arcmin away. Caveat: this check cannot catch anything here. These files cover 2-min targets only (S104: 1143 TCEs on 817 TICs), and MAST holds only QLP (S13) and eleanor-lite (S13) light curves for 87055315, and QLP only for 87055304. SPOC never searched either star."
+    },
+    {
+     "catalog": "Villanova TESS EB catalogue (Prsa+22 live version)",
+     "method": "https://tessebs.villanova.edu/87055315 and /87055304, with TIC 229804573 as a positive control",
+     "result": "Both pages say 'This TESS ID is not in the catalog'. The control page returns a full entry."
+    },
+    {
+     "catalog": "VizieR: Prsa+22 J/ApJS/258/16; Kostov+25 J/ApJS/279/50 tables 2, 3 and 4; Green+23 J/MNRAS/522/29",
+     "method": "Cone search to 120 arcsec plus query by TIC. A positive control (TIC 33445288 in Kostov table 2) returned its row.",
+     "result": "No entries for 87055315 in any of them. 87055304 appears only in Green+23 table 2, with Score 0.0 and Porb 2.042 d (not one of their candidates, and not the 4.136-d period)."
+    },
+    {
+     "catalog": "Gaia DR3 variability and NSS: VizieR I/358 (all 22 tables), I/357 (all 17 tables) and the Gaia archive by source_id",
+     "method": "Cone search to 120 arcsec, plus ADQL on vari_summary, vari_eclipsing_binary, vari_classifier_result, vari_planetary_transit, vari_rotation_modulation, vari_short_timescale, nss_two_body_orbit, nss_acceleration_astro, nss_non_linear_spectro and nss_vim_fl",
+     "result": "No rows for either star. phot_variable_flag is NOT_AVAILABLE and non_single_star = 0 for 87055315. The only Gaia variable within 120 arcsec is short-timescale source Gaia DR3 6720986135859140864, 32 arcsec away."
+    },
+    {
+     "catalog": "VSX B/vsx/vsx (VizieR copy of version 2026-10-05)",
+     "method": "Cone search to 120 arcsec with period-ratio test",
+     "result": "One entry: Gaia DR3 6720986135859140864 at 32.3 arcsec, type VAR, P=0.0381 d. Not a match."
+    },
+    {
+     "catalog": "ASAS-SN II/366 and the online database at asas-sn.osu.edu/variables",
+     "method": "VizieR cone search to 120 arcsec; online search with radius=2, with a known ASAS-SN variable as positive control",
+     "result": "0 rows in VizieR. Online search: 'No Variables found'. The control returned its star."
+    },
+    {
+     "catalog": "OGLE OCVS online database, all variable types (updated 2024-12-31)",
+     "method": "Circle query to 120 arcsec on query.php",
+     "result": "'returned 0 objects' for 87055315 and for 87055304. Whether the position lies in an OGLE field was not verified."
+    },
+    {
+     "catalog": "Other VizieR variability and candidate catalogues: ATLAS J/AJ/156/241, ZTF J/ApJS/249/18, WISE J/ApJS/237/28 and J/MNRAS/503/3975, Rowan+22 J/MNRAS/517/2190, Gao+25 J/ApJS/276/57, Fetherolf+23 J/ApJS/268/4, SuperWASP J/MNRAS/502/1299, Justesen J/ApJ/912/123, ASAS-3 II/264, KELT J/AJ/155/39, IJspeert+24 J/A+A/691/A242, OGLE J/AcA/66/405, DIAmante J/MNRAS/498/1726, Olmschenk J/AJ/161/273, DTARPS-II J/AJ/167/203, Hong+22 J/AJ/163/157, Hajdu+19 J/MNRAS/485/2562",
+     "method": "ASU cone searches to 120 arcsec. Every catalogue was checked with a positive-control cone (all returned rows). J/ApJS/249/11 does not exist in VizieR.",
+     "result": "Nothing on 87055315 itself. IJspeert+24 lists TIC 87055271 at 104 arcsec with score 0 (QLP periods 2.37 and 4.04 d), which is not a match. KELT table5 is an rms table only (TIC 87055327, 7 arcsec). ZTF and ATLAS do not reach Dec -44."
+    },
+    {
+     "catalog": "All VizieR catalogues within 5 arcsec",
+     "method": "astroquery Vizier.query_region with catalog=None, then catalogue titles fetched for all 140 catalogues found",
+     "result": "51 tables, all astrometric, photometric or stellar-parameter catalogues, with one exception. Maiz Apellaniz+23 (J/A+A/677/A137, Gaia DR3 photometric dispersion for 145.7 M stars) flags TIC 87055315 as VarF=VVM with S_G = 5.12 +- 0.30 mmag. That matches the rms expected from a 2.1% eclipse with a 4.4% duty cycle (about 4.4-4.8 mmag). It is a generic variability flag, with no period and no type."
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP cone search to 120 arcsec around both stars",
+     "result": "No object at the TIC 87055315 position. The only objects within 120 arcsec are TYC 7912-71-1 (10.2 arcsec, nbref 0) and Gaia DR3 6720986135859140864 (32 arcsec, 1 reference: the Gaia DR3 variability catalogue)."
+    },
+    {
+     "catalog": "Planet Hunters TESS Talk (Zooniverse project 7929)",
+     "method": "talk.zooniverse.org/searches API with section=project-7929; TIC 229804573 as control (15 hits)",
+     "result": "0 hits for 87055315 and for 87055304."
+    },
+    {
+     "catalog": "Web search",
+     "method": "WebSearch for 'TIC 87055315', for '87055315 TESS', and for '6720986208895208960' OR 'TIC 87055304' OR 'TYC 7912-71-1' OR 'J18102616-4359369'",
+     "result": "No page mentions any of these identifiers."
+    },
+    {
+     "catalog": "ADS full-text search",
+     "method": "api.adsabs.harvard.edu (no token) and the ui.adsabs.harvard.edu search URL via WebFetch",
+     "result": "Not verified. The API returned HTTP 401 and the UI rendered no results (JavaScript only)."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No prior detection of the 4.136-d eclipse or of any period for TIC 87055315 turned up in ExoFOP, TOI/CTOI, SPOC TCE, Villanova TESS EBs, Kostov+25 (all tables), Prsa+22, Gaia DR3 vari/NSS, VSX (2026-10-05), ASAS-SN (VizieR and online), OGLE OCVS, IJspeert+24, Green+23, SIMBAD, PHT Talk or the web. One caveat for wording: Maiz Apellaniz+23 flags TIC 87055315 as photometrically variable in Gaia G (S_G = 5.1 mmag, VarF=VVM), with no period or type. Any ExoFOP note should therefore say 'no prior period or eclipse detection', not 'not flagged as variable anywhere'. Three things remain unverified: ADS full text, any rejection by QLP or the TOI team (not public; 87055304 is a QLP target with the diluted dip in 5 sectors), and catalogues that list stars by TIC only without coordinates (TAPVizieR returned 503). The SPOC TCE check cannot catch anything here because neither star was ever a 2-min target."
+  },
+  {
+   "tic": "320686138 (P = 11.91415 d, T0 = BTJD 1668.1597; EB with 0.15% secondary)",
+   "claim_tested": "The 11.914-d, ~0.37% eclipse signal (now known to be an EB) has not been reported before.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS JSON + HTML (target and the 4 TICs with T<16 within 60 arcsec, plus T<13.5 within 120 arcsec)",
+     "method": "target.php?id=...&json and the HTML page; download_nearbytarget csv (20 stars, out to 57 arcsec)",
+     "result": "Everything is empty, and Observing Notes = 0 for all of them. The nearby-target TOI column is empty."
+    },
+    {
+     "catalog": "ExoFOP TOI/CTOI lists",
+     "method": "Match by position and by period (0.2%, harmonics), plus grep",
+     "result": "The nearest TOI is TOI 3282.01 (P=2.95 d) at 48.9 arcmin. The nearest CTOI (P=11.739 d, not a match) is at 84.5 arcmin. Nothing within 30 arcmin. The nearest TOI with a matching period (x1/3) is TOI 6778.01, 139 arcmin away."
+    },
+    {
+     "catalog": "SPOC TCE bulk files (132 files, 341,351 TCEs)",
+     "method": "ticid match on all 60 TICs within 2 arcmin; period and harmonic match anywhere",
+     "result": "0 TCEs. The nearest period-matching TCE (TIC 421990278, P=3.97 d = P/3) is 139 arcmin away. The star has no SPOC 2-min data; TESS-SPOC FFI products for S13 and S27 are light-curve and target-pixel files only, with no DV."
+    },
+    {
+     "catalog": "Villanova TESS EB, Prsa+22, Kostov+25 tables 2-4",
+     "method": "Web page lookup; VizieR query by TIC and cone search to 120 arcsec",
+     "result": "'Not in the catalog'. Not in any of the tables."
+    },
+    {
+     "catalog": "Gaia DR3 vari/NSS (VizieR I/358 and I/357; Gaia archive by source_id 6641518696737518208)",
+     "method": "Cone search to 120 arcsec; ADQL",
+     "result": "No rows. phot_variable_flag is NOT_AVAILABLE. RV amplitude 11.8 km/s with p=0.77 over 12 transits."
+    },
+    {
+     "catalog": "VSX, ASAS-SN (VizieR + online), ATLAS, ZTF, WISE (x2), Rowan+22, Gao+25, Fetherolf+23, SuperWASP, ASAS-3, KELT variables, IJspeert+24, DIAmante, Olmschenk, DTARPS-II, OGLE",
+     "method": "Cone searches to 120 arcsec",
+     "result": "0 rows in every variability catalogue. KELT table5 (rms only) lists the star with rms30m 0.022 mag. Green+23 lists it with Score 0.0 and Porb 1.0036 d, not the eclipse period."
+    },
+    {
+     "catalog": "All VizieR within 5 arcsec; SIMBAD to 120 arcsec",
+     "method": "Vizier query_region with catalog=None; SIMBAD TAP",
+     "result": "81 tables, none reporting variability with a period. Maiz Apellaniz+23 lists the star; its VarF was not recorded because the query failed with a connection reset. SIMBAD has no object within 120 arcsec."
+    },
+    {
+     "catalog": "TARS HLSP (Boyle+26 rotation survey) FITS headers",
+     "method": "Downloaded the S13/S27/S67/S94 light curves; read the PER1-PER5 header keywords",
+     "result": "Top Lomb-Scargle periods are 7.71, 5.36, 5.86 and 1.99 d. None match 11.914 d or its harmonics within 1%."
+    },
+    {
+     "catalog": "PHT Talk; web search; ADS",
+     "method": "Zooniverse talk API; WebSearch for 'TIC 320686138' OR '6641518696737518208'; ADS",
+     "result": "0 PHT hits. No web pages mention it. ADS not verified (API returns 401 without a token)."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No prior detection was found in any catalogue or service. The SPOC TCE check cannot catch anything here (no 2-min data). This is an eclipsing binary, not a planet candidate."
+  },
+  {
+   "tic": "155991187 (P = 0.5012110 d, T0 = BTJD 1354.4851; K dwarf, RUWE 21, co-moving 8.2 arcsec companion TIC 155991188)",
+   "claim_tested": "The 0.5012-d, ~2.9 ppt transit-like signal has not been reported before. The star is already known as a Gaia DR3 'SOLAR_LIKE' / VSX 'ROT' variable with no period.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS (155991187, 155991188 and other neighbours)",
+     "method": "JSON + HTML + nearby-target csv",
+     "result": "Everything is empty and Observing Notes = 0. The nearby-target list (2 stars within 60 arcsec) has no TOI."
+    },
+    {
+     "catalog": "TOI/CTOI",
+     "method": "Match by position and period; grep",
+     "result": "The nearest TOI is TOI 299.01 at 120 arcmin. The nearest CTOI (P=0.4057 d, not a match) is at 51.5 arcmin. The nearest TOI with a matching period is TOI 1806.03, 9357 arcmin away."
+    },
+    {
+     "catalog": "SPOC TCE (341,351 TCEs)",
+     "method": "ticid match on 10 TICs within 2 arcmin; period match anywhere",
+     "result": "0 TCEs. The nearest period-matching TCE (TIC 183596242, 1.0027 d = 2P) is 746 arcmin away. The star has no SPOC 2-min data (only QLP, TASOC, eleanor, TGLC and T16 HLSPs)."
+    },
+    {
+     "catalog": "Villanova TESS EB, Prsa+22, Kostov+25 tables 2-4, Gaia DR3 veb/NSS",
+     "method": "Page lookup, query by TIC, cone search to 120 arcsec, Gaia archive by source_id",
+     "result": "In none of them. Gaia DR3 does list the star: vari_summary and vari_classifier_result give best_class SOLAR_LIKE, and phot_variable_flag is VARIABLE. No NSS solution."
+    },
+    {
+     "catalog": "VSX",
+     "method": "Cone search to 120 arcsec",
+     "result": "Two entries: Gaia DR3 4975693262795009152 (the target, 0.04 arcsec, type ROT, no period) and another ROT star at 96.6 arcsec."
+    },
+    {
+     "catalog": "Gaia DR3 spurious-signal table, Holl+23 (J/A+A/674/A25/vspursig)",
+     "method": "All-VizieR 5 arcsec sweep",
+     "result": "The target is listed with a Gaia GLS frequency of 11.98 c/d (a scan-related spurious signal). That is not 1.995 or 0.998 c/d, so it does not match."
+    },
+    {
+     "catalog": "ASAS-SN (VizieR and online), ATLAS, ZTF, WISE, Rowan, Gao, Fetherolf, SuperWASP, ASAS-3, KELT variables, OGLE, DIAmante, Olmschenk, DTARPS-II, Green+23",
+     "method": "Cone searches to 120 arcsec",
+     "result": "0 rows. Green+23 lists the target with Score 0.0 and Porb 0.1669 d, which does not match."
+    },
+    {
+     "catalog": "All VizieR within 5 arcsec (target and 155991188); SIMBAD to 120 arcsec",
+     "method": "Vizier catalog=None; SIMBAD TAP",
+     "result": "The only non-astrometric entries are SUPERWIDE (Hartman+20; the wide binary is already known), Medan+21 and Maiz Apellaniz+23 (VarF=VMV). SIMBAD: no object at the target; nearest is HD 2707 at 83 arcsec."
+    },
+    {
+     "catalog": "PHT Talk; web search; ADS",
+     "method": "API; WebSearch for 'TIC 155991187' OR '4975693262795009152'",
+     "result": "0 hits. No pages mention it. ADS not verified."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "The star's variability is already catalogued as rotational/solar-like without a period, which FINDINGS acknowledges. Nothing at 0.5012 d or 1.0024 d appears in any source checked."
+  },
+  {
+   "tic": "72651793 (P = 0.634529 d, T0 = BTJD 1386.2899; CD-30 768, TYC 6432-1805-1)",
+   "claim_tested": "The 0.6345-d, ~410 ppm signal has not been reported before.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS (target, 72651798 at 44 arcsec, 72651797 at 53 arcsec)",
+     "method": "JSON + HTML + nearby csv (13 stars)",
+     "result": "Everything is empty, Observing Notes = 0, and the TOI column is empty."
+    },
+    {
+     "catalog": "TOI/CTOI",
+     "method": "Match by position and period",
+     "result": "The nearest TOI is TOI 262.01 at 72.8 arcmin. The nearest CTOI is at 105.8 arcmin. The nearest TOI with a matching period is TOI 422.01, 2259 arcmin away."
+    },
+    {
+     "catalog": "SPOC TCE",
+     "method": "ticid match on 14 TICs within 2 arcmin; period match anywhere",
+     "result": "0 TCEs. The nearest period-matching TCE is 653 arcmin away. The star has no 2-min data; TESS-SPOC FFI products (S3, S30) are light-curve and target-pixel files only."
+    },
+    {
+     "catalog": "Villanova TESS EB, Prsa+22, Kostov+25 tables 2-4, Gaia DR3 vari/NSS",
+     "method": "Page lookup, query by TIC, cone search, Gaia archive by source_id 5020052956335747968",
+     "result": "In none of them. phot_variable_flag is NOT_AVAILABLE. RV amplitude 3.7 km/s with p=0.98 over 19 transits."
+    },
+    {
+     "catalog": "VSX, ASAS-SN (VizieR and online), ATLAS (Heinze+18), ZTF (Chen+20; Dec -29.9 is inside the footprint), WISE, Rowan, Gao, Fetherolf, SuperWASP, ASAS-3, KELT, OGLE, DIAmante, Olmschenk, DTARPS-II",
+     "method": "Cone searches to 120 arcsec",
+     "result": "0 rows everywhere. Note that at T=10.5 the star is probably saturated in ZTF and ATLAS. Green+23 lists it with Score 0.0 and Porb 0.2112 d, which does not match."
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "Cone search plus reference listing",
+     "result": "CD-30 768, type PM*, with 7 references. All are RAVE DR2-DR6, RAVE distance calibration or APASS photometry of RAVE stars; none is about variability."
+    },
+    {
+     "catalog": "TARS HLSP headers",
+     "method": "S3 and S30 light curves",
+     "result": "Top periods are 2.14 and 11.02 d. No match."
+    },
+    {
+     "catalog": "All VizieR within 5 arcsec (target and 72651798)",
+     "method": "Vizier catalog=None",
+     "result": "126 and 78 tables, none reporting variability with a period. Maiz Apellaniz+23 gives the target VarF=MMV."
+    },
+    {
+     "catalog": "PHT Talk; web search; ADS",
+     "method": "API; WebSearch for 'TIC 72651793' OR 'CD-30 768' OR the Gaia ID",
+     "result": "0 hits. No pages mention it. ADS not verified."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No prior detection of the 0.6345-d signal, or of any period for this star, in any source checked."
+  },
+  {
+   "tic": "245976814 (P = 0.5070757 d, T0 = BTJD 2362.4568; crowded bulge-direction field; preferred host is the 16.6 arcsec neighbour TIC 245976864 = Gaia DR3 4040383629300896896, G = 15.30)",
+   "claim_tested": "The 0.507-d, 1.1-1.5 ppt signal (probably an EB on the 16.6 arcsec neighbour) has not been reported before.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS (target plus 60 neighbours with T<16 within 60 arcsec or T<13.5 within 120 arcsec, including 245976864, 245976812 and 245976791)",
+     "method": "JSON + HTML; nearby csv (801 stars within 60 arcsec)",
+     "result": "All empty with Observing Notes = 0. The first fetch of 8 neighbours was rejected by ExoFOP (connection resets) and succeeded on retry. The nearby-target TOI column is empty for all 801 stars."
+    },
+    {
+     "catalog": "TOI/CTOI",
+     "method": "Match by position and period",
+     "result": "The nearest TOI is TOI 4414.01 at 74.3 arcmin. The nearest CTOI is at 280 arcmin. No TOI or CTOI matches P or P/2 anywhere on the sky; harmonic matches are at least 4400 arcmin away."
+    },
+    {
+     "catalog": "SPOC TCE",
+     "method": "ticid match on 3086 TICs within 2 arcmin; period match anywhere",
+     "result": "0 TCEs. The nearest period-matching TCE is 441 arcmin away. The star has QLP data only."
+    },
+    {
+     "catalog": "VSX (22 entries within 120 arcsec), Gaia DR3 vari_eclipsing_binary (9 within 120 arcsec)",
+     "method": "Cone search with period-ratio test against 1, 2, 3, 4, 5, 6, 8 and their reciprocals (0.5% tolerance)",
+     "result": "No match. Closest entries: Gaia DR3 4040383251300886912 (EB, 21.2 arcsec, south-west, P=7.6916 d); OGLE-BLG-ECL-150806 (31 arcsec, P=0.493473 d, ratio 0.973); OGLE-BLG-ECL-150857 (40.8 arcsec, P=0.489393 d, ratio 0.965); other OGLE EBs at 72-109 arcsec with P from 0.318 to 4.71 d."
+    },
+    {
+     "catalog": "OGLE OCVS online (ECL and all-types query), OGLE J/AcA/66/405",
+     "method": "Circle search to 120 arcsec",
+     "result": "14 objects (13 ECL, 1 ELL), the same set VSX holds. None has P near 0.507 d. No OGLE variable lies at the target or at the 16.6 arcsec neighbour, although OGLE covers this field (see details)."
+    },
+    {
+     "catalog": "Prsa+22, Kostov+25 tables 2-4 (also by TIC for 245976864), Villanova, Gaia NSS, ASAS-SN (VizieR and online), ATLAS, WISE, Rowan, Gao, Fetherolf, SuperWASP, ASAS-3, KELT, IJspeert, Hong+22 bulge EBs, Hajdu+19, DIAmante, Olmschenk, DTARPS-II, Green+23",
+     "method": "Cone searches to 120 arcsec plus queries by TIC",
+     "result": "0 rows in all of them (the ZTF query failed, but ZTF does not reach Dec -36)."
+    },
+    {
+     "catalog": "All VizieR within 5 arcsec of the target and of 245976864",
+     "method": "Vizier catalog=None",
+     "result": "No catalogue with a period or eclipse entry. Maiz Apellaniz+23 flags the target VVN and the neighbour VVV (S_G = 4.1 +- 1.0 mmag). These are generic dispersion flags with no period. VVV DR2/DR4.2 and VIRAC are source catalogues, not variability catalogues."
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP cone search to 120 arcsec",
+     "result": "21 objects. None at the target or at the 16.6 arcsec neighbour. The nearest is the Gaia EB at 21.1 arcsec, then OGLE EBs from 31 arcsec outward."
+    },
+    {
+     "catalog": "PHT Talk; web search; ADS",
+     "method": "API; WebSearch for 'TIC 245976814' OR the two Gaia IDs",
+     "result": "0 hits. No pages mention it. ADS not verified."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No catalogued variable at 0.5070757 d or its harmonics lies within 120 arcsec. The two nearby OGLE EBs at 0.4935 and 0.4894 d differ by 2.7-3.5%, far beyond the multi-year ephemeris precision, so they are different systems. One finding cuts against the neighbour hypothesis. OGLE-IV covers this field (14 EBs catalogued within 2 arcmin). The 16.6 arcsec neighbour (I about 14, unsaturated in OGLE) would need about 2.3% eclipses, yet OGLE does not list it. That weakly argues against the neighbour being the source, or OGLE's search missed it. The TESS-saturated target (T=11.6) is probably saturated in OGLE as well."
+  },
+  {
+   "tic": "158159741 (P = 1.8068919 d, T0 = BTJD 1658.3739; TYC 8381-453-1; Gaia RUWE 6.6 with an acceleration solution)",
+   "claim_tested": "The 1.807-d, 1.7 ppt V-shaped dip has not been reported before.",
+   "checks": [
+    {
+     "catalog": "ExoFOP-TESS (target, the 3.6 arcsec neighbour TIC 1817929456, and 9 more neighbours)",
+     "method": "JSON + HTML + nearby csv (52 stars)",
+     "result": "All empty with Observing Notes = 0. The TOI column is empty."
+    },
+    {
+     "catalog": "TOI/CTOI",
+     "method": "Match by position and period",
+     "result": "The nearest TOI is TOI 3346.01 at 97.6 arcmin. The nearest CTOI is at 116 arcmin. The nearest CTOI with a matching period (365956062.01) is 884 arcmin away."
+    },
+    {
+     "catalog": "SPOC TCE",
+     "method": "ticid match on 182 TICs within 2 arcmin; period match anywhere",
+     "result": "0 TCEs. The nearest period-matching TCE (TIC 89417257, 3.615 d = 2P) is 342 arcmin away. The star has no 2-min data (QLP, eleanor and TARS only)."
+    },
+    {
+     "catalog": "Gaia DR3 NSS / Bashi+24",
+     "method": "Gaia archive by source_id; J/A+A/692/A247",
+     "result": "nss_acceleration_astro has 1 row (already known; FINDINGS acknowledges it). Bashi+24 lists acc 1.72 AU/yr^2 and sK1 13.6 km/s. vari_* tables have 0 rows."
+    },
+    {
+     "catalog": "VSX, Gaia DR3 veb (within 120 arcsec)",
+     "method": "Cone search with period-ratio test",
+     "result": "Gaia/VSX EBs at 78.6 arcsec (P=15.732 d, ratio 8.71) and 103.8 arcsec (P=0.261 d, ratio 0.144), plus a ROT star at 41.7 arcsec. No match."
+    },
+    {
+     "catalog": "TARS HLSP headers (Boyle+26)",
+     "method": "S13, S66, S93 and S94 light curves; header PER1-PER5",
+     "result": "A strong periodicity at PER1 = 0.9212, 0.9169, 0.9200 and 0.9208 d (SNR 2185, 275, 1856, 2523; sinusoid amplitude 0.9-3.3 ppt) in all four sectors. It is not commensurate with 1.8069 d (2 x 0.9206 = 1.841 d is 1.9% off). Green+23 also lists Porb 0.9227 d with Score 0. This modulation is not mentioned in FINDINGS."
+    },
+    {
+     "catalog": "Mowlavi+21 Gaia DR2 large-amplitude variables (J/A+A/648/A44)",
+     "method": "All-VizieR 5 arcsec sweep",
+     "result": "The 3.6 arcsec neighbour (Gaia DR2 6656254076694370304, G=18.87) appears in the full 23.3-million-star LAV candidate list with AmpG proxy 0.062. It has no BP/RP, no type flags and no period. This is a low-purity flag that blending with a G=11.6 star 3.6 arcsec away would easily inflate."
+    },
+    {
+     "catalog": "Prsa+22, Kostov+25 tables 2-4 (also by TIC for 1817929456), Villanova, ASAS-SN (VizieR and online), ATLAS, WISE, Rowan, Gao, Fetherolf, SuperWASP, ASAS-3, KELT variables, OGLE OCVS (0 objects), IJspeert (TIC 158159718 at 99 arcsec has no period or score), DIAmante, Olmschenk, DTARPS-II",
+     "method": "Cone searches and queries by TIC",
+     "result": "0 relevant rows. KELT table5 gives rms only (0.012 mag at 30 min)."
+    },
+    {
+     "catalog": "SIMBAD; PHT Talk; web search; ADS",
+     "method": "TAP cone search to 120 arcsec; API; WebSearch for 'TIC 158159741' OR 'TYC 8381-453-1' OR the Gaia ID",
+     "result": "SIMBAD lists TYC 8381-453-1 with nbref 0. PHT Talk: 0 hits. No pages mention it. ADS not verified."
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "The 1.807-d dip is not reported anywhere checked. Two facts the project's write-up omits: TARS (and Green+23) have already detected a separate, strong 0.92-d, ~3 ppt quasi-sinusoidal periodicity on this star, and the 3.6 arcsec neighbour carries a weak Gaia DR2 large-amplitude-variable flag. Neither is a prior detection of the transit signal, but both are relevant context if the star is ever reported."
+  }
+ ],
+ "notes": "Answer to the user's question: none of the planet-like signals has a prior detection in any source I could check. The TIC 87055315 eclipsing binary (P = 4.136 d) also looks new, as far as these sources go. Nothing found changes the earlier verdicts: there is still no planet candidate. The one thing that could reasonably go to ExoFOP is the TIC 87055315 eclipsing binary, and it should go as an eclipsing-binary / false-positive note, not as a planet candidate.\n\nWording caveats before anything is posted:\n1. **Gaia variability flag.** Maiz Apellaniz+23 (J/A+A/677/A137) flags TIC 87055315 as variable in Gaia G (S_G = 5.12 +- 0.30 mmag, VarF=VVM). That matches the rms expected from the 2.1% eclipse. It has no period or type, so \"no previously reported eclipses or period\" is accurate, but \"not flagged as variable in any catalogue\" is not.\n2. **SPOC TCE check proves nothing for these stars.** The MAST TCE files cover 2-min targets only. None of the six targets has SPOC 2-min data, and their TESS-SPOC FFI products include no DV reports.\n3. **TOI and QLP gaps.** The TOI list stops at sector 99, so TOIs from sectors 100-105 are not released yet. Any QLP or TOI-team rejection of TIC 87055304 (a QLP target with the diluted dip in 5 sectors) would not be public. Re-check ExoFOP right before submitting.\n4. **Not verified.**\n   - ADS full text: the API returns 401 without a token, and the web UI is JavaScript-only.\n   - Catalogues that list stars by TIC only, with no coordinates: TAPVizieR returned 503, so they could not be swept.\n   - Zooniverse Talk outside the Planet Hunters TESS project.\n   - The final Boyle+26 TARS rotation catalogue; only its MAST FITS headers were checked.\n   - Maiz Apellaniz VarF for TIC 320686138 (the query failed with a connection reset).\n5. **New facts not in the project write-up.**\n   - TIC 158159741 has a strong 0.92-d, ~3 ppt periodicity in TARS and Green+23. It is unrelated to the 1.807-d dip.\n   - OGLE-IV covers the TIC 245976814 field (14 OGLE eclipsing binaries within 2 arcmin, none at 0.507 d). OGLE does not list the 16.6 arcsec neighbour, which weakly argues against that neighbour being the host.\n\nMethod notes: VSX was the VizieR copy of version 2026-10-05. Every VizieR catalogue that returned nothing was first checked with a positive-control search that did return rows. ExoFOP cut some connections; all 98 pages were eventually fetched. J/ApJS/249/11 (suggested in the task) does not exist; the WISE variable catalogues searched were J/ApJS/237/28 and J/MNRAS/503/3975.\n\nEverything is in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/exofop/agents/novelty_audit/:\n- scripts/\n- exofop_summary.txt and exofop_json/ (98 stars)\n- tce/ (the 132 MAST files, about 524 MB, plus period_matches_pos.csv)\n- viz_cone_120.txt, viz_periods.txt, viz_posctrl.txt, viz_all.txt, viz_all_desc.txt\n- simbad.txt, simbad_refs.txt, gaia_q.txt, mast_obs.txt, tars.txt\n- ocvs_*.html, villanova/\n- tic_nbrs_2arcmin.csv\n\nNothing under /home/user/Space or /home/user/work was modified, and nothing was submitted anywhere."
+}

@@ -1,0 +1,674 @@
+{
+ "objects": [
+  {
+   "tic": "114787953",
+   "claim_tested": "README: one of 2 EBs 'not in Kostov+25 table 2 or any other catalogue checked'; contact/ellipsoidal, P=0.605775 d, never published",
+   "checks": [
+    {
+     "catalog": "VSX B/vsx/vsx (version 2026-10-05)",
+     "method": "VizieR cone 120\"",
+     "result": "no rows"
+    },
+    {
+     "catalog": "Gaia DR3 I/358/veb, vclassre, varisum",
+     "method": "VizieR cone 120\" + Gaia archive TAP by source_id 6687734258533639680",
+     "result": "no rows; phot_variable_flag=NOT_AVAILABLE"
+    },
+    {
+     "catalog": "Gaia NSS I/357 (all tables)",
+     "method": "VizieR cone + Gaia TAP nss_two_body_orbit/acceleration/non_linear/vim",
+     "result": "no rows (non_single_star=0, RUWE 2.295)"
+    },
+    {
+     "catalog": "Prsa+22 J/ApJS/258/16; Kostov+25 J/ApJS/279/50 tables 2/3/4",
+     "method": "cone 120\" + TIC constraint",
+     "result": "no rows (confirmed absent from Kostov table 2)"
+    },
+    {
+     "catalog": "ASAS-SN II/366 + online asas-sn.osu.edu/variables (2')",
+     "method": "cone / web query",
+     "result": "no rows; 'No Variables found'"
+    },
+    {
+     "catalog": "ATLAS J/AJ/156/241; ZTF J/ApJS/249/18",
+     "method": "cone 120\"",
+     "result": "no rows; both not applicable (dec -39.6 < -30)"
+    },
+    {
+     "catalog": "SuperWASP Thiemann+21 J/MNRAS/502/1299; Gao+25 J/ApJS/276/57; IJspeert+24 J/A+A/691/A242; Green+23 J/MNRAS/522/29; Justesen+21; Fetherolf+23; KELT Oelkers+18; Rowan+22; Christy+23; Chen+18 WISE",
+     "method": "cone 120\" + TIC constraint",
+     "result": "no rows in any (not even in Green+23 table 2)"
+    },
+    {
+     "catalog": "All VizieR catalogues",
+     "method": "query_region 15\", 79 tables returned, scanned all period-like columns for P, 2P, P/2 within 1%",
+     "result": "no period match"
+    },
+    {
+     "catalog": "TARS (Boyle, Bouma & Mann 2026, arXiv:2603.05586; Zenodo 10.5281/zenodo.19917941 tars_table_2)",
+     "method": "downloaded catalogue, filtered by TIC",
+     "result": "PRIOR PERIOD: adopted_period 0.3029 +/- 0.0007 d (= P/2 = 0.30289, 0.02 sigma), sectors 27,67; flag_possible_binary=True (set by RUWE>1.4, not by eclipse detection); interpreted as rotation. TARS HLSP S67 light-curve header PER1=0.3028939 d"
+    },
+    {
+     "catalog": "TESS-SPOC / SPOC DV (TCEs) at MAST",
+     "method": "astroquery.mast product list",
+     "result": "no DV report (TESS-SPOC light curve exists, no TCE)"
+    },
+    {
+     "catalog": "Villanova live TESS EB DB",
+     "method": "https://tessebs.villanova.edu/0114787953",
+     "result": "'This TESS ID is not in the catalog'"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP cone 30\"",
+     "result": "TYC 7951-1401-1, otype '*', nbref=0"
+    },
+    {
+     "catalog": "ExoFOP target JSON",
+     "method": "target.php?id=114787953&json",
+     "result": "0 TOIs, 0 CTOIs, no imaging/spectroscopy/time-series/files"
+    },
+    {
+     "catalog": "Web / ADS",
+     "method": "WebSearch on TYC and TIC IDs; ADS API",
+     "result": "no web hits; ADS full-text not verified (API returned 401, no token)"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "No EB catalogue lists it, but the claim 'not in any catalogue' is contradicted: the 2026 TARS rotation catalogue already gives a period of 0.3029 +/- 0.0007 d. That is exactly P/2, the photometric period of a contact or ellipsoidal binary. TARS reads it as rotation; its possible-binary flag comes only from RUWE. So the variability and its period were published, but its binary nature and orbital period were not."
+  },
+  {
+   "tic": "100666720",
+   "claim_tested": "README: one of 2 EBs in no catalogue; detached M-dwarf pair at 122 pc, P=7.341134 d",
+   "checks": [
+    {
+     "catalog": "VSX B/vsx/vsx",
+     "method": "cone 120\"",
+     "result": "only ASASSN-V J204153.07-501410.8 at 119.7\" (SRS, P=25.494 d) = TIC 100666707, a different star"
+    },
+    {
+     "catalog": "Gaia DR3 veb/vclassre/varisum + archive TAP (source 6474978384896815744)",
+     "method": "cone + source_id",
+     "result": "none for target (only an AGN 85\" away); phot_variable_flag NOT_AVAILABLE"
+    },
+    {
+     "catalog": "Gaia NSS I/357",
+     "method": "cone + TAP",
+     "result": "no rows"
+    },
+    {
+     "catalog": "Prsa+22; Kostov+25 tables 2/3/4",
+     "method": "cone + TIC",
+     "result": "no rows (absent from Kostov table 2 confirmed)"
+    },
+    {
+     "catalog": "ASAS-SN II/366 + online DB 2'; Christy+23",
+     "method": "cone/web",
+     "result": "no target entry (Christy+23 row at 119.9\" = TIC 100666707 SR 25.494 d)"
+    },
+    {
+     "catalog": "ATLAS, ZTF",
+     "method": "cone",
+     "result": "no rows; not applicable (dec -50)"
+    },
+    {
+     "catalog": "SuperWASP Thiemann+21, Gao+25, IJspeert+24, Green+23, Justesen+21, Fetherolf+23, KELT",
+     "method": "cone 120\" + TIC",
+     "result": "no rows"
+    },
+    {
+     "catalog": "All VizieR within 15\" (75 tables)",
+     "method": "period-column scan",
+     "result": "no match; only Stringer+19 DES RRab table (J/AJ/158/16/table11) row at 1.7\" with Per0=0.5007 d, p-ab=0.011 (not RRab, unrelated period)"
+    },
+    {
+     "catalog": "TARS 2026",
+     "method": "Zenodo tars_table_2 by TIC",
+     "result": "adopted_period 8.548 +/- 0.423 d (S67 only), 2.9 sigma from P=7.341; no 2P/P2 match; flag_possible_binary=False"
+    },
+    {
+     "catalog": "TESS-SPOC/SPOC DV",
+     "method": "MAST",
+     "result": "no DV/TCE (has QLP, TARS, CDIPS light curves)"
+    },
+    {
+     "catalog": "Villanova live TESS EB DB",
+     "method": "per-TIC page",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP cone 30\"",
+     "result": "no SIMBAD object within 30\""
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "target.php json",
+     "result": "no TOI/CTOI/imaging/spectroscopy/time series/files"
+    },
+    {
+     "catalog": "Web/ADS",
+     "method": "WebSearch TIC + Gaia DR3 ID",
+     "result": "no hits; ADS not verified"
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "This is the strongest survivor. No catalogue, HLSP, pipeline DV or SIMBAD entry gives a period matching P, 2P or P/2. The only periodicity on record is TARS's 8.55 +/- 0.42 d from a single sector. That is 2.9 sigma from 7.34 d and is labelled rotation, not eclipses. It is probably spot modulation, but a poorly measured single-sector alias cannot be fully excluded."
+  },
+  {
+   "tic": "351474229",
+   "claim_tested": "README: not in Kostov list but 'has a Gaia binary solution'; P=0.877464 d, eclipse on ellipsoidal variation",
+   "checks": [
+    {
+     "catalog": "Gaia NSS I/357 + Gaia archive TAP",
+     "method": "source_id 6429938059297465856",
+     "result": "only nss_acceleration_astro, solution type Acceleration9 (no period); no nss_two_body_orbit row. RUWE 3.635, rv_chisq_pvalue 0"
+    },
+    {
+     "catalog": "Gaia DR3 veb/vclassre/varisum",
+     "method": "cone + TAP",
+     "result": "none for target; phot_variable_flag NOT_AVAILABLE"
+    },
+    {
+     "catalog": "Green+23 J/MNRAS/522/29/table2",
+     "method": "cone 15\" / TIC",
+     "result": "PRIOR PERIOD: Porb=0.87838 d (0.10% from P), Score=0.0 (not selected; not in table3), a2c=-0.0174+/-0.0013"
+    },
+    {
+     "catalog": "TARS 2026",
+     "method": "Zenodo tars_table_2",
+     "result": "PRIOR PERIOD: adopted 0.8790 +/- 0.0041 d (0.4 sigma from P), sectors 13,94, flag_possible_binary=True (RUWE/NSS)"
+    },
+    {
+     "catalog": "KELT Oelkers+18 J/AJ/155/39/table5",
+     "method": "cone/TIC",
+     "result": "listed as NON-variable (rms30m 0.046 mag)"
+    },
+    {
+     "catalog": "VSX, Prsa+22, Kostov+25 (all tables), ASAS-SN II/366 + online, ATLAS, ZTF(n/a), SuperWASP, Gao+25, IJspeert+24",
+     "method": "cone 120\" + TIC",
+     "result": "no rows for target (a Kostov t2 row at 113\" is TIC 351474235)"
+    },
+    {
+     "catalog": "All VizieR within 15\" (96 tables)",
+     "method": "period scan",
+     "result": "only Green+23 match"
+    },
+    {
+     "catalog": "TESS-SPOC/SPOC DV",
+     "method": "MAST",
+     "result": "no DV/TCE"
+    },
+    {
+     "catalog": "Villanova live DB",
+     "method": "per-TIC page",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "cone 30\"",
+     "result": "no object"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing (no TOI/CTOI/obs)"
+    },
+    {
+     "catalog": "Web/ADS",
+     "method": "WebSearch",
+     "result": "no hits; ADS not verified"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "The period is already published in two automated catalogues: Green+23 table 2 (0.87838 d, ellipsoidal score 0) and TARS 2026 (0.879 d). Neither classifies it as an EB. The README's 'Gaia binary solution' is misleading. It is an astrometric Acceleration9 solution with no period, which implies a companion on a period of years. It is not a detection of the 0.88 d binary and may indicate a third body. The eclipse identification is new; the period is not."
+  },
+  {
+   "tic": "143042674",
+   "claim_tested": "README highlight: TYC 7034-792-1, G dwarf + M-dwarf EBLM-like EB, P=5.044137 d, first characterisation (only in Kostov t2 NN list)",
+   "checks": [
+    {
+     "catalog": "Kostov+25 J/ApJS/279/50",
+     "method": "cone + TIC",
+     "result": "table2 only (unvetted NN list, no period); not in table3/4"
+    },
+    {
+     "catalog": "Green+23 table2",
+     "method": "TIC",
+     "result": "Porb=6.255397 d, Score 0.0 - no match to P/2P/P2 (24% off)"
+    },
+    {
+     "catalog": "TARS 2026",
+     "method": "Zenodo",
+     "result": "adopted 5.797 +/- 0.140 d (S4,S31), 5.4 sigma from P; no harmonic match (likely G-star rotation)"
+    },
+    {
+     "catalog": "Gaia DR3 vari tables, NSS (source 4860406341885274240)",
+     "method": "cone + TAP",
+     "result": "none; phot_variable_flag NOT_AVAILABLE; rv_chisq_pvalue=0 (RV variable, no period)"
+    },
+    {
+     "catalog": "Gavras+23 J/A+A/674/A22",
+     "method": "cone",
+     "result": "SOLAR_LIKE from RAVE (Zerjal+2017 active star), no period"
+    },
+    {
+     "catalog": "VSX, Prsa+22, ASAS-SN II/366 + online, Rowan+22, ATLAS/ZTF (n/a), SuperWASP, Gao+25, IJspeert+24, Justesen+21, Fetherolf+23, KELT, EBLM tables",
+     "method": "cone 120\" + TIC; all-VizieR 15\"",
+     "result": "no rows; no EBLM catalogue in the 166 VizieR tables within 15\""
+    },
+    {
+     "catalog": "TESS-SPOC/SPOC DV",
+     "method": "MAST",
+     "result": "no DV/TCE (TESS-SPOC light curves exist)"
+    },
+    {
+     "catalog": "Villanova live DB",
+     "method": "per-TIC",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*' TYC 7034-792-1, nbref=5 (RAVE DR4/5/6, Gaia red clump calibration, TGAS clusters) - no variability/binary refs; X-ray counterparts in 4XMM/Chandra/eRASS tables"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "no TOI/CTOI/obs"
+    },
+    {
+     "catalog": "Web/ADS",
+     "method": "WebSearch TYC/TIC",
+     "result": "no hits (only unrelated TYC 7037-89-1); ADS not verified"
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No prior period was found. The only prior flag is Kostov+25 table 2, which has no period, and the README already says so. Green+23 (6.26 d) and TARS (5.80 d) list other periods, probably rotation of the active G star, and neither matches. Context for any write-up: the star is a known X-ray source, and RAVE/Zerjal flags it as chromospherically active."
+  },
+  {
+   "tic": "71315603",
+   "claim_tested": "row 5: CD-44 14744, contact/ellipsoidal P=0.507699 d, first characterised",
+   "checks": [
+    {
+     "catalog": "TESS-SPOC FFI DV, S68",
+     "method": "MAST hlsp_tess-spoc_...0000000071315603-s0068-s0068_tess_v1_dvr.xml",
+     "result": "PRIOR DETECTION: 2 TCEs, P=0.5083357 d (0.13%), MES 43.1 and 22.9, epochs at our phase 0.958 and 0.457 (primary + secondary)"
+    },
+    {
+     "catalog": "TARS 2026",
+     "method": "Zenodo",
+     "result": "PRIOR PERIOD: 0.2542 +/- 0.0006 d = P/2 (0.6 sigma), flag_possible_binary=True"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "Green+23",
+     "method": "TIC/cone",
+     "result": "not present"
+    },
+    {
+     "catalog": "VSX, Gaia veb/vclassre/NSS, Prsa+22, ASAS-SN II/366+online, ATLAS/ZTF n/a, SuperWASP, Gao+25, IJspeert+24, KELT",
+     "method": "cone 120\" + TIC + Gaia TAP",
+     "result": "no rows"
+    },
+    {
+     "catalog": "Villanova live DB",
+     "method": "per-TIC",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*' CD-44 14744, nbref 0"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    },
+    {
+     "catalog": "Web",
+     "method": "WebSearch",
+     "result": "no hits"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "The period and both eclipses are in a public TESS-SPOC DV report from S68 (MAST record released 2024-01-10). TARS also lists the P/2 period. Neither catalogue classifies it as an EB."
+  },
+  {
+   "tic": "80064194",
+   "claim_tested": "row 15: TYC 8394-1748-1 detached EB P=5.810694 d (19%/7% eclipses), first characterised",
+   "checks": [
+    {
+     "catalog": "TESS-SPOC FFI DV, S67",
+     "method": "MAST dvr.xml",
+     "result": "PRIOR DETECTION: TCE1 P=5.8101826 d, MES 1162, epoch at our phase 0.999 (primary); TCE2 P=5.8078675, MES 454, phase 0.500 (secondary)"
+    },
+    {
+     "catalog": "Green+23",
+     "method": "TIC",
+     "result": "Porb 3.194671, Score 0 - no match"
+    },
+    {
+     "catalog": "TARS",
+     "method": "Zenodo",
+     "result": "6.728 +/- 0.218 d (4.2 sigma) - no match"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "VSX",
+     "method": "cone 120\"",
+     "result": "only Gaia DR3 6671495953555768832 at 84.9\" (RS, 0.1219 d) - different star"
+    },
+    {
+     "catalog": "Gaia DR3 vari/NSS, Prsa+22, ASAS-SN, ATLAS/ZTF n/a, SuperWASP, Gao+25, IJspeert+24, KELT",
+     "method": "cone + TIC + TAP",
+     "result": "no rows for target"
+    },
+    {
+     "catalog": "Villanova",
+     "method": "per-TIC",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*', nbref 0"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    },
+    {
+     "catalog": "Web",
+     "method": "WebSearch",
+     "result": "no hits"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "The S67 TESS-SPOC pipeline detected the primary and secondary eclipses at the correct period (MAST record released 2024-01-09). No catalogue lists it as an EB."
+  },
+  {
+   "tic": "404124262",
+   "claim_tested": "row 25: UCAC2 10760330 detached EB P=7.598674 d (total primary 10.8%)",
+   "checks": [
+    {
+     "catalog": "TARS 2026",
+     "method": "Zenodo",
+     "result": "adopted 7.776 +/- 0.351 d, single sector S13; consistent with P at 0.5 sigma but imprecise (2.3% off); flag_possible_binary False"
+    },
+    {
+     "catalog": "Green+23",
+     "method": "TIC",
+     "result": "Porb 7.014137, Score 0 (7.7% off) - no match"
+    },
+    {
+     "catalog": "KELT Oelkers+18 table5",
+     "method": "TIC",
+     "result": "listed NON-variable"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "TESS-SPOC/SPOC DV",
+     "method": "MAST",
+     "result": "none"
+    },
+    {
+     "catalog": "VSX, Gaia vari/NSS, Prsa+22, ASAS-SN II/366+online, ATLAS/ZTF n/a, SuperWASP, Gao+25, IJspeert+24",
+     "method": "cone 120\" + TIC + TAP",
+     "result": "no rows; Gaia rv_chisq_pvalue=0"
+    },
+    {
+     "catalog": "Villanova",
+     "method": "per-TIC",
+     "result": "TIC in DB, 'No associated EB entries found'"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*', nbref 4 (RAVE, APASS)"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    },
+    {
+     "catalog": "Web",
+     "method": "WebSearch",
+     "result": "no hits"
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No firm prior detection. TARS's single-sector 7.78 +/- 0.35 d is statistically consistent with 7.60 d, but it is labelled rotation and is too imprecise to count as a detection. It is a weak caveat only. The eclipses are not reported anywhere."
+  },
+  {
+   "tic": "281740175",
+   "claim_tested": "row 35: UCAC4 155-000744 detached EB P=11.052189 d",
+   "checks": [
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "Villanova live TESS EB DB",
+     "method": "per-TIC page",
+     "result": "TIC in DB with signal 1, 'In catalog? False', t0/P = None (no period)"
+    },
+    {
+     "catalog": "KELT table5",
+     "method": "TIC",
+     "result": "listed NON-variable"
+    },
+    {
+     "catalog": "Green+23, TARS",
+     "method": "TIC",
+     "result": "not present in either"
+    },
+    {
+     "catalog": "TESS-SPOC/SPOC DV",
+     "method": "MAST",
+     "result": "none"
+    },
+    {
+     "catalog": "VSX, Gaia vari/NSS, Prsa+22, ASAS-SN+online, ATLAS/ZTF n/a, SuperWASP, Gao+25, IJspeert+24, all-VizieR 15\" (99 tables)",
+     "method": "cone + TIC + TAP",
+     "result": "no rows/no period match; Gaia rv_chisq_pvalue=0, RUWE 9.19"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*', nbref 2 (GALAH DR2/DR3)"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    },
+    {
+     "catalog": "Web",
+     "method": "WebSearch",
+     "result": "no hits"
+    }
+   ],
+   "prior_detection_found": false,
+   "verdict": "novel_as_claimed",
+   "details": "No prior period was found. The Villanova team apparently examined the star (the database holds a signal entry) but did not catalogue it and gives no period."
+  },
+  {
+   "tic": "63594264",
+   "claim_tested": "row 45: TYC 7907-2230-1 detached EB P=1.813884 d",
+   "checks": [
+    {
+     "catalog": "TESS-SPOC FFI DV, S39",
+     "method": "MAST dvr.xml",
+     "result": "PRIOR DETECTION: 4 TCEs; TCE1 P=1.8136477 d MES 97.1 at our phase 0.997 (primary); TCE2 P=1.8133264 MES 11.6 at phase 0.498 (secondary)"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "VSX / Gaia veb",
+     "method": "cone 120\"",
+     "result": "nearest Gaia DR3 6725048595134110464 at 49.2\" (E, 0.278673 d) - different star/period"
+    },
+    {
+     "catalog": "KELT table5",
+     "method": "TIC",
+     "result": "listed NON-variable"
+    },
+    {
+     "catalog": "Green+23, TARS (d~890 pc), Prsa+22, ASAS-SN+online, SuperWASP, Gao+25, IJspeert+24 (nearest 76\" other TIC)",
+     "method": "cone + TIC",
+     "result": "no rows for target"
+    },
+    {
+     "catalog": "Villanova",
+     "method": "per-TIC",
+     "result": "TIC in DB, no associated EB entries"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*', nbref 0"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "The S39 TESS-SPOC DV report (MAST record released 2021-11-29) has the correct period and both eclipses. No catalogue lists it as an EB."
+  },
+  {
+   "tic": "379508029",
+   "claim_tested": "row 55: detached EB P=1.097569 d, no secondary",
+   "checks": [
+    {
+     "catalog": "Green+23 J/MNRAS/522/29/table2",
+     "method": "cone 15\"/TIC",
+     "result": "PRIOR PERIOD: Porb=2.20038 d = 2P (0.24%), Score 0.0, not in table3"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only"
+    },
+    {
+     "catalog": "KELT table5",
+     "method": "TIC",
+     "result": "listed NON-variable"
+    },
+    {
+     "catalog": "TARS (d~740 pc), TESS-SPOC DV",
+     "method": "Zenodo/MAST",
+     "result": "absent; no DV"
+    },
+    {
+     "catalog": "VSX, Gaia vari/NSS, Prsa+22, ASAS-SN+online, SuperWASP, Gao+25, IJspeert+24, all-VizieR 15\"",
+     "method": "cone + TIC + TAP",
+     "result": "no other rows/matches (Kostov t2 also lists 3.9\" neighbour TIC 1816875234)"
+    },
+    {
+     "catalog": "Villanova",
+     "method": "per-TIC",
+     "result": "not in catalog"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "cone 30\"",
+     "result": "no object"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "nothing"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "This is a weak prior. Green+23 fitted every TESS target, and the periodicity it found is twice our period, the doubling expected under an ellipsoidal assumption. It scores 0 and is not called a binary. The eclipse identification is new."
+  },
+  {
+   "tic": "320327029",
+   "claim_tested": "row 49: TYC 8786-1621-1 detached EB P=4.440732 d; and whether it relates to TOI 3276.01 (TIC 320327056, P=7.0327412 d) 154\" away",
+   "checks": [
+    {
+     "catalog": "TESS-SPOC FFI DV, S67",
+     "method": "MAST dvr.xml",
+     "result": "PRIOR DETECTION: TCE1 P=4.4421277 d MES 238 at our phase 0.998 (primary); TCE2 MES 40.9 at phase 0.499 (secondary); no 7.03 d TCE"
+    },
+    {
+     "catalog": "Green+23",
+     "method": "TIC",
+     "result": "Porb 5.266667, Score 0 - no match"
+    },
+    {
+     "catalog": "Kostov+25",
+     "method": "TIC",
+     "result": "table2 only (also lists 14.4\" neighbour TIC 320327031)"
+    },
+    {
+     "catalog": "KELT table5",
+     "method": "TIC",
+     "result": "NON-variable"
+    },
+    {
+     "catalog": "TARS",
+     "method": "Zenodo",
+     "result": "absent"
+    },
+    {
+     "catalog": "VSX, Gaia vari/NSS, Prsa+22, ASAS-SN+online, SuperWASP, Gao+25, IJspeert+24",
+     "method": "cone 120\" + TIC + TAP",
+     "result": "no rows for target"
+    },
+    {
+     "catalog": "TOI 3276.01 comparison",
+     "method": "ExoFOP toi.csv + JSON, ephemeris arithmetic",
+     "result": "separation 154.0\" = 7.33 TESS px; P_TOI/P_EB=1.58369 (no P/2P/P/2/3P/P/3 match; nearest small ratio 8/5 off by 1.03%); 8 TOI transits in S13/S27 fall at EB phases 0.05,0.63,0.21,0.80,0.38,0.15,0.73,0.32 (TOI epoch at EB phase 0.733); EB is 7.18x brighter than the T=12.69 TOI host, so the host would need ~28% eclipses at 4.44 d to make the 3.9% dip; TOI depth 17290 ppm, QLP faint-star search, TFOP PC with SG1 LCO photometry 2021"
+    },
+    {
+     "catalog": "SIMBAD",
+     "method": "TAP",
+     "result": "'*', nbref 6 (RAVE DR2-DR6, APASS); two RAVE IDs"
+    },
+    {
+     "catalog": "ExoFOP JSON",
+     "method": "json",
+     "result": "no TOI/CTOI/obs on 320327029"
+    }
+   ],
+   "prior_detection_found": true,
+   "verdict": "partially_known",
+   "details": "The EB period and both eclipses are in the public S67 TESS-SPOC DV report (released 2024-01-10). It is unrelated to TOI 3276.01: the periods differ with no harmonic relation, TOI transits fall at random EB phases, and the flux ratio rules out either star producing the other's signal."
+  }
+ ],
+ "notes": "I ran the full sweep (all-VizieR 15\" cone, TESS DV, TARS, Green+23) on all 62 EBs, not just the 11 sampled objects.\n\n**Bottom line:** the README sentence \"62 ... characterised for the first time ... orbital period and eclipses had never been published\" is not supported. 30 of the 62 already have a public period matching P, 2P or P/2 within 1%:\n- **TESS pipeline detections (15 stars):** TESS-SPOC or SPOC DV reports at MAST (S39, S56-S69, and SPOC 2-min S104-S106 for TIC 80453626). Each lists the period, and the TCE epochs fall at our primary and secondary eclipses. The 15 TICs are 63594264, 71315603, 80064194, 80453626, 114917180, 143345010, 156003824, 179677500, 180444443, 197985960, 261500541, 278802197, 320327029, 327599302 and 406279367.\n- **Green+23 table 2 Porb (14 stars):** all have Score 0 or very low, and none is in table 3.\n- **TARS 2026 rotation catalogue (12 stars):** Boyle, Bouma & Mann, arXiv:2603.05586, Zenodo 10.5281/zenodo.19917941.\n- **KELT Oelkers+18 table 6 Prot (2 stars):** 156003824 at P and 89040715 at P/2.\n\nIn the 6-row random sample, 4 of 6 have a prior period (3 via DV). None of the 62 is in any vetted EB catalogue: Prsa+22, Kostov+25 tables 3/4, Justesen+21, IJspeert+21/24, Gao+25, VSX, Gaia DR3 veb/vclassre, ASAS-SN, or the Villanova live catalogue. So the claim that holds up is \"first identification and characterisation as an EB\", not \"period never published\". By chance, about 0.5 false matches are expected among the 42 Green+23 entries.\n\n**Strongest remaining novelty:**\n- TIC 100666720\n- TIC 143042674 (only the Kostov table 2 flag, no period)\n- TIC 281740175\n- TIC 404124262 (weak TARS caveat)\n\n**Corrections to the README:**\n- TIC 114787953 is in TARS (0.3029 d = P/2), so \"in no catalogue\" is false.\n- TIC 351474229's \"Gaia binary solution\" is an Acceleration9 astrometric solution with no period, so it is not a detection of the 0.88-d binary. That star also appears in Green+23 and TARS with the period.\n\n**TOI 3276.01:** unrelated to EB TIC 320327029.\n\n**Not verified:**\n- ADS full-text search (API returned 401, no token).\n- VSX direct (403); I used the VizieR B/vsx/vsx copy dated 2026-10-05.\n- ATLAS and ZTF do not cover dec < -30, which is all 11 objects.\n- SuperWASP was checked only through Thiemann+21 (301 stars).\n- TIC 87055315 has no TARS entry and no DV report; nothing else was checked for it.\n\n**Files** (all in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/exofop/agents/eb_adv/):\n- targeted_<TIC>.txt: per-catalogue 2' results\n- scan_out.txt: all-VizieR scan\n- idq_out.txt: source_id and TIC queries\n- simbad_out.txt\n- villa_out.txt and web_checks_out.txt: Villanova and ASAS-SN online\n- tars_hits.csv\n- dl_dv/*.xml: DV reports\n- exofop_json/*.json\n- scripts/"
+}

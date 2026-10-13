@@ -310,3 +310,45 @@ Full account: tess-search/tic87055304/README.md and tic87055304/analysis/.
   - 320686138: 0.981 / 0.250
   - 155991187: 0.988 / 0.335
   - 245976814: 0.844 / 0.814 (spread over many nearby stars; on-target planet 0.11)
+
+## NOVELTY RE-AUDIT AND EXOFOP CHECK (2026-10-13)
+Asked whether anything could go to ExoFOP. The re-audit used three investigators, an adversarial referee and a
+completeness critic; outputs are in tess-search/reaudit/.
+
+**ExoFOP policy (checked at the source).**
+- Since 2026-08-19, CTOIs must already be published in a peer-reviewed journal. An RNAAS also qualifies, but only if it
+  cites peer-reviewed detection and vetting methods.
+- Both an ExoFOP account and separate upload approval are needed.
+- CTOI dispositions are PC or FP (no EB). There are 5,088 PC CTOIs and 16 FP; none of the FP ones was ever promoted
+  or dispositioned.
+- None of our 71 objects is within 3' of a TOI or CTOI, except EB TIC 320327029, which is unrelated to TOI 3276.01
+  (154"; periods 4.44 vs 7.03 d).
+
+**Errors in our novelty claims.**
+- 34 of the 62 EBs already have a public period matching P, P/2 or 2P within 1%:
+  - TESS-SPOC/SPOC DV reports: 15. The SPOC TCE lists we checked cover only 2-min targets; the FFI DV reports were missed.
+  - Tey+23 QLP TCEs, J/AJ/165/95: 7.
+  - Green+23 table 2 Porb: 14.
+  - TARS 2026: 12.
+  - KELT Oelkers+18: 2. KELT was in eb_select.py's skip list.
+  - So 28 have no known prior period.
+- None of the 62 is in a vetted EB or variable catalogue.
+- TIC 114787953: TARS 0.3029 d, which is P/2.
+- TIC 100666720: TARS 8.55 d (unrelated). Its CDIPS header shows it was on a HATS/HATNet candidate list in 2021; no
+  period is public.
+- The four "Gaia NSS binary solutions" (33445288, 143345010, 278802197, 351474229) are all Acceleration7/9 astrometric
+  solutions. They indicate long-period companions, not the eclipsing orbits.
+- TIC 158159741's 1.807-d signal is a Tey+23 QLP TCE (1.807655 d, 1720 ppm, labels E,E,N,E,J,E) that never became a
+  TOI, so it is not new. The star also has a 0.92-d modulation (Green+23, TARS).
+- TIC 87055315 has no prior period or eclipse anywhere. Its Gaia variability flag (Maiz Apellaniz+23, VarF=VVM) is
+  generic.
+- TIC 245976814: OGLE-IV covers the field (14 EBs within 2') but does not list the 16.6" neighbour, which weakly
+  counts against it as host.
+- The host attribution for the 62 EBs relies on the biased centroid.py. 22 of them have neighbours able to mimic the
+  eclipse.
+
+**Leads for existing CTOIs and TOIs.**
+- Our classifier flagged odd/even or secondary signals at >=5 sigma on 37 stars with CTOIs: 21 from lipponen's 2019 bulk
+  upload and 16 others, including DTARPS, DIAmante and RAVEN candidates. TOIs 3288.01 and 6787.01 had weaker flags.
+- The same flags fire on about 5 of 42 known planets.
+- A vetting workflow with controls and a referee is running.

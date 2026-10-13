@@ -1,0 +1,393 @@
+{
+ "items": [
+  {
+   "item": "(a) CTOI on TIC 87055304, user disposition FP ('NEB on TIC 87055315'), filed to get ahead of a possible QLP TOI from S104/S105",
+   "proposed_venue": "ExoFOP-TESS Community TOI upload (https://exofop.ipac.caltech.edu/tess/candidate_help.php)",
+   "verdict": "not_worth_submitting",
+   "strongest_objection": "1) It cannot be filed. Since 2026-08-19 ExoFOP takes only candidates already published in a peer-reviewed journal (or in an RNAAS that cites peer-reviewed methods), and the uploader needs an approved account plus approval to upload published candidates (news.php, candidate_help.php). None of that exists here. 2) Past FP CTOIs did nothing downstream. In today's ctoi.csv none of the 16 FP CTOIs was promoted to a TOI or given a TFOPWG disposition, and none was filed after the reopening. 3) The benefit of filing early is speculative. QLP has already released its S93 faint-search TOIs for this part of the sky with the same sector set (TOI 7835.01 at 18:01:30 -40:03, alerted 2026-06-25; TOI 7913.01 at 18:04:55 -53:54, alerted 2026-08-06), and TIC 87055304 was not alerted. 4) An FP label rests on TESS pixels alone: about 3.9 sigma in the most conservative single test, 3.1 sigma in the model-free one, and never confirmed by photometry that resolves the two stars. If the localisation were wrong, the label would bury a real candidate.",
+   "what_would_make_it_ready": "In this order: a peer-reviewed paper, or an RNAAS citing published methods; an approved ExoFOP account; approval to upload published candidates; and confirmation that resolves the two stars. Two ways to get that confirmation: Gaia DR4 epoch photometry, due 2026-12-02 (https://www.cosmos.esa.int/web/gaia/release), with 9.3 arcsec separation easily resolved; or seeing-limited photometry of one 2.1% eclipse of TIC 87055315 (P=4.1361919 d, T0=BTJD 3271.53062). Even then, item (g) does the same job at lower cost."
+  },
+  {
+   "item": "(b) CTOI on TIC 87055315 itself as an eclipsing binary",
+   "proposed_venue": "ExoFOP-TESS CTOI",
+   "verdict": "not_worth_submitting",
+   "strongest_objection": "ExoFOP has no EB disposition; the only allowed values are blank, PC or FP. The object is plainly not a planet: a 21.4 ppt eclipse on a 1.93 Rsun star gives a companion of 0.269 Rsun. It has never been a TCE or TOI (MAST has no SPOC or TESS-SPOC products for it, and it is not in toi.csv or ctoi.csv), so no vetter needs a warning. It would also duplicate (a) for the same signal, and it faces the same publication and approval barriers. ExoFOP warns that 'poorly defined or duplicate candidates will be removed and may result in suspension or removal of your account'.",
+   "what_would_make_it_ready": "Nothing makes the CTOI route appropriate. If it is recorded anywhere, that should be VSX (item e) or a paper (item f), and only after confirmation that resolves the two stars."
+  },
+  {
+   "item": "(c) CTOIs (FP/EB) for the other five planet-like signals: TIC 320686138, 155991187, 72651793, 245976814 and 158159741",
+   "proposed_venue": "ExoFOP-TESS CTOI",
+   "verdict": "not_worth_submitting",
+   "strongest_objection": "None is a TCE or TOI, so an FP CTOI warns nobody about anything. Four of them have no identified host. Corrected TRICERATOPS NFPP values are 0.16-0.81, with probability spread over several nearby-star and SEB scenarios. For TIC 245976814, OGLE-IV covers the field but does not list the 16.6 arcsec neighbour, which argues against it as host. TIC 158159741 has a 0.92-d modulation (TARS PER1 about 0.92 d; Green+23 Porb 0.9227 d) that the write-up never addresses. Labelling these 'EB' would be an ill-defined disposition, and the publication barrier applies.",
+   "what_would_make_it_ready": "Only if one of them becomes a TOI. Then post the specific evidence as an ExoFOP observing note on that TOI, following item (g)."
+  },
+  {
+   "item": "(d) The 62 EBs as CTOIs",
+   "proposed_venue": "ExoFOP-TESS CTOI (bulk upload)",
+   "verdict": "not_worth_submitting",
+   "strongest_objection": "1) Wrong channel: these are non-planetary objects, and a bulk FP upload is what ExoFOP says it removes. 2) 30 of the 62 already have a public period within 1% of P, P/2 or 2P: 15 in public TESS-SPOC/SPOC DV reports at MAST, 14 in Green+23, 12 in TARS 2026, 2 in KELT (sources overlap). 3) Which star in each field varies was decided with src/centroid.py, the estimator the project's own audit found biased toward the target (tic87055304/README.md \u00a75.1). 22 of the 62 list neighbours that could mimic the signal, some within one TESS pixel at similar brightness: TIC 316096209 has a neighbour 3.2 arcsec away at the same T, TIC 212554303 one 2.4 arcsec away at the same T. 4) Unpublished, so not accepted anyway.",
+   "what_would_make_it_ready": "Not applicable for CTOIs."
+  },
+  {
+   "item": "(e) The 62 EBs, or the few without a prior period, to AAVSO VSX",
+   "proposed_venue": "AAVSO VSX New Star form (https://vsx.aavso.org/index.php?view=about.notice)",
+   "verdict": "conditional",
+   "strongest_objection": "VSX's own rules argue against a bulk upload (checked on vsx.aavso.org 2026-10-13). 'Only 5 submissions per week'; 'Only 1 submission is allowed for new users until they get one approved'; systematic searches should go to journals such as JAAVSO. VSX also describes TESS as 'Useless in most fields due to blending', with a contamination radius of about 120 arcsec, and data-mined submissions are judged more strictly. The main scientific weakness is the same one: attribution for the 62 depends on the biased centroid.py, which is exactly how TIC 87055304 was misattributed. 30 of 62 already have published or pipeline periods, so discoverer credit cannot be claimed for those. Gaia DR4 (2026-12-02) will publish vari_eclipsing_binary (2,392,500 rows) and epoch photometry for all sources, and will probably catalogue many of them. The user would have to create the account; an agent cannot.",
+   "what_would_make_it_ready": "1) Limit it to a handful with no prior period and no neighbours able to mimic: TIC 143042674, TIC 281740175, and TIC 404124262 (cite TARS 7.78\u00b10.35 d). 2) Add TIC 100666720 and TIC 87055315 only after a resolved or PRF-level localisation. Five neighbours at 21-42 arcsec could mimic TIC 100666720; Gaia DR4 epoch photometry would test both. 3) The user submits personally, at most 5 per week, with the Gaia DR3 position, a phase plot, TESS/QLP references, and any TARS, Green+23 or DV prior period cited."
+  },
+  {
+   "item": "(f) Short RNAAS on TIC 87055315 / the localisation of the TIC 87055304 signal",
+   "proposed_venue": "Research Notes of the AAS (https://journals.aas.org/scope-of-research-notes-of-the-american-astronomical-society/)",
+   "verdict": "conditional",
+   "strongest_objection": "1) The science is thin: one nearby EB on a star that is not a TOI. The companion mass is unmeasured (Gaia DR3 gives TIC 87055315 7 RV transits and no rv_amplitude), so 'EBLM' is an inference. 2) It would not unlock a CTOI. The PRF localisation, injection calibration and model-free pixel test are the project's own unpublished code, while ExoFOP accepts an RNAAS only if the methodology was previously peer-reviewed. 3) A decisive, free, independent test arrives in 7 weeks (Gaia DR4 epoch photometry, 2026-12-02), so publishing now risks a public reversal. 4) The AAS LLM guidelines require disclosing AI use, bar AI authorship and forbid unsupervised generation. For an AI-heavy analysis submitted by a non-professional, that means real reputational exposure if a resolved check disagrees. Whether those guidelines cover RNAAS explicitly was not verified.",
+   "what_would_make_it_ready": "1) Confirmation that resolves the two stars, from Gaia DR4 epoch photometry or ground photometry of an eclipse. 2) A human author who has re-derived the key numbers (21.4 ppt depth; 0.269 Rsun companion). 3) Localisation repeated with, or validated against, a published method. 4) Accurate novelty wording: 'no prior period or eclipse detection'. Maiz Apellaniz+23 already flags the star (VarF=VVM), so 'not flagged as variable anywhere' would be wrong. 5) An explicit AI disclosure."
+  },
+  {
+   "item": "(g) Wait for a TOI on TIC 87055304, then post the localisation evidence as an ExoFOP observing note and/or to TFOP SG1",
+   "proposed_venue": "ExoFOP-TESS observing notes/files on the TOI page (https://exofop.ipac.caltech.edu/tess/help.php#upload); TFOP SG1 (https://tess.mit.edu/followup/apply-join-tfop/)",
+   "verdict": "conditional",
+   "strongest_objection": "It may never trigger: TIC 87055304 was not alerted from QLP S93 faint-search, although that release covered this part of the sky. Observing notes need an approved ExoFOP account. Approval asks for professional-level work and an affiliation; 'Citizen Scientist' is a position option, but whether an unaffiliated user gets approved was not verified. SG1's routine seeing-limited photometry would resolve a 9.3 arcsec, delta-T 1.8 mag neighbour anyway, so the note saves perhaps one observation.",
+   "what_would_make_it_ready": "This is the best of the options, because it needs no publication and acts only when someone would use it. To be ready: 1) Re-check toi.csv after each TOI release, and/or use ExoFOP target-follow or the tess-toi-info list. 2) Keep a one-page evidence sheet with the ephemeris (P=4.1361919\u00b10.0000053 d, T0=BTJD 3271.53062), the predicted 2.1% eclipse on TIC 87055315 and the absence of a dip on TIC 87055304, phrased as TESS-pixel evidence that has not been confirmed. 3) Add the Gaia DR4 epoch-photometry result after 2026-12-02. 4) If there is no account, send a short email to the SG1 chair."
+  },
+  {
+   "item": "(h) Added: correct the repo's own novelty and Gaia-NSS claims before anything goes outside",
+   "proposed_venue": "The project's own README.md and candidates/new_eclipsing_binaries.csv (/home/user/Space/tess-search; not edited by this referee)",
+   "verdict": "worth_submitting",
+   "strongest_objection": "Not an external submission, but every external item depends on it. Three statements in the README are false: 'orbital period and eclipses had never been published' (30 of 62 have one); '2 ... are not in that list or any other catalogue checked' (TIC 114787953 is in TARS at P/2 and TIC 100666720 is in TARS at 8.55 d); and '4 systems already have Gaia binary solutions, so ... the binarity was known' (all four are Gaia nss_acceleration_astro solutions with no period, Acceleration7/9, and say nothing about the short-period orbit).",
+   "what_would_make_it_ready": "1) Reword to 'first identification and characterisation as eclipsing binaries; 30/62 have a previously public period' and link /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/exofop/agents/referee2/prior_period_summary_62.csv. 2) Fix the NSS wording; Gaia RV variability, not NSS, is the evidence of binarity. 3) State that host attribution for the 62 rests on the biased centroid.py and that 22 have neighbours able to mimic. 4) In src/eb_select.py, stop skipping J/AJ/155/39 (KELT) and add the TARS, Green+23 and TESS-SPOC DV checks."
+  },
+  {
+   "item": "(i) Added: send the periods for the 59 Kostov-table-2 EBs to the Kostov+25 / Eclipsing Binary Patrol team",
+   "proposed_venue": "Eclipsing Binary Patrol advanced-user form / authors (https://science.nasa.gov/citizen-science/eclipsing-binary-patrol/; arXiv:2506.05631)",
+   "verdict": "conditional",
+   "strongest_objection": "No formal submission route was verified, and an unsolicited AI-generated list may be ignored. Host attribution has the same centroid.py weakness, and the team's own vetting will probably reach these targets anyway.",
+   "what_would_make_it_ready": "A clean table of the 59 with P, T0, depths, a localisation-quality flag, the neighbours able to mimic, and the prior-period column from this audit, sent by the user personally after joining through the form."
+  },
+  {
+   "item": "(j) Added: a refereed catalogue paper on the EBs (JAAVSO / OEJV / Peremennye Zvezdy)",
+   "proposed_venue": "JAAVSO / OEJV / Peremennye Zvezdy Prilozhenie",
+   "verdict": "conditional",
+   "strongest_objection": "Half the periods are already public. Gaia DR4's EB catalogue (2026-12-02) will absorb many of the rest within weeks, host attribution is not established at sub-pixel level, and a human author is required.",
+   "what_would_make_it_ready": "Cross-match against Gaia DR4 after release, run PRF-level localisation for every system, restrict novelty claims to the systems that are genuinely new, and have a human author who discloses AI use."
+  }
+ ],
+ "errors_in_research": "My tables are in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/exofop/agents/referee2/: prior_period_table_62.csv (full), prior_period_summary_62.csv (compact), specific_checks.csv. Raw query outputs are in data/ and scripts in scripts/.\n\n1) The novelty_signals agent (and the task brief) say the TOI list \"only reaches sector 99\". Wrong. toi.csv (2026-10-12) has TOIs with S100: 6, S101: 7, S102: 3 (e.g. TOI 7822.01 spoc-s100-b02; TOI 7920.01/7921.01 spoc-s102-b02, alerted 2026-08-06) and none for S103-S106. The policy agent's correction is right.\n\n2) The policy agent says of the 16 FP CTOIs that \"none came from a published paper\". Wrong. The 3 bryant/tfopwg FP CTOIs (60910638.01, 311555090.01, 406717909.01) have Notes \"Candidate detected by Bryant et al. (2023; https://doi.org/10.1093/mnras/stad626)\". Only the Paper column is empty.\n\n3) The novelty_EBs agent flags only TIC 351474229's \"Gaia binary solution\". The problem covers all four. Gaia archive TAP: 33445288 Acceleration9 (sig 30.2), 143345010 Acceleration7 (24.7), 278802197 Acceleration9 (40.9), 351474229 Acceleration9 (21.3). nss_two_body_orbit, nss_non_linear_spectro and nss_vim_fl return 0 rows for each. The README's \"4 systems already have Gaia binary solutions ... binarity was known\" is therefore unsupported by NSS. Gaia RV variability (rv_amplitude_robust 176, 140, 24 and 243 km/s, chisq p of 0 or about 5e-5) is the real prior hint.\n\n4) README claim that 2 EBs are \"not in any other catalogue checked\". False for both. TIC 114787953 is in TARS at 0.3029\u00b10.0007 d (= P/2 to 0.004%; HLSP S67 PER1 = 0.3028939 d). TIC 100666720 is in TARS at 8.548\u00b10.423 d; that period does not match, so its period novelty holds, but its catalogue novelty does not.\n\n5) The novelty_signals agent presents the Maiz Apellaniz+23 flag on TIC 87055315 (confirmed: Gaia DR3 6720986208895208960, SG = 5.12\u00b10.30 mmag, VarF = VVM) as matching the eclipse rms. It is non-specific. TIC 87055304 itself (6720986204578421888, RUWE 18.84) has a larger SG of 12.75\u00b10.11 mmag (VarF = VNV), and 55 of the 62 EBs carry a V flag. It cannot be cited as independent support for the localisation.\n\n6) The novelty_EBs agent expects \"about 0.5 false matches among 42 Green+23 entries\". A permutation test (5,000 shuffles) gives a mean of 0.82 (95th percentile 2) for Green+23 (42 stars) and 0.79 for TARS (33 stars). That is minor: the observed 14 and 12 matches are far above chance.\n\n7) The novelty_signals agent reported Maiz VarF for TIC 320686138 as unavailable (query failed). It is VVM, SG = 4.53\u00b10.31 mmag.\n\n8) Minor: Kostov+25 table 2 is \"~900,000\" in the VizieR title but \"about 873,000\" in the README. The exact number was not verified.\n\nBundle claims I re-verified as correct:\n- 30 of 62 have a prior period within 1% of P, P/2 or 2P: DV 15, Green+23 table 2 14, TARS 12, KELT Oelkers+18 table 6 2 (156003824 Prot 4.97092 d, 89040715 Prot 2.31038 d = P/2).\n- TARS file provenance: md5 49e0b7538840dea83ecbde3a48387fd6 equals the Zenodo 19917941 checksum.\n- 59 of 62 are in Kostov table 2 by TIC; none is in tables 3 or 4 or in Prsa+22.\n- No VSX (15\"), Gaia DR3 veb/vrm/vst, ASAS-SN II/366/catv2021 (30\"), KELT Variables (30\"), IJspeert+24, Gao+25 or WISE entries for any of the 62.\n- No prior period for TIC 100666720, 143042674, 281740175 or 87055315. TIC 404124262 has none within 1%, but TARS gives 7.776\u00b10.351 d from S13 only, which is 2.3% off yet within 0.5 sigma.\n- MAST has DV products for only 16 TICs (the 15 plus 139256801 at 11.20 d).\n- The policy agent's FP-CTOI dates and the counts of 1,174 Paper rows and 814 promoted CTOIs.\n- TOIs 7835.01 and 7913.01 (qlp-s93-faintsearch, sectors 13,39,66,93).\n- VSX rule quotes, checked on vsx.aavso.org 2026-10-13.",
+ "missing_checks": "1) Host-star attribution for the 62 EBs (missed by the whole bundle). src/eb_select.py's on-target cut (offset \u2264 2.5 sigma) uses offset_sigma from src/centroid.py, via eb_analysis.py localise(). The project's own audit (tic87055304/README.md \u00a75.1) found that estimator biased toward the target: it returns positions about 0.6 of the way to a neighbour and reaches 3 sigma only 6% of the time. 22 of 62 list neighbours able to mimic the signal, including 316096209 (3.2\", \u0394T\u22480), 212554303 (2.4\", \u0394T\u22480), 217648205 (3.8\"), 379508029 (3.9\"), 90919279 (5.1\") and 396957421 (7.1\"). No PRF-level localisation was done for any of the 62.\n\n2) The novelty filter had built-in blind spots. eb_select.py's SKIP list excludes J/AJ/155/39 (KELT), which is why the two KELT Prot matches were missed. Green+23 table 2 Porb values, TARS (on Zenodo, not VizieR) and TESS-SPOC DV products were never part of it.\n\n3) Gaia DR4 is due 2026-12-02 (https://www.cosmos.esa.int/web/gaia/release, fetched 2026-10-13). It will include epoch_photometry for all sources and vari_eclipsing_binary (2,392,500 rows) (https://www.cosmos.esa.int/web/gaia/dr4). That is a free test, at 9.3\" separation, of whether TIC 87055315 or 87055304 eclipses. Novelty of all 62 EBs should be re-checked after DR4.\n\n4) TIC 87055315 has no ground-based photometry that resolves it from TIC 87055304 (2.1% eclipse, 4.35 h, P = 4.1361919 d).\n\n5) TARS table 4 (tars_table_4.csv.zip, 8.4 GB, per-sector results) was not checked. It may hold per-sector periods for stars missing from the default catalogue (TIC 87055315, 281740175) or other sectors (TIC 100666720, 404124262).\n\n6) Not verified:\n- ADS full-text search (API returns 401 without a token).\n- QLP or TOI-team internal triage of TIC 87055304 (not public).\n- ExoFOP account and Published Candidate Upload approval criteria for an unaffiliated user, and whether observing notes need any approval beyond the account (all behind login).\n- Whether the AAS LLM guidelines explicitly cover RNAAS.\n- The OEJV author rules.\n\n7) The companion mass of TIC 87055315 is unconstrained: Gaia DR3 has 7 RV transits and no rv_amplitude_robust. The 'EBLM' label is therefore an inference.\n\n8) Not explained anywhere in the write-up: TIC 87055304's own Gaia G dispersion (12.75 mmag) and RUWE 18.84. Both are compatible with an unresolved companion, which FINDINGS lists as a risk.\n\n9) Not re-checked by me:\n- The Villanova live-DB statements (e.g. 281740175 'signal 1, In catalog? False').\n- VSX beyond the VizieR B/vsx/vsx copy at 15\".\n- The orchestrator's DV period matches: accepted as given, and only parsed locally to tabulate them.",
+ "prior_period_table": [
+  {
+   "tic": "33445288",
+   "prior_period_source": "TARS 0.7985+-0.0035 d (P, 0.01%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "76440895",
+   "prior_period_source": "Green+23 t2 Porb 0.67658 d (P, 0.11%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "351474229",
+   "prior_period_source": "Green+23 t2 Porb 0.87838 d (P, 0.10%, Score 0.00); TARS 0.8790+-0.0041 d (P, 0.18%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "32398505",
+   "prior_period_source": "Green+23 t2 Porb 0.60084 d (P, 0.11%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "114787953",
+   "prior_period_source": "TARS 0.3029+-0.0007 d (P/2, 0.00%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "71315603",
+   "prior_period_source": "TESS-SPOC FFI DV S68 (P); TARS 0.2542+-0.0006 d (P/2, 0.14%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "314677221",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 3.226+-0.045 d is 1.5% off but within 1.1 sigma"
+  },
+  {
+   "tic": "100378891",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "146708570",
+   "prior_period_source": "none (Green+23 Porb 9.2646 d no match (2.1% from 2P))",
+   "matches": "no"
+  },
+  {
+   "tic": "123267483",
+   "prior_period_source": "none (TARS 21.797+-2.688 d does not match (49.8%, 2.7 sigma))",
+   "matches": "no"
+  },
+  {
+   "tic": "343895671",
+   "prior_period_source": "none (TARS 3.852+-0.045 d does not match (27.6%, 18.6 sigma); Green+23 Porb 3.8035 d no match (25.9% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "217276354",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 6.717+-0.264 d is 2.5% off but within 0.7 sigma"
+  },
+  {
+   "tic": "316096209",
+   "prior_period_source": "Green+23 t2 Porb 4.58214 d (2P, 0.22%, Score 0.02); TARS 2.2877+-0.0192 d (P, 0.37%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "234968334",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "139256801",
+   "prior_period_source": "none (TARS 13.874+-0.776 d does not match (10.6%, 2.1 sigma); DV period(s) not matching: TCE 11.2037d)",
+   "matches": "no"
+  },
+  {
+   "tic": "80064194",
+   "prior_period_source": "TESS-SPOC FFI DV S67 (P)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "76224662",
+   "prior_period_source": "none (TARS 5.473+-0.103 d does not match (11.0%, 5.2 sigma); Green+23 Porb 0.6166 d no match (75.0% from P/2))",
+   "matches": "no"
+  },
+  {
+   "tic": "122543151",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 7.857+-0.358 d is 5.0% off but within 1.0 sigma"
+  },
+  {
+   "tic": "122203391",
+   "prior_period_source": "none (Green+23 Porb 6.7659 d no match (28.2% from 2P))",
+   "matches": "no"
+  },
+  {
+   "tic": "114917180",
+   "prior_period_source": "TESS-SPOC FFI DV S68 (P/2); Green+23 t2 Porb 2.39783 d (P, 0.35%, Score 0.00); TARS 2.3935+-0.0181 d (P, 0.52%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "142274982",
+   "prior_period_source": "none (Green+23 Porb 4.1453 d no match (4.5% from P/2))",
+   "matches": "no"
+  },
+  {
+   "tic": "122852877",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 3.000+-0.039 d is 1.8% off but within 1.4 sigma"
+  },
+  {
+   "tic": "197958602",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "179677500",
+   "prior_period_source": "TESS-SPOC FFI DV S69 (2P/P)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "327599302",
+   "prior_period_source": "TESS-SPOC FFI DV S67 (P)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "404124262",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 7.776+-0.351 d is 2.3% off but within 0.5 sigma"
+  },
+  {
+   "tic": "80453626",
+   "prior_period_source": "SPOC 2-min DV S104,105,106 (P/2); TESS-SPOC FFI DV S69 (P/2)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "304444218",
+   "prior_period_source": "Green+23 t2 Porb 3.22252 d (P, 0.59%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "218359654",
+   "prior_period_source": "none (Green+23 Porb 0.2320 d no match (66.7% from P/2))",
+   "matches": "no"
+  },
+  {
+   "tic": "406279367",
+   "prior_period_source": "TESS-SPOC FFI DV S67 (P/2)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "156003824",
+   "prior_period_source": "TESS-SPOC FFI DV S69 (P); KELT Oelkers+18 t6 Prot 4.97092 d (P, 0.030%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "372170356",
+   "prior_period_source": "Green+23 t2 Porb 2.82933 d (P, 0.22%, Score 0.00); TARS 2.8103+-0.0283 d (P, 0.89%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "143345010",
+   "prior_period_source": "TESS-SPOC FFI DV S67 (P); Green+23 t2 Porb 5.35532 d (2P, 0.30%, Score 0.03); TARS 2.6527+-0.0220 d (P, 0.63%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "180444443",
+   "prior_period_source": "TESS-SPOC FFI DV S69 (P); Green+23 t2 Porb 1.25086 d (P/2, 0.19%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "363482012",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 3.843+-0.089 d is 4.2% off but within 1.8 sigma"
+  },
+  {
+   "tic": "281740175",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "412733784",
+   "prior_period_source": "none (Green+23 Porb 0.2756 d no match (85.7% from P/2))",
+   "matches": "no"
+  },
+  {
+   "tic": "89040715",
+   "prior_period_source": "KELT Oelkers+18 t6 Prot 2.31038 d (P/2, 0.006%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "304770656",
+   "prior_period_source": "none (Green+23 Porb 2.9751 d no match (5.9% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "100666720",
+   "prior_period_source": "none (TARS 8.548+-0.423 d does not match (16.4%, 2.9 sigma))",
+   "matches": "no"
+  },
+  {
+   "tic": "48939280",
+   "prior_period_source": "none within 1% (TARS imprecise)",
+   "matches": "no within 1%; weak: TARS 2.764+-0.024 d is 1.0% off but within 1.2 sigma"
+  },
+  {
+   "tic": "128677131",
+   "prior_period_source": "Green+23 t2 Porb 1.24963 d (P, 0.19%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "212554303",
+   "prior_period_source": "TARS 1.1948+-0.0058 d (P, 0.28%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "217648205",
+   "prior_period_source": "none (Green+23 Porb 0.3657 d no match (90.4% from P/2))",
+   "matches": "no"
+  },
+  {
+   "tic": "90919279",
+   "prior_period_source": "none (TARS 6.368+-0.154 d does not match (13.9%, 6.7 sigma); Green+23 Porb 5.1396 d no match (30.5% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "63594264",
+   "prior_period_source": "TESS-SPOC FFI DV S39 (P)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "396957421",
+   "prior_period_source": "none (Green+23 Porb 8.2102 d no match (29.7% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "314203738",
+   "prior_period_source": "Green+23 t2 Porb 3.39704 d (P, 0.04%, Score 0.02)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "129032726",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "320327029",
+   "prior_period_source": "TESS-SPOC FFI DV S67 (P)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "49617965",
+   "prior_period_source": "none (TARS 4.298+-0.078 d does not match (14.2%, 6.8 sigma); Green+23 Porb 4.3912 d no match (16.6% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "200247352",
+   "prior_period_source": "none (Green+23 Porb 3.4066 d no match (2.1% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "197985960",
+   "prior_period_source": "TESS-SPOC FFI DV S68 (P/2)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "124358211",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "278802197",
+   "prior_period_source": "TESS-SPOC FFI DV S68 (P/2); Green+23 t2 Porb 1.06208 d (P, 0.02%, Score 0.00); TARS 1.0621+-0.0058 d (P, 0.03%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "379508029",
+   "prior_period_source": "Green+23 t2 Porb 2.20038 d (2P, 0.24%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "143042674",
+   "prior_period_source": "none (TARS 5.797+-0.140 d does not match (14.9%, 5.4 sigma); Green+23 Porb 6.2554 d no match (24.0% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "217228307",
+   "prior_period_source": "Green+23 t2 Porb 0.82903 d (P, 0.09%, Score 0.00)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "6598941",
+   "prior_period_source": "TARS 2.1353+-0.0207 d (P, 0.74%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "261500541",
+   "prior_period_source": "TESS-SPOC FFI DV S56-69 multi + S67 + S68 (P); TARS 3.1334+-0.0426 d (P, 0.21%)",
+   "matches": "yes (within 1%)"
+  },
+  {
+   "tic": "231286114",
+   "prior_period_source": "none",
+   "matches": "no"
+  },
+  {
+   "tic": "115242114",
+   "prior_period_source": "none (Green+23 Porb 4.2120 d no match (7.0% from P))",
+   "matches": "no"
+  },
+  {
+   "tic": "87055315",
+   "prior_period_source": "none (not in TARS default cat., Green+23, KELT, Kostov t2-4, Prsa+22, VSX, ASAS-SN, Gaia DR3 vari/NSS; no SPOC/TESS-SPOC DV; only Maiz+23 VarF=VVM, no period)",
+   "matches": "no"
+  }
+ ]
+}

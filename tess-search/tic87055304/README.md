@@ -5,7 +5,10 @@
   turn-off star 9.3″ to the north-east and about 1.3 kpc away.
 - **The companion.** Its radius is 0.27 ± 0.01 R☉ (2.6 R_Jup). That is too large for a planet or brown dwarf, so it
   is most likely an M dwarf (an "EBLM"-type eclipsing binary).
-- **Novelty.** No prior report was found in any of the catalogues searched below.
+- **Novelty.** No earlier period or eclipse detection was found anywhere we searched, including a second, adversarial
+  re-audit on 2026-10-13 ([`../reaudit/`](../reaudit/)). The only prior hint is a generic Gaia DR3 photometric-variability
+  flag (Maíz Apellániz et al. 2023, VarF = VVM), which gives no period or type. That flag is not independent support for
+  the localisation: TIC 87055304 itself has a larger Gaia scatter, and 55 of our 62 binaries carry similar flags.
 
 This page documents:
 - the adversarial campaign that overturned the earlier claim;
@@ -269,7 +272,7 @@ pixel-level tests that note did not need, was used and showed the signal is not 
 | Gaia RUWE, RV scatter, BP/RP excess and XP overluminosity for companions | Done for both stars (`analysis/stellar/`, `analysis/neighbour/`) |
 | Companion-host duration argument | Done (§4; an unresolved host would need ≥ 60 % of the neighbour's light) |
 | TRICERATOPS, multiple runs | Done, after fixing the runner bug. FPP = 1.000 for the neighbour; 0.977 for TIC 87055304 |
-| Literature and catalogue novelty search | Done for both stars (ExoFOP, MAST, VizieR, Gaia archive, SIMBAD, web) |
+| Literature and catalogue novelty search | Done for both stars (ExoFOP, MAST, VizieR, Gaia archive, SIMBAD, web), then repeated adversarially on 2026-10-13: TESS-SPOC/SPOC reports, Tey+23 QLP signals, TARS, TEQUILA, CDIPS, Zooniverse Talk and all 414 TIC-keyed VizieR tables. Nothing found ([`../reaudit/`](../reaudit/)) |
 | Predictions for future observations | §6 |
 
 ## 8. Files
