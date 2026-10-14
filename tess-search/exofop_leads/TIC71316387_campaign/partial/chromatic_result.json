@@ -1,0 +1,265 @@
+{
+ "summary": "I measured the depths of both eclipses in every archival light curve I could get, independently of the earlier partial attempt, and compared them with the TESS depths. Two surveys detect the deep eclipse at the time predicted from TESS:\n- **SuperWASP DR1, 2006\u201307** (V-like 400\u2013700 nm band): 2364 \u00b1 657 (stat) \u00b1 416 (sys) ppm. None of 3000 fake-period trials matched this signal-to-noise. After removing light from neighbours inside the aperture, this is 0.42 \u00b1 0.15 of the TESS depth (TESS: 5900 \u00b1 172 ppm deep, 2680 \u00b1 67 ppm shallow).\n- **NEOWISE/AllWISE W1, 2010\u20132024** (3.4 \u00b5m): 21.6 \u00b1 6.5 ppt, or 3.7 \u00b1 1.1 times the TESS depth. None of 3000 fake-period trials matched it. W2 gives a weak 2.1 \u00b1 1.4.\n\nThe eclipses are therefore shallower than TESS in the visual band and deeper in the infrared. That means the star being eclipsed is red. Fitting all three ratios gives it Teff = 4040 K (+330/\u2212280; 95% range 3550\u20134770 K), i.e. K5\u2013M0 colours.\n- A G/F-coloured eclipsed star (Teff \u2265 5300 K) has posterior probability 0.16%. Against the most favourable G/F case, SuperWASP and W1 together give p = 6\u00d710\u207b\u2074 (about 3.2\u03c3). SuperWASP alone excludes a G0 (5900 K) eclipsed star at 4.0\u03c3.\n- In a joint fit of all ten measured ratios, the best G/F background model has \u03c7\u00b2 = 23.1 (p = 0.010). A bound K7V+M2V pair has \u03c7\u00b2 = 11.9 (p = 0.29).\n\nThe shallow eclipse is not cleanly measured. SuperWASP gives \u22121158 \u00b1 722 (stat) \u00b1 392 (sys) ppm, a negative value about 2\u03c3 below zero, and it depends on the detrending choice (range \u22121160 to +170 ppm). W1 and W2 disagree with each other for the shallow eclipse.\n\nThe other sources add nothing:\n- ASAS-SN V (old photometry database, 220 epochs) and ASAS-3 V are too imprecise; their ratio errors are 0.59 and 1.8.\n- The ASAS-SN Sky Patrol light-curve service, the only source of ASAS-SN g-band, is down for maintenance (status message dated 13 Oct 2026).\n- The target is not in the public KELT release.\n- ATLAS forced photometry needs an account.\n- Gaia DR3 has no epoch photometry for this source.\n\nColour alone cannot tell a bound K/M pair from a background K/M pair. As a side analysis, I fitted main-sequence pair models with circular orbits to the TESS eclipse shape. The near-equal, grazing pairs in the earlier estimate (K7+M2, M0+M3) fit about \u0394\u03c7\u00b2 \u2248 90\u2013110 worse. If they were main-sequence stars they would sit at 410\u2013530 pc.\n\nThe shape prefers an M0\u2013M1.5 primary with a small (about 0.2 R\u2609) M4.5\u2013M5 secondary on a nearly central eclipse. Its main-sequence distance comes out at 265\u2013345 pc, consistent with the G star's 297 pc. This needs the secondary to be about 1.4\u20132 times brighter than a normal main-sequence M5. The pair would then contribute only 2.5\u20135% of the TESS light, with contrasts dI \u2248 3.2\u20133.9 and dKs \u2248 2.1\u20132.6. That is fainter than the earlier estimate of 6\u20139%, dI 2.5\u20133.0 and dKs 1.5\u20131.9, and harder to detect.\n\nI also refined the TESS ephemeris to P = 1.30367207 \u00b1 0.00000026 d. Using the period you supplied would place the 2006\u201307 eclipses about 4.8 \u00b1 1.7 min early. The SuperWASP eclipse lands within \u22123.8 \u00b1 3.7 min of the refined prediction, so there is no timing drift of more than about 15 min between 2006 and 2026.",
+ "key_numbers": [
+  {
+   "quantity": "TESS deep-eclipse depth (template amplitude, reference for all ratios)",
+   "value": "5900 +- 172 ppm (stat 94, sys 144)",
+   "method": "Same TESS-derived template fitted to six sectors (SPOC PDCSAP S1/28/68; TESScut S95/105/106 with PRF contamination removed); per-orbit-quarter linear baselines fitted at the same time; errors from 300 fake-phase trials per sector; sys = half the SPOC vs TESScut difference",
+   "uncertainty": "Sector chi2 16/5; sector values range 5676-6238"
+  },
+  {
+   "quantity": "TESS shallow-eclipse depth and shallow/deep ratio",
+   "value": "2680 +- 67 ppm; s/d = 0.454",
+   "method": "As for the deep eclipse",
+   "uncertainty": "Shallow sector chi2 1.7/5"
+  },
+  {
+   "quantity": "Possible drift of TESS deep depth with time",
+   "value": "-53 +- 20 ppm/yr (2018-2026); 6784 +- 339 ppm if extrapolated linearly to 2007",
+   "method": "Linear fit to the six TESScut-only depths (one pipeline throughout)",
+   "uncertainty": "2.6 sigma; may be a cadence artefact (the 30- and 10-min sectors come out deepest). Covered by an 8% epoch systematic for 2000-2009 data"
+  },
+  {
+   "quantity": "Template shape",
+   "value": "Deep: T=0.0909 d, p=3.38, q=10, FWHM 0.98 h. Shallow: T=0.0851 d, p=4.36, q=10, FWHM 1.10 h",
+   "method": "Joint fit of the shape (1-|x|^p)^q to the 200-s and 600-s sectors, integrated over each exposure",
+   "uncertainty": "Within chi2 1.4 of the free (q up to 60) optimum on 37,431 points. A different shape (p=2, q=1) changes the SuperWASP/TESS ratio by 3%"
+  },
+  {
+   "quantity": "Refined period from TESS eclipse times (deep eclipses)",
+   "value": "1.30367207 +- 0.00000026 d",
+   "method": "Linear fit to six per-sector deep-eclipse times (error = larger of formal and event-bootstrap); chi2 5.8/4",
+   "uncertainty": "1.7 sigma (8.7e-7 d) from the supplied 1.3036712 +- 0.0000005 d"
+  },
+  {
+   "quantity": "Refined period, deep and shallow eclipses together",
+   "value": "1.30367220 +- 0.00000022 d; O-C at E=0: deep +0.83 +- 0.30 min; shallow minus deep +1.14 +- 0.61 min",
+   "method": "Common period, separate zero points; 12 sector times; chi2 11.4/9",
+   "uncertainty": "Errors scaled by sqrt(chi2/dof)"
+  },
+  {
+   "quantity": "Ephemeris offset at the SuperWASP epoch (E about -4500)",
+   "value": "-4.79 +- 1.73 min relative to the supplied ephemeris (supplied period error alone gives +-3.24 min)",
+   "method": "Covariance-propagated linear ephemeris",
+   "uncertainty": "Linear ephemeris assumed; adds about 1% amplitude loss if ignored"
+  },
+  {
+   "quantity": "SuperWASP deep-eclipse time relative to the refined ephemeris",
+   "value": "-3.8 min (1 sigma -7.5 to +0.9; red-noise scaled -8.4 to +2.8)",
+   "method": "Scan of chi2 against time offset on the cleaned SuperWASP data",
+   "uncertainty": "Rules out timing offsets larger than about +-15 min (2 sigma) between 2006-07 and the TESS ephemeris"
+  },
+  {
+   "quantity": "SuperWASP data used",
+   "value": "1SWASP J220333.07-425007.9 (tile330042; 0.17 arcsec from Gaia); 18,498 TAMFLUX2 points, cameras 227+228; 2006-05-07 to 2007-11; 310 night-camera segments; 33 deep and 29 shallow events covered",
+   "method": "NASA Exoplanet Archive DR1 FITS; HJD(UTC) converted to BJD_TDB (+64 s); FLAG==32; iterative 4-sigma clipping; robust per-segment weights",
+   "uncertainty": "n/a"
+  },
+  {
+   "quantity": "SuperWASP deep-eclipse amplitude",
+   "value": "2364 ppm +- 657 (stat) +- 416 (sys)",
+   "method": "Linear baseline per night and camera fitted together with the TESS template. Stat = larger of the fake-phase null sd (571; 1000 trials) and the fake-period null scaled to the real coverage (657; 3000 trials). Sys = sd of 11 variants (baseline order 0/1/2, airmass baselines, raw FLUX2, 3-6 sigma clipping, night-end trimming, minimum points per night)",
+   "uncertainty": "Variants span 1920-3501 ppm. Fake-phase null kurtosis 0.78"
+  },
+  {
+   "quantity": "SuperWASP deep-eclipse detection significance",
+   "value": "S/N 4.84; 0 of 3000 fake-period trials and 0 of 1000 fake-phase trials reach it",
+   "method": "Fake-period null (random periods 0.6-3.5 d, avoiding aliases) and fake-phase null",
+   "uncertainty": "Empirical p < 3.3e-4"
+  },
+  {
+   "quantity": "SuperWASP shallow-eclipse amplitude",
+   "value": "-1158 ppm +- 722 (stat) +- 392 (sys); deep/shallow null correlation 0.49",
+   "method": "As for the deep eclipse",
+   "uncertainty": "Variants span -1158 to +170 ppm; p(null <= observed) = 0.022"
+  },
+  {
+   "quantity": "SuperWASP injection-recovery gain",
+   "value": "1.000 +- 0.001 (template-shaped); 1.034-1.039 (physical K7V+M2V shape); paired injections gain 1.000",
+   "method": "Injection into the normalised data at 80 fake phases, then full re-cleaning, re-weighting and re-fitting, compared pairwise with the uninjected data",
+   "uncertainty": "Shape effect (about 4%) included as a systematic"
+  },
+  {
+   "quantity": "SuperWASP sensitivity to SysRem detrending",
+   "value": "Raw FLUX2: 2289 +- 727 (linear baseline), 2626 +- 621 (quadratic) vs TAMFLUX2 2364",
+   "method": "Same pipeline on the undetrended fluxes",
+   "uncertainty": "No sign that SysRem suppresses the eclipse"
+  },
+  {
+   "quantity": "SuperWASP cross-check with eclipses masked during detrending",
+   "value": "Deep about 1980 +- 1570 ppm after correcting the method's bias (+372) and gain (0.82)",
+   "method": "Line fitted per night to points more than 1.5 h from any eclipse, then a matched filter; fake-phase null and injections",
+   "uncertainty": "About 2.3 times noisier and biased, so used only as a check"
+  },
+  {
+   "quantity": "SuperWASP dilution by Gaia neighbours",
+   "value": "D = 0.042 (0.042-0.059 across aperture radii 2.5-4.5 px); depths multiplied by 1+D",
+   "method": "Gaia DR3 fluxes converted to the SuperWASP band with model-spectrum colour terms; Gaussian PSF (sigma 25.4 arcsec) and 48-arcsec aperture calibrated on the catalogue magnitudes of the two blended WASP neighbours (46.5 and 55.2 arcsec, G=15.17)",
+   "uncertainty": "+-0.017. Main contributors: 2.0% and 1.5% (the G=15.17 stars), 0.6% (the 18-arcsec G=16.87 star)"
+  },
+  {
+   "quantity": "SuperWASP flux zero-level (sky over/under-subtraction) check",
+   "value": "Depth scale 0.991 +- 0.001; target's SuperWASP magnitude within +0.023 mag of the Gaia prediction",
+   "method": "Fit of median SuperWASP magnitudes against predicted 48-arcsec aperture fluxes for 490 isolated tile330042 stars, with a free additive flux offset",
+   "uncertainty": "Robust scatter 0.036 mag"
+  },
+  {
+   "quantity": "SuperWASP deep depth / TESS deep depth",
+   "value": "0.418 +- 0.145",
+   "method": "A*(1+D)/A_TESS; error budget includes stat, sys, dilution, TESS error, 3% template, 4% shape, 8% epoch and 5% passband terms",
+   "uncertainty": "Total 1-sigma"
+  },
+  {
+   "quantity": "SuperWASP shallow depth / TESS shallow depth",
+   "value": "-0.45 +- 0.32",
+   "method": "As above",
+   "uncertainty": "Total 1-sigma; not detected"
+  },
+  {
+   "quantity": "NEOWISE+AllWISE W1 deep-eclipse amplitude",
+   "value": "21633 ppm +- 6049 (stat) +- 2498 (sys); ratio to TESS 3.67 +- 1.14",
+   "method": "238 single-exposure profile-fit points (strict cuts: qual_frame>0, saa_sep>5 deg, no moon, single component, clean flags); constant baseline per visit; fake-phase (5000) and fake-period (3000) nulls; sys = half-range over six quality-cut variants",
+   "uncertainty": "8 in-eclipse points from 8 events; leave-one-event-out values 19.8-23.8 ppt (jackknife sd 3.5 ppt); variants 16.6-21.6 ppt"
+  },
+  {
+   "quantity": "W1 deep detection significance and injection gain",
+   "value": "S/N 4.34; 0 of 3000 fake-period trials; injection gain 1.001-1.010",
+   "method": "Fake-period null; injections into the raw normalised series with full re-cleaning",
+   "uncertainty": "Empirical p < 3.3e-4"
+  },
+  {
+   "quantity": "W1 shallow / W2 deep / W2 shallow ratios to TESS",
+   "value": "W1 shallow 0.06 +- 1.88; W2 deep 2.10 +- 1.45; W2 shallow 4.92 +- 2.28",
+   "method": "As for W1 deep",
+   "uncertainty": "W1 and W2 shallow values disagree at 1.7 sigma"
+  },
+  {
+   "quantity": "ASAS-SN V (photometry database) deep depth",
+   "value": "1581 +- 3403 ppm; ratio 0.27 +- 0.59",
+   "method": "217 epochs (2014-05 to 2018-10, cameras bf+bh); linear baseline per camera-season; 2000 fake phases; D = 0.002",
+   "uncertainty": "Only 8 in-eclipse points; not informative"
+  },
+  {
+   "quantity": "ASAS-3 V deep depth",
+   "value": "4070 +- 10515 ppm; ratio 0.69 +- 1.80",
+   "method": "471 grade A/B points, aperture MAG_2 (lowest scatter, 0.037 mag); baseline per field-season; D = 0.0065",
+   "uncertainty": "Not informative"
+  },
+  {
+   "quantity": "Predicted ratios, bound grazing K/M pairs at 297 pc that match TESS s/d (K5V+M0V/M1V/M2V, K6V+M1V, K7V+M2V, M0V+M3V)",
+   "value": "SuperWASP deep 0.43-0.62 (K7V+M2V 0.512; M0V+M3V 0.433); V deep 0.39-0.58; W1 deep 2.0-2.9; SuperWASP shallow 0.26-0.44; W1 shallow 2.8-4.0",
+   "method": "Model spectra corrected to match empirical dwarf colours (B-V, V-Rc, V-Ic, V-Ks); G star = observed system minus pair; band-dependent limb darkening; Kepler orbit; inclination solved to match the TESS deep amplitude; same template applied to model and data",
+   "uncertainty": "Model colours checked against Gaia Bp-Rp, G-V and the TIC TESS relation to about 0.04 mag; passband choice changes SuperWASP predictions by +-5%"
+  },
+  {
+   "quantity": "Predicted ratios, pairs preferred by the TESS eclipse shape (M0-M1.5 + M4.5-M5, near-central eclipses)",
+   "value": "SuperWASP deep 0.35-0.44 (M0V+M5V 0.442); W1 deep 2.8-3.2; SuperWASP shallow 0.13-0.15; W1 shallow 5.9-6.5",
+   "method": "Same model at the inclination fitted to the TESS shape",
+   "uncertainty": "Main-sequence radii and luminosities assumed"
+  },
+  {
+   "quantity": "Predicted ratios, background EB with a G/F eclipsed star (5600-7000 K)",
+   "value": "SuperWASP deep 0.82-1.31 (G0 at 5900 K: 0.89-1.02); W1 deep 0.70-1.15; most favourable case (5600 K, grazing) SuperWASP 0.818, W1 1.35",
+   "method": "Small-light-fraction model; secondary temperature from TESS s/d; grazing, intermediate and deep geometries",
+   "uncertainty": "Extinction toward this line of sight is negligible"
+  },
+  {
+   "quantity": "SuperWASP deep test against background hypotheses",
+   "value": "G0 (5900 K): -4.0 sigma; most favourable G/F (5600 K grazing): -2.76 sigma, empirical tail p = 0.0023; late-G (5300 K grazing): -2.28 sigma, p = 0.0083; bound K7V+M2V: -0.65 sigma",
+   "method": "Measured ratio vs prediction with the total error; tail from the fake-period null",
+   "uncertainty": "Gaussian-equivalent values"
+  },
+  {
+   "quantity": "W1 deep test against background hypotheses",
+   "value": "Most favourable G/F (5600 K): +2.03 sigma, empirical tail p = 0.025; bound pairs: +0.65 sigma",
+   "method": "As above",
+   "uncertainty": "Gaussian-equivalent values"
+  },
+  {
+   "quantity": "SuperWASP and W1 combined against the most favourable G/F eclipsed star",
+   "value": "Fisher p = 6.2e-4 (3.2 sigma)",
+   "method": "Fisher combination of the two independent empirical tail probabilities",
+   "uncertainty": "With 5300 K allowed: p = 2.9e-3 (2.8 sigma)"
+  },
+  {
+   "quantity": "Teff of the star eclipsed at the deep eclipse",
+   "value": "4044 K (68%: 3766-4376; 95%: 3548-4767); P(Teff >= 5300 K) = 0.0016",
+   "method": "SuperWASP, W1 and W2 deep ratios; small-light-fraction model averaged over three geometries; flat prior 3300-7000 K",
+   "uncertainty": "Single bands: SuperWASP 3956 (3576-4424), W1 4056 (3580-4861)"
+  },
+  {
+   "quantity": "Joint chi2 over all ten measured ratios",
+   "value": "Bound K7V+M2V 11.87 (p 0.29); shape-preferred bound pairs 15.6-20.4 (p 0.11-0.026); best G/F >= 5600 K 23.09 (p 0.010); best background allowing 5300 K 19.74",
+   "method": "Full covariance (deep-shallow correlation from the nulls; W1-W2 correlation); each hypothesis given its most favourable parameters",
+   "uncertainty": "Delta-chi2 G/F minus best bound = 11.2 (likelihood ratio about 270); 2.7-7.5 for the shape-preferred pairs"
+  },
+  {
+   "quantity": "TESS shape test of grazing main-sequence pairs at 297 pc",
+   "value": "Inclination forced to match the observed depth is worse by Delta-chi2 = 300-960 (both eclipses) or 107-167 (deep eclipse only). The best inclination implies an eclipsed-star light fraction of 0.022-0.037, i.e. main-sequence distance 410-530 pc",
+   "method": "Circular orbit, main-sequence radii, TESS limb darkening; inclination scan; amplitudes free; 200-s sectors with fixed white-noise weights",
+   "uncertainty": "White-noise weights overstate significance; even the best physical fits are 60-110 worse than the empirical template"
+  },
+  {
+   "quantity": "TESS shape test of pairs with a small secondary",
+   "value": "M0V+M5V, M0.5V+M4.5V/M5V, M1V+M4.5V/M5V and M1.5V+M4.5V fit within Delta-chi2 +3.0 to +5.9 of the empirical template; implied main-sequence distance of the primary 265-315 pc (K8V/K9V+M4.5V/M5V: +8 to +12, 311-345 pc)",
+   "method": "Grid over 125 main-sequence pairs (K5V-M2V primaries)",
+   "uncertainty": "Secondary must be 1.4-2 times brighter than main sequence (secondary-implied distance 212-250 pc); circular orbit assumed"
+  },
+  {
+   "quantity": "Companion-pair light and contrasts for the shape-preferred bound solutions",
+   "value": "Pair light in TESS 2.5-5%; dI = 3.2-3.9 mag; dKs = 2.1-2.6 mag (grazing K7V+M2V: 8.4%, dI 2.54, dKs 1.46)",
+   "method": "Main-sequence absolute magnitudes at 297.4 pc vs the system",
+   "uncertainty": "Depends on the pair model"
+  }
+ ],
+ "conclusions": [
+  {
+   "claim": "The deep eclipse is present in SuperWASP 2006-07 data at the time predicted from the refined TESS ephemeris. The eclipsing system therefore existed with the same period about 20 years ago, with no timing drift larger than about 15 min.",
+   "confidence": "strong",
+   "evidence": "S/N 4.84, not reached by any of 3000 fake-period or 1000 fake-phase trials; best timing -3.8 +- 3.7 min from the refined prediction"
+  },
+  {
+   "claim": "In the SuperWASP band (400-700 nm) the deep eclipse is less than half as deep as in TESS: ratio 0.42 +- 0.15.",
+   "confidence": "moderate",
+   "evidence": "Raw-flux, airmass-baseline, clipping and baseline-order variants all give 1920-3501 ppm against a G-type expectation of about 5400-5600 ppm. Injection gain 1.00. Dilution (4.2%) and zero-level (0.9%) corrections are small. An independent masked-detrending method agrees within errors"
+  },
+  {
+   "claim": "In W1 (3.4 micron) the deep eclipse is several times deeper than in TESS: ratio 3.7 +- 1.1. It is contemporaneous with TESS, so it cannot be explained by the depth changing over time.",
+   "confidence": "moderate",
+   "evidence": "S/N 4.3, not reached by any of 3000 fake-period trials; jackknife stable; robust to quality cuts (16.6-21.6 ppt); the 18-arcsec neighbour is resolved by the 6-arcsec WISE PSF"
+  },
+  {
+   "claim": "The star eclipsed at the deep eclipse is red, Teff 4040 K (68% range 3770-4380 K; K5-M0 colours). A G/F eclipsed star, i.e. a background EB of G/F colour, is disfavoured at about 3 sigma. A G0 eclipsed star is excluded at about 4 sigma by SuperWASP alone.",
+   "confidence": "moderate",
+   "evidence": "P(Teff >= 5300 K) = 0.0016; Fisher-combined p = 6e-4 against the most favourable G/F case; joint chi2 23.1 (p 0.010) for G/F against 11.9 (p 0.29) for a bound K7V+M2V pair"
+  },
+  {
+   "claim": "The colour test cannot by itself separate a bound K/M pair from a background K/M pair, because the depth ratios depend on the eclipsed star's colour, not its distance.",
+   "confidence": "strong",
+   "evidence": "The predicted ratio depends on the eclipsed star's colour relative to the system; luminosity cancels"
+  },
+  {
+   "claim": "The shallow eclipse is not usefully measured in any archival band. SuperWASP gives -0.45 +- 0.32 (about 2 sigma below zero and 1.8-2.4 sigma below the bound-pair predictions of 0.13-0.44, and depends on detrending). W1 gives 0.06 +- 1.88 and W2 4.9 +- 2.3, which disagree with each other.",
+   "confidence": "moderate",
+   "evidence": "Null probability for the SuperWASP value 0.022; detrending variants range -1158 to +170 ppm; the SuperWASP deep-shallow error correlation is 0.49, so time-of-night systematics are shared"
+  },
+  {
+   "claim": "Combining the eclipse colour with the TESS eclipse shape and main-sequence radii disfavours near-equal grazing pairs (K7V+M2V, M0V+M3V from the earlier estimate). It prefers an M0-M1.5 primary with a small M4.5-M5 secondary on a nearly central eclipse, whose main-sequence distance (265-345 pc) matches the G star's 297 pc. The grazing pairs would sit at 410-530 pc.",
+   "confidence": "weak",
+   "evidence": "Shape Delta-chi2 about +3 to +12 for the small-secondary solutions against +90 to +110 for grazing pairs; independent of, but consistent with, low-third-light, small-radius-ratio solutions visible in the lcmodel sub-campaign's logs. Depends on circular orbits, main-sequence radii and luminosities, and an over-luminous (1.4-2x) secondary"
+  },
+  {
+   "claim": "ASAS-SN V (photometry database), ASAS-3 V, KELT, ATLAS, ASAS-SN g and Gaia epoch photometry add nothing at present.",
+   "confidence": "strong",
+   "evidence": "Ratio errors 0.59 (ASAS-SN V) and 1.80 (ASAS-3). Target absent from KELT S29 and from 21 other KELT fields queried. ATLAS returns 403 without login. Sky Patrol status says the light-curve service is down (13 Oct 2026). Gaia has_epoch_photometry = False"
+  },
+  {
+   "claim": "The supplied period is slightly short. The refined period 1.30367207 +- 0.00000026 d shifts the predicted 2006-07 eclipses by about -4.8 min; using it raises the SuperWASP amplitude from 2125 to 2364 ppm, well within the noise.",
+   "confidence": "strong",
+   "evidence": "Six-sector linear fit, chi2 5.8/4; independently supported by the SuperWASP timing scan"
+  }
+ ],
+ "implications_bound_vs_background": "The archival colours establish that the star eclipsed at the deep eclipse is cool, about 4040 K (+330/\u2212280; K5-M0 colours). This argues against the background interpretation in its usual form, a G/F-coloured EB blended with the target, at about 3\u03c3 (P(G/F) = 0.16%; joint \u03c7\u00b2 23.1 for G/F against 11.9 for a bound K7V+M2V pair). The W1 result is contemporaneous with TESS, so a changing eclipse depth cannot rescue a G/F background.\n\nWhat remains is a choice between a bound K/M pair and a chance-aligned background K/M pair. Colour cannot decide this. Two arguments favour the bound pair:\n- **Prior.** A rough estimate, not part of the formal analysis, of the chance of a K5-M1 EB with period near 1.3 d, eclipsing, at 300-700 pc and within about 1.5 arcsec of the target is about 4\u00d710\u207b\u2078. A hierarchical triple with such an inner pair is far more probable a priori.\n- **Distance from colour, eclipse shape and main-sequence radii.** The configuration the TESS eclipse shape prefers (an M0-M1.5 primary with a small M4.5-M5 secondary, eclipses close to central, inclination about 86-89\u00b0) has a main-sequence distance of 265-345 pc, matching the G star's 297 pc. The near-equal grazing pairs of the earlier estimate fit the shape worse by \u0394\u03c7\u00b2 \u2248 100 and would lie at 410-530 pc.\n\nIf the bound solution holds, the companion pair contributes only about 2.5-5% of the TESS light, with dI \u2248 3.2-3.9 and dKs \u2248 2.1-2.6. That is fainter than the earlier estimate (6-9%, dI 2.5-3.0, dKs 1.5-1.9) and fits with Gaia not resolving anything. The rough bound solution also needs the M4.5-M5 secondary to be about 1.4-2 times brighter than a normal main-sequence star of that type. Its predicted W1 shallow eclipse (about 6 times the TESS depth) is not seen in W1 (3\u03c3 low) but is consistent with W2.\n\nNet: the campaign can say 'the eclipsing pair is a cool K/M binary', backed by two independent surveys. 'Bound triple at 297 pc' is favoured by the prior and by the shape-plus-colour distance, but those depend on the light-curve model. It should be stated as the likely interpretation pending the lcmodel physical fits, eccentricity and radius-ratio constraints, and high-resolution imaging or spectroscopy.",
+ "caveats": "1. **Low-precision archival data.** The SuperWASP depth is a 3.6\u03c3 measurement after the full error budget (stat 657, sys 416 ppm, plus 10% multiplicative terms). The W1 depth rests on 8 in-eclipse points from 8 events. Fake-phase trials at the true period are correlated (only about 30-60 are independent), so tail probabilities rely on the fake-period null (3000 trials) and on Gaussian extrapolation beyond 1/3000.\n\n2. **Eclipses observed decades apart.** SuperWASP (2006-07) is compared with TESS (2018-2026). The TESS deep depth may be decreasing (\u221253 \u00b1 20 ppm/yr, 2.6\u03c3), which would make the true SuperWASP ratio even lower. An 8% epoch systematic is included; W1 overlaps the TESS era and does not have this problem.\n\n3. **Detrending-sensitive shallow eclipse.** The SuperWASP shallow amplitude is negative and moves with the detrending choice (\u22121158 to +170 ppm). Its errors correlate with the deep eclipse's (\u03c1 = 0.49), because the two sample similar times of night (1.5 periods \u2248 2 d \u2212 1.1 h). Shallow-eclipse colour constraints are weak and partly inconsistent: W1 shallow \u2248 0 while W2 shallow is large.\n\n4. **Model-dependent predictions.** Predictions use model spectra corrected to match empirical dwarf colours (checked to about 0.04 mag with Gaia colours). The SuperWASP passband is approximated as 400-700 nm \u00d7 CCD response (\u00b15%). The G/F background was given its most favourable temperature and geometry. The Teff inference assumes a flat prior from 3300 to 7000 K, and its model grid ends at 3400 K.\n\n5. **Dilution corrections.** SuperWASP dilution (4.2%, range 4.2-5.9%) uses a Gaussian PSF calibrated on two blended neighbours, with a residual mismatch of 0.08 mag. ASAS-SN (0.2%) and ASAS-3 (0.6%) corrections assume nominal apertures.\n\n6. **The shape-and-distance analysis is a simplified side calculation.** It assumes circular orbits, main-sequence radii, masses and absolute magnitudes, quadratic limb darkening, no spots and no ellipsoidal or reflection terms. The best physical fits are still worse than the empirical template by \u0394\u03c7\u00b2 of 3-110, so the \u03c7\u00b2 differences are not calibrated significances. Eccentricity hinted at by lcmodel (e sin\u03c9 \u2248 0.02-0.06) and the true radius ratio could shift the distances. It should be superseded by the lcmodel physical fits.\n\n7. **Data that were not available.** No ASAS-SN g-band (Sky Patrol light-curve service down for maintenance) and no ATLAS (needs an account). KELT has the field but not the target. Re-running with ASAS-SN g from Sky Patrol (2017-2025, about 1-2% per epoch, thousands of epochs) when the service returns would add a third, independent band.\n\n8. **Earlier partial attempt.** Its SuperWASP numbers (2744 \u00b1 738 deep) were not reused; this independent re-derivation agrees within errors. The 1.4 GB of KELT bulk-download scripts it left in data/kelt/x were deleted as not needed.",
+ "files": "Everything is in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/chromatic/v3/\n\nScripts (in v3/scripts/):\n- lib3.py: core fitting library\n- tess3.py: TESS reference depths and template shape\n- ephem3.py: ephemeris refit\n- wasp3.py: SuperWASP measurement\n- wasp3_diag.py: SuperWASP airmass baselines, per-event depths, folded light curve\n- wasp3_e2e.py: SuperWASP injection-recovery and template systematic\n- wasp_zero3.py: SuperWASP zero-level check\n- masked3.py: masked-detrending cross-check\n- sparse3.py: ASAS-SN V and ASAS-3 V\n- wise3.py, wise3_load.py: NEOWISE/AllWISE W1/W2\n- null3.py: fake-period nulls\n- dilution3.py: neighbour dilution\n- sed3.py, predict3.py: model spectra and predicted ratios\n- combine3.py: hypothesis tests and Teff inference\n- shape_grid3.py, shape_phys3.py, deeponly3.py, pairs3.py, ext_pairs3.py: TESS eclipse-shape and main-sequence pair analysis\n- plots3.py: figures\n\nResults (in v3/results/): matching .json and .log files. The compact overview is summary3.json; the hypothesis tests are in combine3.json and combine3.log; the pair map is in pairs3.json and pairs3.log.\n\nFigures (in v3/plots/):\n- wasp_fold.png: SuperWASP folded eclipses against the predictions\n- ratio_vs_band.png: measured depth ratios against bound-pair and background predictions\n- hypothesis_amplitudes.png: expected SuperWASP and W1 amplitudes under each hypothesis\n- teff_eclipsed_star.png: Teff of the eclipsed star\n\nData (in v3/data/):\n- wasp3_default_clean.npz: cleaned SuperWASP data\n- tess3_clean.npz: cleaned TESS data\n- tc_s*.npz: frozen copies of the lcmodel TESScut light curves\n- wasp_tile/: SuperWASP tile330042 catalogue and Gaia stars within 1.6 deg\n- kelt_check/: KELT field queries\n\nInput data reused from the previous attempt: /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/chromatic/data/ (wasp/, asassn_web/, asas3/, wise/, models/, gaia_360as.csv)"
+}
