@@ -1,0 +1,8 @@
+S28 deep    n=12 A=38.7: target emp bias (+0.07,+0.06) sd (0.49,0.55) | prf bias (+0.09,+0.06) sd (0.48,0.55) | formal sd (0.50,0.49) [290s]
+     1": bias |max| 0.12" mean (+0.07,+0.06) sd mean (0.50,0.55) amp ratio 1.00
+     3": bias |max| 0.21" mean (+0.06,+0.08) sd mean (0.51,0.56) amp ratio 1.00
+     5": bias |max| 0.29" mean (+0.06,+0.09) sd mean (0.51,0.58) amp ratio 1.00
+S28 shallow n=15 A=36.6: target emp bias (+0.21,+0.19) sd (0.96,1.04) | prf bias (+0.23,+0.19) sd (0.94,1.05) | formal sd (0.97,0.95) [899s]
+     1": bias |max| 0.36" mean (+0.22,+0.20) sd mean (0.97,1.04) amp ratio 1.00
+     3": bias |max| 0.51" mean (+0.22,+0.21) sd mean (0.98,1.08) amp ratio 1.00
+     5": bias |max| 0.64" mean (+0.21,+0.21) sd mean (0.98,1.12) amp ratio 1.00

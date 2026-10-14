@@ -1,0 +1,4 @@
+S95: cam1 ccd2 exptime 3.3 min, good 9560, centroid-cut 0; windows deep 18, shallow 17, fake 310
+S95 deep    n=18 FT=4749 amp=35.9 depth_pk=7569ppm off=(+1.28,-2.37)" formal=(0.43,0.42) dchi2(target)=41.6 chi2red=0.72 Bresid=1.25%
+S95 shallow n=17 FT=4752 amp=16.9 depth_pk=3551ppm off=(+3.93,-4.78)" formal=(0.92,0.93) dchi2(target)=42.0 chi2red=1.35 Bresid=1.25%
+S95 all     n=35 FT=4750 amp=35.6 depth_pk=7496ppm off=(+1.83,-2.76)" formal=(0.39,0.38) dchi2(target)=73.5 chi2red=1.01 Bresid=1.25%

@@ -1,0 +1,146 @@
+{
+ "default": {
+  "npts": 24160,
+  "nev": 187,
+  "per_sector": {
+   "1": {
+    "prod": "SPOC-PDC",
+    "n_prim": 15,
+    "n_sec": 17,
+    "sigma_ppm": 466.417337483383,
+    "beta": 1.0
+   },
+   "28": {
+    "prod": "SPOC-PDC",
+    "n_prim": 12,
+    "n_sec": 13,
+    "sigma_ppm": 894.734577724863,
+    "beta": 1.0
+   },
+   "68": {
+    "prod": "SPOC-PDC",
+    "n_prim": 15,
+    "n_sec": 16,
+    "sigma_ppm": 1619.008027327724,
+    "beta": 1.0
+   },
+   "95": {
+    "prod": "TC-AP",
+    "n_prim": 17,
+    "n_sec": 17,
+    "sigma_ppm": 1774.57980625937,
+    "beta": 1.0
+   },
+   "105": {
+    "prod": "TC-AP",
+    "n_prim": 16,
+    "n_sec": 17,
+    "sigma_ppm": 1693.5584500951181,
+    "beta": 1.0
+   },
+   "106": {
+    "prod": "TC-AP",
+    "n_prim": 17,
+    "n_sec": 15,
+    "sigma_ppm": 1577.7626997665857,
+    "beta": 1.0
+   }
+  }
+ },
+ "qlp": {
+  "npts": 22455,
+  "nev": 177,
+  "per_sector": {
+   "1": {
+    "prod": "SPOC-PDC",
+    "n_prim": 15,
+    "n_sec": 17,
+    "sigma_ppm": 466.417337483383,
+    "beta": 1.0
+   },
+   "28": {
+    "prod": "SPOC-PDC",
+    "n_prim": 12,
+    "n_sec": 13,
+    "sigma_ppm": 894.734577724863,
+    "beta": 1.0
+   },
+   "68": {
+    "prod": "SPOC-PDC",
+    "n_prim": 15,
+    "n_sec": 16,
+    "sigma_ppm": 1619.008027327724,
+    "beta": 1.0
+   },
+   "95": {
+    "prod": "QLP-SAP",
+    "n_prim": 14,
+    "n_sec": 14,
+    "sigma_ppm": 1397.8254432119684,
+    "beta": 1.0
+   },
+   "105": {
+    "prod": "QLP-SAP",
+    "n_prim": 14,
+    "n_sec": 15,
+    "sigma_ppm": 1391.1161429373433,
+    "beta": 1.0
+   },
+   "106": {
+    "prod": "TC-AP",
+    "n_prim": 17,
+    "n_sec": 15,
+    "sigma_ppm": 1577.7626997665857,
+    "beta": 1.0
+   }
+  }
+ },
+ "tc": {
+  "npts": 24802,
+  "nev": 193,
+  "per_sector": {
+   "1": {
+    "prod": "TC-AP",
+    "n_prim": 15,
+    "n_sec": 17,
+    "sigma_ppm": 498.67221945301884,
+    "beta": 1.0
+   },
+   "28": {
+    "prod": "TC-AP",
+    "n_prim": 12,
+    "n_sec": 16,
+    "sigma_ppm": 921.6580001248233,
+    "beta": 1.0
+   },
+   "68": {
+    "prod": "TC-AP",
+    "n_prim": 16,
+    "n_sec": 18,
+    "sigma_ppm": 1580.5355680568496,
+    "beta": 1.0
+   },
+   "95": {
+    "prod": "TC-AP",
+    "n_prim": 17,
+    "n_sec": 17,
+    "sigma_ppm": 1774.57980625937,
+    "beta": 1.0
+   },
+   "105": {
+    "prod": "TC-AP",
+    "n_prim": 16,
+    "n_sec": 17,
+    "sigma_ppm": 1693.5584500951181,
+    "beta": 1.0
+   },
+   "106": {
+    "prod": "TC-AP",
+    "n_prim": 17,
+    "n_sec": 15,
+    "sigma_ppm": 1577.7626997665857,
+    "beta": 1.0
+   }
+  }
+ }
+}

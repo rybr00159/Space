@@ -1,0 +1,132 @@
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 132, in <module>
+    run(f)
+  File "/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/scripts/x10_ffi_astrometry.py", line 81, in run
+    prfs[(i, j)] = PRF.TESS_PRF(cam, ccd, sec, cc, rr, localdatadir=f'{L}/prf_files/{sub}/')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/PRF/prf.py", line 83, in __init__
+    surroundinginds = [subset[np.argmin(dist[subset])] for subset in [LL,LR,UL,UR]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+tess2026171095550-s0105-2-3-0307-s_ffic: S105 cam2 ccd3 target (809.5,438.4) boresight px (2152,2106) 356 isolated candidates, 356 fitted [12s]
+tess2026177080230-s0105-2-3-0307-s_ffic: S105 cam2 ccd3 target (809.5,438.4) boresight px (2152,2106) 356 isolated candidates, 356 fitted [12s]
+tess2026199045549-s0106-1-4-0308-s_ffic: S106 cam1 ccd4 target (1421.5,1551.7) boresight px (-23,2101) 355 isolated candidates, 355 fitted [13s]
+tess2026204174229-s0106-1-4-0308-s_ffic: S106 cam1 ccd4 target (1421.5,1551.6) boresight px (-23,2101) 355 isolated candidates, 355 fitted [13s]

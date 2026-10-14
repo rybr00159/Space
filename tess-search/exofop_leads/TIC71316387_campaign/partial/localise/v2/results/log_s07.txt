@@ -1,0 +1,8 @@
+noise excess kurtosis per sector/type: [-0.08  0.05  0.08  0.26 -0.11 -0.17 -0.17  0.    0.02  0.04 -0.04  0.2 ]
+fraction of single-sector noise draws beyond the 2-D 3-sigma contour (Gaussian 0.0027): [0.002 0.002 0.004 0.004 0.004 0.    0.    0.    0.002 0.002 0.004 0.006]
+sep 0.00" at [0. 0.]: observed dchi2    5.7; sims median 1.32, 95% 5.98, 99.7% 12.53; p_emp = 0.0620 (124/2000)
+sep 1.00" at [-0.4  0.9]: observed dchi2    2.8; sims median 1.38, 95% 6.36, 99.7% 12.30; p_emp = 0.2445 (489/2000)
+sep 1.25" at [-0.45  1.15]: observed dchi2    7.1; sims median 1.36, 95% 6.30, 99.7% 12.05; p_emp = 0.0340 (68/2000)
+sep 1.50" at [-0.45  1.4 ]: observed dchi2   12.8; sims median 1.42, 95% 5.82, 99.7% 10.92; p_emp = 0.0025 (5/2000)
+sep 2.00" at [-0.55  1.9 ]: observed dchi2   31.2; sims median 1.39, 95% 6.24, 99.7% 11.55; p_emp = 0.0000 (0/2000)
+sep 3.00" at [-0.65  2.9 ]: observed dchi2   90.1; sims median 1.43, 95% 6.14, 99.7% 10.39; p_emp = 0.0000 (0/2000)

@@ -1,0 +1,4 @@
+S68: cam1 ccd1 exptime 3.3 min, good 9991, centroid-cut 0; windows deep 16, shallow 18, fake 340
+S68 deep    n=16 FT=4812 amp=35.9 depth_pk=7468ppm off=(-0.17,-2.13)" formal=(0.43,0.47) dchi2(target)=20.0 chi2red=0.92 Bresid=1.40%
+S68 shallow n=18 FT=4815 amp=16.3 depth_pk=3375ppm off=(+1.40,-4.31)" formal=(0.89,0.94) dchi2(target)=22.8 chi2red=0.71 Bresid=1.39%
+S68 all     n=34 FT=4813 amp=35.3 depth_pk=7337ppm off=(+0.15,-2.58)" formal=(0.39,0.42) dchi2(target)=36.4 chi2red=0.82 Bresid=1.40%

@@ -1,0 +1,3 @@
+S95 deep    n=16 FT=4749 amp=35.9 depth_pk=7569ppm off=(+1.28,-2.37)" formal=(0.43,0.42) dchi2(target)=41.6 chi2red=0.72 Bresid=1.25%
+S95 shallow n=17 FT=4752 amp=16.8 depth_pk=3546ppm off=(+3.90,-4.55)" formal=(0.92,0.93) dchi2(target)=39.1 chi2red=1.35 Bresid=1.25%
+S95 all     n=33 FT=4750 amp=35.6 depth_pk=7495ppm off=(+1.82,-2.71)" formal=(0.39,0.38) dchi2(target)=71.9 chi2red=1.01 Bresid=1.25%

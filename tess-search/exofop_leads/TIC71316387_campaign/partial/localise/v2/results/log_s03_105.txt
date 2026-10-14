@@ -1,0 +1,8 @@
+S105 deep    n=16 A=33.0: at target emp bias (-0.16,-0.20)" sd (0.59,0.57) | prf bias (-0.18,-0.20) sd (0.59,0.56)  [509s]
+      inj 1": |bias| max 0.28" mean bias (-0.15,-0.20) sd mean (0.59,0.57)
+      inj 3": |bias| max 0.33" mean bias (-0.15,-0.20) sd mean (0.60,0.56)
+      inj 5": |bias| max 0.37" mean bias (-0.13,-0.19) sd mean (0.60,0.56)
+S105 shallow n=17 A=18.0: at target emp bias (-0.24,-0.36)" sd (1.00,1.14) | prf bias (-0.25,-0.35) sd (1.00,1.12)  [928s]
+      inj 1": |bias| max 0.46" mean bias (-0.23,-0.35) sd mean (1.00,1.13)
+      inj 3": |bias| max 0.52" mean bias (-0.22,-0.34) sd mean (1.02,1.11)
+      inj 5": |bias| max 0.51" mean bias (-0.20,-0.31) sd mean (1.03,1.08)

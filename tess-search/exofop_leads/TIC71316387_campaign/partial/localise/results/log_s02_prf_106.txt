@@ -1,0 +1,3 @@
+S106 deep    n=15 FT=4710 amp=32.6 depth_pk=6929ppm off=(-2.38,-1.85)" formal=(0.52,0.61) dchi2(target)=36.2 chi2red=0.89 Bresid=1.29%
+S106 shallow n=15 FT=4708 amp=18.4 depth_pk=3902ppm off=(-4.39,-3.26)" formal=(0.89,0.90) dchi2(target)=37.2 chi2red=0.57 Bresid=1.29%
+S106 all     n=30 FT=4709 amp=33.6 depth_pk=7131ppm off=(-2.83,-2.13)" formal=(0.46,0.53) dchi2(target)=63.9 chi2red=0.77 Bresid=1.29%

@@ -1,0 +1,5 @@
+S28 deep    n=12 depth_pk=8051ppm off=(+0.17,-2.53)" formal=(0.47,0.45) plane=(+0.22,-2.39) dchi2T=32.7 chi2/npix=51/49
+S28 shallow n=15 depth_pk=7624ppm off=(+0.22,-2.84)" formal=(0.98,0.91) plane=(+0.43,-2.53) dchi2T=10.3 chi2/npix=44/49
+S28 both    n=27 depth_pk=7959ppm off=(+0.17,-2.56)" formal=(0.43,0.40) plane=(+0.25,-2.38) dchi2T=41.6 chi2/npix=54/49
+S28 deep    Gaussian(0.76,0.75) off=(+0.26,-2.57)
+S28 shallow Gaussian(0.76,0.75) off=(+0.04,-2.73)

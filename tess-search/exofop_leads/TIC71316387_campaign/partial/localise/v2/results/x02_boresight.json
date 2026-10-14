@@ -1,0 +1,140 @@
+{
+ "1": {
+  "cam": 1,
+  "field_angle_deg": 10.862552331133392,
+  "pa_to_boresight": 330.724973491873,
+  "dir_pix_to_boresight": [
+   -0.09268168323995708,
+   0.9956957896826762
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -2.1943057907813976,
+    "tangential": 0.09579258436072954
+   },
+   "shallow": {
+    "radial_toward_bs": -4.516695226290039,
+    "tangential": 2.0173745139168426
+   },
+   "all": {
+    "radial_toward_bs": -3.0063668832410144,
+    "tangential": 0.5514174088671995
+   }
+  }
+ },
+ "28": {
+  "cam": 1,
+  "field_angle_deg": 11.273339613584406,
+  "pa_to_boresight": 353.8841277888463,
+  "dir_pix_to_boresight": [
+   0.27475976305550676,
+   0.961512908184639
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -2.4340289892052516,
+    "tangential": -0.4818807504781157
+   },
+   "shallow": {
+    "radial_toward_bs": -3.3304358270930097,
+    "tangential": -0.49904047841380217
+   },
+   "all": {
+    "radial_toward_bs": -2.5808049014662378,
+    "tangential": -0.47890900235527456
+   }
+  }
+ },
+ "68": {
+  "cam": 1,
+  "field_angle_deg": 9.516033982128308,
+  "pa_to_boresight": 349.2732394983729,
+  "dir_pix_to_boresight": [
+   0.22048917883093627,
+   0.9753894207025517
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -2.0577951164858685,
+    "tangential": -0.5636358744127011
+   },
+   "shallow": {
+    "radial_toward_bs": -4.495139042843888,
+    "tangential": 0.5720106024502157
+   },
+   "all": {
+    "radial_toward_bs": -2.563953003112715,
+    "tangential": -0.32814361417718363
+   }
+  }
+ },
+ "95": {
+  "cam": 1,
+  "field_angle_deg": 9.41002498463429,
+  "pa_to_boresight": 327.6612728079388,
+  "dir_pix_to_boresight": [
+   -0.12729681899134113,
+   0.9918646681249845
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -2.6849494420624986,
+    "tangential": -0.18517766676879727
+   },
+   "shallow": {
+    "radial_toward_bs": -5.930958418508241,
+    "tangential": 0.8639485258039848
+   },
+   "all": {
+    "radial_toward_bs": -3.2677485978417806,
+    "tangential": 0.08591362660098664
+   }
+  }
+ },
+ "105": {
+  "cam": 2,
+  "field_angle_deg": 12.264280941965632,
+  "pa_to_boresight": 140.43028661545955,
+  "dir_pix_to_boresight": [
+   0.6268903039194059,
+   0.779107532277692
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -3.6336335054237123,
+    "tangential": 0.28144723272048616
+   },
+   "shallow": {
+    "radial_toward_bs": -6.842693908178483,
+    "tangential": 0.6087567400031136
+   },
+   "all": {
+    "radial_toward_bs": -4.2518337952074265,
+    "tangential": 0.273858598704189
+   }
+  }
+ },
+ "106": {
+  "cam": 1,
+  "field_angle_deg": 8.9722310311964,
+  "pa_to_boresight": 46.23195593592796,
+  "dir_pix_to_boresight": [
+   -0.9346779818837223,
+   0.35549552765368536
+  ],
+  "comps": {
+   "deep": {
+    "radial_toward_bs": -2.9960864710498853,
+    "tangential": -0.31058597784558784
+   },
+   "shallow": {
+    "radial_toward_bs": -5.425736670413145,
+    "tangential": -0.6863178584794549
+   },
+   "all": {
+    "radial_toward_bs": -3.5155277262501037,
+    "tangential": -0.42037806636887126
+   }
+  }
+ }
+}

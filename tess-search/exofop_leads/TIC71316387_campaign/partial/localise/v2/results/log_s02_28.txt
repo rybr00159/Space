@@ -1,0 +1,3 @@
+S28 deep    n=12 FT=4782 amp=39.1 depth_pk=8182ppm off=(-0.22,-2.47)" formal=(0.47,0.43) dchi2(target)=33.8 chi2red=1.42 Bresid=2.35%
+S28 shallow n=15 FT=4782 amp=18.0 depth_pk=3765ppm off=(-0.14,-3.36)" formal=(0.95,0.88) dchi2(target)=14.6 chi2red=0.95 Bresid=2.34%
+S28 all     n=27 FT=4783 amp=38.6 depth_pk=8069ppm off=(-0.20,-2.62)" formal=(0.42,0.39) dchi2(target)=46.6 chi2red=1.45 Bresid=2.34%

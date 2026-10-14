@@ -1,0 +1,24 @@
+S1 deep    n=17 depth_pk=  5804ppm S/N= 28.8 off=(+1.23,-1.82)" cont=(+1.28,-1.90) dchi2T=16.2 chi2/npix=40/49
+S1 shallow n=17 depth_pk=  2894ppm S/N= 13.3 off=(+3.81,-2.65)" cont=(+3.78,-2.67) dchi2T=17.0 chi2/npix=37/49
+S1 both    n=34 depth_pk=  5851ppm S/N= 31.5 off=(+1.72,-1.95)" cont=(+1.71,-1.91) dchi2T=28.4 chi2/npix=43/49
+S1 done [57s]
+S28 deep    n=12 depth_pk=  5917ppm S/N= 40.3 off=(+0.04,-2.38)" cont=(+0.04,-2.38) dchi2T=31.5 chi2/npix=50/49
+S28 shallow n=15 depth_pk=  2696ppm S/N= 19.6 off=(+0.07,-3.30)" cont=(+0.09,-3.33) dchi2T=14.9 chi2/npix=39/49
+S28 both    n=27 depth_pk=  5874ppm S/N= 44.8 off=(+0.03,-2.51)" cont=(+0.03,-2.51) dchi2T=43.3 chi2/npix=52/49
+S28 done [57s]
+S68 deep    n=16 depth_pk=  5513ppm S/N= 37.1 off=(-0.09,-2.35)" cont=(-0.09,-2.34) dchi2T=26.1 chi2/npix=63/49
+S68 shallow n=18 depth_pk=  2502ppm S/N= 18.3 off=(+1.39,-3.89)" cont=(+1.39,-3.89) dchi2T=22.7 chi2/npix=35/49
+S68 both    n=34 depth_pk=  5469ppm S/N= 41.4 off=(+0.21,-2.67)" cont=(+0.21,-2.68) dchi2T=42.8 chi2/npix=51/49
+S68 done [60s]
+S95 deep    n=18 depth_pk=  5455ppm S/N= 39.0 off=(+1.26,-2.23)" cont=(+1.24,-2.20) dchi2T=40.0 chi2/npix=33/49
+S95 shallow n=17 depth_pk=  2658ppm S/N= 18.2 off=(+3.44,-4.05)" cont=(+3.45,-4.07) dchi2T=32.0 chi2/npix=52/49
+S95 both    n=35 depth_pk=  5491ppm S/N= 43.0 off=(+1.68,-2.51)" cont=(+1.68,-2.50) dchi2T=65.8 chi2/npix=37/49
+S95 done [62s]
+S105 deep    n=16 depth_pk=  5258ppm S/N= 33.7 off=(-2.38,+2.73)" cont=(-2.40,+2.72) dchi2T=57.0 chi2/npix=43/49
+S105 shallow n=17 depth_pk=  2802ppm S/N= 18.1 off=(-4.51,+5.32)" cont=(-4.52,+5.31) dchi2T=57.7 chi2/npix=45/49
+S105 both    n=33 depth_pk=  5395ppm S/N= 38.2 off=(-2.68,+3.22)" cont=(-2.68,+3.22) dchi2T=97.0 chi2/npix=47/49
+S105 done [71s]
+S106 deep    n=17 depth_pk=  5242ppm S/N= 32.8 off=(-2.32,-1.69)" cont=(-2.32,-1.69) dchi2T=38.2 chi2/npix=38/49
+S106 shallow n=15 depth_pk=  2691ppm S/N= 16.7 off=(-3.95,-3.38)" cont=(-3.94,-3.39) dchi2T=29.9 chi2/npix=40/49
+S106 both    n=32 depth_pk=  5329ppm S/N= 36.8 off=(-2.64,-2.01)" cont=(-2.62,-2.02) dchi2T=61.6 chi2/npix=39/49
+S106 done [60s]

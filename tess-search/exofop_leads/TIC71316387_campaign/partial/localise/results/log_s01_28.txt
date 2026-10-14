@@ -1,0 +1,1 @@
+S28: cam1 ccd1 exptime 10.0 min, good 2587, centroid-cut 13; windows deep 12, shallow 15, fake 249

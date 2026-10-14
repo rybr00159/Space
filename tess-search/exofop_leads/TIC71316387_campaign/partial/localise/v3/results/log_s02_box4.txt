@@ -1,0 +1,30 @@
+S1 deep    n=17 depth_pk=7689ppm off=(+1.53,-1.76)" formal=(0.61,0.62) plane=(+1.53,-1.76) dchi2T=15.8 chi2/npix=66/81
+S1 shallow n=17 depth_pk=5712ppm off=(-5.06,-2.39)" formal=(3.38,3.03) plane=(-0.75,-2.86) dchi2T=2.3 chi2/npix=125/81
+S1 both    n=34 depth_pk=7736ppm off=(+1.57,-1.74)" formal=(0.67,0.67) plane=(+1.71,-1.67) dchi2T=14.4 chi2/npix=112/81
+S1 deep    Gaussian(0.82,0.83) off=(+1.42,-1.61)
+S1 shallow Gaussian(0.82,0.83) off=(-13.72,-2.57)
+S28 deep    n=12 depth_pk=8007ppm off=(+0.15,-2.51)" formal=(0.47,0.45) plane=(+0.23,-2.48) dchi2T=32.0 chi2/npix=68/81
+S28 shallow n=15 depth_pk=7687ppm off=(+0.18,-2.79)" formal=(0.97,0.90) plane=(+0.31,-2.73) dchi2T=10.1 chi2/npix=90/81
+S28 both    n=27 depth_pk=7939ppm off=(+0.15,-2.53)" formal=(0.43,0.40) plane=(+0.23,-2.49) dchi2T=40.7 chi2/npix=78/81
+S28 deep    Gaussian(0.77,0.75) off=(+0.21,-2.46)
+S28 shallow Gaussian(0.77,0.75) off=(-0.01,-2.64)
+S68 deep    n=15 depth_pk=7366ppm off=(-0.13,-2.18)" formal=(0.45,0.49) plane=(-0.22,-2.13) dchi2T=19.6 chi2/npix=97/81
+S68 shallow n=16 depth_pk=6778ppm off=(+1.62,-3.82)" formal=(0.92,0.97) plane=(+1.65,-4.05) dchi2T=18.9 chi2/npix=85/81
+S68 both    n=31 depth_pk=7237ppm off=(+0.25,-2.53)" formal=(0.40,0.44) plane=(+0.18,-2.54) dchi2T=33.1 chi2/npix=95/81
+S68 deep    Gaussian(0.72,0.74) off=(-0.32,-2.11)
+S68 shallow Gaussian(0.72,0.74) off=(+1.28,-3.89)
+S95 deep    n=16 depth_pk=7410ppm off=(+1.25,-2.27)" formal=(0.44,0.44) plane=(+1.21,-2.32) dchi2T=36.5 chi2/npix=56/81
+S95 shallow n=17 depth_pk=6961ppm off=(+3.60,-4.94)" formal=(1.00,1.04) plane=(+3.70,-4.84) dchi2T=35.3 chi2/npix=93/81
+S95 both    n=33 depth_pk=7329ppm off=(+1.74,-2.68)" formal=(0.40,0.40) plane=(+1.73,-2.70) dchi2T=64.0 chi2/npix=60/81
+S95 deep    Gaussian(0.74,0.77) off=(+1.31,-1.98)
+S95 shallow Gaussian(0.74,0.77) off=(+3.49,-4.49)
+S105 deep    n=16 depth_pk=7149ppm off=(-2.26,+2.94)" formal=(0.50,0.51) plane=(-2.18,+3.03) dchi2T=55.4 chi2/npix=64/81
+S105 shallow n=15 depth_pk=7782ppm off=(-4.61,+5.50)" formal=(0.99,0.90) plane=(-4.75,+5.35) dchi2T=54.9 chi2/npix=77/81
+S105 both    n=31 depth_pk=7275ppm off=(-2.63,+3.39)" formal=(0.47,0.45) plane=(-2.60,+3.43) dchi2T=94.5 chi2/npix=67/81
+S105 deep    Gaussian(0.86,0.87) off=(-2.75,+2.63)
+S105 shallow Gaussian(0.86,0.87) off=(-4.37,+4.42)
+S106 deep    n=15 depth_pk=7084ppm off=(-2.09,-1.71)" formal=(0.50,0.60) plane=(-2.10,-1.68) dchi2T=31.0 chi2/npix=97/81
+S106 shallow n=15 depth_pk=7567ppm off=(-3.86,-4.00)" formal=(0.99,0.98) plane=(-3.60,-3.73) dchi2T=31.4 chi2/npix=66/81
+S106 both    n=30 depth_pk=7184ppm off=(-2.41,-2.22)" formal=(0.45,0.53) plane=(-2.35,-2.15) dchi2T=53.9 chi2/npix=84/81
+S106 deep    Gaussian(0.76,0.71) off=(-2.18,-1.59)
+S106 shallow Gaussian(0.76,0.71) off=(-3.90,-3.33)

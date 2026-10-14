@@ -1,0 +1,112 @@
+  X['bpb'] = X.NBPblend / X.o_BPmag
+  X['rpb'] = X.NRPblend / X.o_RPmag
+  X['Cstar'] = cstar(X.E, X.bprp); X['Cstar_sig'] = X.Cstar / sig_cstar(X.Gmag)
+  X['Cstar'] = cstar(X.E, X.bprp); X['Cstar_sig'] = X.Cstar / sig_cstar(X.Gmag)
+  prim = Xc.groupby('pos').first().reset_index()
+  prim['unres'] = prim.dnn > 3.0
+pairs (0.08-3", contrast known): 4953; singles: 6073
+
+singles G10.5-13: n=1255  fmp30-55 3  D 0  D+ 0  bpb>=0.9 35 (unres 33)  C*>2sig 132  fmp q50/95/99 [0.0, 1.0, 4.0]
+
+singles G9-14: n=2635  fmp30-55 5  D 0  D+ 0  bpb>=0.9 56 (unres 52)  C*>2sig 190  fmp q50/95/99 [0.0, 1.0, 6.6599999999998545]
+
+pairs G9.5-13.5 & D: n=9 sep q5/16/50/84/95 [0.4  0.55 0.81 1.03 1.14]  dm [0.76 1.71 3.8  4.35 4.56]
+    {'Source': 2100416823690394624, 'Gmag': 10.455, 'sep': 0.807, 'dm': 4.43, 'pa': 152.5, 'IPDfmp': 40, 'RUWE': 1.012, 'IPDgofha': 0.011, 'IPDgofhp': 131.3, 'bpb': 0.0, 'Cstar_sig': 1.383, 'cats': 'J_AJ_153_71_table8'}
+    {'Source': 3166872768245035008, 'Gmag': 13.062, 'sep': 0.849, 'dm': 1.6, 'pa': 166.1, 'IPDfmp': 53, 'RUWE': 1.106, 'IPDgofha': 0.072, 'IPDgofhp': 101.4, 'bpb': 0.0, 'Cstar_sig': 26.909, 'cats': 'J_AJ_168_28_table1'}
+    {'Source': 3312025586059836928, 'Gmag': 10.022, 'sep': 1.2, 'dm': 4.65, 'pa': 63.25, 'IPDfmp': 41, 'RUWE': 1.23, 'IPDgofha': 0.024, 'IPDgofhp': 143.4, 'bpb': 0.621, 'Cstar_sig': 0.404, 'cats': 'J_AJ_162_41_table2'}
+    {'Source': 3804108716535576960, 'Gmag': 9.826, 'sep': 0.312, 'dm': 0.2, 'pa': 154.25, 'IPDfmp': 50, 'RUWE': 0.961, 'IPDgofha': 0.135, 'IPDgofhp': 177.0, 'bpb': 0.0, 'Cstar_sig': 48.194, 'cats': 'J_AJ_160_7_table2;J_AJ_164_58_table2'}
+    {'Source': 5497106965452682752, 'Gmag': 10.656, 'sep': 0.972, 'dm': 4.15, 'pa': 161.65, 'IPDfmp': 30, 'RUWE': 1.006, 'IPDgofha': 0.006, 'IPDgofhp': 176.8, 'bpb': 0.0, 'Cstar_sig': 1.785, 'cats': 'J_AJ_159_19_table6;J_AJ_164_58_table2'}
+    {'Source': 6030155524060781056, 'Gmag': 10.032, 'sep': 0.635, 'dm': 3.8, 'pa': 164.4, 'IPDfmp': 36, 'RUWE': 1.213, 'IPDgofha': 0.013, 'IPDgofhp': 11.87, 'bpb': 0.013, 'Cstar_sig': 3.22, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 6033399220807021056, 'Gmag': 9.57, 'sep': 0.626, 'dm': 2.0, 'pa': 1.1, 'IPDfmp': 47, 'RUWE': 0.898, 'IPDgofha': 0.076, 'IPDgofhp': 3.343, 'bpb': 1.0, 'Cstar_sig': 21.125, 'cats': 'J_AJ_166_139_table2'}
+    {'Source': 6138548472705801856, 'Gmag': 10.042, 'sep': 1.049, 'dm': 3.9, 'pa': 64.8, 'IPDfmp': 30, 'RUWE': 1.139, 'IPDgofha': 0.01, 'IPDgofhp': 48.33, 'bpb': 1.0, 'Cstar_sig': 2.081, 'cats': 'J_AJ_162_192_table1'}
+    {'Source': 6763741543167137024, 'Gmag': 10.247, 'sep': 0.522, 'dm': 3.75, 'pa': 67.35, 'IPDfmp': 33, 'RUWE': 0.961, 'IPDgofha': 0.026, 'IPDgofhp': 68.68, 'bpb': 0.0, 'Cstar_sig': 1.659, 'cats': 'J_AJ_155_235_table3'}
+
+pairs G9.5-13.5 & D+: n=2 sep q5/16/50/84/95 [0.65 0.69 0.84 0.98 1.03]  dm [2.1  2.3  2.95 3.6  3.81]
+    {'Source': 6033399220807021056, 'Gmag': 9.57, 'sep': 0.626, 'dm': 2.0, 'pa': 1.1, 'IPDfmp': 47, 'RUWE': 0.898, 'IPDgofha': 0.076, 'IPDgofhp': 3.343, 'bpb': 1.0, 'Cstar_sig': 21.125, 'cats': 'J_AJ_166_139_table2'}
+    {'Source': 6138548472705801856, 'Gmag': 10.042, 'sep': 1.049, 'dm': 3.9, 'pa': 64.8, 'IPDfmp': 30, 'RUWE': 1.139, 'IPDgofha': 0.01, 'IPDgofhp': 48.33, 'bpb': 1.0, 'Cstar_sig': 2.081, 'cats': 'J_AJ_162_192_table1'}
+
+pairs allG & D: n=48 sep q5/16/50/84/95 [0.16 0.29 0.67 0.92 1.04]  dm [0.1  0.66 3.35 4.6  4.83]
+    {'Source': 61891994861274496, 'Gmag': 5.786, 'sep': 0.676, 'dm': 4.6, 'pa': 61.3, 'IPDfmp': 51, 'RUWE': 1.09, 'IPDgofha': 0.046, 'IPDgofhp': 160.0, 'bpb': 0.0, 'Cstar_sig': 4.023, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 119823441461624704, 'Gmag': 8.907, 'sep': 0.152, 'dm': 0.0, 'pa': 123.1, 'IPDfmp': 33, 'RUWE': 1.046, 'IPDgofha': 0.162, 'IPDgofhp': 4.005, 'bpb': 0.0, 'Cstar_sig': 2.1, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 1217856466617284992, 'Gmag': 7.727, 'sep': 0.673, 'dm': 3.1, 'pa': 111.3, 'IPDfmp': 40, 'RUWE': 1.08, 'IPDgofha': 0.023, 'IPDgofhp': 108.5, 'bpb': 0.0, 'Cstar_sig': 9.479, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 2078866498869416960, 'Gmag': 14.589, 'sep': 0.18, 'dm': 0.4, 'pa': 156.6, 'IPDfmp': 35, 'RUWE': 1.016, 'IPDgofha': 0.303, 'IPDgofhp': 65.77, 'bpb': 0.021, 'Cstar_sig': 26.419, 'cats': 'J_AJ_153_71_table8'}
+    {'Source': 2100416823690394624, 'Gmag': 10.455, 'sep': 0.807, 'dm': 4.43, 'pa': 152.5, 'IPDfmp': 40, 'RUWE': 1.012, 'IPDgofha': 0.011, 'IPDgofhp': 131.3, 'bpb': 0.0, 'Cstar_sig': 1.383, 'cats': 'J_AJ_153_71_table8'}
+    {'Source': 2601992587800702336, 'Gmag': 8.902, 'sep': 0.735, 'dm': 3.15, 'pa': 151.7, 'IPDfmp': 52, 'RUWE': 1.266, 'IPDgofha': 0.018, 'IPDgofhp': 163.3, 'bpb': 0.0, 'Cstar_sig': 8.461, 'cats': 'J_AJ_158_48_table2;J_AJ_160_7_table2'}
+    {'Source': 2648903899942472704, 'Gmag': 7.674, 'sep': 0.728, 'dm': 2.3, 'pa': 45.1, 'IPDfmp': 55, 'RUWE': 1.24, 'IPDgofha': 0.029, 'IPDgofhp': 171.3, 'bpb': 1.0, 'Cstar_sig': 15.044, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 2689293738031376896, 'Gmag': 7.045, 'sep': 0.58, 'dm': 4.7, 'pa': 119.8, 'IPDfmp': 35, 'RUWE': 1.395, 'IPDgofha': 0.053, 'IPDgofhp': 177.8, 'bpb': 0.0, 'Cstar_sig': 1.921, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 2943888923919585152, 'Gmag': 7.229, 'sep': 0.548, 'dm': 4.6, 'pa': 125.3, 'IPDfmp': 46, 'RUWE': 1.266, 'IPDgofha': 0.091, 'IPDgofhp': 167.8, 'bpb': 0.0, 'Cstar_sig': 2.635, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3022497957987167872, 'Gmag': 7.106, 'sep': 0.516, 'dm': 2.5, 'pa': 126.3, 'IPDfmp': 54, 'RUWE': 1.359, 'IPDgofha': 0.027, 'IPDgofhp': 174.5, 'bpb': 1.0, 'Cstar_sig': 4.874, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3036768068439044608, 'Gmag': 5.566, 'sep': 0.951, 'dm': 1.6, 'pa': 153.012, 'IPDfmp': 41, 'RUWE': 1.383, 'IPDgofha': 0.225, 'IPDgofhp': 91.66, 'bpb': 1.0, 'Cstar_sig': 36.703, 'cats': 'J_AJ_155_235_table3;J_AJ_158_48_table2;J_AJ_160_7_table2;J_AJ_162_41_table2;J_AJ_164_58_table2;J_AJ_166_139_table2;J_AJ_168_28_table1'}
+    {'Source': 3111722227071649536, 'Gmag': 8.83, 'sep': 0.269, 'dm': 0.1, 'pa': 101.824, 'IPDfmp': 52, 'RUWE': 1.082, 'IPDgofha': 0.289, 'IPDgofhp': 41.89, 'bpb': 0.0, 'Cstar_sig': 100.199, 'cats': 'J_AJ_158_48_table2;J_AJ_162_41_table2;J_AJ_168_28_table1'}
+    {'Source': 3166872768245035008, 'Gmag': 13.062, 'sep': 0.849, 'dm': 1.6, 'pa': 166.1, 'IPDfmp': 53, 'RUWE': 1.106, 'IPDgofha': 0.072, 'IPDgofhp': 101.4, 'bpb': 0.0, 'Cstar_sig': 26.909, 'cats': 'J_AJ_168_28_table1'}
+    {'Source': 3245657582441858688, 'Gmag': 9.306, 'sep': 0.487, 'dm': 4.4, 'pa': 172.9, 'IPDfmp': 31, 'RUWE': 1.214, 'IPDgofha': 0.073, 'IPDgofhp': 178.3, 'bpb': 0.0, 'Cstar_sig': 2.387, 'cats': 'J_AJ_168_28_table1'}
+    {'Source': 3312025586059836928, 'Gmag': 10.022, 'sep': 1.2, 'dm': 4.65, 'pa': 63.25, 'IPDfmp': 41, 'RUWE': 1.23, 'IPDgofha': 0.024, 'IPDgofhp': 143.4, 'bpb': 0.621, 'Cstar_sig': 0.404, 'cats': 'J_AJ_162_41_table2'}
+    {'Source': 3388441399375459328, 'Gmag': 6.783, 'sep': 0.953, 'dm': 5.2, 'pa': 148.8, 'IPDfmp': 31, 'RUWE': 1.049, 'IPDgofha': 0.011, 'IPDgofhp': 62.56, 'bpb': 1.0, 'Cstar_sig': 2.887, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3469982835255548544, 'Gmag': 9.247, 'sep': 0.479, 'dm': 4.2, 'pa': 3.85, 'IPDfmp': 49, 'RUWE': 1.207, 'IPDgofha': 0.022, 'IPDgofhp': 114.6, 'bpb': 0.0, 'Cstar_sig': 1.72, 'cats': 'J_AJ_158_48_table2;J_AJ_160_7_table2'}
+    {'Source': 3525534075404680192, 'Gmag': 8.778, 'sep': 0.83, 'dm': 2.9, 'pa': 159.9, 'IPDfmp': 48, 'RUWE': 1.266, 'IPDgofha': 0.018, 'IPDgofhp': 161.1, 'bpb': 1.0, 'Cstar_sig': 5.82, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3715893696048237056, 'Gmag': 6.695, 'sep': 1.182, 'dm': 2.5, 'pa': 108.4, 'IPDfmp': 50, 'RUWE': 0.833, 'IPDgofha': 0.046, 'IPDgofhp': 115.1, 'bpb': 1.0, 'Cstar_sig': 11.443, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 3785426983187269632, 'Gmag': 8.963, 'sep': 0.164, 'dm': 0.35, 'pa': 127.0, 'IPDfmp': 44, 'RUWE': 0.983, 'IPDgofha': 0.182, 'IPDgofhp': 49.58, 'bpb': 0.0, 'Cstar_sig': 2.591, 'cats': 'J_AJ_158_48_table2;J_AJ_168_28_table1'}
+    {'Source': 3804108716535576960, 'Gmag': 9.826, 'sep': 0.312, 'dm': 0.2, 'pa': 154.25, 'IPDfmp': 50, 'RUWE': 0.961, 'IPDgofha': 0.135, 'IPDgofhp': 177.0, 'bpb': 0.0, 'Cstar_sig': 48.194, 'cats': 'J_AJ_160_7_table2;J_AJ_164_58_table2'}
+    {'Source': 3865877183838870528, 'Gmag': 8.505, 'sep': 0.678, 'dm': 2.3, 'pa': 2.7, 'IPDfmp': 51, 'RUWE': 1.226, 'IPDgofha': 0.089, 'IPDgofhp': 18.6, 'bpb': 1.0, 'Cstar_sig': 20.721, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 4040799034164255872, 'Gmag': 9.344, 'sep': 0.159, 'dm': 0.15, 'pa': 44.95, 'IPDfmp': 39, 'RUWE': 1.203, 'IPDgofha': 0.188, 'IPDgofhp': 158.3, 'bpb': 0.0, 'Cstar_sig': 4.058, 'cats': 'J_AJ_155_235_table3;J_AJ_164_58_table2'}
+    {'Source': 4052028041600862976, 'Gmag': 9.486, 'sep': 0.179, 'dm': 0.0, 'pa': 65.333, 'IPDfmp': 43, 'RUWE': 0.962, 'IPDgofha': 0.366, 'IPDgofhp': 156.8, 'bpb': 0.0, 'Cstar_sig': 1.375, 'cats': 'J_AJ_155_235_table3;J_AJ_160_7_table2;J_AJ_166_139_table2'}
+    {'Source': 4064824634548349952, 'Gmag': 7.499, 'sep': 0.505, 'dm': 4.1, 'pa': 151.8, 'IPDfmp': 34, 'RUWE': 0.842, 'IPDgofha': 0.071, 'IPDgofhp': 178.7, 'bpb': 0.0, 'Cstar_sig': 3.464, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 4111233547251028736, 'Gmag': 9.232, 'sep': 0.209, 'dm': 0.9, 'pa': 132.0, 'IPDfmp': 46, 'RUWE': 1.138, 'IPDgofha': 0.206, 'IPDgofhp': 53.06, 'bpb': 0.0, 'Cstar_sig': 3.14, 'cats': 'J_AJ_160_7_table2'}
+    {'Source': 4368415982703664128, 'Gmag': 4.471, 'sep': 0.706, 'dm': 2.9, 'pa': 24.0, 'IPDfmp': 37, 'RUWE': 1.078, 'IPDgofha': 0.141, 'IPDgofhp': 137.5, 'bpb': 0.0, 'Cstar_sig': 12.473, 'cats': 'J_AJ_160_7_table2'}
+    {'Source': 4700286696914275200, 'Gmag': 8.275, 'sep': 0.579, 'dm': 4.7, 'pa': 108.9, 'IPDfmp': 40, 'RUWE': 1.383, 'IPDgofha': 0.013, 'IPDgofhp': 63.37, 'bpb': 0.0, 'Cstar_sig': 2.587, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 4938356287455464192, 'Gmag': 8.597, 'sep': 0.771, 'dm': 4.3, 'pa': 90.2, 'IPDfmp': 39, 'RUWE': 0.969, 'IPDgofha': 0.019, 'IPDgofhp': 103.6, 'bpb': 0.0, 'Cstar_sig': 3.009, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 5036183784052044544, 'Gmag': 9.296, 'sep': 1.011, 'dm': 3.7, 'pa': 86.1, 'IPDfmp': 42, 'RUWE': 1.079, 'IPDgofha': 0.022, 'IPDgofhp': 8.252, 'bpb': 1.0, 'Cstar_sig': 2.665, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 5134869423706749568, 'Gmag': 6.968, 'sep': 0.853, 'dm': 2.1, 'pa': 146.6, 'IPDfmp': 31, 'RUWE': 0.882, 'IPDgofha': 0.028, 'IPDgofhp': 170.2, 'bpb': 1.0, 'Cstar_sig': 3.465, 'cats': 'J_AJ_168_28_table1'}
+    {'Source': 5160720453904340736, 'Gmag': 7.006, 'sep': 0.572, 'dm': 3.4, 'pa': 40.7, 'IPDfmp': 31, 'RUWE': 1.255, 'IPDgofha': 0.015, 'IPDgofhp': 88.2, 'bpb': 0.0, 'Cstar_sig': 5.95, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 5497106965452682752, 'Gmag': 10.656, 'sep': 0.972, 'dm': 4.15, 'pa': 161.65, 'IPDfmp': 30, 'RUWE': 1.006, 'IPDgofha': 0.006, 'IPDgofhp': 176.8, 'bpb': 0.0, 'Cstar_sig': 1.785, 'cats': 'J_AJ_159_19_table6;J_AJ_164_58_table2'}
+    {'Source': 5662243059208801280, 'Gmag': 6.782, 'sep': 0.765, 'dm': 2.7, 'pa': 137.6, 'IPDfmp': 46, 'RUWE': 1.005, 'IPDgofha': 0.029, 'IPDgofhp': 105.3, 'bpb': 1.0, 'Cstar_sig': 16.802, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 5709861468997078528, 'Gmag': 9.116, 'sep': 0.629, 'dm': 4.7, 'pa': 13.8, 'IPDfmp': 33, 'RUWE': 1.02, 'IPDgofha': 0.013, 'IPDgofhp': 172.8, 'bpb': 0.0, 'Cstar_sig': 1.855, 'cats': 'J_AJ_159_19_table6'}
+    {'Source': 5835124087174043136, 'Gmag': 6.176, 'sep': 0.913, 'dm': 6.3, 'pa': 77.9, 'IPDfmp': 32, 'RUWE': 0.878, 'IPDgofha': 0.022, 'IPDgofhp': 62.76, 'bpb': 0.0, 'Cstar_sig': -1.032, 'cats': 'J_AJ_166_139_table2'}
+    {'Source': 5923907314622859520, 'Gmag': 5.218, 'sep': 0.67, 'dm': 2.7, 'pa': 160.793, 'IPDfmp': 52, 'RUWE': 1.245, 'IPDgofha': 0.035, 'IPDgofhp': 82.98, 'bpb': 0.0, 'Cstar_sig': 11.338, 'cats': 'J_AJ_155_235_table3;J_AJ_158_48_table2;J_AJ_160_7_table2;J_AJ_162_41_table2;J_AJ_164_58_table2'}
+    {'Source': 5959518670849998848, 'Gmag': 8.67, 'sep': 0.732, 'dm': 4.0, 'pa': 31.3, 'IPDfmp': 51, 'RUWE': 0.977, 'IPDgofha': 0.027, 'IPDgofhp': 151.5, 'bpb': 1.0, 'Cstar_sig': 5.613, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 6030155524060781056, 'Gmag': 10.032, 'sep': 0.635, 'dm': 3.8, 'pa': 164.4, 'IPDfmp': 36, 'RUWE': 1.213, 'IPDgofha': 0.013, 'IPDgofhp': 11.87, 'bpb': 0.013, 'Cstar_sig': 3.22, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 6033399220807021056, 'Gmag': 9.57, 'sep': 0.626, 'dm': 2.0, 'pa': 1.1, 'IPDfmp': 47, 'RUWE': 0.898, 'IPDgofha': 0.076, 'IPDgofhp': 3.343, 'bpb': 1.0, 'Cstar_sig': 21.125, 'cats': 'J_AJ_166_139_table2'}
+
+pairs allG & D+: n=14 sep q5/16/50/84/95 [0.59 0.68 0.84 1.01 1.1 ]  dm [1.86 2.12 2.6  3.89 4.42]
+    {'Source': 2648903899942472704, 'Gmag': 7.674, 'sep': 0.728, 'dm': 2.3, 'pa': 45.1, 'IPDfmp': 55, 'RUWE': 1.24, 'IPDgofha': 0.029, 'IPDgofhp': 171.3, 'bpb': 1.0, 'Cstar_sig': 15.044, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 3022497957987167872, 'Gmag': 7.106, 'sep': 0.516, 'dm': 2.5, 'pa': 126.3, 'IPDfmp': 54, 'RUWE': 1.359, 'IPDgofha': 0.027, 'IPDgofhp': 174.5, 'bpb': 1.0, 'Cstar_sig': 4.874, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3036768068439044608, 'Gmag': 5.566, 'sep': 0.951, 'dm': 1.6, 'pa': 153.012, 'IPDfmp': 41, 'RUWE': 1.383, 'IPDgofha': 0.225, 'IPDgofhp': 91.66, 'bpb': 1.0, 'Cstar_sig': 36.703, 'cats': 'J_AJ_155_235_table3;J_AJ_158_48_table2;J_AJ_160_7_table2;J_AJ_162_41_table2;J_AJ_164_58_table2;J_AJ_166_139_table2;J_AJ_168_28_table1'}
+    {'Source': 3388441399375459328, 'Gmag': 6.783, 'sep': 0.953, 'dm': 5.2, 'pa': 148.8, 'IPDfmp': 31, 'RUWE': 1.049, 'IPDgofha': 0.011, 'IPDgofhp': 62.56, 'bpb': 1.0, 'Cstar_sig': 2.887, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3525534075404680192, 'Gmag': 8.778, 'sep': 0.83, 'dm': 2.9, 'pa': 159.9, 'IPDfmp': 48, 'RUWE': 1.266, 'IPDgofha': 0.018, 'IPDgofhp': 161.1, 'bpb': 1.0, 'Cstar_sig': 5.82, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 3715893696048237056, 'Gmag': 6.695, 'sep': 1.182, 'dm': 2.5, 'pa': 108.4, 'IPDfmp': 50, 'RUWE': 0.833, 'IPDgofha': 0.046, 'IPDgofhp': 115.1, 'bpb': 1.0, 'Cstar_sig': 11.443, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 3865877183838870528, 'Gmag': 8.505, 'sep': 0.678, 'dm': 2.3, 'pa': 2.7, 'IPDfmp': 51, 'RUWE': 1.226, 'IPDgofha': 0.089, 'IPDgofhp': 18.6, 'bpb': 1.0, 'Cstar_sig': 20.721, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 5036183784052044544, 'Gmag': 9.296, 'sep': 1.011, 'dm': 3.7, 'pa': 86.1, 'IPDfmp': 42, 'RUWE': 1.079, 'IPDgofha': 0.022, 'IPDgofhp': 8.252, 'bpb': 1.0, 'Cstar_sig': 2.665, 'cats': 'J_AJ_158_48_table2'}
+    {'Source': 5134869423706749568, 'Gmag': 6.968, 'sep': 0.853, 'dm': 2.1, 'pa': 146.6, 'IPDfmp': 31, 'RUWE': 0.882, 'IPDgofha': 0.028, 'IPDgofhp': 170.2, 'bpb': 1.0, 'Cstar_sig': 3.465, 'cats': 'J_AJ_168_28_table1'}
+    {'Source': 5662243059208801280, 'Gmag': 6.782, 'sep': 0.765, 'dm': 2.7, 'pa': 137.6, 'IPDfmp': 46, 'RUWE': 1.005, 'IPDgofha': 0.029, 'IPDgofhp': 105.3, 'bpb': 1.0, 'Cstar_sig': 16.802, 'cats': 'J_AJ_155_235_table3'}
+    {'Source': 5959518670849998848, 'Gmag': 8.67, 'sep': 0.732, 'dm': 4.0, 'pa': 31.3, 'IPDfmp': 51, 'RUWE': 0.977, 'IPDgofha': 0.027, 'IPDgofhp': 151.5, 'bpb': 1.0, 'Cstar_sig': 5.613, 'cats': 'J_AJ_164_58_table2'}
+    {'Source': 6033399220807021056, 'Gmag': 9.57, 'sep': 0.626, 'dm': 2.0, 'pa': 1.1, 'IPDfmp': 47, 'RUWE': 0.898, 'IPDgofha': 0.076, 'IPDgofhp': 3.343, 'bpb': 1.0, 'Cstar_sig': 21.125, 'cats': 'J_AJ_166_139_table2'}
+    {'Source': 6138548472705801856, 'Gmag': 10.042, 'sep': 1.049, 'dm': 3.9, 'pa': 64.8, 'IPDfmp': 30, 'RUWE': 1.139, 'IPDgofha': 0.01, 'IPDgofhp': 48.33, 'bpb': 1.0, 'Cstar_sig': 2.081, 'cats': 'J_AJ_162_192_table1'}
+    {'Source': 6358900502811978112, 'Gmag': 8.535, 'sep': 0.92, 'dm': 3.8, 'pa': 113.3, 'IPDfmp': 31, 'RUWE': 1.247, 'IPDgofha': 0.016, 'IPDgofhp': 122.5, 'bpb': 1.0, 'Cstar_sig': 3.672, 'cats': 'J_AJ_155_235_table3'}
+
+kernel posterior (D, flat in log sep & dm, n_eff>=3): sep 16/50/84% = [0.48 0.73 1.1 ] (95%: [0.32 1.57]); dm 16/50/84% = [3.22 4.19 4.95] (95%: [1.18 5.64]); max rate 0.120 at sep 0.79 dm 4.50
+
+kernel posterior (D+, flat in log sep & dm, n_eff>=3): sep 16/50/84% = [0.56 0.85 1.22] (95%: [0.26 1.76]); dm 16/50/84% = [2.24 3.66 4.52] (95%: [1.24 5.53]); max rate 0.028 at sep 1.00 dm 4.00
+
+counts k(D)/n  [k(D+)]  for G 9.5-13.5 pairs:
+            dm 0-1.5        dm 1.5-2.5      dm 2.5-3.5      dm 3.5-4.5      dm 4.5-7        
+0.10-0.20   0/214[ 0]       0/52 [ 0]       0/14 [ 0]       0/8  [ 0]       0/0  [ 0]      
+0.20-0.35   1/244[ 0]       0/43 [ 0]       0/34 [ 0]       0/11 [ 0]       0/2  [ 0]      
+0.35-0.50   0/179[ 0]       0/31 [ 0]       0/17 [ 0]       0/5  [ 0]       0/0  [ 0]      
+0.50-0.70   0/102[ 0]       1/31 [ 1]       0/15 [ 0]       2/16 [ 0]       0/4  [ 0]      
+0.70-1.00   0/83 [ 0]       1/32 [ 0]       0/15 [ 0]       2/11 [ 0]       0/5  [ 0]      
+1.00-1.40   0/66 [ 0]       0/28 [ 0]       0/12 [ 0]       1/11 [ 1]       1/14 [ 0]      
+1.40-2.00   0/50 [ 0]       0/16 [ 0]       0/15 [ 0]       0/15 [ 0]       0/19 [ 0]      
+2.00-3.00   0/32 [ 0]       0/20 [ 0]       0/19 [ 0]       0/13 [ 0]       0/37 [ 0]      
+
+BP-blended fraction >= 0.9 among Gaia-UNRESOLVED G 9.5-13.5 pairs, by separation (any dm):
+   0.10-0.20": 9/255  (C*>2 sigma: 176/255)
+   0.20-0.35": 64/289  (C*>2 sigma: 255/289)
+   0.35-0.50": 63/151  (C*>2 sigma: 148/151)
+   0.50-0.70": 36/92  (C*>2 sigma: 82/92)
+   0.70-1.00": 22/42  (C*>2 sigma: 31/42)
+   1.00-1.40": 12/19  (C*>2 sigma: 5/19)
+   1.40-2.00": 0/9  (C*>2 sigma: 1/9)
+   2.00-3.00": 1/5  (C*>2 sigma: 2/5)
+phase test [gofha>0.05]: n=1952 <(PA - phase) mod 180> = 89.2 deg  Rbar=0.59  p=6.733767618822699e-290  frac within +-30 = 0.7392418032786885
+phase test [0.02<gofha<0.04 & fmp>=20]: n=224 <(PA - phase) mod 180> = 89.1 deg  Rbar=0.22  p=2.2283300528255385e-05  frac within +-30 = 0.5044642857142857
+phase test [0.02<gofha<0.04 & fmp 30-55 & ruwe<1.4]: n=12 <(PA - phase) mod 180> = 49.8 deg  Rbar=0.23  p=0.5443586827544945  frac within +-30 = 0.5

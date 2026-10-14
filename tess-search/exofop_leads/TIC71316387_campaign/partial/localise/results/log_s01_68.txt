@@ -1,0 +1,1 @@
+S68: cam1 ccd1 exptime 3.3 min, good 9919, centroid-cut 72; windows deep 16, shallow 18, fake 339

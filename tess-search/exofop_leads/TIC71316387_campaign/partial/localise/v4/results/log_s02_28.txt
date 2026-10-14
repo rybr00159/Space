@@ -1,0 +1,4 @@
+S28 deep    n=12 depth_pk=  7899ppm S/N= 40.4 off=(-0.03,-2.36)" cont=(-0.03,-2.36) dchi2T=31.1 chi2/npix=52/49
+S28 shallow n=15 depth_pk=  3548ppm S/N= 19.3 off=(-0.05,-3.23)" cont=(-0.05,-3.23) dchi2T=13.7 chi2/npix=41/49
+S28 both    n=27 depth_pk=  7833ppm S/N= 44.8 off=(-0.06,-2.48)" cont=(-0.06,-2.48) dchi2T=42.1 chi2/npix=51/49
+S28 done [106s]

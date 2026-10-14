@@ -1,0 +1,18 @@
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 58333.650818 from DATE-OBS.
+Set MJD-END to 58333.671651 from DATE-END'. [astropy.wcs.wcs]
+tess2018215152942-s0001-1-2-0120-s_ffic: S1 cam1 ccd2 target (168.9,221.3) PA->boresight 330.7 theta 10.86 deg; 885 isolated, 884 fitted [58s]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 59075.553305 from DATE-OBS.
+Set MJD-END to 59075.560249 from DATE-END'. [astropy.wcs.wcs]
+tess2020227130915-s0028-1-1-0190-s_ffic: S28 cam1 ccd1 target (1620.0,216.2) PA->boresight 353.9 theta 11.27 deg; 1185 isolated, 1185 fitted [84s]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 60167.763440 from DATE-OBS.
+Set MJD-END to 60167.765755 from DATE-END'. [astropy.wcs.wcs]
+tess2023223181152-s0068-1-1-0262-s_ffic: S68 cam1 ccd1 target (1796.4,497.6) PA->boresight 349.3 theta 9.52 deg; 1292 isolated, 1292 fitted [102s]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 60887.483869 from DATE-OBS.
+Set MJD-END to 60887.486184 from DATE-END'. [astropy.wcs.wcs]
+tess2025212112924-s0095-1-2-0292-s_ffic: S95 cam1 ccd2 target (200.9,487.3) PA->boresight 327.7 theta 9.41 deg; 1184 isolated, 1183 fitted [80s]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 61217.338627 from DATE-OBS.
+Set MJD-END to 61217.340941 from DATE-END'. [astropy.wcs.wcs]
+tess2026177080230-s0105-2-3-0307-s_ffic: S105 cam2 ccd3 target (809.5,438.4) PA->boresight 140.4 theta 12.26 deg; 1903 isolated, 1900 fitted [110s]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 61244.742947 from DATE-OBS.
+Set MJD-END to 61244.745262 from DATE-END'. [astropy.wcs.wcs]
+tess2026204174229-s0106-1-4-0308-s_ffic: S106 cam1 ccd4 target (1421.5,1551.6) PA->boresight 46.2 theta 8.97 deg; 1813 isolated, 1813 fitted [119s]

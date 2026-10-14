@@ -1,0 +1,7 @@
+obs_collection,obs_id,dp_id,filter,t_exptime,em_min,access_url,access_format,s_fov,abmaglim,s_resolution,dataproduct_subtype,t_min
+VHS,812704,ADP.2014-12-22T14:56:58.617,J,240.0,1.166e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:56:58.617,application/x-votable+xml;content=datalink,1.91489136833,21.451,1.364,,56162.29635839
+VHS,812704,ADP.2014-12-22T14:57:07.660,Ks,120.0,1.992e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:57:07.660,application/x-votable+xml;content=datalink,1.91524931666,20.335,1.16,,56162.28901561
+VHS,812704,ADP.2014-12-22T14:59:09.927,Ks,60.0,1.992e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:59:09.927,application/x-votable+xml;content=datalink,1.65021396777,20.264,1.079,pawprint,56162.29262625
+VHS,812704,ADP.2014-12-22T14:52:14.147,Ks,60.0,1.992e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:52:14.147,application/x-votable+xml;content=datalink,1.65030696194,20.319,0.996,pawprint,56162.29501691
+VHS,812704,ADP.2014-12-22T14:52:33.313,J,120.0,1.166e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:52:33.313,application/x-votable+xml;content=datalink,1.65004091944,21.324,1.245,pawprint,56162.30203682
+VHS,812704,ADP.2014-12-22T14:49:51.283,J,120.0,1.166e-06,https://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2014-12-22T14:49:51.283,application/x-votable+xml;content=datalink,1.650074575,21.388,1.149,pawprint,56162.30586209

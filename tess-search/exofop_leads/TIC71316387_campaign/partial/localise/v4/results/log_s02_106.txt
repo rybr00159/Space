@@ -1,0 +1,4 @@
+S106 deep    n=17 depth_pk=  6918ppm S/N= 32.5 off=(-2.25,-1.76)" cont=(-2.24,-1.76) dchi2T=36.8 chi2/npix=41/49
+S106 shallow n=15 depth_pk=  3504ppm S/N= 16.3 off=(-3.82,-3.42)" cont=(-3.80,-3.43) dchi2T=27.9 chi2/npix=38/49
+S106 both    n=32 depth_pk=  7015ppm S/N= 36.4 off=(-2.54,-2.09)" cont=(-2.53,-2.09) dchi2T=58.6 chi2/npix=44/49
+S106 done [105s]

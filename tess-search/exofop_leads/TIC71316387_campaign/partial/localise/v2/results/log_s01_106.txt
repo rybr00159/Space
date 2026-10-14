@@ -1,0 +1,1 @@
+S106: cam1 ccd4 exptime 3.3 min, good 8954, centroid-cut 220; windows deep 15, shallow 15, fake 310

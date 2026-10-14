@@ -1,0 +1,5 @@
+S95 deep    n=16 depth_pk=7404ppm off=(+1.24,-2.34)" formal=(0.44,0.44) plane=(+1.16,-2.41) dchi2T=38.2 chi2/npix=32/49
+S95 shallow n=17 depth_pk=7212ppm off=(+3.65,-5.05)" formal=(0.96,1.00) plane=(+3.35,-5.00) dchi2T=38.0 chi2/npix=49/49
+S95 both    n=33 depth_pk=7368ppm off=(+1.73,-2.77)" formal=(0.40,0.40) plane=(+1.61,-2.82) dchi2T=67.1 chi2/npix=36/49
+S95 deep    Gaussian(0.72,0.76) off=(+1.27,-2.12)
+S95 shallow Gaussian(0.72,0.76) off=(+3.44,-4.60)

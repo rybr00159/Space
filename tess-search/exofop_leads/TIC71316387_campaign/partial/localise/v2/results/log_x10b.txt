@@ -1,0 +1,8 @@
+tess2018222125942-s0001-1-2-0120-s_ffic: S1 cam1 ccd2 target (168.9,221.3) boresight px (-7,2098) 226 isolated candidates, 226 fitted [11s]
+tess2018215152942-s0001-1-2-0120-s_ffic: S1 cam1 ccd2 target (168.9,221.3) boresight px (-7,2098) 226 isolated candidates, 226 fitted [12s]
+tess2020217211915-s0028-1-1-0190-s_ffic: S28 cam1 ccd1 target (1620.0,216.1) boresight px (2158,2100) 342 isolated candidates, 342 fitted [17s]
+tess2020227130915-s0028-1-1-0190-s_ffic: S28 cam1 ccd1 target (1620.0,216.2) boresight px (2159,2100) 342 isolated candidates, 342 fitted [19s]
+tess2023215212152-s0068-1-1-0262-s_ffic: S68 cam1 ccd1 target (1796.4,497.7) boresight px (2158,2100) 350 isolated candidates, 350 fitted [26s]
+tess2025212112924-s0095-1-2-0292-s_ffic: S95 cam1 ccd2 target (200.8,487.3) boresight px (-6,2098) 251 isolated candidates, 251 fitted [20s]
+tess2023223181152-s0068-1-1-0262-s_ffic: S68 cam1 ccd1 target (1796.4,497.6) boresight px (2158,2100) 350 isolated candidates, 350 fitted [26s]
+tess2025218053243-s0095-1-2-0292-s_ffic: S95 cam1 ccd2 target (200.9,487.4) boresight px (-6,2098) 250 isolated candidates, 250 fitted [20s]

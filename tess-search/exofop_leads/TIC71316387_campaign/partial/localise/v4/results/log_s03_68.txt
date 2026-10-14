@@ -1,0 +1,8 @@
+S68 deep    n=16 a=35.3 | target emp bias (-0.04,-0.12) sd (0.47,0.48) r95 1.15 | prf bias (-0.04,-0.12) sd (0.47,0.47) [1423s]
+    1": |bias| max 0.15" mean (-0.04,-0.12) sd mean (0.47,0.48) amp ratio 1.004
+    3": |bias| max 0.19" mean (-0.04,-0.11) sd mean (0.47,0.48) amp ratio 1.004
+    5": |bias| max 0.23" mean (-0.05,-0.11) sd mean (0.46,0.50) amp ratio 1.004
+S68 shallow n=18 a=15.6 | target emp bias (-0.10,-0.27) sd (0.94,1.06) r95 2.47 | prf bias (-0.10,-0.27) sd (0.94,1.04) [2932s]
+    1": |bias| max 0.32" mean (-0.10,-0.26) sd mean (0.94,1.06) amp ratio 1.013
+    3": |bias| max 0.38" mean (-0.11,-0.24) sd mean (0.93,1.08) amp ratio 1.013
+    5": |bias| max 0.45" mean (-0.11,-0.23) sd mean (0.93,1.11) amp ratio 1.013

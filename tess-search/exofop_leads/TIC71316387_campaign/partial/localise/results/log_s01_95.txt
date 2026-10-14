@@ -1,0 +1,1 @@
+S95: cam1 ccd2 exptime 3.3 min, good 9139, centroid-cut 421; windows deep 16, shallow 17, fake 306

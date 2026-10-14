@@ -1,0 +1,1 @@
+S105: cam2 ccd3 exptime 3.3 min, good 9568, centroid-cut 292; windows deep 16, shallow 17, fake 316

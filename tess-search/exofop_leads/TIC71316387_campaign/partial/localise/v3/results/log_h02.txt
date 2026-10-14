@@ -1,0 +1,24 @@
+ADP.2014-12-22T14:49:51.28 target peak 39679 mask r 1.03" npsf 8 chi2r 117.7 best: dchi2 74184 (/chi2r 630) sep 0.61" PA 351 dm 1.585875257553687
+ADP.2014-12-22T14:49:51.28 N228   peak 44164 mask r 1.01" npsf 4 chi2r 19.6 best: dchi2 595 (/chi2r 30) sep 2.58" PA 216 dm 6.3430932585521695
+ADP.2014-12-22T14:49:51.28 N169   peak 33206 mask r 0.43" npsf 7 chi2r 1.2 best: dchi2 12 (/chi2r 10) sep 1.80" PA 4 dm 7.004322947069742
+ADP.2014-12-22T14:49:51.28 N314   peak 19832 mask r 0.00" npsf 4 chi2r 1.1 best: dchi2 173 (/chi2r 154) sep 3.96" PA 254 dm 5.160848637821184
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:49:51.283.fits.fz N132 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:49:51.283.fits.fz N217 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+ADP.2014-12-22T14:52:14.14 target peak 34736 mask r 0.69" npsf 7 chi2r 14.7 best: dchi2 3597 (/chi2r 245) sep 1.12" PA 350 dm 3.7565330999896807
+ADP.2014-12-22T14:52:14.14 N228   peak 37822 mask r 0.72" npsf 3 chi2r 18.1 best: dchi2 723 (/chi2r 40) sep 0.64" PA 322 dm 4.04059506463391
+ADP.2014-12-22T14:52:14.14 N169   peak 20341 mask r 0.00" npsf 5 chi2r 0.5 best: dchi2 20 (/chi2r 42) sep 1.00" PA 37 dm 5.350447274398618
+ADP.2014-12-22T14:52:14.14 N314   peak 14503 mask r 0.00" npsf 3 chi2r 1.0 best: dchi2 136 (/chi2r 137) sep 3.98" PA 258 dm 3.9030836647630274
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:52:14.147.fits.fz N132 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:52:14.147.fits.fz N217 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+ADP.2014-12-22T14:52:33.31 target peak 38189 mask r 1.05" npsf 8 chi2r 54.4 best: dchi2 30687 (/chi2r 564) sep 0.63" PA 162 dm 2.1433229723470753
+ADP.2014-12-22T14:52:33.31 N228   peak 38800 mask r 1.02" npsf 4 chi2r 24.1 best: dchi2 456 (/chi2r 19) sep 0.63" PA 109 dm 4.718350391989842
+ADP.2014-12-22T14:52:33.31 N169   peak 31501 mask r 0.38" npsf 8 chi2r 1.4 best: dchi2 6 (/chi2r 5) sep 1.79" PA 27 dm 7.332741380207062
+ADP.2014-12-22T14:52:33.31 N314   peak 19700 mask r 0.00" npsf 5 chi2r 1.6 best: dchi2 249 (/chi2r 156) sep 3.93" PA 255 dm 4.9305184236103745
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:52:33.313.fits.fz N132 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:52:33.313.fits.fz N217 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+ADP.2014-12-22T14:59:09.92 target peak 35792 mask r 0.72" npsf 8 chi2r 8.6 best: dchi2 2129 (/chi2r 246) sep 1.12" PA 350 dm 3.979070552230101
+ADP.2014-12-22T14:59:09.92 N228   peak 33916 mask r 0.72" npsf 4 chi2r 5.9 best: dchi2 196 (/chi2r 34) sep 1.21" PA 115 dm 5.460994672106429
+ADP.2014-12-22T14:59:09.92 N169   peak 19608 mask r 0.00" npsf 6 chi2r 29.1 best: dchi2 15317 (/chi2r 527) sep 0.63" PA 199 dm 1.086681394993325
+ADP.2014-12-22T14:59:09.92 N314   peak 13885 mask r 0.00" npsf 5 chi2r 0.6 best: dchi2 120 (/chi2r 217) sep 3.98" PA 259 dm 3.981442021785609
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:59:09.927.fits.fz N132 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81
+fail /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/imaging/big/vhs_ADP.2014-12-22T14:59:09.927.fits.fz N217 boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 81

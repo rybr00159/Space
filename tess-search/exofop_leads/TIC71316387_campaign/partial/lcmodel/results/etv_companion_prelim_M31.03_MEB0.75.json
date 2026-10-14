@@ -1,0 +1,640 @@
+{
+ "M3": 1.03,
+ "MEB": 0.75,
+ "thr_quad": 9.916090497031215,
+ "thr_ltte": 29.921373229346386,
+ "obs_quad": 1.2245020002410456e-05,
+ "obs_ltte": 6.407567304696869,
+ "grid": [
+  {
+   "ecc": "circular",
+   "a_au": 0.3,
+   "Pout_yr": 0.123160624088394,
+   "frac_excluded": 0.12866666666666668,
+   "median_LTTE_semiamp_min": 1.259526183274477
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.3607336704584492,
+   "Pout_yr": 0.16239401522723287,
+   "frac_excluded": 0.30266666666666664,
+   "median_LTTE_semiamp_min": 1.4841808662152234
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.43376260334141686,
+   "Pout_yr": 0.21412538607059478,
+   "frac_excluded": 0.7253333333333334,
+   "median_LTTE_semiamp_min": 1.7984923417634708
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.5215759200365391,
+   "Pout_yr": 0.2823360263352392,
+   "frac_excluded": 0.64,
+   "median_LTTE_semiamp_min": 2.181090722654507
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.6271666535250779,
+   "Pout_yr": 0.3722754841431654,
+   "frac_excluded": 0.882,
+   "median_LTTE_semiamp_min": 2.6178183638676678
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.754133763050813,
+   "Pout_yr": 0.49086557565087646,
+   "frac_excluded": 0.4146666666666667,
+   "median_LTTE_semiamp_min": 3.1095170646994807
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.9068048012065408,
+   "Pout_yr": 0.6472330938300651,
+   "frac_excluded": 0.8906666666666667,
+   "median_LTTE_semiamp_min": 3.740531169226852
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.0903834144285995,
+   "Pout_yr": 0.8534122141145708,
+   "frac_excluded": 0.9226666666666666,
+   "median_LTTE_semiamp_min": 4.576238558345594
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.3111267043128174,
+   "Pout_yr": 1.1252706546417064,
+   "frac_excluded": 0.9646666666666667,
+   "median_LTTE_semiamp_min": 5.462585921203488
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.5765584949428422,
+   "Pout_yr": 1.4837308691574247,
+   "frac_excluded": 0.9786666666666667,
+   "median_LTTE_semiamp_min": 6.681784138774583
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.895725775243933,
+   "Pout_yr": 1.9563802566162223,
+   "frac_excluded": 0.9386666666666666,
+   "median_LTTE_semiamp_min": 8.000401546390886
+  },
+  {
+   "ecc": "circular",
+   "a_au": 2.279507056954777,
+   "Pout_yr": 2.5795943105579915,
+   "frac_excluded": 0.9793333333333333,
+   "median_LTTE_semiamp_min": 9.373970963654589
+  },
+  {
+   "ecc": "circular",
+   "a_au": 2.740983158304114,
+   "Pout_yr": 3.4013361076197564,
+   "frac_excluded": 0.99,
+   "median_LTTE_semiamp_min": 11.343609835974116
+  },
+  {
+   "ecc": "circular",
+   "a_au": 3.295883051199453,
+   "Pout_yr": 4.484847586167689,
+   "frac_excluded": 0.9986666666666667,
+   "median_LTTE_semiamp_min": 13.691410687022065
+  },
+  {
+   "ecc": "circular",
+   "a_au": 3.9631199682032383,
+   "Pout_yr": 5.913516698950916,
+   "frac_excluded": 0.996,
+   "median_LTTE_semiamp_min": 16.25007157433373
+  },
+  {
+   "ecc": "circular",
+   "a_au": 4.765436041990424,
+   "Pout_yr": 7.797295019930213,
+   "frac_excluded": 0.9966666666666667,
+   "median_LTTE_semiamp_min": 19.906645805412396
+  },
+  {
+   "ecc": "circular",
+   "a_au": 5.730177449207302,
+   "Pout_yr": 10.281159709689211,
+   "frac_excluded": 0.9966666666666667,
+   "median_LTTE_semiamp_min": 23.860310721720573
+  },
+  {
+   "ecc": "circular",
+   "a_au": 6.890226478769282,
+   "Pout_yr": 13.556271079388091,
+   "frac_excluded": 0.9966666666666667,
+   "median_LTTE_semiamp_min": 28.61917214967994
+  },
+  {
+   "ecc": "circular",
+   "a_au": 8.285122293254801,
+   "Pout_yr": 17.87468444874584,
+   "frac_excluded": 0.9906666666666667,
+   "median_LTTE_semiamp_min": 34.56409172937172
+  },
+  {
+   "ecc": "circular",
+   "a_au": 9.962408583476426,
+   "Pout_yr": 23.56874853498857,
+   "frac_excluded": 0.9693333333333334,
+   "median_LTTE_semiamp_min": 41.390176602939825
+  },
+  {
+   "ecc": "circular",
+   "a_au": 11.979254049747368,
+   "Pout_yr": 31.076683289058064,
+   "frac_excluded": 0.936,
+   "median_LTTE_semiamp_min": 49.89843842427899
+  },
+  {
+   "ecc": "circular",
+   "a_au": 14.404400942398713,
+   "Pout_yr": 40.976305670821674,
+   "frac_excluded": 0.8793333333333333,
+   "median_LTTE_semiamp_min": 59.64285109431253
+  },
+  {
+   "ecc": "circular",
+   "a_au": 17.32050807568877,
+   "Pout_yr": 54.02949892724869,
+   "frac_excluded": 0.7933333333333333,
+   "median_LTTE_semiamp_min": 72.7549979647581
+  },
+  {
+   "ecc": "circular",
+   "a_au": 20.826968174494755,
+   "Pout_yr": 71.24084776652427,
+   "frac_excluded": 0.7246666666666667,
+   "median_LTTE_semiamp_min": 86.18355746804978
+  },
+  {
+   "ecc": "circular",
+   "a_au": 25.043295580356,
+   "Pout_yr": 93.93495204030985,
+   "frac_excluded": 0.59,
+   "median_LTTE_semiamp_min": 103.00670693125235
+  },
+  {
+   "ecc": "circular",
+   "a_au": 30.113199783592254,
+   "Pout_yr": 123.85836906002626,
+   "frac_excluded": 0.44,
+   "median_LTTE_semiamp_min": 124.75972940971032
+  },
+  {
+   "ecc": "circular",
+   "a_au": 36.20948362394607,
+   "Pout_yr": 163.31403011337602,
+   "frac_excluded": 0.222,
+   "median_LTTE_semiamp_min": 150.387860854044
+  },
+  {
+   "ecc": "circular",
+   "a_au": 43.53993311023724,
+   "Pout_yr": 215.33847598902815,
+   "frac_excluded": 0.08466666666666667,
+   "median_LTTE_semiamp_min": 181.3165653893591
+  },
+  {
+   "ecc": "circular",
+   "a_au": 52.354399607904135,
+   "Pout_yr": 283.9355517041969,
+   "frac_excluded": 0.03,
+   "median_LTTE_semiamp_min": 218.32459933799134
+  },
+  {
+   "ecc": "circular",
+   "a_au": 62.95331578402556,
+   "Pout_yr": 374.38454577747865,
+   "frac_excluded": 0.019333333333333334,
+   "median_LTTE_semiamp_min": 261.6141032356559
+  },
+  {
+   "ecc": "circular",
+   "a_au": 75.69793556767121,
+   "Pout_yr": 493.64648870399634,
+   "frac_excluded": 0.008666666666666666,
+   "median_LTTE_semiamp_min": 317.2745909783937
+  },
+  {
+   "ecc": "circular",
+   "a_au": 91.02264714484416,
+   "Pout_yr": 650.899879704501,
+   "frac_excluded": 0.012,
+   "median_LTTE_semiamp_min": 384.67724191884565
+  },
+  {
+   "ecc": "circular",
+   "a_au": 109.4497786646797,
+   "Pout_yr": 858.2470717286466,
+   "frac_excluded": 0.008666666666666666,
+   "median_LTTE_semiamp_min": 457.5443870926912
+  },
+  {
+   "ecc": "circular",
+   "a_au": 131.60740129524922,
+   "Pout_yr": 1131.645678695158,
+   "frac_excluded": 0.004,
+   "median_LTTE_semiamp_min": 551.7781282137423
+  },
+  {
+   "ecc": "circular",
+   "a_au": 158.25073642911119,
+   "Pout_yr": 1492.1366868517825,
+   "frac_excluded": 0.008,
+   "median_LTTE_semiamp_min": 656.2511063047285
+  },
+  {
+   "ecc": "circular",
+   "a_au": 190.28789668275294,
+   "Pout_yr": 1967.4637867360034,
+   "frac_excluded": 0.006666666666666667,
+   "median_LTTE_semiamp_min": 785.8328331552584
+  },
+  {
+   "ecc": "circular",
+   "a_au": 228.8108380472923,
+   "Pout_yr": 2594.2085508833065,
+   "frac_excluded": 0.006666666666666667,
+   "median_LTTE_semiamp_min": 960.3769191376895
+  },
+  {
+   "ecc": "circular",
+   "a_au": 275.1325781649117,
+   "Pout_yr": 3420.605782351349,
+   "frac_excluded": 0.005333333333333333,
+   "median_LTTE_semiamp_min": 1126.001315810051
+  },
+  {
+   "ecc": "circular",
+   "a_au": 330.83194928041587,
+   "Pout_yr": 4510.255705645387,
+   "frac_excluded": 0.004666666666666667,
+   "median_LTTE_semiamp_min": 1390.3493636541555
+  },
+  {
+   "ecc": "circular",
+   "a_au": 397.8074112294934,
+   "Pout_yr": 5947.018693374039,
+   "frac_excluded": 0.008666666666666666,
+   "median_LTTE_semiamp_min": 1650.0975336522715
+  },
+  {
+   "ecc": "circular",
+   "a_au": 478.3417586279628,
+   "Pout_yr": 7841.469230906813,
+   "frac_excluded": 0.008,
+   "median_LTTE_semiamp_min": 1993.583582893812
+  },
+  {
+   "ecc": "circular",
+   "a_au": 575.1799277447152,
+   "Pout_yr": 10339.405821570192,
+   "frac_excluded": 0.004,
+   "median_LTTE_semiamp_min": 2407.8894454534343
+  },
+  {
+   "ecc": "circular",
+   "a_au": 691.6225550312563,
+   "Pout_yr": 13633.07176182812,
+   "frac_excluded": 0.004666666666666667,
+   "median_LTTE_semiamp_min": 2896.6171134664046
+  },
+  {
+   "ecc": "circular",
+   "a_au": 831.6384761609194,
+   "Pout_yr": 17975.95034672208,
+   "frac_excluded": 0.006,
+   "median_LTTE_semiamp_min": 3426.0872698501844
+  },
+  {
+   "ecc": "circular",
+   "a_au": 999.9999999999998,
+   "Pout_yr": 23702.273156998854,
+   "frac_excluded": 0.005333333333333333,
+   "median_LTTE_semiamp_min": 4168.5883439283825
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.3,
+   "Pout_yr": 0.123160624088394,
+   "frac_excluded": 0.058,
+   "median_LTTE_semiamp_min": 1.2740296196199634
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.3607336704584492,
+   "Pout_yr": 0.16239401522723287,
+   "frac_excluded": 0.16666666666666666,
+   "median_LTTE_semiamp_min": 1.5105899226077835
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.43376260334141686,
+   "Pout_yr": 0.21412538607059478,
+   "frac_excluded": 0.4713333333333333,
+   "median_LTTE_semiamp_min": 1.79054276723528
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.5215759200365391,
+   "Pout_yr": 0.2823360263352392,
+   "frac_excluded": 0.44666666666666666,
+   "median_LTTE_semiamp_min": 2.164589008753129
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.6271666535250779,
+   "Pout_yr": 0.3722754841431654,
+   "frac_excluded": 0.6926666666666667,
+   "median_LTTE_semiamp_min": 2.6323217969939785
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.754133763050813,
+   "Pout_yr": 0.49086557565087646,
+   "frac_excluded": 0.296,
+   "median_LTTE_semiamp_min": 3.121538931014811
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.9068048012065408,
+   "Pout_yr": 0.6472330938300651,
+   "frac_excluded": 0.774,
+   "median_LTTE_semiamp_min": 3.7259514363995816
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.0903834144285995,
+   "Pout_yr": 0.8534122141145708,
+   "frac_excluded": 0.812,
+   "median_LTTE_semiamp_min": 4.518368666733332
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.3111267043128174,
+   "Pout_yr": 1.1252706546417064,
+   "frac_excluded": 0.93,
+   "median_LTTE_semiamp_min": 5.41074747488044
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.5765584949428422,
+   "Pout_yr": 1.4837308691574247,
+   "frac_excluded": 0.9366666666666666,
+   "median_LTTE_semiamp_min": 6.555699575016531
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.895725775243933,
+   "Pout_yr": 1.9563802566162223,
+   "frac_excluded": 0.8706666666666667,
+   "median_LTTE_semiamp_min": 7.942651465637752
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 2.279507056954777,
+   "Pout_yr": 2.5795943105579915,
+   "frac_excluded": 0.9113333333333333,
+   "median_LTTE_semiamp_min": 9.38451104984245
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 2.740983158304114,
+   "Pout_yr": 3.4013361076197564,
+   "frac_excluded": 0.966,
+   "median_LTTE_semiamp_min": 11.36258063364225
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 3.295883051199453,
+   "Pout_yr": 4.484847586167689,
+   "frac_excluded": 0.992,
+   "median_LTTE_semiamp_min": 13.643081299651243
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 3.9631199682032383,
+   "Pout_yr": 5.913516698950916,
+   "frac_excluded": 0.9853333333333333,
+   "median_LTTE_semiamp_min": 16.451217865599922
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 4.765436041990424,
+   "Pout_yr": 7.797295019930213,
+   "frac_excluded": 0.9953333333333333,
+   "median_LTTE_semiamp_min": 20.05535096564058
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 5.730177449207302,
+   "Pout_yr": 10.281159709689211,
+   "frac_excluded": 0.9893333333333333,
+   "median_LTTE_semiamp_min": 23.96351728515505
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 6.890226478769282,
+   "Pout_yr": 13.556271079388091,
+   "frac_excluded": 0.978,
+   "median_LTTE_semiamp_min": 29.04640001245009
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 8.285122293254801,
+   "Pout_yr": 17.87468444874584,
+   "frac_excluded": 0.9633333333333334,
+   "median_LTTE_semiamp_min": 34.989487745005206
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 9.962408583476426,
+   "Pout_yr": 23.56874853498857,
+   "frac_excluded": 0.92,
+   "median_LTTE_semiamp_min": 41.51019503542628
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 11.979254049747368,
+   "Pout_yr": 31.076683289058064,
+   "frac_excluded": 0.872,
+   "median_LTTE_semiamp_min": 50.664602808489406
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 14.404400942398713,
+   "Pout_yr": 40.976305670821674,
+   "frac_excluded": 0.8,
+   "median_LTTE_semiamp_min": 58.45719210980681
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 17.32050807568877,
+   "Pout_yr": 54.02949892724869,
+   "frac_excluded": 0.6966666666666667,
+   "median_LTTE_semiamp_min": 71.98385234952258
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 20.826968174494755,
+   "Pout_yr": 71.24084776652427,
+   "frac_excluded": 0.582,
+   "median_LTTE_semiamp_min": 85.93454313885331
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 25.043295580356,
+   "Pout_yr": 93.93495204030985,
+   "frac_excluded": 0.42733333333333334,
+   "median_LTTE_semiamp_min": 103.79969081671183
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 30.113199783592254,
+   "Pout_yr": 123.85836906002626,
+   "frac_excluded": 0.31666666666666665,
+   "median_LTTE_semiamp_min": 125.10765136144651
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 36.20948362394607,
+   "Pout_yr": 163.31403011337602,
+   "frac_excluded": 0.20266666666666666,
+   "median_LTTE_semiamp_min": 149.07386826948
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 43.53993311023724,
+   "Pout_yr": 215.33847598902815,
+   "frac_excluded": 0.14466666666666667,
+   "median_LTTE_semiamp_min": 183.3034711744296
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 52.354399607904135,
+   "Pout_yr": 283.9355517041969,
+   "frac_excluded": 0.096,
+   "median_LTTE_semiamp_min": 217.93569090004888
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 62.95331578402556,
+   "Pout_yr": 374.38454577747865,
+   "frac_excluded": 0.06133333333333333,
+   "median_LTTE_semiamp_min": 259.7052403375461
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 75.69793556767121,
+   "Pout_yr": 493.64648870399634,
+   "frac_excluded": 0.04133333333333333,
+   "median_LTTE_semiamp_min": 310.6867616776391
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 91.02264714484416,
+   "Pout_yr": 650.899879704501,
+   "frac_excluded": 0.032,
+   "median_LTTE_semiamp_min": 379.4867386914724
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 109.4497786646797,
+   "Pout_yr": 858.2470717286466,
+   "frac_excluded": 0.02266666666666667,
+   "median_LTTE_semiamp_min": 454.98667092034725
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 131.60740129524922,
+   "Pout_yr": 1131.645678695158,
+   "frac_excluded": 0.014666666666666666,
+   "median_LTTE_semiamp_min": 554.6197490214038
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 158.25073642911119,
+   "Pout_yr": 1492.1366868517825,
+   "frac_excluded": 0.012666666666666666,
+   "median_LTTE_semiamp_min": 663.1028289302768
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 190.28789668275294,
+   "Pout_yr": 1967.4637867360034,
+   "frac_excluded": 0.008,
+   "median_LTTE_semiamp_min": 798.3428332165906
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 228.8108380472923,
+   "Pout_yr": 2594.2085508833065,
+   "frac_excluded": 0.006666666666666667,
+   "median_LTTE_semiamp_min": 957.9643412674739
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 275.1325781649117,
+   "Pout_yr": 3420.605782351349,
+   "frac_excluded": 0.005333333333333333,
+   "median_LTTE_semiamp_min": 1144.0960394128108
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 330.83194928041587,
+   "Pout_yr": 4510.255705645387,
+   "frac_excluded": 0.0026666666666666666,
+   "median_LTTE_semiamp_min": 1390.3811195881408
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 397.8074112294934,
+   "Pout_yr": 5947.018693374039,
+   "frac_excluded": 0.005333333333333333,
+   "median_LTTE_semiamp_min": 1642.3271607531472
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 478.3417586279628,
+   "Pout_yr": 7841.469230906813,
+   "frac_excluded": 0.006666666666666667,
+   "median_LTTE_semiamp_min": 1992.6198141410878
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 575.1799277447152,
+   "Pout_yr": 10339.405821570192,
+   "frac_excluded": 0.007333333333333333,
+   "median_LTTE_semiamp_min": 2417.6742526823464
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 691.6225550312563,
+   "Pout_yr": 13633.07176182812,
+   "frac_excluded": 0.004,
+   "median_LTTE_semiamp_min": 2906.414661164915
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 831.6384761609194,
+   "Pout_yr": 17975.95034672208,
+   "frac_excluded": 0.004666666666666667,
+   "median_LTTE_semiamp_min": 3450.889049491025
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 999.9999999999998,
+   "Pout_yr": 23702.273156998854,
+   "frac_excluded": 0.0026666666666666666,
+   "median_LTTE_semiamp_min": 4154.427671748785
+  }
+ ]
+}

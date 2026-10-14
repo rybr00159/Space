@@ -1,0 +1,467 @@
+[
+ {
+  "summary": "WHERE IS THE ECLIPSING PAIR? It is within about 1.5\" of the G star, most likely at about 0.5-1\".\n\nTESS:\n- The raw PRF difference-image offsets (2-7\") are a TESS optics artefact, not a position. Every sector's offset points radially away from that camera's boresight, with tangential components near zero, even though the sky direction of the boresight changes between sectors (PA 328-354 deg for S1/S28/S68/S95, 140 deg for S105, 46 deg for S106).\n- I measured TESS lateral colour directly with field stars in 11 full frames from all six sectors. Redder stars appear displaced away from the boresight by about 75-86 mpx per mag of BP-RP; the relation steepens for red colours and has no tangential part. The eclipsed light is M-dwarf red, so its PRF centroid is pushed outward.\n- One fixed sky position cannot explain the six sectors (chi2 = 265.5/22).\n- 'Source on the G star plus a colour shift' fits well (chi2 = 21.1/22, empirical p = 0.51).\n- With a free offset as well: delta = (-0.25 \u00b1 0.18, +0.51 \u00b1 0.26)\", |delta| = 0.57\", PA about 334 deg. delta = 0 is allowed (empirical p = 0.06).\n- Injection-recovery with the target's own image (500 fake-epoch trials per sector and type, at 0/1/3/5\") shows the pipeline is unbiased to about 0.2-0.5\", with calibrated scatter of 0.4-0.8\" (deep) and 0.8-1.35\" (shallow) per axis.\n- Empirical tail tests: a source at \u22651.5\" is rejected at p = 0.0025, and at \u22652\" in 0 of 2000 simulations (Gaussian chi2 change 31). All resolved Gaia neighbours are excluded.\n- The fitted colour shifts imply the deep-eclipse light has BP-RP_eff \u2248 2.2 (about M1-M2 V) and the shallow-eclipse light is redder (\u2273 2.8). That ordering is what an M-dwarf eclipsing pair predicts.\n\nGaia DR3:\n- Only two diagnostics are abnormal: ipd_frac_multi_peak = 41 and 100% of BP/RP transits flagged as blended. AEN, RUWE, harmonic amplitude and BP/RP excess are typical of field stars.\n- I cross-matched about 25,000 SOAR speckle rows to Gaia. The combination (fmp 28-56, RUWE < 1.4, BP-blend \u2265 0.8) occurs in 2/1464 speckle-single stars (0.14%) and only for companions at about 0.5-1.1\" (16-84%: 0.53-1.06\") with \u0394I \u2248 1.6-3.9.\n- The harmonic phase is weakly informative at this amplitude.\n\nArchival imaging:\n- DES/Legacy Survey: saturated. VHS J: saturated (flagged).\n- SkyMapper short frames are unsaturated (FWHM 1.5-2.8\"). With injection calibration they exclude a companion at \u22651.5\" with \u0394i \u2272 3, but are blind below about 0.75\".\n- The VHS Ks catalogue shows a mild elongation excess (ellipticity 0.051 vs 0.019-0.031 for five comparable stars, along the PSF PA). A simple moment argument (catalogue level only; images unreachable) gives q(1-q)s\u00b2 \u2272 0.03 arcsec\u00b2, i.e. s \u2272 0.5\" if \u0394Ks \u2264 2. This suggests the companion is closer than about 0.6\" or fainter in Ks than about 2.5.\n\nTogether these support a bound hierarchical triple: an M-dwarf eclipsing binary about 0.5-1\" (about 150-300 AU projected at 297 pc) from the G star. A chance-aligned background star bright enough to host the eclipses has about 6e-4 expected sources within 1.42\".",
+  "key_numbers": [
+   {
+    "quantity": "Raw PRF difference-image offset, deep eclipses (dE,dN) arcsec: S1/S28/S68/S95/S105/S106",
+    "value": "(+1.25,-2.02) / (-0.22,-2.47) / (-0.17,-2.13) / (+1.28,-2.37) / (-2.57,+2.62) / (-2.38,-1.85)",
+    "method": "TESScut 21x21, per-pixel linear-baseline difference images stacked over 12-16 deep eclipses per sector; free TESS PRF (PRF package) + constant vs direct-image PRF fit with Gaia neighbours tied; grid fitter validated against least squares (agreement 0.15\" or better)",
+    "uncertainty": "injection-calibrated sd 0.39-0.77\" per axis"
+   },
+   {
+    "quantity": "Raw PRF offset, shallow eclipses (dE,dN) arcsec: S1/S28/S68/S95/S105/S106",
+    "value": "(+3.97,-2.99) / (-0.14,-3.36) / (+1.40,-4.31) / (+3.90,-4.55) / (-4.83,+4.89) / (-4.39,-3.26)",
+    "method": "as above, 15-18 shallow eclipses per sector",
+    "uncertainty": "injection-calibrated sd 0.79-1.34\" per axis"
+   },
+   {
+    "quantity": "Radial component (towards camera boresight) of raw offsets, deep",
+    "value": "-2.19, -2.43, -2.06, -2.68, -3.63, -3.00 arcsec (S1, S28, S68, S95, S105, S106); tangential +0.10, -0.48, -0.56, -0.19, +0.28, -0.31",
+    "method": "projection onto the direction to the camera boresight (tess-point camRa/camDec); field angles 9.0-12.3 deg",
+    "uncertainty": "about 0.4-0.7\" per component"
+   },
+   {
+    "quantity": "Radial component of raw offsets, shallow",
+    "value": "-4.52, -3.33, -4.50, -5.93, -6.84, -5.43 arcsec; tangential +2.02, -0.50, +0.57, +0.86, +0.61, -0.69",
+    "method": "as above",
+    "uncertainty": "about 0.8-1.3\""
+   },
+   {
+    "quantity": "Injection bias at the target position (empirical target image injected at fake epochs)",
+    "value": "deep: 0.04-0.25\" per sector (max |bias| 0.26\"); shallow: up to (-0.24,-0.36) and (-0.08,-0.48)\"",
+    "method": "500 trials per sector and type, one fake window per eclipse epoch (phases 0.16-0.34, 0.66-0.84), real fitted amplitude, identical pipeline; PRF-model injections give the same result",
+    "uncertainty": "standard error about 0.03\""
+   },
+   {
+    "quantity": "Injection bias for offsets of 1\", 3\", 5\" (8 PAs)",
+    "value": "max |bias| \u2264 0.37\" (deep) and \u2264 0.54\" (shallow) in every sector; scatter unchanged",
+    "method": "empirical image + PRF-gradient shift, 500 trials per configuration",
+    "uncertainty": "about 0.03\""
+   },
+   {
+    "quantity": "Single fixed sky offset fitted to all sectors (model M0)",
+    "value": "chi2 = 265.5 for 22 dof (rejected)",
+    "method": "injection covariances, 6 sectors x deep/shallow",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "Source on target + lateral-colour shift (model M1)",
+    "value": "chi2 = 21.1 / 22; empirical p = 0.51",
+    "method": "radial shift = c_type x (per-sector field-star k_rad and k_tan); 3000 simulated data sets with noise from injection trials",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "Sky offset of eclipsing source from the G star (model M2: offset + colour levers)",
+    "value": "dE = -0.25 \u00b1 0.18\", dN = +0.51 \u00b1 0.26\" (|delta| = 0.57\", PA \u2248 334 deg)",
+    "method": "joint fit of 24 offset components; errors from 3000 simulations with injection-trial noise (formal and empirical agree)",
+    "uncertainty": "16 variants (colour-scaling choices, k_tan = 0, leave-one-sector-out, PRF covariance, no bias correction) give dE -0.19 to -0.37\", dN +0.35 to +0.72\"; shallow-only (+0.18, +1.18) \u00b1 (0.36, 0.55)"
+   },
+   {
+    "quantity": "Tangential-only (colour-insensitive) offset",
+    "value": "(-0.36 \u00b1 0.25, +0.61 \u00b1 0.46)\"",
+    "method": "fit of tangential components only",
+    "uncertainty": "empirical sd"
+   },
+   {
+    "quantity": "Test of source exactly on the G star",
+    "value": "profile chi2 change = 5.7; empirical p = 0.062 (124/2000)",
+    "method": "simulations with source at 0 + fitted colour shift + injection noise",
+    "uncertainty": "binomial \u00b1 0.005"
+   },
+   {
+    "quantity": "Excluded separations (TESS, any PA)",
+    "value": "1.25\": p = 0.034; 1.5\": p = 0.0025 (5/2000); 2.0\": 0/2000 (chi2 change 31, about 5 sigma Gaussian); 3.0\": chi2 change 90",
+    "method": "empirical tail calibration at the least-excluded PA; profile chi2 limits: 1 sigma \u2264 0.94\", 2 sigma \u2264 1.17\", 3 sigma \u2264 1.42\", 5 sigma \u2264 1.92\"",
+    "uncertainty": "empirical probabilities limited to about 5e-4 by 2000 simulations"
+   },
+   {
+    "quantity": "Position-angle constraint (TESS)",
+    "value": "chi2 change at 0.5/0.9\": PA 94-108 deg 22/47; PA 180 deg 17/32; PA 274-288 deg 4-6 / 13-18; PA 334 deg 0.1/1.9",
+    "method": "profile chi2 map",
+    "uncertainty": "conditional on the lateral-colour model; \u03b4 only about 2 sigma from 0"
+   },
+   {
+    "quantity": "TESS lateral-colour coefficient (field stars)",
+    "value": "k_rad = -73 to -86 mpx per mag BP-RP (narrow box), -66 to -83 (wide box); k_tan = -5 to +3 mpx/mag",
+    "method": "PRF fits of 166-2550 isolated Gaia stars per full frame (11 frames, 2 per sector except S28 with 1), residuals vs Gaia with polynomial + magnitude terms, bootstrap errors",
+    "uncertainty": "\u00b1 2.6-4.3 mpx/mag per frame; two frames per sector agree"
+   },
+   {
+    "quantity": "Lateral-colour curve (radial shift at target field angle)",
+    "value": "BP-RP 0.55: +17.5 mpx; 1.14: -26.8; 1.59: -65; 1.83: -92; 2.15: -129; 2.41: -166; 2.71: -185 (4 stars); 3.94: -281 (1 star)",
+    "method": "combined over 12 frames, normalised to k_ref = -74.6 mpx/mag; red end from about 26 unique giants + 2 M dwarfs",
+    "uncertainty": "\u00b1 0.4-6.6 mpx for BP-RP < 2.6; \u00b1 20-36 mpx at the red end"
+   },
+   {
+    "quantity": "Fitted colour levers of the eclipse light",
+    "value": "deep -2.98 \u00b1 0.26\", shallow -5.53 \u00b1 0.43\" (radial, at k_ref); ratio 1.86",
+    "method": "model M2, empirical errors",
+    "uncertainty": "as stated"
+   },
+   {
+    "quantity": "Effective colour of eclipsed light (from the levers and the field-star curve)",
+    "value": "deep BP-RP_eff \u2248 2.2 (\u2248 M1-M2 V; K7 at 1.85 predicts -1.9\", about 3 sigma off); shallow BP-RP_eff \u2273 2.8 (best \u2248 3.6)",
+    "method": "interpolation of the colour levers on the lateral-colour curve",
+    "uncertainty": "deep \u00b1 0.1 statistical \u00b1 about 0.15 systematic (limb reddening in grazing eclipses, giant/dwarf SED differences); shallow poorly calibrated"
+   },
+   {
+    "quantity": "Gaia DR3 IPD and astrometric values",
+    "value": "ipd_frac_multi_peak 41; ipd_frac_odd_win 0; harmonic amplitude 0.029, phase 18.24 deg; RUWE 1.026; AEN 0.105 mas (sig 16.5); visibility periods 22; BP blended 47/47, RP blended 48/48, contaminated 0; duplicated_source false; scan_direction_strength_k1..k4 and mean_k1..k4 all 0; BP/RP excess factor 1.219",
+    "method": "Gaia archive TAP",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "Field percentiles of target Gaia quantities (G 11.3-12.3, RUWE < 1.4, 3 deg, n = 573)",
+    "value": "AEN 71st, AEN sig 66th, harmonic amplitude 59th, RUWE 67th, BP/RP excess 65th percentile",
+    "method": "Gaia DR3 field sample",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "Frequency of ipd_frac_multi_peak \u2265 30 in speckle-single stars",
+    "value": "6/1739 (0.35%) for G 9-14; 1/858 (0.12%) for G 10-13.5, RUWE < 1.4",
+    "method": "SOAR unresolved stars (\u0394m at 1\" \u2265 3.5) cross-matched to Gaia DR3 (CDS XMatch)",
+    "uncertainty": "Poisson"
+   },
+   {
+    "quantity": "Frequency of the full target signature (fmp 28-56, RUWE < 1.4, BP-blend \u2265 0.8) in singles",
+    "value": "2/1464 = 0.14% (68% interval 0.07-0.27%)",
+    "method": "speckle-single controls, G 9.5-13.5",
+    "uncertainty": "Jeffreys interval"
+   },
+   {
+    "quantity": "Separation and contrast of speckle binaries matching the target signature",
+    "value": "n = 6; separation 16/50/84% = 0.53/0.90/1.06\"; \u0394I 16/50/84% = 1.6/2.85/3.9; matching fraction about 30% in bins 0.8-1.0\" with \u0394I 2.5-3.5 (2/7) and 1.0-1.3\" with \u0394I 3.5-4.5 (2/6); 0 matches below 0.6\" except 1/246 at 0.15-0.3\"",
+    "method": "1272 Gaia-unresolved SOAR binaries G 9.5-13.5 (Ziegler 2020/2021, Tokovinin 2018-2024, Mason 2023)",
+    "uncertainty": "small numbers"
+   },
+   {
+    "quantity": "Same without the blend condition (fmp 28-56, RUWE < 1.4)",
+    "value": "n = 23; separation 16/50/84% = 0.58/0.74/1.04\"; \u0394I 2.3/3.75/4.2",
+    "method": "as above",
+    "uncertainty": "small numbers"
+   },
+   {
+    "quantity": "G 10-13.5, RUWE < 1.4 binaries with fmp 30-50 (task's requested cut)",
+    "value": "n = 12; separations 0.42-1.28\"; \u0394I 1.9-4.5",
+    "method": "as above",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "BP-blend fraction \u2265 0.9 vs separation (binaries G 9-14)",
+    "value": "0.05-0.16 below 0.35\"; 0.34-0.38 at 0.35-0.7\"; 0.48 at 0.7-1.0\"; 0.57 at 1.0-1.3\"; singles 0.028",
+    "method": "speckle sample",
+    "uncertainty": "Poisson"
+   },
+   {
+    "quantity": "Harmonic phase vs speckle PA",
+    "value": "phase \u2248 PA + 90 deg (mod 180) for strong signals (83% within \u00b130 deg at amplitude > 0.1); at the target's amplitude 0.025-0.035 only 40% within \u00b130 deg (random 33%) \u2192 implied PA \u2248 108 or 288 deg, weak",
+    "method": "860 binaries with amplitude > 0.02, 0.2-2\"",
+    "uncertainty": "weak (likelihood ratio about 1.2-1.5)"
+   },
+   {
+    "quantity": "Field base rate (isolated, no Gaia neighbour within 5\", G 10.75-12.75)",
+    "value": "fmp \u2265 30: 2.5% (33/1327); fmp \u2265 30 and BP-blend \u2265 0.9: 1.1% (14/1327)",
+    "method": "Gaia DR3 3 deg field",
+    "uncertainty": "Poisson"
+   },
+   {
+    "quantity": "SkyMapper short-survey companion sensitivity (recovered at injected position)",
+    "value": "best 2014 frames (FWHM 1.46-1.80\"): 2.0\" with \u0394m \u2264 3.5: 75-100%; 1.5\" with \u0394m \u2264 3.0: 50-100%; 1.0\": \u0394m 2.0: 62-100%, \u0394m 2.5: 25-62%; \u2264 0.75\": \u2264 50% at \u0394m 2, about 0 for fainter. Mean over 10 frames: 1.5\"/\u0394m 2.5 62%, 2.0\"/\u0394m 3.0 81%",
+    "method": "empirical PSF from 6 comparison stars; single PSF (with free broadening) vs PSF pair; injection of the target's own shifted image, 8 PAs",
+    "uncertainty": "8 injections per configuration"
+   },
+   {
+    "quantity": "SkyMapper detection result",
+    "value": "no consistent companion; best-fit residual companions are flux ratio 0.0016-0.0069 at 2.7-6.5\" with random PAs",
+    "method": "g, r, i, z short frames (5-20 s), 2014-2015",
+    "uncertainty": "n/a"
+   },
+   {
+    "quantity": "VHS DR5 Ks morphology",
+    "value": "Ks 10.42, ellipticity 0.051 at PA 94.3, semi-major axis 0.595\", class statistic 10.2, error bits 0; five unflagged Ks 10.4-11.1 stars on the same frame: ellipticity 0.019-0.031 at PA 94-133 deg; a star with Ks 10.43: ellipticity 0.030, semi-major axis 0.555\", class statistic 9.4",
+    "method": "VizieR II/367 catalogue (images not accessible: VSA port 8080 timed out)",
+    "uncertainty": "5 comparison stars"
+   },
+   {
+    "quantity": "VHS moment bound on a companion",
+    "value": "q(1-q)s\u00b2 \u2272 0.03 arcsec\u00b2 \u2192 s \u2272 0.43/0.50/0.60/0.73/0.90\" for \u0394Ks = 1.5/2.0/2.5/3.0/3.5",
+    "method": "unweighted second moments; a\u00b2-b\u00b2 = 0.035 arcsec\u00b2 (target) vs 0.007-0.028 (comparison stars)",
+    "uncertainty": "assumes CASU isophotal moments; indicative only"
+   },
+   {
+    "quantity": "Chance alignment: expected unrelated Gaia stars",
+    "value": "G < 17.5: 3.0e-4 within 1.0\", 6.0e-4 within 1.42\"; G < 19.5: 7.3e-4 / 1.5e-3",
+    "method": "Gaia DR3 source density within 3 deg (b = -52.7)",
+    "uncertainty": "Poisson negligible"
+   },
+   {
+    "quantity": "Projected separation if bound",
+    "value": "0.57\" \u2248 170 AU; 0.5-1.1\" \u2248 150-330 AU",
+    "method": "Gaia parallax 3.362 mas",
+    "uncertainty": "follows the separation range"
+   }
+  ],
+  "conclusions": [
+   {
+    "claim": "The eclipsing source is NOT at the sky positions given by raw TESS PRF difference images; those 2-7\" offsets (including earlier 'within 3-4\"' TESScut results) are a TESS lateral-colour artefact.",
+    "confidence": "strong",
+    "evidence": "In all 6 sectors (3 cameras/CCD orientations), deep and shallow offsets point radially away from the camera boresight with tangential components \u2264 0.6\" (deep). No single sky position fits (chi2 = 265.5/22). Field stars in 11 full frames show the same effect: redder stars displaced outward by 66-86 mpx/mag, with no tangential term. Injecting the target's own (G-coloured) image at fake epochs recovers 0\" to within 0.2-0.5\"."
+   },
+   {
+    "claim": "After modelling the colour shift, the eclipsing source is consistent with the G-star position and lies within about 1.5\" of it; separations \u2265 2\" and all resolved Gaia neighbours (18.7\", 44.9\", 47.3\", 54.8\") are excluded.",
+    "confidence": "strong",
+    "evidence": "Model M1 (on target + colour shift) chi2 21.1/22, empirical p = 0.51. M2 gives \u03b4 = (-0.25 \u00b1 0.18, +0.51 \u00b1 0.26)\", stable across 16 variants. Empirical tails: 1.5\" p = 0.0025; 2.0\" 0/2000 (chi2 change 31); 3\" chi2 change 90. The colour-free tangential fit agrees."
+   },
+   {
+    "claim": "The best TESS position is about 0.5\" NNW (PA about 313-343 deg) of the G star, but an exactly coincident source is allowed; eastern and southern positions beyond about 0.4\" are disfavoured.",
+    "confidence": "weak",
+    "evidence": "|\u03b4| = 0.57\", 2.4 sigma from 0 (empirical p = 0.062); chi2 change \u2265 17 at PA 94-108 deg for \u2265 0.4\"; western PA 274-288 deg allowed at \u2264 0.5-0.6\" (chi2 change 4-6)."
+   },
+   {
+    "claim": "The eclipsed light is M-dwarf red, with the shallow-eclipse light redder than the deep-eclipse light, as expected for a cool pair where the shallow eclipse hides the cooler star.",
+    "confidence": "moderate",
+    "evidence": "The fitted radial colour shifts (-2.98 \u00b1 0.26\" deep, -5.53 \u00b1 0.43\" shallow) match field stars with BP-RP \u2248 2.2 (deep) and \u2273 2.8 (shallow) on the lateral-colour curve. The two M dwarfs measured agree with giants of the same colour. A K7 primary (BP-RP 1.85) would give about -1.9\", about 3 sigma short of the deep value unless limb reddening matters."
+   },
+   {
+    "claim": "Gaia DR3 strongly indicates an unresolved companion at about 0.5-1.1\" with \u0394I about 1.6-3.9.",
+    "confidence": "strong",
+    "evidence": "fmp = 41 together with 100% BP/RP blended transits (fmp 28-56, RUWE < 1.4, blend \u2265 0.8) occurs in 2/1464 speckle-single stars (0.14%) versus about 30% of speckle binaries at 0.8-1.3\" with \u0394I 2.5-4.5. All six matched binaries span 0.27-1.10\" (16-84%: 0.53-1.06\"). Other Gaia diagnostics are normal (58th-71st percentiles)."
+   },
+   {
+    "claim": "The Gaia harmonic phase gives only a weak PA hint (PA \u2248 108 or 288 deg); combined with TESS, only the western branch survives.",
+    "confidence": "weak",
+    "evidence": "The empirical relation phase \u2248 PA + 90 is tight only for amplitude > 0.05. At the target's 0.029, 40-50% of binaries fall within \u00b130 deg (random 33%). Singles have a median amplitude of 0.018 and an 84th percentile of 0.039, so the target's amplitude is not unusual."
+   },
+   {
+    "claim": "Seeing-limited imaging cannot see the companion at the expected separation. SkyMapper excludes \u2265 1.5\" companions with \u0394i \u2272 3. The VHS Ks catalogue morphology hints the companion is closer than about 0.6\" or faint in Ks (\u0394Ks \u2273 2.5) if at 0.7-1\".",
+    "confidence": "moderate",
+    "evidence": "DES/Legacy Survey saturated (flags, 27\" FWHM, mags 3 mag too faint) and VHS J flagged saturated. SkyMapper injection recovery: 75-100% at 2\" with \u0394m \u2264 3.5 and 50-100% at 1.5\" with \u0394m \u2264 3 in the best frames; blind at \u2264 0.75\". VHS Ks ellipticity 0.051 vs 0.019-0.031 for comparison stars; moment bound q(1-q)s\u00b2 \u2272 0.03 arcsec\u00b2."
+   },
+   {
+    "claim": "The earlier rough estimate (K7+M2, companion at about 1-1.8\") should be revised: separation about 0.4-1.1\" (most likely about 0.5-0.9\") and a primary cooler than K7 (about M0-M2).",
+    "confidence": "moderate",
+    "evidence": "TESS excludes > 1.5\" at p = 0.0025. SkyMapper excludes \u2265 1.5\" for \u0394i \u2272 3. Gaia-matched binaries have 84th-percentile separation 1.06\". The VHS moment bound and the colour levers point the same way."
+   }
+  ],
+  "implications_bound_vs_background": "The background interpretation is disfavoured.\n\n1. **Position.** The eclipsing source lies within about 1.4\" (3 sigma) of the G star, with the best fit 0.57\" away and \u03b4 = 0 allowed. Only about 6e-4 unrelated stars bright enough to host the eclipses (G < 17.5) are expected within that radius, or 1.5e-3 down to G < 19.5. For comparison, a bound companion at 100-400 AU around a solar-type star has an a priori probability of order 5-10%.\n\n2. **Gaia.** Gaia independently requires an unresolved companion at about 0.5-1.1\" with \u0394I about 1.6-3.9. That signature appears in only 0.14% of speckle-single stars. The simplest reading is that this companion is the eclipsing binary itself.\n\n3. **Colour.** The eclipsed light has the colours of M dwarfs (deep BP-RP_eff \u2248 2.2, shallow redder). That fits a cool, low-mass EB bound to a 1 Msun G star at 297 pc. It does not fix the distance on its own.\n\nTaken together: a likely hierarchical triple, with an M-dwarf EB (P = 1.3037 d) about 0.5-1\" from the G star (about 150-330 AU projected). A chance-aligned background EB would need to land within about 1.4\" (a probability of about 1e-3) and also produce the Gaia IPD signature. It cannot be formally excluded without high-resolution imaging plus RVs or colours of the companion.\n\n**Recommended decisive test:** SOAR/Gemini speckle or AO imaging (I or K band) to resolve the companion at about 0.4-1.1\". A WNW-to-NNW position (PA about 280-340 deg) would be consistent with all the weak PA hints. Then multi-colour eclipse depths, or a spectrum of the companion, to confirm it is the EB and that its photometric distance matches 297 pc.",
+  "caveats": "1. **The TESS position depends on the lateral-colour model.** The colour shift is modelled as radial, with per-sector strength from field stars. Variants of that scaling move \u03b4 by \u2264 0.25\", and the colour-free tangential fit agrees. Non-radial colour terms are measured to be \u2264 5 mpx/mag and are included. Any residual camera- or CCD-specific chromatic behaviour beyond this could bias \u03b4 at the ~0.2\" level.\n2. **The red end of the colour calibration is thin.** It rests on about 26 unique red giants and only 2 M dwarfs. The shallow-eclipse colour (\u2273 2.8, best \u2248 3.6) is an extrapolation. Chromatic limb darkening in grazing eclipses makes the eclipsed light somewhat redder than the disk-integrated star, so the BP-RP_eff values are upper bounds on the true stellar colours by maybe 0.05-0.15 mag.\n3. **One PRF version throughout.** The SPOC start_s0004 PRF was used for S28-S106 and start_s0001 for S1. Empirical-image and PRF-model injections agree, so PRF mismatch is negligible for a source of the target's colour.\n4. **How the injection noise was drawn.** Each injection used one fake window per eclipse epoch, but windows from neighbouring phases overlap in time. Empirical tail probabilities are limited to about 5e-4 by 2000 simulations. Beyond that I quote Gaussian chi2 changes, which is reasonable since the noise is near-Gaussian (excess kurtosis between -0.17 and +0.26; tail fractions match 0.0027).\n5. **Speckle sample biases.** The calibration sample mixes TESS hosts (Ziegler) and Hipparcos-like stars (Tokovinin, Mason). \u0394m is mostly I-band, while Gaia sees G. Speckle-'single' stars can hide companions beyond the speckle limits. Primaries were assigned as the brightest Gaia source within 2.5\" of the speckle position. Only 6 binaries match the full signature, so the separation and contrast ranges are coarse. The BP/RP 'blended' flag is interpreted empirically, not from documented internals.\n6. **VHS evidence is catalogue-level only.** VSA images were unreachable (port 8080 timed out; HTTPS certificate mismatch), and full ESO tiles are too large. The ellipticity argument assumes CASU unweighted isophotal moments and compares against 5 bright stars. The target's core may be in the nonlinear regime. The PA convention of KsPA was not verified, so treat the VHS bound as indicative.\n7. **SkyMapper null sample.** The comparison stars are 5-20 times fainter than the target, so the null test uses injections into the target itself. Frames differ in seeing (1.46-2.84\"); the quoted limits come from the best frames.\n8. **Unused or limited data.** Gaia epoch astrometry is not public, so the elongation PA comes only from the weak harmonic-phase relation. DES/Legacy Survey and VHS J are saturated, and there is no unsaturated sub-arcsecond imaging.\n9. **Previous attempt.** The earlier unfinished run used the same windowing; I re-derived everything in v2 and reproduced its raw offsets exactly, but its interpretation (offsets as positions) is superseded.\n10. **Other campaign threads not checked here.** The lcmodel campaign's luminosity and colour inferences were not cross-checked; the colour levers given here are an independent constraint they should be compared against.",
+  "files": "All under /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v2/\n\nFigures:\n- plots/fig1_tess_localisation.png: (a) raw offsets, (b) radial/tangential components, (c) joint \u03b4 contours, (d) lateral-colour curve with the eclipse-light levers.\n- plots/fig2_gaia_calibration.png: fmp vs speckle separation, singles vs binaries, likelihood grid.\n- plots/real_s*_prf.png\n\nTESS scripts:\n- scripts/loclib.py, ana.py, s01_windows.py, s02_real.py: adapted copies of the earlier localise code.\n- scripts/fastfit.py: grid PRF fitter.\n- scripts/s02b_fast_real.py\n- scripts/s03_inject.py: injection-recovery.\n- scripts/x02_boresight.py: boresight frame.\n- scripts/x10_ffi_astrometry.py, x11_colour_terms.py, x12_red_end.py, x13_dwarf_giant.py: field-star lateral colour.\n- scripts/s05_combine.py, s06_variants.py, s07_tail.py: joint fit, robustness, empirical tails.\n\nTESS results:\n- results/real_fast.json, real_s*_prf.json\n- results/inj_s*.json and inj_s*_{deep,shallow}.npz\n- results/x02_boresight.json, x11_colour_terms.json, x12_red_end.json, x13_dwarf_giant.json\n- results/s05_combine.json, s05_sims.npz, s06_variants.json, s06_chi2map.npz, s07_tail.json, s08_pa_dchi2.json\n\nGaia:\n- scripts/g10-g14 (queries)\n- scripts/v03_dl_speckle.py, v04_speckle_sample.py, v05_speckle_calib.py, v06_gaia_calib2.py, v07_gaia_likelihood.py\n- speckle/*.ecsv (VizieR tables), speckle/xmatch_gaia.csv, speckle/calib_sample_v06.csv\n- results/v05_summary.json, v06_gaia_calib.json, v07_gaia_likelihood.json\n- gaia/field3deg_G10.75-12.75.csv, cone3deg_all.fits, cone3.5deg_G15.fits\n\nImaging:\n- scripts/x20_skymapper.py, x20_run_all.py\n- imaging/sm_*.fits (SkyMapper DR2 cutouts), imaging/vhs_dr5_*.csv\n- results/x20_skymapper.json\n\nInputs reused (not modified): TESScut cubes in /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/data/tesscut/ and PRF files in .../localise/prf_files/. The downloaded FFIs were deleted after measurement."
+ },
+ {
+  "summary": "I redid the whole localisation independently in localise/v3. I used my own code throughout and treated the earlier v2 numbers as unverified; they agree with mine.\n\n1. TESS shows a large offset in every sector, but it is a colour effect, not a position offset. In all six sectors the deep eclipses sit 2.0\u20133.6\" from the G star's PRF position, which is 5\u20136\u03c3 against the injection scatter (\u22482\u03c3 in S1). The direction is always radially away from that sector's camera boresight. I measured an independent effect in the TESS optics from 4,000\u20135,500 isolated Gaia field stars in six FFIs: redder stars appear shifted away from the boresight by about 1.5\" per magnitude of BP\u2212RP, and more steeply for the reddest stars.\n   - A fixed sky offset fits the six sectors badly: \u03c7\u00b2 = 217 for 22 degrees of freedom.\n   - An eclipsing source exactly at the G star, with its light redder than the G star, fits well: \u03c7\u00b2 = 20.8/22, empirical p = 0.50.\n   - Fitting position plus colour together gives \u03b4 = (dE, dN) = (\u22120.17 \u00b1 0.18, +0.53 \u00b1 0.28)\", i.e. 0.56\" at PA 342\u00b0. The errors come from injection simulations.\n   - \u03b4 = 0 is allowed (p = 0.09), and p = 0.69 if S105 is dropped. The offset is under 1.24\" at 95% and under 1.48\" at 99.7%. Separations of 1.5\" or more are excluded at p = 0.002, and 2\" or more at p < 0.001.\n   - The PA hint (north-northwest) is not significant.\n   - The size of the colour shift says the deep-eclipsed star has BP\u2212RP \u2248 2.3 (2.2\u20132.4), an M1.5\u2013M2.5 dwarf. The shallow-eclipse light is redder still (BP\u2212RP \u2273 3).\n   - Injections at 0\", 1\", 3\" and 5\" in every sector show biases of at most 0.3\" (deep) and scatter of 0.43\u20130.6\" per sector (S1: 0.8\u20131.5\").\n\n2. Gaia's image diagnostics point to an unresolved companion. I calibrated them with about 4,850 imaging-resolved pairs and 6,100 non-detections from SOAR speckle (Tokovinin; Ziegler), Kepler follow-up imaging (Furlan 2017) and Robo-AO, all cross-matched to Gaia DR3.\n   - Of 2,650 G = 9\u201314 non-detections, none matches all four of the target's values together (ipd_frac_multi_peak 30\u201350, RUWE < 1.4, no Gaia neighbour, BP/RP flagged blended in \u226590% of transits; the target has 47/47 blended).\n   - Matching pairs lie at 0.48\u20131.2\" (four full matches at 0.63\u20131.05\") with I-band contrast \u0394I \u2248 2\u20134.7, mostly 3.7\u20134.7.\n   - The harmonic phase gives no position angle at this low amplitude (Rayleigh p = 0.83).\n\n3. Archival imaging. DECam / Legacy Survey cores are saturated (flat-topped). SkyMapper's 5\u201320 s images are unsaturated but the seeing is 1.8\u20133.2\", only sensitive to \u0394m \u2272 2\u20133 at about 1\". The VISTA VHS images (ESO cutouts, seeing 1.07\u20131.36\") have saturated cores (radius about 0.7\" in Ks, 1.0\" in J). Fitting the wings with injection calibration, both Ks pawprints would recover a companion with \u0394Ks \u2264 2.5 anywhere beyond 0.6\" (100%), and \u0394Ks \u2264 3.0 beyond 1.0\". A residual feature at 1.12\u20131.14\", PA 345\u2013350\u00b0 appears in all three Ks frames but is too faint (\u0394Ks \u2248 4.0\u20134.4 after bias correction) to supply the eclipses. Its nature is unconfirmed.\n\nPutting it together: the eclipses come from a red (\u2248M2) star within about 1.2\" of the G star. Its colour and brightness put it at roughly 130\u2013350 pc, consistent with 297 pc. An unrelated star of this kind within 1.24\" has a chance probability of about 4\u00d710\u207b\u2075. A bound triple is strongly favoured.\n\nThe self-consistent picture is an M2\u2013M3 + M4\u2013M5 eclipsing pair at about 0.45\u20130.65\" (130\u2013190 au projected), or at most about 1\" if \u0394Ks \u2248 3. It would have \u0394Ks \u2248 2.5, \u0394I \u2248 3.9, \u0394G \u2248 5, and about 1.5\u20133% of the TESS light, so the undiluted primary eclipse is about 25\u201350% deep. This revises the earlier rough estimate of 6\u20139% of TESS light, \u0394Ks 1.5\u20131.9, 1\u20131.8\", K7+M2: that estimate is excluded by the VHS limits, the TESS separation limits and the measured colour.",
+  "key_numbers": [
+   {
+    "quantity": "Offset of the eclipsing source from the G star, \u03b4 = (dE, dN), all 6 sectors, deep + shallow, colour-corrected",
+    "value": "(\u22120.17, +0.53)\"; separation 0.56\", PA 342\u00b0",
+    "method": "TESS PRF difference images (stacked per sector, PRF package, 7\u00d77 px box) relative to the direct-image PRF fit; joint fit with a free colour shift per eclipse type, scaled by each sector's measured colour coefficient along the boresight direction (s05_combine.py)",
+    "uncertainty": "empirical sd (0.18, 0.28)\", correlation \u22120.02, from 3,000 simulations using injection-trial noise. True offset is about 2\u20135% larger after correcting for the companion's own share of the direct-image light"
+   },
+   {
+    "quantity": "Is \u03b4 consistent with zero?",
+    "value": "\u0394\u03c7\u00b2(\u03b4 = 0) = 4.7, empirical p = 0.091 (baseline). Across 16 analysis variants p ranges from 0.03 to 0.69 (0.69 without S105)",
+    "method": "Profile \u0394\u03c7\u00b2 compared with simulations where the source sits exactly on the G star",
+    "uncertainty": "Any non-zero \u03b4 is driven mainly by S105 (camera 2)"
+   },
+   {
+    "quantity": "Excluded separations, TESS alone",
+    "value": "95% upper limit 1.24\"; 99.73% upper limit 1.48\". Separation \u22651.5\" excluded at p = 0.002; \u22652\" at p < 0.001",
+    "method": "Injection-calibrated profile \u0394\u03c7\u00b2 thresholds (2.28 / 6.54 / 11.85 for 68 / 95 / 99.7%) plus simulations with the source placed at each separation",
+    "uncertainty": "Across variants the 95% upper limit is 1.06\u20131.54\" (1.54\" with all errors inflated \u00d71.5, where \u22652\" is still excluded at p = 0.005). Shallow eclipses alone: 95% limit 2.46\""
+   },
+   {
+    "quantity": "Position-angle constraint from TESS",
+    "value": "68% region: separation 0.18\u20130.95\", PA 301\u00b0\u201311\u00b0 (north-northwest). At 95% every PA is allowed (the region includes 0\")",
+    "method": "Profile \u0394\u03c7\u00b2 map",
+    "uncertainty": "Not significant (p(\u03b4 = 0) = 0.09)"
+   },
+   {
+    "quantity": "Fixed sky offset with no colour term",
+    "value": "\u03c7\u00b2 = 217 for 22 degrees of freedom (rejected); best fit (\u22120.20, \u22121.79)\"",
+    "method": "Joint fit, injection covariances",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Source exactly on the G star, colour term only",
+    "value": "\u03c7\u00b2 = 20.8/22, empirical p = 0.50",
+    "method": "Joint fit, chi-square p-value from simulations",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Raw deep-eclipse offsets per sector, bias-corrected (dE, dN)",
+    "value": "S1 (+1.62, \u22122.07); S28 (+0.10, \u22122.59); S68 (\u22120.15, \u22122.07); S95 (+1.24, \u22122.19); S105 (\u22122.11, +2.98); S106 (\u22122.11, \u22121.72) arcsec",
+    "method": "Stacked deep-eclipse difference images, free PRF + constant, minus the direct-image PRF position",
+    "uncertainty": "Per-axis empirical sd: S1 (0.81, 1.46), S28 (0.50, 0.55), S68 (0.43, 0.44), S95 (0.45, 0.46), S105 (0.56, 0.62), S106 (0.47, 0.63)"
+   },
+   {
+    "quantity": "Radial and tangential components of the raw offsets (relative to the camera boresight)",
+    "value": "Radially away from the boresight: deep +2.0 to +3.6\", shallow +2.1 to +7.1\". Tangential: all 12 within 1.4\u03c3 of zero",
+    "method": "Projection onto the boresight direction from tess-point, per sector",
+    "uncertainty": "See per-sector sd"
+   },
+   {
+    "quantity": "Injection bias and scatter, deep eclipse",
+    "value": "|bias| \u2264 0.15\" at the target position, \u2264 0.29\" for sources injected at 1\", 3\" or 5\" (S1: \u2264 0.62\"). Scatter 0.43\u20130.63\" per axis (S1: 0.8\u20131.46\")",
+    "method": "400 trials per sector; each trial uses real out-of-eclipse frames at fake phases, injects the empirical target image (or the PRF model) at 0\", or at 1\"/3\"/5\" in 8 directions, and refits with the identical pipeline. Cube-level injection checked against stack-level injection to 2.5e-14 e/s",
+    "uncertainty": "Formal fit errors are close to the empirical scatter, except S1 (formal Dec error too small by 1.6\u00d7)"
+   },
+   {
+    "quantity": "Injection bias and scatter, shallow eclipse",
+    "value": "|bias| \u2264 0.33\" at the target (S1: 1.3\"). Scatter 0.85\u20131.37\" per axis (S1: 2.4\u20134.4\")",
+    "method": "Same as the deep-eclipse injections",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Colour-shift coefficient of the TESS optics (redder stars shifted away from the boresight)",
+    "value": "k_rad = \u22121.52 \u00b1 0.02 arcsec per magnitude of BP\u2212RP (2,560 star fits); \u22121.556 \u00b1 0.024 (wide sample, about 5,560 fits); per sector \u22121.45 to \u22121.64",
+    "method": "PRF fits (7\u00d77 px) of isolated Gaia stars in one calibrated FFI per sector. Residuals relative to Gaia + WCS positions modelled with a 2-D polynomial, a magnitude term, and colour terms along and across the boresight direction (scaled by field angle); bootstrap errors",
+    "uncertainty": "Tangential term at most 0.18\"/mag. Steeper at the red end: BP\u2212RP 2.14 \u2192 \u22122.42 \u00b1 0.19\"; 2.42 \u2192 \u22123.29 \u00b1 0.11\" (linear prediction \u22122.55\"); 2.94 \u2192 \u22123.84\" (only 4 stars)"
+   },
+   {
+    "quantity": "Colour shift of the deep-eclipse light, and its colour",
+    "value": "c_deep = 2.94 \u00b1 0.28\" \u2192 BP\u2212RP \u2248 2.31 (1\u03c3 range 2.22\u20132.40): an M1.5\u2013M2.5 dwarf",
+    "method": "Free colour-shift parameter in the joint fit, read off the field-star colour curve",
+    "uncertainty": "Systematic about \u00b10.1 mag from the few red calibrators. A K7 primary (BP\u2212RP \u2248 1.65 \u2192 expected about 1.35\") is about 5.7\u03c3 below the measured shift"
+   },
+   {
+    "quantity": "Colour shift of the shallow-eclipse light",
+    "value": "c_shallow = 5.34 \u00b1 0.46\"; ratio shallow/deep = 1.82 \u00b1 0.23 \u2192 BP\u2212RP \u2273 3 (beyond the calibrated range)",
+    "method": "Joint fit",
+    "uncertainty": "Extrapolated beyond the calibration"
+   },
+   {
+    "quantity": "Robustness of the TESS result across variants",
+    "value": "Separation 0.28\u20130.70\" (shallow-only 1.01\"); colour shifts c_deep 2.67\u20133.06\"",
+    "method": "Fit box 5\u00d75 / 7\u00d77 / 9\u00d79 px, no bias correction, errors \u00d71.5, three ways of scaling the colour coefficient, deep-only, shallow-only, each sector dropped in turn",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Gaia DR3 image diagnostics of the target",
+    "value": "ipd_frac_multi_peak 41; ipd_frac_odd_win 0; ipd_gof_harmonic_amplitude 0.0292, phase 18.2\u00b0; RUWE 1.026; excess noise 0.105 mas (significance 16.5); BP blended in 47/47 transits and RP in 48/48; corrected BP/RP excess C* = +0.020; 22 visibility periods; not flagged as duplicated. Scan-direction statistics are empty, as for every G < 13 source",
+    "method": "Gaia archive query of gaia_source",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "How often single stars show such multi-peak values",
+    "value": "G 9\u201314 non-detections: ipd_frac_multi_peak \u2265 30 in 5/2650 (0.19%). G 10\u201313 with RUWE < 1.4: 30\u201350 in 1/1196 (0.08%)",
+    "method": "Speckle/AO non-detections (Tokovinin SOAR, Ziegler SOAR TESS, Furlan 2017 KOIs with no companion) cross-matched to Gaia DR3 with CDS XMatch",
+    "uncertainty": "68% interval for G 10\u201313: 0.09\u20130.40% (fmp \u2265 30, any RUWE)"
+   },
+   {
+    "quantity": "How often single stars match all four target diagnostics",
+    "value": "0/2650",
+    "method": "Same non-detection sample, G 9\u201314; criteria: multi-peak 30\u201350, RUWE < 1.4, no Gaia neighbour within 3\", BP blended in \u2265 90% of transits",
+    "uncertainty": "95% upper limit about 0.11%"
+   },
+   {
+    "quantity": "BP/RP blending fraction \u2265 0.9 as a diagnostic",
+    "value": "Single stars 57/2650 (2.2%). Gaia-unresolved pairs: 0.1\u20130.4\" 16%; 0.4\u20130.8\" 45%; 0.8\u20131.2\" 66%; 1.2\u20132\" 19%",
+    "method": "Calibration sample",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Separation and contrast of calibration pairs matching the target",
+    "value": "All four criteria (G 9\u201314): 4 pairs at 0.63, 0.83, 1.01, 1.05\" with \u0394I 2.0\u20133.9. Without the blending criterion but harmonic amplitude < 0.06: 11 pairs at 0.48\u20131.43\" (median about 0.8\"), \u0394I mostly 3.7\u20134.7",
+    "method": "Imaging-resolved pairs (I band for SOAR; i/880/692/LP600 for KOIs) cross-matched to Gaia DR3",
+    "uncertainty": "Small numbers. The sample is dominated by nearby binaries, whose orbital motion inflates RUWE, and it uses I-band rather than G-band contrast"
+   },
+   {
+    "quantity": "Gaia position-angle information",
+    "value": "None. At harmonic amplitude < 0.05 (sep 0.4\u20131.3\", \u0394m 3\u20135, unresolved) the angle between companion PA and harmonic phase is uniform (n = 171, Rayleigh p = 0.83). Only when the amplitude is > 0.05 (n = 1,954) does the companion PA follow phase + 90\u00b0 (concentration 0.59)",
+    "method": "Doubled-angle circular statistics on the calibration pairs",
+    "uncertainty": "The target's amplitude (0.029) sits at about the 80th percentile of single stars (single-star median 0.016, 84th percentile 0.032)"
+   },
+   {
+    "quantity": "BP/RP excess C* compared with single stars",
+    "value": "Target +0.020. Single stars (G 10\u201313, RUWE < 1.4): 3.9% have \u2265 0.018. Unresolved pairs at 0.4\u20131.3\": 76%",
+    "method": "DR3 Riello et al. correction applied to the calibration samples",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "VHS saturation",
+    "value": "Peak-to-total flux ratio 0.020\u20130.037 for the target versus 0.045\u20130.065 for unsaturated stars. Core masked out to about 0.69\u20130.72\" in Ks pawprints and about 1.03\u20131.05\" in J",
+    "method": "ESO SODA cutouts of the VHS Phase-3 pawprints and tiles (2012-08-22; FWHM 1.07\u20131.36\")",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "VHS Ks companion limits (both pawprints)",
+    "value": "\u0394Ks \u2264 2.0: recovered \u2265 88% at 0.4\" and 100% at \u2265 0.5\". \u0394Ks \u2264 2.5: 50\u201362% at 0.4\", 75% at 0.5\", 100% at \u2265 0.6\". \u0394Ks \u2264 3.0: 62\u2013100% at 0.6\u20130.8\", 100% at \u2265 1.0\"",
+    "method": "Fit with a PSF built from unsaturated stars, saturated core masked; companion scan over 0.3\u20133\"; 8 injected angles per separation and contrast. A companion counts as recovered if found within 0.35\" of the injected position and stronger than the strongest real residual",
+    "uncertainty": "Somewhat optimistic, because the injected companions use the same model PSF as the fit"
+   },
+   {
+    "quantity": "VHS residual feature",
+    "value": "1.12\u20131.14\", PA 345\u2013350\u00b0 in all three Ks frames; measured \u0394Ks 3.74\u20133.98, about 4.0\u20134.4 after the injection-measured bias (\u22120.1 to \u22120.6 mag)",
+    "method": "Same companion scan. An equally bright, equally saturated star 3.8' away on the same chip (N228) shows 6\u201330 times weaker residuals (strength 19\u201340 versus 245\u2013630)",
+    "uncertainty": "Unconfirmed: could be a fitting artefact or a faint fourth object. At \u0394Ks \u2248 4.2 it would give only about 0.5% of the TESS light, too little to produce the eclipses"
+   },
+   {
+    "quantity": "SkyMapper Shallow Survey sensitivity",
+    "value": "Unsaturated, but seeing about 1.8\u20133.2\" FWHM. Only \u0394m \u2272 2\u20133 is detectable at about 1\"; a \u0394I \u2248 4 companion is not",
+    "method": "Same PSF-fitting and injection code on the g and r images",
+    "uncertainty": "\u2014"
+   },
+   {
+    "quantity": "Chance alignment of an unrelated star",
+    "value": "Unrelated M dwarf (BP\u2212RP 2.0\u20132.7, G 15\u201317.8) within 1.24\": about 4\u00d710\u207b\u2075. Any G < 19 star within 1.24\": about 9\u00d710\u207b\u2074",
+    "method": "Gaia DR3 surface density within 4.3\u00b0 of the target",
+    "uncertainty": "About 20% statistical"
+   },
+   {
+    "quantity": "Predicted companion pair if bound at 297 pc",
+    "value": "\u0394Ks \u2248 2.5, \u0394I \u2248 3.9, \u0394G \u2248 5.1; about 1.5\u20133% of the TESS light; undiluted primary eclipse about 25\u201350% deep; separation about 0.45\u20130.65\" (130\u2013190 au), or up to about 1\" if \u0394Ks \u2248 3",
+    "method": "Combines the deep-eclipse colour (BP\u2212RP \u2248 2.3) with main-sequence absolute magnitudes. Separation from the VHS lower contrast limit, the Gaia calibrator range (\u2265 0.48\") and the TESS upper limit",
+    "uncertainty": "About \u00b10.3 mag in the predicted contrasts. The absolute magnitudes are approximate main-sequence values I used from memory, without checking them against a table"
+   }
+  ],
+  "conclusions": [
+   {
+    "claim": "The eclipsing source lies within about 1.2\" of the G star. All resolved Gaia neighbours (18.2\", 44\u201355\") and any source at 1.5\" or more are excluded.",
+    "confidence": "strong",
+    "evidence": "Joint six-sector fit gives a 95% upper limit of 1.24\". Separations \u22651.5\" are excluded at p = 0.002 and \u22652\" at p < 0.001. The 2\" exclusion holds in every variant that includes the deep eclipses (p \u2264 0.005 even with all errors \u00d71.5)."
+   },
+   {
+    "claim": "The 2\u20133.6\" raw TESS offsets are a colour effect in the TESS optics, not a real sky offset.",
+    "confidence": "strong",
+    "evidence": "In all six sectors and all three boresight geometries (S105 points the opposite way, S106 is about 60\u201380\u00b0 off), the offset points away from the boresight. All 12 tangential components are consistent with zero. The field-star colour coefficient (\u22121.52 to \u22121.56\"/mag, same sign) explains it. A fixed sky offset gives \u03c7\u00b2 = 217/22; an on-target red source gives 20.8/22."
+   },
+   {
+    "claim": "\u03b4 is consistent with zero. The north-northwest offset of about 0.5\" is not significant, and TESS gives no meaningful position-angle constraint.",
+    "confidence": "moderate",
+    "evidence": "p(\u03b4 = 0) = 0.09 (baseline), 0.03\u20130.69 across variants. Dropping S105 gives (\u22120.14, +0.24) \u00b1 (0.20, 0.45)\". The 68% region is PA 301\u00b0\u201311\u00b0, but 0\" is inside the 95% region."
+   },
+   {
+    "claim": "The deep-eclipse light comes from a star with BP\u2212RP \u2248 2.3 (M1.5\u2013M2.5). The shallow-eclipse light is redder (BP\u2212RP \u2273 3). A K7 primary is disfavoured.",
+    "confidence": "moderate",
+    "evidence": "Colour shifts c_deep = 2.94 \u00b1 0.28\" and c_shallow = 5.34 \u00b1 0.46\", ratio 1.82. Read off the red end of the field-star colour curve (BP\u2212RP 2.42 \u2192 3.29\"), this gives 2.2\u20132.4 for the deep eclipse. K7 would predict about 1.35\". This depends on the few red calibration stars (about 20 per bin, only 4 beyond 2.7)."
+   },
+   {
+    "claim": "Gaia DR3 independently indicates a companion at about 0.5\u20131.2\" with I-band contrast about 3.7\u20134.7 that Gaia did not list as a separate source. The Gaia data give no PA.",
+    "confidence": "moderate",
+    "evidence": "No single star matches all four diagnostics (0/2650); matching pairs lie at 0.48\u20131.2\" (four full matches at 0.63\u20131.05\", \u0394I 2.0\u20133.9). The harmonic phase is uninformative at the target's amplitude (Rayleigh p = 0.83, n = 171)."
+   },
+   {
+    "claim": "A companion as bright as in the earlier rough estimate (\u0394Ks 1.5\u20131.9 at 1\u20131.8\", 6\u20139% of the TESS light) is ruled out.",
+    "confidence": "strong",
+    "evidence": "VHS Ks injections recover \u0394Ks \u2264 2.0 at \u2265 0.5\" (100%) and \u0394Ks \u2264 2.5 at \u2265 0.6\" (100%) in both pawprints. TESS excludes \u2265 1.5\". The colour shift excludes a K7 primary."
+   },
+   {
+    "claim": "A bound triple is strongly favoured over an unrelated background or foreground eclipsing binary. The most self-consistent picture is an M2\u2013M3 + M4\u2013M5 pair at about 0.45\u20130.65\" (130\u2013190 au), giving about 1.5\u20133% of the TESS light.",
+    "confidence": "moderate",
+    "evidence": "An unrelated M dwarf within 1.24\" has a chance probability of about 4\u00d710\u207b\u2075. The eclipsed star's colour and light fraction put it at about 130\u2013350 pc, consistent with 297 pc. The Gaia lower bound (about 0.48\"), VHS upper bound (about 0.6\" for \u0394Ks \u2248 2.5) and TESS limit agree. This relies on approximate main-sequence relations and on undiluted depths of 10\u201355%."
+   },
+   {
+    "claim": "The residual feature in the VHS Ks images (1.12\u20131.14\", PA 345\u2013350\u00b0, \u0394Ks about 4.2) cannot be the eclipsing pair. Whether it is real is unknown.",
+    "confidence": "moderate",
+    "evidence": "It appears in all three Ks frames and is much weaker around a matched saturated star (N228). But \u0394Ks about 4.2 means about 0.5% of the TESS light, which would need eclipses deeper than 100%. Injections show the fit measures companions too bright, not too faint. The two-star comparison test (h03) was inconclusive."
+   },
+   {
+    "claim": "Existing seeing-limited imaging cannot resolve the companion.",
+    "confidence": "strong",
+    "evidence": "DECam / Legacy Survey cores are saturated flat (peak fraction 0.003). VHS cores are saturated out to 0.7\" in Ks. SkyMapper is unsaturated but the seeing (1.8\u20133.2\") only reaches \u0394m \u2272 2\u20133 at about 1\"."
+   }
+  ],
+  "implications_bound_vs_background": "The evidence now favours a bound hierarchical triple.\n\n1. TESS places the eclipsing light within 1.24\" of the G star at 95% (1.48\" at 99.7%). This rules out every catalogued Gaia neighbour and any source at 1.5\" or more.\n2. That light is red: BP\u2212RP \u2248 2.3 for the deep eclipse and redder for the shallow one, i.e. a mid-M primary with a cooler secondary.\n3. At this Galactic latitude an unrelated M dwarf of the required brightness lands within 1.24\" with probability about 4\u00d710\u207b\u2075. A bound low-mass companion at 50\u2013370 au is roughly 10\u00b3 times more likely a priori.\n4. The eclipsed star's photometric distance (about 130\u2013350 pc) brackets the G star's 297 pc.\n5. Gaia's image diagnostics independently say there is an unlisted companion at about 0.5\u20131.2\". No single star in the calibration sample matches them (0/2650).\n6. VHS shows that a companion bright enough for the earlier rough estimate (\u0394Ks \u2248 1.5\u20131.9) would have been seen beyond 0.4\u20130.5\". So the bound eclipsing pair must be fainter (\u0394Ks \u2248 2.5\u20133, about 1.5\u20133% of the TESS light) and closer: about 0.45\u20130.65\" for \u0394Ks \u2248 2.5, at most about 1.0\" for \u0394Ks \u2248 3. That is about 130\u2013300 au projected.\n7. The background interpretation survives only as an unlucky chance alignment within about 1\", or a foreground M dwarf if the undiluted eclipse is shallow.\n\nTestable predictions for the follow-up:\n- The light-curve modelling should need about 97\u201398.5% third light (undiluted primary depth about 25\u201350%).\n- 8 m speckle imaging at 562/832 nm (Zorro/'Alopeke) or near-IR adaptive optics should find a companion with \u0394(832 nm) \u2248 3.5\u20134.5 or \u0394K \u2248 2.5 at 0.4\u20130.7\". SOAR I-band imaging is borderline.\n- Colour-dependent depths in ground photometry should follow an M2+M4\u20135 eclipsing pair.",
+  "caveats": "1. **Colour correction drives the result.** The whole TESS conclusion depends on the colour coefficient of the TESS optics measured from field stars. Its sign and size are well measured (\u22121.52 to \u22121.56\\\"/mag, six sectors, two cameras). But the red end (BP\u2212RP > 2.3) rests on about 20 stars per bin, and only 4 beyond 2.7. That makes the inferred BP\u2212RP of the eclipsed stars uncertain by about \u00b10.1\u20130.2 mag, and the shallow-eclipse colour an extrapolation.\n2. **The north-northwest offset rests on one sector.** The 0.5\\\" offset comes mostly from S105, which is camera 2. If that camera's colour effect is stronger for very red sources than its field-star coefficient suggests, \u03b4 moves toward 0. Treat the TESS result as an upper limit, not a detection of an offset.\n3. **Noise model.** Errors come from real out-of-eclipse fake windows drawn from a shared pool, so trials are not fully independent.\n   - The PRF models date from the 2018\u201319 commissioning; the injections that use the star's own image partly cover any mismatch.\n   - The direct-image reference includes the companion's light, so \u03b4 is about 2\u20135% too small, and the colour shifts are about 0.1\\\" too small.\n4. **Gaia calibration limits.**\n   - Only 4\u201311 target-like calibration pairs exist.\n   - The calibrators are mostly nearby bright Hipparcos/TOI stars, where orbital motion inflates RUWE. That makes \"RUWE < 1.4\" more restrictive in the calibration than for a star at 297 pc.\n   - Calibrator contrasts are I-band, not G-band. For an M-dwarf companion around a G star, \u0394G is about 1\u20131.5 mag larger than \u0394I.\n   - I matched the calibrators' primaries as the brightest Gaia source within 4\\\". This can mis-assign some WDS entries with poor coordinates.\n   - The BP/RP blending statistic was calibrated empirically, not from its documented definition.\n5. **VHS limits.**\n   - The core is saturated out to about 0.7\\\" in Ks and 1.0\\\" in J, so the limits inside about 0.5\u20130.6\\\" are weak.\n   - The detection limits are optimistic because injected companions use the same model PSF as the fit.\n   - The 1.1\\\" residual feature is unexplained; the comparison with the matched star (h03) was inconclusive because of misalignment dipoles in J and Ks2.\n   - Only one VHS epoch (2012-08-22) exists, so there is no proper-motion check.\n6. **Companion predictions.** The predicted contrasts, light fractions and distances use approximate main-sequence absolute magnitudes and colour conversions that I did not check against a table (about \u00b10.3 mag). They also assume a near-solar-metallicity M dwarf; the G star's [M/H]_gspphot is \u22120.35 and flagged unreliable.\n7. **Coverage.** S1 (30-min cadence, 1\u20132 cadences per eclipse) adds little. The S1 shallow-eclipse fit is unstable (planar-background and Gaussian-PSF variants differ by several arcsec), but its injection scatter is 2.4\u20134.4\\\", so it carries negligible weight.\n8. **Earlier attempt.** I did not reuse v2 results. My code is independent, and its numbers agree closely with v2 (\u03b4 (\u22120.25, +0.51) vs mine (\u22120.17, +0.53); colour shifts (2.98, 5.53) vs (2.94, 5.34)).\n9. **SkyMapper.** The SkyMapper run (h05) was stopped after the g and r images because its sensitivity is irrelevant at the relevant contrasts; its results exist only in the log.",
+  "files": "Everything is under /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/localise/v3/\n\nScripts (scripts/):\n- v3lib.py \u2014 shared code: TESScut cubes, windows, difference images, TESS-PRF fitting\n- s01_lc.py \u2014 per-sector light-curve sanity check\n- s02_real.py \u2014 real difference-image fits\n- s03_inject.py \u2014 injection-recovery\n- s05_combine.py \u2014 joint fit with the colour model\n- s06_variants.sh \u2014 robustness variants\n- f01_ffi.py, f02_colour.py \u2014 colour coefficient from FFI field stars\n- g01_target.py, g02_field.py, g03b_tiles.py, g03c_tiles43.py \u2014 Gaia queries\n- v01_speckle.py, v02_calib.py, v03_gaia_like.py \u2014 speckle/AO calibration of Gaia IPD diagnostics\n- h01_vhs.py, h02_vhs_null.py, h03_vhs_template.py, h04_vhs_inner.py \u2014 VHS analysis\n- h05_skymapper.py \u2014 SkyMapper check\n- f10_figure.py \u2014 summary figure\n\nKey results (results/):\n- s05_baseline.json + s05_baseline_map.npz \u2014 main TESS combination\n- s05_{deep_only,shallow_only,k_equal,k_theta,k_wide,no_bias,err_x1.5,box2,box4,drop_s*}.json \u2014 variants\n- real_s{1,28,68,95,105,106}.json \u2014 per-sector offsets and per-eclipse fits\n- inj_s*.json / inj_s*.npz \u2014 injection calibration\n- f02_colour_theta.json, f02_colourw_theta.json \u2014 colour coefficients and colour curve\n- s01_lc.json \u2014 light-curve checks\n- v02_calib.json, v03_gaia_like.json \u2014 Gaia calibration\n- h01_vhs.json, h02_vhs_null.json, h03_vhs_template.json, h04_vhs_inner.json \u2014 VHS\n- log_h05.txt \u2014 SkyMapper (log only)\n\nPlots (plots/):\n- fig_localisation_summary.png \u2014 raw per-sector offsets vs boresight direction, and the joint localisation with VHS limits\n- real_s*.png \u2014 difference images per sector\n- h03_vhs_template_resid.png\n- s01_lc.png\n\nData:\n- speckle/pairs_gaia.csv, speckle/singles_gaia.csv \u2014 calibration samples cross-matched to Gaia\n- imaging/vhs_*.fits.fz, imaging/big/ \u2014 VHS ESO cutouts\n- imaging/ls/ \u2014 Legacy Survey cutouts\n- imaging/skymapper/ \u2014 SkyMapper images\n- gaia/ \u2014 target row, field and wide catalogues\n\nThe TESScut cubes reused from the earlier attempt are in localise/data/tesscut/. The downloaded FFIs were deleted after the field-star fits."
+ }
+]

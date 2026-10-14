@@ -1,0 +1,13 @@
+target C* = 0.0204, sigma_C*(G) = 0.0073, C*/sigma = 2.80
+singles G10.5-13: n 1255  frac C*/sig >= 2.8: 0.037  median C*/sig -0.12
+singles G10.5-13 & unresolved: frac C*/sig >= 2.8: 0.037
+Gaia-unresolved pairs 0.35-0.7": n 243  frac C*/sig>=2.8 0.92  frac bpb>=0.9 0.41  frac fmp 30-55 0.16  frac RUWE<1.4 0.07
+     dm 2.5-3.5: n  32  D 0  bpb>=0.9 6  D&bpb 0  RUWE<1.4 2  fmp med 57.5
+     dm 3.5-4.5: n  19  D 2  bpb>=0.9 1  D&bpb 0  RUWE<1.4 3  fmp med 37.0
+     dm 4.5-7: n   4  D 0  bpb>=0.9 0  D&bpb 0  RUWE<1.4 1  fmp med 17.5
+Gaia-unresolved pairs 0.7-1.4": n 61  frac C*/sig>=2.8 0.52  frac bpb>=0.9 0.56  frac fmp 30-55 0.33  frac RUWE<1.4 0.51
+     dm 2.5-3.5: n  11  D 0  bpb>=0.9 7  D&bpb 0  RUWE<1.4 3  fmp med 28.0
+     dm 3.5-4.5: n  15  D 3  bpb>=0.9 8  D&bpb 1  RUWE<1.4 11  fmp med 22.0
+     dm 4.5-7: n  16  D 1  bpb>=0.9 7  D&bpb 0  RUWE<1.4 13  fmp med 7.5
+singles: D 0  bpb>=0.9&unres 33  fmp>=20&unres 5 of 1255
+singles detection limits (SOAR rows with lim1): median dm at 1" = 4.179999828338623  at 0.15" = 2.450000047683716  n with limits 919

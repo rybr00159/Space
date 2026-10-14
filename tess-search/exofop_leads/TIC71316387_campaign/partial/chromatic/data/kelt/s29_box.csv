@@ -1,0 +1,5 @@
+kelt_sourceid,kelt_orientation,ra,dec,kelt_mag,npts,stddevwrtmedian
+KELT_S29_lc_041043_V01_east,east,331.06296,-42.94514,15.395,3346,0.070483
+KELT_S29_lc_041043_V01_east,west,331.06296,-42.94514,15.438,3236,0.070976
+KELT_S29_lc_064338_V01_east,east,330.87242,-42.86908,16.112,3347,0.127351
+KELT_S29_lc_064338_V01_east,west,330.87242,-42.86908,16.168,3237,0.126532

@@ -1,0 +1,9 @@
+Gaia-unresolved pairs, G 9.5-13.5, dI 3-5: fmp, RUWE and BP-blending vs separation
+  0.10-0.25": n= 18  fmp median   0.0  frac fmp 30-55 0.00  frac RUWE<1.4 0.00  frac D 0.00  frac bpb>=0.9 0.00  gofha median 0.015
+  0.25-0.40": n= 30  fmp median  31.5  frac fmp 30-55 0.43  frac RUWE<1.4 0.03  frac D 0.00  frac bpb>=0.9 0.03  gofha median 0.041
+  0.40-0.55": n= 12  fmp median  49.0  frac fmp 30-55 0.50  frac RUWE<1.4 0.08  frac D 0.08  frac bpb>=0.9 0.08  gofha median 0.029
+  0.55-0.70": n= 20  fmp median  42.0  frac fmp 30-55 0.45  frac RUWE<1.4 0.15  frac D 0.05  frac bpb>=0.9 0.20  gofha median 0.022
+  0.70-0.90": n=  9  fmp median  25.0  frac fmp 30-55 0.44  frac RUWE<1.4 0.33  frac D 0.11  frac bpb>=0.9 0.22  gofha median 0.016
+  0.90-1.20": n= 15  fmp median  17.0  frac fmp 30-55 0.20  frac RUWE<1.4 0.93  frac D 0.20  frac bpb>=0.9 0.73  gofha median 0.011
+  1.20-1.60": n=  6  fmp median  10.0  frac fmp 30-55 0.00  frac RUWE<1.4 0.33  frac D 0.00  frac bpb>=0.9 0.17  gofha median 0.015
+  1.60-2.20": n=  1  fmp median   0.0  frac fmp 30-55 0.00  frac RUWE<1.4 1.00  frac D 0.00  frac bpb>=0.9 0.00  gofha median 0.011

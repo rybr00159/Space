@@ -1,0 +1,908 @@
+{
+ "M3": 1.03,
+ "MEB": 0.6,
+ "thr_quad": 9.29315046731173,
+ "thr_sin": 19.041630720836263,
+ "grid": [
+  {
+   "ecc": "circular",
+   "a_au": 0.5,
+   "Pout_yr": 0.27692438781085565,
+   "excluded_frac": 0.901,
+   "detect_frac": 0.7755,
+   "ltte_semiamp_med_min": 2.2706403265290027,
+   "dev_from_line_med_min": 2.51270038877989
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.5922177674156655,
+   "Pout_yr": 0.3569672280945711,
+   "excluded_frac": 0.926,
+   "detect_frac": 0.8335,
+   "ltte_semiamp_med_min": 2.676977657885523,
+   "dev_from_line_med_min": 2.9576245147165965
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.7014437680855905,
+   "Pout_yr": 0.4601458287615879,
+   "excluded_frac": 0.925,
+   "detect_frac": 0.8955,
+   "ltte_semiamp_med_min": 3.1679145738421486,
+   "dev_from_line_med_min": 3.7316926003725346
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.8308149246065605,
+   "Pout_yr": 0.593147401392808,
+   "excluded_frac": 0.9635,
+   "detect_frac": 0.9435,
+   "ltte_semiamp_med_min": 3.787124298012621,
+   "dev_from_line_med_min": 4.008601030409348
+  },
+  {
+   "ecc": "circular",
+   "a_au": 0.9840467195722234,
+   "Pout_yr": 0.764592044061164,
+   "excluded_frac": 0.9505,
+   "detect_frac": 0.881,
+   "ltte_semiamp_med_min": 4.434076458000771,
+   "dev_from_line_med_min": 3.7045388305603852
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.165539902595543,
+   "Pout_yr": 0.9855914271374859,
+   "excluded_frac": 0.617,
+   "detect_frac": 0.484,
+   "ltte_semiamp_med_min": 5.306738590969452,
+   "dev_from_line_med_min": 1.903616015105096
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.3805068778980096,
+   "Pout_yr": 1.2704689628829038,
+   "excluded_frac": 0.978,
+   "detect_frac": 0.978,
+   "ltte_semiamp_med_min": 6.337108594389729,
+   "dev_from_line_med_min": 6.1798415520061845
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.6351214022614597,
+   "Pout_yr": 1.6376881344602052,
+   "excluded_frac": 0.9845,
+   "detect_frac": 0.972,
+   "ltte_semiamp_med_min": 7.459756497296915,
+   "dev_from_line_med_min": 5.779661182512654
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1.9366958926017082,
+   "Pout_yr": 2.1110491512250698,
+   "excluded_frac": 0.9835,
+   "detect_frac": 0.9815,
+   "ltte_semiamp_med_min": 8.656719844543346,
+   "dev_from_line_med_min": 7.828598230563843
+  },
+  {
+   "ecc": "circular",
+   "a_au": 2.2938914353593463,
+   "Pout_yr": 2.721231487921229,
+   "excluded_frac": 0.9965,
+   "detect_frac": 0.991,
+   "ltte_semiamp_med_min": 10.601611228696065,
+   "dev_from_line_med_min": 8.744656131732714
+  },
+  {
+   "ecc": "circular",
+   "a_au": 2.716966529084856,
+   "Pout_yr": 3.5077822828315988,
+   "excluded_frac": 0.9955,
+   "detect_frac": 0.9955,
+   "ltte_semiamp_med_min": 12.311580129376178,
+   "dev_from_line_med_min": 11.532955688140499
+  },
+  {
+   "ecc": "circular",
+   "a_au": 3.2180717039954474,
+   "Pout_yr": 4.521679466948549,
+   "excluded_frac": 0.9975,
+   "detect_frac": 0.9985,
+   "ltte_semiamp_med_min": 14.675099533358985,
+   "dev_from_line_med_min": 14.542821176472033
+  },
+  {
+   "ecc": "circular",
+   "a_au": 3.8115984798474196,
+   "Pout_yr": 5.828635745693927,
+   "excluded_frac": 0.9965,
+   "detect_frac": 0.996,
+   "ltte_semiamp_med_min": 17.19675753905569,
+   "dev_from_line_med_min": 16.229953703981604
+  },
+  {
+   "ecc": "circular",
+   "a_au": 4.514592684040366,
+   "Pout_yr": 7.51335757085578,
+   "excluded_frac": 0.9985,
+   "detect_frac": 0.998,
+   "ltte_semiamp_med_min": 20.70091626744003,
+   "dev_from_line_med_min": 21.33022649829471
+  },
+  {
+   "ecc": "circular",
+   "a_au": 5.347244000266964,
+   "Pout_yr": 9.685035135235603,
+   "excluded_frac": 0.998,
+   "detect_frac": 0.9985,
+   "ltte_semiamp_med_min": 24.20578454375348,
+   "dev_from_line_med_min": 20.02380918778265
+  },
+  {
+   "ecc": "circular",
+   "a_au": 6.333465807329829,
+   "Pout_yr": 12.484419207545352,
+   "excluded_frac": 0.998,
+   "detect_frac": 0.9995,
+   "ltte_semiamp_med_min": 29.169739922466135,
+   "dev_from_line_med_min": 16.41930457745002
+  },
+  {
+   "ecc": "circular",
+   "a_au": 7.501581960840652,
+   "Pout_yr": 16.09294347138532,
+   "excluded_frac": 0.997,
+   "detect_frac": 0.9965,
+   "ltte_semiamp_med_min": 34.413040719675415,
+   "dev_from_line_med_min": 12.520457158253599
+  },
+  {
+   "ecc": "circular",
+   "a_au": 8.885140241869362,
+   "Pout_yr": 20.744483605346968,
+   "excluded_frac": 0.987,
+   "detect_frac": 0.984,
+   "ltte_semiamp_med_min": 40.42586683752969,
+   "dev_from_line_med_min": 8.982224897230454
+  },
+  {
+   "ecc": "circular",
+   "a_au": 10.523875834429921,
+   "Pout_yr": 26.74051523375327,
+   "excluded_frac": 0.963,
+   "detect_frac": 0.967,
+   "ltte_semiamp_med_min": 47.268726582037885,
+   "dev_from_line_med_min": 6.399316038794782
+  },
+  {
+   "ecc": "circular",
+   "a_au": 12.464852502451523,
+   "Pout_yr": 34.46965316515675,
+   "excluded_frac": 0.9245,
+   "detect_frac": 0.914,
+   "ltte_semiamp_med_min": 56.47578110753474,
+   "dev_from_line_med_min": 4.904633572441922
+  },
+  {
+   "ecc": "circular",
+   "a_au": 14.76381424033482,
+   "Pout_yr": 44.43283829574259,
+   "excluded_frac": 0.889,
+   "detect_frac": 0.8495,
+   "ltte_semiamp_med_min": 67.10452953840453,
+   "dev_from_line_med_min": 3.5306168373361224
+  },
+  {
+   "ecc": "circular",
+   "a_au": 17.4867862159014,
+   "Pout_yr": 57.275804591248004,
+   "excluded_frac": 0.8155,
+   "detect_frac": 0.806,
+   "ltte_semiamp_med_min": 79.45571846139711,
+   "dev_from_line_med_min": 2.603869277720044
+  },
+  {
+   "ecc": "circular",
+   "a_au": 20.711970984112316,
+   "Pout_yr": 73.83093039746576,
+   "excluded_frac": 0.7345,
+   "detect_frac": 0.739,
+   "ltte_semiamp_med_min": 93.4292056264664,
+   "dev_from_line_med_min": 1.8154339163856044
+  },
+  {
+   "ecc": "circular",
+   "a_au": 24.531994429978077,
+   "Pout_yr": 95.17118654651556,
+   "excluded_frac": 0.63,
+   "detect_frac": 0.6305,
+   "ltte_semiamp_med_min": 110.92734828801275,
+   "dev_from_line_med_min": 1.3241513644410574
+  },
+  {
+   "ecc": "circular",
+   "a_au": 29.056565943150325,
+   "Pout_yr": 122.67967774360552,
+   "excluded_frac": 0.476,
+   "detect_frac": 0.46,
+   "ltte_semiamp_med_min": 132.7940420165911,
+   "dev_from_line_med_min": 0.9342384742900478
+  },
+  {
+   "ecc": "circular",
+   "a_au": 34.41562922323708,
+   "Pout_yr": 158.13928435072046,
+   "excluded_frac": 0.243,
+   "detect_frac": 0.254,
+   "ltte_semiamp_med_min": 155.74015487949254,
+   "dev_from_line_med_min": 0.6441402412497652
+  },
+  {
+   "ecc": "circular",
+   "a_au": 40.763094205581595,
+   "Pout_yr": 203.84821443062143,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.1295,
+   "ltte_semiamp_med_min": 186.80923790096858,
+   "dev_from_line_med_min": 0.4930379561254057
+  },
+  {
+   "ecc": "circular",
+   "a_au": 48.28125728676796,
+   "Pout_yr": 262.76895521035846,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.043,
+   "ltte_semiamp_med_min": 221.71377370398895,
+   "dev_from_line_med_min": 0.3439722162094654
+  },
+  {
+   "ecc": "circular",
+   "a_au": 57.18603679678209,
+   "Pout_yr": 338.72027780671726,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0295,
+   "ltte_semiamp_med_min": 262.52986699430505,
+   "dev_from_line_med_min": 0.2505037763448854
+  },
+  {
+   "ecc": "circular",
+   "a_au": 67.73317407828083,
+   "Pout_yr": 436.62473942407763,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0145,
+   "ltte_semiamp_med_min": 310.15999826486666,
+   "dev_from_line_med_min": 0.1754205629928407
+  },
+  {
+   "ecc": "circular",
+   "a_au": 80.22557826523217,
+   "Pout_yr": 562.8277241374025,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.009,
+   "ltte_semiamp_med_min": 369.36153412457725,
+   "dev_from_line_med_min": 0.12022953713420748
+  },
+  {
+   "ecc": "circular",
+   "a_au": 95.02202569973306,
+   "Pout_yr": 725.508699931948,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.003,
+   "ltte_semiamp_med_min": 439.475223597476,
+   "dev_from_line_med_min": 0.09111821909726814
+  },
+  {
+   "ecc": "circular",
+   "a_au": 112.54746383041979,
+   "Pout_yr": 935.2113463913959,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.006,
+   "ltte_semiamp_med_min": 506.7362158370969,
+   "dev_from_line_med_min": 0.06196688663416694
+  },
+  {
+   "ecc": "circular",
+   "a_au": 133.3052155158931,
+   "Pout_yr": 1205.5269116707295,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.005,
+   "ltte_semiamp_med_min": 616.9720303170379,
+   "dev_from_line_med_min": 0.04519939960027841
+  },
+  {
+   "ecc": "circular",
+   "a_au": 157.89143423537269,
+   "Pout_yr": 1553.9750884867342,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0035,
+   "ltte_semiamp_med_min": 715.7046538922222,
+   "dev_from_line_med_min": 0.030011250517276267
+  },
+  {
+   "ecc": "circular",
+   "a_au": 187.01222535385955,
+   "Pout_yr": 2003.1395004617932,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.004,
+   "ltte_semiamp_med_min": 849.4119309731783,
+   "dev_from_line_med_min": 0.022370684079902503
+  },
+  {
+   "ecc": "circular",
+   "a_au": 221.5039251569962,
+   "Pout_yr": 2582.131391963161,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0035,
+   "ltte_semiamp_med_min": 1013.6018687912517,
+   "dev_from_line_med_min": 0.01618937297598677
+  },
+  {
+   "ecc": "circular",
+   "a_au": 262.3571200605658,
+   "Pout_yr": 3328.4763861051783,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0045,
+   "ltte_semiamp_med_min": 1197.6233196354272,
+   "dev_from_line_med_min": 0.011454666773943245
+  },
+  {
+   "ecc": "circular",
+   "a_au": 310.745095815744,
+   "Pout_yr": 4290.546595476211,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0055,
+   "ltte_semiamp_med_min": 1413.3103900981537,
+   "dev_from_line_med_min": 0.00790248845220276
+  },
+  {
+   "ecc": "circular",
+   "a_au": 368.0575337587338,
+   "Pout_yr": 5530.695715553379,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.006,
+   "ltte_semiamp_med_min": 1679.2140074303445,
+   "dev_from_line_med_min": 0.005903458468253575
+  },
+  {
+   "ecc": "circular",
+   "a_au": 435.9404218462265,
+   "Pout_yr": 7129.300292483003,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0055,
+   "ltte_semiamp_med_min": 1949.688915902882,
+   "dev_from_line_med_min": 0.004128043961145522
+  },
+  {
+   "ecc": "circular",
+   "a_au": 516.3433267040313,
+   "Pout_yr": 9189.969087878613,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.005,
+   "ltte_semiamp_med_min": 2358.0944987681487,
+   "dev_from_line_med_min": 0.002949804654235777
+  },
+  {
+   "ecc": "circular",
+   "a_au": 611.5753843212784,
+   "Pout_yr": 11846.258169993604,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.005,
+   "ltte_semiamp_med_min": 2799.405332303326,
+   "dev_from_line_med_min": 0.0021044609845830564
+  },
+  {
+   "ecc": "circular",
+   "a_au": 724.37161741825,
+   "Pout_yr": 15270.326949764996,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0075,
+   "ltte_semiamp_med_min": 3278.8382938176883,
+   "dev_from_line_med_min": 0.0015247998445602207
+  },
+  {
+   "ecc": "circular",
+   "a_au": 857.9714840934212,
+   "Pout_yr": 19684.096176746167,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0075,
+   "ltte_semiamp_med_min": 3930.6413505030705,
+   "dev_from_line_med_min": 0.0011112983902421547
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1016.2119136322219,
+   "Pout_yr": 25373.631066973056,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.004,
+   "ltte_semiamp_med_min": 4572.650731816106,
+   "dev_from_line_med_min": 0.000749814925939063
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1203.6375014249509,
+   "Pout_yr": 32707.681762063286,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0055,
+   "ltte_semiamp_med_min": 5478.341482723625,
+   "dev_from_line_med_min": 0.0005440157085558894
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1425.6310277433083,
+   "Pout_yr": 42161.58276380378,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.002,
+   "ltte_semiamp_med_min": 6533.024769275599,
+   "dev_from_line_med_min": 0.0004011115152025013
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1688.5680488172868,
+   "Pout_yr": 54348.06031440802,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.004,
+   "ltte_semiamp_med_min": 7649.212987688476,
+   "dev_from_line_med_min": 0.00027890936371477437
+  },
+  {
+   "ecc": "circular",
+   "a_au": 1999.9999999999998,
+   "Pout_yr": 70056.94441040586,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0005,
+   "ltte_semiamp_med_min": 9020.48141548198,
+   "dev_from_line_med_min": 0.00019786221173490048
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.5,
+   "Pout_yr": 0.27692438781085565,
+   "excluded_frac": 0.7925,
+   "detect_frac": 0.524,
+   "ltte_semiamp_med_min": 2.265067469305115,
+   "dev_from_line_med_min": 2.2672244267586334
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.5922177674156655,
+   "Pout_yr": 0.3569672280945711,
+   "excluded_frac": 0.818,
+   "detect_frac": 0.6625,
+   "ltte_semiamp_med_min": 2.72062042051345,
+   "dev_from_line_med_min": 2.625676693079341
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.7014437680855905,
+   "Pout_yr": 0.4601458287615879,
+   "excluded_frac": 0.797,
+   "detect_frac": 0.716,
+   "ltte_semiamp_med_min": 3.208925485277959,
+   "dev_from_line_med_min": 2.941288346172348
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.8308149246065605,
+   "Pout_yr": 0.593147401392808,
+   "excluded_frac": 0.9215,
+   "detect_frac": 0.8505,
+   "ltte_semiamp_med_min": 3.798678952971037,
+   "dev_from_line_med_min": 3.3003088948606902
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 0.9840467195722234,
+   "Pout_yr": 0.764592044061164,
+   "excluded_frac": 0.8885,
+   "detect_frac": 0.806,
+   "ltte_semiamp_med_min": 4.514753229741618,
+   "dev_from_line_med_min": 3.2654814453152614
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.165539902595543,
+   "Pout_yr": 0.9855914271374859,
+   "excluded_frac": 0.4285,
+   "detect_frac": 0.3355,
+   "ltte_semiamp_med_min": 5.224211850359639,
+   "dev_from_line_med_min": 1.328017858663304
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.3805068778980096,
+   "Pout_yr": 1.2704689628829038,
+   "excluded_frac": 0.955,
+   "detect_frac": 0.948,
+   "ltte_semiamp_med_min": 6.338018013723678,
+   "dev_from_line_med_min": 4.714416132399226
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.6351214022614597,
+   "Pout_yr": 1.6376881344602052,
+   "excluded_frac": 0.9475,
+   "detect_frac": 0.9295,
+   "ltte_semiamp_med_min": 7.496217436720952,
+   "dev_from_line_med_min": 4.782638547574394
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1.9366958926017082,
+   "Pout_yr": 2.1110491512250698,
+   "excluded_frac": 0.963,
+   "detect_frac": 0.9445,
+   "ltte_semiamp_med_min": 8.876712628099447,
+   "dev_from_line_med_min": 5.722896941302866
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 2.2938914353593463,
+   "Pout_yr": 2.721231487921229,
+   "excluded_frac": 0.9755,
+   "detect_frac": 0.9605,
+   "ltte_semiamp_med_min": 10.403539180376098,
+   "dev_from_line_med_min": 6.296802764829279
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 2.716966529084856,
+   "Pout_yr": 3.5077822828315988,
+   "excluded_frac": 0.9895,
+   "detect_frac": 0.9845,
+   "ltte_semiamp_med_min": 12.282341153338763,
+   "dev_from_line_med_min": 8.424087562072675
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 3.2180717039954474,
+   "Pout_yr": 4.521679466948549,
+   "excluded_frac": 0.993,
+   "detect_frac": 0.9895,
+   "ltte_semiamp_med_min": 14.714603004342496,
+   "dev_from_line_med_min": 10.39912790521031
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 3.8115984798474196,
+   "Pout_yr": 5.828635745693927,
+   "excluded_frac": 0.994,
+   "detect_frac": 0.99,
+   "ltte_semiamp_med_min": 17.205261900483066,
+   "dev_from_line_med_min": 11.833205066743147
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 4.514592684040366,
+   "Pout_yr": 7.51335757085578,
+   "excluded_frac": 0.9955,
+   "detect_frac": 0.996,
+   "ltte_semiamp_med_min": 20.62835758961075,
+   "dev_from_line_med_min": 15.530039596848242
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 5.347244000266964,
+   "Pout_yr": 9.685035135235603,
+   "excluded_frac": 0.994,
+   "detect_frac": 0.994,
+   "ltte_semiamp_med_min": 24.147205822602924,
+   "dev_from_line_med_min": 15.271311261761486
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 6.333465807329829,
+   "Pout_yr": 12.484419207545352,
+   "excluded_frac": 0.9845,
+   "detect_frac": 0.98,
+   "ltte_semiamp_med_min": 28.728742182991564,
+   "dev_from_line_med_min": 12.682938542972483
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 7.501581960840652,
+   "Pout_yr": 16.09294347138532,
+   "excluded_frac": 0.967,
+   "detect_frac": 0.9635,
+   "ltte_semiamp_med_min": 34.11549806239009,
+   "dev_from_line_med_min": 9.588436427014864
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 8.885140241869362,
+   "Pout_yr": 20.744483605346968,
+   "excluded_frac": 0.944,
+   "detect_frac": 0.943,
+   "ltte_semiamp_med_min": 40.101754631077014,
+   "dev_from_line_med_min": 6.764152809699027
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 10.523875834429921,
+   "Pout_yr": 26.74051523375327,
+   "excluded_frac": 0.8975,
+   "detect_frac": 0.88,
+   "ltte_semiamp_med_min": 47.964881485405826,
+   "dev_from_line_med_min": 4.665200384221574
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 12.464852502451523,
+   "Pout_yr": 34.46965316515675,
+   "excluded_frac": 0.852,
+   "detect_frac": 0.844,
+   "ltte_semiamp_med_min": 56.59039000675416,
+   "dev_from_line_med_min": 3.1877568412737736
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 14.76381424033482,
+   "Pout_yr": 44.43283829574259,
+   "excluded_frac": 0.7795,
+   "detect_frac": 0.776,
+   "ltte_semiamp_med_min": 67.11075141927297,
+   "dev_from_line_med_min": 2.180447480813882
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 17.4867862159014,
+   "Pout_yr": 57.275804591248004,
+   "excluded_frac": 0.675,
+   "detect_frac": 0.6655,
+   "ltte_semiamp_med_min": 80.40609710795454,
+   "dev_from_line_med_min": 1.5784282654716435
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 20.711970984112316,
+   "Pout_yr": 73.83093039746576,
+   "excluded_frac": 0.5285,
+   "detect_frac": 0.5295,
+   "ltte_semiamp_med_min": 94.91874997735371,
+   "dev_from_line_med_min": 1.0614929545193341
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 24.531994429978077,
+   "Pout_yr": 95.17118654651556,
+   "excluded_frac": 0.389,
+   "detect_frac": 0.401,
+   "ltte_semiamp_med_min": 110.9155248243809,
+   "dev_from_line_med_min": 0.7741766873421767
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 29.056565943150325,
+   "Pout_yr": 122.67967774360552,
+   "excluded_frac": 0.2935,
+   "detect_frac": 0.325,
+   "ltte_semiamp_med_min": 132.00984698027378,
+   "dev_from_line_med_min": 0.5566143110958706
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 34.41562922323708,
+   "Pout_yr": 158.13928435072046,
+   "excluded_frac": 0.1945,
+   "detect_frac": 0.22,
+   "ltte_semiamp_med_min": 157.72429712087495,
+   "dev_from_line_med_min": 0.38388868306832435
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 40.763094205581595,
+   "Pout_yr": 203.84821443062143,
+   "excluded_frac": 0.1405,
+   "detect_frac": 0.161,
+   "ltte_semiamp_med_min": 187.1852642494012,
+   "dev_from_line_med_min": 0.2852427469376124
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 48.28125728676796,
+   "Pout_yr": 262.76895521035846,
+   "excluded_frac": 0.0905,
+   "detect_frac": 0.108,
+   "ltte_semiamp_med_min": 219.7853054372178,
+   "dev_from_line_med_min": 0.1938072572209828
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 57.18603679678209,
+   "Pout_yr": 338.72027780671726,
+   "excluded_frac": 0.0485,
+   "detect_frac": 0.069,
+   "ltte_semiamp_med_min": 257.28435157380284,
+   "dev_from_line_med_min": 0.13979813046282175
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 67.73317407828083,
+   "Pout_yr": 436.62473942407763,
+   "excluded_frac": 0.039,
+   "detect_frac": 0.051,
+   "ltte_semiamp_med_min": 310.0743586544777,
+   "dev_from_line_med_min": 0.09877063617044257
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 80.22557826523217,
+   "Pout_yr": 562.8277241374025,
+   "excluded_frac": 0.0295,
+   "detect_frac": 0.047,
+   "ltte_semiamp_med_min": 367.7064163169314,
+   "dev_from_line_med_min": 0.07000734939740028
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 95.02202569973306,
+   "Pout_yr": 725.508699931948,
+   "excluded_frac": 0.0195,
+   "detect_frac": 0.03,
+   "ltte_semiamp_med_min": 431.27912894943563,
+   "dev_from_line_med_min": 0.048866164445371396
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 112.54746383041979,
+   "Pout_yr": 935.2113463913959,
+   "excluded_frac": 0.0155,
+   "detect_frac": 0.0205,
+   "ltte_semiamp_med_min": 507.431097764608,
+   "dev_from_line_med_min": 0.03624654460804777
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 133.3052155158931,
+   "Pout_yr": 1205.5269116707295,
+   "excluded_frac": 0.0085,
+   "detect_frac": 0.015,
+   "ltte_semiamp_med_min": 617.6189362187386,
+   "dev_from_line_med_min": 0.02641824618106625
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 157.89143423537269,
+   "Pout_yr": 1553.9750884867342,
+   "excluded_frac": 0.006,
+   "detect_frac": 0.013,
+   "ltte_semiamp_med_min": 710.1373546886344,
+   "dev_from_line_med_min": 0.01842053624267237
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 187.01222535385955,
+   "Pout_yr": 2003.1395004617932,
+   "excluded_frac": 0.0045,
+   "detect_frac": 0.009,
+   "ltte_semiamp_med_min": 858.2151021009824,
+   "dev_from_line_med_min": 0.013006206245108842
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 221.5039251569962,
+   "Pout_yr": 2582.131391963161,
+   "excluded_frac": 0.003,
+   "detect_frac": 0.01,
+   "ltte_semiamp_med_min": 990.4091725049526,
+   "dev_from_line_med_min": 0.009347419828031889
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 262.3571200605658,
+   "Pout_yr": 3328.4763861051783,
+   "excluded_frac": 0.003,
+   "detect_frac": 0.008,
+   "ltte_semiamp_med_min": 1183.9707206866954,
+   "dev_from_line_med_min": 0.0067976317824332
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 310.745095815744,
+   "Pout_yr": 4290.546595476211,
+   "excluded_frac": 0.001,
+   "detect_frac": 0.008,
+   "ltte_semiamp_med_min": 1422.0057824177793,
+   "dev_from_line_med_min": 0.004902257260951615
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 368.0575337587338,
+   "Pout_yr": 5530.695715553379,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0075,
+   "ltte_semiamp_med_min": 1695.6846969835158,
+   "dev_from_line_med_min": 0.0034401168732642873
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 435.9404218462265,
+   "Pout_yr": 7129.300292483003,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.004,
+   "ltte_semiamp_med_min": 1972.7296825107303,
+   "dev_from_line_med_min": 0.0024833959491843416
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 516.3433267040313,
+   "Pout_yr": 9189.969087878613,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0055,
+   "ltte_semiamp_med_min": 2357.3282757262905,
+   "dev_from_line_med_min": 0.0016640994769261397
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 611.5753843212784,
+   "Pout_yr": 11846.258169993604,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0035,
+   "ltte_semiamp_med_min": 2776.4102812820574,
+   "dev_from_line_med_min": 0.0012152869983310666
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 724.37161741825,
+   "Pout_yr": 15270.326949764996,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.004,
+   "ltte_semiamp_med_min": 3256.859992940832,
+   "dev_from_line_med_min": 0.0008636605286937993
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 857.9714840934212,
+   "Pout_yr": 19684.096176746167,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0065,
+   "ltte_semiamp_med_min": 3920.6533772838857,
+   "dev_from_line_med_min": 0.0006125030276962207
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1016.2119136322219,
+   "Pout_yr": 25373.631066973056,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.003,
+   "ltte_semiamp_med_min": 4664.535833523403,
+   "dev_from_line_med_min": 0.00044344166371956817
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1203.6375014249509,
+   "Pout_yr": 32707.681762063286,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0045,
+   "ltte_semiamp_med_min": 5457.093078487513,
+   "dev_from_line_med_min": 0.0003010197990533925
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1425.6310277433083,
+   "Pout_yr": 42161.58276380378,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.002,
+   "ltte_semiamp_med_min": 6508.9448149607515,
+   "dev_from_line_med_min": 0.0002315715992153855
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1688.5680488172868,
+   "Pout_yr": 54348.06031440802,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.005,
+   "ltte_semiamp_med_min": 7716.205727929111,
+   "dev_from_line_med_min": 0.00016296106070967653
+  },
+  {
+   "ecc": "thermal",
+   "a_au": 1999.9999999999998,
+   "Pout_yr": 70056.94441040586,
+   "excluded_frac": 0.0,
+   "detect_frac": 0.0035,
+   "ltte_semiamp_med_min": 8986.558200077427,
+   "dev_from_line_med_min": 0.00010798585230986646
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+all G<19                         n=121177  density  2410.74 /deg2;  expected within 1.2": 8.42e-04; within 1.5": 1.31e-03
+T<16.2 (any colour)              n= 42846  density   852.39 /deg2;  expected within 1.2": 2.98e-04; within 1.5": 4.65e-04
+T<16.2 & BP-RP>1.8               n=  5013  density    99.73 /deg2;  expected within 1.2": 3.48e-05; within 1.5": 5.44e-05
+T<16.2 & BP-RP>2.1               n=  2918  density    58.05 /deg2;  expected within 1.2": 2.03e-05; within 1.5": 3.17e-05
+T<16.2 & BP-RP>2.1 & plx>1.5     n=  2811  density    55.92 /deg2;  expected within 1.2": 1.95e-05; within 1.5": 3.05e-05
+T<16.2 & BP-RP>2.1 & 2<plx<6     n=  2029  density    40.37 /deg2;  expected within 1.2": 1.41e-05; within 1.5": 2.20e-05
