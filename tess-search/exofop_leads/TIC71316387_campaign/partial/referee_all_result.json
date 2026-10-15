@@ -1,0 +1,113 @@
+{
+ "verdicts": [
+  {
+   "claim": "localise: the raw 2-3.6 arcsec TESS offsets are a lateral-colour artefact, and the eclipsing source lies within 1.24 arcsec (95%) of the G star",
+   "verdict": "upheld",
+   "reason": "I refitted the 12 per-sector offsets with my own GLS. It reproduces chi2 = 217/22 for a fixed sky offset (p ~ 5e-34) and 20.85/22 for colour only (p = 0.53), with delta = (-0.175, +0.534) +- (0.18, 0.27) arcsec. All 12 offsets point away from the boresight (2.0-7.1 arcsec), and every tangential component is within 1.4 sigma of zero. In S105 the Dec offset flips sign, which no fixed sky position can do. With S105 dropped, delta = (-0.14, +0.24) +- (0.20, 0.45).",
+   "independent_check": "referee_all/r01_colour.py uses my own detrending (medians of nearby stars) and a Theil-Sen fit on the localise f01 PRF tables. It gives k_rad = -1.41 to -1.52 arcsec/mag per sector (theirs -1.46 to -1.59), with the same sign: redder stars shift away from the boresight. referee_all/r02_joint.py reproduces their s05 models exactly."
+  },
+  {
+   "claim": "localise: the deep-eclipsed star has BP-RP ~2.3 (M1.5-M2.5), the shallow-eclipse light is redder (BP-RP >~ 3), and a K7 primary is disfavoured",
+   "verdict": "upheld",
+   "reason": "My field-star colour curve gives -2.95 +- 0.19 arcsec at BP-RP 2.35 and -1.59 +- 0.07 at 1.81, relative to BP-RP ~0.8. So their c_deep = 2.94 +- 0.28 maps to BP-RP ~2.3-2.4, or ~2.2 if delta is fixed at 0 (c_deep = 2.61 +- 0.22). Only 4 field stars with G < 14.5 fall at BP-RP 2.1-2.4, so their +-0.1-0.2 mag systematic is the real limit. The shallow-eclipse colour is an extrapolation, but c_shallow = 5.34 +- 0.46 agrees with an extrapolated ~4.9 arcsec for BP-RP 3.1.",
+   "independent_check": "referee_all/r01_colour.json (colour curve), r02_joint.json"
+  },
+  {
+   "claim": "localise: the Gaia IPD diagnostics (ipd_frac_multi_peak 41, BP/RP blended in 47/47 transits) indicate an unresolved companion at ~0.5-1.2 arcsec",
+   "verdict": "upheld",
+   "reason": "I did not redo the speckle calibration. A rough field check: of 3306 Gaia stars with similar G (+-1.5) and colour (+-0.1), only 0.45% have ipd_frac_multi_peak 30-50 with RUWE < 1.4, and 60% of those also have C* >= 0.018. The combination is rare (~0.3% of the field, mostly unresolved pairs). The quoted contrast and separation ranges rest on only 4-11 calibrators.",
+   "independent_check": "Inline check on astro/data/twins_gaia.ecsv"
+  },
+  {
+   "claim": "localise: the VHS residual at 1.12 arcsec, PA 345-350 deg (dKs ~4.2) cannot be the EB",
+   "verdict": "upheld",
+   "reason": "At dKs ~4.2 an M-type pair supplies only ~0.5-0.8% of the TESS light. It would need undiluted eclipse depths of 70-105%, which the independently confirmed shape limit f_EB > 2.2% rules out. Its PA happens to match the insignificant TESS hint (0.56 arcsec at PA 342 deg). A referee will notice this, so it should be reported as an unexplained feature.",
+   "independent_check": "Arithmetic using the r04 profile"
+  },
+  {
+   "claim": "chromatic: the deep eclipse is detected in SuperWASP 2006-07 at 0.42 +- 0.15 of the TESS depth, so the eclipsed star is red",
+   "verdict": "upheld",
+   "reason": "I reduced the raw 1SWASP J220333.07-425007.9 file myself: FLAG 32, cameras 227/228, my own linear baseline per night and camera, 4-sigma clipping, and an eclipse shape from my own EB model at the lcmodel ephemeris. The deep eclipse comes out at 2017 ppm (TAMFLUX2) and 2130 ppm (FLUX2). The fake-phase null scatter is 615-725 ppm, so S/N ~3. After the 4.2% dilution correction the ratio to TESS is 0.36 +- 0.11 (TAMFLUX2) or 0.38 +- 0.13 (FLUX2), statistical errors only. That is consistent with their 0.42 and far below the ~0.8-1.0 expected for a G/F eclipsed star. The shallow eclipse gives -622 +- 590 ppm: not detected, and their negative shallow value is not robust.",
+   "independent_check": "referee_all/r05_wasp.py -> r05_wasp_TAMFLUX2.json, r05_wasp_FLUX2.json"
+  },
+  {
+   "claim": "chromatic: the eclipsed star has Teff 4040 K (+330/-280), and a G/F eclipsed star is disfavoured at ~3 sigma",
+   "verdict": "revised",
+   "reason": "The G/F exclusion stands and is if anything stronger: my SuperWASP ratio is ~4 sigma (statistical) below the most favourable G/F prediction (0.82). The Teff central value is pulled up by their SuperWASP ratio; their SuperWASP-only median is 3956 K at 0.42. A ratio of 0.36 would lower it and ease the 1.6-1.9 sigma tension with the M2V (3510-3585 K) of lcmodel and the BP-RP 2.3 of localise. I did not refit the Teff. Quote the eclipsed star as K7-M2 from the archival colours and M1.5-M2.5 from the TESS colour shift.",
+   "independent_check": "r05_wasp.py. Teff not refitted; the direction of the shift is qualitative."
+  },
+  {
+   "claim": "chromatic: refined period 1.30367207 +- 0.00000026 d, and no timing drift larger than ~15 min since 2006",
+   "verdict": "upheld",
+   "reason": "My SuperWASP timing scan (2-min steps, lcmodel ephemeris P = 1.30367228 d) has its minimum at -6 min, consistent with their -3.8 +- 3.7 min. The lcmodel deep+shallow period (1.30367228 +- 1.9e-7) and chromatic's joint deep+shallow value (1.30367220 +- 2.2e-7) agree. Chromatic's deep-only value differs from them by ~1 sigma.",
+   "independent_check": "Timing scan in r05_wasp_*.json"
+  },
+  {
+   "claim": "chromatic: the W1 deep-eclipse depth is 3.7 +- 1.1 times the TESS depth",
+   "verdict": "not_checked",
+   "reason": "I did not re-reduce it. It rests on 8 in-eclipse points from 8 events (jackknife 19.8-23.8 ppt). A rough estimate for an M2V eclipsed star diluted by the G star in W1 gives ~2.7x, and lcmodel predicts 3.56x. The measurement is consistent with both, so it adds little power to tell the cases apart."
+  },
+  {
+   "claim": "lcmodel: the light-curve shape alone gives only a lower limit, f_EB > 2.2% (dchi2 9) / 2.5% (dchi2 4); the upper side is unconstrained",
+   "verdict": "upheld",
+   "reason": "I wrote my own EB model (ring-integrated quadratic limb darkening, matching batman to 4e-5 of an undiluted 22% depth) and fitted it with e = 0. Free parameters: k, r1, cos i, J, both limb-darkening pairs, T0, a secondary time shift and 3 sector scales, with per-event quadratic baselines. Data: the 200-s sectors S68/S95/S105/S106 (22,141 points). Profile dchi2 relative to the minimum at f = 5.5%: +52.5 (f 1.6%), +22.6 (1.9%), +8.3 (2.2%), +2.9 (2.5%), +1.1 (2.8%), +0.7 (3.2%), +0.35 (4%), 0 (5.5%), +0.16 (7.5%), +0.42 (10%), +0.97 (15%). This reproduces their e sin w = 0 profile (flat, with a wall at L3 0.975-0.978) and their dchi2 ~ 9 at 2.2%.",
+   "independent_check": "referee_all/rebm.py, r03_validate.py, r04_profile.py -> r04_profile_[abc].json"
+  },
+  {
+   "claim": "lcmodel: the main-sequence fit gives f_EB = 2.82 +- 0.20%, an M2V (0.44 Msun) + M4.5V (0.19 Msun) pair, and a photometric distance of 252 (+27/-24) pc",
+   "verdict": "revised",
+   "reason": "The direction is confirmed but the precision is overstated. I added a soft main-sequence prior (21% on density, 10% on k, 10% on J) to my independent profile, using two relation sets: (A) Mann+2019 mass, Mann+2015 radius and Pecaut & Mamajek T-Ks colours; (B) the Pecaut & Mamajek table. Both give the combined minimum at f = 2.5%, with f ~2.2-3.4% within +4. The masses are M1 = 0.45-0.48 and M2 = 0.20-0.22 Msun (M1-M1.5V + M4-M4.5V). The main-sequence distance is 245-323 pc, best 276-295 pc. The prior itself costs chi2_MS = 2-5 at the minimum: the fitted J (0.57) is 10-15% above the main-sequence value and k is 8-13% below it. lcmodel absorbs this through its nuisance offsets (dR1 +6%, dR2 -4%, dJ +5.5%); chromatic sees the same thing as a secondary 1.4-2x over-luminous. Solutions with f >= 4% need chi2_MS >= 12, which confirms that the f ~7% geometric branch is not main-sequence-consistent. With the Mann relations, the lcmodel masses give 242 pc and dKs = 2.77 (theirs: 252 pc, 2.80).",
+   "independent_check": "referee_all/r07_distance.py, r08_msconsist.py, r09_msprior.py -> r09_msprior.json"
+  },
+  {
+   "claim": "lcmodel: e sin w = +0.03 drives the geometric L3 = 0.932; with e = 0 the profile is flat over L3 0.88-0.97",
+   "verdict": "upheld",
+   "reason": "My e = 0 profile is flat (dchi2 <= 1.1) from f = 2.8% to 15%. So f ~7% is neither preferred nor excluded by the shape alone. Only the main-sequence argument (chi2_MS ~24-39 at f = 5.5-7.5%) and the ellipsoidal limit exclude it.",
+   "independent_check": "r04 profile, r09_msprior.json"
+  },
+  {
+   "claim": "lcmodel: ETV/LTTE limits; eclipse timing is insensitive at 150-370 au",
+   "verdict": "upheld",
+   "reason": "Analytic recheck: a 1.03 Msun star at 150 au projected gives a maximum line-of-sight acceleration of 0.385 G M / s^2 = 1.05e-7 m/s^2. That produces an ETV curvature of 0.0029 min/yr^2 (theirs <= 0.003). Their limit |a_los| < 2.8e-6 m/s^2 corresponds to r <= 46.7 au (theirs 47 au).",
+   "independent_check": "Arithmetic"
+  },
+  {
+   "claim": "lcmodel: predicted ellipsoidal amplitude 21 ppm, against a 74 ppm upper limit",
+   "verdict": "upheld",
+   "reason": "1.3 x q x r1^3 x (primary light fraction) x f_EB = 1.3 x 0.432 x 0.112^3 x 0.908 x 0.0282 = 20 ppm, plus ~1 ppm from the secondary.",
+   "independent_check": "Arithmetic"
+  },
+  {
+   "claim": "astro: prior odds bound:background are ~10^2-10^3 (central 338)",
+   "verdict": "revised",
+   "reason": "The arithmetic reproduces: CSF 0.58, f_sep(0.1-1.24 arcsec) 0.272, P_bound 0.0875, and 2.98e-4 host-capable stars per 1.24-arcsec circle (theirs 2.95e-4). But the central 338 assumes a pair light fraction of 5%. At lcmodel's adopted f_EB = 2.8% the any-host odds are ~230 (depth factors 0.30 bound vs 0.38 background). A like-for-like comparison gives ~8e3 (Poisson range ~4e3-2e4): the alternative is an unrelated BP-RP 2.1-2.5 star supplying 2.2-6.5% of the TESS light, of which there are 7 in the 0.785 deg^2 field (3.3e-6 per circle), against a bound probability of 0.026 for q 0.55-0.70. localise's 4e-5 for any M dwarf within 1.24 arcsec reproduces (3.85e-5).",
+   "independent_check": "referee_all/r06_priors.py -> r06_priors.json"
+  },
+  {
+   "claim": "astro: Gaia C* = +0.020 is 12 robust sigma above clean twins, so a companion supplies >= ~2.5% of the TESS light",
+   "verdict": "revised",
+   "reason": "The quoted C* (+0.0204) uses the Riello+2021 polynomial for BP-RP < 0.5, but the target has BP-RP 0.786. The correct 0.5-4 branch gives C* = +0.0181, which is 2.5 sigma against sigma_C* = 0.0073 (they quoted 2.8 sigma). The excess over the twins is unchanged (+0.024; 1 of 695 clean twins is as high). However, the clean twins were pre-selected to ipd_frac_multi_peak <= 5 and RUWE < 1.3, which removes the stars most like the target. Among unselected colour/magnitude twins, 2.3% reach the target's C*, and localise found 3.9% of speckle-confirmed singles at >= 0.018. On its own, C* is a ~2-sigma indicator; ipd_frac_multi_peak is the strong Gaia signal.",
+   "independent_check": "Inline recomputation from astro/data/dr3_source.ecsv, twins_sel.ecsv and twins_gaia.ecsv"
+  },
+  {
+   "claim": "astro: TRICERATOPS SEBx2P = 0.973 is prior-driven; the light-curve likelihood ratio of ~0.22 mildly favours BEB",
+   "verdict": "upheld",
+   "reason": "exp(3.57 - 5.07) = 0.223 reproduces. The TRICERATOPS prior ratio of 158 falls inside my recomputed odds range. Because TRICERATOPS fits a single folded eclipse, it adds nothing beyond the priors and should not be cited as validation.",
+   "independent_check": "Arithmetic"
+  },
+  {
+   "claim": "astro: the constant Gaia RV excludes the G star as an eclipsing component",
+   "verdict": "upheld",
+   "reason": "For a 0.1 Msun companion, K1 = 212.9 x 0.1 x 1.30367^(-1/3) x 1.13^(-2/3) = 18.0 km/s. The Gaia data show rv_amplitude_robust 9.93 km/s, rv_chisq_pvalue 0.275 and 15 transits (rechecked in dr3_source.ecsv).",
+   "independent_check": "Arithmetic plus dr3_source.ecsv"
+  },
+  {
+   "claim": "astro: the SED shows no IR excess and gives only upper limits (pair <= 5.8-11.6% of the TESS light); PMA/RV/RUWE exclude companions at <~5-10 au but not at 150-360 au",
+   "verdict": "upheld",
+   "reason": "Not recomputed. It is consistent with everything else: f_EB ~2.2-3.4% is below every SED limit, and a 0.5-0.8 arcsec companion lies far outside the astrometric sensitivity. The 21-band dchi2 of -9 to -16 is not null-calibrated and must not be quoted, as astro itself says."
+  }
+ ],
+ "corrected_numbers": "(1) astro prior odds, any host with depth weighting: ~230 at the adopted f_EB = 2.8%. The quoted central value of 338 assumes f = 5% (I get 321 at 5%). Like-for-like odds against an unrelated M1.5-M2.5 star supplying 2.2-6.5% of the TESS light: ~8e3 (Poisson range ~4e3-2e4). The conservative floor of 25-36 stands.\n(2) Gaia C*: +0.0181 on the correct Riello+2021 branch, not +0.0204 (the BP-RP < 0.5 polynomial was used). That is 2.5 sigma against sigma_C*. The excess over clean twins is still +0.024, but 2.3% of unselected twins reach the target's value.\n(3) SuperWASP/TESS deep-eclipse ratio: my values are 0.36 +- 0.11 (TAMFLUX2) and 0.38 +- 0.13 (FLUX2), statistical only, against chromatic's 0.42 +- 0.15. The SuperWASP shallow eclipse is not detected (-622 +- 590 ppm).\n(4) Pair light fraction f_EB: the shape-only lower limit reproduces (dchi2 +8.3 at 2.2%, +22.6 at 1.9%, +52 at 1.6%). With a soft main-sequence prior, f_EB ~2.2-3.4% (minimum 2.5%), rather than 2.82 +- 0.20%.\n(5) Main-sequence distance of the pair: ~245-320 pc (best 276-295 pc) rather than 252 (+27/-24) pc, which is statistical only. The Mann relations give 242 pc for the lcmodel masses.\n(6) Masses and types: M1 0.44-0.48 and M2 0.19-0.22 Msun (M1-M2V + M4-M4.5V). This requires the secondary's surface brightness ~10-15% above main-sequence values or a ~6% inflated primary (chi2_MS 2-5). These masses are not dynamical.\n(7) Projected separation: ~0.48-0.8 arcsec (~140-240 au), with a hard upper limit of ~1.0 arcsec (~300 au). This follows from a predicted dKs of 2.57-2.80 together with the VHS limits and the Gaia IPD lower bound, and replaces the 150-370 au used by astro and lcmodel.\n(8) Predicted dKs (pair vs G star at 297 pc): 2.57-2.77 with the Mann+2019 relations, against 2.62-2.80 from lcmodel.",
+ "cross_consistency": "**Pair light fraction (TESS band).** The estimates agree near 2.3-3%:\n- lcmodel: 2.8 +- 0.2% from the main-sequence fit (prior-driven); > 2.2% from the shape alone.\n- My profile with a soft main-sequence prior: 2.2-3.4% (minimum 2.5%).\n- localise: 1.5-3% (predicted; the 1.5-2.2% part is excluded by the shape limit).\n- chromatic: 2.5-5% (its shape-preferred pairs).\n- astro: >= ~2.5% from C* if the companion is fully excluded from the G-band fit; <= 5.8-11.6% from the SED.\n\n**Primary (deep-eclipsed star).**\n- localise: BP-RP 2.3, M1.5-M2.5.\n- lcmodel: M2V at 3510 K; its bound fit gives M1.5V at 3585 K.\n- My main-sequence check: 0.45-0.48 Msun (M1-M1.5V).\n- chromatic: 4040 (+330/-280) K. This is the only tension (1.6-1.9 sigma). It is driven by chromatic's SuperWASP ratio, and my lower ratio (0.36) eases it.\n\n**Secondary.** All four agree:\n- localise: BP-RP >~ 3.\n- lcmodel: M4.5V (0.19 Msun, BP-RP 3.1).\n- My check: 0.20-0.22 Msun.\n- chromatic: M4.5-M5.\n\n**Common caveat.** Every main-sequence solution needs the secondary to be ~10-15% brighter in surface brightness than the relations predict, or the primary inflated by ~6%. This shows up in lcmodel's nuisance offsets (dJ, dR), in chromatic's 1.4-2x over-luminous secondary, and in my chi2_MS of 2-5. It is common in short-period active M-dwarf EBs, but it means the masses are not dynamical.\n\n**Distance.** All estimates are consistent with the G star's 297.4 pc:\n- lcmodel: 252 (+27/-24) pc.\n- My check: 245-320 pc.\n- chromatic: 265-345 pc.\n- localise: 130-350 pc.\n\n**Separation and contrast.** Predicted dKs is 2.6-2.8 (lcmodel; my Mann-based value is 2.57-2.77; chromatic 2.1-2.6; localise ~2.5). VHS recovers dKs <= 2.5 beyond 0.6 arcsec and dKs <= 3.0 beyond 1.0 arcsec, and the Gaia IPD gives a lower bound of ~0.48 arcsec. Together these put the pair at ~0.48-0.8 arcsec, or ~140-240 au projected. That is tighter than the 150-370 au used by astro and lcmodel and consistent with localise's 0.45-0.65 arcsec. Neither eclipse timing nor PMA is sensitive at these separations.\n\n**Prior odds.** All four agree on at least 10^2 in favour of the bound triple. The values are 338 from astro (computed at f = 5%), ~230 at f = 2.8%, ~8e3 for the like-for-like M-dwarf case, and 3.85e-5 for localise's chance M dwarf, which reproduces.\n\n**TESS PA hint vs VHS feature.** The TESS hint (0.56 arcsec, PA 342 deg) and the faint VHS feature (1.1 arcsec, PA 345-350 deg) share a PA. Both are insignificant or too faint to be the EB, but the coincidence should be disclosed.",
+ "overall": "**Verdict:** the bound hierarchical triple is strongly favoured: the G star plus an early-M + mid-M eclipsing pair at ~0.5-0.8 arcsec (~140-240 au projected). This is a probabilistic inference, not a demonstration that the two are physically bound.\n\n**What survives independent recomputation:**\n- **The source is within ~1.2 arcsec of the G star.** The raw TESS offsets are a lateral-colour artefact. I reproduced chi2 = 217/22 for a fixed offset against 20.8/22 for colour only, and the S105 sign flip. My own field-star coefficient is -1.41 to -1.52 arcsec/mag, and all tangential residuals are about zero.\n- **The G star is not the EB.** Its Gaia RV is constant.\n- **The eclipsed star is not G/F-coloured.** My own SuperWASP ratio is 0.36 +- 0.11.\n- **The light curve needs f_EB > ~2.2%.** My own model and profile reproduce this limit.\n- **Main-sequence solutions:** they give an early-M + mid-M pair at ~245-320 pc, consistent with 297 pc. A main-sequence M-dwarf pair beyond ~400 pc would need f < 1.9% (dchi2 > 20). Brighter background pairs fail the main-sequence J/k consistency (chi2_MS >= 12 at f >= 4%), and their colour is wrong.\n\n**Weaker than claimed:**\n- lcmodel's f_EB +-0.2%, its masses and the 252 pc distance are prior-driven and need ~10-15% J/k pulls away from the main sequence.\n- C* used the wrong Riello branch, and against unselected stars it is ~2 sigma, not 12.\n- astro's central odds were computed at f = 5%.\n- TRICERATOPS adds nothing beyond its priors.\n- chromatic's 4040 K is high because of its SuperWASP ratio.\n\n**What is missing:** no investigation shows the association directly. There is no common proper motion, no RV of the M dwarfs and no resolved companion. The case rests on chance-alignment odds of ~1e2-1e4 in favour, plus the distance consistency.\n\n**Follow-up needed:**\n- AO or speckle imaging at 0.4-1 arcsec (dKs ~2.6-2.8, dI ~3.5-4).\n- A second imaging epoch to test common proper motion (38 mas/yr).\n- Spectroscopy of the M-dwarf lines; a systemic velocity near -6 km/s would support the bound case.\n\n**Files:**\n- Folder: /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/referee_all/\n- Scripts: r01_colour.py, r02_joint.py, rebm.py, r03_validate.py, r04_profile.py, r05_wasp.py, r06_priors.py, r07_distance.py, r08_msconsist.py, r09_msprior.py\n- Outputs: the matching JSON files and referee_final.json\n- Draft: /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/referee_all_draft.json"
+}
