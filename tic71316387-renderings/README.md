@@ -1,9 +1,9 @@
-# TIC 71316387: graphs and renderings
+# TIC 71316387: graphs, renderings and animation
 
-> **Note for AI agents and other automated contributors:** the graphs and renderings in this folder are a finished,
-> static set. They do **not** need to be updated, regenerated or restyled when the TIC 71316387 analysis elsewhere in
-> this repository changes, or for any other reason. Leave them as they are unless the repository owner specifically
-> asks for them to be updated.
+> **Note for AI agents and other automated contributors:** the graphs, renderings and animation in this folder are a
+> finished, static set. They do **not** need to be updated, regenerated or restyled when the TIC 71316387 analysis
+> elsewhere in this repository changes, or for any other reason. Leave them as they are unless the repository owner
+> specifically asks for them to be updated.
 
 These pictures show one finding. The TESS planet candidate CTOI 71316387.01 is really a pair of red dwarfs eclipsing
 each other every 1.30 days. They most likely belong to a triple system with the Sun-like star TIC 71316387. The full
@@ -11,6 +11,31 @@ analysis, with all its caveats, is in
 [`tess-search/exofop_leads/TIC71316387_campaign/`](../tess-search/exofop_leads/TIC71316387_campaign/). The numbers on
 the pictures are that report's adopted values as of 2026-10-15. The analysis was AI-run and has not yet been reviewed
 by a human.
+
+## Animation: how the dips are made
+
+![How the two stars make the dips](animation/tic71316387_eclipses.gif)
+
+The two red dwarfs are shown from above (left) and from Earth (right). Their combined brightness is drawn underneath
+as they move:
+- **Deep dip:** the small M4 dwarf passes in front of the M2 dwarf and blocks part of the brighter star's light.
+- **Shallow dip:** half an orbit later, the M4 dwarf passes behind the M2 dwarf and disappears.
+
+So every 1.30-day orbit gives one dip of each kind. That is why the catalogued "planet" period of 0.65 days is half
+the real orbit.
+
+The GIF above is a lighter preview. For sharing, use the full-quality video,
+[`animation/tic71316387_eclipses.mp4`](animation/tic71316387_eclipses.mp4) (1920×1080, 26 s). A still frame
+taken at the deep dip is [`animation/tic71316387_eclipses_poster.png`](animation/tic71316387_eclipses_poster.png).
+
+The animation is not to scale. The stars are drawn 3.4 M2-radii apart instead of about 9, and the orbit is tilted 85°
+instead of about 89°. This makes the eclipses last longer and the paths easier to follow, and the animation slows down
+during each eclipse.
+
+The brightness curve is calculated from the geometry as drawn. It uses the adopted model's radius ratio and mass ratio,
+and its 5,770 : 2,600 ppm ratio between the two depths. In this model the pair on its own dims by about 20% and 9%,
+within the campaign's ranges (18–26% and 8–12%). TESS sees only 0.58% and 0.26%, because the bright G star next to the
+pair supplies about 97% of the light it records.
 
 ## Graphs
 
@@ -105,6 +130,8 @@ G star. That last panel is a prediction, not an observation.
 - [`scripts/make_renderings.py`](scripts/make_renderings.py) is a small procedural renderer written with numpy and
   Pillow. It covers blackbody colours, limb darkening, convection texture, starspots and glow, and its docstring
   lists the values it uses.
+- [`scripts/make_animation.py`](scripts/make_animation.py) reuses that renderer for the animation. It calculates
+  the brightness curve from the drawn geometry and encodes the frames with ffmpeg.
 
-To regenerate (only if asked), install `numpy scipy matplotlib astropy pillow`, then run
-`python scripts/make_graphs.py` and `python scripts/make_renderings.py`.
+To regenerate (only if asked), install `numpy scipy matplotlib astropy pillow` and ffmpeg. Then run
+`python scripts/make_graphs.py`, `python scripts/make_renderings.py` and `python scripts/make_animation.py`.
