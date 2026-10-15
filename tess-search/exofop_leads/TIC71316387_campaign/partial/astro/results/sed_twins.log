@@ -1,0 +1,15 @@
+target: {'single': 6.808563281530534, 'Teff': 5728.040046863286, 'K5V|M2.5V': {'dchi2_A1': -4.89, 'A': 0.95, 'dchi2_Afree': -4.91}, 'K7V|M2V': {'dchi2_A1': -4.58, 'A': 0.91, 'dchi2_Afree': -4.64}, 'K7V|M3V': {'dchi2_A1': -4.65, 'A': 1.04, 'dchi2_Afree': -4.66}, 'M0V|M1.5V': {'dchi2_A1': -4.29, 'A': 0.87, 'dchi2_Afree': -4.43}, 'M0V|M3V': {'dchi2_A1': -4.4, 'A': 1.06, 'dchi2_Afree': -4.42}, 'M0V|M4.5V': {'dchi2_A1': -4.2, 'A': 1.3, 'dchi2_Afree': -4.47}, 'M0.5V|M4.5V': {'dchi2_A1': -3.91, 'A': 1.46, 'dchi2_Afree': -4.4}, 'M1V|M4.5V': {'dchi2_A1': -3.6, 'A': 1.64, 'dchi2_Afree': -4.33}, 'M1V|M5V': {'dchi2_A1': -3.54, 'A': 1.69, 'dchi2_Afree': -4.35}, 'M1.5V|M5V': {'dchi2_A1': -3.39, 'A': 1.8, 'dchi2_Afree': -4.32}, 'M2V|M4V': {'dchi2_A1': -3.4, 'A': 1.75, 'dchi2_Afree': -4.24}, 'M2V|M5V': {'dchi2_A1': -3.1, 'A': 2.04, 'dchi2_Afree': -4.27}, 'M2.5V|M5V': {'dchi2_A1': -2.89, 'A': 2.23, 'dchi2_Afree': -4.21}, 'M3V|M5V': {'dchi2_A1': -2.41, 'A': 2.86, 'dchi2_Afree': -4.2}, 'K7V': {'dchi2_A1': -4.15, 'A': 1.4, 'dchi2_Afree': -4.7}, 'M0V': {'dchi2_A1': -3.95, 'A': 1.47, 'dchi2_Afree': -4.49}, 'M2V': {'dchi2_A1': -2.74, 'A': 2.41, 'dchi2_Afree': -4.26}}
+0
+25
+50
+75
+100
+125
+150
+175
+200
+225
+250
+275
+300
+done 319

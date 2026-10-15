@@ -1,0 +1,6 @@
+d events 50 weighted mean 2629 ppm chi2 83.2/49 median 3601
+s events 40 weighted mean -961 ppm chi2 51.5/39 median -653
+d jackknife sd 920 ppm; range 2490..3264
+s jackknife sd 931 ppm; range -1935..-1098
+deep null: sd 737, mad 700, frac |z|>2 0.062 (gauss .046), >3 0.0100; obs z 3.84
+shallow null: sd 718, mad 638, frac |z|>2 0.058 (gauss .046), >3 0.0000; obs z -2.21

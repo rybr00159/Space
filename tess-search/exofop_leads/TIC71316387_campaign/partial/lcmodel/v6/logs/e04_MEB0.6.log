@@ -1,0 +1,21 @@
+error rescale factor 1.000; chi2_lin after rescale 184.0 for 187 events
+a=    1 au  P_out=    0.8 yr  max LTTE amp     5.3 min  excluded 0.955  detectable 0.967  GaiaRV-excl 0.958  either 0.974  median |curv| 0.248 min/yr^2  median Gaia dRV 11.40 km/s
+a=    2 au  P_out=    2.2 yr  max LTTE amp    10.5 min  excluded 0.982  detectable 0.986  GaiaRV-excl 0.924  either 0.982  median |curv| 0.298 min/yr^2  median Gaia dRV 6.39 km/s
+a=    3 au  P_out=    4.1 yr  max LTTE amp    15.8 min  excluded 0.996  detectable 0.998  GaiaRV-excl 0.836  either 0.996  median |curv| 0.730 min/yr^2  median Gaia dRV 5.42 km/s
+a=    5 au  P_out=    8.8 yr  max LTTE amp    26.3 min  excluded 0.998  detectable 0.998  GaiaRV-excl 0.286  either 0.998  median |curv| 1.204 min/yr^2  median Gaia dRV 4.54 km/s
+a=    7 au  P_out=   14.5 yr  max LTTE amp    36.8 min  excluded 0.991  detectable 0.992  GaiaRV-excl 0.072  either 0.992  median |curv| 1.124 min/yr^2  median Gaia dRV 2.47 km/s
+a=   10 au  P_out=   24.8 yr  max LTTE amp    52.6 min  excluded 0.942  detectable 0.942  GaiaRV-excl 0.018  either 0.943  median |curv| 0.624 min/yr^2  median Gaia dRV 1.22 km/s
+a=   14 au  P_out=   41.0 yr  max LTTE amp    73.6 min  excluded 0.844  detectable 0.847  GaiaRV-excl 0.006  either 0.845  median |curv| 0.321 min/yr^2  median Gaia dRV 0.62 km/s
+a=   20 au  P_out=   70.1 yr  max LTTE amp   105.1 min  excluded 0.661  detectable 0.657  GaiaRV-excl 0.001  either 0.661  median |curv| 0.165 min/yr^2  median Gaia dRV 0.32 km/s
+a=   25 au  P_out=   97.9 yr  max LTTE amp   131.4 min  excluded 0.455  detectable 0.452  GaiaRV-excl 0.000  either 0.455  median |curv| 0.104 min/yr^2  median Gaia dRV 0.20 km/s
+a=   30 au  P_out=  128.7 yr  max LTTE amp   157.7 min  excluded 0.298  detectable 0.297  GaiaRV-excl 0.000  either 0.298  median |curv| 0.072 min/yr^2  median Gaia dRV 0.14 km/s
+a=   40 au  P_out=  198.2 yr  max LTTE amp   210.2 min  excluded 0.103  detectable 0.102  GaiaRV-excl 0.000  either 0.103  median |curv| 0.040 min/yr^2  median Gaia dRV 0.08 km/s
+a=   50 au  P_out=  276.9 yr  max LTTE amp   262.8 min  excluded 0.049  detectable 0.049  GaiaRV-excl 0.000  either 0.049  median |curv| 0.026 min/yr^2  median Gaia dRV 0.05 km/s
+a=   60 au  P_out=  364.0 yr  max LTTE amp   315.3 min  excluded 0.026  detectable 0.025  GaiaRV-excl 0.000  either 0.026  median |curv| 0.018 min/yr^2  median Gaia dRV 0.03 km/s
+a=   80 au  P_out=  560.5 yr  max LTTE amp   420.4 min  excluded 0.007  detectable 0.008  GaiaRV-excl 0.000  either 0.007  median |curv| 0.010 min/yr^2  median Gaia dRV 0.02 km/s
+a=  100 au  P_out=  783.3 yr  max LTTE amp   525.5 min  excluded 0.003  detectable 0.003  GaiaRV-excl 0.000  either 0.003  median |curv| 0.006 min/yr^2  median Gaia dRV 0.01 km/s
+a=  130 au  P_out= 1161.0 yr  max LTTE amp   683.2 min  excluded 0.001  detectable 0.001  GaiaRV-excl 0.000  either 0.001  median |curv| 0.004 min/yr^2  median Gaia dRV 0.01 km/s
+a=  160 au  P_out= 1585.2 yr  max LTTE amp   840.9 min  excluded 0.000  detectable 0.000  GaiaRV-excl 0.000  either 0.000  median |curv| 0.003 min/yr^2  median Gaia dRV 0.00 km/s
+a=  200 au  P_out= 2215.4 yr  max LTTE amp  1051.1 min  excluded 0.000  detectable 0.000  GaiaRV-excl 0.000  either 0.000  median |curv| 0.002 min/yr^2  median Gaia dRV 0.00 km/s
+a=  300 au  P_out= 4069.9 yr  max LTTE amp  1576.6 min  excluded 0.000  detectable 0.000  GaiaRV-excl 0.000  either 0.000  median |curv| 0.001 min/yr^2  median Gaia dRV 0.00 km/s
+a=  500 au  P_out= 8757.1 yr  max LTTE amp  2627.7 min  excluded 0.000  detectable 0.000  GaiaRV-excl 0.000  either 0.000  median |curv| 0.000 min/yr^2  median Gaia dRV 0.00 km/s

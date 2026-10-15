@@ -1,0 +1,22 @@
+default
+  SPOC1: 32 windows (15 prim, 17 sec), sigma 462 ppm/pt, beta 0.87, clipped 1
+  SPOC28: 25 windows (12 prim, 13 sec), sigma 878 ppm/pt, beta 0.88, clipped 0
+  SPOC68: 31 windows (15 prim, 16 sec), sigma 1621 ppm/pt, beta 0.86, clipped 0
+  TC95: 34 windows (17 prim, 17 sec), sigma 1668 ppm/pt, beta 0.82, clipped 2
+  TC105: 33 windows (16 prim, 17 sec), sigma 1763 ppm/pt, beta 0.91, clipped 7
+  TC106: 32 windows (17 prim, 15 sec), sigma 1541 ppm/pt, beta 0.87, clipped 2
+tcall
+  TC1: 32 windows (15 prim, 17 sec), sigma 479 ppm/pt, beta 0.84, clipped 47
+  TC28: 28 windows (12 prim, 16 sec), sigma 878 ppm/pt, beta 0.86, clipped 3
+  TC68: 34 windows (16 prim, 18 sec), sigma 1572 ppm/pt, beta 0.84, clipped 2
+  TC95: 34 windows (17 prim, 17 sec), sigma 1668 ppm/pt, beta 0.82, clipped 2
+  TC105: 33 windows (16 prim, 17 sec), sigma 1763 ppm/pt, beta 0.91, clipped 7
+  TC106: 32 windows (17 prim, 15 sec), sigma 1541 ppm/pt, beta 0.87, clipped 2
+qlp
+  SPOC1: 32 windows (15 prim, 17 sec), sigma 462 ppm/pt, beta 0.87, clipped 1
+  SPOC28: 25 windows (12 prim, 13 sec), sigma 878 ppm/pt, beta 0.88, clipped 0
+  SPOC68: 31 windows (15 prim, 16 sec), sigma 1621 ppm/pt, beta 0.86, clipped 0
+  QLP95: 28 windows (14 prim, 14 sec), sigma 1402 ppm/pt, beta 0.87, clipped 0
+  QLP105: 29 windows (14 prim, 15 sec), sigma 1387 ppm/pt, beta 0.85, clipped 4
+  TC106: 32 windows (17 prim, 15 sec), sigma 1541 ppm/pt, beta 0.87, clipped 2
+SPOC CROWDSAP/FLFRCSAP {1: (0.9787032, 0.79300004), 28: (0.97045451, 0.8312636), 68: (0.97840619, 0.81939787)}

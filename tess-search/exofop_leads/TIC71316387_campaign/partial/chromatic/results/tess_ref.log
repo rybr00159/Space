@@ -1,0 +1,12 @@
+0 d T=0.0614 d (1.47 h) p=1.258 q=1.682 dphase=-0.00049 (-0.93 min) chi=39114.0
+0 s T=0.0661 d (1.59 h) p=1.199 q=1.491 dphase=0.00020 (0.37 min) chi=39088.6
+1 d T=0.0612 d (1.47 h) p=1.259 q=1.675 dphase=-0.00049 (-0.92 min) chi=39074.8
+1 s T=0.0643 d (1.54 h) p=1.265 q=1.464 dphase=0.00020 (0.38 min) chi=39045.5
+1 SPOC-PDCSAP deep 8263 +- 149 (null 591) ppm  shallow 3763 +- 140 (null 328) ppm  ratio 0.455
+28 SPOC-PDCSAP deep 8240 +- 163 (null 233) ppm  shallow 3453 +- 157 (null 400) ppm  ratio 0.419
+68 SPOC-PDCSAP deep 7475 +- 151 (null 246) ppm  shallow 3190 +- 141 (null 324) ppm  ratio 0.427
+95 TESScut-aperture(lcmodel) deep 7698 +- 158 (null 316) ppm  shallow 3270 +- 156 (null 303) ppm  ratio 0.425
+105 TESScut-aperture(lcmodel) deep 7406 +- 154 (null 279) ppm  shallow 3733 +- 142 (null 173) ppm  ratio 0.504
+106 TESScut-aperture(lcmodel) deep 7441 +- 152 (null 271) ppm  shallow 3703 +- 145 (null 367) ppm  ratio 0.498
+deep combined 7708 +- 163 ppm (chi2 9.2/5, sector sd 399)
+shallow combined 3577 +- 114 ppm (chi2 3.8/5, sector sd 250)

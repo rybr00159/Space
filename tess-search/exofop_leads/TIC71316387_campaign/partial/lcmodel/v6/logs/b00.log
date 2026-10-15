@@ -1,0 +1,7 @@
+occ vs batman (p<1): max |diff| = 1.5647323214906805e-08
+occ vs brute-force 2-D (incl. p>1): max |diff| = 6.15172908691175e-06 (brute-force grid error ~1e-4)
+LC vs brute-force sky integration: max |diff| = 2.1255948392751023e-05 depths [0.08282967573980693, 0.04927589163695589]
+secondary offset (model) - P/2 = 4.782610788372033 min; brute-force minimum - model = 1.5532411401512292 s
+exposure integration texp=1800s: max |grid - supersampled| = 1.72e-06
+exposure integration texp=600s: max |grid - supersampled| = 2.71e-06
+exposure integration texp=200s: max |grid - supersampled| = 5.16e-06

@@ -1,0 +1,18 @@
+/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/lcmodel/scripts/ms_table.py:41: RuntimeWarning: invalid value encountered in log10
+  def radius(M): return 10 ** np.interp(np.log10(M), lm, np.log10(T['R']))
+/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/lcmodel/scripts/ms_table.py:43: RuntimeWarning: invalid value encountered in log10
+  def MT(M): return np.interp(np.log10(M), lm, T['MT'])
+[   166s] step 500 lnp max -12390.98 med -12394.68 acc 0.155 tau max 43 (dT0)
+[   307s] step 1000 lnp max -12390.75 med -12394.22 acc 0.160 tau max 60 (fR)
+[   451s] step 1500 lnp max -12390.89 med -12393.65 acc 0.169 tau max 71 (M1)
+[   593s] step 2000 lnp max -12390.11 med -12393.48 acc 0.176 tau max 99 (M1)
+[   838s] step 2500 lnp max -12390.19 med -12393.61 acc 0.180 tau max 114 (M1)
+[  1090s] step 3000 lnp max -12389.56 med -12392.77 acc 0.181 tau max 119 (M1)
+[  1332s] step 3500 lnp max -12390.41 med -12393.37 acc 0.184 tau max 125 (M1)
+[  1499s] step 4000 lnp max -12390.08 med -12392.87 acc 0.186 tau max 131 (fR)
+[  1645s] step 4500 lnp max -12389.91 med -12393.05 acc 0.188 tau max 136 (fR)
+[  1792s] step 5000 lnp max -12389.95 med -12393.54 acc 0.192 tau max 153 (fR)
+[  1943s] step 5500 lnp max -12389.27 med -12393.22 acc 0.196 tau max 167 (M1)
+[  2093s] step 6000 lnp max -12390.28 med -12393.62 acc 0.197 tau max 167 (M1)
+[  2240s] step 6500 lnp max -12390.15 med -12393.19 acc 0.198 tau max 169 (M1)
+[  2388s] step 7000 lnp max -12390.16 med -12392.90 acc 0.201 tau max 163 (M1)

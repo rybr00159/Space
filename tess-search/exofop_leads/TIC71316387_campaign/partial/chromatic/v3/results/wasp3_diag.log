@@ -1,0 +1,12 @@
+airmass range 1.02..2.04; altitude min 29.4
+TAM airmass-baseline order 1: deep 2758 +- 483  shallow -609 +- 446  (null means -28, -55)
+TAM airmass-baseline order 2: deep 1920 +- 629  shallow -269 +- 593  (null means -30, -63)
+deep    in-eclipse points: median airmass 1.11; fraction of night position histogram (5 bins) [208, 176, 88, 110, 55]
+shallow in-eclipse points: median airmass 1.08; fraction of night position histogram (5 bins) [116, 86, 72, 112, 96]
+all points: median airmass 1.09
+d per-event (single-night) amplitudes: N=50 weighted mean 2443 +- 499 (jackknife 694) chi2 85.8/49 median 2381
+s per-event (single-night) amplitudes: N=40 weighted mean -815 +- 570 (jackknife 760) chi2 69.0/39 median -542
+physical K7+M2 WASP-band profiles: template amplitude / true peak = 0.848 (deep) 0.780 (shallow)
+E2E injection peak 0.0025 (template amp 2121 ppm): recovered 1995 +- 599 ppm; gain deep 0.948 +- 0.010, shallow 0.954 +- 0.018; frac > 3 sigma 0.63
+E2E injection peak 0.0060 (template amp 5090 ppm): recovered 4721 +- 584 ppm; gain deep 0.955 +- 0.004, shallow 0.947 +- 0.008; frac > 3 sigma 1.00
+saved

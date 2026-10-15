@@ -1,0 +1,8 @@
+real  esinw0=False: flat-branch tot=24768.98 (L3=0.966 k=0.419 b1=0.38 total_occ=True) | grazing-branch tot=24826.30 (L3=0.000 k=2.000 bn=0.95 J=0.46 esinw=-0.004)  => chi2(graz) - chi2(flat) = +57.3
+real  esinw0=True : flat-branch tot=24770.00 (L3=0.973 k=0.461 b1=0.00 total_occ=True) | grazing-branch tot=24834.50 (L3=0.000 k=2.000 bn=0.95 J=0.53 esinw=0.000)  => chi2(graz) - chi2(flat) = +64.5
+injA  esinw0=False: flat-branch tot=24240.51 (L3=0.974 k=0.471 b1=0.00 total_occ=True) | grazing-branch tot=24322.29 (L3=0.000 k=1.624 bn=0.95 J=0.40 esinw=-0.004)  => chi2(graz) - chi2(flat) = +81.8
+injA  esinw0=True : flat-branch tot=24240.62 (L3=0.973 k=0.464 b1=0.00 total_occ=True) | grazing-branch tot=24328.60 (L3=0.000 k=2.000 bn=0.95 J=0.54 esinw=0.000)  => chi2(graz) - chi2(flat) = +88.0
+injB  esinw0=False: flat-branch tot=24270.53 (L3=0.835 k=0.214 b1=0.70 total_occ=True) | grazing-branch tot=24401.80 (L3=0.000 k=1.451 bn=0.95 J=0.37 esinw=-0.002)  => chi2(graz) - chi2(flat) = +131.3
+injB  esinw0=True : flat-branch tot=24272.00 (L3=0.824 k=0.207 b1=0.73 total_occ=True) | grazing-branch tot=24406.02 (L3=0.000 k=1.628 bn=0.95 J=0.42 esinw=0.000)  => chi2(graz) - chi2(flat) = +134.0
+injC  esinw0=False: flat-branch tot=24244.32 (L3=0.924 k=0.352 b1=0.81 total_occ=False) | grazing-branch tot=24244.30 (L3=0.915 k=2.000 bn=0.73 J=1.60 esinw=0.123)  => chi2(graz) - chi2(flat) = -0.0
+injC  esinw0=True : flat-branch tot=24244.97 (L3=0.851 k=0.276 b1=0.91 total_occ=False) | grazing-branch tot=24245.46 (L3=0.794 k=0.550 bn=0.84 J=0.39 esinw=0.000)  => chi2(graz) - chi2(flat) = +0.5

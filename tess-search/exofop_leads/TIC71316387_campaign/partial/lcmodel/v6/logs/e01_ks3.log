@@ -1,0 +1,17 @@
+SPOC-PDC1    rms    530  ell=-a2  -37.9 +-  30.9 (b2 -147.2)  refl=-a1 -296.2 +-  34.9  beam b1 -346.8 +-  32.2  A1 456.1 (null95 131.4)  A2 152.0 (null95  88.5)  inj-rec ell 1.00 ref 1.00
+SPOC-SAP1    rms    706  ell=-a2  -26.1 +-  46.7 (b2 -113.0)  refl=-a1 -196.5 +-  92.8  beam b1 -214.2 +-  84.2  A1 290.7 (null95 181.6)  A2 116.0 (null95  99.8)  inj-rec ell 1.00 ref 1.00
+SPOC-PDC28   rms    920  ell=-a2  -40.3 +-  27.9 (b2  -97.7)  refl=-a1 +183.8 +-  61.8  beam b1 -424.7 +-  60.3  A1 462.7 (null95 314.7)  A2 105.7 (null95  69.5)  inj-rec ell 1.00 ref 1.00
+SPOC-SAP28   rms    927  ell=-a2  +20.5 +-  43.8 (b2  -74.3)  refl=-a1 +276.7 +-  95.3  beam b1 -376.2 +-  92.3  A1 467.0 (null95 325.9)  A2  77.0 (null95 122.8)  inj-rec ell 1.00 ref 1.00
+SPOC-PDC68   rms   1610  ell=-a2 -100.6 +-  36.8 (b2  -33.1)  refl=-a1 +244.7 +-  68.8  beam b1 +157.6 +-  26.9  A1 291.0 (null95 146.8)  A2 105.9 (null95  84.4)  inj-rec ell 1.00 ref 1.00
+SPOC-SAP68   rms   1628  ell=-a2  -94.8 +-  38.2 (b2  -26.2)  refl=-a1 +277.2 +-  28.4  beam b1 +155.4 +-  51.3  A1 317.8 (null95 186.2)  A2  98.3 (null95 108.9)  inj-rec ell 1.00 ref 1.00
+TC1          rms    715  ell=-a2  +26.1 +-  65.9 (b2 -159.2)  refl=-a1 -290.6 +-  94.9  beam b1 -319.1 +-  87.1  A1 431.6 (null95 166.7)  A2 161.3 (null95 146.2)  inj-rec ell 1.00 ref 1.00
+TC28         rms    976  ell=-a2   +3.8 +-  42.3 (b2  -78.7)  refl=-a1 +269.7 +- 120.0  beam b1 -436.6 +- 132.0  A1 513.2 (null95 296.4)  A2  78.8 (null95 116.7)  inj-rec ell 1.00 ref 1.00
+TC68         rms   1742  ell=-a2 -130.9 +-  52.9 (b2  -88.7)  refl=-a1 +289.5 +-  67.8  beam b1 +224.4 +-  67.0  A1 366.3 (null95 221.1)  A2 158.1 (null95 137.5)  inj-rec ell 1.00 ref 1.00
+TC95         rms   1809  ell=-a2 -100.6 +-  48.0 (b2  -91.5)  refl=-a1 +149.5 +-  71.5  beam b1 +257.1 +-  73.2  A1 297.4 (null95 202.1)  A2 136.0 (null95 133.7)  inj-rec ell 1.00 ref 1.00
+TC105        rms   1922  ell=-a2 +242.4 +-  80.2 (b2  +78.1)  refl=-a1 -345.9 +- 109.8  beam b1 +341.6 +- 107.7  A1 486.1 (null95 316.4)  A2 254.7 (null95 178.2)  inj-rec ell 1.00 ref 1.00
+TC106        rms   1669  ell=-a2 +101.0 +-  52.1 (b2  +98.1)  refl=-a1 -273.2 +-  88.7  beam b1 +412.3 +-  94.9  A1 494.6 (null95 223.5)  A2 140.8 (null95 127.5)  inj-rec ell 1.00 ref 1.00
+QLP95        rms   1446  ell=-a2  -34.8 +-  37.0 (b2  -79.8)  refl=-a1 +134.1 +-  90.8  beam b1 +216.0 +-  90.0  A1 254.2 (null95 163.9)  A2  87.1 (null95  92.7)  inj-rec ell 1.00 ref 1.00
+QLP105       rms   1416  ell=-a2 +107.5 +-  39.2 (b2  +90.1)  refl=-a1  -81.6 +-  93.8  beam b1 +114.2 +-  94.1  A1 140.4 (null95 177.8)  A2 140.3 (null95  98.8)  inj-rec ell 1.00 ref 1.00
+default a1=+104.8 a1_err=+24.2 a1_chi2=98.7 a1_n=6.0 b1=-36.7 b1_err=+18.2 b1_chi2=237.3 b1_n=6.0 a2=+33.4 a2_err=+15.7 a2_chi2=23.8 a2_n=6.0 b2=-71.5 b2_err=+15.9 b2_chi2=23.0 b2_n=6.0
+spoc_sap+tc a1=-169.4 a1_err=+23.1 a1_chi2=78.2 a1_n=6.0 b1=+105.6 b1_err=+31.3 b1_chi2=62.1 b1_n=6.0 a2=+13.3 a2_err=+19.5 a2_chi2=23.5 a2_n=6.0 b2=-37.5 b2_err=+20.0 b2_chi2=13.9 b2_n=6.0
+tc_all a1=-19.1 a1_err=+35.3 a1_chi2=56.1 a1_n=6.0 b1=+133.3 b1_err=+35.4 b1_chi2=62.7 b1_n=6.0 a2=+3.6 a2_err=+21.8 a2_chi2=23.5 a2_n=6.0 b2=-51.6 b2_err=+21.1 b2_chi2=17.0 b2_n=6.0

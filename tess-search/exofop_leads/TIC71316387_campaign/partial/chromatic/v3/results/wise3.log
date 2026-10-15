@@ -1,0 +1,19 @@
+W1_strict_allwise          n=238 nvis=23 in-d  8 (8 ev) in-s  8 | deep  21633 +-  5464 (z=4.08, p>=0.0002, null kurt -0.54) | shallow    167 +-  4498
+     leave-one-event-out deep amplitudes: [20766, 19759, 21635, 21407, 23810, 20676, 23495, 21123, 22255] ; jackknife sd 3538 ppm
+     e2e injection 0.006: recovered 4515 +- 5861 ppm, gain deep 1.010 +- 0.009 shallow 0.999
+     e2e injection 0.015: recovered 14021 +- 6212 ppm, gain deep 1.001 +- 0.001 shallow 1.003
+W2_strict_allwise          n=239 nvis=23 in-d  8 (8 ev) in-s  8 | deep  12384 +-  6613 (z=1.84, p>=0.0399, null kurt -0.20) | shallow  13197 +-  6046
+     leave-one-event-out deep amplitudes: [9543, 16654, 12385, 12830, 8990, 11863, 11880, 14635, 13082] ; jackknife sd 6260 ppm
+     e2e injection 0.006: recovered 6577 +- 7888 ppm, gain deep 1.000 +- 0.001 shallow 1.001
+     e2e injection 0.015: recovered 15461 +- 8022 ppm, gain deep 1.001 +- 0.001 shallow 1.000
+W1_strict_neowiseonly      n=218 nvis=21 in-d  7 (7 ev) in-s  8 | deep  20903 +-  5293 (z=4.08, p>=0.0003, null kurt -0.64) | shallow   -872 +-  4606
+W2_strict_neowiseonly      n=219 nvis=21 in-d  7 (7 ev) in-s  8 | deep   9669 +-  7223 (z=1.23, p>=0.1098, null kurt -0.28) | shallow  12941 +-  6580
+W1_loose_allwise           n=319 nvis=23 in-d 10 (10 ev) in-s 12 | deep  17215 +-  4748 (z=3.66, p>=0.0003, null kurt -0.02) | shallow  23132 +-  4353
+W2_loose_allwise           n=323 nvis=23 in-d 10 (10 ev) in-s 13 | deep  15625 +-  5881 (z=2.69, p>=0.0003, null kurt 0.07) | shallow  23054 +-  5373
+W1_loose_neowiseonly       n=293 nvis=21 in-d  9 (9 ev) in-s 12 | deep  17131 +-  4848 (z=3.53, p>=0.0003, null kurt 0.21) | shallow  10539 +-  4440
+W2_loose_neowiseonly       n=296 nvis=21 in-d  9 (9 ev) in-s 12 | deep  12581 +-  6233 (z=1.88, p>=0.0010, null kurt -0.07) | shallow  15570 +-  5612
+W1_none_allwise            n=313 nvis=23 in-d 10 (10 ev) in-s 12 | deep  16636 +-  4421 (z=3.85, p>=0.0003, null kurt 0.20) | shallow  29008 +-  4501
+W2_none_allwise            n=324 nvis=23 in-d 10 (10 ev) in-s 13 | deep  15359 +-  6240 (z=2.48, p>=0.0100, null kurt 0.31) | shallow  22861 +-  5666
+W1_none_neowiseonly        n=287 nvis=21 in-d  9 (9 ev) in-s 12 | deep  16759 +-  4328 (z=3.98, p>=0.0003, null kurt -0.19) | shallow  14893 +-  3943
+W2_none_neowiseonly        n=297 nvis=21 in-d  9 (9 ev) in-s 12 | deep  12334 +-  6541 (z=1.74, p>=0.0250, null kurt 0.14) | shallow  15461 +-  5897
+saved

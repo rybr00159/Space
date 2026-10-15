@@ -1,0 +1,63 @@
+The current archive release 3.15 contains two breaking changes. Please see https://www.cosmos.esa.int/web/gaia/news#GACSrelease315 for details. In case of questions or feedback, please consult the Gaia helpdesk at https://www.cosmos.esa.int/web/gaia/gaia-helpdesk.
+
+Please note the archive will be unavailable on 15 October at 12 CEST for maintenance purposes. Apologies for the inconveniences.
+Getting TessCut for sector 68
+Estimated missing stellar parameters for 32 of 54 stars from photometry. See the 'params_estimated' column of the .stars dataframe. 1 appear evolved and were assigned a nominal 1 M_Sun.
+           ID     Tmag         Teff       rad      mass  sep (arcsec)
+0    71316387  11.3576  5889.000000  1.070000  1.050000         0.000
+1    71316388  16.0571  4020.000000  0.815833  0.630000        18.293
+2  2027500562  19.1557  4473.203977  0.703490  0.706226        44.752
+3    71316389  14.6670  5276.000000  0.654203  0.900000        46.405
+4    71316386  14.7370  5707.000000  1.037340  1.020000        54.931
+tdepth used: 0.004179689061310721
+No apertures provided, assuming 5x5 centered on target.
+{
+ "FPP": 0.9998823425838201,
+ "NFPP": 0.8589939016584588,
+ "top": [
+  {
+   "ID": 71316389,
+   "scenario": "NEB",
+   "prob": 0.6404995385893669
+  },
+  {
+   "ID": 71316389,
+   "scenario": "NEBx2P",
+   "prob": 0.21475784277655235
+  },
+  {
+   "ID": 71316387,
+   "scenario": "STP",
+   "prob": 0.13474855922404716
+  },
+  {
+   "ID": 71316387,
+   "scenario": "SEBx2P",
+   "prob": 0.0056901818326858524
+  },
+  {
+   "ID": 71316386,
+   "scenario": "NEBx2P",
+   "prob": 0.0037313739387631888
+  },
+  {
+   "ID": 71316387,
+   "scenario": "BEBx2P",
+   "prob": 0.00044965290702146004
+  },
+  {
+   "ID": 71316387,
+   "scenario": "PTP",
+   "prob": 0.00011765483100002825
+  },
+  {
+   "ID": 71316386,
+   "scenario": "NEB",
+   "prob": 4.322302602433827e-06
+  }
+ ]
+}
+
+real	4m1.067s
+user	2m56.987s
+sys	0m3.192s

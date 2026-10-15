@@ -1,0 +1,15 @@
+ASASSN_V_all       n= 217 nseg=  7 in-d   8 ( 8 ev) in-s   7 | deep   1581 +-  3403 (null mean   257, beta 1.12) p>=0.277 | shallow  -5326 +-  5693 | rms 0.0117
+ASASSN_V_bf        fewer than 3 points inside either eclipse: no measurement
+ASASSN_V_bh        n= 157 nseg=  5 in-d   5 ( 5 ev) in-s   6 | deep  -1159 +-  6002 (null mean  -303, beta 1.13) p>=0.645 | shallow  -7569 +-  7526 | rms 0.0124
+ASASSN_V_all_o0    n= 215 nseg=  7 in-d   8 ( 8 ev) in-s   7 | deep   2269 +-  3968 (null mean   115, beta 1.22) p>=0.246 | shallow  -7039 +-  5263 | rms 0.0088
+ASAS-3: 479 A/B points of 220333-4250.1 in fields {'1 F2200-40_155': 452, '1 F2145-48_119': 22, '1 F2240-40_156': 5}
+  aperture MAG_0: robust scatter 0.0385 mag (n=479)
+  aperture MAG_1: robust scatter 0.0445 mag (n=479)
+  aperture MAG_2: robust scatter 0.0371 mag (n=479)
+  aperture MAG_3: robust scatter 0.0460 mag (n=479)
+  aperture MAG_4: robust scatter 0.0519 mag (n=479)
+ASAS3_V (MAG_2)    n= 471 nseg= 12 in-d  17 (17 ev) in-s  15 | deep   4070 +- 10515 (null mean   807, beta 1.06) p>=0.348 | shallow   -897 +- 10263 | rms 0.0303
+NEOWISE: 223 points in 23 visits after quality cuts
+NEOWISE_W1         n= 218 nseg= 21 in-d   7 ( 7 ev) in-s   8 | deep  20903 +-  5317 (null mean  -859, beta 1.16) p>=0.001 | shallow   -872 +-  4691 | rms 0.0110
+NEOWISE_W2         n= 219 nseg= 21 in-d   7 ( 7 ev) in-s   8 | deep   9669 +-  7358 (null mean   546, beta 1.16) p>=0.101 | shallow  12941 +-  6512 | rms 0.0163
+saved

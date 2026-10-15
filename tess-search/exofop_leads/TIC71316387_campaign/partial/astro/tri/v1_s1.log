@@ -1,0 +1,122 @@
+The current archive release 3.15 contains two breaking changes. Please see https://www.cosmos.esa.int/web/gaia/news#GACSrelease315 for details. In case of questions or feedback, please consult the Gaia helpdesk at https://www.cosmos.esa.int/web/gaia/gaia-helpdesk.
+
+Please note the archive will be unavailable on 15 October at 12 CEST for maintenance purposes. Apologies for the inconveniences.
+Getting TessCut for sector 28
+Sector 28 raised exception. Ignoring for validation.
+Traceback (most recent call last):
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1457, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='mast.stsci.edu', port=443): Max retries exceeded with url: /api/v0/invoke (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/triceratops/triceratops.py", line 180, in __init__
+    tess_cuts = lightkurve.search_tesscut(target=cutout_coord, sector=sector) \
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/memoization/caching/plain_cache.py", line 42, in wrapper
+    result = user_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/lightkurve/search.py", line 880, in search_tesscut
+    return _search_products(target, filetype="ffi", mission="TESS", sector=sector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/lightkurve/search.py", line 980, in _search_products
+    observations = _query_mast(
+                   ^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/lightkurve/search.py", line 1207, in _query_mast
+    obs = Observations.query_criteria(objectname=target, **query_criteria)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/utils/class_or_instance.py", line 25, in f
+    return self.fn(obj, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/utils/process_asyncs.py", line 28, in newmethod
+    response = getattr(self, async_method_name)(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/utils/class_or_instance.py", line 25, in f
+    return self.fn(obj, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/mast/observations.py", line 339, in query_criteria_async
+    return self._portal_api_connection.service_request_async(service, params, pagesize=pagesize, page=page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/utils/class_or_instance.py", line 25, in f
+    return self.fn(obj, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/mast/discovery_portal.py", line 364, in service_request_async
+    response = self._request("POST", self.MAST_REQUEST_URL, data=req_string, headers=headers,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/mast/discovery_portal.py", line 183, in _request
+    response = super(PortalAPI, self)._request(method, url, params=params, data=data,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/query.py", line 372, in _request
+    response = query.request(self._session, stream=stream,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/astroquery/query.py", line 77, in request
+    return session.request(self.method, self.url, params=self.params,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/work/venv_tri/lib/python3.12/site-packages/requests/adapters.py", line 723, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='mast.stsci.edu', port=443): Max retries exceeded with url: /api/v0/invoke (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+Getting TessCut for sector 68
+Estimated missing stellar parameters for 32 of 54 stars from photometry. See the 'params_estimated' column of the .stars dataframe. 1 appear evolved and were assigned a nominal 1 M_Sun.
+           ID     Tmag         Teff       rad      mass       plx  sep (arcsec)
+0    71316387  11.3576  5889.000000  1.070000  1.050000  3.362200         0.000
+1    71316388  16.0571  4020.000000  0.815833  0.630000  1.170380        18.293
+2  2027500562  19.1557  4473.203977  0.703490  0.706226  1.680050        44.752
+3    71316389  14.6670  5276.000000  0.654203  0.900000  1.476730        46.405
+4    71316386  14.7370  5707.000000  1.037340  1.020000  0.765454        54.931
+tdepth used: 0.004320702010077615 flux_err_0: 0.00018057066227625794 nbins: 111
+No apertures provided, assuming 5x5 centered on target.
+Removed 53 nearby star(s). Only the target will be considered by calc_probs() (NFPP = 0).
+          ID scenario          prob         lnZ       M_s       R_s        inc         b      M_EB      R_EB
+3   71316387      PTP  7.936100e-01  -56.730471  1.050000  1.070000  78.002472  0.464697  0.000000  0.000000
+8   71316387   SEBx2P  1.702528e-01  -58.269778  0.467941  0.466884  83.997408  1.048987  0.460551  0.459143
+12  71316387      BTP  3.126140e-02  -59.964678  0.868009  0.803407  80.166644  0.548510  0.000000  0.000000
+14  71316387   BEBx2P  4.077060e-03  -62.001687  0.892668  0.838337  77.214478  1.606392  0.886440  0.838337
+6   71316387      STP  7.980319e-04  -63.632669  0.653091  0.677174  82.662716  0.513195  0.000000  0.000000
+5   71316387   PEBx2P  7.111691e-07  -70.655663  1.050000  1.070000  76.366329  1.239020  1.005263  1.070000
+7   71316387      SEB  8.437574e-16  -91.207974  0.801179  0.828147  81.636011  0.533860  0.082362  0.100000
+9   71316387      DTP  7.120080e-18  -95.982920  1.050000  1.070000  76.846473  0.563890  0.000000  0.000000
+0   71316387       TP  5.578392e-18  -96.226938  1.050000  1.070000  75.434686  0.853450  0.000000  0.000000
+11  71316387   DEBx2P  6.779009e-41 -148.991465  1.050000  1.070000  75.084928  1.488548  1.022062  1.070000
+2   71316387    EBx2P  1.666722e-66 -207.959065  1.050000  1.070000  75.611464  1.275336  1.008709  1.070000
+13  71316387      BEB  1.716050e-80 -240.166090  0.962725  0.940998  85.156772  0.289589  0.131696  0.161158
+FPP 0.20639002328207778 NFPP 0.0

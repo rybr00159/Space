@@ -1,0 +1,18 @@
+S1 TC-AP: sigma 499 ppm; events 32; injections 54
+S28 TC-AP: sigma 922 ppm; events 28; injections 48
+S68 TC-AP: sigma 1581 ppm; events 34; injections 66
+S95 TC-AP: sigma 1775 ppm; events 34; injections 60
+S105 TC-AP: sigma 1694 ppm; events 33; injections 66
+S106 TC-AP: sigma 1578 ppm; events 32; injections 62
+S1 ph0.0: N=15 median formal 2.20 min, real O-C rms(robust) 1.95 min, wmean -0.07; inj N=27 bias +0.95 robust-sd 3.12 sd 2.54 (median formal 2.27) -> ratio 1.37
+S1 ph0.5: N=15 median formal 4.50 min, real O-C rms(robust) 4.51 min, wmean -2.42; inj N=25 bias +1.56 robust-sd 4.17 sd 4.91 (median formal 4.41) -> ratio 0.95
+S28 ph0.0: N=12 median formal 1.92 min, real O-C rms(robust) 2.93 min, wmean +0.16; inj N=24 bias -0.24 robust-sd 1.62 sd 1.72 (median formal 1.88) -> ratio 0.86
+S28 ph0.5: N=16 median formal 3.85 min, real O-C rms(robust) 5.13 min, wmean -1.63; inj N=24 bias -1.16 robust-sd 2.64 sd 3.78 (median formal 3.71) -> ratio 0.71
+S68 ph0.0: N=16 median formal 1.98 min, real O-C rms(robust) 1.90 min, wmean +0.41; inj N=33 bias -0.15 robust-sd 2.02 sd 2.17 (median formal 1.92) -> ratio 1.05
+S68 ph0.5: N=15 median formal 3.99 min, real O-C rms(robust) 5.76 min, wmean +0.90; inj N=32 bias +0.07 robust-sd 3.45 sd 3.28 (median formal 3.64) -> ratio 0.95
+S95 ph0.0: N=17 median formal 2.31 min, real O-C rms(robust) 1.67 min, wmean +1.51; inj N=30 bias +0.13 robust-sd 1.97 sd 1.93 (median formal 2.27) -> ratio 0.87
+S95 ph0.5: N=17 median formal 4.78 min, real O-C rms(robust) 3.57 min, wmean +1.92; inj N=30 bias -0.08 robust-sd 3.69 sd 3.89 (median formal 4.12) -> ratio 0.90
+S105 ph0.0: N=16 median formal 2.33 min, real O-C rms(robust) 2.73 min, wmean +2.03; inj N=33 bias +0.36 robust-sd 2.46 sd 2.59 (median formal 2.18) -> ratio 1.13
+S105 ph0.5: N=17 median formal 4.25 min, real O-C rms(robust) 3.73 min, wmean +2.56; inj N=32 bias +0.13 robust-sd 3.24 sd 4.74 (median formal 4.23) -> ratio 0.76
+S106 ph0.0: N=17 median formal 1.97 min, real O-C rms(robust) 2.12 min, wmean +2.28; inj N=31 bias +0.17 robust-sd 3.21 sd 3.02 (median formal 2.17) -> ratio 1.48
+S106 ph0.5: N=13 median formal 3.82 min, real O-C rms(robust) 6.42 min, wmean +1.86; inj N=28 bias -0.07 robust-sd 5.19 sd 4.86 (median formal 4.08) -> ratio 1.27

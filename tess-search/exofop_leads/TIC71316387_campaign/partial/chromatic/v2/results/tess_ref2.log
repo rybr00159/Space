@@ -1,0 +1,22 @@
+start [0.064 1.2   1.5  ] -> chi2 10521.37 [6.37200e-02 1.26572e+00 1.53259e+00 2.00000e-05 6.57300e-02 1.15846e+00
+ 1.45558e+00 1.60000e-04]
+start [0.07 2.   1.  ] -> chi2 10460.91 [6.97500e-02 2.04134e+00 9.93310e-01 1.00000e-04 7.01100e-02 1.96960e+00
+ 9.90720e-01 6.00000e-05]
+start [0.058 1.    2.   ] -> chi2 10535.58 [ 5.97900e-02  1.18717e+00  1.56686e+00 -1.70000e-04  7.10800e-02
+  1.05715e+00  1.56056e+00  1.80000e-04]
+d T=0.0698 d (1.674 h) p=2.041 q=0.993 phase centre 0.00010 (0.19 min from nominal)
+s T=0.0701 d (1.683 h) p=1.970 q=0.991 phase centre 0.50006 (0.11 min from nominal)
+S1   SPOC PDCSAP                              deep  5513 +- 241 (formal 101, null sd 239, null mean   21, beta 2.39)  shallow  2787 +- 218 (null mean   -3)  s/d 0.506
+S28  SPOC PDCSAP                              deep  5879 +- 187 (formal 114, null sd 187, null mean   23, beta 1.61)  shallow  2637 +- 167 (null mean   11)  s/d 0.449
+S68  SPOC PDCSAP                              deep  5393 +- 168 (formal 106, null sd 168, null mean    8, beta 1.58)  shallow  2461 +- 153 (null mean   17)  s/d 0.456
+S95  TESScut aperture (lcmodel), contam remov deep  5530 +- 162 (formal 111, null sd 162, null mean   53, beta 1.40)  shallow  2464 +- 178 (null mean   74)  s/d 0.446
+S105 TESScut aperture (lcmodel), contam remov deep  5324 +- 228 (formal 107, null sd 228, null mean  -11, beta 2.08)  shallow  2948 +- 234 (null mean   18)  s/d 0.554
+S106 TESScut aperture (lcmodel), contam remov deep  5355 +- 244 (formal 106, null sd 244, null mean    8, beta 2.23)  shallow  2917 +- 244 (null mean   -0)  s/d 0.545
+spoc     deep     mean  5589 +- 154 ppm (chi2 3.9/2; sector sd 253)
+spoc     shallow  mean  2593 +- 100 ppm (chi2 1.6/2; sector sd 163)
+all      deep     mean  5516 +-  84 ppm (chi2 5.5/5; sector sd 204)
+all      shallow  mean  2640 +-  84 ppm (chi2 5.8/5; sector sd 216)
+tesscut  deep     mean  5437 +- 116 ppm (chi2 0.7/2; sector sd 111)
+tesscut  shallow  mean  2711 +- 166 ppm (chi2 3.7/2; sector sd 271)
+ADOPTED deep: 5589 +- 172 ppm
+ADOPTED shallow: 2593 +- 116 ppm

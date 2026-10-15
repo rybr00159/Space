@@ -1,0 +1,6 @@
+WASP fake-period null: deep mean -4 sd 999 (mad 864) kurt 24.04; shallow sd 906; corr -0.04; formal-err-scaled sd (beta) 1.35/1.35
+   -> beta-scaled errors at the real phase: deep 657 shallow 722 ppm
+   observed deep S/N(formal) 4.84; fraction of fake-period trials with S/N >= that: 0/3000
+W1 fake-period null: deep sd 6414 kurt 1.15; shallow sd 6053; beta-scaled errors deep 6049 shallow 5007; obs deep 21633 S/N 4.34, frac S/N>=obs 0/3000
+W2 fake-period null: deep sd 8812 kurt 0.52; shallow sd 8400; beta-scaled errors deep 7944 shallow 5518; obs deep 12384 S/N 2.10, frac S/N>=obs 174/3000
+saved

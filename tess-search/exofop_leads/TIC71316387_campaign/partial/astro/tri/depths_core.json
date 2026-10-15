@@ -1,0 +1,82 @@
+{
+ "S1_pdc": {
+  "deep": {
+   "n_events": 16,
+   "depth_core_ppm": 5809.3,
+   "null_std_ppm": 283.8,
+   "null_mean_ppm": 139.9,
+   "sigma_point": 0.0005008421372912071
+  },
+  "shal": {
+   "n_events": 15,
+   "depth_core_ppm": 2688.8,
+   "null_std_ppm": 283.8,
+   "null_mean_ppm": 139.9,
+   "sigma_point": 0.0004985787681772977
+  }
+ },
+ "S28_pdc": {
+  "deep": {
+   "n_events": 13,
+   "depth_core_ppm": 6366.8,
+   "null_std_ppm": 306.2,
+   "null_mean_ppm": 150.6,
+   "sigma_point": 0.0009483231969773513
+  },
+  "shal": {
+   "n_events": 13,
+   "depth_core_ppm": 2788.4,
+   "null_std_ppm": 306.2,
+   "null_mean_ppm": 150.6,
+   "sigma_point": 0.0008448170173976796
+  }
+ },
+ "S68_pdc": {
+  "deep": {
+   "n_events": 15,
+   "depth_core_ppm": 5620.6,
+   "null_std_ppm": 259.4,
+   "null_mean_ppm": 162.9,
+   "sigma_point": 0.0016424241382161462
+  },
+  "shal": {
+   "n_events": 16,
+   "depth_core_ppm": 2702.0,
+   "null_std_ppm": 259.4,
+   "null_mean_ppm": 162.9,
+   "sigma_point": 0.0016278170224218434
+  }
+ },
+ "S95_qlp": {
+  "deep": {
+   "n_events": 15,
+   "depth_core_ppm": 5098.4,
+   "null_std_ppm": 265.6,
+   "null_mean_ppm": 118.5,
+   "sigma_point": 0.0014458635489594852
+  },
+  "shal": {
+   "n_events": 14,
+   "depth_core_ppm": 2400.3,
+   "null_std_ppm": 265.6,
+   "null_mean_ppm": 118.5,
+   "sigma_point": 0.001342688191581049
+  }
+ },
+ "S105_qlp": {
+  "deep": {
+   "n_events": 16,
+   "depth_core_ppm": 4362.0,
+   "null_std_ppm": 239.2,
+   "null_mean_ppm": 93.6,
+   "sigma_point": 0.0013675870854870608
+  },
+  "shal": {
+   "n_events": 18,
+   "depth_core_ppm": 2076.3,
+   "null_std_ppm": 239.2,
+   "null_mean_ppm": 93.6,
+   "sigma_point": 0.0013884134227791756
+  }
+ }
+}

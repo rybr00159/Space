@@ -1,0 +1,49 @@
+S68 sigma 1595 ppm n 8846
+S95 sigma 1644 ppm n 9558
+S105 sigma 1767 ppm n 9855
+S106 sigma 1637 ppm n 9172
+  it0 d start [0.06, 1.7, 1.0] -> chi2 38352.06  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it0 d start [0.07, 2.0, 1.0] -> chi2 38352.06  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it0 d start [0.09, 3.4, 10.0] -> chi2 38352.06  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it0 d start [0.055, 1.2, 0.8] -> chi2 38352.06  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it0 d start [0.08, 1.5, 2.5] -> chi2 38352.06  T=0.1018 p=3.561 q=17.243 dph=0.00076
+iter 0 d BEST chi2 38352.06 T=0.1018 (2.44 h) p=3.561 q=17.244 dphase 0.00076 (1.43 min)
+  it0 s start [0.06, 1.7, 1.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it0 s start [0.07, 2.0, 1.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it0 s start [0.09, 3.4, 10.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it0 s start [0.055, 1.2, 0.8] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it0 s start [0.08, 1.5, 2.5] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+iter 0 s BEST chi2 38308.41 T=0.0893 (2.14 h) p=4.229 q=11.257 dphase 0.00157 (2.94 min)
+  it1 d start [0.06, 1.7, 1.0] -> chi2 38308.41  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it1 d start [0.07, 2.0, 1.0] -> chi2 38308.41  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it1 d start [0.09, 3.4, 10.0] -> chi2 38308.41  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it1 d start [0.055, 1.2, 0.8] -> chi2 38308.41  T=0.1018 p=3.561 q=17.244 dph=0.00076
+  it1 d start [0.08, 1.5, 2.5] -> chi2 38308.41  T=0.1018 p=3.561 q=17.243 dph=0.00076
+iter 1 d BEST chi2 38308.41 T=0.1018 (2.44 h) p=3.561 q=17.244 dphase 0.00076 (1.43 min)
+  it1 s start [0.06, 1.7, 1.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it1 s start [0.07, 2.0, 1.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it1 s start [0.09, 3.4, 10.0] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it1 s start [0.055, 1.2, 0.8] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+  it1 s start [0.08, 1.5, 2.5] -> chi2 38308.41  T=0.0893 p=4.229 q=11.257 dph=0.00157
+iter 1 s BEST chi2 38308.41 T=0.0893 (2.14 h) p=4.229 q=11.257 dphase 0.00157 (2.94 min)
+best chi2 38308.41, tess3 shape chi2 38309.85 (delta 1.44), N=37431
+   deep grid p=1.0 q= 0.7 T=0.0585 dchi2=90.2
+   deep grid p=1.0 q= 1.0 T=0.0667 dchi2=175.9
+   deep grid p=1.0 q= 1.6 T=0.0846 dchi2=332.4
+   deep grid p=1.0 q= 3.0 T=0.1313 dchi2=515.1
+   deep grid p=1.0 q=10.0 T=0.2500 dchi2=1275.1
+   deep grid p=1.5 q= 0.7 T=0.0561 dchi2=36.7
+   deep grid p=1.5 q= 1.0 T=0.0612 dchi2=53.5
+   deep grid p=1.5 q= 1.6 T=0.0727 dchi2=114.0
+   deep grid p=1.5 q= 3.0 T=0.0981 dchi2=209.5
+   deep grid p=1.5 q=10.0 T=0.1985 dchi2=314.3
+   deep grid p=2.0 q= 0.7 T=0.0542 dchi2=43.5
+   deep grid p=2.0 q= 1.0 T=0.0581 dchi2=18.0
+   deep grid p=2.0 q= 1.6 T=0.0663 dchi2=31.9
+   deep grid p=2.0 q= 3.0 T=0.0832 dchi2=73.1
+   deep grid p=2.0 q=10.0 T=0.1415 dchi2=131.5
+   deep grid p=3.0 q= 0.7 T=0.0513 dchi2=95.3
+   deep grid p=3.0 q= 1.0 T=0.0546 dchi2=48.0
+   deep grid p=3.0 q= 1.6 T=0.0596 dchi2=11.8
+   deep grid p=3.0 q= 3.0 T=0.0694 dchi2=2.1
+   deep grid p=3.0 q=10.0 T=0.0989 dchi2=8.7

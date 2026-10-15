@@ -1,0 +1,14 @@
+SPOC1   prim s=1.083+-0.029 (formal 0.020, inj-boot 0.029, inj s 0.992) | sec s=1.019+-0.047 (inj s 0.976) | both 1.070+-0.026
+SPOC28  prim s=1.081+-0.024 (formal 0.024, inj-boot 0.024, inj s 0.983) | sec s=1.010+-0.056 (inj s 1.028) | both 1.066+-0.023
+SPOC68  prim s=0.994+-0.031 (formal 0.022, inj-boot 0.029, inj s 1.031) | sec s=1.023+-0.052 (inj s 1.033) | both 0.999+-0.029
+TC95    prim s=0.986+-0.027 (formal 0.022, inj-boot 0.026, inj s 1.005) | sec s=1.078+-0.056 (inj s 1.085) | both 1.004+-0.025
+TC105   prim s=0.981+-0.024 (formal 0.024, inj-boot 0.019, inj s 1.011) | sec s=1.009+-0.058 (inj s 1.015) | both 0.987+-0.021
+TC106   prim s=1.020+-0.028 (formal 0.020, inj-boot 0.028, inj s 0.951) | sec s=1.033+-0.053 (inj s 0.893) | both 1.022+-0.024
+TC1     prim s=1.048+-0.026 (formal 0.021, inj-boot 0.026, inj s 0.972) | sec s=0.921+-0.111 (inj s 1.015) | both 1.021+-0.037
+TC28    prim s=1.071+-0.027 (formal 0.024, inj-boot 0.021, inj s 1.019) | sec s=1.064+-0.063 (inj s 1.024) | both 1.070+-0.023
+TC68    prim s=1.018+-0.035 (formal 0.021, inj-boot 0.028, inj s 1.017) | sec s=0.981+-0.045 (inj s 1.011) | both 1.010+-0.029
+QLP95   prim s=0.890+-0.026 (formal 0.020, inj-boot 0.026, inj s 1.033) | sec s=0.874+-0.041 (inj s 1.081) | both 0.887+-0.022
+QLP105  prim s=0.740+-0.026 (formal 0.020, inj-boot 0.019, inj s 1.003) | sec s=0.788+-0.043 (inj s 0.979) | both 0.750+-0.020
+QLP1    prim s=1.043+-0.031 (formal 0.031, inj-boot 0.029, inj s 0.997) | sec s=0.999+-0.063 (inj s 1.009) | both 1.033+-0.027
+QLP28   prim s=1.094+-0.051 (formal 0.051, inj-boot 0.042, inj s 1.028) | sec s=1.007+-0.102 (inj s 1.177) | both 1.073+-0.044
+QLP68   prim s=1.055+-0.042 (formal 0.029, inj-boot 0.036, inj s 1.034) | sec s=1.000+-0.060 (inj s 0.999) | both 1.044+-0.036

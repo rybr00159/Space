@@ -1,0 +1,7 @@
+[   554s] step 500 lnp max -12387.48 med -12390.32 acc 0.149 tau max 32 (k)
+[   934s] step 1000 lnp max -12388.42 med -12390.99 acc 0.133 tau max 64 (k)
+[  1211s] step 1500 lnp max -12388.38 med -12391.11 acc 0.123 tau max 84 (L3)
+[  1504s] step 2000 lnp max -12387.12 med -12391.18 acc 0.121 tau max 107 (k)
+[  1800s] step 2500 lnp max -12387.35 med -12391.07 acc 0.122 tau max 148 (bn)
+[  2082s] step 3000 lnp max -12388.37 med -12390.77 acc 0.121 tau max 160 (bn)
+[  2364s] step 3500 lnp max -12387.44 med -12390.02 acc 0.124 tau max 171 (L3)

@@ -1,0 +1,79 @@
+{
+ "SPOC-PDC1": {
+  "P_peak": 1.3037053134847334,
+  "P_peak_unc_d": 0.03090266427924884,
+  "power_peak": 0.25515114053744165,
+  "power_null_99": 0.2394364070070256,
+  "power_null_max": 0.24307920016817128,
+  "P_global_peak": 1.3037053134847334,
+  "amp_at_peak_ppm": 441.7877568202315,
+  "amp_at_PEB_ppm": 441.79543510132777,
+  "PEB_minus_peak_in_resolution": 0.0005519649872437731
+ },
+ "SPOC-PDC28": {
+  "P_peak": 1.306971677559913,
+  "P_peak_unc_d": 0.038896003164629274,
+  "power_peak": 0.11650513776004218,
+  "power_null_99": 0.10882195721030548,
+  "power_null_max": 0.11429127634700566,
+  "P_global_peak": 1.306971677559913,
+  "amp_at_peak_ppm": 443.85684048121146,
+  "amp_at_PEB_ppm": 442.494857383712,
+  "PEB_minus_peak_in_resolution": 0.04253436139767608
+ },
+ "SPOC-PDC68": {
+  "P_peak": 1.307626915447828,
+  "P_peak_unc_d": 0.03526895592325667,
+  "power_peak": 0.013610894107896867,
+  "power_null_99": 0.012307115834895835,
+  "power_null_max": 0.012399132680475645,
+  "P_global_peak": 1.307626915447828,
+  "amp_at_peak_ppm": 279.8675503719199,
+  "amp_at_PEB_ppm": 278.68352416189913,
+  "PEB_minus_peak_in_resolution": 0.05624944272718615
+ },
+ "TC95": {
+  "P_peak": 1.297866816667388,
+  "P_peak_unc_d": 0.03356478655260644,
+  "power_peak": 0.01448169247746877,
+  "power_null_99": 0.01988653098760725,
+  "power_null_max": 0.020177916166654892,
+  "P_global_peak": 3.1899393810486014,
+  "amp_at_peak_ppm": 294.7230130542324,
+  "amp_at_PEB_ppm": 290.61073325433733,
+  "PEB_minus_peak_in_resolution": -0.0860803963956957
+ },
+ "TC105": {
+  "P_peak": 1.3004552352048557,
+  "P_peak_unc_d": 0.031560003819550306,
+  "power_peak": 0.02950867917925496,
+  "power_null_99": 0.02977503697199031,
+  "power_null_max": 0.031925266357568455,
+  "P_global_peak": 1.3004552352048557,
+  "amp_at_peak_ppm": 480.1127928252823,
+  "amp_at_PEB_ppm": 478.432673635043,
+  "PEB_minus_peak_in_resolution": -0.050824320271142163
+ },
+ "TC106": {
+  "P_peak": 1.3011039538464875,
+  "P_peak_unc_d": 0.030807415196360974,
+  "power_peak": 0.03653943037839751,
+  "power_null_99": 0.03687432129759165,
+  "power_null_max": 0.03764110954296958,
+  "P_global_peak": 1.3011039538464875,
+  "amp_at_peak_ppm": 445.3987632291307,
+  "amp_at_PEB_ppm": 443.6305775704671,
+  "PEB_minus_peak_in_resolution": -0.0415839921030514
+ },
+ "TC105+106": {
+  "P_peak": 1.304357279526874,
+  "P_peak_unc_d": 0.015282912827671257,
+  "power_peak": 0.03189311612366965,
+  "power_null_99": 0.022373471873109643,
+  "power_null_max": 0.024802818462993086,
+  "P_global_peak": 1.304357279526874,
+  "amp_at_peak_ppm": 458.60554494434473,
+  "amp_at_PEB_ppm": 458.0268999670116,
+  "PEB_minus_peak_in_resolution": 0.022457780000345793
+ }
+}

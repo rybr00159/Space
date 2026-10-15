@@ -1,0 +1,9 @@
+S1 SPOC TIMECORR - mine: mean -0.00 ms, rms 0.77 ms, max 1.26 ms
+S28 SPOC TIMECORR - mine: mean -0.53 ms, rms 0.69 ms, max 1.47 ms
+S68 SPOC TIMECORR - mine: mean -0.52 ms, rms 0.79 ms, max 1.64 ms
+S1 TESScut: target-minus-FFI Roemer delay -15.40 s (range -25.65 .. -4.65)
+S105 TESScut: target-minus-FFI Roemer delay +21.17 s (range +20.00 .. +21.64)
+S106 TESScut: target-minus-FFI Roemer delay -15.14 s (range -15.29 .. -14.70)
+S28 TESScut: target-minus-FFI Roemer delay -15.51 s (range -21.38 .. -9.33)
+S68 TESScut: target-minus-FFI Roemer delay -9.92 s (range -18.46 .. -1.21)
+S95 TESScut: target-minus-FFI Roemer delay -9.28 s (range -18.35 .. +0.01)

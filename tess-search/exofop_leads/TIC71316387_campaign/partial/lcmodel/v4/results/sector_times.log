@@ -1,0 +1,18 @@
+S  1 prim: N=15 O-C -0.069 min; bootstrap err 0.656; formal 0.509
+S  1 sec : N=17 O-C -2.340 min; bootstrap err 1.652; formal 1.137
+S 28 prim: N=12 O-C +1.094 min; bootstrap err 0.591; formal 0.542
+S 28 sec : N=13 O-C +1.021 min; bootstrap err 1.026; formal 1.120
+S 68 prim: N=15 O-C -0.797 min; bootstrap err 0.381; formal 0.531
+S 68 sec : N=16 O-C +0.235 min; bootstrap err 1.162; formal 1.106
+S 95 prim: N=17 O-C -0.263 min; bootstrap err 0.438; formal 0.571
+S 95 sec : N=17 O-C +0.485 min; bootstrap err 0.922; formal 1.049
+S105 prim: N=16 O-C -0.124 min; bootstrap err 0.549; formal 0.582
+S105 sec : N=17 O-C +1.277 min; bootstrap err 1.279; formal 1.137
+S106 prim: N=17 O-C +0.201 min; bootstrap err 0.649; formal 0.497
+S106 sec : N=15 O-C +0.211 min; bootstrap err 1.080; formal 1.075
+linear: chi2 9.46/9; P = 1.30367214 +- 0.00000019 d; secondary offset +0.40 +- 0.54 min
+quadratic: c2 = +0.0041 +- 0.0370 min/yr^2; dchi2 0.01
+  sector-level control: c2 inj 0.00 -> +0.0007 +- 0.0363
+  sector-level control: c2 inj 0.05 -> +0.0500 +- 0.0358
+  sector-level control: c2 inj 0.10 -> +0.1011 +- 0.0367
+  sector-level control: c2 inj 0.20 -> +0.1984 +- 0.0379

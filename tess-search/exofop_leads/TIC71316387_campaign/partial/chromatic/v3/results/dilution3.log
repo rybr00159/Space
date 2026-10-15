@@ -1,0 +1,18 @@
+SuperWASP aperture/PSF calibration from blended-neighbour catalogue magnitudes
+  R=2.5 px: best sigma 34.1" (FWHM 5.87 px), rms mismatch 0.099 mag, model dm {'J220337.10': 0.718, 'J220328.23': 1.002} (obs 0.603, 1.083); dilution D = 0.0427
+  R=3.0 px: best sigma 31.3" (FWHM 5.37 px), rms mismatch 0.096 mag, model dm {'J220337.10': 0.715, 'J220328.23': 1.007} (obs 0.603, 1.083); dilution D = 0.0425
+  R=3.5 px: best sigma 25.4" (FWHM 4.36 px), rms mismatch 0.082 mag, model dm {'J220337.10': 0.707, 'J220328.23': 1.03} (obs 0.603, 1.083); dilution D = 0.0420
+  R=4.0 px: best sigma 20.9" (FWHM 3.60 px), rms mismatch 0.174 mag, model dm {'J220337.10': 0.532, 'J220328.23': 0.847} (obs 0.603, 1.083); dilution D = 0.0497
+  R=4.5 px: best sigma 26.8" (FWHM 4.60 px), rms mismatch 0.350 mag, model dm {'J220337.10': 0.416, 'J220328.23': 0.624} (obs 0.603, 1.083); dilution D = 0.0588
+WASP adopted D = 0.0420 (range over R 2.5-4.5 px with calibrated PSF: 0.0420-0.0588)
+  main contributors (R=3.5px): [(46.5, 15.17, 0.0202), (55.2, 15.17, 0.0152), (18.2, 16.87, 0.0059), (67.4, 19.21, 0.0002), (44.5, 19.83, 0.0002)]
+ASAS-SN V  R=16" FWHM 15": D = 0.0018; top [(18.2, 16.87, 0.0018), (46.7, 15.17, 0.0), (44.3, 19.83, 0.0)]
+ASAS-SN V  R=16" FWHM 20": D = 0.0022; top [(18.2, 16.87, 0.0022), (46.7, 15.17, 0.0), (44.3, 19.83, 0.0)]
+ASAS-SN V  R=24" FWHM 16": D = 0.0045; top [(18.2, 16.87, 0.0045), (46.7, 15.17, 0.0), (44.3, 19.83, 0.0)]
+ASAS-SN V  R=12" FWHM 16": D = 0.0009; top [(18.2, 16.87, 0.0009), (46.7, 15.17, 0.0), (44.3, 19.83, 0.0)]
+ASAS-3 MAG_0 (diam 2 px): D = 0.0022 (FWHM 1.5 px) .. 0.0051 (FWHM 2.5 px)
+ASAS-3 MAG_1 (diam 3 px): D = 0.0038 (FWHM 1.5 px) .. 0.0074 (FWHM 2.5 px)
+ASAS-3 MAG_2 (diam 4 px): D = 0.0065 (FWHM 1.5 px) .. 0.0119 (FWHM 2.5 px)
+ASAS-3 MAG_3 (diam 5 px): D = 0.0129 (FWHM 1.5 px) .. 0.0198 (FWHM 2.5 px)
+ASAS-3 MAG_4 (diam 6 px): D = 0.0279 (FWHM 1.5 px) .. 0.0318 (FWHM 2.5 px)
+W1 flux of the nearest neighbour (18.2", G=16.87) relative to target: 0.0429 (resolved by the 6" PSF; not a dilution term)

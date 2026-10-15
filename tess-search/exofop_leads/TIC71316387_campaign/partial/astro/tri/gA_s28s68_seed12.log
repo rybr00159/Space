@@ -1,0 +1,29 @@
+The current archive release 3.15 contains two breaking changes. Please see https://www.cosmos.esa.int/web/gaia/news#GACSrelease315 for details. In case of questions or feedback, please consult the Gaia helpdesk at https://www.cosmos.esa.int/web/gaia/gaia-helpdesk.
+
+Please note the archive will be unavailable on 15 October at 12 CEST for maintenance purposes. Apologies for the inconveniences.
+Getting TessCut for sector 28
+Getting TessCut for sector 68
+Estimated missing stellar parameters for 32 of 54 stars from photometry. See the 'params_estimated' column of the .stars dataframe. 1 appear evolved and were assigned a nominal 1 M_Sun.
+           ID     Tmag         Teff       rad      mass       plx  sep (arcsec)
+0    71316387  11.3576  5889.000000  1.070000  1.050000  3.362200         0.000
+1    71316388  16.0571  4020.000000  0.815833  0.630000  1.170380        18.293
+2  2027500562  19.1557  4473.203977  0.703490  0.706226  1.680050        44.752
+3    71316389  14.6670  5276.000000  0.654203  0.900000  1.476730        46.405
+4    71316386  14.7370  5707.000000  1.037340  1.020000  0.765454        54.931
+tdepth used: 0.004320702010077615 flux_err_0: 0.00018057066227625794 nbins: 111
+No apertures provided, assuming 5x5 centered on target.
+Removed 53 nearby star(s). Only the target will be considered by calc_probs() (NFPP = 0).
+          ID scenario           prob          lnZ       M_s       R_s        inc         b      M_EB      R_EB
+8   71316387   SEBx2P   9.189470e-01   -61.121386  0.346960  0.357460  85.780864  1.088435  0.333175  0.345909
+14  71316387   BEBx2P   8.105296e-02   -63.549512  0.714706  0.706882  80.306489  1.564572  0.706960  0.706882
+7   71316387      SEB   1.070815e-11   -86.296875  0.830733  0.857160  80.941782  0.569752  0.085029  0.100000
+13  71316387      BEB   7.039587e-16   -95.926671  0.898420  0.849840  81.116272  0.515089  0.107627  0.130691
+5   71316387   PEBx2P   7.420520e-19  -102.781727  1.050000  1.070000  75.873440  1.400223  1.035677  1.070000
+2   71316387    EBx2P   4.143591e-65  -209.283327  1.050000  1.070000  76.821902  1.046853  1.029059  1.070000
+11  71316387   DEBx2P   1.866220e-75  -233.106826  1.050000  1.070000  74.022469  1.738854  1.044789  1.070000
+4   71316387      PEB  3.140712e-294  -736.852427  1.050000  1.070000  58.252393  1.935647  0.963851  1.026433
+10  71316387      DEB  1.907638e-309  -771.889787  1.050000  1.070000  58.223575  1.884308  0.990694  1.065650
+0   71316387       TP   0.000000e+00         -inf  0.000000  0.000000   0.000000  0.000000  0.000000  0.000000
+1   71316387       EB   0.000000e+00 -1462.218682  1.050000  1.070000  54.850665  1.826386  0.969534  1.034709
+6   71316387      STP   0.000000e+00         -inf  0.000000  0.000000   0.000000  0.000000  0.000000  0.000000
+FPP 1.0 NFPP 0.0

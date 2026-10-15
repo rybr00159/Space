@@ -1,0 +1,4 @@
+S1: TC - SPOC eclipse times over 27 paired events: mean +60.8 +- 27.0 s (median +72.3, sd 140 s); correction applied to TESScut: -15.4 s
+S28: TC - SPOC eclipse times over 23 paired events: mean -13.6 +- 30.1 s (median -12.3, sd 144 s); correction applied to TESScut: -15.5 s
+S68: TC - SPOC eclipse times over 31 paired events: mean -42.1 +- 44.4 s (median +9.1, sd 247 s); correction applied to TESScut: -9.9 s
+combined TC - SPOC offset: +15.7 +- 18.3 s (chi2 5.4 / 2)

@@ -1,0 +1,38 @@
+injection-calibrated errors give linear chi2 233.0 for 184 dof -> all errors scaled by 1.125
+LTTE (circular) scan: best P_out 907 d, A = 2.13 min, dchi2 5.97; null p (look-elsewhere incl.) 0.371; null 95% best dchi2 12.0
+   P_out   1.0 yr: A_fit 1.29 min, 95% UL 14.69 min
+   P_out   2.0 yr: A_fit 3.38 min, 95% UL 7.95 min
+   P_out   4.0 yr: A_fit 0.69 min, 95% UL 1.57 min
+   P_out   7.9 yr: A_fit 0.77 min, 95% UL 1.95 min
+   P_out  16.0 yr: A_fit 3.49 min, 95% UL 8.73 min
+   timing-level positive control: injected c = 0.1 min/yr^2 -> recovered +0.099 +- 0.039; dchi2 6.6, null p 0.0185
+   timing-level positive control: injected c = 0.25 min/yr^2 -> recovered +0.249 +- 0.039; dchi2 41.6, null p 0.0000
+   timing-level positive control: injected c = 0.5 min/yr^2 -> recovered +0.499 +- 0.039; dchi2 167.3, null p 0.0000
+   timing-level positive control: injected c = 1.0 min/yr^2 -> recovered +0.999 +- 0.039; dchi2 670.5, null p 0.0000
+events 187, rejected 0
+lin        chi2 184.0 dof 184 BIC 199.7
+quad       chi2 184.0 dof 183 BIC 204.9
+cubic      chi2 181.8 dof 182 BIC 207.9
+quad_sep   chi2 181.9 dof 182 BIC 208.0
+lin_sep_P  chi2 182.7 dof 183 BIC 203.7
+P = 1.30367228 +- 0.016 s; T0 = 3165.670416 +- 0.26 min; sec - P/2 = +0.77 +- 0.55 min
+quadratic: c = -0.0011 +- 0.0386 min/yr^2; dP/dt = -0.0005 +- 0.0165 s/yr; dchi2 0.00 null p 0.982; null Q sd / formal 1.03
+linear chi2 184.0 (null median 201.1, p 0.783)
+  SPOC1_ph0.0    N= 15 O-C  +0.08 +- 0.57 min (scatter-based 0.64; chi2_within 18.3)
+  SPOC1_ph0.5    N= 17 O-C  -2.12 +- 1.27 min (scatter-based 1.44; chi2_within 22.0)
+  SPOC1_both     N= 32 O-C  -0.29 +- 0.52 min
+  SPOC28_ph0.0   N= 12 O-C  +1.04 +- 0.79 min (scatter-based 0.54; chi2_within 6.2)
+  SPOC28_ph0.5   N= 13 O-C  +1.32 +- 1.26 min (scatter-based 1.07; chi2_within 7.9)
+  SPOC28_both    N= 25 O-C  +1.12 +- 0.67 min
+  SPOC68_ph0.0   N= 15 O-C  -0.85 +- 0.60 min (scatter-based 0.39; chi2_within 6.3)
+  SPOC68_ph0.5   N= 16 O-C  -0.23 +- 1.15 min (scatter-based 1.36; chi2_within 19.5)
+  SPOC68_both    N= 31 O-C  -0.72 +- 0.53 min
+  TC105_ph0.0    N= 16 O-C  -0.20 +- 0.67 min (scatter-based 0.70; chi2_within 17.2)
+  TC105_ph0.5    N= 17 O-C  +0.84 +- 1.17 min (scatter-based 1.15; chi2_within 16.5)
+  TC105_both     N= 33 O-C  +0.05 +- 0.58 min
+  TC106_ph0.0    N= 17 O-C  -0.11 +- 0.68 min (scatter-based 0.75; chi2_within 18.3)
+  TC106_ph0.5    N= 15 O-C  -0.07 +- 1.28 min (scatter-based 1.61; chi2_within 19.1)
+  TC106_both     N= 32 O-C  -0.10 +- 0.60 min
+  TC95_ph0.0     N= 17 O-C  +0.38 +- 0.58 min (scatter-based 0.45; chi2_within 10.0)
+  TC95_ph0.5     N= 17 O-C  +0.10 +- 1.10 min (scatter-based 1.12; chi2_within 14.0)
+  TC95_both      N= 34 O-C  +0.32 +- 0.51 min

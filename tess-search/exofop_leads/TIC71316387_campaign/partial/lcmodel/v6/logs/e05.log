@@ -1,0 +1,8 @@
+SPOC-PDC1  global peak P=1.3036 d ((f-fEB)/res +0.00); power at P_EB 0.2552, max power of 20 peaks away from f_EB harmonics 0.0198, fraction >= P_EB power 0.000; amp at P_EB 442 ppm
+SPOC-PDC28 global peak P=1.3068 d ((f-fEB)/res -0.04); power at P_EB 0.1160, max power of 10 peaks away from f_EB harmonics 0.0028, fraction >= P_EB power 0.000; amp at P_EB 442 ppm
+SPOC-PDC68 global peak P=1.3073 d ((f-fEB)/res -0.05); power at P_EB 0.0134, max power of 14 peaks away from f_EB harmonics 0.0019, fraction >= P_EB power 0.000; amp at P_EB 279 ppm
+TC95       global peak P=3.1885 d ((f-fEB)/res -11.38); power at P_EB 0.0141, max power of 16 peaks away from f_EB harmonics 0.0086, fraction >= P_EB power 0.000; amp at P_EB 291 ppm
+TC105      global peak P=1.3007 d ((f-fEB)/res +0.05); power at P_EB 0.0293, max power of 14 peaks away from f_EB harmonics 0.0201, fraction >= P_EB power 0.000; amp at P_EB 478 ppm
+TC106      global peak P=1.3009 d ((f-fEB)/res +0.05); power at P_EB 0.0363, max power of 20 peaks away from f_EB harmonics 0.0083, fraction >= P_EB power 0.000; amp at P_EB 444 ppm
+TC105+106  global peak P=1.3046 d ((f-fEB)/res -0.03); power at P_EB 0.0318, max power of 52 peaks away from f_EB harmonics 0.0096, fraction >= P_EB power 0.000; amp at P_EB 458 ppm
+sectors with the global peak within 0.5 resolution of f_EB: 5 of 6 ; chance per sector 0.0172 ; binomial p(>=k) 8.785459776514271e-09

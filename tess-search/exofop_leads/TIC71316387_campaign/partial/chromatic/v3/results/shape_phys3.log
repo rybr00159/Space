@@ -1,0 +1,23 @@
+empirical template: chi2 38332.2, amplitudes 5771 / 2703 ppm
+K7V+M2V  best inc 83.1: chi2 38434.9 (template +102.7); fitted f1 = 0.0285 vs MS@297pc 0.0668 -> MS distance 455 pc; depth-matched (MS@297pc) inc 80.6 has chi2 worse by 642.0
+M0V+M3V  best inc 85.1: chi2 38445.3 (template +113.1); fitted f1 = 0.0226 vs MS@297pc 0.0460 -> MS distance 425 pc; depth-matched (MS@297pc) inc 82.6 has chi2 worse by 301.1
+K6V+M1V  best inc 82.0: chi2 38429.1 (template +96.9); fitted f1 = 0.0344 vs MS@297pc 0.0970 -> MS distance 500 pc; depth-matched (MS@297pc) inc 79.5 has chi2 worse by 958.3
+K5V+M1V  best inc 81.7: chi2 38429.2 (template +97.0); fitted f1 = 0.0373 vs MS@297pc 0.1191 -> MS distance 531 pc; depth-matched (MS@297pc) inc 79.2 has chi2 worse by 873.3
+K7V+M2V  radii x0.80: free-amplitude best inc 89.98 dchi2(vs template) +244.6, implied f1 0.0112 (bound-MS value 0.0428); bound-at-297pc constrained best inc 83.98 dchi2 +1044.3
+K7V+M2V  radii x0.90: free-amplitude best inc 89.77 dchi2(vs template) +136.5, implied f1 0.0107 (bound-MS value 0.0541); bound-at-297pc constrained best inc 82.52 dchi2 +674.4
+K7V+M2V  radii x1.00: free-amplitude best inc 83.05 dchi2(vs template) +103.1, implied f1 0.0295 (bound-MS value 0.0668); bound-at-297pc constrained best inc 81.30 dchi2 +468.5
+K7V+M2V  radii x1.10: free-amplitude best inc 81.07 dchi2(vs template) +92.6, implied f1 0.0442 (bound-MS value 0.0809); bound-at-297pc constrained best inc 79.82 dchi2 +279.1
+K7V+M2V  radii x1.20: free-amplitude best inc 79.34 dchi2(vs template) +89.7, implied f1 0.0623 (bound-MS value 0.0962); bound-at-297pc constrained best inc 78.59 dchi2 +172.0
+K7V+M2V  radii x1.35: free-amplitude best inc 76.73 dchi2(vs template) +84.2, implied f1 0.1104 (bound-MS value 0.1218); bound-at-297pc constrained best inc 76.48 dchi2 +132.7
+K7V+M2V  radii x1.50: free-amplitude best inc 74.35 dchi2(vs template) +84.2, implied f1 0.1802 (bound-MS value 0.1504); bound-at-297pc constrained best inc 74.60 dchi2 +93.3
+K7V+M2V  radii x1.75: free-amplitude best inc 70.67 dchi2(vs template) +82.7, implied f1 0.3445 (bound-MS value 0.2047); bound-at-297pc constrained best inc 71.42 dchi2 +280.7
+K7V+M2V  radii x2.00: free-amplitude best inc 67.17 dchi2(vs template) +80.1, implied f1 0.5479 (bound-MS value 0.2673); bound-at-297pc constrained best inc 67.92 dchi2 +430.4
+M0V+M3V  radii x0.80: free-amplitude best inc 89.97 dchi2(vs template) +277.8, implied f1 0.0145 (bound-MS value 0.0295); bound-at-297pc constrained best inc 85.47 dchi2 +894.4
+M0V+M3V  radii x0.90: free-amplitude best inc 89.85 dchi2(vs template) +66.4, implied f1 0.0139 (bound-MS value 0.0373); bound-at-297pc constrained best inc 84.35 dchi2 +553.7
+M0V+M3V  radii x1.00: free-amplitude best inc 85.23 dchi2(vs template) +113.2, implied f1 0.0218 (bound-MS value 0.0460); bound-at-297pc constrained best inc 82.98 dchi2 +319.6
+M0V+M3V  radii x1.10: free-amplitude best inc 82.85 dchi2(vs template) +97.4, implied f1 0.0347 (bound-MS value 0.0557); bound-at-297pc constrained best inc 81.60 dchi2 +190.9
+M0V+M3V  radii x1.20: free-amplitude best inc 80.97 dchi2(vs template) +91.2, implied f1 0.0512 (bound-MS value 0.0663); bound-at-297pc constrained best inc 80.47 dchi2 +125.8
+M0V+M3V  radii x1.35: free-amplitude best inc 78.51 dchi2(vs template) +87.1, implied f1 0.0848 (bound-MS value 0.0839); bound-at-297pc constrained best inc 78.51 dchi2 +90.3
+M0V+M3V  radii x1.50: free-amplitude best inc 76.28 dchi2(vs template) +85.7, implied f1 0.1304 (bound-MS value 0.1036); bound-at-297pc constrained best inc 76.78 dchi2 +174.6
+M0V+M3V  radii x1.75: free-amplitude best inc 72.62 dchi2(vs template) +82.3, implied f1 0.2772 (bound-MS value 0.1410); bound-at-297pc constrained best inc 73.62 dchi2 +314.3
+M0V+M3V  radii x2.00: free-amplitude best inc 69.41 dchi2(vs template) +83.9, implied f1 0.4255 (bound-MS value 0.1841); bound-at-297pc constrained best inc 70.41 dchi2 +578.3

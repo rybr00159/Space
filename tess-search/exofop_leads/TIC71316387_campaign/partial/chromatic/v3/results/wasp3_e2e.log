@@ -1,0 +1,7 @@
+template_3000  gain deep 1.000 +- 0.001  shallow 1.000 +- 0.000  (recovered deep 2963 +- 633 ppm)
+physical_3000  gain deep 1.039 +- 0.004  shallow 1.021 +- 0.010  (recovered deep 2581 +- 457 ppm)
+physical_6000  gain deep 1.034 +- 0.002  shallow 1.040 +- 0.004  (recovered deep 5222 +- 697 ppm)
+alt template T_d 0.0547 T_s 0.0728 d (1.31, 1.75 h); chi2 38593.2 vs default-template chi2 38778.7
+TESS mean (unweighted over 6 sectors): alt template deep 6259 shallow 2685; default template deep 5902 shallow 2691
+WASP alt template deep 2434 +- 576 shallow -1155 +- 578 ; ratio deep alt 0.389 vs default 0.401 ; shallow alt -0.430 vs default -0.430
+saved

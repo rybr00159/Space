@@ -1,0 +1,209 @@
+{
+ "M_EB": 1.0,
+ "M3": 1.03,
+ "DCHI": 9.0,
+ "EMAX": 0.8,
+ "chi2_lin": 184.0,
+ "err_rescale": 1.1158615521608095,
+ "n_events": 187,
+ "grid": [
+  {
+   "a_au": 3.0,
+   "P_out_yr": 3.646984043128984,
+   "ltte_semiamp_max_min": 12.659480973399011,
+   "frac_excluded": 0.99375,
+   "frac_detectable": 0.9955,
+   "median_abs_curv_min_per_yr2": 0.570233204972519,
+   "p90_abs_curv": 1.0612945707271524,
+   "median_dRV_gaia_kms": 6.168515017902248,
+   "frac_dRV_gt3": 0.75925
+  },
+  {
+   "a_au": 5.0,
+   "P_out_yr": 7.847060257179305,
+   "ltte_semiamp_max_min": 21.09913495566502,
+   "frac_excluded": 0.9955,
+   "frac_detectable": 0.99675,
+   "median_abs_curv_min_per_yr2": 0.9390167400777691,
+   "p90_abs_curv": 1.8044573856944066,
+   "median_dRV_gaia_kms": 7.219597076247023,
+   "frac_dRV_gt3": 0.79175
+  },
+  {
+   "a_au": 7.0,
+   "P_out_yr": 12.99867367239363,
+   "ltte_semiamp_max_min": 29.538788937931024,
+   "frac_excluded": 0.99125,
+   "frac_detectable": 0.99325,
+   "median_abs_curv_min_per_yr2": 1.0232556680269804,
+   "p90_abs_curv": 1.985840402176842,
+   "median_dRV_gaia_kms": 4.111886085246067,
+   "frac_dRV_gt3": 0.62725
+  },
+  {
+   "a_au": 10.0,
+   "P_out_yr": 22.194838080923763,
+   "ltte_semiamp_max_min": 42.19826991133004,
+   "frac_excluded": 0.95,
+   "frac_detectable": 0.95275,
+   "median_abs_curv_min_per_yr2": 0.6193358896964466,
+   "p90_abs_curv": 1.4810779197289636,
+   "median_dRV_gaia_kms": 2.037329486604331,
+   "frac_dRV_gt3": 0.32575
+  },
+  {
+   "a_au": 14.0,
+   "P_out_yr": 36.765801200722315,
+   "ltte_semiamp_max_min": 59.07757787586205,
+   "frac_excluded": 0.85625,
+   "frac_detectable": 0.8535,
+   "median_abs_curv_min_per_yr2": 0.3293427291835167,
+   "p90_abs_curv": 0.8864196505353257,
+   "median_dRV_gaia_kms": 1.0293937868286454,
+   "frac_dRV_gt3": 0.09625
+  },
+  {
+   "a_au": 20.0,
+   "P_out_yr": 62.77648205743444,
+   "ltte_semiamp_max_min": 84.39653982266007,
+   "frac_excluded": 0.64725,
+   "frac_detectable": 0.64825,
+   "median_abs_curv_min_per_yr2": 0.1624006617764042,
+   "p90_abs_curv": 0.4540766553934176,
+   "median_dRV_gaia_kms": 0.5024524838715017,
+   "frac_dRV_gt3": 0.02825
+  },
+  {
+   "a_au": 25.0,
+   "P_out_yr": 87.73280079294955,
+   "ltte_semiamp_max_min": 105.49567477832511,
+   "frac_excluded": 0.44025,
+   "frac_detectable": 0.43925,
+   "median_abs_curv_min_per_yr2": 0.10254580800324284,
+   "p90_abs_curv": 0.2845662168384304,
+   "median_dRV_gaia_kms": 0.3220358934830764,
+   "frac_dRV_gt3": 0.01025
+  },
+  {
+   "a_au": 30.0,
+   "P_out_yr": 115.32776166577342,
+   "ltte_semiamp_max_min": 126.59480973399013,
+   "frac_excluded": 0.29725,
+   "frac_detectable": 0.29625,
+   "median_abs_curv_min_per_yr2": 0.0731300041940208,
+   "p90_abs_curv": 0.19946044455334086,
+   "median_dRV_gaia_kms": 0.23416420688279216,
+   "frac_dRV_gt3": 0.00825
+  },
+  {
+   "a_au": 40.0,
+   "P_out_yr": 177.5587046473901,
+   "ltte_semiamp_max_min": 168.79307964532015,
+   "frac_excluded": 0.10925,
+   "frac_detectable": 0.11,
+   "median_abs_curv_min_per_yr2": 0.04029605156252168,
+   "p90_abs_curv": 0.12369350180318509,
+   "median_dRV_gaia_kms": 0.12981878351731446,
+   "frac_dRV_gt3": 0.00025
+  },
+  {
+   "a_au": 50.0,
+   "P_out_yr": 248.14583349273255,
+   "ltte_semiamp_max_min": 210.99134955665022,
+   "frac_excluded": 0.046,
+   "frac_detectable": 0.0455,
+   "median_abs_curv_min_per_yr2": 0.025826650562651876,
+   "p90_abs_curv": 0.07510015646369655,
+   "median_dRV_gaia_kms": 0.0813344433577603,
+   "frac_dRV_gt3": 0.0005
+  },
+  {
+   "a_au": 60.0,
+   "P_out_yr": 326.1961693317374,
+   "ltte_semiamp_max_min": 253.18961946798026,
+   "frac_excluded": 0.0235,
+   "frac_detectable": 0.024,
+   "median_abs_curv_min_per_yr2": 0.018029165448611134,
+   "p90_abs_curv": 0.052520896122517896,
+   "median_dRV_gaia_kms": 0.05606538879908757,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 80.0,
+   "P_out_yr": 502.21185645947554,
+   "ltte_semiamp_max_min": 337.5861592906403,
+   "frac_excluded": 0.00775,
+   "frac_detectable": 0.00775,
+   "median_abs_curv_min_per_yr2": 0.010043009859208224,
+   "p90_abs_curv": 0.029435531360559153,
+   "median_dRV_gaia_kms": 0.03159245326986533,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 100.0,
+   "P_out_yr": 701.8624063435964,
+   "ltte_semiamp_max_min": 421.98269911330044,
+   "frac_excluded": 0.00375,
+   "frac_detectable": 0.004,
+   "median_abs_curv_min_per_yr2": 0.006342023646116846,
+   "p90_abs_curv": 0.018981177920367236,
+   "median_dRV_gaia_kms": 0.020089502508312373,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 130.0,
+   "P_out_yr": 1040.320147768088,
+   "ltte_semiamp_max_min": 548.5775088472906,
+   "frac_excluded": 0.00075,
+   "frac_detectable": 0.001,
+   "median_abs_curv_min_per_yr2": 0.0038315734529311856,
+   "p90_abs_curv": 0.01089195118011405,
+   "median_dRV_gaia_kms": 0.012086826194072309,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 160.0,
+   "P_out_yr": 1420.4696371791208,
+   "ltte_semiamp_max_min": 675.1723185812806,
+   "frac_excluded": 0.0,
+   "frac_detectable": 0.0,
+   "median_abs_curv_min_per_yr2": 0.002504340652380907,
+   "p90_abs_curv": 0.0071922007481920345,
+   "median_dRV_gaia_kms": 0.007935524883183318,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 200.0,
+   "P_out_yr": 1985.1666679418604,
+   "ltte_semiamp_max_min": 843.9653982266009,
+   "frac_excluded": 0.0,
+   "frac_detectable": 0.0,
+   "median_abs_curv_min_per_yr2": 0.0016262024112627096,
+   "p90_abs_curv": 0.004622303891760727,
+   "median_dRV_gaia_kms": 0.005128386193878204,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 300.0,
+   "P_out_yr": 3646.984043128985,
+   "ltte_semiamp_max_min": 1265.948097339901,
+   "frac_excluded": 0.0,
+   "frac_detectable": 0.0,
+   "median_abs_curv_min_per_yr2": 0.0007172801467215943,
+   "p90_abs_curv": 0.0021096733490082787,
+   "median_dRV_gaia_kms": 0.0022521568964547767,
+   "frac_dRV_gt3": 0.0
+  },
+  {
+   "a_au": 500.0,
+   "P_out_yr": 7847.060257179306,
+   "ltte_semiamp_max_min": 2109.9134955665018,
+   "frac_excluded": 0.0,
+   "frac_detectable": 0.0,
+   "median_abs_curv_min_per_yr2": 0.000257706712701672,
+   "p90_abs_curv": 0.0007538471110788038,
+   "median_dRV_gaia_kms": 0.0008097290012509528,
+   "frac_dRV_gt3": 0.0
+  }
+ ]
+}

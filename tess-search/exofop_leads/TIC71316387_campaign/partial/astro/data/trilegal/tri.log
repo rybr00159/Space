@@ -1,0 +1,6 @@
+TRILEGAL v1.6 failed: HTTPSConnectionPool(host='stev.oapd.inaf.it', port=443): Max retries exceeded with url: /cgi-bin/trilegal_1.6 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+TRILEGAL v1.5 failed: HTTPSConnectionPool(host='stev.oapd.inaf.it', port=443): Max retries exceeded with url: /cgi-bin/trilegal_1.5 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+TRILEGAL unavailable after trying versions 1.6 and 1.5. The scenarios that need a simulated background population (DTP, DEB, DEBx2P, BTP, BEB, BEBx2P) will be skipped.
+url None
+Could not obtain a field-star population. Ignoring the DTP, DEB, DEBx2P, BTP, BEB, and BEBx2P scenarios.
+saved 0.0

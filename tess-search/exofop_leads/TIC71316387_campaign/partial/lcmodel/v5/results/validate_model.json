@@ -1,0 +1,15 @@
+{
+ "occ_vs_batman_maxabs": 1.5647323214906805e-08,
+ "occ_vs_brute_maxabs": 6.15172908691175e-06,
+ "lc_vs_brute_maxabs": 2.1255948392751023e-05,
+ "lc_depths": [
+  0.08282967573980693,
+  0.04927589163695589
+ ],
+ "secondary_offset_model_minus_halfP_min": 4.782610788372033,
+ "secondary_min_brute_minus_model_s": 1.5532411401512292,
+ "secondary_offset_approx_2Pecosw_over_pi_min": 4.8385347549489275,
+ "smear_maxabs_texp1800s": 1.7162775682866283e-06,
+ "smear_maxabs_texp600s": 2.7145066168188237e-06,
+ "smear_maxabs_texp200s": 5.162266865754717e-06
+}

@@ -1,0 +1,2 @@
+masked-detrending matched filter: deep 2005 +- 1293 ppm (null mean 372)  shallow -1705 +- 1327 ppm (null mean 391); null corr -0.06
+injection gain (masked recipe): deep 0.824 +- 0.014, shallow 0.831 +- 0.014

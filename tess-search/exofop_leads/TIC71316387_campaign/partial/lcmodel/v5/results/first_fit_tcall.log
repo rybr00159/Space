@@ -1,0 +1,9 @@
+chi2 call 30.817723274230957 ms; npts 24812
+/home/user/work/venv/lib/python3.12/site-packages/scipy/optimize/_optimize.py:2540: RuntimeWarning: invalid value encountered in scalar multiply
+  tmp2 = (x - v) * (fx - fw)
+/home/user/work/venv/lib/python3.12/site-packages/scipy/optimize/_optimize.py:2541: RuntimeWarning: invalid value encountered in scalar subtract
+  p = (x - v) * tmp2 - (x - w) * tmp1
+start L3=0.9 k=0.6: -logpost 14059.73 chi2 28119.35 T0=3165.7 P=1.3037 rsum=0.23727 k=0.11297 b0=0.77881 J=0.39628 L3=0.47458 ecosw=0.00065065 esinw=-0.0036243 usa=0.65859 u1a=0.2603 usb=0.6344 u1b=0.05 s_TC1=1.0117 s_TC28=1.0605 s_TC95=0.99307 s_TC105=0.97766 s_TC106=1.0119
+start L3=0.6 k=0.3: -logpost 14059.74 chi2 28119.37 T0=3165.7 P=1.3037 rsum=0.23822 k=0.11177 b0=0.78106 J=0.39635 L3=0.46326 ecosw=0.00065128 esinw=-0.0034638 usa=0.65887 u1a=0.2447 usb=0.63441 u1b=0.05 s_TC1=1.0119 s_TC28=1.0607 s_TC95=0.99323 s_TC105=0.97781 s_TC106=1.0121
+start L3=0.97 k=0.45: -logpost 14057.04 chi2 28114.07 T0=3165.7 P=1.3037 rsum=0.18447 k=0.24888 b0=0.53946 J=0.47744 L3=0.90726 ecosw=0.00063967 esinw=0.034867 usa=0.6376 u1a=0.49242 usb=0.6392 u1b=0.05 s_TC1=1.0105 s_TC28=1.0599 s_TC95=0.99265 s_TC105=0.97709 s_TC106=1.0116
+start L3=0.95 k=1.6: -logpost 14076.40 chi2 28152.78 T0=3165.7 P=1.3037 rsum=0.21348 k=3 b0=0.61137 J=1.0791 L3=0.93687 ecosw=0.00059524 esinw=0.19786 usa=0.64785 u1a=0.6 usb=0.64656 u1b=0.05 s_TC1=1.0075 s_TC28=1.0585 s_TC95=0.99002 s_TC105=0.9759 s_TC106=1.0108

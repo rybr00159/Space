@@ -1,0 +1,22 @@
+BJD_TDB-HJD_UTC median 64.3 s; span BJD 2453862.56..2454418.42; cycles -4835..-4409; ephemeris 1-sigma at mid-span 3.26 min
+TAM_o1 (default)           n=18498 nseg=310 in-d  624 (33 ev) in-s  461 (29 ev) | deep   2364 +-  571 (formal  488 beta 1.05 nullmean   -21) p>=0.0010 | shallow  -1158 +-  549 (nullmean   -62) | gain6000 d 1.000 s 1.000
+offset scan: max deep S/N at dphase -0.0015 (-2.8 min), amp 2380; chi2 min at -0.0020 (-3.8 min); amp at 0 2364
+TAM_o0                     n=18446 nseg=310 in-d  623 (33 ev) in-s  458 (29 ev) | deep   2731 +-  439 (formal  463 beta 0.90 nullmean   -41) p>=0.0020 | shallow   -241 +-  408 (nullmean   -65) | gain6000 d 1.000 s 1.000
+TAM_o2                     n=18537 nseg=310 in-d  626 (33 ev) in-s  462 (29 ev) | deep   2874 +-  539 (formal  524 beta 0.90 nullmean    34) p>=0.0020 | shallow   -533 +-  570 (nullmean   -30) | gain6000 d 1.000 s 1.000
+TAM_clip3                  n=18136 nseg=308 in-d  616 (33 ev) in-s  455 (29 ev) | deep   2491 +-  579 (formal  485 beta 1.08 nullmean    -0) p>=0.0020 | shallow   -604 +-  558 (nullmean   -12) | gain6000 d 1.000 s 1.000
+TAM_clip6                  n=18687 nseg=310 in-d  629 (33 ev) in-s  468 (29 ev) | deep   2251 +-  607 (formal  496 beta 1.11 nullmean    35) p>=0.0020 | shallow   -876 +-  622 (nullmean    -1) | gain6000 d 1.000 s 1.000
+TAM_minpts40               n=16466 nseg=227 in-d  582 (32 ev) in-s  404 (23 ev) | deep   2325 +-  585 (formal  493 beta 1.04 nullmean   -11) p>=0.0020 | shallow  -1005 +-  574 (nullmean   -52) | gain6000 d 1.000 s 1.000
+RAW_o1                     n=18949 nseg=318 in-d  679 (36 ev) in-s  500 (31 ev) | deep   2289 +-  727 (formal  490 beta 1.30 nullmean    64) p>=0.0020 | shallow   -782 +-  673 (nullmean   -29) | gain6000 d 1.000 s 1.000
+RAW_o2                     n=18996 nseg=318 in-d  680 (36 ev) in-s  501 (31 ev) | deep   2626 +-  621 (formal  528 beta 1.01 nullmean    32) p>=0.0020 | shallow   -230 +-  603 (nullmean   -41) | gain6000 d 1.000 s 1.000
+TAM_cam227                 n=10777 nseg=163 in-d  374 (30 ev) in-s  260 (25 ev) | deep   2090 +-  753 (formal  616 beta 1.18 nullmean   -14) p>=0.0020 | shallow   -753 +-  762 (nullmean   -37) | gain6000 d 1.000 s 1.000
+TAM_cam228                 n= 7718 nseg=147 in-d  250 (26 ev) in-s  200 (21 ev) | deep   2675 +- 1237 (formal  821 beta 1.22 nullmean   -25) p>=0.0120 | shallow  -1090 +- 1184 (nullmean  -121) | gain6000 d 1.000 s 1.000
+TAM_season2006             n= 8273 nseg=161 in-d  233 (15 ev) in-s  204 (16 ev) | deep   1861 +-  940 (formal  867 beta 1.09 nullmean   -58) p>=0.0339 | shallow    854 +- 1077 (nullmean  -178) | gain6000 d 1.000 s 1.000
+TAM_season2007             n=10232 nseg=149 in-d  391 (18 ev) in-s  258 (13 ev) | deep   2515 +-  696 (formal  591 beta 0.94 nullmean    40) p>=0.0020 | shallow  -1453 +-  691 (nullmean    53) | gain6000 d 1.000 s 1.000
+season 2008 only 0 points; skipped
+TAM_trim_night_ends        n=10727 nseg=251 in-d  419 (26 ev) in-s  264 (20 ev) | deep   3501 +-  801 (formal  663 beta 1.10 nullmean    83) p>=0.0020 | shallow    170 +-  820 (nullmean    21) | gain6000 d 1.000 s 1.000
+TAM_nominal_ephemeris      n=18495 nseg=310 in-d  639 (33 ev) in-s  465 (29 ev) | deep   2125 +-  553 (formal  492 beta 1.01 nullmean   -33) p>=0.0020 | shallow  -1300 +-  545 (nullmean   -65) | gain6000 d 1.000 s 1.000
+1SWASP_J220321.80-425123.9 n=17573 nseg=295 in-d  596 (33 ev) in-s  438 (28 ev) | deep  -4353 +- 4518 (formal 4762 beta 0.94 nullmean  -658) p>=0.7844 | shallow   6019 +- 4743 (nullmean  -635) | gain6000 d 1.001 s 1.000
+1SWASP_J220322.16-424809.1 n=17452 nseg=292 in-d  593 (33 ev) in-s  436 (28 ev) | deep   -983 +- 2541 (formal 1941 beta 1.28 nullmean  -218) p>=0.5888 | shallow   2589 +- 2468 (nullmean  -358) | gain6000 d 1.001 s 1.001
+1SWASP_J220337.10-425021.6 n=18992 nseg=309 in-d  625 (33 ev) in-s  480 (29 ev) | deep   -888 +- 3532 (formal 2364 beta 1.43 nullmean  -188) p>=0.5489 | shallow   4634 +- 4023 (nullmean  -161) | gain6000 d 1.001 s 1.000
+1SWASP_J220328.23-424954.8 n=17843 nseg=298 in-d  606 (33 ev) in-s  445 (28 ev) | deep   4738 +- 5766 (formal 3596 beta 1.54 nullmean    93) p>=0.2216 | shallow   1375 +- 6567 (nullmean  -369) | gain6000 d 1.000 s 1.000
+saved

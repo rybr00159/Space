@@ -1,0 +1,12 @@
+== S29
+kelt_sourceid,kelt_orientation,proc_type,ra,dec,kelt_mag
+KELT_S29_lc_064338_V01_east,east,raw,330.87242,-42.86908,16.112
+KELT_S29_lc_064338_V01_east,west,raw,330.87242,-42.86908,16.168
+KELT_S29_lc_064338_V01_east,east,tfa,330.87242,-42.86908,16.112
+KELT_S29_lc_064338_V01_east,west,tfa,330.87242,-42.86908,16.168
+== S05
+kelt_sourceid,kelt_orientation,proc_type,ra,dec,kelt_mag
+== S12
+kelt_sourceid,kelt_orientation,proc_type,ra,dec,kelt_mag
+== S14
+kelt_sourceid,kelt_orientation,proc_type,ra,dec,kelt_mag

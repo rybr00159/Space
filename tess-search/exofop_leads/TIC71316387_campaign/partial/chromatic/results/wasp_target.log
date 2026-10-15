@@ -1,0 +1,14 @@
+BJD-HJD offset (s): median 64.3
+wasp_target_TAM_o1: n=18522 nseg=313 in-deep=832 (34 events) in-shallow=600 (30 events); deep 2744 +- 738 (null -81, formal 636) ppm, p_null=0.0025; shallow -1571 +- 719 ppm p_null=0.9825
+   inj 0.003: deep rec 2999 +- 771 (ratio 1.000); shallow rec 1318 +- 623 (ratio 0.935)
+   inj 0.006: deep rec 5915 +- 703 (ratio 0.986); shallow rec 2646 +- 619 (ratio 0.938)
+   phase scan: max deep amplitude 2744 ppm at dphase 0.0000 (0.0 min)
+  variant TAM_o0     n=18462 deep   3227 +-  612 (null mean  -100)  shallow   -437 +-  602  inj6000 ratio 0.977
+  variant TAM_o2     n=18561 deep   3033 +-  735 (null mean     4)  shallow   -656 +-  720  inj6000 ratio 1.006
+  variant RAW_o1     n=18435 deep   2633 +-  880 (null mean   -11)  shallow  -1440 +-  908  inj6000 ratio 1.000
+  variant RAW_o2     n=18477 deep   2759 +-  800 (null mean   -34)  shallow   -549 +-  801  inj6000 ratio 1.002
+  variant cam227     n=10787 deep   2248 +- 1054 (null mean   -31)  shallow   -752 +- 1008  inj6000 ratio 0.983
+  variant cam228     n= 7740 deep   3330 +- 1517 (null mean  -182)  shallow  -2375 +- 1575  inj6000 ratio 1.002
+  variant season2006 n= 8279 deep   2388 +- 1290 (null mean  -256)  shallow    189 +- 1242  inj6000 ratio 0.978
+  variant season2007_08 n=10251 deep   2841 +-  952 (null mean    97)  shallow  -1921 +-  960  inj6000 ratio 1.002
+  variant clip3      n=18176 deep   3042 +-  762 (null mean   -57)  shallow  -1191 +-  768  inj6000 ratio 0.989

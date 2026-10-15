@@ -1,0 +1,18 @@
+S1 TC-AP: sigma 499 ppm; events 32; injections 170
+S28 TC-AP: sigma 911 ppm; events 28; injections 148
+S68 TC-AP: sigma 1577 ppm; events 34; injections 202
+S95 TC-AP: sigma 1782 ppm; events 34; injections 182
+S105 TC-AP: sigma 1703 ppm; events 33; injections 194
+S106 TC-AP: sigma 1576 ppm; events 32; injections 184
+S1 ph0.0: N=15 median formal 2.20 min, real robust rms 1.96 | inj N=85 bias -0.39 robust sd 2.54 min, z-scale 1.15
+S1 ph0.5: N=15 median formal 4.50 min, real robust rms 4.55 | inj N=82 bias -0.64 robust sd 5.07 min, z-scale 1.11
+S28 ph0.0: N=12 median formal 1.88 min, real robust rms 2.94 | inj N=74 bias -0.18 robust sd 1.76 min, z-scale 0.89
+S28 ph0.5: N=16 median formal 3.79 min, real robust rms 5.14 | inj N=72 bias -0.63 robust sd 4.80 min, z-scale 1.11
+S68 ph0.0: N=16 median formal 1.97 min, real robust rms 1.90 | inj N=101 bias -0.21 robust sd 1.96 min, z-scale 1.01
+S68 ph0.5: N=16 median formal 3.99 min, real robust rms 5.44 | inj N=100 bias -0.31 robust sd 3.81 min, z-scale 1.07
+S95 ph0.0: N=17 median formal 2.35 min, real robust rms 1.72 | inj N=91 bias -0.26 robust sd 2.27 min, z-scale 0.94
+S95 ph0.5: N=16 median formal 4.72 min, real robust rms 2.80 | inj N=91 bias +0.02 robust sd 4.35 min, z-scale 0.87
+S105 ph0.0: N=16 median formal 2.33 min, real robust rms 2.70 | inj N=97 bias -0.05 robust sd 2.06 min, z-scale 0.95
+S105 ph0.5: N=16 median formal 4.24 min, real robust rms 3.40 | inj N=94 bias -0.47 robust sd 3.85 min, z-scale 0.85
+S106 ph0.0: N=17 median formal 1.96 min, real robust rms 2.17 | inj N=92 bias -0.22 robust sd 2.45 min, z-scale 1.14
+S106 ph0.5: N=14 median formal 3.87 min, real robust rms 6.64 | inj N=87 bias -0.78 robust sd 4.65 min, z-scale 1.20

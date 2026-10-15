@@ -1,0 +1,36 @@
+S1 n=1165 point rms 494 ppm
+S28 n=2501 point rms 929 ppm
+S68 n=8846 point rms 1578 ppm
+S95 n=9558 point rms 1676 ppm
+S105 n=9854 point rms 1794 ppm
+S106 n=9172 point rms 1609 ppm
+shape start [0.068, 2.0, 1.0] -> chi2 40454.37 [8.56100e-02 3.32588e+00 7.77746e+00 6.60000e-04 8.53000e-02 4.34474e+00
+ 9.99999e+00 1.44000e-03]
+shape start [0.064, 1.3, 1.6] -> chi2 40454.19 [9.09500e-02 3.37516e+00 1.00000e+01 6.50000e-04 8.51800e-02 4.35092e+00
+ 1.00000e+01 1.45000e-03]
+shape start [0.075, 3.5, 3.0] -> chi2 40454.19 [9.09000e-02 3.37769e+00 1.00000e+01 6.50000e-04 8.51000e-02 4.35700e+00
+ 9.99544e+00 1.45000e-03]
+shape chi2 40454.2 for 39931 points
+d T=0.0909 d (2.182 h) p=3.378 q=10.000 FWHM 0.980 h; centre offset 1.23 min
+s T=0.0851 d (2.042 h) p=4.357 q=9.995 FWHM 1.098 h; centre offset 2.72 min
+S1   deep  6087 +- 133 (formal 106 null sd 132 mean    8 beta 1.25) shallow  2665 +- 120 (null mean   -4) s/d 0.438
+S28  deep  6238 +- 119 (formal 125 null sd 119 mean  -21 beta 0.93) shallow  2668 +- 113 (null mean   -5) s/d 0.428
+S68  deep  5756 +- 131 (formal 115 null sd 131 mean   22 beta 1.12) shallow  2573 +- 118 (null mean   23) s/d 0.447
+S95  deep  5744 +- 113 (formal 112 null sd 113 mean   29 beta 0.95) shallow  2686 +-  98 (null mean   32) s/d 0.468
+S105 deep  5676 +- 131 (formal 123 null sd 131 mean  -26 beta 1.06) shallow  2764 +- 134 (null mean  -33) s/d 0.487
+S106 deep  5879 +- 160 (formal 112 null sd 160 mean  -17 beta 1.37) shallow  2791 +- 157 (null mean  -21) s/d 0.475
+spoc     deep      6040 +- 143 ppm (chi2 7.6/2, sd 247)
+spoc     shallow   2636 +-  68 ppm (chi2 0.4/2, sd 54)
+tesscut  deep      5752 +-  76 ppm (chi2 1.0/2, sd 103)
+tesscut  shallow   2729 +-  71 ppm (chi2 0.4/2, sd 54)
+all      deep      5900 +-  94 ppm (chi2 16.0/5, sd 221)
+all      shallow   2680 +-  49 ppm (chi2 1.7/5, sd 78)
+ADOPTED deep 5900 +- 172 ppm (stat 94, sys 144)
+ADOPTED shallow 2680 +- 67 ppm (stat 49, sys 46)
+s/d = 0.454
+S1   E= -1402  deep dt  -2.24 +- 0.49 (boot 0.67) min   shallow dt  -5.50 +- 1.05 (boot 1.41) min
+S28  E=  -840  deep dt  -0.88 +- 0.54 (boot 0.60) min   shallow dt  -0.97 +- 1.13 (boot 0.94) min
+S68  E=     2  deep dt  -1.30 +- 0.52 (boot 0.42) min   shallow dt  -0.99 +- 1.14 (boot 1.40) min
+S95  E=   558  deep dt  +0.84 +- 0.50 (boot 0.50) min   shallow dt  +0.01 +- 1.00 (boot 1.05) min
+S105 E=   807  deep dt  +0.11 +- 0.56 (boot 0.74) min   shallow dt  +1.28 +- 1.06 (boot 0.83) min
+S106 E=   828  deep dt  +0.98 +- 0.49 (boot 0.68) min   shallow dt  +0.44 +- 1.04 (boot 1.22) min

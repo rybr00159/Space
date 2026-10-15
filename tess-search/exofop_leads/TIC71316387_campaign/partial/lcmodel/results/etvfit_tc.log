@@ -1,0 +1,23 @@
+events 186 kept 186
+linear chi2 183.4 dof 183; secondary offset -0.44 +- 0.49 min; P = 1.30367214 +- 0.00000019
+quadratic c2 = 0.039 +- 0.036 min/yr^2, dchi2 = 1.16
+S1 ph0.0: N=15 mean resid +0.869 +- 0.733 min   within-sector chi2/dof 8.1/14
+S1 ph0.5: N=15 mean resid -1.049 +- 1.122 min   within-sector chi2/dof 11.7/14
+S28 ph0.0: N=12 mean resid +0.330 +- 0.564 min   within-sector chi2/dof 12.7/11
+S28 ph0.5: N=16 mean resid -1.028 +- 0.949 min   within-sector chi2/dof 22.5/15
+S68 ph0.0: N=16 mean resid -0.557 +- 0.493 min   within-sector chi2/dof 12.5/15
+S68 ph0.5: N=15 mean resid +0.366 +- 0.976 min   within-sector chi2/dof 16.7/14
+S95 ph0.0: N=17 mean resid -0.213 +- 0.570 min   within-sector chi2/dof 10.1/16
+S95 ph0.5: N=17 mean resid +0.630 +- 1.049 min   within-sector chi2/dof 17.1/16
+S105 ph0.0: N=16 mean resid -0.032 +- 0.691 min   within-sector chi2/dof 10.4/15
+S105 ph0.5: N=17 mean resid +0.938 +- 1.044 min   within-sector chi2/dof 30.0/16
+S106 ph0.0: N=17 mean resid +0.188 +- 0.724 min   within-sector chi2/dof 12.3/16
+S106 ph0.5: N=13 mean resid +0.203 +- 1.130 min   within-sector chi2/dof 12.9/12
+chi2 of 6 sector means about linear ephemeris: 1.25
+null: p(dchi2 >= obs) = 0.352 ; sd(c2) = 0.035 min/yr^2 ; 95% / 99.7% dchi2 = 4.90 / 10.79
+LTTE best Pout 0.56 yr dchi2 3.52 amp 1.04 min, null p=0.667
+inject c2=0.05 min/yr^2 (peak-to-peak curvature after linear removal ~0.40 min): recovered 0.076 +- 0.036, detected(99.7%) 0.11
+inject c2=0.10 min/yr^2 (peak-to-peak curvature after linear removal ~0.81 min): recovered 0.123 +- 0.037, detected(99.7%) 0.54
+inject c2=0.20 min/yr^2 (peak-to-peak curvature after linear removal ~1.62 min): recovered 0.220 +- 0.036, detected(99.7%) 1.00
+inject c2=0.40 min/yr^2 (peak-to-peak curvature after linear removal ~3.23 min): recovered 0.421 +- 0.034, detected(99.7%) 1.00
+inject c2=0.80 min/yr^2 (peak-to-peak curvature after linear removal ~6.46 min): recovered 0.821 +- 0.034, detected(99.7%) 1.00

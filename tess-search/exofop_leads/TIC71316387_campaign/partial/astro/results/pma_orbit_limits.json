@@ -1,0 +1,1562 @@
+{
+ "0.3": [
+  {
+   "a_au": 1.0,
+   "rho_arcsec": 0.0034,
+   "P_yr": 0.87,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.756,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.052
+  },
+  {
+   "a_au": 1.26,
+   "rho_arcsec": 0.0042,
+   "P_yr": 1.22,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.755,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.068
+  },
+  {
+   "a_au": 1.58,
+   "rho_arcsec": 0.0053,
+   "P_yr": 1.73,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.646,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.189
+  },
+  {
+   "a_au": 2.0,
+   "rho_arcsec": 0.0067,
+   "P_yr": 2.44,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.556,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.385
+  },
+  {
+   "a_au": 2.51,
+   "rho_arcsec": 0.0084,
+   "P_yr": 3.45,
+   "f_excl_pm": 0.15,
+   "f_excl_rv": 0.342,
+   "f_excl_ruwe": 0.999,
+   "f_excl_any": 0.999,
+   "median_abs_dmu": 1.0
+  },
+  {
+   "a_au": 3.16,
+   "rho_arcsec": 0.0106,
+   "P_yr": 4.88,
+   "f_excl_pm": 0.305,
+   "f_excl_rv": 0.151,
+   "f_excl_ruwe": 0.981,
+   "f_excl_any": 0.986,
+   "median_abs_dmu": 1.365
+  },
+  {
+   "a_au": 3.98,
+   "rho_arcsec": 0.0134,
+   "P_yr": 6.89,
+   "f_excl_pm": 0.356,
+   "f_excl_rv": 0.069,
+   "f_excl_ruwe": 0.937,
+   "f_excl_any": 0.951,
+   "median_abs_dmu": 1.425
+  },
+  {
+   "a_au": 5.01,
+   "rho_arcsec": 0.0169,
+   "P_yr": 9.73,
+   "f_excl_pm": 0.363,
+   "f_excl_rv": 0.029,
+   "f_excl_ruwe": 0.754,
+   "f_excl_any": 0.796,
+   "median_abs_dmu": 1.413
+  },
+  {
+   "a_au": 6.31,
+   "rho_arcsec": 0.0212,
+   "P_yr": 13.74,
+   "f_excl_pm": 0.299,
+   "f_excl_rv": 0.012,
+   "f_excl_ruwe": 0.514,
+   "f_excl_any": 0.602,
+   "median_abs_dmu": 1.259
+  },
+  {
+   "a_au": 7.94,
+   "rho_arcsec": 0.0267,
+   "P_yr": 19.41,
+   "f_excl_pm": 0.258,
+   "f_excl_rv": 0.006,
+   "f_excl_ruwe": 0.236,
+   "f_excl_any": 0.378,
+   "median_abs_dmu": 1.143
+  },
+  {
+   "a_au": 10.0,
+   "rho_arcsec": 0.0336,
+   "P_yr": 27.42,
+   "f_excl_pm": 0.227,
+   "f_excl_rv": 0.002,
+   "f_excl_ruwe": 0.104,
+   "f_excl_any": 0.268,
+   "median_abs_dmu": 1.056
+  },
+  {
+   "a_au": 12.59,
+   "rho_arcsec": 0.0423,
+   "P_yr": 38.73,
+   "f_excl_pm": 0.155,
+   "f_excl_rv": 0.002,
+   "f_excl_ruwe": 0.059,
+   "f_excl_any": 0.177,
+   "median_abs_dmu": 0.898
+  },
+  {
+   "a_au": 15.85,
+   "rho_arcsec": 0.0533,
+   "P_yr": 54.71,
+   "f_excl_pm": 0.175,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.025,
+   "f_excl_any": 0.184,
+   "median_abs_dmu": 0.91
+  },
+  {
+   "a_au": 19.95,
+   "rho_arcsec": 0.0671,
+   "P_yr": 77.28,
+   "f_excl_pm": 0.148,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.01,
+   "f_excl_any": 0.151,
+   "median_abs_dmu": 0.915
+  },
+  {
+   "a_au": 25.12,
+   "rho_arcsec": 0.0845,
+   "P_yr": 109.16,
+   "f_excl_pm": 0.081,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.006,
+   "f_excl_any": 0.083,
+   "median_abs_dmu": 0.747
+  },
+  {
+   "a_au": 31.62,
+   "rho_arcsec": 0.1063,
+   "P_yr": 154.2,
+   "f_excl_pm": 0.032,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.003,
+   "f_excl_any": 0.033,
+   "median_abs_dmu": 0.529
+  },
+  {
+   "a_au": 39.81,
+   "rho_arcsec": 0.1339,
+   "P_yr": 217.81,
+   "f_excl_pm": 0.019,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.001,
+   "f_excl_any": 0.019,
+   "median_abs_dmu": 0.349
+  },
+  {
+   "a_au": 50.12,
+   "rho_arcsec": 0.1685,
+   "P_yr": 307.66,
+   "f_excl_pm": 0.007,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.007,
+   "median_abs_dmu": 0.215
+  },
+  {
+   "a_au": 63.1,
+   "rho_arcsec": 0.2121,
+   "P_yr": 434.58,
+   "f_excl_pm": 0.004,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.004,
+   "median_abs_dmu": 0.137
+  },
+  {
+   "a_au": 79.43,
+   "rho_arcsec": 0.2671,
+   "P_yr": 613.87,
+   "f_excl_pm": 0.002,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.002,
+   "median_abs_dmu": 0.087
+  },
+  {
+   "a_au": 100.0,
+   "rho_arcsec": 0.3362,
+   "P_yr": 867.11,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.054
+  },
+  {
+   "a_au": 125.89,
+   "rho_arcsec": 0.4233,
+   "P_yr": 1224.83,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.034
+  },
+  {
+   "a_au": 158.49,
+   "rho_arcsec": 0.5329,
+   "P_yr": 1730.11,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.022
+  },
+  {
+   "a_au": 199.53,
+   "rho_arcsec": 0.6708,
+   "P_yr": 2443.85,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.014
+  },
+  {
+   "a_au": 251.19,
+   "rho_arcsec": 0.8445,
+   "P_yr": 3452.03,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.009
+  },
+  {
+   "a_au": 316.23,
+   "rho_arcsec": 1.0632,
+   "P_yr": 4876.12,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.005
+  },
+  {
+   "a_au": 398.11,
+   "rho_arcsec": 1.3385,
+   "P_yr": 6887.7,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.003
+  },
+  {
+   "a_au": 501.19,
+   "rho_arcsec": 1.6851,
+   "P_yr": 9729.13,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.002
+  },
+  {
+   "a_au": 630.96,
+   "rho_arcsec": 2.1214,
+   "P_yr": 13742.77,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  },
+  {
+   "a_au": 794.33,
+   "rho_arcsec": 2.6707,
+   "P_yr": 19412.17,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  },
+  {
+   "a_au": 1000.0,
+   "rho_arcsec": 3.3622,
+   "P_yr": 27420.42,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  }
+ ],
+ "0.5": [
+  {
+   "a_au": 1.0,
+   "rho_arcsec": 0.0034,
+   "P_yr": 0.81,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.915,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.024
+  },
+  {
+   "a_au": 1.26,
+   "rho_arcsec": 0.0042,
+   "P_yr": 1.14,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.898,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.038
+  },
+  {
+   "a_au": 1.58,
+   "rho_arcsec": 0.0053,
+   "P_yr": 1.61,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.849,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.374
+  },
+  {
+   "a_au": 2.0,
+   "rho_arcsec": 0.0067,
+   "P_yr": 2.28,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.815,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.409
+  },
+  {
+   "a_au": 2.51,
+   "rho_arcsec": 0.0084,
+   "P_yr": 3.22,
+   "f_excl_pm": 0.342,
+   "f_excl_rv": 0.746,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 1.421
+  },
+  {
+   "a_au": 3.16,
+   "rho_arcsec": 0.0106,
+   "P_yr": 4.55,
+   "f_excl_pm": 0.643,
+   "f_excl_rv": 0.481,
+   "f_excl_ruwe": 0.996,
+   "f_excl_any": 0.997,
+   "median_abs_dmu": 2.045
+  },
+  {
+   "a_au": 3.98,
+   "rho_arcsec": 0.0134,
+   "P_yr": 6.42,
+   "f_excl_pm": 0.727,
+   "f_excl_rv": 0.253,
+   "f_excl_ruwe": 0.981,
+   "f_excl_any": 0.992,
+   "median_abs_dmu": 2.388
+  },
+  {
+   "a_au": 5.01,
+   "rho_arcsec": 0.0169,
+   "P_yr": 9.07,
+   "f_excl_pm": 0.694,
+   "f_excl_rv": 0.11,
+   "f_excl_ruwe": 0.941,
+   "f_excl_any": 0.969,
+   "median_abs_dmu": 2.253
+  },
+  {
+   "a_au": 6.31,
+   "rho_arcsec": 0.0212,
+   "P_yr": 12.81,
+   "f_excl_pm": 0.631,
+   "f_excl_rv": 0.049,
+   "f_excl_ruwe": 0.789,
+   "f_excl_any": 0.862,
+   "median_abs_dmu": 2.045
+  },
+  {
+   "a_au": 7.94,
+   "rho_arcsec": 0.0267,
+   "P_yr": 18.1,
+   "f_excl_pm": 0.567,
+   "f_excl_rv": 0.024,
+   "f_excl_ruwe": 0.55,
+   "f_excl_any": 0.721,
+   "median_abs_dmu": 1.813
+  },
+  {
+   "a_au": 10.0,
+   "rho_arcsec": 0.0336,
+   "P_yr": 25.57,
+   "f_excl_pm": 0.544,
+   "f_excl_rv": 0.013,
+   "f_excl_ruwe": 0.293,
+   "f_excl_any": 0.615,
+   "median_abs_dmu": 1.723
+  },
+  {
+   "a_au": 12.59,
+   "rho_arcsec": 0.0423,
+   "P_yr": 36.11,
+   "f_excl_pm": 0.408,
+   "f_excl_rv": 0.004,
+   "f_excl_ruwe": 0.119,
+   "f_excl_any": 0.429,
+   "median_abs_dmu": 1.473
+  },
+  {
+   "a_au": 15.85,
+   "rho_arcsec": 0.0533,
+   "P_yr": 51.01,
+   "f_excl_pm": 0.433,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.06,
+   "f_excl_any": 0.442,
+   "median_abs_dmu": 1.439
+  },
+  {
+   "a_au": 19.95,
+   "rho_arcsec": 0.0671,
+   "P_yr": 72.05,
+   "f_excl_pm": 0.42,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.029,
+   "f_excl_any": 0.424,
+   "median_abs_dmu": 1.506
+  },
+  {
+   "a_au": 25.12,
+   "rho_arcsec": 0.0845,
+   "P_yr": 101.78,
+   "f_excl_pm": 0.308,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.02,
+   "f_excl_any": 0.312,
+   "median_abs_dmu": 1.259
+  },
+  {
+   "a_au": 31.62,
+   "rho_arcsec": 0.1063,
+   "P_yr": 143.77,
+   "f_excl_pm": 0.164,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.008,
+   "f_excl_any": 0.166,
+   "median_abs_dmu": 0.926
+  },
+  {
+   "a_au": 39.81,
+   "rho_arcsec": 0.1339,
+   "P_yr": 203.07,
+   "f_excl_pm": 0.076,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.004,
+   "f_excl_any": 0.077,
+   "median_abs_dmu": 0.602
+  },
+  {
+   "a_au": 50.12,
+   "rho_arcsec": 0.1685,
+   "P_yr": 286.85,
+   "f_excl_pm": 0.033,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.001,
+   "f_excl_any": 0.033,
+   "median_abs_dmu": 0.387
+  },
+  {
+   "a_au": 63.1,
+   "rho_arcsec": 0.2121,
+   "P_yr": 405.19,
+   "f_excl_pm": 0.022,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.001,
+   "f_excl_any": 0.022,
+   "median_abs_dmu": 0.241
+  },
+  {
+   "a_au": 79.43,
+   "rho_arcsec": 0.2671,
+   "P_yr": 572.34,
+   "f_excl_pm": 0.007,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.007,
+   "median_abs_dmu": 0.148
+  },
+  {
+   "a_au": 100.0,
+   "rho_arcsec": 0.3362,
+   "P_yr": 808.45,
+   "f_excl_pm": 0.004,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.004,
+   "median_abs_dmu": 0.094
+  },
+  {
+   "a_au": 125.89,
+   "rho_arcsec": 0.4233,
+   "P_yr": 1141.97,
+   "f_excl_pm": 0.002,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.002,
+   "median_abs_dmu": 0.059
+  },
+  {
+   "a_au": 158.49,
+   "rho_arcsec": 0.5329,
+   "P_yr": 1613.07,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.038
+  },
+  {
+   "a_au": 199.53,
+   "rho_arcsec": 0.6708,
+   "P_yr": 2278.53,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.024
+  },
+  {
+   "a_au": 251.19,
+   "rho_arcsec": 0.8445,
+   "P_yr": 3218.51,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.015
+  },
+  {
+   "a_au": 316.23,
+   "rho_arcsec": 1.0632,
+   "P_yr": 4546.26,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.01
+  },
+  {
+   "a_au": 398.11,
+   "rho_arcsec": 1.3385,
+   "P_yr": 6421.76,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.006
+  },
+  {
+   "a_au": 501.19,
+   "rho_arcsec": 1.6851,
+   "P_yr": 9070.98,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.004
+  },
+  {
+   "a_au": 630.96,
+   "rho_arcsec": 2.1214,
+   "P_yr": 12813.1,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.002
+  },
+  {
+   "a_au": 794.33,
+   "rho_arcsec": 2.6707,
+   "P_yr": 18098.99,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  },
+  {
+   "a_au": 1000.0,
+   "rho_arcsec": 3.3622,
+   "P_yr": 25565.5,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  }
+ ],
+ "0.7": [
+  {
+   "a_au": 1.0,
+   "rho_arcsec": 0.0034,
+   "P_yr": 0.76,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.95,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.121
+  },
+  {
+   "a_au": 1.26,
+   "rho_arcsec": 0.0042,
+   "P_yr": 1.07,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.933,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.167
+  },
+  {
+   "a_au": 1.58,
+   "rho_arcsec": 0.0053,
+   "P_yr": 1.52,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.899,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.551
+  },
+  {
+   "a_au": 2.0,
+   "rho_arcsec": 0.0067,
+   "P_yr": 2.14,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.897,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.241
+  },
+  {
+   "a_au": 2.51,
+   "rho_arcsec": 0.0084,
+   "P_yr": 3.03,
+   "f_excl_pm": 0.489,
+   "f_excl_rv": 0.857,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 1.68
+  },
+  {
+   "a_au": 3.16,
+   "rho_arcsec": 0.0106,
+   "P_yr": 4.28,
+   "f_excl_pm": 0.804,
+   "f_excl_rv": 0.69,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 2.612
+  },
+  {
+   "a_au": 3.98,
+   "rho_arcsec": 0.0134,
+   "P_yr": 6.04,
+   "f_excl_pm": 0.84,
+   "f_excl_rv": 0.424,
+   "f_excl_ruwe": 0.994,
+   "f_excl_any": 0.999,
+   "median_abs_dmu": 2.972
+  },
+  {
+   "a_au": 5.01,
+   "rho_arcsec": 0.0169,
+   "P_yr": 8.53,
+   "f_excl_pm": 0.819,
+   "f_excl_rv": 0.202,
+   "f_excl_ruwe": 0.977,
+   "f_excl_any": 0.994,
+   "median_abs_dmu": 2.996
+  },
+  {
+   "a_au": 6.31,
+   "rho_arcsec": 0.0212,
+   "P_yr": 12.05,
+   "f_excl_pm": 0.804,
+   "f_excl_rv": 0.1,
+   "f_excl_ruwe": 0.913,
+   "f_excl_any": 0.973,
+   "median_abs_dmu": 2.873
+  },
+  {
+   "a_au": 7.94,
+   "rho_arcsec": 0.0267,
+   "P_yr": 17.02,
+   "f_excl_pm": 0.755,
+   "f_excl_rv": 0.054,
+   "f_excl_ruwe": 0.744,
+   "f_excl_any": 0.878,
+   "median_abs_dmu": 2.511
+  },
+  {
+   "a_au": 10.0,
+   "rho_arcsec": 0.0336,
+   "P_yr": 24.04,
+   "f_excl_pm": 0.714,
+   "f_excl_rv": 0.023,
+   "f_excl_ruwe": 0.504,
+   "f_excl_any": 0.783,
+   "median_abs_dmu": 2.37
+  },
+  {
+   "a_au": 12.59,
+   "rho_arcsec": 0.0423,
+   "P_yr": 33.96,
+   "f_excl_pm": 0.625,
+   "f_excl_rv": 0.008,
+   "f_excl_ruwe": 0.235,
+   "f_excl_any": 0.663,
+   "median_abs_dmu": 1.988
+  },
+  {
+   "a_au": 15.85,
+   "rho_arcsec": 0.0533,
+   "P_yr": 47.97,
+   "f_excl_pm": 0.567,
+   "f_excl_rv": 0.004,
+   "f_excl_ruwe": 0.1,
+   "f_excl_any": 0.579,
+   "median_abs_dmu": 1.819
+  },
+  {
+   "a_au": 19.95,
+   "rho_arcsec": 0.0671,
+   "P_yr": 67.76,
+   "f_excl_pm": 0.625,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.049,
+   "f_excl_any": 0.629,
+   "median_abs_dmu": 1.942
+  },
+  {
+   "a_au": 25.12,
+   "rho_arcsec": 0.0845,
+   "P_yr": 95.71,
+   "f_excl_pm": 0.532,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.027,
+   "f_excl_any": 0.534,
+   "median_abs_dmu": 1.719
+  },
+  {
+   "a_au": 31.62,
+   "rho_arcsec": 0.1063,
+   "P_yr": 135.2,
+   "f_excl_pm": 0.32,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.014,
+   "f_excl_any": 0.321,
+   "median_abs_dmu": 1.237
+  },
+  {
+   "a_au": 39.81,
+   "rho_arcsec": 0.1339,
+   "P_yr": 190.98,
+   "f_excl_pm": 0.163,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.007,
+   "f_excl_any": 0.164,
+   "median_abs_dmu": 0.836
+  },
+  {
+   "a_au": 50.12,
+   "rho_arcsec": 0.1685,
+   "P_yr": 269.76,
+   "f_excl_pm": 0.07,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.003,
+   "f_excl_any": 0.07,
+   "median_abs_dmu": 0.549
+  },
+  {
+   "a_au": 63.1,
+   "rho_arcsec": 0.2121,
+   "P_yr": 381.05,
+   "f_excl_pm": 0.034,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.002,
+   "f_excl_any": 0.034,
+   "median_abs_dmu": 0.346
+  },
+  {
+   "a_au": 79.43,
+   "rho_arcsec": 0.2671,
+   "P_yr": 538.24,
+   "f_excl_pm": 0.017,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.001,
+   "f_excl_any": 0.017,
+   "median_abs_dmu": 0.213
+  },
+  {
+   "a_au": 100.0,
+   "rho_arcsec": 0.3362,
+   "P_yr": 760.29,
+   "f_excl_pm": 0.011,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.011,
+   "median_abs_dmu": 0.136
+  },
+  {
+   "a_au": 125.89,
+   "rho_arcsec": 0.4233,
+   "P_yr": 1073.93,
+   "f_excl_pm": 0.005,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.005,
+   "median_abs_dmu": 0.085
+  },
+  {
+   "a_au": 158.49,
+   "rho_arcsec": 0.5329,
+   "P_yr": 1516.97,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.055
+  },
+  {
+   "a_au": 199.53,
+   "rho_arcsec": 0.6708,
+   "P_yr": 2142.78,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.034
+  },
+  {
+   "a_au": 251.19,
+   "rho_arcsec": 0.8445,
+   "P_yr": 3026.75,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.022
+  },
+  {
+   "a_au": 316.23,
+   "rho_arcsec": 1.0632,
+   "P_yr": 4275.4,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.013
+  },
+  {
+   "a_au": 398.11,
+   "rho_arcsec": 1.3385,
+   "P_yr": 6039.17,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.009
+  },
+  {
+   "a_au": 501.19,
+   "rho_arcsec": 1.6851,
+   "P_yr": 8530.55,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.005
+  },
+  {
+   "a_au": 630.96,
+   "rho_arcsec": 2.1214,
+   "P_yr": 12049.72,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.003
+  },
+  {
+   "a_au": 794.33,
+   "rho_arcsec": 2.6707,
+   "P_yr": 17020.68,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.002
+  },
+  {
+   "a_au": 1000.0,
+   "rho_arcsec": 3.3622,
+   "P_yr": 24042.35,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.001
+  }
+ ],
+ "1.0": [
+  {
+   "a_au": 1.0,
+   "rho_arcsec": 0.0034,
+   "P_yr": 0.7,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.976,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.172
+  },
+  {
+   "a_au": 1.26,
+   "rho_arcsec": 0.0042,
+   "P_yr": 0.99,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.969,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.308
+  },
+  {
+   "a_au": 1.58,
+   "rho_arcsec": 0.0053,
+   "P_yr": 1.4,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.944,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.581
+  },
+  {
+   "a_au": 2.0,
+   "rho_arcsec": 0.0067,
+   "P_yr": 1.98,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.935,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.094
+  },
+  {
+   "a_au": 2.51,
+   "rho_arcsec": 0.0084,
+   "P_yr": 2.79,
+   "f_excl_pm": 0.5,
+   "f_excl_rv": 0.93,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 1.721
+  },
+  {
+   "a_au": 3.16,
+   "rho_arcsec": 0.0106,
+   "P_yr": 3.95,
+   "f_excl_pm": 0.877,
+   "f_excl_rv": 0.841,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 3.224
+  },
+  {
+   "a_au": 3.98,
+   "rho_arcsec": 0.0134,
+   "P_yr": 5.58,
+   "f_excl_pm": 0.908,
+   "f_excl_rv": 0.623,
+   "f_excl_ruwe": 0.999,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 3.909
+  },
+  {
+   "a_au": 5.01,
+   "rho_arcsec": 0.0169,
+   "P_yr": 7.88,
+   "f_excl_pm": 0.9,
+   "f_excl_rv": 0.37,
+   "f_excl_ruwe": 0.993,
+   "f_excl_any": 0.999,
+   "median_abs_dmu": 3.933
+  },
+  {
+   "a_au": 6.31,
+   "rho_arcsec": 0.0212,
+   "P_yr": 11.12,
+   "f_excl_pm": 0.894,
+   "f_excl_rv": 0.181,
+   "f_excl_ruwe": 0.971,
+   "f_excl_any": 0.995,
+   "median_abs_dmu": 3.805
+  },
+  {
+   "a_au": 7.94,
+   "rho_arcsec": 0.0267,
+   "P_yr": 15.71,
+   "f_excl_pm": 0.88,
+   "f_excl_rv": 0.072,
+   "f_excl_ruwe": 0.898,
+   "f_excl_any": 0.976,
+   "median_abs_dmu": 3.598
+  },
+  {
+   "a_au": 10.0,
+   "rho_arcsec": 0.0336,
+   "P_yr": 22.19,
+   "f_excl_pm": 0.833,
+   "f_excl_rv": 0.042,
+   "f_excl_ruwe": 0.693,
+   "f_excl_any": 0.902,
+   "median_abs_dmu": 3.162
+  },
+  {
+   "a_au": 12.59,
+   "rho_arcsec": 0.0423,
+   "P_yr": 31.35,
+   "f_excl_pm": 0.772,
+   "f_excl_rv": 0.02,
+   "f_excl_ruwe": 0.456,
+   "f_excl_any": 0.822,
+   "median_abs_dmu": 2.784
+  },
+  {
+   "a_au": 15.85,
+   "rho_arcsec": 0.0533,
+   "P_yr": 44.28,
+   "f_excl_pm": 0.713,
+   "f_excl_rv": 0.011,
+   "f_excl_ruwe": 0.206,
+   "f_excl_any": 0.734,
+   "median_abs_dmu": 2.359
+  },
+  {
+   "a_au": 19.95,
+   "rho_arcsec": 0.0671,
+   "P_yr": 62.55,
+   "f_excl_pm": 0.768,
+   "f_excl_rv": 0.003,
+   "f_excl_ruwe": 0.083,
+   "f_excl_any": 0.772,
+   "median_abs_dmu": 2.625
+  },
+  {
+   "a_au": 25.12,
+   "rho_arcsec": 0.0845,
+   "P_yr": 88.36,
+   "f_excl_pm": 0.737,
+   "f_excl_rv": 0.002,
+   "f_excl_ruwe": 0.047,
+   "f_excl_any": 0.739,
+   "median_abs_dmu": 2.374
+  },
+  {
+   "a_au": 31.62,
+   "rho_arcsec": 0.1063,
+   "P_yr": 124.81,
+   "f_excl_pm": 0.562,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.022,
+   "f_excl_any": 0.564,
+   "median_abs_dmu": 1.792
+  },
+  {
+   "a_au": 39.81,
+   "rho_arcsec": 0.1339,
+   "P_yr": 176.3,
+   "f_excl_pm": 0.331,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.011,
+   "f_excl_any": 0.331,
+   "median_abs_dmu": 1.229
+  },
+  {
+   "a_au": 50.12,
+   "rho_arcsec": 0.1685,
+   "P_yr": 249.03,
+   "f_excl_pm": 0.156,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.004,
+   "f_excl_any": 0.156,
+   "median_abs_dmu": 0.789
+  },
+  {
+   "a_au": 63.1,
+   "rho_arcsec": 0.2121,
+   "P_yr": 351.76,
+   "f_excl_pm": 0.068,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.002,
+   "f_excl_any": 0.068,
+   "median_abs_dmu": 0.504
+  },
+  {
+   "a_au": 79.43,
+   "rho_arcsec": 0.2671,
+   "P_yr": 496.88,
+   "f_excl_pm": 0.036,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.036,
+   "median_abs_dmu": 0.312
+  },
+  {
+   "a_au": 100.0,
+   "rho_arcsec": 0.3362,
+   "P_yr": 701.86,
+   "f_excl_pm": 0.017,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.017,
+   "median_abs_dmu": 0.193
+  },
+  {
+   "a_au": 125.89,
+   "rho_arcsec": 0.4233,
+   "P_yr": 991.41,
+   "f_excl_pm": 0.008,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.008,
+   "median_abs_dmu": 0.124
+  },
+  {
+   "a_au": 158.49,
+   "rho_arcsec": 0.5329,
+   "P_yr": 1400.4,
+   "f_excl_pm": 0.003,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.003,
+   "median_abs_dmu": 0.079
+  },
+  {
+   "a_au": 199.53,
+   "rho_arcsec": 0.6708,
+   "P_yr": 1978.12,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.05
+  },
+  {
+   "a_au": 251.19,
+   "rho_arcsec": 0.8445,
+   "P_yr": 2794.16,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.032
+  },
+  {
+   "a_au": 316.23,
+   "rho_arcsec": 1.0632,
+   "P_yr": 3946.86,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.019
+  },
+  {
+   "a_au": 398.11,
+   "rho_arcsec": 1.3385,
+   "P_yr": 5575.09,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.012
+  },
+  {
+   "a_au": 501.19,
+   "rho_arcsec": 1.6851,
+   "P_yr": 7875.03,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.008
+  },
+  {
+   "a_au": 630.96,
+   "rho_arcsec": 2.1214,
+   "P_yr": 11123.77,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.005
+  },
+  {
+   "a_au": 794.33,
+   "rho_arcsec": 2.6707,
+   "P_yr": 15712.74,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.003
+  },
+  {
+   "a_au": 1000.0,
+   "rho_arcsec": 3.3622,
+   "P_yr": 22194.84,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.002
+  }
+ ],
+ "1.3": [
+  {
+   "a_au": 1.0,
+   "rho_arcsec": 0.0034,
+   "P_yr": 0.66,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.985,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.057
+  },
+  {
+   "a_au": 1.26,
+   "rho_arcsec": 0.0042,
+   "P_yr": 0.93,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.972,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.318
+  },
+  {
+   "a_au": 1.58,
+   "rho_arcsec": 0.0053,
+   "P_yr": 1.31,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.973,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.468
+  },
+  {
+   "a_au": 2.0,
+   "rho_arcsec": 0.0067,
+   "P_yr": 1.85,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.958,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 0.466
+  },
+  {
+   "a_au": 2.51,
+   "rho_arcsec": 0.0084,
+   "P_yr": 2.61,
+   "f_excl_pm": 0.473,
+   "f_excl_rv": 0.946,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 1.706
+  },
+  {
+   "a_au": 3.16,
+   "rho_arcsec": 0.0106,
+   "P_yr": 3.68,
+   "f_excl_pm": 0.906,
+   "f_excl_rv": 0.892,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 3.586
+  },
+  {
+   "a_au": 3.98,
+   "rho_arcsec": 0.0134,
+   "P_yr": 5.2,
+   "f_excl_pm": 0.939,
+   "f_excl_rv": 0.736,
+   "f_excl_ruwe": 1.0,
+   "f_excl_any": 1.0,
+   "median_abs_dmu": 4.498
+  },
+  {
+   "a_au": 5.01,
+   "rho_arcsec": 0.0169,
+   "P_yr": 7.35,
+   "f_excl_pm": 0.941,
+   "f_excl_rv": 0.484,
+   "f_excl_ruwe": 0.994,
+   "f_excl_any": 0.999,
+   "median_abs_dmu": 4.834
+  },
+  {
+   "a_au": 6.31,
+   "rho_arcsec": 0.0212,
+   "P_yr": 10.38,
+   "f_excl_pm": 0.917,
+   "f_excl_rv": 0.259,
+   "f_excl_ruwe": 0.982,
+   "f_excl_any": 0.999,
+   "median_abs_dmu": 4.385
+  },
+  {
+   "a_au": 7.94,
+   "rho_arcsec": 0.0267,
+   "P_yr": 14.67,
+   "f_excl_pm": 0.921,
+   "f_excl_rv": 0.129,
+   "f_excl_ruwe": 0.944,
+   "f_excl_any": 0.992,
+   "median_abs_dmu": 4.335
+  },
+  {
+   "a_au": 10.0,
+   "rho_arcsec": 0.0336,
+   "P_yr": 20.72,
+   "f_excl_pm": 0.899,
+   "f_excl_rv": 0.065,
+   "f_excl_ruwe": 0.832,
+   "f_excl_any": 0.962,
+   "median_abs_dmu": 3.864
+  },
+  {
+   "a_au": 12.59,
+   "rho_arcsec": 0.0423,
+   "P_yr": 29.26,
+   "f_excl_pm": 0.854,
+   "f_excl_rv": 0.028,
+   "f_excl_ruwe": 0.589,
+   "f_excl_any": 0.899,
+   "median_abs_dmu": 3.386
+  },
+  {
+   "a_au": 15.85,
+   "rho_arcsec": 0.0533,
+   "P_yr": 41.34,
+   "f_excl_pm": 0.79,
+   "f_excl_rv": 0.015,
+   "f_excl_ruwe": 0.347,
+   "f_excl_any": 0.826,
+   "median_abs_dmu": 2.812
+  },
+  {
+   "a_au": 19.95,
+   "rho_arcsec": 0.0671,
+   "P_yr": 58.39,
+   "f_excl_pm": 0.817,
+   "f_excl_rv": 0.006,
+   "f_excl_ruwe": 0.139,
+   "f_excl_any": 0.825,
+   "median_abs_dmu": 3.031
+  },
+  {
+   "a_au": 25.12,
+   "rho_arcsec": 0.0845,
+   "P_yr": 82.47,
+   "f_excl_pm": 0.828,
+   "f_excl_rv": 0.004,
+   "f_excl_ruwe": 0.073,
+   "f_excl_any": 0.831,
+   "median_abs_dmu": 2.976
+  },
+  {
+   "a_au": 31.62,
+   "rho_arcsec": 0.1063,
+   "P_yr": 116.5,
+   "f_excl_pm": 0.692,
+   "f_excl_rv": 0.002,
+   "f_excl_ruwe": 0.028,
+   "f_excl_any": 0.694,
+   "median_abs_dmu": 2.231
+  },
+  {
+   "a_au": 39.81,
+   "rho_arcsec": 0.1339,
+   "P_yr": 164.56,
+   "f_excl_pm": 0.477,
+   "f_excl_rv": 0.001,
+   "f_excl_ruwe": 0.019,
+   "f_excl_any": 0.478,
+   "median_abs_dmu": 1.606
+  },
+  {
+   "a_au": 50.12,
+   "rho_arcsec": 0.1685,
+   "P_yr": 232.45,
+   "f_excl_pm": 0.255,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.009,
+   "f_excl_any": 0.256,
+   "median_abs_dmu": 1.008
+  },
+  {
+   "a_au": 63.1,
+   "rho_arcsec": 0.2121,
+   "P_yr": 328.34,
+   "f_excl_pm": 0.117,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.004,
+   "f_excl_any": 0.117,
+   "median_abs_dmu": 0.645
+  },
+  {
+   "a_au": 79.43,
+   "rho_arcsec": 0.2671,
+   "P_yr": 463.79,
+   "f_excl_pm": 0.06,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.002,
+   "f_excl_any": 0.06,
+   "median_abs_dmu": 0.41
+  },
+  {
+   "a_au": 100.0,
+   "rho_arcsec": 0.3362,
+   "P_yr": 655.12,
+   "f_excl_pm": 0.027,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.027,
+   "median_abs_dmu": 0.259
+  },
+  {
+   "a_au": 125.89,
+   "rho_arcsec": 0.4233,
+   "P_yr": 925.38,
+   "f_excl_pm": 0.017,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.001,
+   "f_excl_any": 0.017,
+   "median_abs_dmu": 0.163
+  },
+  {
+   "a_au": 158.49,
+   "rho_arcsec": 0.5329,
+   "P_yr": 1307.14,
+   "f_excl_pm": 0.006,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.006,
+   "median_abs_dmu": 0.102
+  },
+  {
+   "a_au": 199.53,
+   "rho_arcsec": 0.6708,
+   "P_yr": 1846.38,
+   "f_excl_pm": 0.003,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.003,
+   "median_abs_dmu": 0.065
+  },
+  {
+   "a_au": 251.19,
+   "rho_arcsec": 0.8445,
+   "P_yr": 2608.09,
+   "f_excl_pm": 0.001,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.001,
+   "median_abs_dmu": 0.04
+  },
+  {
+   "a_au": 316.23,
+   "rho_arcsec": 1.0632,
+   "P_yr": 3684.02,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.026
+  },
+  {
+   "a_au": 398.11,
+   "rho_arcsec": 1.3385,
+   "P_yr": 5203.82,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.016
+  },
+  {
+   "a_au": 501.19,
+   "rho_arcsec": 1.6851,
+   "P_yr": 7350.59,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.01
+  },
+  {
+   "a_au": 630.96,
+   "rho_arcsec": 2.1214,
+   "P_yr": 10382.98,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.006
+  },
+  {
+   "a_au": 794.33,
+   "rho_arcsec": 2.6707,
+   "P_yr": 14666.35,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.004
+  },
+  {
+   "a_au": 1000.0,
+   "rho_arcsec": 3.3622,
+   "P_yr": 20716.77,
+   "f_excl_pm": 0.0,
+   "f_excl_rv": 0.0,
+   "f_excl_ruwe": 0.0,
+   "f_excl_any": 0.0,
+   "median_abs_dmu": 0.003
+  }
+ ]
+}

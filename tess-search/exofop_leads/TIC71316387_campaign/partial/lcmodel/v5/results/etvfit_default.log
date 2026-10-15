@@ -1,0 +1,27 @@
+events 187, rejected 0
+lin        chi2 229.1 dof 184 BIC 244.8
+quad       chi2 229.1 dof 183 BIC 250.0
+cubic      chi2 225.9 dof 182 BIC 252.0
+quad_sep   chi2 226.7 dof 182 BIC 252.8
+lin_sep_P  chi2 227.7 dof 183 BIC 248.6
+P = 1.30367228 +- 0.014 s; T0 = 3165.670411 +- 0.23 min; sec - P/2 = +0.79 +- 0.50 min
+quadratic: c = +0.0041 +- 0.0348 min/yr^2; dP/dt = +0.0018 +- 0.0149 s/yr; dchi2 0.01 null p 0.914; null Q sd / formal 1.02
+linear chi2 229.1 (null median 193.9, p 0.048)
+  SPOC1_ph0.0    N= 15 O-C  +0.09 +- 0.50 min (scatter-based 0.64; chi2_within 23.3)
+  SPOC1_ph0.5    N= 17 O-C  -2.13 +- 1.14 min (scatter-based 1.43; chi2_within 26.9)
+  SPOC1_both     N= 32 O-C  -0.27 +- 0.46 min
+  SPOC28_ph0.0   N= 12 O-C  +1.04 +- 0.72 min (scatter-based 0.54; chi2_within 7.3)
+  SPOC28_ph0.5   N= 13 O-C  +1.41 +- 1.10 min (scatter-based 1.13; chi2_within 11.8)
+  SPOC28_both    N= 25 O-C  +1.15 +- 0.60 min
+  SPOC68_ph0.0   N= 15 O-C  -0.88 +- 0.53 min (scatter-based 0.39; chi2_within 8.2)
+  SPOC68_ph0.5   N= 16 O-C  -0.34 +- 1.04 min (scatter-based 1.37; chi2_within 24.4)
+  SPOC68_both    N= 31 O-C  -0.77 +- 0.48 min
+  TC105_ph0.0    N= 16 O-C  -0.19 +- 0.59 min (scatter-based 0.69; chi2_within 20.9)
+  TC105_ph0.5    N= 17 O-C  +1.10 +- 1.07 min (scatter-based 1.16; chi2_within 19.6)
+  TC105_both     N= 33 O-C  +0.11 +- 0.52 min
+  TC106_ph0.0    N= 17 O-C  -0.07 +- 0.65 min (scatter-based 0.76; chi2_within 20.7)
+  TC106_ph0.5    N= 15 O-C  -0.09 +- 1.21 min (scatter-based 1.64; chi2_within 23.1)
+  TC106_both     N= 32 O-C  -0.07 +- 0.57 min
+  TC95_ph0.0     N= 17 O-C  +0.37 +- 0.51 min (scatter-based 0.46; chi2_within 13.1)
+  TC95_ph0.5     N= 17 O-C  -0.10 +- 0.96 min (scatter-based 1.07; chi2_within 18.1)
+  TC95_both      N= 34 O-C  +0.26 +- 0.45 min

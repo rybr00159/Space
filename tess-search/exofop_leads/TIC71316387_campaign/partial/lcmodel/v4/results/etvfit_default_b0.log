@@ -1,0 +1,30 @@
+events 183, kept 183 after 5-sigma clipping
+linear: chi2 192.5 / 180 dof; T0 = 3165.670342 +- 0.235 min (BTJD); P = 1.30367217 +- 0.00000017 d; secondary offset +0.23 +- 0.51 min
+quadratic: c2 = +0.0000 +- 0.0354 min/yr^2 (tref BTJD 2900.0); dchi2 = 0.00;  cubic dchi2 vs lin = 3.94
+S  1 prim: N=15 mean O-C -0.086 +- 0.506 min; within-sector chi2 23.1/14
+S  1 sec : N=16 mean O-C -1.686 +- 1.265 min; within-sector chi2 18.2/15
+S  1 both: N=31 mean O-C -0.306 +- 0.470 min; within-sector chi2 42.7/30
+S 28 prim: N=12 mean O-C +1.068 +- 0.641 min; within-sector chi2 9.5/11
+S 28 sec : N=13 mean O-C +0.770 +- 1.235 min; within-sector chi2 8.7/12
+S 28 both: N=25 mean O-C +1.005 +- 0.569 min; within-sector chi2 18.2/24
+S 68 prim: N=15 mean O-C -0.769 +- 0.589 min; within-sector chi2 6.0/14
+S 68 sec : N=16 mean O-C -0.280 +- 1.011 min; within-sector chi2 22.5/15
+S 68 both: N=31 mean O-C -0.645 +- 0.509 min; within-sector chi2 28.7/30
+S 95 prim: N=17 mean O-C -0.184 +- 0.574 min; within-sector chi2 9.9/16
+S 95 sec : N=16 mean O-C +0.568 +- 1.070 min; within-sector chi2 11.7/15
+S 95 both: N=33 mean O-C -0.016 +- 0.506 min; within-sector chi2 22.0/32
+S105 prim: N=16 mean O-C -0.011 +- 0.574 min; within-sector chi2 15.0/15
+S105 sec : N=16 mean O-C +0.493 +- 1.059 min; within-sector chi2 27.2/15
+S105 both: N=32 mean O-C +0.104 +- 0.505 min; within-sector chi2 42.4/31
+S106 prim: N=17 mean O-C +0.191 +- 0.592 min; within-sector chi2 18.5/16
+S106 sec : N=14 mean O-C -0.147 +- 1.138 min; within-sector chi2 14.8/13
+S106 both: N=31 mean O-C +0.119 +- 0.525 min; within-sector chi2 33.3/30
+chi2 of the 6 combined sector means about the linear ephemeris: 5.24 (N=6)
+quadratic null (bootstrap): p(dchi2 >= obs) = 1.000; sd(c2) = 0.0365 min/yr^2; dchi2 thresholds 95% 4.04, 99.7% 9.74
+|c2| < 0.073 min/yr^2 (|c2_obs| + 2 sigma_emp)
+LTTE sinusoid search 0.5-60 yr: best P 0.55 yr, dchi2 5.52, amplitude 0.85 min; null p = 0.367 (99.7% threshold 20.26)
+positive control (timing level): c2 = 0.025 min/yr^2 (sagitta over 8.0 yr = 0.20 min) -> recovered 0.0243 +- 0.0357; detected at 99.7%: 0.01
+positive control (timing level): c2 = 0.050 min/yr^2 (sagitta over 8.0 yr = 0.40 min) -> recovered 0.0467 +- 0.0357; detected at 99.7%: 0.06
+positive control (timing level): c2 = 0.100 min/yr^2 (sagitta over 8.0 yr = 0.81 min) -> recovered 0.0994 +- 0.0381; detected at 99.7%: 0.38
+positive control (timing level): c2 = 0.200 min/yr^2 (sagitta over 8.0 yr = 1.62 min) -> recovered 0.1981 +- 0.0380; detected at 99.7%: 0.99
+positive control (timing level): c2 = 0.400 min/yr^2 (sagitta over 8.0 yr = 3.23 min) -> recovered 0.3988 +- 0.0357; detected at 99.7%: 1.00

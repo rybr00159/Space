@@ -1,0 +1,18 @@
+SPOC1 done
+SPOC28 done
+SPOC68 done
+TC95 done
+TC105 done
+TC106 done
+SPOC1 ph0.0: inj N=66 bias +0.05 rsd 1.86 min (formal 1.94, z-scale 0.90, out>3rsd 0.030) | real N=15 median O-C -0.31 robust rms 2.43 min (formal 1.95)
+SPOC1 ph0.5: inj N=66 bias +0.05 rsd 4.80 min (formal 4.00, z-scale 1.12, out>3rsd 0.000) | real N=17 median O-C -2.96 robust rms 5.93 min (formal 4.19)
+SPOC28 ph0.0: inj N=52 bias +0.01 rsd 2.40 min (formal 1.82, z-scale 1.35, out>3rsd 0.000) | real N=12 median O-C +0.46 robust rms 2.27 min (formal 1.83)
+SPOC28 ph0.5: inj N=52 bias -0.70 rsd 3.33 min (formal 3.63, z-scale 1.04, out>3rsd 0.000) | real N=13 median O-C +2.03 robust rms 5.20 min (formal 3.85)
+SPOC68 ph0.0: inj N=60 bias -0.55 rsd 1.81 min (formal 1.98, z-scale 0.92, out>3rsd 0.000) | real N=15 median O-C -0.88 robust rms 1.48 min (formal 2.08)
+SPOC68 ph0.5: inj N=60 bias -0.92 rsd 3.81 min (formal 3.90, z-scale 0.99, out>3rsd 0.033) | real N=16 median O-C +1.03 robust rms 5.26 min (formal 4.11)
+TC105 ph0.0: inj N=66 bias -0.11 rsd 2.44 min (formal 2.21, z-scale 1.04, out>3rsd 0.000) | real N=16 median O-C +0.65 robust rms 3.32 min (formal 2.29)
+TC105 ph0.5: inj N=66 bias -0.79 rsd 4.09 min (formal 4.55, z-scale 0.95, out>3rsd 0.030) | real N=17 median O-C +1.66 robust rms 4.28 min (formal 4.40)
+TC106 ph0.0: inj N=62 bias +0.12 rsd 2.75 min (formal 1.93, z-scale 1.41, out>3rsd 0.000) | real N=17 median O-C +0.14 robust rms 2.91 min (formal 1.88)
+TC106 ph0.5: inj N=62 bias +0.46 rsd 4.99 min (formal 3.96, z-scale 1.22, out>3rsd 0.000) | real N=15 median O-C +0.20 robust rms 5.54 min (formal 3.84)
+TC95 ph0.0: inj N=60 bias +0.08 rsd 1.65 min (formal 2.00, z-scale 0.90, out>3rsd 0.017) | real N=17 median O-C -0.10 robust rms 1.81 min (formal 2.16)
+TC95 ph0.5: inj N=60 bias -0.57 rsd 3.38 min (formal 4.18, z-scale 0.87, out>3rsd 0.100) | real N=17 median O-C +0.38 robust rms 4.57 min (formal 4.05)

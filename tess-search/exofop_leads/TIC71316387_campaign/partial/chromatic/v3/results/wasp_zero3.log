@@ -1,0 +1,17 @@
+WASP sources with Gaia counterparts: 1649
+isolated (purity>0.9), 9<mag<14.8: 498
+fit with additive offset: ZP 12.310  b = -0.0122 +- 0.0007 (flux units of a G=12 star)  colour term -0.019; robust scatter 0.036 mag (n=490)
+fit without offset: ZP 12.353 colour -0.039 scatter 0.046
+target: TAMMAG median 12.052, predicted 12.029 (residual +0.023 mag); Fpred 1.308; purity 0.960
+depth scale from the additive offset alone: x0.991 +- 0.001   (dilution part from neighbours separately: D = 0.041)
+   mag 9.5-10.0: n= 11 median residual (no-offset fit) -0.066
+   mag 10.0-10.5: n= 11 median residual (no-offset fit) -0.045
+   mag 10.5-11.0: n= 12 median residual (no-offset fit) -0.053
+   mag 11.0-11.5: n= 28 median residual (no-offset fit) -0.050
+   mag 11.5-12.0: n= 34 median residual (no-offset fit) -0.022
+   mag 12.0-12.5: n= 43 median residual (no-offset fit) -0.020
+   mag 12.5-13.0: n= 52 median residual (no-offset fit) -0.017
+   mag 13.0-13.5: n= 68 median residual (no-offset fit) -0.010
+   mag 13.5-14.0: n= 83 median residual (no-offset fit) +0.008
+   mag 14.0-14.5: n= 97 median residual (no-offset fit) +0.034
+   mag 14.5-15.0: n= 55 median residual (no-offset fit) +0.077

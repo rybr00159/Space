@@ -1,0 +1,30 @@
+[default] joint: a1=+93.9 b1=+97.1 a2=+7.2 b2=-11.4 ppm (emp err [35.7 39.5 25.1 28.4]) A1=135 (p=0.000) A2=13 (p=0.860)
+   A_ell = -a2: joint -7.2 +- 25.1 (UL95 41);  sector mean -26.2 +- 42.1 (chi2 11.5/5; UL95 69) ppm
+   S  1 PDCSAP: A1=  455 ppm (emp sd   50, p=0.000) phase of max   310 deg | a2=   +23 b2=  -143 (emp sd 42)
+   S 28 PDCSAP: A1=  457 ppm (emp sd   54, p=0.000) phase of max   249 deg | a2=   +49 b2=   -97 (emp sd 45)
+   S 68 PDCSAP: A1=  296 ppm (emp sd   41, p=0.000) phase of max   147 deg | a2=  +103 b2=   -33 (emp sd 49)
+   S 95 TC    : A1=  354 ppm (emp sd  163, p=0.195) phase of max    98 deg | a2=  +120 b2=   -66 (emp sd 88)
+   S105 TC    : A1=  472 ppm (emp sd   60, p=0.000) phase of max    54 deg | a2=  -140 b2=  +117 (emp sd 68)
+   S106 TC    : A1=  599 ppm (emp sd  113, p=0.000) phase of max    52 deg | a2=   -80 b2=  +135 (emp sd 81)
+[sap+tc] joint: a1=+58.4 b1=+137.3 a2=-20.5 b2=-7.0 ppm (emp err [46.9 44.  26.6 28.4]) A1=149 (p=0.015) A2=22 (p=0.715)
+   A_ell = -a2: joint +20.5 +- 26.6 (UL95 64);  sector mean +28.3 +- 41.4 (chi2 9.1/5; UL95 96) ppm
+   S  1 SAP   : A1=  340 ppm (emp sd  126, p=0.075) phase of max   320 deg | a2=   -64 b2=  -161 (emp sd 52)
+   S 28 SAP   : A1=  475 ppm (emp sd   67, p=0.000) phase of max   231 deg | a2=   -17 b2=   -74 (emp sd 51)
+   S 68 SAP   : A1=  328 ppm (emp sd  110, p=0.000) phase of max   145 deg | a2=   +89 b2=   -15 (emp sd 73)
+   S 95 TC    : A1=  354 ppm (emp sd  163, p=0.195) phase of max    98 deg | a2=  +120 b2=   -66 (emp sd 88)
+   S105 TC    : A1=  472 ppm (emp sd   60, p=0.000) phase of max    54 deg | a2=  -140 b2=  +117 (emp sd 68)
+   S106 TC    : A1=  599 ppm (emp sd  113, p=0.000) phase of max    52 deg | a2=   -80 b2=  +135 (emp sd 81)
+[tc_all] joint: a1=+33.5 b1=+135.5 a2=+0.8 b2=+29.4 ppm (emp err [49.4 52.4 32.2 32.5]) A1=140 (p=0.077) A2=29 (p=0.640)
+   A_ell = -a2: joint -0.8 +- 32.2 (UL95 53);  sector mean +17.1 +- 64.7 (chi2 18.5/5; UL95 123) ppm
+   S  1 TC    : A1=  327 ppm (emp sd  100, p=0.335) phase of max   315 deg | a2=  -152 b2=   -61 (emp sd 89)
+   S 28 TC    : A1=  474 ppm (emp sd  109, p=0.000) phase of max   237 deg | a2=   -22 b2=   -86 (emp sd 64)
+   S 68 TC    : A1=  428 ppm (emp sd  115, p=0.000) phase of max   165 deg | a2=  +248 b2=   +41 (emp sd 84)
+   S 95 TC    : A1=  354 ppm (emp sd  163, p=0.195) phase of max    98 deg | a2=  +120 b2=   -66 (emp sd 88)
+   S105 TC    : A1=  472 ppm (emp sd   60, p=0.000) phase of max    54 deg | a2=  -140 b2=  +117 (emp sd 68)
+   S106 TC    : A1=  599 ppm (emp sd  113, p=0.000) phase of max    52 deg | a2=   -80 b2=  +135 (emp sd 81)
+LS S1: highest peak 0.3-8 d at 1.3034 d (P_EB = 1.3037); power 0.249
+LS S28: highest peak 0.3-8 d at 1.3063 d (P_EB = 1.3037); power 0.116
+LS S68: highest peak 0.3-8 d at 1.3069 d (P_EB = 1.3037); power 0.014
+LS S95: highest peak 0.3-8 d at 3.3207 d (P_EB = 1.3037); power 0.059
+LS S105: highest peak 0.3-8 d at 1.3007 d (P_EB = 1.3037); power 0.040
+LS S106: highest peak 0.3-8 d at 1.3038 d (P_EB = 1.3037); power 0.051

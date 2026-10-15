@@ -1,0 +1,6 @@
+empirical-template chi2 38332.2
+K7V+M2V     deep-only: best inc 82.80 (dchi2 vs template +58.8) f1 0.0321 (MS@297 0.0668) -> d 429 pc; bound depth-matched inc 81.30 is worse by dchi2 167.2
+M0V+M3V     deep-only: best inc 84.73 (dchi2 vs template +67.7) f1 0.0247 (MS@297 0.0460) -> d 406 pc; bound depth-matched inc 82.98 is worse by dchi2 106.7
+M0.5V+M3V   deep-only: best inc 85.63 (dchi2 vs template +81.4) f1 0.0192 (MS@297 0.0354) -> d 404 pc; bound depth-matched inc 83.63 is worse by dchi2 107.5
+M1V+M3.5V   deep-only: best inc 89.83 (dchi2 vs template +41.3) f1 0.0145 (MS@297 0.0264) -> d 401 pc; bound depth-matched inc 85.33 is worse by dchi2 130.7
+M1V+M4V     deep-only: best inc 89.98 (dchi2 vs template +21.1) f1 0.0169 (MS@297 0.0264) -> d 371 pc; bound depth-matched inc 85.73 is worse by dchi2 144.4

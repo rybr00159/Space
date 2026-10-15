@@ -1,0 +1,91 @@
+null 99.7% thresholds: quad 9.92  ltte-max 29.92 ; observed quad 0.00 ltte-max 6.41
+circular a=   0.30 au  Pout=    0.12 yr  LTTE semi-amp (median sin i)    1.26 min  excluded fraction 0.129
+circular a=   0.36 au  Pout=    0.16 yr  LTTE semi-amp (median sin i)    1.48 min  excluded fraction 0.303
+circular a=   0.43 au  Pout=    0.21 yr  LTTE semi-amp (median sin i)    1.80 min  excluded fraction 0.725
+circular a=   0.52 au  Pout=    0.28 yr  LTTE semi-amp (median sin i)    2.18 min  excluded fraction 0.640
+circular a=   0.63 au  Pout=    0.37 yr  LTTE semi-amp (median sin i)    2.62 min  excluded fraction 0.882
+circular a=   0.75 au  Pout=    0.49 yr  LTTE semi-amp (median sin i)    3.11 min  excluded fraction 0.415
+circular a=   0.91 au  Pout=    0.65 yr  LTTE semi-amp (median sin i)    3.74 min  excluded fraction 0.891
+circular a=   1.09 au  Pout=    0.85 yr  LTTE semi-amp (median sin i)    4.58 min  excluded fraction 0.923
+circular a=   1.31 au  Pout=    1.13 yr  LTTE semi-amp (median sin i)    5.46 min  excluded fraction 0.965
+circular a=   1.58 au  Pout=    1.48 yr  LTTE semi-amp (median sin i)    6.68 min  excluded fraction 0.979
+circular a=   1.90 au  Pout=    1.96 yr  LTTE semi-amp (median sin i)    8.00 min  excluded fraction 0.939
+circular a=   2.28 au  Pout=    2.58 yr  LTTE semi-amp (median sin i)    9.37 min  excluded fraction 0.979
+circular a=   2.74 au  Pout=    3.40 yr  LTTE semi-amp (median sin i)   11.34 min  excluded fraction 0.990
+circular a=   3.30 au  Pout=    4.48 yr  LTTE semi-amp (median sin i)   13.69 min  excluded fraction 0.999
+circular a=   3.96 au  Pout=    5.91 yr  LTTE semi-amp (median sin i)   16.25 min  excluded fraction 0.996
+circular a=   4.77 au  Pout=    7.80 yr  LTTE semi-amp (median sin i)   19.91 min  excluded fraction 0.997
+circular a=   5.73 au  Pout=   10.28 yr  LTTE semi-amp (median sin i)   23.86 min  excluded fraction 0.997
+circular a=   6.89 au  Pout=   13.56 yr  LTTE semi-amp (median sin i)   28.62 min  excluded fraction 0.997
+circular a=   8.29 au  Pout=   17.87 yr  LTTE semi-amp (median sin i)   34.56 min  excluded fraction 0.991
+circular a=   9.96 au  Pout=   23.57 yr  LTTE semi-amp (median sin i)   41.39 min  excluded fraction 0.969
+circular a=  11.98 au  Pout=   31.08 yr  LTTE semi-amp (median sin i)   49.90 min  excluded fraction 0.936
+circular a=  14.40 au  Pout=   40.98 yr  LTTE semi-amp (median sin i)   59.64 min  excluded fraction 0.879
+circular a=  17.32 au  Pout=   54.03 yr  LTTE semi-amp (median sin i)   72.75 min  excluded fraction 0.793
+circular a=  20.83 au  Pout=   71.24 yr  LTTE semi-amp (median sin i)   86.18 min  excluded fraction 0.725
+circular a=  25.04 au  Pout=   93.93 yr  LTTE semi-amp (median sin i)  103.01 min  excluded fraction 0.590
+circular a=  30.11 au  Pout=  123.86 yr  LTTE semi-amp (median sin i)  124.76 min  excluded fraction 0.440
+circular a=  36.21 au  Pout=  163.31 yr  LTTE semi-amp (median sin i)  150.39 min  excluded fraction 0.222
+circular a=  43.54 au  Pout=  215.34 yr  LTTE semi-amp (median sin i)  181.32 min  excluded fraction 0.085
+circular a=  52.35 au  Pout=  283.94 yr  LTTE semi-amp (median sin i)  218.32 min  excluded fraction 0.030
+circular a=  62.95 au  Pout=  374.38 yr  LTTE semi-amp (median sin i)  261.61 min  excluded fraction 0.019
+circular a=  75.70 au  Pout=  493.65 yr  LTTE semi-amp (median sin i)  317.27 min  excluded fraction 0.009
+circular a=  91.02 au  Pout=  650.90 yr  LTTE semi-amp (median sin i)  384.68 min  excluded fraction 0.012
+circular a= 109.45 au  Pout=  858.25 yr  LTTE semi-amp (median sin i)  457.54 min  excluded fraction 0.009
+circular a= 131.61 au  Pout= 1131.65 yr  LTTE semi-amp (median sin i)  551.78 min  excluded fraction 0.004
+circular a= 158.25 au  Pout= 1492.14 yr  LTTE semi-amp (median sin i)  656.25 min  excluded fraction 0.008
+circular a= 190.29 au  Pout= 1967.46 yr  LTTE semi-amp (median sin i)  785.83 min  excluded fraction 0.007
+circular a= 228.81 au  Pout= 2594.21 yr  LTTE semi-amp (median sin i)  960.38 min  excluded fraction 0.007
+circular a= 275.13 au  Pout= 3420.61 yr  LTTE semi-amp (median sin i) 1126.00 min  excluded fraction 0.005
+circular a= 330.83 au  Pout= 4510.26 yr  LTTE semi-amp (median sin i) 1390.35 min  excluded fraction 0.005
+circular a= 397.81 au  Pout= 5947.02 yr  LTTE semi-amp (median sin i) 1650.10 min  excluded fraction 0.009
+circular a= 478.34 au  Pout= 7841.47 yr  LTTE semi-amp (median sin i) 1993.58 min  excluded fraction 0.008
+circular a= 575.18 au  Pout=10339.41 yr  LTTE semi-amp (median sin i) 2407.89 min  excluded fraction 0.004
+circular a= 691.62 au  Pout=13633.07 yr  LTTE semi-amp (median sin i) 2896.62 min  excluded fraction 0.005
+circular a= 831.64 au  Pout=17975.95 yr  LTTE semi-amp (median sin i) 3426.09 min  excluded fraction 0.006
+circular a=1000.00 au  Pout=23702.27 yr  LTTE semi-amp (median sin i) 4168.59 min  excluded fraction 0.005
+thermal  a=   0.30 au  Pout=    0.12 yr  LTTE semi-amp (median sin i)    1.27 min  excluded fraction 0.058
+thermal  a=   0.36 au  Pout=    0.16 yr  LTTE semi-amp (median sin i)    1.51 min  excluded fraction 0.167
+thermal  a=   0.43 au  Pout=    0.21 yr  LTTE semi-amp (median sin i)    1.79 min  excluded fraction 0.471
+thermal  a=   0.52 au  Pout=    0.28 yr  LTTE semi-amp (median sin i)    2.16 min  excluded fraction 0.447
+thermal  a=   0.63 au  Pout=    0.37 yr  LTTE semi-amp (median sin i)    2.63 min  excluded fraction 0.693
+thermal  a=   0.75 au  Pout=    0.49 yr  LTTE semi-amp (median sin i)    3.12 min  excluded fraction 0.296
+thermal  a=   0.91 au  Pout=    0.65 yr  LTTE semi-amp (median sin i)    3.73 min  excluded fraction 0.774
+thermal  a=   1.09 au  Pout=    0.85 yr  LTTE semi-amp (median sin i)    4.52 min  excluded fraction 0.812
+thermal  a=   1.31 au  Pout=    1.13 yr  LTTE semi-amp (median sin i)    5.41 min  excluded fraction 0.930
+thermal  a=   1.58 au  Pout=    1.48 yr  LTTE semi-amp (median sin i)    6.56 min  excluded fraction 0.937
+thermal  a=   1.90 au  Pout=    1.96 yr  LTTE semi-amp (median sin i)    7.94 min  excluded fraction 0.871
+thermal  a=   2.28 au  Pout=    2.58 yr  LTTE semi-amp (median sin i)    9.38 min  excluded fraction 0.911
+thermal  a=   2.74 au  Pout=    3.40 yr  LTTE semi-amp (median sin i)   11.36 min  excluded fraction 0.966
+thermal  a=   3.30 au  Pout=    4.48 yr  LTTE semi-amp (median sin i)   13.64 min  excluded fraction 0.992
+thermal  a=   3.96 au  Pout=    5.91 yr  LTTE semi-amp (median sin i)   16.45 min  excluded fraction 0.985
+thermal  a=   4.77 au  Pout=    7.80 yr  LTTE semi-amp (median sin i)   20.06 min  excluded fraction 0.995
+thermal  a=   5.73 au  Pout=   10.28 yr  LTTE semi-amp (median sin i)   23.96 min  excluded fraction 0.989
+thermal  a=   6.89 au  Pout=   13.56 yr  LTTE semi-amp (median sin i)   29.05 min  excluded fraction 0.978
+thermal  a=   8.29 au  Pout=   17.87 yr  LTTE semi-amp (median sin i)   34.99 min  excluded fraction 0.963
+thermal  a=   9.96 au  Pout=   23.57 yr  LTTE semi-amp (median sin i)   41.51 min  excluded fraction 0.920
+thermal  a=  11.98 au  Pout=   31.08 yr  LTTE semi-amp (median sin i)   50.66 min  excluded fraction 0.872
+thermal  a=  14.40 au  Pout=   40.98 yr  LTTE semi-amp (median sin i)   58.46 min  excluded fraction 0.800
+thermal  a=  17.32 au  Pout=   54.03 yr  LTTE semi-amp (median sin i)   71.98 min  excluded fraction 0.697
+thermal  a=  20.83 au  Pout=   71.24 yr  LTTE semi-amp (median sin i)   85.93 min  excluded fraction 0.582
+thermal  a=  25.04 au  Pout=   93.93 yr  LTTE semi-amp (median sin i)  103.80 min  excluded fraction 0.427
+thermal  a=  30.11 au  Pout=  123.86 yr  LTTE semi-amp (median sin i)  125.11 min  excluded fraction 0.317
+thermal  a=  36.21 au  Pout=  163.31 yr  LTTE semi-amp (median sin i)  149.07 min  excluded fraction 0.203
+thermal  a=  43.54 au  Pout=  215.34 yr  LTTE semi-amp (median sin i)  183.30 min  excluded fraction 0.145
+thermal  a=  52.35 au  Pout=  283.94 yr  LTTE semi-amp (median sin i)  217.94 min  excluded fraction 0.096
+thermal  a=  62.95 au  Pout=  374.38 yr  LTTE semi-amp (median sin i)  259.71 min  excluded fraction 0.061
+thermal  a=  75.70 au  Pout=  493.65 yr  LTTE semi-amp (median sin i)  310.69 min  excluded fraction 0.041
+thermal  a=  91.02 au  Pout=  650.90 yr  LTTE semi-amp (median sin i)  379.49 min  excluded fraction 0.032
+thermal  a= 109.45 au  Pout=  858.25 yr  LTTE semi-amp (median sin i)  454.99 min  excluded fraction 0.023
+thermal  a= 131.61 au  Pout= 1131.65 yr  LTTE semi-amp (median sin i)  554.62 min  excluded fraction 0.015
+thermal  a= 158.25 au  Pout= 1492.14 yr  LTTE semi-amp (median sin i)  663.10 min  excluded fraction 0.013
+thermal  a= 190.29 au  Pout= 1967.46 yr  LTTE semi-amp (median sin i)  798.34 min  excluded fraction 0.008
+thermal  a= 228.81 au  Pout= 2594.21 yr  LTTE semi-amp (median sin i)  957.96 min  excluded fraction 0.007
+thermal  a= 275.13 au  Pout= 3420.61 yr  LTTE semi-amp (median sin i) 1144.10 min  excluded fraction 0.005
+thermal  a= 330.83 au  Pout= 4510.26 yr  LTTE semi-amp (median sin i) 1390.38 min  excluded fraction 0.003
+thermal  a= 397.81 au  Pout= 5947.02 yr  LTTE semi-amp (median sin i) 1642.33 min  excluded fraction 0.005
+thermal  a= 478.34 au  Pout= 7841.47 yr  LTTE semi-amp (median sin i) 1992.62 min  excluded fraction 0.007
+thermal  a= 575.18 au  Pout=10339.41 yr  LTTE semi-amp (median sin i) 2417.67 min  excluded fraction 0.007
+thermal  a= 691.62 au  Pout=13633.07 yr  LTTE semi-amp (median sin i) 2906.41 min  excluded fraction 0.004
+thermal  a= 831.64 au  Pout=17975.95 yr  LTTE semi-amp (median sin i) 3450.89 min  excluded fraction 0.005
+thermal  a=1000.00 au  Pout=23702.27 yr  LTTE semi-amp (median sin i) 4154.43 min  excluded fraction 0.003
