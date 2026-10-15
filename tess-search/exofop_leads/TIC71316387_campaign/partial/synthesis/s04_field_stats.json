@@ -1,0 +1,63 @@
+{
+ "2.1-2.5": {
+  "n_window": 77,
+  "N_per_1.24circle_window": 4.060693364064151e-06,
+  "Neff_Lweighted_A_Mann": 23.518068057477542,
+  "Neff_per_circle_A_Mann": 1.2402553622936122e-06,
+  "Neff_Lweighted_B_PM_table": 24.616155225371347,
+  "Neff_per_circle_B_PM_table": 1.2981643918498508e-06,
+  "frac_dmu_lt3": 0.0,
+  "frac_dmu_lt5": 0.0,
+  "n_dmu_lt3": 0,
+  "frac_dmu_lt3_and_plx_within_1mas": 0.0,
+  "dist_pc_quantiles_window": [
+   133.97403838431453,
+   171.9977721583408,
+   258.81873758142535,
+   329.86537308449834,
+   404.8557707828455
+  ],
+  "frac_window_265_345pc": 0.2987012987012987,
+  "dmu_quantiles_window": [
+   9.46058051995837,
+   19.799180541629635,
+   35.357470413783844,
+   58.59854049276118,
+   83.57178051907913
+  ],
+  "odds_hardwindow": 6466.827691740069,
+  "odds_Lweighted_A_Mann_noLb": 21172.901236913636,
+  "odds_Lweighted_B_PM_table_noLb": 20228.412101933904
+ },
+ "1.8-2.7": {
+  "n_window": 192,
+  "N_per_1.24circle_window": 1.0125365271432688e-05,
+  "Neff_Lweighted_A_Mann": 54.962627170623996,
+  "Neff_per_circle_A_Mann": 2.8985243561465567e-06,
+  "Neff_Lweighted_B_PM_table": 58.8647934670048,
+  "Neff_per_circle_B_PM_table": 3.1043100806295223e-06,
+  "frac_dmu_lt3": 0.0,
+  "frac_dmu_lt5": 0.0,
+  "n_dmu_lt3": 0,
+  "frac_dmu_lt3_and_plx_within_1mas": 0.0,
+  "dist_pc_quantiles_window": [
+   134.07538807755986,
+   179.2399853110026,
+   295.4141008573739,
+   409.21222000086203,
+   532.5291121907931
+  ],
+  "frac_window_265_345pc": 0.2864583333333333,
+  "dmu_quantiles_window": [
+   12.026789890180549,
+   19.953573921583352,
+   37.45530471094729,
+   62.19748654106459,
+   84.61688882919066
+  ],
+  "odds_hardwindow": 5186.93471108318,
+  "odds_Lweighted_A_Mann_noLb": 18119.429797930894,
+  "odds_Lweighted_B_PM_table_noLb": 16918.28690584284
+ },
+ "note": "like-for-like odds scale as q_window/N; widen colour window 1.8-2.7 <-> q_tot 0.48-0.78 (0.30/0.9)"
+}

@@ -101,6 +101,11 @@ own pages on 2026-10-13:
   An observing note needs no paper, but it needs an approved ExoFOP account. Alternatively, the candidates' authors
   can be told directly. Draft notes are in [`exofop_leads/README.md`](exofop_leads/README.md); nothing has been
   posted.
+- **One of the ten looks like a hidden triple star system.** For CTOI 71316387.01, a RAVEN "high-probability
+  planet" around the G star TYC 8001-154-1, a dedicated campaign found that the eclipses come from a red early-M +
+  mid-M pair within 1.24″ of the star, not from the star itself. A bound triple is favoured over a chance alignment
+  by odds of order 10³–10⁴. The separation, masses and association still need direct confirmation. See
+  [`exofop_leads/TIC71316387_campaign/`](exofop_leads/TIC71316387_campaign/).
 
 Full policy notes: [`reaudit/exofop_policy.json`](reaudit/exofop_policy.json).
 

@@ -1,0 +1,46 @@
+{
+ "2.1-2.5 window": {
+  "n": 77,
+  "k_lt3": 0,
+  "k_lt5": 0,
+  "k_lt10": 5,
+  "k_lt15": 9,
+  "frac_lt3_scaled_from15": 0.004675324675324676,
+  "frac_lt3_UL95_direct": 0.038158510711545524,
+  "frac_lt5_scaled_from15": 0.012987012987012986,
+  "frac_lt5_UL95_direct": 0.038158510711545524,
+  "LR_dmu<5_smooth": 76.23,
+  "LR_dmu<3_smooth": 181.80555555555551
+ },
+ "1.8-2.7 window": {
+  "n": 189,
+  "k_lt3": 0,
+  "k_lt5": 0,
+  "k_lt10": 7,
+  "k_lt15": 17,
+  "frac_lt3_scaled_from15": 0.003597883597883598,
+  "frac_lt3_UL95_direct": 0.015725478239168478,
+  "frac_lt5_scaled_from15": 0.009994121105232215,
+  "frac_lt5_UL95_direct": 0.015725478239168478,
+  "LR_dmu<5_smooth": 99.05823529411765,
+  "LR_dmu<3_smooth": 236.24999999999997
+ },
+ "all BP-RP 1.8-2.8 G14-18.5": {
+  "n": 2186,
+  "k_lt3": 7,
+  "k_lt5": 10,
+  "k_lt10": 57,
+  "k_lt15": 136,
+  "frac_lt3_scaled_from15": 0.002488563586459287,
+  "frac_lt3_UL95_direct": null,
+  "frac_lt5_scaled_from15": 0.006912676629053573,
+  "frac_lt5_UL95_direct": null,
+  "LR_dmu<5_smooth": 143.21514705882353,
+  "LR_dmu<3_smooth": 341.5624999999999
+ },
+ "RV": {
+  "n": 73,
+  "frac_within3": 0.0821917808219178,
+  "frac_within5p5": 0.1506849315068493
+ }
+}

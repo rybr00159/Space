@@ -1,0 +1,1751 @@
+{
+ "ipd_calib_dI3-5": {
+  "k_n_0p1_0p5": [
+   0,
+   88
+  ],
+  "k_n_0p5_1p2": [
+   2,
+   77
+  ],
+  "fisher_one_sided_p": 0.216260162601626,
+  "per_bin": [
+   [
+    0.1,
+    0,
+    47
+   ],
+   [
+    0.3,
+    0,
+    41
+   ],
+   [
+    0.5,
+    0,
+    33
+   ],
+   [
+    0.7,
+    0,
+    16
+   ],
+   [
+    0.9,
+    2,
+    28
+   ],
+   [
+    1.2,
+    0,
+    26
+   ],
+   [
+    1.6,
+    0,
+    47
+   ]
+  ]
+ },
+ "ipd_calib_dI2-5": {
+  "k_n_0p1_0p5": [
+   0,
+   231
+  ],
+  "k_n_0p5_1p2": [
+   4,
+   171
+  ],
+  "fisher_one_sided_p": 0.0320802471433357,
+  "per_bin": [
+   [
+    0.1,
+    0,
+    137
+   ],
+   [
+    0.3,
+    0,
+    94
+   ],
+   [
+    0.5,
+    1,
+    73
+   ],
+   [
+    0.7,
+    1,
+    47
+   ],
+   [
+    0.9,
+    2,
+    51
+   ],
+   [
+    1.2,
+    0,
+    54
+   ],
+   [
+    1.6,
+    0,
+    79
+   ]
+  ]
+ },
+ "bound_fsep_0.1_1.24": 0.26900166666666664,
+ "position_terms": {
+  "soft|noPMa": {
+   "E_bound": 0.002117081934704153,
+   "int_bg_arcsec2": 0.03309297115978112,
+   "ratio_per_arcsec2": 0.06397376423175645
+  },
+  "soft|PMa": {
+   "E_bound": 0.002108334504919019,
+   "int_bg_arcsec2": 0.03309297115978112,
+   "ratio_per_arcsec2": 0.06370943529789012
+  },
+  "soft|PMa+ETV": {
+   "E_bound": 0.002105371282838183,
+   "int_bg_arcsec2": 0.03309297115978112,
+   "ratio_per_arcsec2": 0.06361989295771979
+  },
+  "hard|noPMa": {
+   "E_bound": 0.0010857670641663503,
+   "int_bg_arcsec2": 0.02142418061301361,
+   "ratio_per_arcsec2": 0.050679514133055194
+  },
+  "hard|PMa": {
+   "E_bound": 0.0010830196004916904,
+   "int_bg_arcsec2": 0.02142418061301361,
+   "ratio_per_arcsec2": 0.05055127288433313
+  },
+  "hard|PMa+ETV": {
+   "E_bound": 0.0010822266168517035,
+   "int_bg_arcsec2": 0.02142418061301361,
+   "ratio_per_arcsec2": 0.05051425939689524
+  },
+  "emp35|noPMa": {
+   "E_bound": 0.0002570127321137746,
+   "int_bg_arcsec2": 0.0012710892525715871,
+   "ratio_per_arcsec2": 0.20219880830067813
+  },
+  "emp35|PMa": {
+   "E_bound": 0.00023489101920716362,
+   "int_bg_arcsec2": 0.0012710892525715871,
+   "ratio_per_arcsec2": 0.18479506355037384
+  },
+  "emp35|PMa+ETV": {
+   "E_bound": 0.00022437172093567757,
+   "int_bg_arcsec2": 0.0012710892525715871,
+   "ratio_per_arcsec2": 0.1765192495190585
+  },
+  "emp25|noPMa": {
+   "E_bound": 0.00011562591234708128,
+   "int_bg_arcsec2": 0.0008053162235925791,
+   "ratio_per_arcsec2": 0.1435782726830772
+  },
+  "emp25|PMa": {
+   "E_bound": 0.00010266280657193663,
+   "int_bg_arcsec2": 0.0008053162235925791,
+   "ratio_per_arcsec2": 0.1274813589548088
+  },
+  "emp25|PMa+ETV": {
+   "E_bound": 9.830777482418197e-05,
+   "int_bg_arcsec2": 0.0008053162235925791,
+   "ratio_per_arcsec2": 0.12207350596467963
+  },
+  "none|noPMa": {
+   "E_bound": 0.07504321728051117,
+   "int_bg_arcsec2": 0.10134876161524914,
+   "ratio_per_arcsec2": 0.7404453304066817
+  },
+  "none|PMa": {
+   "E_bound": 0.03155245841912106,
+   "int_bg_arcsec2": 0.10134876161524914,
+   "ratio_per_arcsec2": 0.3113255447452218
+  },
+  "none|PMa+ETV": {
+   "E_bound": 0.02524754961084039,
+   "int_bg_arcsec2": 0.10134876161524914,
+   "ratio_per_arcsec2": 0.24911552157576233
+  }
+ },
+ "position_factor_synthesis_convention": {
+  "soft|noPMa": 1.1375891444513788,
+  "soft|PMa": 1.132888815662824,
+  "soft|PMa+ETV": 1.131296563035989,
+  "hard|noPMa": 0.9011891955423696,
+  "hard|PMa": 0.8989087942846195,
+  "hard|PMa+ETV": 0.8982506160139914,
+  "emp35|noPMa": 3.5955234478710842,
+  "emp35|PMa": 3.286047972439845,
+  "emp35|PMa+ETV": 3.138886455268257,
+  "emp25|noPMa": 2.5531260563571836,
+  "emp25|PMa": 2.266888806816713,
+  "emp25|PMa+ETV": 2.170725716677551,
+  "none|noPMa": 13.166687626491553,
+  "none|PMa": 5.536028156942057,
+  "none|PMa+ETV": 4.429802067489655
+ },
+ "hosts": {
+  "2.1-2.5": {
+   "n_window": 77,
+   "area_deg2": 7.067710805951037,
+   "dens_per_arcsec2": 8.406340026941558e-07,
+   "q": {
+    "q_tot": [
+     0.5000000000000001,
+     0.6796116504854368
+    ],
+    "w_tot": 0.1995685005393741,
+    "q_prim": [
+     0.3349514563106797,
+     0.45631067961165045
+    ],
+    "w_prim": 0.13484358144552308
+   },
+   "A_Mann|total": {
+    "Neff": 23.518068057477542,
+    "Lbound": 0.48188898963088345,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 2.5675438554273916e-07,
+    "F_LC_equiv": 1.5777423600821834
+   },
+   "A_Mann|dchi2_lc": {
+    "Neff": 58.5203972845018,
+    "Lbound": 0.2538668120771563,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 6.388861793314668e-07,
+    "F_LC_equiv": 0.3340330113431739
+   },
+   "B_PM_table|total": {
+    "Neff": 24.616155225371347,
+    "Lbound": 0.3472844800709117,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 2.687425597148646e-07,
+    "F_LC_equiv": 1.0863152560030547
+   },
+   "B_PM_table|dchi2_lc": {
+    "Neff": 58.5203972845018,
+    "Lbound": 0.13381752416734252,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 6.388861793314668e-07,
+    "F_LC_equiv": 0.1760744943475326
+   }
+  },
+  "1.8-2.7": {
+   "n_window": 192,
+   "area_deg2": 7.067710805951037,
+   "dens_per_arcsec2": 2.0961263443802327e-06,
+   "q": {
+    "q_tot": [
+     0.41747572815533973,
+     0.7883495145631068
+    ],
+    "w_tot": 0.4120819848975189,
+    "q_prim": [
+     0.25242718446601936,
+     0.5650485436893203
+    ],
+    "w_prim": 0.34735706580366776
+   },
+   "A_Mann|total": {
+    "Neff": 54.96262717062399,
+    "Lbound": 0.4826351612325949,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 6.000448477536131e-07,
+    "F_LC_equiv": 1.6859811061976604
+   },
+   "A_Mann|dchi2_lc": {
+    "Neff": 156.33541926582643,
+    "Lbound": 0.2520735749707605,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 1.7067645358480611e-06,
+    "F_LC_equiv": 0.30957876738150936
+   },
+   "B_PM_table|total": {
+    "Neff": 58.8647934670048,
+    "Lbound": 0.3481431402130815,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 6.426460642848447e-07,
+    "F_LC_equiv": 1.135542639054346
+   },
+   "B_PM_table|dchi2_lc": {
+    "Neff": 156.33541926582643,
+    "Lbound": 0.13382347228890823,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 1.7067645358480611e-06,
+    "F_LC_equiv": 0.1643524340174069
+   }
+  },
+  "2.0-2.6": {
+   "n_window": 114,
+   "area_deg2": 7.067710805951037,
+   "dens_per_arcsec2": 1.244575016975763e-06,
+   "q": {
+    "q_tot": [
+     0.4514563106796116,
+     0.70201643017177
+    ],
+    "w_tot": 0.27840013276906483,
+    "q_prim": [
+     0.2864077669902912,
+     0.47871545929798354
+    ],
+    "w_prim": 0.21367521367521372
+   },
+   "A_Mann|total": {
+    "Neff": 34.81588769351106,
+    "Lbound": 0.4825575666130052,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 3.8009635102787535e-07,
+    "F_LC_equiv": 1.580070658492375
+   },
+   "A_Mann|dchi2_lc": {
+    "Neff": 90.71075570261499,
+    "Lbound": 0.2527301549792142,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 9.90318774723389e-07,
+    "F_LC_equiv": 0.31761655433766667
+   },
+   "B_PM_table|total": {
+    "Neff": 36.90520553803676,
+    "Lbound": 0.3475331932964602,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 4.029061123596152e-07,
+    "F_LC_equiv": 1.0735283399238333
+   },
+   "B_PM_table|dchi2_lc": {
+    "Neff": 90.71075570261499,
+    "Lbound": 0.1328174562243049,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 9.90318774723389e-07,
+    "F_LC_equiv": 0.16691725134789362
+   }
+  },
+  "1.5-2.8 (gc)": {
+   "n_window": 38,
+   "area_deg2": 0.7845254987714512,
+   "dens_per_arcsec2": 3.7374167825312215e-06,
+   "q": {
+    "q_tot": [
+     0.3980582524271845,
+     0.8802588996763754
+    ],
+    "w_tot": 0.5357784969435454,
+    "q_prim": [
+     0.2330097087378641,
+     0.656957928802589
+    ],
+    "w_prim": 0.4710535778496943
+   },
+   "A_Mann|total": {
+    "Neff": 12.124481783161894,
+    "Lbound": 0.4830005475955507,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 1.1924800446285087e-06,
+    "F_LC_equiv": 1.513798373974253
+   },
+   "A_Mann|dchi2_lc": {
+    "Neff": 32.03042696037194,
+    "Lbound": 0.25367373707730373,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 3.150290928245647e-06,
+    "F_LC_equiv": 0.30095140538912146
+   },
+   "B_PM_table|total": {
+    "Neff": 13.33385443753415,
+    "Lbound": 0.3486400924737673,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 1.3114255618596981e-06,
+    "F_LC_equiv": 0.9935854314345726
+   },
+   "B_PM_table|dchi2_lc": {
+    "Neff": 32.03042696037194,
+    "Lbound": 0.13292169526917424,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 3.150290928245647e-06,
+    "F_LC_equiv": 0.1576945704307267
+   }
+  },
+  "2.1-2.5 (gc)": {
+   "n_window": 7,
+   "area_deg2": 0.7845254987714512,
+   "dens_per_arcsec2": 6.884715125715408e-07,
+   "q": {
+    "q_tot": [
+     0.5000000000000001,
+     0.6796116504854368
+    ],
+    "w_tot": 0.1995685005393741,
+    "q_prim": [
+     0.3349514563106797,
+     0.45631067961165045
+    ],
+    "w_prim": 0.13484358144552308
+   },
+   "A_Mann|total": {
+    "Neff": 2.872634537129266,
+    "Lbound": 0.4832407884068298,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 2.8253243497751913e-07,
+    "F_LC_equiv": 1.1775551240946425
+   },
+   "A_Mann|dchi2_lc": {
+    "Neff": 4.69156419633747,
+    "Lbound": 0.2529879651682621,
+    "f297": 0.024678093565449748,
+    "dens_eff_per_arcsec2": 4.6142975693984906e-07,
+    "F_LC_equiv": 0.37746808571016094
+   },
+   "B_PM_table|total": {
+    "Neff": 2.963908711163226,
+    "Lbound": 0.3477503864838333,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 2.915095304997875e-07,
+    "F_LC_equiv": 0.8212981379009738
+   },
+   "B_PM_table|dchi2_lc": {
+    "Neff": 4.69156419633747,
+    "Lbound": 0.1326640928892665,
+    "f297": 0.022605503887005822,
+    "dens_eff_per_arcsec2": 4.6142975693984906e-07,
+    "F_LC_equiv": 0.19794009233633145
+   }
+  }
+ },
+ "grid": [
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 13840.534957409616
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 10981.994365916726
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 38347.86530756064
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 26519.8179638182
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2930.260153617973
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 2325.0618994661795
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 8118.8495988658615
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 5614.66490274468
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 9529.556064333903
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 7561.379045697621
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 26403.468761898155
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 18259.5609837204
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1544.5900774308348
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1225.5797612010097
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 4279.584020919815
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2959.5855801987045
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 9351.712809060557
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 7420.26646345725
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 25910.71980240585
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 17918.79592149879
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1979.905509201334
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1570.9877699095814
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 5485.70918842288
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 3793.692501854514
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 6438.889232658044
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 5109.039895741637
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 17840.181595877133
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 12337.541205216488
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1043.6419442100237
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 828.0944332439257
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 2891.610824945822
+  },
+  {
+   "colour": "2.1-2.5",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 1999.7199866207468
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 12247.589594497684
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 9718.046328175118
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 33934.30366364837
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 23467.57892965306
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2248.8945315705546
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1784.4214223834524
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 6230.995034003943
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 4309.101763812136
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 8249.00122490456
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 6545.302277340362
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 22855.445173757005
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 15805.892730372148
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1193.9167961624653
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 947.3324238677762
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 3307.9762183008474
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2287.661293122411
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 10323.884422587053
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 8191.6516169434235
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 28604.308323808305
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 19781.57176792745
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1895.6650239940277
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1504.145806302282
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 5252.304714526885
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 3632.2794972447846
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 6953.346582249393
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 5517.244328019885
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 19265.584675261143
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 13323.291777957675
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1006.3905978123398
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 798.536755197445
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 2788.3988018138034
+  },
+  {
+   "colour": "1.8-2.7",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 1928.342765406849
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 13060.404165340426
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 10362.987081187794
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 36186.36283467147
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 25025.011104306726
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2625.325992200085
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 2083.1070001092007
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 7273.970828954809
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 5030.381240542544
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 8873.472795026833
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 7040.799256746243
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 24585.663820156195
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 17002.44130412193
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1379.6894164538558
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1094.736687912457
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 3822.695009351116
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2643.619793855916
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 10024.006177571267
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 7953.708415516712
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 27773.437943153214
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 19206.975735794287
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2014.967043193806
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1598.807906194096
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 5582.853914920607
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 3860.8738284342935
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 6810.489552069776
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 5403.892127010903
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 18869.7717844716
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 13049.563743104016
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1058.9270483960295
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 840.222644224911
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 2933.961147266505
+  },
+  {
+   "colour": "2.0-2.6",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2029.0077404408303
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 8018.876626437481
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 6362.706225121199
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 22217.840692923874
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 15364.951503813814
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1594.1965798474182
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1264.9408358797095
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 4417.028381192314
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 3054.6364881265954
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 5263.210166874578
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 4176.178491446847
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 14582.736518911619
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 10084.825186334747
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 835.3379992232447
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 662.8123283771369
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 2314.4646633294246
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 1600.5892652148395
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 7050.153275592685
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 5594.057150945484
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 19533.806246798842
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 13508.782865769193
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1401.6090735571258
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1112.1291912767915
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 3883.427637155658
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2685.61999962808
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 4627.386119869596
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 3671.673707245215
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 12821.063650855183
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 8866.524157113101
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 734.4246838808392
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 582.7410403852679
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 2034.8649053433196
+  },
+  {
+   "colour": "1.5-2.8 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 1407.2294882090198
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 12613.017992420697
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 10008.001349385337
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 34946.793356151706
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 24167.775462630263
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 4043.1328089946865
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 3208.0885504546195
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 11202.277430534066
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 7747.037699628615
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 8797.081324282888
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 6980.185219507388
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 24374.006551145285
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 16856.067778506633
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2120.174159981749
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1682.2861797850303
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 5874.35047602867
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_tot",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 4062.4609487515413
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 8522.30945433831
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 6762.163073909014
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 23612.698213616022
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 16329.578015290725
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 2731.8464925639782
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 2167.6273989558254
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 7569.10637198248
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "A_Mann",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 5234.484932181498
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "soft|PMa",
+   "odds": 5943.97386775871
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "hard|PMa",
+   "odds": 4716.341364532021
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp35|PMa+ETV",
+   "odds": 16468.923345368443
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "total",
+   "pos": "emp25|PMa+ETV",
+   "odds": 11389.234985477458
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "soft|PMa",
+   "odds": 1432.5501080957767
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "hard|PMa",
+   "odds": 1136.679851206102
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp35|PMa+ETV",
+   "odds": 3969.1557270464004
+  },
+  {
+   "colour": "2.1-2.5 (gc)",
+   "qconv": "w_prim",
+   "rel": "B_PM_table",
+   "L": "dchi2_lc",
+   "pos": "emp25|PMa+ETV",
+   "odds": 2744.906046453745
+  }
+ ],
+ "summary": {
+  "all": {
+   "n": 160,
+   "min": 582.7410403852679,
+   "p16": 1599.591704163223,
+   "median": 5588.455532933045,
+   "p84": 16938.0369528512,
+   "max": 38347.86530756064
+  },
+  "MS_L, fm windows": {
+   "n": 48,
+   "min": 5109.039895741637,
+   "p16": 7238.122204235967,
+   "median": 13054.983954222222,
+   "p84": 25450.151279394304,
+   "max": 38347.86530756064
+  },
+  "MS_L, fm windows, soft/hard pos": {
+   "n": 24,
+   "min": 5109.039895741637,
+   "p16": 6511.25010304202,
+   "median": 8220.326420923991,
+   "p84": 10561.069412301053,
+   "max": 13840.534957409616
+  },
+  "shape-only L, fm windows": {
+   "n": 48,
+   "min": 798.536755197445,
+   "p16": 1146.3103442024615,
+   "median": 2268.2779123464825,
+   "p84": 4655.31591264273,
+   "max": 8118.8495988658615
+  },
+  "gc 1.5-2.8 window (K5-M4 hosts)": {
+   "n": 32,
+   "min": 582.7410403852679,
+   "p16": 1258.8283700955928,
+   "median": 4029.8030643012526,
+   "p84": 12848.572419451742,
+   "max": 22217.840692923874
+  }
+ },
+ "poisson_2.1-2.5": {
+  "n": 77,
+  "mult68": [
+   0.8875014701341943,
+   1.1275606241894554
+  ]
+ }
+}

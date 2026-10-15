@@ -1,0 +1,225 @@
+# Synthesis s09: final answer. Starts from the s06 text (previous run) and replaces the fields
+# changed by this run's checks (s07: Gaia-IPD separation sensitivity; s08: shape-only F_LC).
+import json
+B = '/tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/'
+F = json.load(open(B + 'synthesis/synthesis_final.json'))   # written by s06
+
+F['headline'] = (
+"CTOI 71316387.01 is not a planet. Its 0.6518-d signal is half the period of an eclipsing binary (EB) with P = 1.3036723 d and unequal eclipses of 5770 and 2600 ppm. "
+"The G star (TIC 71316387, 297 pc) is not one of the eclipsing stars: its Gaia RV is constant. "
+"The eclipsing stars are a faint early-M + mid-M pair, about M2V + M4.5V and 0.45 + 0.20 Msun. These masses come from main-sequence relations, not from dynamics. "
+"The pair supplies 2.6 +- 0.4% of the TESS flux and lies within 1.24\" of the G star (95%), probably 0.1-0.8\" away (30-240 au projected). "
+"A bound hierarchical triple (G star + M-dwarf EB) is strongly favoured over a chance-aligned, unrelated M-dwarf EB. "
+"The baseline posterior odds are about 1e4 (8e3-1.5e4). They range from about 1e3 to 4e4 across analysis choices and stay above about 300 even when every choice goes against the triple. "
+"This is a probabilistic inference, not a demonstration: there is still no resolved image, common-proper-motion test or radial velocity of the M dwarfs.")
+
+F['bound_vs_background'] = (
+"HYPOTHESES. H_T: the EB is a physically bound companion of the G star (hierarchical triple). "
+"H_C: the EB is an unrelated M-dwarf EB, in the foreground or background, that happens to lie inside the localisation region.\n\n"
+"EXCLUDED BEFORE THE ODDS (these define the hypothesis class and are not likelihood factors):\n"
+"- The G star as an eclipsing component. Gaia RVS gives 15 transits over 946 d (p = 0.275, robust amplitude 9.9 km/s), but K1 >= 18 km/s would be needed even for a 0.1 Msun companion.\n"
+"- Resolved neighbours. Colour-corrected TESS centroids put the source within 1.24\" (95%) or 1.48\" (99.7%); >= 1.5\" is excluded at p = 0.002, and the nearest Gaia neighbour is 18.2\" away. The referee reproduced this: chi2 = 217/22 for a fixed offset against 20.8/22 for colour only.\n"
+"- G/F/K-coloured eclipsed stars. The TESS colour shift gives BP-RP ~ 2.3 (K7 is 5.7 sigma statistical below it). The SuperWASP/TESS deep-depth ratio is 0.36 +- 0.11 (referee's re-reduction) or 0.42 +- 0.15 (chromatic), against >= 0.82 for G/F.\n"
+"- Giants. The eclipse shape gives rho1 ~ 1-4 rho_sun.\n\n"
+"PRIOR ODDS O_0 (like-for-like: r <= 1.24\", eclipsed-star colour and light fraction matched):\n"
+"- H_T: CSF 0.58 x f_sep(0.1-1.24\") 0.272 x q_tot window 0.55-0.70 (0.167 of a flat 0.1-1) = 0.0263, times r_EB.\n"
+"- H_C: 4.1e-6 unrelated stars per 1.24\" circle with BP-RP 2.1-2.5 that supply 2.2-6.5% of the TESS light (T 14.33-15.50), times r_EB. This is my recount: 77 Gaia stars in 7.07 deg2 (s04). The referee counted 3.3e-6 (7 stars in 0.785 deg2).\n"
+"- r_EB cancels.\n"
+"- O_0 = 6.5e3 (referee 7.9e3; Poisson +-11% for 77 hosts). A wider colour window (BP-RP 1.8-2.7 with q_tot 0.48-0.78) gives 5.2e3.\n\n"
+"LIKELIHOOD FACTORS (each applied once):\n"
+"(1) Position, F_pos. This is one joint separation likelihood applied identically to both hypotheses. It replaces the hard 1.24\" window rather than multiplying it, and combines three things:\n"
+"   - the TESS colour-corrected localisation map;\n"
+"   - the Gaia IPD/BP-RP-blend signature;\n"
+"   - the VHS Ks miss probability for dKs = 2.62 +- 0.18.\n"
+"   Baseline F_pos = 1.13 treats the Gaia signature as requiring >~0.45\" (soft ramp at 0.35-0.50\"). A hard 0.48-1.2\" window gives 0.87. Using the speckle calibration's empirical match rates instead (s07) gives 2.3-3.3, because the bound prior then keeps its weight at 0.1-0.4\", where the background area is small. The baseline is therefore conservative.\n"
+"(2) Light fraction / photometric distance, F_LC = 1.1-1.7. This uses the referee's independent light-curve plus main-sequence-consistency profiles L(f) (r09) for both hypotheses, since a field M-dwarf EB must also be main-sequence-consistent.\n"
+"   - H_T needs the f at which a main-sequence pair sits at 297.4 pc: 2.26% (P&M) or 2.47% (Mann), with 0.15 mag scatter, giving L/L_max = 0.35-0.50.\n"
+"   - H_C averages L(f) over the 77 actual window hosts: 0.30-0.31.\n"
+"   - Sensitivity: with the shape-only L(f) (no main-sequence term, e.g. young or inflated M dwarfs), F_LC = 0.21-0.46 (s08). The shape alone mildly prefers f ~ 3-15% over 2.3%, in the same direction as TRICERATOPS's light-curve ratio of 0.22.\n"
+"(3) Colour, F = 1. It is already used to define the matched host class in O_0.\n"
+"(4) Gaia IPD/C* signature, F = 1 beyond its role in F_pos. Both hypotheses predict the same unresolved companion at the same separation and contrast. C* is corrected to +0.0181 (the correct Riello branch; ~2 sigma against unselected twins) and is used only qualitatively.\n"
+"(5) ETV, PMa/RUWE, G-star RV and SED, F = 1. None is sensitive at the allowed separations, and the SED limits (>= 5.8%) are above both hypotheses.\n"
+"(6) Not applied: the excess of close binaries in triples, a factor E ~ 1-3+ in favour of bound. Left out to stay conservative.\n\n"
+"POSTERIOR ODDS:\n"
+"- Baseline: O_0 (6.5e3-7.9e3) x F_pos 1.13 x F_LC 1.1-1.7 = 8e3-1.5e4, i.e. ~1e4 and P(bound) ~ 0.9999.\n"
+"- Single-choice variants:\n"
+"   - hard IPD window: 6e3-1.2e4;\n"
+"   - wide colour window: x0.8;\n"
+"   - empirical IPD likelihood: 1.6e4-4.4e4;\n"
+"   - shape-only F_LC: 1.5e3-4.1e3.\n"
+"- Worst case, with every down-shift together (wide colour, hard window, shape-only F_LC = 0.21): 950. Divided by a further ~3 for prior-model systematics (period distribution, q shape, CSF), the odds are still ~300, P(bound) >= 0.997.\n"
+"- For reference only: matching any host bright enough for the depth, ignoring colour, gives ~230-265 (the referee's ~230 at f_EB = 2.8%, x F_pos). astro's most pessimistic any-host choices give 25-36. Neither is adopted, because the red colour is established by two independent methods.\n\n"
+"AVOIDING DOUBLE COUNTING:\n"
+"- Colour and light fraction are used once, to define the matched host class; L(f) then refines f inside that window.\n"
+"- The TESS position, Gaia IPD and VHS are combined into one separation likelihood that replaces the window.\n"
+"- Distance enters only through L(f). astro's 'distance coincidence' factor of 5-7 is NOT applied: the like-for-like window already selects stars at comparable distances (window hosts have a median distance of 259 pc, and 30% lie at 265-345 pc).\n"
+"- TRICERATOPS (SEBx2P 0.973) is not used. It is its own prior ratio of 158 times a light-curve ratio of 0.22 from a single folded eclipse, so it adds nothing.\n"
+"- astro's central 338 is superseded: it was computed at f = 5% (the referee gets ~230 at 2.8%).\n\n"
+"WHAT WOULD BE DECISIVE:\n"
+"- Common proper motion. Bound predicts dmu < 2.5-4.3 mas/yr (95%). Among the 77 unrelated window M dwarfs, 0 lie within 5 mas/yr of the G star (5th percentile 9.5, median 35 mas/yr). The likelihood ratio is >~50-200.\n"
+"- The M-dwarf systemic RV. Bound predicts -6.1 km/s within +-2 km/s (68%) and +-5.5 km/s (95%). Of 73 field stars with Gaia RVs, 8% lie within +-3 km/s and 11% within +-4 km/s, so the likelihood ratio is ~6-12.")
+
+F['separation_and_position'] = (
+"HARD LIMITS:\n"
+"- Upper: <= 1.24\" (95%) and <= 1.48\" (99.7%) from the TESS colour-corrected localisation. VHS Ks injections recover dKs <= 2.5 beyond 0.6\" and dKs <= 3.0 beyond 1.0\" (100%), and the predicted dKs is 2.4-2.8, so the pair is inside ~0.8-1.0\".\n"
+"- Lower: PMa + RV + RUWE exclude >= 99% of bound orbits at a <= 5 au and ~70-78% at 10 au. ETVs exclude >= 94% at <= 10 au. An IPD multi-peak fraction of 41% is not produced by a dG ~ 4.5 companion at <~ 0.1\" (calibration singles 0/2650). Together these give a soft lower bound of ~0.1\" (~30 au).\n\n"
+"CORRECTION TO LOCALISE AND THE REFEREE: their 0.48\" lower bound from the Gaia IPD is not statistically established. I checked the speckle/AO calibration cells directly (localise v03_gaia_like.json; s07).\n"
+"- At I-band contrast 3-5 (the pair's predicted dIc 3.7-4.1), target-like Gaia diagnostics occur in 0 of 88 imaged pairs at 0.1-0.5\" and 2 of 77 at 0.5-1.2\". One-sided Fisher p = 0.22.\n"
+"- Among pairs showing the IPD/RUWE signature, the BP/RP-blend flag co-occurs in 0 of 7 at < 0.5\" and 4 of 10 at 0.5-1.2\" (p = 0.09).\n"
+"- So the Gaia data only weakly favour >~0.5\".\n\n"
+"SEPARATION POSTERIOR. The bound prior is a Raghavan period distribution with isotropic orbits, times the PMa/RV weight, the TESS map and the VHS miss probability (dKs 2.62 +- 0.18). Two treatments of the Gaia signature bracket the answer:\n"
+"(A) Gaia signature taken to need >~0.45\" (soft ramp at 0.35-0.50\"; s02/s07): median 0.48\", 68% 0.41-0.57\", 95% 0.37-0.80\", i.e. 123-171 au (68%) and 111-236 au (95%) projected.\n"
+"(B) Empirical calibration match rates (Jeffreys) in place of the ramp: median 0.24-0.28\", 68% 0.14-0.39\" (or 0.14-0.51\" pooling dI 2-5), 95% 0.10-0.61\" (0.10-0.76\"), i.e. 41-115 au (68%) and 31-180 au (95%) projected.\n\n"
+"ADOPTED: 0.1-0.8\" (30-240 au projected; envelope of the 95% ranges), most likely ~0.2-0.6\". This replaces the referee's 0.48-0.8\" (140-240 au) and astro/lcmodel's 150-370 au. The upper part is robust; the lower edge is calibration-limited.\n\n"
+"POSITION ANGLE: only a weak NNW preference (PA ~ 340 +- 40 deg), not a measurement.\n"
+"- The TESS best PA is 338-345 deg at every radius from 0.4\" to 0.8\".\n"
+"- The posterior fraction in PA 300-20 deg is 0.89 (A) or 0.65-0.69 (B), against a prior of 0.22.\n"
+"- On the 0.45-0.6\" ring the 68% range is PA 305-12 deg and the 95% range 268-38 deg.\n"
+"- The hint depends mainly on S105: with S105 dropped, delta = (-0.14, +0.24) +- (0.20, 0.45)\". p(delta = 0) = 0.09.\n"
+"- Gaia gives no PA (harmonic amplitude 0.029, Rayleigh p = 0.83).\n\n"
+"VHS FEATURE: there is an unexplained Ks residual at 1.12-1.14\", PA 345-350 deg, dKs 4.0-4.4 after bias correction, present in all three Ks frames.\n"
+"- It cannot be the EB. The EB needs dKs <= 2.9 (f_EB > 2.2%), and injections at 1.0-1.2\" recover dKs 2.5-3.0 100% of the time.\n"
+"- Its PA coincides with the TESS hint. It may be a fourth body or a fitting artefact, and should be disclosed.")
+
+F['outer_orbit'] = (
+"MONTE CARLO (s02, s07): 2e6 bound orbits with log-normal P (Raghavan; mu 5.03, sigma 2.28 in log d), e ~ U(0, 0.8), isotropic orientation, M_G 1.03 + M_EB 0.66 = 1.69 Msun. Each orbit is weighted by the separation likelihood (TESS map x VHS x PMa/RV weight x Gaia-IPD treatment A or B). Results are given as median (68%; 95%).\n\n"
+"SEMI-MAJOR AXIS AND PERIOD:\n"
+"- a: A 166 (113-294; 85-650) au; B 86 (46-173; 28-406) au.\n"
+"- P_out: A 1650 (930-3900; 600-12700) yr; B 615 (240-1750; 116-6300) yr.\n"
+"- Adopted: a ~ 30-650 au and P_out ~ 1e2-1e4 yr, most likely ~100-200 au and ~600-1700 yr.\n"
+"- e_out is unconstrained.\n\n"
+"HIERARCHY: P_out/P_in >= 3e4, which is dynamically stable by a wide margin. The Kozai-Lidov timescale is ~1e7 yr at the closest orbits and ~1e9 yr typically. GR apsidal precession of the inner orbit takes ~4e3 yr (tidal and rotational precession are faster still), so Kozai-Lidov cycles are quenched. A circular, synchronised inner orbit is expected, as observed (e cos w = 0.0006 +- 0.0005; spot modulation at P_EB).\n\n"
+"EXPECTED SIGNATURES:\n"
+"(a) gamma_EB - gamma_G: |Delta| median 1.2 km/s (A) or 1.7 km/s (B); 95% < 3.2 km/s (A) or < 5.4 km/s (B). The difference in gravitational redshift is ~0.\n"
+"(b) Relative proper motion: A 1.4 (0.9-2.0; < 2.5) mas/yr; B 2.0 (1.2-3.1; < 4.3) mas/yr. PA change 0.12 deg/yr (A) or 0.33 deg/yr (B, up to ~2).\n"
+"(c) Eclipse timing of the EB:\n"
+"   - LTTE semi-amplitude is hours, over centuries to millennia, so over decades it shows only as curvature.\n"
+"   - Curvature: A 0.002 min/yr^2 (95% < 0.005); B 0.007 min/yr^2 (68% < 0.026; 95% < 0.057).\n"
+"   - Measured limits: |c| < 0.077 min/yr^2 and |dP/dt| < 0.032 s/yr.\n"
+"   - The closest B-type orbits are within a factor ~1.5-3 of the current limit, so a further 5-10 yr of TESS timing could begin to probe them.\n"
+"(d) G-star RV trend: A 1.5 (0.6-2.5; < 3.4) m/s/yr; B 5.5 (1.5-19; < 41) m/s/yr. This is detectable with a few years of precision RVs if the companion is at ~0.1-0.3\", after modelling M-dwarf line blending at P_EB.\n"
+"(e) G-star astrometric acceleration: A 0.003 mas/yr^2 (< 0.006); B 0.009 (0.002-0.03; < 0.07) mas/yr^2. Gaia DR3 saw none (TGAS-DR3 PMa p = 0.46, RUWE 1.026, no NSS solution), and these PMa/RV limits are already folded into the weights. Gaia DR4's 66-month baseline might reach ~0.01-0.02 mas/yr^2 (my scaling, not verified), so only the closest (B-type) orbits could show an acceleration.\n\n"
+"CONSISTENCY WITH CURRENT DATA: the non-detections so far are what these orbits predict: no ETV curvature, no LTTE (best p = 0.37), no PMa, constant Gaia RV and low RUWE. They exclude only tighter orbits: ETV <~ 10-15 au (>= 84-99%); PMa/RV/RUWE <~ 5-10 au.")
+
+F['system_table'] = """| Parameter | Value | Source / note |
+|---|---|---|
+| **G star**: TIC 71316387 = TYC 8001-154-1 = Gaia DR3 6571343840265900544 | RA 330.887948, Dec -42.835511 | |
+| G, BP-RP, Tmag, V, J, Ks | 11.775, 0.786, 11.358, 11.857 (APASS), 10.728, 10.341 | blended; the pair supplies ~1.4% (G), 2.6% (T), 3% (I), 8.5% (Ks) |
+| Parallax, distance | 3.3622 +- 0.0170 mas, 297.4 +- 1.5 pc | Gaia DR3 |
+| Proper motion | (38.503, -3.134) +- 0.013 mas/yr | Gaia DR3; the brief's (38.43, -3.09) is the DR2 value |
+| RV | -6.07 +- 0.86 km/s, constant (15 transits over 946 d, p = 0.275) | excludes the G star as an EB component |
+| Teff, R, M, age | 5880 K, 1.07 Rsun, 1.03 (0.99-1.07) Msun, 5.1 (4.0-6.2) Gyr | GSP-Phot/FLAME; GSP-Spec MG 6235 K is discrepant |
+| RUWE, PMa, NSS | 1.026; TGAS-DR3 p = 0.46; none | no acceleration |
+| **EB ephemeris** P | 1.30367228 +- 0.00000019 d | lcmodel (chromatic 1.30367220 +- 0.00000022); CTOI P = P_EB/2 |
+| T0 (primary) | BJD_TDB 2460165.670416 +- 0.00018 | BTJD 3165.670416 |
+| Diluted depths (TESS) | 5770 +- 100 ppm (deep), 2600 +- 55 ppm (shallow) | +-8% between data products |
+| f_EB (TESS flux fraction) | 2.6 +- 0.4% (2.2-3.4%; hard lower limit 2.2%) | main-sequence prior; SED <= 5.8-11.6% |
+| Undiluted depths | 22 (18-26)%, 10 (8-12)% | |
+| M1, R1, Teff1, type | 0.45 +- 0.03 Msun, 0.48 +- 0.02 Rsun, 3550 +- 100 K, M2V (M1-M2.5V) | main-sequence relations, not dynamical; BP-RP ~2.3 |
+| M2, R2, Teff2, type | 0.20 +- 0.02 Msun, 0.21 +- 0.01 Rsun, 3160 +- 100 K, M4-M4.5V | BP-RP ~3.0-3.2 |
+| a, i, b0 | 4.35 +- 0.09 Rsun (0.0202 au), 89.1 (+0.6/-0.65) deg, 0.10 (+0.07/-0.06) | i and b0 prior-driven |
+| k, r1+r2, J, T2/T1 | 0.44 +- 0.02, 0.1616 +- 0.0021, 0.52-0.57, 0.89 +- 0.01 | rsum and J robust |
+| e cos w, e sin w | 0.0006 +- 0.0005, 0.01 +- 0.01 | circular within errors |
+| Rotation, ellipsoidal | synchronised (spots at P_EB, 280-480 ppm); ellipsoidal < 74 ppm (pred. 21) | |
+| K1, K2 (predicted) | 52 +- 4, 117 +- 3 km/s | |
+| vsini (synchronised) | 18.6 +- 1.0, 8.2 +- 0.5 km/s | |
+| Pair apparent mags | T 15.3 (15.0-15.5), G 16.4 (16.2-16.6), Ic 14.9-15.3, Ks 13.0 (12.8-13.2) | |
+| Main-sequence photometric distance of the pair | 245-330 pc | matches 297.4 pc |
+| **Outer orbit (if bound)**: separation | 0.1-0.8\" (95% envelope), most likely 0.2-0.6\"; <= 1.24\" (95%, TESS) | lower edge set by the Gaia IPD calibration (s07) |
+| Projected separation | 30-240 au | |
+| PA | weak NNW preference, ~340 +- 40 deg | TESS; not significant |
+| a, P_out | ~30-650 au (most likely 100-200 au), ~1e2-1e4 yr (most likely 600-1700 yr) | Monte Carlo |
+| Contrasts (pair - G star) | dKs 2.4-2.8, dH 2.6-2.9, dJ 2.9-3.2, d832nm 3.7-4.0, dIc 3.7-4.1, dG 4.4-4.8, d562nm 5.1-5.6, dV 5.2-5.6 | +-0.2 mag systematic |
+| gamma_EB - gamma_G, relative PM | 95% < 3.2-5.4 km/s; 95% < 2.5-4.3 mas/yr | |
+| Posterior odds bound : chance-aligned | ~1e4 baseline (8e3-1.5e4); 1e3-4e4 across choices; worst case ~300 | s02/s04/s07/s08 |"""
+
+F['predictions_for_followup'] = (
+"(a) SPECKLE / AO. The companion is the unresolved EB itself: the inner pair spans only 0.07 mas.\n"
+"- Expected position: 0.1-0.8\" (95% envelope), most likely 0.2-0.6\"; PA weakly ~340 deg.\n"
+"- Contrasts (pair minus G star, main-sequence pair at 297 pc): d832nm 3.7-4.0; dIc (SOAR I) 3.7-4.1; d562nm 5.1-5.6; dJ 2.9-3.2; dH 2.6-2.9; dKs 2.4-2.8. The referee's Mann-based dKs is 2.57-2.77 and lcmodel's 2.62-2.80; +-0.2 mag systematic.\n"
+"- Best test: near-IR AO in H or K, where dKs ~2.6 should be detected easily beyond ~0.1\".\n"
+"- 8-m speckle at 832 nm should detect it beyond ~0.15-0.2\"; at 562 nm it is probably too faint. SOAR I-band is borderline, especially inside ~0.3\".\n"
+"- Disconfirming outcomes:\n"
+"   - No companion down to dKs ~3.5 beyond 0.1\". That would put the EB inside 0.1\" (< 2% of the posterior, and disfavoured by the Gaia IPD and PMa) or refute the pair model.\n"
+"   - A companion with dKs <= 2.5 beyond 0.6\", which would contradict VHS.\n"
+"- Common proper motion: bound predicts dmu < 2.5-4.3 mas/yr (95%), plus slow PA motion of ~0.1-0.9 deg/yr. Unrelated window M dwarfs show 0 of 77 within 5 mas/yr (5th percentile 9.5, median 35 mas/yr). A second epoch 1-2 yr later with <~3 mas relative astrometry gives a likelihood ratio >~50-200.\n\n"
+"(b) SPECTROSCOPY. Use red or near-IR. The pair supplies ~0.7% (V), 3% (I), 5.5% (J), 7% (H) and 8.5% (Ks) of the light, and the secondary ~10-15% of the pair. Expect at least an SB1 from the M2 primary's lines; an SB2 needs high S/N in the near-IR or AO-fed spectroscopy of the resolved companion.\n"
+"- K1 = 52 +- 4 km/s, K2 = 117 +- 3 km/s, q = K1/K2 = 0.43 +- 0.03, (M1+M2) sin^3 i ~ 0.65 Msun.\n"
+"- vsini1 = 18.6 +- 1, vsini2 = 8.2 +- 0.5 km/s (synchronised, i ~ 89 deg).\n"
+"- Systemic gamma_EB: -6.1 +- 2 km/s if bound (68%), within +-5.5 km/s (95%). Field stars fall within +-3 km/s with probability ~8% and within +-4 km/s with ~11%, giving a likelihood ratio of ~6-12.\n"
+"- The G-star lines should stay at -6.1 km/s with no 1.3-d signal larger than ~1 km/s.\n"
+"- The M-dwarf H-alpha emission is diluted below detectability in the unresolved blend.\n\n"
+"(c) MULTI-COLOUR ECLIPSE DEPTHS (deep / shallow, ppm, scaled to TESS 5770/2600; +-15% optical, +-20% near-IR; s01):\n"
+"- g' 1150/200; V 1900/370; 562 nm 2000/400; r' 2800-3350/580-890; Gaia G 3600/1240; i' 5600-6700/2200-3000; TESS 5770/2600; z' 7200/3800; J 12100/8900; H 15800/11400; Ks 18000/13800; W1 18900/15500.\n"
+"- The shallow/deep ratio rises from ~0.2 (g') to 0.45 (TESS) to ~0.8 (Ks).\n"
+"- Shapes: the secondary eclipse is total, with a flat bottom of ~36 min inside a ~1.6-h eclipse. The primary eclipse has a curved bottom.\n"
+"- Timing: secondary eclipse at phase 0.5, offset by +46 +- 33 s.\n"
+"- A G/F eclipsed star would instead give V/TESS >= 0.82. Chromatic depths test the M-dwarf nature, not whether the pair is bound.\n\n"
+"(d) GAIA DR4 (2 Dec 2026).\n"
+"- G star: parallax and PM unchanged. RUWE ~1.\n"
+"- Acceleration: none if the companion is at >~0.3\" (< 0.006 mas/yr^2). If it is at 0.1-0.3\", up to ~0.03-0.07 mas/yr^2, which might be detectable; the direction should point toward the companion. More than ~0.1 mas/yr^2, or an SB1/astrometric orbit with P < ~10 yr, would require an additional body.\n"
+"- The IPD multi-peak and BP/RP blending flags should persist.\n"
+"- The companion (G ~16.2-16.6, dG 4.4-4.8 at <~0.8\") will very probably not be catalogued. If it is, expect parallax ~3.36 mas and PM within ~4 mas/yr of (38.50, -3.13).\n"
+"- Epoch photometry should contain the eclipses at P = 1.3036723 d: ~3.6/1.2 mmag in G, ~6.0/2.6 mmag in RP, ~1.8/0.3 mmag in BP. Detection is marginal, with only a few in-eclipse transits.\n"
+"- RVS epoch RVs should be constant, with no 1.3-d variation larger than ~1 km/s.")
+
+F['claim_wording'] = (
+"STRONGEST DEFENSIBLE CLAIM: The TESS signal on TIC 71316387 (CTOI 71316387.01, P = 0.6518 d) is an eclipsing binary at twice that period, P = 1.3036723 d, with unequal eclipses of 5770 and 2600 ppm. "
+"The G star is not an eclipsing component: its Gaia RVS velocity is constant, while at least 18 km/s of variation would be required. "
+"After correcting for the colour-dependent PSF shift of the TESS optics, the eclipsing source lies within 1.24\" of the G star (95%). "
+"The eclipses come from red light, as shown by the TESS centroid colour shift and by the SuperWASP and NEOWISE depth ratios. "
+"Under main-sequence assumptions, the eclipse shape and colours describe an early-M (about M2V, ~0.45 Msun) + mid-M (about M4.5V, ~0.2 Msun) pair. "
+"The pair supplies ~2.6% of the TESS flux, and its photometric distance (~245-330 pc) matches the G star's 297 pc. "
+"Gaia image parameters also indicate an unresolved companion. "
+"An unrelated M-dwarf EB this close to the G star is improbable: a bound hierarchical triple (G star + M-dwarf EB at ~30-240 au projected) is favoured by posterior odds of ~1e4 (>~300 in the most pessimistic analysis). "
+"The association is not yet confirmed: there is no resolved image, common-proper-motion measurement or radial velocity of the M dwarfs, and the component masses are not dynamical.\n\n"
+"EXOFOP NOTE: ")
+note = ("CTOI 71316387.01 is an EB, not a planet: P=1.3036723 d (2x CTOI P), eclipses 5770/2600 ppm. The G star is not the EB "
+        "(Gaia RV constant; K>=18 km/s needed). Colour-corrected TESS centroids put the source within 1.24\" (95%); eclipse colours + shape "
+        "imply an ~M2V+M4.5V pair giving ~2.6% of TESS flux (dKs~2.6, d832nm~3.8, likely 0.1-0.8\"). Probably a bound triple (odds ~1e4, "
+        ">300 worst case, vs chance alignment) but unconfirmed: AO/speckle + 2nd epoch (CPM) or M-dwarf RVs needed.")
+assert len(note) < 600, len(note)
+F['claim_wording'] = F['claim_wording'].replace('EXOFOP NOTE: ', f'EXOFOP NOTE ({len(note)} characters): ') + note
+
+F['unresolved_issues'] = (
+"1. There is no direct evidence of association. The bound case rests on chance-alignment odds plus consistency (position, colour, light-fraction distance). It needs imaging with common proper motion, or the M dwarfs' systemic RV.\n\n"
+"2. f_EB and everything derived from it are prior-driven: the masses, k, b and the photometric distance. The light-curve shape gives only f_EB > 2.2%.\n"
+"- With e sin w free, uniform priors favour f_EB ~ 7% (geometric L3 0.932). That branch is rejected only because it needs non-main-sequence or strongly inflated M dwarfs (chi2_MS 24-39), because of the ellipsoidal limit, and because of the colour.\n"
+"- Dropping the main-sequence term turns F_LC from 1.1-1.7 into 0.21-0.46 (s08), which lowers the odds to 1.5e3-4e3.\n"
+"- A sceptic invoking young or inflated M dwarfs would place a pair with main-sequence luminosity at 160-200 pc.\n\n"
+"3. All main-sequence solutions need 10-15% pulls in J and k: a secondary brighter than main-sequence values, or a primary inflated by ~6%. This is common in active short-period M-dwarf EBs, but it is not demonstrated here.\n\n"
+"4. Separation. The lower edge rests on a sparse Gaia IPD calibration: 0/88 vs 2/77 matches (p = 0.22); blend co-occurrence 0/7 vs 4/10 (p = 0.09). The localise and referee lower bound of 0.48\" is therefore not established, and 0.1-0.4\" remains open (s07). The upper edge rests on VHS injections that used the fit PSF (optimistic), so the separation could reach ~1.0\".\n\n"
+"5. The chromatic Teff of the eclipsed star, 4040 (+330/-280) K, is 1.6-1.9 sigma above the adopted 3550 K. It is driven by the higher SuperWASP ratio (0.42), and the referee's 0.36 eases it.\n\n"
+"6. Shallow-eclipse colours are inconsistent with the model:\n"
+"- NEOWISE W1 shallow ratio 0.06 +- 1.88 vs ~6 predicted (3 sigma low), while W2 gives 4.9 +- 2.3.\n"
+"- SuperWASP shallow -622 +- 590 ppm (referee) or -0.45 +- 0.32 of TESS (chromatic) vs +370 ppm predicted.\n"
+"All of these rest on sparse archival data and are sensitive to detrending.\n\n"
+"7. The NNW PA hint depends mainly on S105 and on the red end of the TESS colour calibration (only 4 stars with BP-RP > 2.7). The VHS feature at 1.12\", PA 345-350 deg (dKs ~4.2) is unexplained.\n\n"
+"8. Prior-model systematics of ~x2-3:\n"
+"- the Raghavan period distribution and a flat q, applied to a companion that is itself a close binary;\n"
+"- an assumed equal EB rate, with no tertiary enhancement;\n"
+"- Gaia field counts. The referee's 7-host count and my 77-host recount differ by ~20%.\n\n"
+"9. Depth scales differ by 8% between SPOC S1/S28 and S68 (crowding), adding ~+-5% to f_EB.\n\n"
+"10. ETV errors needed a 12.5% inflation (possibly spot-induced timing noise). e sin w is marginally non-zero.\n\n"
+"11. The Gaia GSP-Spec MatisseGauguin Teff (6235 K) conflicts with ANN (5843 K) and GSP-Phot (5883 K). It is not used. C* was computed on the wrong Riello branch by astro; the corrected value is +0.0181, ~2 sigma.\n\n"
+"12. TRICERATOPS FPP/SEBx2P values are not meaningful here: it fits a single folded eclipse and ignores RV, colour and localisation. They should not be quoted as validation.\n\n"
+"13. The masses are not dynamical. Spectroscopic K1/K2 would give (M1+M2) sin^3 i and q directly.\n\n"
+"14. Several contrast and depth predictions use colour transformations (Jordi SDSS, synthetic 562/832 nm) with +-0.2 mag or 15-20% systematics. The Gaia DR4 acceleration sensitivity quoted is my scaling, not an official figure.\n\n"
+"FILES (synthesis, all under /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/synthesis/):\n"
+"- s01_contrast_depths.py / .json: contrasts and multi-band depths;\n"
+"- s02_odds_sep_orbit.py / .json: position factor, L(f) factor, odds, soft-ramp separation posterior, outer-orbit Monte Carlo;\n"
+"- s03_field_pm.py and field_Mdwarfs_1p5deg.ecsv: Gaia query of field M dwarfs;\n"
+"- s04_field_stats.py / .json: host densities, PM, RV and distance statistics;\n"
+"- s05_pa.py / .json: PA on the separation ring;\n"
+"- s07_sep_ipd_empirical.py / .json: separation, position factor and outer-orbit observables under empirical Gaia-IPD likelihoods, plus the calibration Fisher tests;\n"
+"- s08_flc_shape_only.py / .json: F_LC without the main-sequence term;\n"
+"- s06_write_final.py and s09_write_final.py: answer writers;\n"
+"- synthesis_final.json: this answer.\n"
+"Draft: /tmp/claude-0/-home-user-Space/121b4aaf-900a-5ff8-a67e-bfbb30b2a844/scratchpad/tic713/synthesis_draft.json")
+
+F['status'] = 'FINAL (synthesis v4: s07/s08 checks folded in)'
+json.dump(F, open(B + 'synthesis_draft.json', 'w'), indent=1)
+json.dump(F, open(B + 'synthesis/synthesis_final.json', 'w'), indent=1)
+print('exofop note chars', len(note))
+for k, v in F.items():
+    print(k, len(v))

@@ -1,0 +1,68 @@
+The current archive release 3.15 contains two breaking changes. Please see https://www.cosmos.esa.int/web/gaia/news#GACSrelease315 for details. In case of questions or feedback, please consult the Gaia helpdesk at https://www.cosmos.esa.int/web/gaia/gaia-helpdesk.
+
+Please note the archive will be unavailable on 15 October at 12 CEST for maintenance purposes. Apologies for the inconveniences.
+Getting TessCut for sector 28
+Getting TessCut for sector 68
+Estimated missing stellar parameters for 32 of 54 stars from photometry. See the 'params_estimated' column of the .stars dataframe. 1 appear evolved and were assigned a nominal 1 M_Sun.
+No apertures provided, assuming 5x5 centered on target.
+Removed 53 nearby star(s). Only the target will be considered by calc_probs() (NFPP = 0).
+0 12.6 {'SEB': -101.79, 'SEBx2P': -61.92, 'BEB': -198.17, 'BEBx2P': -89.28}
+1 2.2 {'SEB': -95.07, 'SEBx2P': -59.99, 'BEB': -148.5, 'BEBx2P': -85.37}
+2 2.2 {'SEB': -83.26, 'SEBx2P': -61.05, 'BEB': -103.93, 'BEBx2P': -85.42}
+3 1.9 {'SEB': -163.23, 'SEBx2P': -65.34, 'BEB': -329.06, 'BEBx2P': -74.41}
+4 1.9 {'SEB': -98.2, 'SEBx2P': -64.76, 'BEB': -204.17, 'BEBx2P': -69.86}
+5 2.0 {'SEB': -107.46, 'SEBx2P': -61.59, 'BEB': -93.46, 'BEBx2P': -72.3}
+6 1.9 {'SEB': -69.51, 'SEBx2P': -62.03, 'BEB': -322.25, 'BEBx2P': -75.94}
+7 2.0 {'SEB': -84.41, 'SEBx2P': -63.39, 'BEB': -73.15, 'BEBx2P': -74.65}
+8 2.0 {'SEB': -87.59, 'SEBx2P': -62.87, 'BEB': -247.17, 'BEBx2P': -90.92}
+9 1.9 {'SEB': -83.06, 'SEBx2P': -60.8, 'BEB': -341.4, 'BEBx2P': -72.06}
+10 2.2 {'SEB': -84.72, 'SEBx2P': -62.99, 'BEB': -139.05, 'BEBx2P': -78.44}
+11 1.9 {'SEB': -227.05, 'SEBx2P': -61.34, 'BEB': -126.19, 'BEBx2P': -71.56}
+12 1.9 {'SEB': -82.42, 'SEBx2P': -60.47, 'BEB': -277.78, 'BEBx2P': -67.64}
+13 1.9 {'SEB': -82.1, 'SEBx2P': -61.09, 'BEB': -184.04, 'BEBx2P': -67.72}
+14 2.0 {'SEB': -96.83, 'SEBx2P': -63.72, 'BEB': -204.18, 'BEBx2P': -79.75}
+15 1.9 {'SEB': -118.22, 'SEBx2P': -61.47, 'BEB': -134.99, 'BEBx2P': -84.26}
+16 2.0 {'SEB': -77.88, 'SEBx2P': -63.17, 'BEB': -244.45, 'BEBx2P': -75.47}
+17 1.9 {'SEB': -102.31, 'SEBx2P': -61.18, 'BEB': -117.04, 'BEBx2P': -71.46}
+18 2.0 {'SEB': -92.55, 'SEBx2P': -62.35, 'BEB': -196.64, 'BEBx2P': -70.72}
+19 2.2 {'SEB': -63.41, 'SEBx2P': -60.64, 'BEB': -176.12, 'BEBx2P': -71.44}
+20 1.8 {'SEB': -93.19, 'SEBx2P': -61.29, 'BEB': -106.03, 'BEBx2P': -66.42}
+21 1.8 {'SEB': -65.9, 'SEBx2P': -65.31, 'BEB': -182.64, 'BEBx2P': -80.59}
+22 2.0 {'SEB': -115.8, 'SEBx2P': -62.79, 'BEB': -126.98, 'BEBx2P': -81.68}
+23 2.2 {'SEB': -63.33, 'SEBx2P': -65.89, 'BEB': -242.55, 'BEBx2P': -95.81}
+24 2.0 {'SEB': -123.4, 'SEBx2P': -61.04, 'BEB': -242.12, 'BEBx2P': -84.97}
+25 1.8 {'SEB': -164.23, 'SEBx2P': -60.28, 'BEB': -124.76, 'BEBx2P': -68.5}
+26 2.1 {'SEB': -62.23, 'SEBx2P': -63.19, 'BEB': -167.23, 'BEBx2P': -66.8}
+27 1.8 {'SEB': -131.63, 'SEBx2P': -60.81, 'BEB': -157.8, 'BEBx2P': -70.76}
+28 1.8 {'SEB': -65.84, 'SEBx2P': -60.57, 'BEB': -220.67, 'BEBx2P': -70.62}
+29 1.8 {'SEB': -108.02, 'SEBx2P': -61.71, 'BEB': -234.33, 'BEBx2P': -73.39}
+30 1.8 {'SEB': -69.72, 'SEBx2P': -60.01, 'BEB': -118.28, 'BEBx2P': -75.91}
+31 1.9 {'SEB': -104.29, 'SEBx2P': -62.08, 'BEB': -121.11, 'BEBx2P': -66.9}
+32 1.9 {'SEB': -95.16, 'SEBx2P': -63.21, 'BEB': -77.79, 'BEBx2P': -74.19}
+33 1.7 {'SEB': -90.54, 'SEBx2P': -63.17, 'BEB': -145.95, 'BEBx2P': -75.03}
+34 1.9 {'SEB': -69.78, 'SEBx2P': -61.06, 'BEB': -80.79, 'BEBx2P': -71.87}
+35 1.7 {'SEB': -109.56, 'SEBx2P': -61.33, 'BEB': -149.36, 'BEBx2P': -69.72}
+36 1.7 {'SEB': -100.43, 'SEBx2P': -61.59, 'BEB': -142.71, 'BEBx2P': -79.32}
+37 1.8 {'SEB': -61.8, 'SEBx2P': -61.86, 'BEB': -71.77, 'BEBx2P': -86.97}
+38 1.9 {'SEB': -135.66, 'SEBx2P': -64.62, 'BEB': -311.61, 'BEBx2P': -93.17}
+39 2.0 {'SEB': -92.16, 'SEBx2P': -61.04, 'BEB': -133.83, 'BEBx2P': -73.63}
+40 1.9 {'SEB': -120.28, 'SEBx2P': -63.91, 'BEB': -185.17, 'BEBx2P': -79.45}
+41 1.8 {'SEB': -63.16, 'SEBx2P': -62.38, 'BEB': -85.85, 'BEBx2P': -76.51}
+42 1.8 {'SEB': -102.4, 'SEBx2P': -61.18, 'BEB': -270.68, 'BEBx2P': -74.31}
+43 1.8 {'SEB': -76.76, 'SEBx2P': -61.53, 'BEB': -304.39, 'BEBx2P': -78.26}
+44 1.8 {'SEB': -59.73, 'SEBx2P': -60.97, 'BEB': -247.54, 'BEBx2P': -86.17}
+45 1.9 {'SEB': -95.1, 'SEBx2P': -66.54, 'BEB': -120.69, 'BEBx2P': -73.06}
+46 2.0 {'SEB': -125.55, 'SEBx2P': -61.17, 'BEB': -223.53, 'BEBx2P': -87.94}
+47 2.0 {'SEB': -95.24, 'SEBx2P': -65.02, 'BEB': -100.19, 'BEBx2P': -73.29}
+48 2.1 {'SEB': -117.43, 'SEBx2P': -61.71, 'BEB': -100.16, 'BEBx2P': -83.04}
+49 2.0 {'SEB': -89.54, 'SEBx2P': -61.88, 'BEB': -176.77, 'BEBx2P': -76.42}
+50 1.7 {'SEB': -101.68, 'SEBx2P': -65.72, 'BEB': -274.75, 'BEBx2P': -78.39}
+51 1.9 {'SEB': -81.19, 'SEBx2P': -62.16, 'BEB': -87.4, 'BEBx2P': -69.71}
+52 1.9 {'SEB': -87.04, 'SEBx2P': -62.1, 'BEB': -210.03, 'BEBx2P': -78.92}
+53 1.9 {'SEB': -111.2, 'SEBx2P': -61.25, 'BEB': -112.04, 'BEBx2P': -70.69}
+54 1.9 {'SEB': -62.12, 'SEBx2P': -64.49, 'BEB': -78.33, 'BEBx2P': -75.46}
+55 2.1 {'SEB': -92.35, 'SEBx2P': -61.33, 'BEB': -103.53, 'BEBx2P': -76.35}
+56 2.0 {'SEB': -105.15, 'SEBx2P': -60.63, 'BEB': -112.91, 'BEBx2P': -88.44}
+57 1.9 {'SEB': -86.91, 'SEBx2P': -61.84, 'BEB': -141.77, 'BEBx2P': -73.92}
+58 1.9 {'SEB': -90.33, 'SEBx2P': -63.55, 'BEB': -222.58, 'BEBx2P': -78.83}
+59 1.9 {'SEB': -63.32, 'SEBx2P': -61.6, 'BEB': -246.27, 'BEBx2P': -77.67}

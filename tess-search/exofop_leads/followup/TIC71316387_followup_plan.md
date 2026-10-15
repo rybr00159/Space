@@ -6,16 +6,25 @@ bought or submitted.*
 
 ## What needs measuring
 
-The 1.3036712-day eclipsing pair is within about 4″ of the G0 dwarf TYC 8001-154-1, and probably within 1–1.8″,
-since Gaia lists no star there. If it is bound (297 pc), the eclipse depth ratio (0.47) favours a K7+M2 or M0+M3
-pair. Such a pair would supply about 6–9 % of the light in the TESS band, so its contrast would be ΔI ≈ 2.5–3.0 and
-ΔKs ≈ 1.5–1.9. Its stars would move at about 75–120 km/s, with 14–27 km/s rotation.
+> **Updated 2026-10-15** by the characterisation campaign ([`../TIC71316387_campaign/`](../TIC71316387_campaign/)).
+> The numbers below replace the earlier rough estimate (K7+M2, 6–9 % of the light, ΔI 2.5–3.0, 1–1.8″), which the
+> campaign ruled out. The costs and access routes further down are unchanged, but the contrast and separation
+> requirements are now harder.
+
+The 1.3036723-day eclipsing pair lies within 1.24″ of the G0 dwarf TYC 8001-154-1 (95%). It is most likely within
+~0.9″ and possibly inside 0.1″. It is an ~M1–M2.5 + ~M4–M4.5 pair supplying ~2.6 % of the TESS light. Expected
+contrasts relative to the G star are ΔKs ≈ 2.4–2.8, ΔH ≈ 2.6–2.9, Δ(832 nm) ≈ 3.7–4.0, ΔI ≈ 3.7–4.1 and
+Δ(562 nm) ≈ 5.1–5.6. Its stars should move with K₁ ≈ 52 and K₂ ≈ 117 km/s, rotating at v sin i ≈ 19 and 8 km/s.
+**The best imaging test is now near-infrared AO on an 8 m telescope** (e.g. VLT/ERIS). SOAR I-band speckle reaches
+ΔI ≈ 4.0 at 0.2″ and 4.75 at 1″, so it is borderline; Gemini/Zorro at 832 nm should work beyond ~0.15–0.2″.
+**Spectroscopy needs red or near-IR wavelengths**: the pair is only ~0.7 % of the V-band light but ~8 % at Ks.
+In two-colour eclipse photometry the deep eclipse should be ~1,900 ppm in V against ~5,600–6,700 ppm in i′.
 
 Note: the TIC's V = 11.65 comes from Tycho-2. APASS and Gaia give V ≈ 11.9.
 
 | Goal | Method | Minimum telescope |
 |---|---|---|
-| See the companion; separation, angle, contrast | Speckle interferometry or adaptive optics, red or near-IR | 4 m (SOAR) for separations ≳ 0.12–0.15″; 8 m (Gemini, VLT) down to ~0.03″ |
+| See the companion; separation, angle, contrast | Adaptive optics in H/Ks (best), or speckle at ≥ 800 nm | 8 m (VLT/ERIS, Gemini/Zorro); SOAR is borderline at ΔI ≈ 3.9 |
 | Bound or background | Second imaging epoch ≥ 1 yr later (common proper motion, 38.6 mas/yr), or a matching systemic velocity | Same as above |
 | Star types, mass ratio, systemic velocity | High-resolution spectra (R ≳ 25,000) at orbital quadrature, 4–6 epochs; near-IR raises the pair's contrast | 1.5 m (CHIRON) for the brighter EB star; 8 m (GHOST, CRIRES+) or near-IR for both |
 | Colour of the eclipsing stars (cheap bound test) | Eclipse depths in a blue and a red filter: a K/M pair gives a much shallower blue eclipse | 0.5–1 m |
