@@ -15,7 +15,7 @@ G star. They rest on the refereed campaign in [`../README.md`](../README.md).
 
 | File | What it is |
 |---|---|
-| [`observing_note.txt`](observing_note.txt) | The note, plain ASCII, 1,222 characters, one line break |
+| [`observing_note.txt`](observing_note.txt) | The note, plain ASCII, 1,186 characters, one line break |
 | [`observing_note_bulk.txt`](observing_note_bulk.txt) | The same note with `<br>` for the line break, for ExoFOP's bulk-upload route |
 | [`TIC71316387.01O-rb20261016-EB-analysis.pdf`](TIC71316387.01O-rb20261016-EB-analysis.pdf) | Supporting report: 8 pages, 3 figures, 5 tables |
 | [`build/`](build/) | Scripts that make the figures, the eclipse-time table and the PDF, with their outputs |
@@ -26,7 +26,7 @@ G star. They rest on the refereed campaign in [`../README.md`](../README.md).
 
 ```
 CTOI 71316387.01 is an EB at 2x the CTOI period, not a planet: P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018 (TESS-SPOC S1/28/68, TESScut S95/105/106); the CTOI epoch is a secondary eclipse. Depths 5770/2600 ppm, deeper on the same parity in all six sectors. The G star is not in the EB: its Gaia DR3 RV is constant (15 RVS transits over 946 d, chi2 p = 0.28), vs K of 18 km/s or more for any stellar EB partner. Colour-corrected difference-image centroids put the source within 1.24 arcsec of the G star (95%); all Gaia neighbours (18 arcsec and beyond) excluded. The TESS centroid colour shift and SuperWASP/NEOWISE W1 depths show a red (early-M, possibly late-K) eclipsed star; the eclipse shape with MS relations gives an ~M2V + ~M4V pair with ~2.6% of TESS flux (not dynamical). Likely a bound triple (chance alignment disfavoured ~5000-14000x for baseline priors, ~200x worst case), unconfirmed. Suggest FP (blended EB).
-To confirm: AO/speckle (predicted delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag; within 0.9 arcsec, possibly within 0.1 arcsec), then CPM or M-dwarf RVs. No G-star PRV needed. AI-assisted analysis (Claude Code); full report: TIC71316387.01O-rb20261016-EB-analysis.pdf
+To confirm: AO/speckle (predicted delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag; within 0.9 arcsec, possibly within 0.1 arcsec), then CPM or M-dwarf RVs. No G-star PRV needed. Full report: TIC71316387.01O-rb20261016-EB-analysis.pdf
 ```
 
 **Why it looks like this.** The note follows a study of all 33,156 public ExoFOP observing notes (2026-10-16):
@@ -40,17 +40,14 @@ To confirm: AO/speckle (predicted delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag; withi
   each line of evidence gets one clause, and the disposition is suggested rather than decreed.
 - **ASCII only.** Arcsec is written out because ExoFOP's export drops `"`. "Below/within" replaces `<`, and `+/-`
   replaces `±`, because non-Latin-1 characters become `¿`.
-- **Firsts.** This would be the first observing note on this target and on any RAVEN CTOI. No existing note mentions AI
-  assistance. The one-clause disclosure is a choice, not a convention; remove it if you prefer, since the PDF discloses in
-  full.
+- **Firsts.** This would be the first observing note on this target and on any RAVEN CTOI.
 
 ## Author details
 
 The report names Ryan Brown, Independent Researcher (ExoFOP-TESS user `rbrown`). The file name follows ExoFOP's
 pattern `<target>O-<initials><UT date>-<info>.pdf`, with initials `rb`. Email and phone are deliberately left out;
-ExoFOP links the username to the profile. At the account holder's request, the report has no AI-assistance section.
-The note still ends with a short "AI-assisted analysis (Claude Code)" clause; delete it before posting if it is not
-wanted.
+ExoFOP links the username to the profile. At the account holder's request, neither the report nor the note
+mentions AI assistance.
 
 To rebuild the PDF (system python3 with reportlab; the figures are already in `build/figs/`; the author defaults are
 set in `build_report.py`):

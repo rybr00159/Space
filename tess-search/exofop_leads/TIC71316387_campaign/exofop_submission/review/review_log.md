@@ -79,8 +79,8 @@ N = number audit, F = referee, P = presentation. "Fixed" means the change is in 
 | Basis of the 18 km/s | Fixed: "for any stellar EB partner" (the report gives the full argument) |
 | 1.24″ variant range | Left to the report (length) |
 | Depth labels | Kept short; the report gives products and the ±8% systematic |
-| AI assistance not disclosed | Added a short clause to the note. The report's AI-assistance section was later removed at the account holder's request, and its wording no longer calls the internal re-checks "referee" passes, so it does not suggest human review |
-| Length | 1,222 characters including the 50-character file name: inside the range of comparable multi-part EB notes (IQR 804–1,375) |
+| AI assistance not disclosed | A short clause was added, then removed from the note (and the AI-assistance section from the report) at the account holder's request. The report's methods no longer call the internal re-checks "referee" passes, so nothing suggests human review |
+| Length | 1,186 characters including the 50-character file name: inside the range of comparable multi-part EB notes (IQR 804–1,375) |
 
 Hand check in place of fact-check 2: every number in the final note was traced to the campaign results or recomputed
 (the CTOI epoch is at phase 0.5005 of the EB ephemeris, i.e. on a secondary eclipse, 1 min from phase 0.5; Gaia RV statistics from
