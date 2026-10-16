@@ -19,7 +19,7 @@ planet candidate.** It is unconfirmed, and identifying its host needs one ground
 
 | TIC | Signal as first found | Verdict | Decisive evidence | New? |
 |---|---|---|---|---|
-| 214311906 | 5.69 d, 1,900 ppm | **Possible planet candidate on a neighbour**: a ~5–7 R⊕ body transiting an M dwarf in the 61 pc pair TIC 214311910, 6″ from the Mira | The Mira cannot host it. Calibrated pixel analysis puts the source at the Mira/pair position, not the other bright stars. The flat-bottomed 1.6 h transit needs a small occulter and a dense host, which only the M dwarfs provide | Yes: no TOI, CTOI, alert or ExoFOP record for any of the three stars |
+| 214311906 | 5.69 d, 1,900 ppm | **Possible planet candidate on a neighbour**: a ~5–7 R⊕ body transiting an M dwarf in the 61 pc pair TIC 214311910 (most likely its brighter star), 6″ from the Mira | The Mira cannot host it. Calibrated pixel analysis puts the source at the Mira/pair position, not the other bright stars. The flat-bottomed 1.6 h transit needs a small occulter and a dense host, which only the M dwarfs provide | Yes: no TOI, CTOI, alert or ExoFOP record for any of the three stars |
 | 90086266 | 2.36 d, 0.7% box | **Eclipsing binary** coincident with an F star; true period 2.33947 d (or 4.679 d) | The dimming is centred on the F star. A 3% eclipse of it would need a 3 R_Jup companion, i.e. a star, which Gaia RVs and the missing secondary eclipse rule out. So a fainter, unresolved binary is eclipsing | Yes, as an eclipsing binary |
 | 61332759 | 0.740 d, 550 ppm | **Not a transit**: 1.4806 d variability of a neighbouring star | Every sector traces the variability to the catalogued RS CVn variable Gaia DR3 6711181657530577280, 57″ away | No period found for the neighbour in VSX, ASAS-SN or Gaia DR3 |
 | 61141412 | 6.525 d, 1,100 ppm | **Not a planet**: dips every 6.5285 d in or near a 5.45 d spectroscopic binary, with timing irregularities | The star is a Gaia SB1, so a 6.53 d planet orbit is impossible. Dip times do not follow a constant period | No: a TESS-SPOC alert at 13.054 d (2×) in 2023 |
@@ -34,8 +34,11 @@ planet candidate.** It is unconfirmed, and identifying its host needs one ground
 **The stars.**
 - **The target, TIC 214311906**, is a Mira-type long-period variable: Gaia LPV, VSX and ASAS-SN P ≈ 294 d, BP−RP 4.7,
   parallax 0.15 ± 0.09 mas. It is a distant giant hundreds of R☉ across, and cannot host 1.6 h dips.
-- **TIC 214311910**, 6.2″ west of it, is a nearby M dwarf: Gaia DR3 5925373272850782208, G 14.65, 61 pc. Gaia sees a
-  double image in 20% of scans and RUWE 13.7, so it is a close pair. The TIC has no stellar parameters for it.
+- **TIC 214311910**, 6.2″ west of it, is a nearby M dwarf: Gaia DR3 5925373272850782208, G 14.65, 61 pc,
+  M_G 10.7 (about M3.5V).
+  - Gaia resolves a second source 0.83″ from it (51 au projected): Gaia DR3 5925373272827253632, G 15.74, with a
+    position-only solution. This explains the M dwarf's RUWE of 13.7 and its double images in 20% of scans.
+  - We call the two stars "the pair": A (G 14.65) and B (G 15.74). The TIC has no stellar parameters for them.
 - **TIC 214311908**, 17.8″ west, is an M3V dwarf: G 14.28, 64.5 pc, 0.37 M☉, 0.38 R☉. It shares the pair's proper
   motion, so the three M dwarfs form one bound system about 62 pc away.
 
@@ -74,10 +77,12 @@ planet candidate.** It is unconfirmed, and identifying its host needs one ground
    unlikely.
 
 **What it would be.**
-- On the pair, the dips are 1.5–3% deep in the pair's light, depending on the Mira's brightness.
-- If the pair's light is dominated by one star (R ≈ 0.35 R☉), the transiting body is 4.5–6.5 R⊕. If the pair is two
-  similar stars (R ≈ 0.27 R☉ each), it is 5–7 R⊕.
-- Either way it is smaller than any star or old brown dwarf: **a Neptune- or sub-Saturn-sized planet**.
+- **On star A** (about 8% of the aperture light; R ≈ 0.30–0.33 R☉), the dip is about 3% deep and the transiting body
+  about 5.5–6 R⊕.
+- **On star B** (about 3.5% of the light; R ≈ 0.22 R☉), the dip would be about 7% deep and the body about 6 R⊕. The
+  flat bottom disfavours B at about 2σ, because the occulter would then be 0.26 of B's radius.
+- Allowing for the Mira's changing brightness, the range is 4.5–7 R⊕. Either way it is smaller than any star or old
+  brown dwarf: **a Neptune- or sub-Saturn-sized planet**.
 - It would be at about 0.04 au from its star, with an equilibrium temperature near 450 K.
 
 **What is not yet excluded.**
