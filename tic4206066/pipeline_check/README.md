@@ -73,7 +73,8 @@ Sector 32 alone falls short. That fits the author's note that it sits at SPOC's 
 
 The same flaw affected our own search of Sectors 104 and 105. Five Sector 104 signals missed the p < 0.001 cut with at
 least one sector at the 1/151 floor. Re-tested with 3,000 random periods, all five pass (p = 0.00002–0.0003), so they
-should have been vetted. They have since been vetted, and none is a planet: see
+should have been vetted. They have since been vetted. None is a planet around the star searched, but one is a
+possible planet candidate on a neighbouring M dwarf: see
 [`../../tess-search/vetting_2026-10-16/`](../../tess-search/vetting_2026-10-16/). The re-test is
 [`../../tess-search/reaudit/recurrence_retest.py`](../../tess-search/reaudit/recurrence_retest.py).
 

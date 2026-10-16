@@ -1,0 +1,50 @@
+{
+ "injected at pair": {
+  "map_min": [
+   0,
+   0
+  ],
+  "star_dchi2": {
+   "Mira": 0.0,
+   "pair": 16.9,
+   "M3V": 64.8,
+   "bright41": 137.8
+  }
+ },
+ "injected at M3V": {
+  "map_min": [
+   -21,
+   3
+  ],
+  "star_dchi2": {
+   "Mira": 52.0,
+   "pair": 38.2,
+   "M3V": 0.0,
+   "bright41": 154.4
+  }
+ },
+ "injected at bright41": {
+  "map_min": [
+   36,
+   -24
+  ],
+  "star_dchi2": {
+   "Mira": 284.4,
+   "pair": 296.7,
+   "M3V": 299.6,
+   "bright41": 0.0
+  }
+ },
+ "real signal": {
+  "map_min": [
+   3,
+   -3
+  ],
+  "star_dchi2": {
+   "Mira": 0.0,
+   "pair": 14.9,
+   "M3V": 56.5,
+   "bright41": 122.0
+  }
+ }
+}

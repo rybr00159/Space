@@ -424,3 +424,20 @@ None is a planet.
   - the eclipses cannot be on the giants;
   - the sources are within ~10" and ~5-8" respectively, and unidentified;
   - 214311906 candidate: an M-dwarf binary 6.5" away (Gaia DR3 5925373272850782208, 61 pc, RUWE 13.7).
+
+**Update (2026-10-16, after external reviews): TIC 214311906 is probably a planet candidate on a neighbour.**
+- GPT-5.5 (review round 6) pointed out that a ~2.3% dip on the nearby M dwarf pair would be planet-sized.
+- Findings:
+  - TIC 214311910 (Gaia DR3 5925373272850782208; 61 pc; RUWE 13.7; ipd_multi 20%) is a close M pair 6.2" W of the
+    Mira. TIC 214311908 (M3V, 64.5 pc) is a CPM companion 17.8" W.
+  - The S104 search detected the same signal on TIC 214311908 (1.17%, snr_red 10.6). It was dropped by the
+    dominant-event cut (0.58 > 0.5) after the sector-window mask.
+  - The joint chi2 map was calibrated with injections. Real: Mira/pair/M3V/bright41 = 0/15/57/122. Injection on the
+    pair: 0/17/65/138. Injection on the M3V: 52/38/0/154. So the source is at the Mira/pair position, not the M3V or
+    the 41" star. Free-fit positions are useless here (injections scatter by 1-2').
+  - Shape: flat-bottomed (T23/T14 0.78 +- 0.09), T14 1.61 h, so k <~ 0.2 and the host supplies >~7% of the light
+    (T <~ 14). Implied host density ~12-15 rho_sun (M dwarf).
+  - On the pair, Rp ~4.5-7 R_earth. Ephemeris P = 5.691471 +- 0.000018, T0 = BTJD 3840.9101 +- 0.0022 (14 events).
+    2027 predictions are in results/214311906/predicted_dips_2027.csv.
+  - ExoFOP has no TOI, CTOI, notes or files for any of the three stars.
+- Status: possible planet candidate with an uncertain host. Needs one ground-based seeing-limited transit.

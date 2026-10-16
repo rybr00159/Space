@@ -16,8 +16,9 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
 >
 > **Correction (2026-10-16).** Running our pipeline on the published candidate TIC 4206066 showed that our recurrence
 > test was too coarse for stars with few TESS sectors. With a finer version, five more Sector 104 signals recur. All
-> five were then vetted, and none is a planet. One of them, TIC 90086266, is a newly identified eclipsing binary.
-> Details in [`vetting_2026-10-16/`](vetting_2026-10-16/) and under [Caveats](#caveats).
+> five were then vetted. None is a planet around the star we searched. However, the signal found on the Mira
+> TIC 214311906 most likely comes from a neighbouring M dwarf, where it would be a **Neptune-sized planet candidate**.
+> TIC 90086266 is a newly identified eclipsing binary. Details in [`vetting_2026-10-16/`](vetting_2026-10-16/).
 
 ## Results
 
@@ -26,7 +27,14 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   periods (5–25 days).
 - **The search found real signals.** 528 of its candidates matched planets, TOIs, pipeline alerts or eclipsing binaries
   that were already known.
-- **No new planet candidate survives.**
+- **One possible new planet candidate, on a neighbour of a searched star** (found 2026-10-16).
+  - A ~5–7 R⊕ body transits every 5.691471 d, 1.6 h each time, most likely around an M dwarf in the 61 pc pair
+    TIC 214311910.
+  - That pair lies 6″ from the Mira-type giant TIC 214311906, on which our search found the signal. The giant itself
+    cannot host it.
+  - It is unconfirmed. One ground-based transit would show which star dims. See
+    [`vetting_2026-10-16/`](vetting_2026-10-16/).
+- **No planet candidate survives on the stars we searched.**
   - The strongest one, TIC 87055304 (a 0.4 % flat-bottomed dip every 4.136 days), is withdrawn. Three independent
     pixel-level analyses and a model-free referee test place the source on TIC 87055315, 9.3″ away. Every test points
     there: nominal significances are 6–10σ, and the most conservative single tests still give ≥ 3.9σ.
@@ -41,7 +49,8 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   - TIC 158159741, most likely an eclipsing binary or blend. Its 1.807-day signal was already a QLP
     threshold-crossing event, labelled by eye in [Tey et al. 2023](https://ui.adsabs.harvard.edu/abs/2023AJ....165...95T),
     although it never became a TOI.
-- **Five more recurring signals, vetted 2026-10-16: none is a planet** ([`vetting_2026-10-16/`](vetting_2026-10-16/)).
+- **Five more recurring signals, vetted 2026-10-16** ([`vetting_2026-10-16/`](vetting_2026-10-16/)). None is a planet
+  around the star searched.
   They were missed at first because the recurrence test was too coarse for stars with few other TESS sectors (see
   [Caveats](#caveats)).
   - TIC 90086266: a newly identified 3% eclipsing binary, blended within ~1″ of an F star (period 2.33947 d, or
@@ -49,7 +58,8 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   - TIC 61332759: not a transit, but 1.48-day variability of an RS CVn star 57″ away;
   - TIC 61141412: an eclipsing pair with eclipse-timing variations, in or near a 5.45-day spectroscopic binary. It was
     already a TESS-SPOC pipeline alert;
-  - TIC 214311906 and 55829034: eclipsing binaries blended with giant stars; the eclipsing star is unidentified.
+  - TIC 214311906: the possible planet candidate on the neighbouring M dwarf TIC 214311910, described above;
+  - TIC 55829034: an eclipsing (or transiting) source blended with a bulge red giant; the source is unidentified.
 - **62 eclipsing or close binary stars, first identified and characterised as eclipsing binaries.** None of them is
   in a vetted eclipsing-binary or variable-star catalogue (VSX, Gaia DR3 eclipsing binaries, Prša+22, the vetted
   Kostov+25 tables, IJspeert+24, ASAS-SN). A 63rd, TIC 87055315, was found by tracing the TIC 87055304 signal to it;
@@ -430,8 +440,8 @@ the investigators' and referee's reports, and the CTOI cross-match.
     |---|---|---|---|---|
     | 90086266 | 2.3606 | 7,100 | 0.0066 → 0.0003 | Eclipsing binary blended within ~1″ of the F star; true period 2.33947 d, 3% deep. New |
     | 61332759 | 0.7398 | 550 | 0.0020 → 0.00002 | Not a transit: 1.4806 d variability of the RS CVn star Gaia DR3 6711181657530577280, 57″ away |
-    | 214311906 | 5.6873 | 1,900 | 0.0015 → 0.00002 | Eclipsing binary blended with a Mira-type giant; source within ~10″, unidentified |
-    | 55829034 | 0.6158 | 1,000 | 0.0011 → 0.00005 | Eclipsing binary blended with a bulge red giant; source within ~5–8″, unidentified |
+    | 214311906 | 5.6873 | 1,900 | 0.0015 → 0.00002 | Not on the Mira. Probably a ~5–7 R⊕ planet candidate transiting the M-dwarf pair TIC 214311910, 6″ away (host unconfirmed) |
+    | 55829034 | 0.6158 | 1,000 | 0.0011 → 0.00005 | Blended eclipsing (or transiting) source near a bulge red giant; unidentified |
     | 61141412 | 6.5252 | 1,130 | 0.0024 → 0.00005 | Eclipsing pair with timing variations, in or near a 5.45 d Gaia binary; true period 6.5285 d. Already a TESS-SPOC alert (13.054 d) |
 
   - No other signal could pass with a finer test: even if every sector at the floor dropped to 1 in 3,000, the rest
@@ -448,14 +458,18 @@ the investigators' and referee's reports, and the CTOI cross-match.
 
 ## Possible next steps
 
-1. **Seeing-limited photometry of one eclipse of TIC 87055315** (April–July 2027; times in
+1. **Observe one transit of the 5.69-day signal near TIC 214311906 from the ground** (seeing-limited images separate
+   the Mira, TIC 214311910 at 6″ and TIC 214311908 at 18″). The 2027 times are in
+   [`vetting_2026-10-16/results/214311906/predicted_dips_2027.csv`](vetting_2026-10-16/results/214311906/predicted_dips_2027.csv).
+   On the right star the dip should be 1.5–3% deep.
+2. **Seeing-limited photometry of one eclipse of TIC 87055315** (April–July 2027; times in
    [`tic87055304/`](tic87055304/)). It would confirm directly which star dims. Two radial velocities would then measure
    the M dwarf's mass (K ≈ 27 km/s expected).
-2. After Gaia DR4, submit a handful of the cleanest binaries with no earlier period to the
+3. After Gaia DR4, submit a handful of the cleanest binaries with no earlier period to the
    [AAVSO Variable Star Index](https://vsx.aavso.org/). VSX allows 5 submissions a week (1 until a new user's first is
    approved) and asks that systematic searches go to a journal instead. See [ExoFOP and other venues](#can-any-of-this-go-to-exofop).
-3. Get radial velocities for TYC 7034-792-1, to measure the M dwarf's mass directly.
-4. For TIC 90086266, use high-resolution imaging or spectroscopy to find the eclipsing pair hidden by the F star, and
+4. Get radial velocities for TYC 7034-792-1, to measure the M dwarf's mass directly.
+5. For TIC 90086266, use high-resolution imaging or spectroscopy to find the eclipsing pair hidden by the F star, and
    two-colour eclipse photometry to measure its colour ([`vetting_2026-10-16/`](vetting_2026-10-16/)).
 
 ## Files

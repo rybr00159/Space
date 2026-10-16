@@ -91,7 +91,8 @@ Checked 2026-10-16; details in [`pipeline_check/`](pipeline_check/).
   in no catalogue and classed it as planet-like.
 - **Our recurrence test would then have dropped it,** with p ≈ 0.004 against a cut of 0.001. The test was too coarse:
   with finer random trials it gives p = 0.0003. The same flaw had left five of our own recurring signals unvetted;
-  they have since been [vetted](../tess-search/vetting_2026-10-16/), and none is a planet.
+  they have since been [vetted](../tess-search/vetting_2026-10-16/). None is a planet around the star searched, but
+  one is a possible planet candidate on a neighbouring M dwarf.
 - **The 11.13-day signal would not have been reported.** Our search keeps one signal per star and sector and needs
   three transits in a sector.
 
