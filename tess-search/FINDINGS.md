@@ -441,3 +441,31 @@ None is a planet.
     2027 predictions are in results/214311906/predicted_dips_2027.csv.
   - ExoFOP has no TOI, CTOI, notes or files for any of the three stars.
 - Status: possible planet candidate with an uncertain host. Needs one ground-based seeing-limited transit.
+
+**Referee results and corrections (2026-10-16, later).**
+- QLP time stamps in S103-S105 lack the barycentric correction.
+  - S104 TIC 90086266: QLP - TESScut eclipse times = -7.34 +- 0.30 min (TIMECORR 7.48 min).
+  - S105 TIC 71316387: -5.0 +- 0.9 min (TIMECORR 5.2 min).
+  - S13, S93, S94 and S98 are fine; TIC 4206066's S98 is not affected.
+  - The EB table T0s from S104/S105 QLP may be early by up to the correction.
+  - The TIC 87055315 ephemeris used TESScut PSF photometry, so it is fine.
+- TIC 214311906 host corrected: the M3V TIC 214311908 (64.5 pc, R 0.381), not the pair TIC 214311910.
+  - Our earlier map used a WCS correction fitted on the Mira (BP-RP 4.7). It was off by 16-17" in S93/S103/S104,
+    while the blue reference star gives <= 0.25 px.
+  - With the reference-star calibration:
+    - Forward aperture model chi2 = 66 (M3V) / 151 (pair) / 204 (Mira) for 19 dof.
+    - Aperture dips 4.5/3.9/2.1/1.4 e/s (M3V/pair/Mira/mirror).
+    - The map pattern matches the M3V injection.
+  - The referee's difference-image fit is (-17.2 +- 1.7, +3.7 +- 1.0)"; injection chi2 1.6 (M3V) / 28.9 (pair) /
+    56 (Mira). Delta F = 16.5 +- 1.1 e/s, constant while the Mira's flux changes x2.
+  - Corrected ephemeris: P 5.691497 +- 0.000014, T0 3840.9153 +- 0.0019 BTJD. 42 predicted transits Feb-Oct 2027
+    (results/214311906/predicted_transits_2027.csv).
+  - No phase-0.5 dip (-712 +- 591 ppm); the phase-0.825 feature is a single S103 artefact. Odd/even within 1.9 sigma.
+  - Rp ~5-6 Re (depth 1.5-1.8% on the M3V; about 940 e/s for T 13.0); b ~0.6; Teq ~460 K.
+- TIC 90086266 corrected ephemeris: P 2.3394739, T0 4180.4784 +- 0.0002 (referee, TESScut).
+  - On target to within ~1" (S13) and ~2.5" (S104).
+  - Secondary limits: -450 +- 130 to +360 +- 170 ppm.
+  - S104 alternating depths: no instrumental cause found.
+- TIC 61141412 ETVs are robust over 18 product/aperture/detrending combinations (linear chi2 90-240, quadratic
+  12-31). vbroad 11 km/s against ~23 synchronised gives i ~27 deg, so the SB1 probably does not eclipse.
+- TIC 55829034: source at (+3.2, -5.5)" +- 1-3" (referee).

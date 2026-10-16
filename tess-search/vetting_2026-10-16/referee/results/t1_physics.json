@@ -1,0 +1,94 @@
+{
+ "secondary": {
+  "S13_TESS-SPOC:PDCSAP_FLUX": {
+   "depth_phase05_ppm": 357.6435111829062,
+   "err_ppm": 165.4921713489561,
+   "n_windows": 11,
+   "scan_max_snr": 3.00114521324754,
+   "scan_max_phase": 0.6199999999999998,
+   "scan_max_depth_ppm": 425.03721474364215,
+   "scan_rms_snr": 1.1580160829287058
+  },
+  "S13_TESS-SPOC:SAP_FLUX": {
+   "depth_phase05_ppm": 99.3855520872093,
+   "err_ppm": 157.42938676836744,
+   "n_windows": 11,
+   "scan_max_snr": 3.4411921463834,
+   "scan_max_phase": 0.11,
+   "scan_max_depth_ppm": 527.6233274333246,
+   "scan_rms_snr": 1.1258601045567358
+  },
+  "S104_QLP:SAP_FLUX": {
+   "depth_phase05_ppm": -452.55598580912516,
+   "err_ppm": 125.62866734999197,
+   "n_windows": 9,
+   "scan_max_snr": 3.329879954966683,
+   "scan_max_phase": 0.4299999999999998,
+   "scan_max_depth_ppm": 397.7589068532813,
+   "scan_rms_snr": 1.3676505840396185
+  },
+  "S104_CUT:r2.0": {
+   "depth_phase05_ppm": -286.0176745329429,
+   "err_ppm": 190.49888173826778,
+   "n_windows": 10,
+   "scan_max_snr": 2.4611371175555887,
+   "scan_max_phase": 0.11,
+   "scan_max_depth_ppm": 434.41664860719055,
+   "scan_rms_snr": 1.0727547674735272
+  },
+  "S13_CUT:r2.0": {
+   "depth_phase05_ppm": -65.96235519315816,
+   "err_ppm": 222.8527291413443,
+   "n_windows": 10,
+   "scan_max_snr": 2.4950311776009135,
+   "scan_max_phase": 0.3199999999999999,
+   "scan_max_depth_ppm": 564.4405906683008,
+   "scan_rms_snr": 1.0233638576192987
+  }
+ },
+ "companion": {
+  "R2_min_Rsun": 0.2604844984121771,
+  "R2_min_RJ": 2.593175693501016,
+  "R2_from_sqrt_depth_Rsun": 0.2944486372867091
+ },
+ "expected_secondary_ppm": {
+  "3000": 1113.1306091775916,
+  "3200": 1609.9143418901126,
+  "3400": 2235.4751510618726,
+  "3600": 2999.7528348446053
+ },
+ "Tmax_companion_K": 1500,
+ "rv_mc": {
+  "M2=0.05": {
+   "K_kms": 6.467061554989815,
+   "random5": 0.026445,
+   "clustered_2visits": 0.13711,
+   "clustered_3visits": 0.082615
+  },
+  "M2=0.1": {
+   "K_kms": 12.624305013207737,
+   "random5": 0.003545,
+   "clustered_2visits": 0.050875,
+   "clustered_3visits": 0.028375
+  },
+  "M2=0.2": {
+   "K_kms": 24.113596658002635,
+   "random5": 0.000655,
+   "clustered_2visits": 0.01681,
+   "clustered_3visits": 0.008905
+  },
+  "M2=0.27": {
+   "K_kms": 31.578403172751713,
+   "random5": 0.00036,
+   "clustered_2visits": 0.010155,
+   "clustered_3visits": 0.004975
+  },
+  "M2=0.3": {
+   "K_kms": 34.64714356492702,
+   "random5": 0.000245,
+   "clustered_2visits": 0.0087,
+   "clustered_3visits": 0.004275
+  }
+ },
+ "twin_K_each_kms": 85.22238653758397
+}

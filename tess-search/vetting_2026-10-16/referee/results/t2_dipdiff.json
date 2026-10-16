@@ -1,0 +1,97 @@
+{
+ "S13": {
+  "n_events": 30,
+  "fit_offset_from_target": [
+   -5.65823255339697,
+   11.412093258024925
+  ],
+  "gaia_nbr_offset": [
+   -36.17549212328673,
+   -44.03583456308695
+  ],
+  "snr_target_pix": -0.48400068310709066,
+  "snr_nbr_pix": -2.532603275949078,
+  "peak_pix": [
+   10,
+   11
+  ],
+  "frac_deficit_target_pix_ppm": -186.89208892389092,
+  "frac_deficit_nbr_pix_ppm": -2350.896952119634
+ },
+ "S27": {
+  "n_events": 26,
+  "fit_offset_from_target": [
+   -35.97731997108668,
+   -42.04395258601892
+  ],
+  "gaia_nbr_offset": [
+   -36.18664848816294,
+   -43.990252304556066
+  ],
+  "snr_target_pix": 0.35819069343231963,
+  "snr_nbr_pix": 1.0969387015910328,
+  "peak_pix": [
+   9,
+   8
+  ],
+  "frac_deficit_target_pix_ppm": 308.2388100800303,
+  "frac_deficit_nbr_pix_ppm": 3109.0289228056836
+ },
+ "S67": {
+  "n_events": 27,
+  "fit_offset_from_target": [
+   -36.707808017665386,
+   -43.25262889892372
+  ],
+  "gaia_nbr_offset": [
+   -36.21862766433814,
+   -43.859592891359966
+  ],
+  "snr_target_pix": 1.4733962530694318,
+  "snr_nbr_pix": 6.55532512805793,
+  "peak_pix": [
+   8,
+   8
+  ],
+  "frac_deficit_target_pix_ppm": 997.8239184426857,
+  "frac_deficit_nbr_pix_ppm": 18830.11660748299
+ },
+ "S94": {
+  "n_events": 28,
+  "fit_offset_from_target": [
+   -36.81500111111047,
+   -43.24446769703343
+  ],
+  "gaia_nbr_offset": [
+   -36.23999419719606,
+   -43.772294173089676
+  ],
+  "snr_target_pix": 2.267844980114928,
+  "snr_nbr_pix": 4.871296792706513,
+  "peak_pix": [
+   9,
+   8
+  ],
+  "frac_deficit_target_pix_ppm": 2254.31891126151,
+  "frac_deficit_nbr_pix_ppm": 24548.98213078571
+ },
+ "S104": {
+  "n_events": 32,
+  "fit_offset_from_target": [
+   -34.39456756167626,
+   -42.88204022306843
+  ],
+  "gaia_nbr_offset": [
+   -36.249472506130076,
+   -43.73356797224517
+  ],
+  "snr_target_pix": 1.131256036834233,
+  "snr_nbr_pix": 1.3027551056024338,
+  "peak_pix": [
+   8,
+   11
+  ],
+  "frac_deficit_target_pix_ppm": 14695.732473802991,
+  "frac_deficit_nbr_pix_ppm": 53264.75083577325
+ }
+}

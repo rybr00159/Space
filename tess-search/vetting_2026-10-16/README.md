@@ -11,144 +11,160 @@ we vetted the earlier candidates:
 - nearby stars;
 - earlier catalogue entries.
 
-It also reflects two external reviews (GPT-5.5 and Gemini 3.1 Pro; [`../reviews/`](../reviews/), round 6).
+The verdicts were then checked three ways:
+- by two external reviews (GPT-5.5 and Gemini 3.1 Pro; [`../reviews/`](../reviews/), round 6);
+- by an independent referee who re-derived every key number with separate code ([`referee/`](referee/));
+- by our own re-tests of the points they raised.
 
 **None of the five is a planet orbiting the star we searched. One signal, however, found on the Mira-type giant
-TIC 214311906, most likely comes from a neighbouring M dwarf 6″ away. There it would be a Neptune-sized transiting
-planet candidate.** It is unconfirmed, and identifying its host needs one ground-based observation.
+TIC 214311906, comes from a neighbouring M dwarf 18″ away, TIC 214311908. There it is a Neptune-sized transiting
+planet candidate.** It is unconfirmed. One ground-based transit would confirm the host; predictions for 2027 are
+below.
 
 | TIC | Signal as first found | Verdict | Decisive evidence | New? |
 |---|---|---|---|---|
-| 214311906 | 5.69 d, 1,900 ppm | **Possible planet candidate on a neighbour**: a ~5–7 R⊕ body transiting an M dwarf in the 61 pc pair TIC 214311910 (most likely its brighter star), 6″ from the Mira | The Mira cannot host it. Calibrated pixel analysis puts the source at the Mira/pair position, not the other bright stars. The flat-bottomed 1.6 h transit needs a small occulter and a dense host, which only the M dwarfs provide | Yes: no TOI, CTOI, alert or ExoFOP record for any of the three stars |
-| 90086266 | 2.36 d, 0.7% box | **Eclipsing binary** coincident with an F star; true period 2.33947 d (or 4.679 d) | The dimming is centred on the F star. A 3% eclipse of it would need a 3 R_Jup companion, i.e. a star, which Gaia RVs and the missing secondary eclipse rule out. So a fainter, unresolved binary is eclipsing | Yes, as an eclipsing binary |
-| 61332759 | 0.740 d, 550 ppm | **Not a transit**: 1.4806 d variability of a neighbouring star | Every sector traces the variability to the catalogued RS CVn variable Gaia DR3 6711181657530577280, 57″ away | No period found for the neighbour in VSX, ASAS-SN or Gaia DR3 |
-| 61141412 | 6.525 d, 1,100 ppm | **Not a planet**: dips every 6.5285 d in or near a 5.45 d spectroscopic binary, with timing irregularities | The star is a Gaia SB1, so a 6.53 d planet orbit is impossible. Dip times do not follow a constant period | No: a TESS-SPOC alert at 13.054 d (2×) in 2023 |
-| 55829034 | 0.616 d, 1,000 ppm | **Blended eclipsing (or transiting) source** in the bulge | The target is a red giant; a 0.6 d orbit would lie inside it. The source is unidentified in a crowded field | Signal not catalogued |
+| 214311906 | 5.69 d, 1,900 ppm | **Planet candidate on the neighbour TIC 214311908**, an M3 dwarf 64 pc away: a ~5–6 R⊕ body every 5.6915 d | The Mira cannot host it. Pixel analyses place the dimming on the M3 dwarf 18″ away; our own search had flagged it there. Flat-bottomed, no secondary eclipse, consistent depth for 7 years | Yes: no TOI, CTOI, alert or ExoFOP record |
+| 90086266 | 2.36 d, 0.7% box | **Eclipsing binary** coincident with an F star; true period 2.33947 d (or 4.679 d) | The dimming is on the F star to within 1–2.5″. A 3% eclipse of it would need a 3 R_Jup companion (a star), which Gaia RVs and the missing secondary eclipse rule out. So a fainter, unresolved binary is eclipsing | Yes, as an eclipsing binary |
+| 61332759 | 0.740 d, 550 ppm | **Not a transit**: 1.4806 d variability of a neighbouring star | Two independent pixel analyses trace it to the catalogued RS CVn variable Gaia DR3 6711181657530577280, 57″ away | No period found for the neighbour in VSX, ASAS-SN or Gaia DR3 |
+| 61141412 | 6.525 d, 1,100 ppm | **Not a planet**: dips every 6.5285 d with timing variations, in or near a 5.45 d spectroscopic binary | The star is a Gaia SB1, so a 6.53 d planet orbit is impossible. The dip times drift by tens of minutes | No: a TESS-SPOC alert at 13.054 d (2×) in 2023 |
+| 55829034 | 0.616 d, 1,000 ppm | **Blended eclipsing (or transiting) source** in the bulge | The target is a red giant; a 0.6 d orbit would lie inside it. The source is a few arcseconds away and unidentified | Signal not catalogued |
 
-## TIC 214311906: a possible Neptune-sized planet on a neighbouring M dwarf
+**A data problem found along the way.** QLP light curves for Sectors 103, 104 and 105 have time stamps **without the
+barycentric correction**, so they are 5–7.5 min early.
+- In Sector 104, QLP eclipse times of TIC 90086266 are 7.34 ± 0.30 min earlier than in TESScut, across all 10
+  eclipses. The missing correction for that star is 7.48 min.
+- Sector 105 shows the same, −5.0 ± 0.9 min against a 5.2 min correction (TIC 71316387).
+- Sectors 13, 93, 94 and 98 are correct, so the redditor's TIC 4206066 work, which used Sector 98, is not affected.
+- All timings on this page use corrected times. See the [search README caveats](../README.md#caveats) for the effect
+  on our earlier results.
+
+## TIC 214311908: a Neptune-sized planet candidate next to a Mira
 
 ![The two giant-star signals](figures/giants.png)
 
-*Left: the TIC 214311906 dips, folded on 5.6915 d; flat-bottomed, 1.6 h. Right: TIC 55829034 (next section).*
+*Left: the dips as first found in the Mira's light curve (TIC 214311906), folded on 5.6915 d; flat-bottomed, 1.6 h.
+Right: TIC 55829034 (see below).*
 
 **The stars.**
-- **The target, TIC 214311906**, is a Mira-type long-period variable: Gaia LPV, VSX and ASAS-SN P ≈ 294 d, BP−RP 4.7,
-  parallax 0.15 ± 0.09 mas. It is a distant giant hundreds of R☉ across, and cannot host 1.6 h dips.
-- **TIC 214311910**, 6.2″ west of it, is a nearby M dwarf: Gaia DR3 5925373272850782208, G 14.65, 61 pc,
-  M_G 10.7 (about M3.5V).
-  - Gaia resolves a second source 0.83″ from it (51 au projected): Gaia DR3 5925373272827253632, G 15.74, with a
-    position-only solution. This explains the M dwarf's RUWE of 13.7 and its double images in 20% of scans.
-  - We call the two stars "the pair": A (G 14.65) and B (G 15.74). The TIC has no stellar parameters for them.
-- **TIC 214311908**, 17.8″ west, is an M3V dwarf: G 14.28, 64.5 pc, 0.37 M☉, 0.38 R☉. It shares the pair's proper
-  motion, so the three M dwarfs form one bound system about 62 pc away.
+- **TIC 214311906**, the star we searched, is a Mira-type long-period variable: Gaia LPV, VSX and ASAS-SN P ≈ 294 d,
+  BP−RP 4.7, parallax 0.15 ± 0.09 mas. It is a distant giant hundreds of R☉ across. A 5.7 d orbit would lie deep
+  inside it, so it cannot host the dips.
+- **TIC 214311908**, 17.8″ west of it, is an M3 dwarf: Gaia DR3 5925373272850784768, T = 13.01, 64.5 pc, Teff 3,300 K,
+  R 0.38 R☉, M 0.37 M☉, RUWE 1.08.
+- **TIC 214311910**, 6.2″ west of the Mira and 11.7″ from TIC 214311908, shares its proper motion: an M3–M4 dwarf at
+  61 pc (G 14.65).
+  - Gaia resolves a fainter star 0.83″ from it (Gaia DR3 5925373272827253632, G 15.74). That explains its RUWE of 13.7.
+  - The M dwarfs form one bound system about 62 pc away. The Mira, several kiloparsecs away, is unrelated.
 
 **The signal.**
-- Dips every **P = 5.691471 ± 0.000018 d** (T0 = BTJD 3840.9101 ± 0.0022), from 14 individual events in Sectors 39,
-  66, 93, 103 and 104. It is also seen weakly in Sector 12.
-- Flat-bottomed, T14 = 1.61 ± 0.09 h, with the flat part 78 ± 9% of the transit. Odd and even depths agree, and there
-  is no secondary eclipse.
-- About 2,000–2,400 ppm deep in the Mira's light curve, varying between sectors as the Mira's own brightness changes
-  the dilution.
-- Our search also detected it on TIC 214311908 in Sector 104. That detection was dropped because, after masking
-  instrumental time windows, one of its three transits carried 58% of the S/N (the limit was 50%).
+- Dips every **P = 5.691497 ± 0.000014 d**, T0 = BTJD 3840.9153 ± 0.0019 (BJD_TDB 2460840.9153). This comes from 13
+  transits in TIC 214311908's QLP light curve, with the Sector 103/104 times corrected.
+- Flat-bottomed: T14 = 1.61–1.65 h, the flat part about 60–80% of the transit; a V shape is worse by Δχ² = 8.
+- Odd and even depths agree within 1.9σ.
+- No dip at phase 0.5 (−700 ± 600 ppm), so half the period is ruled out. No secondary eclipse at any phase: the one
+  feature in the scan, at phase 0.825, is a single artefact in Sector 103.
+- The flux lost per transit is 14–17 e⁻/s and stays constant while the Mira's flux changes by a factor of ~2. So it
+  belongs to a star of constant brightness, not to the Mira.
+- It is present in all six sectors (2019–2026).
+- Our Sector 104 search found the signal on TIC 214311908 itself (1.2% deep in its QLP light curve). That detection was
+  dropped because, after masking instrumental time windows, one of its three transits carried 58% of the S/N (the
+  limit was 50%). The copy of the signal in the Mira's light curve passed.
 
-**Where the dimming is.**
-- Free fits of the source position fail in this field: fake signals injected at known stars come back scattered by
-  1–2′.
-- A joint χ² map over Sectors 39, 66, 93 and 104 does work, once calibrated with injections:
+**Which star dims.** Three independent pixel tests agree on TIC 214311908:
+1. **Small apertures.** The flux lost per transit, in apertures of radius 0.75 pixel, is 4.5 ± 0.3 e⁻/s on
+   TIC 214311908, 3.9 ± 0.4 on the M-dwarf pair, 2.1 ± 0.3 on the Mira and 1.4 ± 0.3 at the mirror point east of the
+   Mira. A forward model with the TESS PRF fits much better with the source on TIC 214311908 (χ² = 66 for 19 degrees
+   of freedom) than on the pair (151) or on the Mira (204).
+2. **Difference images.** The referee's PRF fits put the source at (−17.2 ± 1.7, +3.7 ± 1.0)″ from the Mira in every
+   sector; TIC 214311908 is at (−17.8, −0.4)″. In its injection tests, χ² (2 degrees of freedom) is 1.6 for
+   TIC 214311908, 28.9 for the pair and 56 for the Mira.
+3. **Injection-calibrated map** (our matched-filter method). This map is biased towards the Mira, and cannot place
+   even a fake signal correctly. But the real signal's pattern of Δχ² values across the four candidate stars is much
+   closer to that of a fake signal injected on TIC 214311908 than to fakes injected on the pair or the Mira.
 
-  | Signal | Map minimum | Δχ² at the Mira / pair / M3V / bright star 41″ away |
-  |---|---|---|
-  | Real | (+3, −3)″ | 0 / 15 / 57 / 122 |
-  | Injected on the pair (6.2″) | (0, 0)″ | 0 / 17 / 65 / 138 |
-  | Injected on the M3V (17.8″) | (−21, +3)″ | 52 / 38 / 0 / 154 |
-  | Injected on the bright star (41″, T 11.1, RUWE 15) | (+36, −24)″ | 284 / 297 / 300 / 0 |
-
-- The real signal matches a source at the Mira/pair position, which TESS cannot separate. It does not match the M3V
-  or the bright star.
-
-**Why the host is probably the M-dwarf pair.**
-1. The Mira cannot host the dips: a 5.7 d orbit would lie deep inside it.
-2. The flat bottom limits the occulter to at most ~0.2 of the host's radius. So the host must supply at least ~7% of
-   the light in the aperture (T ≲ 14). The only such stars at the source position are the Mira and the pair.
-3. If the transit is central, the shape implies a host density of ~12–15 ρ☉: an M dwarf. A Sun-like background star
-   would need a grazing, V-shaped transit, which is not what is seen.
-4. A background M dwarf bright enough (T ≲ 14) would have to be nearby and within ~0.5″ of the pair. That is very
-   unlikely.
+**A mistake we made first, and fixed.**
+- Our first localisation pointed to the M-dwarf pair, 6″ from the Mira, and an earlier version of this page said so.
+- It was wrong. In Sectors 93, 103 and 104 we had calibrated the image positions on the Mira itself. Its extreme
+  colour (BP−RP 4.7) shifts its TESS image, and the calibration was off by 16–17″, about the distance to
+  TIC 214311908.
+- A normal-colour star in the same images gives offsets of ≤ 0.25 pixel. With that calibration, every test points to
+  TIC 214311908.
+- The injection tests had not caught the error because they used the same shifted frame.
 
 **What it would be.**
-- **On star A** (about 8% of the aperture light; R ≈ 0.30–0.33 R☉), the dip is about 3% deep and the transiting body
-  about 5.5–6 R⊕.
-- **On star B** (about 3.5% of the light; R ≈ 0.22 R☉), the dip would be about 7% deep and the body about 6 R⊕. The
-  flat bottom disfavours B at about 2σ, because the occulter would then be 0.26 of B's radius.
-- Allowing for the Mira's changing brightness, the range is 4.5–7 R⊕. Either way it is smaller than any star or old
-  brown dwarf: **a Neptune- or sub-Saturn-sized planet**.
-- It would be at about 0.04 au from its star, with an equilibrium temperature near 450 K.
+- On TIC 214311908 (about 940 e⁻/s in TESS), the transit is 1.5–1.8% deep.
+- The transiting body is about **5–6 R⊕**, between Neptune and Saturn in size. That is smaller than any star or old
+  brown dwarf.
+- The duration fits the star's density with an impact parameter of about 0.6.
+- It orbits at about 0.045 au, receiving ~8 times Earth's sunlight; its equilibrium temperature is near 460 K.
 
 **What is not yet excluded.**
-- An eclipsing binary hidden inside the pair. This needs a stellar occulter much smaller than the host, which the size
-  limit rules out, or an unlikely chance alignment.
-- A brown dwarf with a grazing path. The flat bottom disfavours this at about 2σ.
-- A host other than the pair if the TESS calibration is wrong. The map uses signals of only S/N 6–7 per sector and
-  one injection per hypothesis.
+- An eclipsing binary unresolved from TIC 214311908, for example behind it or bound to it within ~1″. Its eclipses
+  would have to be deeper and diluted. The flat bottom and the lack of a secondary eclipse argue against this but do
+  not exclude it.
+- The pixel tests rest on signals of S/N 4–8 per sector next to a much brighter, very red, variable star. The PRF
+  forward model fits only roughly (χ² 66 for 19). A direct ground-based measurement is needed.
 
-**The decisive test.** One transit observed from the ground in seeing-limited images separates the Mira, the pair
-(6.2″) and the M3V (17.8″). On the right star the dip should be 1.5–3% deep and last 1.6 h.
-[`results/214311906/predicted_dips_2027.csv`](results/214311906/predicted_dips_2027.csv) lists 38 predicted transits
-for March–September 2027, each with ±5–6 min (1σ) timing. The field is at Dec −51°.
+**The decisive test.** Seeing-limited images separate TIC 214311908 from the Mira (17.8″) and the M-dwarf pair
+(11.7″).
+- On TIC 214311908, the transit should be 1.5–1.8% deep and 1.6 h long.
+- [`results/214311906/predicted_transits_2027.csv`](results/214311906/predicted_transits_2027.csv) lists 42
+  predicted transits for February–October 2027, each with ±4–5 min (1σ) timing. The field is at Dec −51°.
+- If the host is confirmed, the next steps are multi-colour photometry (a planet's transit depth is the same in all
+  colours) and high-resolution imaging.
 
-**Novelty.**
-- None of the three stars has a TOI, CTOI, SPOC or TESS-SPOC alert, QLP-alert (Tey+23) entry, VSX period or any ExoFOP
-  record (checked 2026-10-12 and 2026-10-16).
-- In the TOI process, this would be a planet candidate on TIC 214311910 with an uncertain host.
+**Novelty.** None of the three stars has a TOI, CTOI, SPOC or TESS-SPOC alert, QLP-alert (Tey+23) entry, VSX period
+or any ExoFOP record (checked 2026-10-12 and 2026-10-16).
 
 ## TIC 90086266: a 3% eclipsing binary coincident with an F star
 
 ![TIC 90086266](figures/tic90086266.png)
 
 *Left: the eclipse in 2019 and 2026. Middle: depths of successive eclipses; alternate eclipses are equal in 2019 but
-differ by 7.5% in 2026. Right: signal S/N per pixel in Sector 104, centred on the target (blue cross); circles are Gaia
-stars.*
+differ by 6–7.5% in 2026. Right: signal S/N per pixel in Sector 104, centred on the target (blue cross); circles are
+Gaia stars.*
 
 **The star.** Gaia DR3 6722830841491505536; T = 11.10; F-type subgiant, Teff 6,160–6,370 K, R 1.63–1.71 R☉,
 M 1.2–1.3 M☉, 413–423 pc. Gaia RUWE 0.96 and no double-peaked scans. Gaia RV −7.1 ± 1.5 km/s from 5 transits, with a
-peak-to-peak range of only 5.0 km/s (constancy p = 0.22; RV S/N 23 per transit).
+peak-to-peak range of only 5.0 km/s (constancy p = 0.22).
 
 **The signal.**
 - Eclipses 2.7–3.0% deep in raw (SAP) flux and 3.2% in crowding-corrected PDCSAP flux. Duration 3.1 h, nearly
-  V-shaped (flat bottom 12 ± 1% of the eclipse).
-- **The period is 2.339469 d.** Sector 13 gives 2.33940 ± 0.00006 d and Sector 104 2.33936 ± 0.00005 d. Only one
-  cycle count (1,078) between them agrees with both. Our search had reported 2.3606 d and 2.35477 d, both artefacts of
-  a too-wide box on detrended QLP flux.
-- No secondary eclipse at phase 0.5: −60 ± 45 ppm.
+  V-shaped.
+- **The period is 2.3394739 d** and T0 = BTJD 4180.4784 ± 0.0002, from barycentred TESScut times (the referee's fit;
+  χ² 25.8 for 18 degrees of freedom).
+  - Only one cycle count (1,078) links Sectors 13 and 104; one cycle more or fewer is off by ≥ 45σ.
+  - Our search had reported 2.3606 d and 2.35477 d, both artefacts of a too-wide box on detrended QLP flux.
+  - Our earlier T0 (4180.4740) used QLP's uncorrected Sector 104 times and was 6–7 min early.
+- No secondary eclipse at phase 0.5. Measurements in different products range from −450 ± 130 to +360 ± 170 ppm. An
+  M-dwarf companion of the F star would give about 1,600–2,200 ppm.
 
-**Where the dimming is.** Matched-filter TESS PRF fits put the source (+0.2, −0.1)″ ± 0.2″ from the target in Sector
-13 and (−1.2, −0.2)″ ± 0.2″ in Sector 104. Fake eclipses injected on the target give (+0.2, −0.2)″ and (−1.3, −0.2)″.
-So the source is coincident with the target to within TESS's systematic accuracy (of order an arcsecond). The four
-Gaia stars within 6″ (T = 15.3–18.7) each supply at most 2% of the light, too little for a 3% dip.
+**Where the dimming is.** On the target. Fake eclipses injected on the target reproduce the measured offsets to within
+about 1″ in Sector 13 and about 2.5″ in Sector 104. The four Gaia stars within 6″ (T = 15.3–18.7) each supply at most
+2% of the light, too little for a 3% dip even if fully eclipsed.
 
 **Why it is not a planet, and not an eclipse of the F star itself.**
 1. A 3% eclipse of a 1.7 R☉ star needs a companion of about 0.3 R☉ (3 R_Jup). No planet or brown dwarf is that
    large, so the companion would be a star.
-2. A ~0.3 M☉ star in a 2.34 d orbit would swing the F star's velocity by about ±30–35 km/s. Gaia's 5 RV transits vary
-   by only 5 km/s.
-3. Such a star would also show a secondary eclipse. For an M dwarf of 3,300–3,500 K, the expected depth is roughly
-   1,000–3,000 ppm, depending on its temperature. None is seen (−60 ± 45 ppm).
-4. A twin F-star binary at 4.68 d fits the brightness, but would give double lines moving by ±86 km/s. Gaia's RVs rule
-   that out too, unless all its transits fell near conjunction (probability of order 10⁻³ or less).
+2. A ~0.3 M☉ star in a 2.34 d orbit would swing the F star's velocity by about ±32 km/s.
+   - Gaia's 5 RV transits vary by only 5 km/s.
+   - In a Monte Carlo, a range this small has a probability of 4 × 10⁻⁴ for random phases, or 0.5–1% if Gaia's
+     transits were clustered in time.
+3. Such a star would also show the secondary eclipse above, which is not seen.
+4. A twin F-star binary at 4.68 d would give double lines moving by ±86 km/s, which Gaia's RVs also rule out.
 
 So the eclipses most likely come from a **fainter eclipsing binary unresolved from the F star**, either bound to it
 (a hierarchical triple) or behind it. It must supply at least 3.2% of the light (ΔT ≲ 3.7 mag), or at least ~6% if
-its eclipses are 50% deep. "Within about 1″" is an inference: such a star farther out would be bright enough to
-appear in Gaia as a separate source. The TESS pixels alone only show coincidence to about an arcsecond.
+its eclipses are 50% deep. "Within about 1″" is an inference: such a star farther out would appear in Gaia as a
+separate source.
 
-**Open issue: alternating depths.**
-- In Sector 104, odd and even eclipses differ by 7.5% (5.6–8.9σ). The difference holds in QLP flux and in our own
-  TESScut photometry with three aperture sizes.
-- In Sector 13 they agree to within 0.5 ± 1.5%.
-- It is not an aperture or dilution effect: those would change all eclipses in a sector equally, not alternate ones.
-- A binary with two unequal eclipses at 2 × 2.339 = 4.679 d would show the difference in both sectors. So either the
-  eclipses changed between 2019 and 2026, or the 2026 difference has a cause we have not found.
+**Alternating depths.**
+- In Sector 104, even eclipses are 5.4–7.5% deeper than odd ones (4.3–8.9σ, depending on product and aperture).
+- The referee found no instrumental cause. Background, centroids, pointing, quality flags and flux level are the same
+  for odd and even events. The odd/even ratio is the same in every pixel (χ² 10.6 for 11 degrees of freedom).
+- In Sector 13 the difference is only 0.5–1.7% (≤ 1.2σ).
+- The simplest reading is an eclipsing binary at 2 × 2.3394739 = 4.67895 d with slightly unequal eclipses whose depth
+  ratio changed between 2019 and 2026. Such changes occur in triple systems, but this is not established.
 
 **What would settle it.**
 - High-resolution imaging or spectroscopy, to find the companion pair or its moving lines.
@@ -156,7 +172,7 @@ appear in Gaia as a separate source. The TESS pixels alone only show coincidence
 
 **Novelty.**
 - Not a TOI, CTOI or SPOC/TESS-SPOC alert. No variability entry in VSX, ASAS-SN or Gaia DR3.
-- Green+23 gives this star a Score of 0 (not flagged). Its listed best period, 0.2355 d, is close to one-tenth of the
+- Green+23 gives it a Score of 0 (not flagged). Its listed best period, 0.2355 d, is close to one-tenth of the
   eclipse period, so their periodogram probably picked up a harmonic of the eclipses. They did not classify the star
   as variable.
 - TARS has no period. This is a new identification as an eclipsing binary.
@@ -168,69 +184,102 @@ appear in Gaia as a separate source. The TESS pixels alone only show coincidence
 *Left: signal S/N per pixel in Sector 67; the source (orange circle) is the RS CVn variable, not the target (blue
 cross). Right: the variability in the QLP aperture folded on 1.4806 d.*
 
-- **Not a transit.** The "dip" is a smooth variation covering about half of each 0.74 d cycle (trapezoid fits give an
-  8 h duration). The true period is **1.4806 d**, with two unequal minima and unequal maxima per cycle. That is typical
-  of a spotted (RS CVn-type) or ellipsoidal binary.
+- **Not a transit.** The "dip" is a smooth variation covering about half of each 0.74 d cycle. The true period is
+  **1.4806 d**, with two unequal minima and unequal maxima per cycle. That is typical of a spotted (RS CVn-type) or
+  ellipsoidal binary.
 - **It comes from a neighbour.** The amplitude depends on the aperture. In Sectors 13 and 27, QLP's raw flux shows 440
-  and 1,340 ppm, but TESS-SPOC's smaller apertures show only 50–80 ppm. In Sector 67, QLP shows 2,700 ppm.
-- **Every sector traces it to the same place.** Pixel-level fits in Sectors 13, 27, 67, 94 and 104 put the source at
-  (−36.5, −44.3)″ ± 0.3″ from the target. That is the catalogued variable Gaia DR3 6711181657530577280 (G 14.4, Gaia
-  class "RS"). The target is excluded by Δχ² ≈ 195,000 and the next-best star by Δχ² ≈ 45,000.
-- The target itself is an F star with constant Gaia RV (7 transits).
+  and 1,340 ppm, but TESS-SPOC's smaller apertures show only 50–80 ppm.
+- **Two independent pixel analyses put it on the same star.**
+  - Ours (five sectors) gives (−36.5, −44.3)″ ± 0.3″ from the target.
+  - The referee's per-pixel amplitude maps give (−36.0, −43.9), (−36.0, −42.1) and (−35.2, −43.3)″ in Sectors 13, 27
+    and 67.
+  - The catalogued variable Gaia DR3 6711181657530577280 (G 14.4, Gaia class "RS") is at (−36.2, −44.0)″. Its own
+    light curve shows the 1.48 d period.
+- **No transit on the target.** In a 1-pixel aperture decorrelated against the neighbour, the target shows 277 ± 113,
+  55 ± 104, 171 ± 111 and −182 ± 139 ppm at the 0.74 d ephemeris in Sectors 13, 27, 94 and 104.
 - VSX and Gaia DR3 list the neighbour as an RS CVn variable but give no period, and ASAS-SN has no entry. We found no
   catalogued 1.48 d period.
 
-## TIC 61141412: dips with irregular timing near a spectroscopic binary
+## TIC 61141412: dips with timing variations near a spectroscopic binary
 
 ![TIC 61141412](figures/tic61141412.png)
 
-*Left: dip times minus a constant-period prediction, 2019–2026, with a quadratic fit. Right: the dips in Sectors 27
+*Left: dip times minus a constant-period prediction, 2019–2026, with a quadratic fit (Sector 104 points before the
+QLP time correction, which moves them about 6.5 min later without changing the pattern). Right: the dips in Sectors 27
 and 67, folded on that fit.*
 
-**The star.** A subgiant: T = 10.0, Teff ≈ 5,900–6,000 K, R 2.4–2.7 R☉, 354–384 pc. It is a **Gaia DR3 spectroscopic
-binary** (SB1): P = 5.452 d, e = 0.01, significance 51; its Gaia RVs span 35 km/s. TESS shows rotation at 5.4–5.8 d
-(TARS, Gao+25, Green+23), which matches tidally locked rotation in that orbit.
+**The star.** A subgiant: T = 10.0, Teff ≈ 5,900–6,000 K, R 2.4–2.7 R☉, 354–384 pc.
+- It is a **Gaia DR3 spectroscopic binary** (SB1): P = 5.45238 ± 0.00048 d, K = 18.1 km/s, e = 0.01.
+- TESS shows 3–4 ppt starspot modulation at 5.4–5.8 d (TARS, Gao+25, Green+23), matching tidally locked rotation in
+  that orbit.
 
 **The signal.**
-- About 1,000–2,000 ppm, roughly 1 h long, every **6.5285 d**. It is seen in Sectors 13, 27, 67, 94 and 104, with 11
-  single events at S/N > 4.
-- Our Sector 104 detection (6.5252 d) was the same signal.
-- Depths agree between products (QLP, SPOC, TESS-SPOC) within each sector.
+- About 1,000–2,000 ppm, roughly 1 h long, every **6.52854 d**. It is seen in Sectors 13, 27, 67, 94 and 104.
+- No dip at phase 0.5 (53 ± 72 ppm). Odd and even depths are 1,371 ± 106 and 1,548 ± 102 ppm.
+- Depths agree between products (QLP, SPOC, TESS-SPOC) within each sector. Our Sector 104 detection (6.5252 d) was
+  the same signal.
 
-**Timing.** The 11 event times do not fit a constant period with their formal 3–5 min errors (χ² = 243 for 9 degrees
-of freedom; residuals from −25 to +29 min). A steadily changing period fits better (χ² = 22 for 8 degrees of
-freedom). Even with all errors inflated by 1.66 so that the quadratic fit has χ² = 8, the constant period still gives
-χ² ≈ 88. A third body pulling the eclipsing pair is one explanation. But the times come from three pipelines, and the
-dips are shallow, short and on a spotted star, so the errors may be underestimated. **We treat the timing variations
-as suggestive, not established.**
+**Timing variations.**
+- The dip times do not follow a constant period. Constant-period χ² is 90–240 (10–13 degrees of freedom) across 18
+  combinations of product, aperture and detrending, including the referee's fully independent TESScut photometry. A
+  steadily changing period gives χ² 12–31.
+- Sector-mean residuals are −10 to −19 min (S13), −4 to +7 (S27), +17 to +27 (S67), −11 to 0 (S94) and −4 to −12 min
+  (S104, corrected times).
+- The two external reviewers had suspected underestimated errors. The 18-way test shows the pattern is robust.
+- The likeliest cause is a third body: either through the light-travel time across a wider orbit, or through direct
+  gravitational pulls.
 
-**Where the dimming is.** Our joint pixel map puts it on the target. Every Gaia star 17″ or more away fits worse than
-the target by Δχ² ≥ 88. The TESS-SPOC pipeline's own Sector 67 analysis gives an offset of 3.3 ± 2.9″.
+**Where the dimming is.** On or near the target:
+- our joint pixel map puts it on the target, and every Gaia star 17″ or more away fits worse by Δχ² ≥ 88;
+- the TESS-SPOC pipeline's Sector 67 analysis gives an offset of 3.3 ± 2.9″;
+- the referee's localisation is good to ±5–10″.
 
 **Why it is not a planet around the target.**
 - A 6.53 d orbit around one star of a 5.45 d binary is dynamically unstable.
 - A planet orbiting both stars would need a period of at least ~25 d.
 - The ~1 h duration would also need an almost grazing path across a 2.5 R☉ star.
 
-The likeliest picture is an eclipsing pair within a few arcseconds: either in the same multiple system, or an
-unresolved background binary. If Gaia's 5.45 d period were an alias of 6.53 d, the dips would instead be grazing
-eclipses within the SB1 itself.
+The dips most likely come from a separate eclipsing pair within a few arcseconds, in the same multiple system or
+behind it. A faint, unresolved third star hosting them is not excluded.
+
+**Could the dips be eclipses of the SB1 itself?** Only if Gaia's 5.45 d period were an alias of 6.53 d, which is
+implausible:
+- the starspot modulation matches 5.45 d, not 6.53 d;
+- Gaia's rotational broadening (vbroad 11 km/s, against ~23 km/s for a tidally locked star of this size) suggests an
+  orbital inclination of about 27°, so the SB1 probably does not eclipse at all.
 
 **Not new.** The TESS-SPOC pipeline flagged this signal in Sector 67 (2023), as a threshold-crossing event at
-13.054 d (twice the true period). Its report is public. The 2019 SPOC alerts at 16.6 d and 20.6 d each combined one
-of these dips (BTJD 1661.01) with unrelated dips at 1677.42 and 1677.64. SPOC's own centroids place those unrelated
-dips 18–62″ away.
+13.054 d (twice the true period). Its report is public.
+- The 2019 SPOC alerts at 16.6 d and 20.6 d each combined one of these dips (BTJD 1661.01) with unrelated dips at
+  1677.42 and 1677.64.
+- SPOC's own centroids place those unrelated dips 18–62″ away.
 
 ## TIC 55829034: a blended source in the bulge
 
 - **The target** is a red giant towards the Galactic bulge: semi-regular variable, P = 42 d; parallax 0.07 ± 0.03 mas;
-  TIC Teff 3,260 K. A 0.6 d orbit would lie deep inside it.
-- **The signal** is a V-shaped, ~2 h, ~1,000–2,300 ppm dip every 0.6161 d, with equal odd and even depths and no
-  secondary eclipse.
-- **The source** is within several arcseconds of the target, in a field with about 6,000 Gaia stars within 2.5′. TESS
-  cannot identify it.
+  TIC Teff 3,260 K. A 0.6 d orbit (a ≤ 3.8 R☉) would lie deep inside it.
+- **The signal** is a V-shaped, ~2 h, ~1,000–2,300 ppm dip every 0.6161 d.
+  - Equal odd and even depths; no secondary eclipse.
+  - A blind search of the referee's own photometry finds it as the top peak in every sector.
+- **The source** is at about (+3.2, −5.5)″ ± 1–3″ from the target (referee), and the target is disfavoured. The field
+  has about 6,000 Gaia stars within 2.5′, and no catalogued variable matches.
 - The V shape and short period make an eclipsing binary likely. A transiting planet around a faint neighbour is not
   formally excluded.
+
+## Independent referee check
+
+The referee re-derived the key number behind each verdict with separate code
+([`referee/referee_summary.json`](referee/referee_summary.json), scripts in [`referee/code/`](referee/code/)):
+
+| TIC | Referee's verdict | What changed here as a result |
+|---|---|---|
+| 90086266 | Confirmed | Localisation precision relaxed to 1–2.5″; secondary-eclipse limits widened; ephemeris corrected; alternating depths confirmed as real in Sector 104 |
+| 61332759 | Confirmed | Independent source position added; no transit on the target |
+| 214311906 | "Not a planet of the Mira" confirmed; "blended EB, unidentified" overturned: a planet candidate on TIC 214311908 | Host changed from the pair to TIC 214311908 after we found the calibration error described above |
+| 55829034 | Confirmed | Source position added |
+| 61141412 | Confirmed; timing variations robust | Timing variations stated as robust; the eclipsing-SB1 alias judged implausible |
+
+The referee also found the QLP time-stamp problem.
 
 ## How it was done
 
@@ -239,31 +288,34 @@ dips 18–62″ away.
 | Stars | TIC and Gaia DR3 parameters, RV statistics, NSS orbits, variability classes | `stars.py` |
 | Earlier catalogue entries | TOI/CTOI lists, SPOC and TESS-SPOC pipeline reports, every VizieR table within 30″, VSX, ASAS-SN, Gaia variables and EBs within 4–5′, TARS, ExoFOP | `products.py`, `dv.py`, `allviz5.py`, `nbr.py`, `nbr2.py` |
 | Light curves | Every product and aperture (QLP SAP/DET, SPOC and TESS-SPOC SAP/PDCSAP), transit-masked detrending, ephemeris, depths, odd/even, secondary scan, phase curve, shape | `lcan.py` |
-| TIC 214311906 field | Depths in the three stars' light curves; per-event times and 2027 predictions; host hypotheses with injections; joint-map calibration | `trio214.py`, `eph214.py`, `hyp214.py`, `jointinj214.py` |
+| QLP time stamps | QLP against TESScut eclipse times (S13, S104; S105); time-stamp test in S98 | `qlptime.py`, `qlptime105.py`, `qlptime98.py` |
+| TIC 214311906 field | Depths in the three stars' light curves; corrected ephemeris and 2027 predictions; aperture dips; forward PRF model; calibration check; joint maps with injections; checks on TIC 214311908's light curve | `trio214.py`, `eph214v2.py`, `host214v2.py`–`host214v4.py`, `fwd214.py`, `fwd214v2.py`, `woff214.py`, `hyp214.py`, `jointinj214.py`, `m3v_checks.py` |
 | TIC 90086266 | Per-sector timing and cycle count; alternate-eclipse depths in pipeline flux and in our own TESScut photometry | `eph90.py`, `oddeven90.py`, `ap90.py` |
 | TIC 61332759 | Period and shape of the variability | `var613.py` |
 | TIC 61141412 | Single-event search; per-event times | `events614.py`, `etv614.py` |
-| Localisation | TESScut cutouts (21×21 px); per-pixel regression on a signal template (eclipse shape or free-phase harmonics) with spline baselines and jitter regressors; TESS PRF fits to the amplitude images, with the WCS calibrated on the target's direct image; injected fake signals; joint χ² maps across sectors evaluated at every Gaia star | `dl_cutouts.py`, `loc5.py`, `locmulti.py` |
+| Localisation | TESScut cutouts (21×21 px); per-pixel regression on a signal template (eclipse shape or free-phase harmonics) with spline baselines and jitter regressors; TESS PRF fits to the amplitude images; injected fake signals; joint χ² maps across sectors evaluated at every Gaia star | `dl_cutouts.py`, `loc5.py`, `locmulti.py` |
 | Figures | | `figs.py` |
 
 The scripts import the search pipeline from `/home/user/work/src`, which is identical to [`../src/`](../src/), and
 read cutouts and light curves from local caches. Results are in [`results/`](results/), one folder per star.
-- `results/61141412/out_61141412.txt` used the wrong period (6.5458 d) and is superseded by
-  `out_61141412_fixed.txt`.
-- `mira214.py` tested whether the Mira's brightness changes dilute the eclipse. It gave depths inconsistent with QLP
-  and is not used.
-- The free-fit positions for TIC 214311906 (`loc/s*.json`, `loc_214.txt`) are unreliable, as the injections show.
+
+Superseded files:
+- `results/61141412/out_61141412.txt` used a wrong period (6.5458 d); see `out_61141412_fixed.txt`.
+- `results/214311906/`:
+  - `ephemeris.json` (uncorrected QLP times) is replaced by `ephemeris_v2.json`;
+  - `host_hypotheses.csv`, `joint_injection_test.json` and `host_v3.json` (Mira-based calibration) are replaced by
+    `host_v4.json` and `forward_apertures_v2.json`;
+  - the free-fit positions in `loc/` are unreliable.
+- `mira214.py` gave depths inconsistent with QLP and is not used.
 
 ## Caveats
 
-- **TIC 214311906/214311910 is a candidate, not a planet.**
-  - The host identification rests on one injection-calibrated TESS map plus physical arguments.
-  - The planet's size depends on the Mira's brightness at each epoch and on how light is shared within the M-dwarf
-    pair.
-  - Statistical validation would need the host confirmed first.
+- **TIC 214311908 is a planet candidate, not a planet.**
+  - The host rests on TESS pixel tests of modest S/N next to a bright, very red, variable star.
+  - An unresolved eclipsing binary at the same position is not excluded.
+  - The planet's size depends on the star's TESS brightness and on dilution, both estimated.
 - **TIC 90086266's companion binary is inferred, not seen.** Its separation, brightness and period (2.34 or 4.68 d)
   are unknown.
-- **TIC 55829034:** the conclusion that the eclipsed star is not the giant rests on physics; the pixel data cannot
-  resolve the field.
-- **TIC 61141412:** the timing variations need a homogeneous re-measurement before they can be called real.
-- An independent referee re-check is in progress and will be added here.
+- **TIC 55829034:** the conclusion that the eclipsed star is not the giant rests on physics. Its source is not
+  identified.
+- **TIC 61141412:** the timing variations are robust, but their cause (a third body) is an interpretation.
