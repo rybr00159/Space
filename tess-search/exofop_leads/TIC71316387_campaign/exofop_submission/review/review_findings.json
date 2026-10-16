@@ -1,0 +1,1207 @@
+{
+ "report_review": {
+  "NUMBER AUDIT": {
+   "lens": "NUMBER AUDIT",
+   "checked": "I read every page of report_v1.txt and looked at all 7 rendered pages plus the three figure PNGs at full resolution. I checked every number, range, count, date and identifier against README.md, final_referee_result.json, synthesis_result.json, localise_v3_result.json, chromatic_result.json, referee_all_result.json and both lcmodel/astro result files (astro_result.json actually holds the lcmodel answer and lcmodel_result.json holds astro; I used the content, not the file names). Where the sources were not enough I went back to the raw data: Gaia rows (tic713/astro/data/dr3_source.ecsv, dr3_ap.ecsv, dr3_neigh.ecsv, dr3_tmass.ecsv, vz_apass9_0.ecsv, vz_tic82_0.ecsv), ctoi.csv, localise/v3/results (s05_*.json for all 16 variants, f02_colour_theta.json, f02_colourw_theta.json), chromatic/v3/results (ephem3.json, predict3.log, wasp3.log), and lcmodel/v6/results (depths_by_product.json, data_default.pkl cadences, timefix.json, timecheck.json). I also read make_figures.py, build_report.py and eclipse_windows.py.\n\nRecomputed independently and found consistent:\n- Coordinates and sky position: sexagesimal RA/Dec (22h03m33.107s, -42d50m07.84s); parallax distance 297.42 +- 1.51 pc; IDs TYC 8001-154-1 and 2MASS 22033305-4250076; nearest neighbour 18.18 arcsec.\n- Gaia values: PM errors 0.013; RV, 15 transits, 945.6 d, p = 0.275 and amplitude 9.93; RUWE; ipd 41; 47/47 and 48/48 blended transits.\n- CTOI row: P, depth 5,495 +- 1,338 ppm, duration 1.46 h, radius 8.54 R_E.\n- Period ratio 1.9999975, BTJD, depth ratio 0.45, depth difference 27.8 sigma.\n- Durations: T14 1.61 h and T23 36 min (analytic). Orbit: a = 4.35 Rsun / 0.0202 au, K1/K2 = 51.95/116.9 km/s, vsini 18.6/8.1 km/s.\n- K for a 0.1 Msun companion = 17.97 km/s. K7 shift offset 5.7 sigma.\n- Pair magnitudes (T 15.32, G 16.41, Ks 13.02) and the 1.4/2.6/8.5% light fractions. Undiluted depths 22%/10%.\n- Prior 0.0263 and odds 6.47e3. 0.9 arcsec = 268 au.\n- Raw offsets 2.08-3.65 arcsec (radial 2.01-3.64); chi2 217 / 20.85 / 22 dof; p = 0.09 and 0.03-0.69.\n- Table 5: re-derived with my own astropy code on a 53-point grid. It gives exactly the same 9 events and BJDs, UTC agrees to the second, and the timing sigma is 0.357-0.361 min.\n\nDiscrepancies are listed below. I modified no files and submitted nothing.",
+   "findings": [
+    {
+     "id": "N1",
+     "severity": "error",
+     "location": "Section 4, paragraph 2",
+     "quote": "across 16 analysis variants the 95% limit ranges from 1.06 to 1.54 arcsec",
+     "problem": "One of the 16 variants is the shallow-eclipse-only fit, and its 95% upper limit is 2.46 arcsec, not 1.54 or less. The range 1.06-1.54 holds only for the 15 variants that include the deep eclipses. The source gives the '16 variants' count only for the p-value range and quotes the shallow-only limit separately.",
+     "evidence": "localise/v3/results/s05_*.json region['95.45'].max_sep, 16 files:\n- baseline 1.24, box2 1.29, box4 1.24, deep_only 1.20\n- drop_s1 1.23, drop_s28 1.19, drop_s68 1.17, drop_s95 1.39, drop_s105 1.33, drop_s106 1.46\n- err_x1.5 1.54, k_equal 1.32, k_theta 1.06, k_wide 1.19, no_bias 1.14\n- shallow_only 2.46\nlocalise_v3_result.json key_numbers 'Excluded separations': 'Across variants the 95% upper limit is 1.06-1.54\" ... Shallow eclipses alone: 95% limit 2.46\"'.",
+     "fix": "'... and across the 15 analysis variants that include the deep eclipses the 95% limit ranges from 1.06 to 1.54 arcsec (the shallow eclipses alone give 2.46 arcsec).'"
+    },
+    {
+     "id": "N2",
+     "severity": "error",
+     "location": "Table 4, Multi-colour eclipse photometry row; also Figure 3b blue prediction curve",
+     "quote": "V 1,900 / 370",
+     "problem": "The V deep-eclipse prediction uses only the s01 ratio of 0.33 (1900/5770 = 0.329). The final referee corrected this to a model-dependent 0.28-0.33 (lcmodel v7rep chromatic_check gives 0.28 for the same M2V model). The deep V depth should therefore be a range. The blue curve in Figure 3b (make_figures.py pred['V'] = 1900) also shows only the upper end.",
+     "evidence": "- final_referee_result.json corrected_numbers (6): 'SuperWASP/TESS deep-eclipse prediction for M2V: 0.28-0.33'.\n- final_referee_result.json overall (9): \"'SuperWASP(V)/TESS = 0.33' -> '0.28-0.33 (model-dependent)'\".\n- astro_result.json (lcmodel content), 'Chromatic consistency check': M2V 0.28.\n- 0.28 x 5770 = 1,616 ppm.",
+     "fix": "In Table 4: 'V 1,600-1,900 / 370'. In Figure 3b: draw the V point of the prediction as 0.28-0.33, or widen the optical band there. Optionally add '(model-dependent)'."
+    },
+    {
+     "id": "N3",
+     "severity": "error",
+     "location": "Table 1, row 'Teff, R★, M★, age'",
+     "quote": "≈5,880 K, 1.07 R☉, 1.03 M☉, ≈5 Gyr                                         Gaia DR3 GSP-Phot /",
+     "problem": "Neither Gaia DR3 module gives 1.07 Rsun. FLAME gives 1.082 Rsun (1.059-1.105) and GSP-Phot gives 1.135 Rsun. The 1.07 value is the TIC v8 radius (1.066). Teff (GSP-Phot 5883 K), mass (FLAME 1.029) and age (FLAME 5.12 Gyr) do match the cited source.",
+     "evidence": "tic713/astro/data/dr3_ap.ecsv: radius_flame 1.0819697, radius_gspphot 1.1352, mass_flame 1.028987, age_flame 5.123837, teff_gspphot 5882.575. TIC v8 (vz_tic82_0.ecsv; ctoi.csv 'Stellar Radius' 1.06552).",
+     "fix": "'≈5,880 K, 1.08 R☉, 1.03 M☉, ≈5 Gyr' with source 'Gaia DR3 GSP-Phot (Teff) / FLAME (R, M, age)'. Alternatively keep 1.07 R☉ and cite it as TIC v8."
+    },
+    {
+     "id": "N4",
+     "severity": "error",
+     "location": "Figure 3a; Section 4 ('2,560 fits') and Section 5 ('BP−RP ≈ 2.31')",
+     "quote": "On the field-star calibration this corresponds to BP−RP ≈ 2.31 (1σ range 2.22–2.40",
+     "problem": "Figure 3a shows a different calibration from the one the 2.31 (2.22-2.40) colour was read off.\n- The figure, and the '2,560 fits' in Section 4, use the narrow sample. Its binned curve has no bin between BP-RP 1.69 and 2.35 (only 8 and 3 stars in the two red bins). Read off that curve, the plotted 2.94 +- 0.28 arcsec band gives BP-RP about 2.22 (2.12-2.31).\n- The vertical band (2.22-2.40) comes from the wide sample of about 5,560 fits, which has a 2.14 bin.\nA reader comparing the two bands in Figure 3a cannot reproduce 2.31.",
+     "evidence": "- localise/v3/results/f02_colour_theta.json (used in make_figures.py): bins C = 1.687 -> 1.464\", 2.349 -> 3.308\", 2.940 -> 3.749\". Linear interpolation at 2.94\" gives 2.22.\n- f02_colourw_theta.json (5,560 fits): 2.139 -> 2.418\", 2.422 -> 3.290\". Interpolation gives 2.31 (2.66\" -> 2.22, 3.22\" -> 2.40), the quoted value.",
+     "fix": "Plot the wide-sample curve (f02_colourw_theta.json / f02_pointsw.npz) in Figure 3a and label it 'field stars, binned (≈5,560 fits, 6 sectors)'. In Section 5 write: 'On the wide field-star calibration (≈5,560 fits; Figure 3a) this corresponds to BP−RP ≈ 2.31 ...'. Alternatively keep the narrow sample and quote BP−RP ≈ 2.2 (2.1–2.3)."
+    },
+    {
+     "id": "N5",
+     "severity": "presentation",
+     "location": "Figure 3 caption, panel (b)",
+     "quote": "adopted early-M + mid-M pair, ±15% (optical) and ±20% (infrared)",
+     "problem": "The plotted band is ±15% at every wavelength, including J, H, Ks and W1. The ±20% infrared band described in the caption is not drawn.",
+     "evidence": "make_figures.py: ax.fill_between(xl, yl * 0.85, yl * 1.15, ...) applied to the whole curve (g′ to W1).",
+     "fix": "Either draw ±20% for λ > 1 µm (e.g. fill_between with a wavelength-dependent factor), or change the caption to 'Blue line and band: prediction for the adopted early-M + mid-M pair, ±15%'."
+    },
+    {
+     "id": "N6",
+     "severity": "overclaim",
+     "location": "Section 5, first bullet",
+     "quote": "with a systematic of about ±0.1 mag",
+     "problem": "The red end of the colour calibration rests on very few stars. Both referees put the systematic at ±0.1–0.2 mag, not ±0.1, so the stated colour precision is stronger than the sources allow.",
+     "evidence": "- final_referee_result.json verdicts[1]: 'carries a +-0.1-0.2 mag systematic resting on 4 field calibrators'.\n- referee_all_result.json: 'their +-0.1-0.2 mag systematic is the real limit'.\n- localise_v3_result.json caveat 1: 'uncertain by about ±0.1–0.2 mag'.",
+     "fix": "'(1σ range 2.22–2.40, with a systematic of about ±0.1–0.2 mag from the few red calibration stars)'."
+    },
+    {
+     "id": "N7",
+     "severity": "clarity",
+     "location": "Section 2, end of paragraph",
+     "quote": "predicted time, within its uncertainty (−3.8 min; 1σ range −7.5 to +0.9 min), so a linear ephemeris holds over 20 years.",
+     "problem": "The −3.8 min offset is measured against the chromatic analysis's own deep-eclipse ephemeris (P = 1.30367207 d), not the Table 2 ephemeris (P = 1.30367228 d), which is the only one the report gives. At the SuperWASP epoch (E ≈ −4499) the Table 2 ephemeris predicts the eclipse 1.17 min earlier, so relative to Table 2 the offset is about −2.6 min. The first referee's own scan with the Table 2 period found −6 min. The conclusion is unchanged, but the number as written is tied to an ephemeris the report never shows.",
+     "evidence": "- chromatic/v3/results/ephem3.json deep: oc0 +0.8285 min about T0 = 2460165.6697, P = 1.3036720677. wasp3.log: 'chi2 min at -0.0020 (-3.8 min)' relative to that refined ephemeris.\n- Shift: (2460165.670416 − 2460165.670275) d = +0.20 min; −4499.35 × (1.30367228 − 1.30367207) d = −1.38 min; total −1.17 min.\n- referee_all_result.json: 'My SuperWASP timing scan (... lcmodel ephemeris P = 1.30367228 d) has its minimum at -6 min'.",
+     "fix": "'The deep eclipse is also recovered in SuperWASP data from 2006–07 at the time predicted from the TESS ephemeris: about −3 min off (−3.8 min, 1σ −7.5 to +0.9 min, against a TESS deep-eclipse-only ephemeris; about −2.6 min against Table 2). A linear ephemeris therefore holds over 20 years.'"
+    },
+    {
+     "id": "N8",
+     "severity": "clarity",
+     "location": "Section 6.3, second paragraph",
+     "quote": "If the pair is bound, its projected separation is most likely ≲0.9 arcsec (≲270 au).",
+     "problem": "0.9 arcsec is a 95% upper bound, not a 'most likely' value. Calling it 'most likely' muddles the confidence level that observers will plan AO searches around.",
+     "evidence": "- final_referee_result.json corrected_numbers (3): '95% upper bound ~0.8-0.9 arcsec (<~270 au)'.\n- final_referee_result.json overall (4): 'Within ~0.9 arcsec (95%; <~270 au projected)'.",
+     "fix": "'If the pair is bound, its projected separation is within about 0.9 arcsec (95%; ≲270 au).'"
+    },
+    {
+     "id": "N9",
+     "severity": "clarity",
+     "location": "Section 8, bullet 'Light fraction and masses depend on priors'",
+     "quote": "Without the main-sequence term, the odds fall to about 10^3.",
+     "problem": "The final referee's recomputed shape-only range is 8×10^2–8×10^3 (the synthesis gives 1.5×10^3–4.1×10^3). 'About 10^3' quotes the bottom of that range as if it were central.",
+     "evidence": "final_referee_result.json verdicts[5]: 'Shape-only L(f): 8e2-8e3'. synthesis_result.json bound_vs_background: 'shape-only F_LC: 1.5e3-4.1e3'.",
+     "fix": "'Without the main-sequence term, the odds fall to about 10^3 (8×10^2 to 8×10^3 across variants).'"
+    },
+    {
+     "id": "N10",
+     "severity": "clarity",
+     "location": "Table 2 caption; Section 9 first sentence",
+     "quote": "Times come from SPOC light curves (S1, S28, S68)",
+     "problem": "The S1, S28 and S68 products are all TESS-SPOC FFI light curves (1800, 600 and 200 s). None is a SPOC 2-min target light curve. The Figure 1 caption calls S1 and S28 'TESS-SPOC FFI', so Table 2 contradicts it, and Section 9's 'SPOC and TESS-SPOC light curves (Sectors 1, 28 and 68)' implies at least one 2-min SPOC product.",
+     "evidence": "lcmodel/v6/results/data_default.pkl texp per key: SPOC1 1800 s, SPOC28 600 s, SPOC68 200 s. lcmodel/v6/scripts/a01_timefix.py docstring: 'TESS-SPOC light curves (S1, S28, S68)'.",
+     "fix": "Table 2: 'Times come from TESS-SPOC FFI light curves (S1, S28, S68) and from our own TESScut photometry (S95, S105, S106)...'. Section 9: 'The TESS data are TESS-SPOC FFI light curves (Sectors 1, 28 and 68; 30-, 10- and 200-s cadence) and our own aperture photometry ...'."
+    },
+    {
+     "id": "N11",
+     "severity": "clarity",
+     "location": "Section 6.2",
+     "quote": "Among 2,650 imaging-confirmed single stars with G = 9–14",
+     "problem": "The 2,650 stars are speckle/AO non-detections, meaning no companion was seen above the imaging contrast limits. They are not confirmed single stars, and the 0.19% rate is a rate among non-detections.",
+     "evidence": "localise_v3_result.json: 'Of 2,650 G = 9–14 non-detections ...' and 'G 9–14 non-detections: ipd_frac_multi_peak ≥ 30 in 5/2650 (0.19%)'.",
+     "fix": "'Among 2,650 stars with G = 9–14 in which speckle or AO imaging found no companion, only 0.19% reach ipd_frac_multi_peak ≥ 30, and none matches all four of the target's diagnostics.'"
+    },
+    {
+     "id": "N12",
+     "severity": "clarity",
+     "location": "Section 4, paragraph 1",
+     "quote": "obtaining k = −1.52 ± 0.02 arcsec per magnitude of BP−RP (Figure 3a)",
+     "problem": "The sentence before says red stars sit farther from the boresight, and Figure 3a plots that shift as positive. The negative sign of k is never explained, so a reader cannot tell which direction it encodes.",
+     "evidence": "localise_v3_result.json: 'k_rad = −1.52 ± 0.02 arcsec per magnitude of BP−RP' with the note '(redder stars shifted away from the boresight)', i.e. the source uses a toward-boresight sign convention. make_figures.py plots -pts['rad'] as 'shift away from boresight'.",
+     "fix": "'obtaining a shift of 1.52 ± 0.02 arcsec away from the boresight per magnitude of BP−RP (Figure 3a)'."
+    },
+    {
+     "id": "N13",
+     "severity": "clarity",
+     "location": "Table 5 caption",
+     "quote": "that are fully observable at night from three southern sites",
+     "problem": "Each listed event is observable from only the one site named in its row, not from all three as the wording suggests. The window runs to 2027-01-20 but the last qualifying event is on 2026-11-21, and the caption does not say that none qualify later, so the table looks truncated.",
+     "evidence": "eclipse_windows.json: every row has exactly one site. My independent recomputation (Sun < −12°, altitude > 30° over ±1.3 h, 53-point grid) finds the same 9 events and none after epoch 921 (2026-11-21).",
+     "fix": "'Primary eclipses between 2026-10-17 and 2027-01-20 that are fully observable at night from at least one of three southern sites (...); none qualify after 2026-11-21. The site that can observe each event is listed.'"
+    },
+    {
+     "id": "N14",
+     "severity": "nit",
+     "location": "Table 5, Mid-eclipse (UTC) column",
+     "quote": "898          2026-10-22 20:46",
+     "problem": "The UTC times are truncated to the minute (isot[:16]), not rounded, so three rows are one minute early. That error is larger than the stated 0.4-min 1σ timing uncertainty.",
+     "evidence": "eclipse_windows.py: utc_mid = tm.isot[:16]. Recomputed to the second:\n- E898: 20:46:42 (rounds to 20:47)\n- E900: 11:21:35 (rounds to 11:22)\n- E911: 19:33:33 (rounds to 19:34)\nThe other rows are unchanged by rounding (e.g. E897 13:29:15, E902 01:56:29).",
+     "fix": "Round to the nearest minute: 898 '2026-10-22 20:47', 900 '2026-10-25 11:22', 911 '2026-11-08 19:34'. Alternatively print seconds."
+    },
+    {
+     "id": "N15",
+     "severity": "nit",
+     "location": "Figure 1 caption",
+     "quote": "whose depth scale sits about 7% higher, within the ±8% spread between data products",
+     "problem": "In panel (b) the S1 and S28 primary depths sit about 8–9% above S68 (about 6,250 vs 5,770 ppm), and the lcmodel source says 8%. The secondaries are not elevated. 7% matches only the joint primary+secondary scale.",
+     "evidence": "lcmodel/v6/results/depths_by_product.json prim scales: SPOC1 1.083, SPOC28 1.081 vs SPOC68 0.994, TC95 0.986, TC105 0.981, TC106 1.020. Secondaries: SPOC1 1.019, SPOC28 1.010. 'both' scales: 1.070 / 1.066. astro_result.json (lcmodel): 'S1/S28 primaries are 8% deeper'.",
+     "fix": "'...whose primary depths sit about 8% higher (the secondaries agree within errors), the ±8% spread between data products.'"
+    },
+    {
+     "id": "N16",
+     "severity": "nit",
+     "location": "Table 4, Multi-colour eclipse photometry row",
+     "quote": "a V depth ≥ 4,700 ppm",
+     "problem": "4,700 ppm comes from the SuperWASP-band ratio (0.818). For Johnson V, the band this table row uses, the most favourable G/F case gives V/TESS = 0.806, i.e. 4,650 ppm. Because this is a lower bound, rounding it up to 4,700 overstates it slightly.",
+     "evidence": "chromatic/v3/results/predict3.log, Teff 5600 line: 'WASP 0.818/0.920/0.943  V 0.806/0.919/0.945'. 0.806 x 5770 = 4,651 ppm; 0.818 x 5770 = 4,720 ppm.",
+     "fix": "'(a G/F star would give a V depth ≥ 4,600 ppm)' or '≈4,650 ppm or more'."
+    },
+    {
+     "id": "N17",
+     "severity": "nit",
+     "location": "Section 6.3, second paragraph",
+     "quote": "Pout/Pin ≥ 3×10^4",
+     "problem": "This is a lower bound rounded up. The final referee's value is ≥ 2.8×10^4.",
+     "evidence": "final_referee_result.json verdicts (outer orbit): 'P_out/P_in >= 2.8e4'. Check: 100 yr / 1.30367 d = 2.80e4.",
+     "fix": "'P_out/P_in ≳ 3×10^4' or 'P_out/P_in ≥ 2.8×10^4'."
+    },
+    {
+     "id": "N18",
+     "severity": "nit",
+     "location": "Section 1 and Table 1, Parallax/distance row",
+     "quote": "3.3622 ± 0.0170 mas; 297.4 ± 1.5 pc",
+     "problem": "297.4 pc is the inverse of the uncorrected DR3 parallax. The report cites Lindegren et al. (2021) but does not apply its parallax zero-point, which is −0.041 mas for this star. That moves the distance to 293.9 pc, a 3.5-pc shift, larger than the quoted ±1.5 pc. The science conclusions do not change, but the error bar is not the full uncertainty.",
+     "evidence": "zero_point.zpt.get_zpt(G=11.7753, nu_eff=1.5639, ecl_lat=−28.81, 5-parameter solution) = −0.0408 mas, giving parallax 3.4031 mas and 1/parallax = 293.9 pc (dr3_source.ecsv values).",
+     "fix": "'3.3622 ± 0.0170 mas; 297.4 ± 1.5 pc (inverse parallax, no zero-point correction; 293.9 pc with the Lindegren et al. 2021 zero-point of −0.041 mas)'."
+    },
+    {
+     "id": "N19",
+     "severity": "nit",
+     "location": "Section 1",
+     "quote": "The CTOI was submitted on 2026-08-27",
+     "problem": "The only date in the CTOI table is the 'CTOI lastmod' field, which records the last modification, not necessarily the submission date.",
+     "evidence": "ctoi.csv row 878, column 'CTOI lastmod' = '2026-08-27 06:21:06', user lafargamagro.",
+     "fix": "'The CTOI (last modified on ExoFOP on 2026-08-27) was posted as a high-probability planet ...'."
+    },
+    {
+     "id": "N20",
+     "severity": "presentation",
+     "location": "Page 1 header block; PDF metadata",
+     "quote": "[Author name] (ExoFOP-TESS user [username])",
+     "problem": "The author and username placeholders are still in the printed header and in the PDF Author metadata. Section 9 also says scripts are 'available from the author', with no author named.",
+     "evidence": "pdfinfo: 'Author: [Author name]'. build_report.py lines 24–25 fall back to the placeholder text unless REPORT_AUTHOR / REPORT_AUTHOR_LINE are set.",
+     "fix": "Rebuild with REPORT_AUTHOR and REPORT_AUTHOR_LINE set to the uploader's real name and ExoFOP username before upload."
+    },
+    {
+     "id": "N21",
+     "severity": "presentation",
+     "location": "Table 5 header row",
+     "quote": "BJD",
+     "problem": "The 'TDB' subscript in the BJD_TDB column header drops below the header row and overlaps the rule under it (visible in page-6.png and a 250-dpi crop).",
+     "evidence": "Rendered page 6: the 'TDB' subscript crosses the line below the header row. build_report.py Table 5 uses 'BJD<sub>TDB</sub>' with pad=1.9.",
+     "fix": "Increase the header padding for Table 5 (e.g. pad=2.6, as Table 4 uses), or write the header as 'BJD (TDB)'."
+    }
+   ]
+  },
+  "Adversarial astronomer referee (TFOP vetting expert)": {
+   "lens": "Adversarial astronomer referee (TFOP vetting expert)",
+   "checked": "I read the whole report: report_v1.txt, all 7 rendered pages, plus crops of Fig. 1d, Fig. 3a and the Table 5 header at full resolution. I also read build_report.py, make_figures.py, eclipse_windows.py/json and figure_numbers.json, and checked them against the campaign sources: README, final_referee_result.json (verdicts, corrected_numbers, overall), synthesis_result.json, referee_all_result.json, localise_v3_result.json and chromatic_result.json. Note that lcmodel_result.json and astro_result.json have each other's contents (see F40), so the lcmodel numbers come from astro_result.json and the astro numbers from lcmodel_result.json.\n\nRaw scratch data checked at origin:\n- localise/v3/results/f02_colour_theta.json (the curve plotted in Fig. 3a) and f02_colourw_theta.json (the wide-sample curve that the 2.31 read-off actually uses).\n- lcmodel/v6 results/depths_by_product.json, data_summary.json and scripts/a01_timefix.py (the light-curve products used).\n- Mamajek EEM_dwarf.txt (K/M colours).\n- CTOI row in exofop/ctoi.csv and the ExoFOP target.json (submission date 2026-08-27 confirmed).\n- The ExoFOP observing-notes corpus obsnote/wf/notes2.csv: how TFOP SG1 actually uses BEB/EB/APC.\n\nRecomputed independently:\n- K1 for 0.1 Msun = 17.97 km/s.\n- Every Table 5 BJD_TDB and UTC (astropy, all 9 match to the minute).\n- 0.786 + 2.94/1.52 = 2.72 (the linear colour read-off).\n- The plotted-curve interpolation gives 2.22.\n- K7 shift on the empirical curve: 1.45-1.55 arcsec.\n- V/TESS = 0.28-0.33, i.e. 1,600-1,900 ppm.\n- p(delta = 0) about 0.09-0.11; PA 342 deg.\n- Separations in au; Pout/Pin >= 2.8e4.\n\nConfirmed correct: the odds arithmetic (O_0 6.47e3), the photometric distance (210-330 pc), M1 +-0.04, the PA wording, the separation wording, the a/K/vsini/magnitude arithmetic, BJD/BTJD, and the RAVEN/CTOI numbers. No files were modified and nothing was submitted.",
+   "findings": [
+    {
+     "id": "F1",
+     "severity": "error",
+     "location": "Section 5, first bullet; Figure 3a (and its caption)",
+     "quote": "On the field-star calibration this corresponds to BP−RP ≈ 2.31 (1σ range 2.22–2.40, with a systematic of about ±0.1 mag), an M1.5–M2.5 dwarf. A K7 dwarf (BP−RP ≈ 1.65) would give about 1.35 arcsec, 5.7σ (statistical) below the measured shift.",
+     "problem": "Three mutually inconsistent colour calibrations are used without saying so:\n(1) Section 4 gives only the linear k = 1.52 arcsec/mag. With it, 2.94 arcsec gives BP−RP = 0.786 + 2.94/1.52 = 2.72 (≈M3.5), not 2.31.\n(2) Figure 3a plots the 2,560-fit calibration. That curve has no stars between BP−RP 1.9 and 2.3, and its bin at BP−RP 2.35 sits at 3.31 arcsec, above the 2.94 ± 0.28 band. Read off the plotted curve, 2.94 arcsec gives about 2.22, the lower 1σ edge. The vertical band at 2.22–2.40 therefore does not follow from the plotted points.\n(3) The 2.31 actually comes from the unplotted wide sample (≈5,560 fits).\nOn top of this, the K7 expectation (1.35 arcsec) uses the linear k, while the M-dwarf read-off uses the steeper empirical curve. A referee checking the figure will see that it does not support the stated colour.",
+     "evidence": "localise/v3/results/f02_colour_theta.json (the curve plotted by make_figures.py lines 212–220): bins C=1.687 → 1.464 arcsec (n=31), then C=2.349 → 3.308 arcsec (n=8), with no 1.9–2.3 bin. Linear interpolation gives 1.687 + (2.94−1.464)/(3.308−1.464)×0.662 = 2.22.\nf02_colourw_theta.json (wide sample): 2.139 → 2.418 arcsec (n=21) and 2.422 → 3.29 arcsec (n=21). Interpolating there gives 2.31; this is the source of the localise_v3 key number 'BP−RP 2.14 → −2.42″; 2.42 → −3.29″ (linear prediction −2.55″)'.\nOn the same wide curve, BP−RP 1.65 gives 1.45 arcsec, i.e. (2.94−1.45)/0.28 = 5.3σ. Mamajek's K7V (EEM_dwarf.txt) has BP−RP = 1.70, which gives about 1.55 arcsec, i.e. 5.0σ.",
+     "fix": "Plot the wide-sample curve (f02_colourw_theta.json) in Fig. 3a and label it '≈5,560 fits'. Alternatively, keep the 2,560-fit curve and quote BP−RP ≈ 2.2.\nReplace the text with: 'The colour shift is not linear at the red end: field stars at BP−RP 2.14 and 2.42 are shifted by 2.42 and 3.29 arcsec, against 2.1 and 2.5 arcsec from the linear coefficient. Read off this empirical curve, the deep-eclipse shift of 2.94 ± 0.28 arcsec gives BP−RP ≈ 2.31 (1σ range 2.22–2.40; systematic ±0.1–0.2 mag), an M1.5–M2.5 dwarf. A K7 dwarf (BP−RP ≈ 1.70) would be shifted by about 1.5 arcsec, about 5σ (statistical) below the measured value.'"
+    },
+    {
+     "id": "F2",
+     "severity": "error",
+     "location": "Table 4, row 'Multi-colour eclipse photometry'",
+     "quote": "Deep / shallow depths (ppm): g′ 1,150 / 200; V 1,900 / 370;",
+     "problem": "The predicted V depth is given as a single value, 1,900 ppm (V/TESS = 0.33, from synthesis s01). The final referee corrected the M2V SuperWASP(V)/TESS prediction to the model-dependent range 0.28–0.33, because lcmodel's chromatic_check gives 0.28. The table also gives no model uncertainty, while Figure 3b uses ±15% (optical) and ±20% (infrared).",
+     "evidence": "final_referee_result.json, corrected_numbers item 6: 'SuperWASP/TESS deep-eclipse prediction for M2V: 0.28-0.33. W1/TESS: 3.3-3.6'; overall item (9): ''SuperWASP(V)/TESS = 0.33' → '0.28-0.33 (model-dependent)''.\nlcmodel key number (stored in astro_result.json): 'M2V 0.28 and 3.56'.\n0.28 × 5770 = 1,616 ppm; 0.33 × 5770 = 1,904 ppm.",
+     "fix": "Use 'V 1,600–1,900 / 370'. Add to the cell: 'Model uncertainty about ±15% (optical) and ±20% (near-IR); the M2V V/TESS ratio is 0.28–0.33 depending on the colour model.'"
+    },
+    {
+     "id": "F3",
+     "severity": "error",
+     "location": "Section 5, third bullet; Figure 3b grey W1 box",
+     "quote": "The deep-eclipse depth is 3.7 ± 1.1 times the TESS depth (S/N 4.3), against 0.70–1.15 for an eclipsed G/F star.",
+     "problem": "The quoted G/F range for W1 leaves out the campaign's own most-favourable G/F case (5,600 K, grazing), which predicts W1/TESS = 1.35. The 2.0σ W1 test and the combined p = 6×10⁻⁴ are computed against that 1.35 case. Quoting 0.70–1.15 makes the W1 discrimination look stronger than it is, and the Fig. 3b box is hard-coded to 0.70–1.15 (make_figures.py line 240). The W1 measurement also rests on only 8 in-eclipse points from 8 events, which the report does not say.",
+     "evidence": "chromatic_result.json key_numbers, 'Predicted ratios, background EB with a G/F eclipsed star': 'W1 deep 0.70-1.15; most favourable case (5600 K, grazing) SuperWASP 0.818, W1 1.35'.\n'W1 deep test': 'Most favourable G/F (5600 K): +2.03 sigma'.\nW1 amplitude row: '8 in-eclipse points from 8 events'.",
+     "fix": "Replace with: 'The deep-eclipse depth is 3.7 ± 1.1 times the TESS depth (S/N 4.3, from 8 in-eclipse points in 8 events), against 0.70–1.35 for an eclipsed G/F star; W1 alone is 2.0σ above the most favourable G/F case.' Extend the Fig. 3b W1 grey box to 1.35."
+    },
+    {
+     "id": "F4",
+     "severity": "error",
+     "location": "Table 2 caption; Section 9; Table 2 'Notes' column",
+     "quote": "Times come from SPOC light curves (S1, S28, S68) and from our own TESScut photometry (S95, S105, S106)",
+     "problem": "All three of S1, S28 and S68 are TESS-SPOC FFI high-level science products (Caldwell et al. 2020), not SPOC 2-min light curves. Section 9 ('SPOC and TESS-SPOC light curves (Sectors 1, 28 and 68)') implies at least one is SPOC 2-min. Figure 1 itself gives S68 at 200 s, an FFI cadence. TFOP readers treat SPOC 2-min and TESS-SPOC FFI differently, for example for cadence smearing and crowding (CROWDSAP).\nFor the same reason, '±8% between data products' is mislabelled. The 8% is between sectors of the same TESS-SPOC product: the long-cadence S1/S28 primaries against S68 and the TESScut sectors.",
+     "evidence": "lcmodel/v6/scripts/a01_timefix.py, line 5: '...column of the TESS-SPOC light curves (S1, S28, S68)'. Line 39 reads mastDownload/HLSP/*0071316387-s{sec}*/*lc.fits.\nFigure 1 caption: 'Sectors 68, 95, 105 and 106 at 200-s cadence'; 'Sectors 1 and 28 come from the 30- and 10-min TESS-SPOC FFI light curves'.\ndepths_by_product.json primary scales: SPOC1 1.083, SPOC28 1.081, SPOC68 0.994, TC95–106 0.98–1.02.",
+     "fix": "Table 2 caption: 'Times come from TESS-SPOC FFI light curves (S1, S28, S68; Caldwell et al. 2020) and from our own TESScut photometry (S95, S105, S106)...'.\nSection 9: 'The TESS data are TESS-SPOC FFI light curves (Sectors 1, 28 and 68, at 30-min, 10-min and 200-s cadence) and our own aperture photometry...'.\nTable 2 note: '±8% between sectors (S1/S28 primaries against the 200-s sectors)'."
+    },
+    {
+     "id": "F5",
+     "severity": "overclaim",
+     "location": "Section 9",
+     "quote": "The wording of this report follows that final referee's corrections.",
+     "problem": "Several of the final referee's explicit corrections are not carried into the report:\n- V/TESS 0.28–0.33 (F2).\n- The ±5% depth-scale systematic on f_EB (F37).\n- The metallicity caveat on M1, with colour 0.40–0.44 against the bound fit 0.47 (F22).\n- 'Shape-only solutions allow a partial occultation' (F23).\n- The 20–30% of the separation posterior inside 0.1 arcsec when the Gaia signature is not the EB's (F17).\n- The ±0.1–0.2 mag colour systematic (F8).\nThe statement invites readers to treat every number as referee-corrected.",
+     "evidence": "final_referee_result.json overall items (5), (7), (8), (9); corrected_numbers items 3, 5, 6, 8; the f_EB verdict ('the +-5% depth-scale systematic should be added').",
+     "fix": "Apply the listed corrections. Alternatively, write: 'The wording follows the final referee's corrections except where noted in Sections 6–8.'"
+    },
+    {
+     "id": "F6",
+     "severity": "overclaim",
+     "location": "Title (page 1); running header (pages 2–7); PDF Title metadata",
+     "quote": "CTOI 71316387.01 is an eclipsing M-dwarf binary at twice the catalogued period, probably bound to the G star TIC 71316387",
+     "problem": "The title states as fact that both eclipsing stars are M dwarfs. Sections 5 and 8 say a late-K primary is 'disfavoured but not excluded'. The archival colours give 4,040 (+330/−280) K (K7–M0), and the spectral types rest on the main-sequence solution. The running header and the PDF metadata ('eclipsing M-dwarf binary in a probable hierarchical triple') repeat the claim.",
+     "evidence": "final_referee_result.json overall (13), strongest defensible claim: 'a red (early-M, possibly late-K) star ... Under main-sequence assumptions it is an ~M1-M2.5 + ~M4-M4.5 pair'.\nReport Section 8: 'a late-K primary is disfavoured but not excluded'.",
+     "fix": "Title: 'CTOI 71316387.01 is an eclipsing binary at twice the catalogued period, most likely an M-dwarf pair bound to the G star TIC 71316387'.\nRunning header and PDF Title: 'TIC 71316387 (CTOI 71316387.01): eclipsing binary (probably early-M + mid-M) in a probable hierarchical triple'."
+    },
+    {
+     "id": "F7",
+     "severity": "overclaim",
+     "location": "Summary, bullet 'Probably a hierarchical triple'",
+     "quote": "Gaia image diagnostics indicate an unresolved companion.",
+     "problem": "The sentence sits in the bullet arguing for a bound triple, so it reads as evidence of binding. In the odds analysis the Gaia signature has likelihood factor 1 for bound against chance-aligned, because both hypotheses predict the same unresolved companion. The final referee also notes that the unexplained VHS source at 1.12 arcsec could itself produce the signature. The Gaia signature constrains separation, not association.",
+     "evidence": "synthesis_result.json bound_vs_background, factor (4): 'Gaia IPD/C* signature, F = 1 beyond its role in F_pos. Both hypotheses predict the same unresolved companion'.\nfinal_referee_result.json, separation verdict (d): 'The unexplained VHS source at 1.12 arcsec ... could itself cause the IPD multi-peak and BP/RP-blend signature'.",
+     "fix": "Replace with: 'Gaia image diagnostics indicate an unresolved companion within about 1.2 arcsec. A bound and a chance-aligned EB would both produce this (and it could also be the faint VHS source), so it constrains the separation rather than the association.'"
+    },
+    {
+     "id": "F8",
+     "severity": "overclaim",
+     "location": "Section 5, first bullet",
+     "quote": "with a systematic of about ±0.1 mag",
+     "problem": "Both referees set the systematic on the colour-shift read-off at ±0.1–0.2 mag, because the red end of the calibration rests on very few stars. This is also the main reason K7 is only 'disfavoured'. Quoting ±0.1 understates the uncertainty that drives the M-dwarf classification.",
+     "evidence": "localise_v3_result.json caveat 1: 'uncertain by about ±0.1–0.2 mag'.\nreferee_all_result.json: 'Only 4 field stars with G < 14.5 fall at BP-RP 2.1-2.4, so their +-0.1-0.2 mag systematic is the real limit'.\nfinal_referee_result.json, verdict 2: '+-0.1-0.2 mag systematic resting on 4 field calibrators'.",
+     "fix": "Replace with: 'with a systematic of about ±0.1–0.2 mag, because the red end of the calibration rests on few field stars (about 20 per bin; only 4 with G < 14.5 at BP−RP 2.1–2.4)'."
+    },
+    {
+     "id": "F9",
+     "severity": "overclaim",
+     "location": "Section 8, bullet 'Light fraction and masses depend on priors' (also Section 6.1)",
+     "quote": "With e sin ω free and no main-sequence term, the light curve allows a larger light fraction (about 7%).",
+     "problem": "This implies the light curve bounds the pair's light at roughly 7% or less. In fact the shape sets no useful upper limit: the profile is flat from about 2.5% to 18%. The uniform-prior posterior with e sin ω free prefers about 7%; it is not an upper bound. Larger light fractions are excluded only by the main-sequence requirement, the ellipsoidal limit, the colours and the SED. Section 6.1 mentions only the lower limit, so a reader may assume the upper side is constrained.",
+     "evidence": "lcmodel key number (stored in astro_result.json), 'Upper side of f_EB from shape alone': 'Not constrained: dchi2 < 4 for L3 0.82-0.975 (f_EB 2.5-18%)'.\nreferee_all_result.json: 'My e = 0 profile is flat (dchi2 <= 1.1) from f = 2.8% to 15%. So f ~7% is neither preferred nor excluded by the shape alone'.\nSolutions with f >= 4% need chi2_MS >= 12. SED limit <= 5.8-11.6%.",
+     "fix": "Replace with: 'The light-curve shape alone gives only a lower limit (f > 2.2%). With e = 0 its likelihood is flat from about 2.8% to 15%, and with e sin ω free a uniform-prior fit prefers about 7%. Larger light fractions are excluded only by the main-sequence requirement (χ²_MS ≥ 12 at f ≥ 4%), the ellipsoidal limit, the colours and the SED (≤ 5.8–11.6%).'"
+    },
+    {
+     "id": "F10",
+     "severity": "overclaim",
+     "location": "Section 6.2",
+     "quote": "Among 2,650 imaging-confirmed single stars with G = 9–14, only 0.19% reach ipd_frac_multi_peak ≥ 30, and none matches all four of the target's diagnostics.",
+     "problem": "The calibration stars are speckle/AO non-detections, not confirmed single stars: they can hide companions below the contrast limit or inside the inner working angle. The 'four diagnostics' are never defined, so the 0/2,650 statistic cannot be checked. The 0/2,650 also needs its upper limit stated.",
+     "evidence": "localise_v3_result.json: 'G 9–14 non-detections: ipd_frac_multi_peak ≥ 30 in 5/2650 (0.19%)'.\nCriteria: 'multi-peak 30–50, RUWE < 1.4, no Gaia neighbour within 3\", BP blended in ≥ 90% of transits'; '95% upper limit about 0.11%'.",
+     "fix": "Replace with: 'Among 2,650 stars with G = 9–14 in which speckle or AO imaging detected no companion, only 0.19% reach ipd_frac_multi_peak ≥ 30. None (95% upper limit 0.11%) matches all four of the target's diagnostics together: ipd_frac_multi_peak 30–50, RUWE < 1.4, no Gaia neighbour within 3 arcsec, and BP blended in ≥ 90% of transits.'"
+    },
+    {
+     "id": "F11",
+     "severity": "overclaim",
+     "location": "Summary, bullet 'The eclipses come from red light...'",
+     "quote": "SuperWASP (2006–07) and NEOWISE W1 eclipse depths confirm that the eclipsed light is red.",
+     "problem": "Each archival detection is marginal (S/N 4.8 and 4.3; W1 from 8 in-eclipse points). Combined, they reject the most favourable G/F case at 3.2σ. 'Confirm' is stronger than this; the decisive colour evidence is the TESS shift.",
+     "evidence": "chromatic_result.json: SuperWASP S/N 4.84; W1 S/N 4.34 from 8 in-eclipse points; 'Fisher p = 6.2e-4 (3.2 sigma)'.\nCaveat 1: 'The SuperWASP depth is a 3.6σ measurement after the full error budget'.",
+     "fix": "Replace with: 'SuperWASP (2006–07) and NEOWISE W1 eclipse depths independently support this (shallower in the optical, deeper at 3.4 µm; together 3.2σ against the most favourable G/F case).'"
+    },
+    {
+     "id": "F12",
+     "severity": "overclaim",
+     "location": "Table 4, row 'Gaia DR4 epoch photometry'",
+     "quote": "Eclipses of about 3.6 ppt (primary) and 1.2 ppt (secondary) in G",
+     "problem": "Calling it an 'Independent ephemeris check' without qualification overstates the test. The synthesis expects detection to be marginal, because the eclipse duty cycle is about 5% and few Gaia transits fall in eclipse.",
+     "evidence": "synthesis_result.json predictions (d): 'Epoch photometry should contain the eclipses ... ~3.6/1.2 mmag in G ... Detection is marginal, with only a few in-eclipse transits.'",
+     "fix": "Prediction: 'Eclipses of about 3.6 ppt (primary) and 1.2 ppt (secondary) in G; detection likely marginal (few in-eclipse transits)'.\nWhat it tests: 'Possible independent ephemeris check'."
+    },
+    {
+     "id": "F13",
+     "severity": "clarity",
+     "location": "Summary, 'Suggested disposition'",
+     "quote": "that is blended with the target star and is most likely a bound companion of it (BEB in TFOP terms).",
+     "problem": "'BEB' means different things to different ExoFOP users.\n- In TFOP SG1 notes it is a photometric disposition for a blended EB, applied even to probable triples.\n- In TRICERATOPS and vespa, and in other ExoFOP users' notes, BEB means a background (chance-aligned) EB. That is exactly the hypothesis this report argues against. The bound case is TRICERATOPS SEB/SEBx2P (vespa HEB).\nSince Section 8 names TRICERATOPS and the summary contrasts bound with 'chance-aligned background or foreground EB', 'BEB' reads as self-contradictory. 'Blended with the target star' is also vague about where the source is.",
+     "evidence": "ExoFOP corpus obsnote/wf/notes2.csv: 'Phot Disp: BEB' appears in 218 notes, mostly paired with 'Master Disp: APC' (201) or 'Master Disp: EB' (11). TOI-632.01 note: 'probable triple ... Retired as a BEB. Master Disp: EB'.\nOther users: 'background eclipsing binary (BEB)' (binnenfeld notes).\nTRICERATOPS run in lcmodel_result.json (astro content): 'SEBx2P 0.973 ... versus BEBx2P 0.027'.",
+     "fix": "Replace with: 'Suggested disposition: false positive (FP). The signal is an EB at P = 1.30367228 d (twice the CTOI period) on an unresolved source within 1.24 arcsec of the target, most likely a physically bound companion (hierarchical triple). In TFOP SG1 shorthand: EB (photometric BEB, i.e. a blended EB; this does not mean a background star here; in TRICERATOPS terms the favoured scenario is SEBx2P).'"
+    },
+    {
+     "id": "F14",
+     "severity": "clarity",
+     "location": "Section 3 (and the summary bullet 2)",
+     "quote": "If the G star (1.03 M☉) were eclipsed by a companion in a 1.30 d orbit, even a 0.1 M☉ companion would give it a radial-velocity semi-amplitude K ≥ 18 km s−1.",
+     "problem": "There is a logical gap: the report never says why a companion of at least 0.1 M☉ is required. A sceptic will ask about a brown-dwarf or planetary companion, which would give K ≲ 10 km/s and be consistent with the 9.9 km/s peak-to-peak scatter. The missing step is the secondary eclipse. A 2,600 ppm secondary (45% of the primary depth) requires a self-luminous companion with about 45% of the eclipsed star's TESS surface brightness, so the true minimum K is far above 18 km/s.",
+     "evidence": "Depth ratio 2600/5770 = 0.45 (Table 2).\nMy calculation: blackbody surface-brightness ratio at 0.8 µm of 0.45 against 5,880 K gives Teff ≈ 4,700 K (K3–K4V, ≈0.7 M☉), and K1 = 212.9 × 0.7 × 1.30367^(−1/3) / 1.73^(2/3) ≈ 95 km/s.\nFor 0.1 M☉, K1 = 17.97 km/s (also referee_all_result.json).",
+     "fix": "Insert before the RV sentence: 'The 2,600 ppm secondary eclipse (45% of the primary depth) requires a self-luminous companion with roughly 45% of the eclipsed star's TESS surface brightness. For an eclipsed G star this means a K dwarf of about 0.7 M☉ (K ≈ 95 km s⁻¹). Even a 0.1 M☉ companion would give K ≥ 18 km s⁻¹.'"
+    },
+    {
+     "id": "F15",
+     "severity": "clarity",
+     "location": "Section 4, paragraphs 1–2",
+     "quote": "k = −1.52 ± 0.02 arcsec per magnitude of BP−RP (Figure 3a)",
+     "problem": "The sign contradicts both the sentence before it (red stars sit farther from the boresight) and Figure 3a, which plots a positive shift away from the boresight that rises with BP−RP. The negative value is an internal campaign convention. The joint fit is also described as 'scaled to each sector's boresight direction', but the colour shift was projected onto each boresight direction and scaled by that sector's own measured coefficient (−1.45 to −1.64). A reader cannot reproduce the fit from this description.",
+     "evidence": "localise_v3_result.json: 'k_rad = −1.52 ± 0.02 arcsec per magnitude of BP−RP ... (redder stars shifted away from the boresight)'; per sector −1.45 to −1.64.\nMethod: 'scaled by each sector's measured colour coefficient along the boresight direction'.\nfig3a y-axis: 'Centroid shift away from boresight'.",
+     "fix": "Paragraph 1: '...redder stars are shifted away from the boresight by 1.52 ± 0.02 arcsec per magnitude of BP−RP (per sector 1.45–1.64), more steeply at the red end (Figure 3a).'\nParagraph 2: 'A joint fit with one colour shift per eclipse type, projected onto each sector's boresight direction and scaled by that sector's measured coefficient, ...'"
+    },
+    {
+     "id": "F16",
+     "severity": "clarity",
+     "location": "Section 6.1",
+     "quote": "and the referee checked the result with an independent model",
+     "problem": "'The referee' has not been introduced at this point. ExoFOP readers will take it to mean independent human peer review. Only Section 9 discloses that the referee passes were AI agents.",
+     "evidence": "Report Section 9: 'The referee passes described above were also carried out by AI agents. No professional astronomer has yet reviewed the results.'",
+     "fix": "Replace with: 'and an independent re-analysis (an AI \"referee\" pass; Section 9) reproduced the shape-only limit with a separately written model'."
+    },
+    {
+     "id": "F17",
+     "severity": "clarity",
+     "location": "Table 4, Near-IR AO row; Summary bullet 'Not yet confirmed'",
+     "quote": "No companion to ΔKs ≈ 3.5 beyond 0.1 arcsec would put the EB inside 0.1 arcsec or refute the model",
+     "problem": "The final referee explicitly corrected this outcome statement, and the report has not carried the correction over. If the Gaia signature is not the EB's, about 20–30% of the separation posterior lies inside 0.1 arcsec. An AO non-detection beyond 0.1 arcsec is then not a strong refutation, and AO should aim to reach inside 0.1 arcsec. The summary's 'within about 0.9 arcsec' also drops the 'possibly inside 0.1 arcsec' that the observing note keeps. AO observers planning contrast curves need both.",
+     "evidence": "final_referee_result.json overall (5): '(<2% if the IPD signature is the EB's, ~20-30% if not); AO should reach inside 0.1 arcsec'.\nVerdict: 'Without the IPD term, ~20-30% of the posterior lies inside 0.1 arcsec'.\nFinal-referee ExoFOP note: 'likely <0.9\", possibly <0.1\"'.",
+     "fix": "Table 4: 'No companion to ΔKs ≈ 3.5 beyond 0.1 arcsec would put the EB inside 0.1 arcsec (<2% of the posterior if the Gaia signature is the EB's, about 20–30% if not) or refute the model; AO should therefore reach inside 0.1 arcsec.'\nSummary: '(predicted ΔKs ≈ 2.4–2.8 mag within about 0.9 arcsec, possibly inside 0.1 arcsec)'."
+    },
+    {
+     "id": "F18",
+     "severity": "clarity",
+     "location": "Section 6.3, second paragraph",
+     "quote": "If the pair is bound, its projected separation is most likely ≲0.9 arcsec (≲270 au).",
+     "problem": "0.9 arcsec is the 95% upper bound, not a most-likely value. 'Most likely ≲' blurs the two.",
+     "evidence": "final_referee_result.json overall (4): 'Within ~0.9 arcsec (95%; <~270 au projected)'.\ncorrected_numbers 3: '95% upper bound ~0.8-0.9 arcsec'.",
+     "fix": "Replace with: 'If the pair is bound, its projected separation is ≲0.9 arcsec (95% upper bound; ≲270 au).'"
+    },
+    {
+     "id": "F19",
+     "severity": "clarity",
+     "location": "Section 5, closing paragraph",
+     "quote": "G/F and early-K eclipsed stars are excluded.",
+     "problem": "Coming straight after the SuperWASP+W1 sentence, this reads as a result of the archival data alone. The archival depths do not exclude early-K: their 95% Teff range reaches 4,767 K, and allowing 5,300 K gives only p = 2.9×10⁻³. Early-K is excluded only when the TESS colour shift is added.",
+     "evidence": "chromatic_result.json: 'Teff ... 95%: 3548-4767'; 'With 5300 K allowed: p = 2.9e-3 (2.8 sigma)'.\nfinal_referee_result.json verdict 2: 'G/F and early-K are excluded: ... and the TESS colour shift agrees'.",
+     "fix": "Replace with: 'Combined with the TESS colour shift, G/F and early-K eclipsed stars are excluded.'"
+    },
+    {
+     "id": "F20",
+     "severity": "clarity",
+     "location": "Section 8, bullet 'Unexplained VHS feature'",
+     "quote": "It may be a fourth body or a fitting artefact.",
+     "problem": "The bullet leaves out the final referee's main point about this feature. At 1.12 arcsec it lies inside the 0.1–1.2 arcsec range implied by the Gaia diagnostics, so it could itself produce the Gaia multi-peak/blend signature. That would move the EB's predicted separation to 0.03–0.5 arcsec, which matters for AO planning. Section 6.3 gives the 'if it does not' branch but never names this source as the alternative.",
+     "evidence": "final_referee_result.json separation verdict (d); overall (4): 'If it comes from another source, such as the unexplained VHS feature at 1.12 arcsec, then ~0.03-0.5 arcsec'.",
+     "fix": "Append: 'It lies inside the separation range implied by the Gaia image diagnostics and could itself produce that signature, in which case the EB would lie at about 0.03–0.5 arcsec (Section 6.3).'"
+    },
+    {
+     "id": "F21",
+     "severity": "clarity",
+     "location": "Table 4, row 'Red / near-IR spectroscopy'",
+     "quote": "K1 ≈ 52, K2 ≈ 117 km s−1 at P = 1.30367 d; systemic velocity within a few km s−1 of −6.1 km s−1 if bound; G-star lines constant",
+     "problem": "There is no feasibility guidance for spectroscopists. The pair supplies only a few per cent of the light, so the M-dwarf lines will be heavily diluted, and K2 in particular is unlikely in a seeing-limited blend. The table also does not say that K1 and K2 are main-sequence predictions, or how weak the systemic-velocity test is (likelihood ratio about 6–12).",
+     "evidence": "synthesis_result.json predictions (b): 'The pair supplies ~0.7% (V), 3% (I), 5.5% (J), 7% (H) and 8.5% (Ks) of the light ... Expect at least an SB1 from the M2 primary's lines; an SB2 needs high S/N in the near-IR or AO-fed spectroscopy'; RV likelihood ratio ~6-12.\nfinal_referee_result.json EB verdict: 'label K1/K2/q as predictions under the main-sequence solution'.",
+     "fix": "Add to the Prediction cell: '(main-sequence predictions). The pair gives about 3% of the light at I and 7–8.5% at H/Ks, so expect at best an SB1 from the M2 lines in the blend; K2 needs high-S/N near-IR or AO-fed spectroscopy.' What it tests: '...and association (weak test: likelihood ratio about 6–12)'."
+    },
+    {
+     "id": "F22",
+     "severity": "clarity",
+     "location": "Table 3, 'Mass' row",
+     "quote": "0.45 ± 0.04 M☉ | main-sequence relations",
+     "problem": "The final referee asked for M1 to carry its full model spread and the metallicity systematic. The system's [M/H] ranges from −0.35 (GSP-Phot/ANN) to +0.10 (MatisseGauguin), and this is not propagated. The note gives neither the metallicity dependence nor the spread between estimators.",
+     "evidence": "final_referee_result.json overall (8): ''0.45 +- 0.04 Msun (0.40-0.50), main-sequence- and metallicity-dependent: colour suggests 0.40-0.44, the bound fit 0.47''.\nEB verdict: 'The system metallicity is uncertain ([M/H] -0.35 ... vs +0.10 ...). This is not propagated'.",
+     "fix": "Notes cell: 'main-sequence relations; metallicity-dependent ([M/H] −0.35 to +0.10, not propagated); colour alone suggests 0.40–0.44 M☉, the bound fit 0.47 M☉'."
+    },
+    {
+     "id": "F23",
+     "severity": "clarity",
+     "location": "Table 3, 'Undiluted eclipse depths' note; Figure 1d annotation",
+     "quote": "secondary is a total occultation",
+     "problem": "Totality holds only under the main-sequence solution: shape-only fits allow b0 up to 0.64 and a partial occultation. The final referee asked for this to be stated. In Fig. 1d the 'flat bottom' label points at the model, while three consecutive in-eclipse bins near mid-eclipse sit about 200–300 ppm below it. So the figure illustrates the model; it does not show the data are flat.",
+     "evidence": "final_referee_result.json overall (7): 'Under the main-sequence solution the secondary eclipse is total (flat bottom ~36 min, testable in TESS 200-s data) ...; shape-only solutions allow a partial occultation'.\nFig. 1d crop: O−C at −0.2 to 0 h is about −200 to −300 ppm.",
+     "fix": "Table 3 note: 'secondary is a total occultation under the main-sequence solution (flat bottom ≈36 min); shape-only fits allow a partial occultation'.\nFig. 1 caption, add: 'The flat bottom is a model prediction and is not yet tested against the 200-s data.'"
+    },
+    {
+     "id": "F24",
+     "severity": "clarity",
+     "location": "Figure 1 caption, panel (b)",
+     "quote": "Sectors 1 and 28 come from the 30- and 10-min TESS-SPOC FFI light curves, whose depth scale sits about 7% higher, within the ±8% spread between data products.",
+     "problem": "A 'depth scale' (dilution or crowding) effect would scale both eclipses equally. The per-product fits show the excess mainly in the primaries; the secondaries are only 1–2% high (±5%), as panel (b) itself shows. The chromatic analysis suggests a cadence artefact. A reader comparing the panel with the caption will notice the mismatch.",
+     "evidence": "lcmodel v6 results/depths_by_product.json: SPOC1 prim 1.083 ± 0.029, sec 1.019 ± 0.047; SPOC28 prim 1.081 ± 0.024, sec 1.010 ± 0.056.\nchromatic_result.json: 'may be a cadence artefact (the 30- and 10-min sectors come out deepest)'.",
+     "fix": "Replace with: 'Sectors 1 and 28 come from the 30- and 10-min TESS-SPOC FFI light curves. Their primary depths are about 8% higher (secondaries about 1–2% ± 5%). This is a sector/cadence systematic of unresolved origin, covered by the adopted ±8% depth-scale uncertainty.'"
+    },
+    {
+     "id": "F25",
+     "severity": "clarity",
+     "location": "Summary, bullet 'Probably a hierarchical triple'",
+     "quote": "by estimated odds of order 10^4 (about 200 in the most pessimistic case)",
+     "problem": "The odds wording differs between the documents. The final referee's ExoFOP note text, the strongest-claim wording and the campaign README all say 'odds of order 10^3–10^4'. If the note uploaded alongside uses that text, readers will see two different headline odds. The summary also leaves out the 6×10²–4×10⁴ range across all variants.",
+     "evidence": "final_referee_result.json overall (12) note text: 'odds ~1e3-1e4'; overall (13): 'by odds of order 1e3-1e4'.\nREADME: 'by odds of order 10³–10⁴'.",
+     "fix": "Replace with: 'by estimated odds of order 10^3–10^4 (about 10^4 in the baseline analysis; about 200 in the most pessimistic case)'. Use the same wording in the observing note."
+    },
+    {
+     "id": "F26",
+     "severity": "clarity",
+     "location": "Table 5 caption",
+     "quote": "Primary eclipses from 2026-10-17 to 2027-01-20 that are fully observable at night from three southern sites",
+     "problem": "The caption gives a window ending 2027-01-20, but the last listed event is 2026-11-21. Readers may think the table was truncated, or that rows are missing.",
+     "evidence": "eclipse_windows.py searches 2026-10-17 to 2027-01-20. eclipse_windows.json has 9 rows, the last E = 921 on 2026-11-21. I recomputed all BJD_TDB and UTC values with astropy and all match.",
+     "fix": "Append to the caption: 'No eclipses after 2026-11-21 meet these criteria in the window searched (the target sets early in the evening from December).'"
+    },
+    {
+     "id": "F27",
+     "severity": "presentation",
+     "location": "Figure 3 caption, panel (b)",
+     "quote": "Blue line and band: prediction for the adopted early-M + mid-M pair, ±15% (optical) and ±20% (infrared).",
+     "problem": "The figure draws a single ±15% band at all wavelengths. The ±20% infrared band described in the caption is not plotted.",
+     "evidence": "make_figures.py, Figure 3b: ax.fill_between(xl, yl * 0.85, yl * 1.15, ...) is applied to every band, including J, H, Ks and W1.",
+     "fix": "Draw ±15% shortward of 1 µm and ±20% longward, or change the caption to '±15%'."
+    },
+    {
+     "id": "F28",
+     "severity": "presentation",
+     "location": "Page 1 header block; PDF Author metadata",
+     "quote": "[Author name] (ExoFOP-TESS user [username])",
+     "problem": "Placeholder text remains on the title page, and the PDF Author field reads '[Author name]'. Both must be filled in before upload.",
+     "evidence": "pdfinfo: 'Author: [Author name]'. build_report.py: AUTHOR and AUTHOR_LINE default to the placeholders unless REPORT_AUTHOR and REPORT_AUTHOR_LINE are set.",
+     "fix": "Rebuild with REPORT_AUTHOR and REPORT_AUTHOR_LINE set to the uploader's name and ExoFOP username."
+    },
+    {
+     "id": "F29",
+     "severity": "presentation",
+     "location": "Table 5 header row",
+     "quote": "BJDTDB",
+     "problem": "The 'TDB' subscript collides with the header rule and is partly clipped (seen in a 300-dpi render).",
+     "evidence": "pdftoppm crop of page 6 at 300 dpi shows the subscript touching the rule. The table uses pad=1.9 (build_report.py).",
+     "fix": "Increase the header padding for Table 5, or write the header as 'BJD (TDB)'."
+    },
+    {
+     "id": "F30",
+     "severity": "nit",
+     "location": "Section 8, bullet 'Light fraction and masses depend on priors'",
+     "quote": "Without the main-sequence term, the odds fall to about 10^3.",
+     "problem": "The final referee gives a range for the shape-only case. A single 'about 10³' understates its upper end.",
+     "evidence": "final_referee_result.json, posterior-odds verdict: 'Shape-only L(f): 8e2-8e3'.",
+     "fix": "'Without the main-sequence term, the odds fall to about 8×10²–8×10³.'"
+    },
+    {
+     "id": "F31",
+     "severity": "nit",
+     "location": "Section 6.3",
+     "quote": "Pout/Pin ≥ 3×10^4 makes it dynamically very stable",
+     "problem": "The lower bound has been rounded upward.",
+     "evidence": "final_referee_result.json, outer-orbit verdict: 'P_out/P_in >= 2.8e4'. Check: 100 yr / 1.30367 d = 2.8×10⁴.",
+     "fix": "'P_out/P_in ≳ 2.8×10^4'."
+    },
+    {
+     "id": "F32",
+     "severity": "nit",
+     "location": "Section 6.3",
+     "quote": "the 160 tested analysis choices give about 6×10^2 to 4×10^4",
+     "problem": "The 160 are combinations of analysis choices (a variant grid), not 160 separate choices.",
+     "evidence": "final_referee_result.json: 'All 160 variants: 5.8e2-3.8e4' (f01_odds.py grid).",
+     "fix": "'the 160 tested combinations of analysis choices give about 6×10^2 to 4×10^4'."
+    },
+    {
+     "id": "F33",
+     "severity": "nit",
+     "location": "Section 4, last sentence",
+     "quote": "Given the predicted ΔKs ≈ 2.4–2.8 (Section 6)",
+     "problem": "Section 6 / Table 3 gives only the pair's Ks ≈ 13.0. The ΔKs prediction appears in the Summary and in Section 7 / Table 4.",
+     "evidence": "Table 3 row 'Apparent magnitudes of the pair'; Table 4 AO row.",
+     "fix": "'(Section 7, Table 4)', or add ΔKs ≈ 2.6 (2.4–2.8) to Table 3."
+    },
+    {
+     "id": "F34",
+     "severity": "nit",
+     "location": "References",
+     "quote": "Claret, A. 2017, A&A, 600, A30 (TESS limb darkening)",
+     "problem": "Most listed references are never cited in the text: Claret, Moe & Di Stefano, Pecaut & Mamajek, Mann 2015/2019, Lindegren, Riello, Katz, Giacalone, Huang, Caldwell, Jenkins, Brasseur, Butters, Mainzer, McMahon, Wright and Stassun. Only Lafarga et al. and Raghavan et al. are cited. Readers cannot tell which relations underlie, for example, the main-sequence solution.",
+     "evidence": "A search of report_v1.txt for author-year citations finds only 'Lafarga et al. 2026' and 'Raghavan et al. 2010'.",
+     "fix": "Cite them where used, e.g. 'main-sequence relations (Pecaut & Mamajek 2013; Mann et al. 2015, 2019)', 'TRICERATOPS (Giacalone et al. 2021)', 'TESS-SPOC (Caldwell et al. 2020)', 'TESScut (Brasseur et al. 2019)'. Otherwise remove the unused entries."
+    },
+    {
+     "id": "F35",
+     "severity": "nit",
+     "location": "Section 5, SuperWASP bullet",
+     "quote": "Its depth relative to TESS is 0.42 ± 0.15, or 0.36 ± 0.11 in an independent re-reduction.",
+     "problem": "The two errors are not like-for-like. 0.36 ± 0.11 is statistical only, while 0.42 ± 0.15 carries the full systematic budget.",
+     "evidence": "referee_all_result.json: 'the ratio to TESS is 0.36 +- 0.11 (TAMFLUX2) ... statistical errors only'.\nchromatic: 0.418 ± 0.145, with an error budget including sys, dilution, template, shape, epoch and passband terms.",
+     "fix": "'or 0.36 ± 0.11 (statistical only) in an independent re-reduction'."
+    },
+    {
+     "id": "F36",
+     "severity": "nit",
+     "location": "Section 4, paragraph 2",
+     "quote": "consistent with zero (p = 0.09)",
+     "problem": "The result depends on the analysis variant, and the report does not say so. p ranges from 0.03 to 0.69 across the 16 variants. In the most conservative variant the 95% limit is 1.54 arcsec, so '≥1.5 arcsec excluded at p = 0.002' holds only for the baseline.",
+     "evidence": "localise_v3_result.json: 'Across 16 analysis variants p ranges from 0.03 to 0.69 (0.69 without S105)'; '1.54\" with all errors inflated ×1.5, where ≥2\" is still excluded at p = 0.005'.",
+     "fix": "'consistent with zero (p = 0.09 baseline; 0.03–0.69 across variants)'. After the 1.06–1.54 arcsec clause, add: '(≥ 2 arcsec is excluded at p ≤ 0.005 in every variant)'."
+    },
+    {
+     "id": "F37",
+     "severity": "nit",
+     "location": "Table 3, 'Pair share of TESS flux'",
+     "quote": "2.6 ± 0.4% (hard lower limit 2.2%)",
+     "problem": "The final referee asked for the ±5% relative depth-scale systematic to be added. 'Hard' also overstates a Δχ² = 9 (3σ) profile limit that itself depends on the depth scale.",
+     "evidence": "final_referee_result.json, f_EB verdict: 'It must carry the label 'main-sequence assumption', and the +-5% depth-scale systematic should be added'.\nlcmodel: 'f_EB > 2.2% (dchi2 = 9)'.",
+     "fix": "'2.6 ± 0.4% (plus ±5% relative depth-scale systematic; shape-only lower limit 2.2% at Δχ² = 9)'."
+    },
+    {
+     "id": "F38",
+     "severity": "nit",
+     "location": "Section 2",
+     "quote": "Spot modulation at the orbital period in five of six sectors shows that the stars rotate synchronously.",
+     "problem": "Modulation in the blended light shows that at least one component rotates at P_EB; it cannot show that both do. Reflection and beaming cannot be separated from spots.",
+     "evidence": "lcmodel key number (stored in astro_result.json): 'Reflection and beaming cannot be separated from spots.' The Lomb-Scargle peak is at P_EB in 5 of 6 sectors.",
+     "fix": "'...shows that at least one component (most likely the spotted primary) rotates synchronously, as expected for a tidally locked 1.3-d binary.'"
+    },
+    {
+     "id": "F39",
+     "severity": "nit",
+     "location": "Figure 2 caption, panel (a)",
+     "quote": "Raw, bias-corrected PRF difference-image offsets",
+     "problem": "'Raw' next to 'bias-corrected' is confusing. The intended meaning is 'not colour-corrected'.",
+     "evidence": "localise_v3_result.json: 'Raw deep-eclipse offsets per sector, bias-corrected'.",
+     "fix": "'Bias-corrected but not colour-corrected PRF difference-image offsets'."
+    },
+    {
+     "id": "F40",
+     "severity": "nit",
+     "location": "Section 9",
+     "quote": "Scripts and machine-readable results are available from the author on request.",
+     "problem": "Anyone given the campaign's machine-readable results will find two files with each other's contents: partial/lcmodel_result.json holds the astro answer, and partial/astro_result.json holds the lcmodel answer. The README links them by investigation name. This should be fixed before anything is shared.",
+     "evidence": "The 'summary' field of lcmodel_result.json begins 'I finished the astro checks: SED, spectroscopy...'. The 'summary' field of astro_result.json begins 'The lcmodel investigation is finished...'.",
+     "fix": "Swap the two files back (or relabel them in the README) before sharing the machine-readable results."
+    }
+   ]
+  },
+  "PROFESSIONAL PRESENTATION": {
+   "lens": "PROFESSIONAL PRESENTATION",
+   "checked": "I viewed all 7 rendered pages at 110 dpi and re-rendered the PDF at 220 dpi. I cropped and inspected the summary box, Tables 1–5, the Section 3 and 6.3 text, and the Table 4/5 subscript areas. I viewed fig1_lightcurve.png, fig2_localisation.png and fig3_colour.png at full resolution. I read build_report.py and make_figures.py line by line, so each caption could be checked against what the code actually draws. I measured how far the content runs on each page (page 3 ends at 73% of its height) and ran pdffonts/pdfinfo for font embedding and metadata. Against the data: I checked the Fig 2 offsets and the VHS-residual position angle in localise/v3/results/s05_baseline.json, the Fig 3a calibration curve in f02_colour_theta.json (per-bin star counts, linear vs binned values), and the per-product depth scales behind Fig 1b in lcmodel/v6/results/depths_by_product.json. I took the cadence of each product from data_default.pkl and the product names from the v6 scripts (a01_timefix.py, c01_build.py). I checked eclipse_windows.py/json against Table 5, and grepped the campaign README and partial/*_result.json for the source wording (Gaia DR4 depths, BP−RP 2.31, k_rad, spectral types, Moe & Di Stefano / Mann / P&M usage). I recomputed Table 3 consistency by hand (K1, K2, v sin i, a, pair magnitudes, ΔKs) and found no errors there. I did not re-audit the science numbers beyond where they affect captions, figures or notation; other lenses cover that.",
+   "findings": [
+    {
+     "id": "P1",
+     "severity": "error",
+     "location": "Page 4, Figure 3 caption, panel (b)",
+     "quote": "Blue line and band: prediction for the adopted early-M + mid-M pair, ±15% (optical) and ±20% (infrared).",
+     "problem": "The caption does not match the figure. The plotted band is ±15% at every wavelength, including J, H, Ks and W1. It is not ±20% in the infrared.",
+     "evidence": "make_figures.py, Figure 3b: `ax.fill_between(xl, yl * 0.85, yl * 1.15, ...)`. This is one ±15% envelope for all of ordk = ['g′','V','r′','G','TESS','z′','J','H','Ks','W1'].",
+     "fix": "Either fix the band in the code: `f = np.where(xl > 1.0, 0.20, 0.15); ax.fill_between(xl, yl*(1-f), yl*(1+f), ...)`. Or change the caption to: \"Blue line and band: prediction for the adopted early-M + mid-M pair with a ±15% band (the infrared predictions carry about ±20%).\""
+    },
+    {
+     "id": "P2",
+     "severity": "error",
+     "location": "Page 6, Table 4, row 'Gaia DR4 epoch photometry' (also make_figures.py Fig 3b, pred['G'])",
+     "quote": "Eclipses of about 3.6 ppt (primary) and 1.2 ppt (secondary) in G",
+     "problem": "The unit was changed from mmag to ppt without converting the numbers. The source predicts 3.6 and 1.2 mmag, which is about 3,300 and 1,100 ppm. The same slip is in Figure 3b, where the G point uses 3,600 ppm. The rest of Table 4 is also in ppm, not ppt.",
+     "evidence": "README.md: \"Its epoch photometry should contain the eclipses (~3.6 and ~1.2 mmag in G)\". astro_result.json: \"~3.6/1.2 mmag in G, ~6.0/2.6 mmag in RP, ~1.8/0.3 mmag in BP\". Conversion: depth = 1 − 10^(−0.4·3.6e-3) = 3.31e-3. make_figures.py: pred['G'] = 3600.",
+     "fix": "\"Eclipses of about 3.6 mmag (primary) and 1.2 mmag (secondary) in G (about 3,300 and 1,100 ppm)\". In make_figures.py set pred['G'] = 3300, or drop G from the curve (see P14)."
+    },
+    {
+     "id": "P3",
+     "severity": "error",
+     "location": "Page 2, Table 2 caption; page 6, Section 9 first sentence",
+     "quote": "Times come from SPOC light curves (S1, S28, S68) and from our own TESScut photometry (S95, S105, S106)",
+     "problem": "The light-curve products are named inconsistently, and here wrongly. The Figure 1 caption calls the S1 and S28 data '30- and 10-min TESS-SPOC FFI light curves'. S68 is 200-s FFI data, which is also TESS-SPOC. No 2-min SPOC product was used. Section 9 ('SPOC and TESS-SPOC light curves (Sectors 1, 28 and 68)') suggests that one of these sectors is 2-min SPOC data.",
+     "evidence": "lcmodel/v6/results/data_default.pkl has texp = 1800 s for SPOC1, 600 s for SPOC28 and 200 s for SPOC68, all FFI cadences. The docstring of lcmodel/v6/scripts/a01_timefix.py says \"TESS-SPOC light curves (S1, S28, S68)\".",
+     "fix": "Table 2 caption: \"Times come from TESS-SPOC FFI light curves (S1, S28 and S68; 30-min, 10-min and 200-s cadence) and from our own TESSCut photometry (S95, S105, S106), ...\". Section 9: \"The TESS data are TESS-SPOC FFI light curves (Sectors 1, 28 and 68; Caldwell et al. 2020) and our own aperture photometry ...\""
+    },
+    {
+     "id": "P4",
+     "severity": "clarity",
+     "location": "Page 4, Figure 3a, with page 3, Section 5 first bullet and Section 4 end of paragraph 1",
+     "quote": "On the field-star calibration this corresponds to BP−RP ≈ 2.31 (1σ range 2.22–2.40, with a systematic of about ±0.1 mag), an M1.5–M2.5 dwarf.",
+     "problem": "The only calibration the text gives is linear: 1.52 arcsec per magnitude. On that slope, a 2.94 arcsec shift gives Δ(BP−RP) = 1.93, i.e. BP−RP ≈ 2.72, not 2.31. The value 2.31 is read off the binned field-star curve, which steepens at the red end. That curve has no bin at all between BP−RP 1.9 and 2.3, and only 8 stars at 2.3–2.7 and 3 at 2.7–3.2. Figure 3a shows this (the horizontal band crosses the linear trend near 2.7), but neither the text nor the caption says it. A reader will find the numbers contradict each other.",
+     "evidence": "f02_colour_theta.json 'curve': the bin at 1.6–1.9 has n = 31, the bin at 2.3–2.7 has n = 8 (rad −3.31 against a linear prediction of −2.37), the bin at 2.7–3.2 has n = 3, and there is no 1.9–2.3 bin. localise_v3_result.json: \"Steeper at the red end ... 2.42 → −3.29 ± 0.11\" (linear prediction −2.55\")\" and \"Systematic about ±0.1 mag from the few red calibrators\".",
+     "fix": "Section 5: \"The field-star relation steepens for red stars (Figure 3a), so the linear coefficient does not apply here. Reading the shift off the binned relation gives BP−RP ≈ 2.31 (1σ range 2.22–2.40; systematic about ±0.1 mag, because only 11 calibration stars are redder than BP−RP 1.9), an M1.5–M2.5 dwarf.\" Add to the Figure 3a caption: \"The relation steepens above BP−RP ≈ 1.9, where only 11 calibration stars are available (none at 1.9–2.3).\""
+    },
+    {
+     "id": "P5",
+     "severity": "clarity",
+     "location": "Page 3, Section 4 paragraph 1, against Figure 3a's y axis",
+     "quote": "obtaining k = −1.52 ± 0.02 arcsec per magnitude of BP−RP (Figure 3a).",
+     "problem": "The sign conflicts with the figure and with the sentence before it. That sentence says red stars sit farther from the boresight. Figure 3a plots 'Centroid shift away from boresight' and shows a positive slope of about +1.5 arcsec/mag. The negative sign belongs to the internal k_rad axis convention, which the report never defines.",
+     "evidence": "make_figures.py plots `-pts['rad']` and `-q['rad']` against BP−RP. f02_colour_theta.json gives k_rad_wmean = −1.5186.",
+     "fix": "\"obtaining a shift of 1.52 ± 0.02 arcsec away from the boresight per magnitude of BP−RP for BP−RP ≲ 1.9 (Figure 3a)\"."
+    },
+    {
+     "id": "P6",
+     "severity": "clarity",
+     "location": "Page 3, Section 4 end of paragraph 2",
+     "quote": "Given the predicted ΔKs ≈ 2.4–2.8 (Section 6), this places the pair inside about 0.8–1.0 arcsec.",
+     "problem": "The cross-reference is wrong. Section 6 never gives a predicted ΔKs; Table 3 gives only the pair's apparent Ks ≈ 13.0. The predicted contrast appears in Table 4 (Section 7) and in the Summary.",
+     "evidence": "Section 6 text and Table 3 contain no ΔKs. Table 4 row 1: \"ΔKs ≈ 2.4–2.8, ΔH ≈ 2.6–2.9, ΔJ ≈ 2.9–3.2 mag\".",
+     "fix": "\"Given the predicted ΔKs ≈ 2.4–2.8 (Table 4), this places the pair inside about 0.8–1.0 arcsec.\""
+    },
+    {
+     "id": "P7",
+     "severity": "presentation",
+     "location": "Page 3, bottom (after Section 5); Figures 2 and 3 on page 4",
+     "quote": "still allow it: they give Teff = 4,040 (+330/−280) K for the eclipsed star.",
+     "problem": "About 2 inches (roughly 19% of the text height) are left blank at the bottom of page 3. Figure 2 is wrapped in KeepTogether with its caption, does not fit, and is pushed to page 4. The text after it (Section 6) is held back behind both figures, so the gap stays empty. This looks unfinished.",
+     "evidence": "Measured at 220 dpi: the content on page 3 ends at 0.731 of the page height, while pages 2, 4 and 6 run to 0.91–0.925. In build_report.py, figure(fig2) and figure(fig3) are appended straight after Section 5.",
+     "fix": "In build_report.py, move the two figure(...) calls to after the Section 6.1 paragraph, so the 6.1 heading and paragraph fill page 3 and both figures open page 4. Alternatively, reduce the Figure 2 width (for example 0.80*TW) so that it fits under Section 5."
+    },
+    {
+     "id": "P8",
+     "severity": "presentation",
+     "location": "Page 6, Table 5 header row, column 3",
+     "quote": "BJDTDB",
+     "problem": "The subscript 'TDB' in the column header drops onto, and is cut by, the rule under the header row.",
+     "evidence": "Seen in the 220 dpi crop of page 6. build_report.py builds Table 5 with pad=1.9 and a header cell 'BJD<sub>TDB</sub>'.",
+     "fix": "Change the header to 'BJD (TDB)' or 'BJD_TDB' set without a subscript, or give the header row more bottom padding: ('BOTTOMPADDING', (0,0), (-1,0), 4)."
+    },
+    {
+     "id": "P9",
+     "severity": "presentation",
+     "location": "Pages 5–6, Table 4: row 'Near-IR AO' (What it tests) and row 'Red / near-IR spectroscopy' (Prediction)",
+     "quote": "No companion to ΔKs ≈ 3.5 beyond 0.1 arcsec would put the EB inside 0.1 arcsec or refute the model; one with ΔKs ≤ 2.5 beyond 0.6 arcsec would contradict VHS",
+     "problem": "Subscripts and superscripts hit the neighbouring lines. The 's' of ΔKs sits on '0.1' and on 'VHS' in the line below. In the spectroscopy row, the subscripts of K1 and K2 run into 'velocity within', and the superscripts of 's−1' touch the line above. The table leading (9.6 pt for 7.8 pt type) is too tight for inline sub- and superscripts.",
+     "evidence": "Seen in the 220 dpi crops of page 5 (bottom) and page 6 (top). build_report.py: TD = ParagraphStyle(fontSize=7.8, leading=9.6).",
+     "fix": "Raise the table leading to about 10.8 pt (TD and TH: leading=10.8), or reduce the sub/superscript rise. Check the rows again after re-rendering."
+    },
+    {
+     "id": "P10",
+     "severity": "presentation",
+     "location": "Pages 5–6, Table 4",
+     "quote": "Table 4. Testable predictions.",
+     "problem": "Table 4 breaks badly: the caption, header and first row sit at the foot of page 5, and the other five rows go to page 6 under a repeated header with no '(continued)' label. The caption also uses its own style without keepWithNext, unlike Tables 1–3 and 5.",
+     "evidence": "Rendered pages 5 and 6. build_report.py appends Table 4 without KeepTogether, while Table 5 is wrapped in KeepTogether.",
+     "fix": "Wrap the Table 4 caption and table in KeepTogether([tcap(...), table(t4, ...)]), as is done for Table 5, so the whole table moves to page 6. Otherwise, add 'Table 4 (continued)' above the repeated header."
+    },
+    {
+     "id": "P11",
+     "severity": "presentation",
+     "location": "Page 5, Table 3, rows 'Pair share of TESS flux', 'Orbit', 'Apparent magnitudes of the pair'",
+     "quote": "a = 4.35 ± 0.09 R☉ (0.020 au); i = 89.1 (+0.6/−0.65)°",
+     "problem": "Values that belong to the pair or the orbit sit under the 'Primary (deeper eclipse)' header, which suggests they are properties of the primary star. In the Orbit cell, the inclination error also wraps onto its own line.",
+     "evidence": "Rendered page 5. In build_report.py, the rows in t3 put these values in column 1 and leave column 2 as ''.",
+     "fix": "Span columns 1–2 for these rows: TableStyle ('SPAN', (1,4), (2,4)), ('SPAN', (1,6), (2,6)), ('SPAN', (1,9), (2,9)). The text then reads as a pair-level value and 'i = 89.1 (+0.6/−0.65)°' stays on one line."
+    },
+    {
+     "id": "P12",
+     "severity": "presentation",
+     "location": "Page 7, References, against the body text",
+     "quote": "Claret, A. 2017, A&A, 600, A30 (TESS limb darkening)",
+     "problem": "Only 2 of the 24 references are cited in the text (Lafarga et al. 2026 and Raghavan et al. 2010). The other 22 are never cited; Claret 2017 is not even mentioned in the text. At the same time, data and methods that were used have no reference: Table 1's 2MASS and APASS, and Section 9's SkyMapper, Legacy Survey and AllWISE. Mann et al., Pecaut & Mamajek and Moe & Di Stefano were used in the analysis but are not cited where they apply. Professional readers expect citations at the point of use.",
+     "evidence": "grep of report_v1.txt finds 'et al.' citations only for Lafarga and Raghavan. final_referee_result.json mentions 'Mann or P&M' and \"Moe & Di Stefano companion statistics give P_T within ~20% of Raghavan\".",
+     "fix": "Add citations at the point of use. Section 6.1: \"main-sequence relations (Mann et al. 2015, 2019; Pecaut & Mamajek 2013)\". Section 6.3: \"(Raghavan et al. 2010; Moe & Di Stefano 2017 gives the same odds to within ~20%)\". Section 8: \"TRICERATOPS (Giacalone et al. 2021)\". Section 9: \"TESS (Ricker et al. 2015), TESS-SPOC (Caldwell et al. 2020), TESSCut (Brasseur et al. 2019), QLP (Huang et al. 2020), SuperWASP (Pollacco et al. 2006; Butters et al. 2010), Gaia DR3 (Gaia Collaboration 2023; Katz et al. 2023), WISE/NEOWISE (Wright et al. 2010; Mainzer et al. 2014), VHS (McMahon et al. 2013), TIC (Stassun et al. 2019)\". Either add references for 2MASS (Skrutskie et al. 2006), APASS, SkyMapper and the Legacy Surveys, or remove Claret 2017 if it is not used."
+    },
+    {
+     "id": "P13",
+     "severity": "presentation",
+     "location": "Page 1, header block 'Prepared by'; PDF metadata Author",
+     "quote": "[Author name] (ExoFOP-TESS user [username])",
+     "problem": "Unfilled placeholders are visible on page 1 and in the PDF Author field. Section 9 also says results are 'available from the author on request', but no contact is given anywhere.",
+     "evidence": "pdfinfo: Author: [Author name]. build_report.py: AUTHOR and AUTHOR_LINE default to placeholders unless REPORT_AUTHOR and REPORT_AUTHOR_LINE are set.",
+     "fix": "Before upload, rebuild with REPORT_AUTHOR and REPORT_AUTHOR_LINE set to the real name and ExoFOP username, and add a contact address. For example: \"Scripts and machine-readable results are available from the author (<email>) on request.\""
+    },
+    {
+     "id": "P14",
+     "severity": "presentation",
+     "location": "Page 4, Figure 3b, blue prediction curve near 0.62–0.65 µm",
+     "quote": "Blue line and band: prediction for the adopted early-M + mid-M pair",
+     "problem": "The prediction curve has a sharp kink near 0.63 µm. It joins narrow-band points with the very broad Gaia G band, plotted as a point at 0.64 µm (ratio 0.62 against r′ 0.53 at 0.622 µm). It also leaves out the i′ prediction, which is defined in the code. The kink is a plotting artefact, not physics.",
+     "evidence": "make_figures.py: ordk = ['g′','V','r′','G','TESS','z′','J','H','Ks','W1'], with lam['G'] = 0.64 and pred['G'] = 3600. pred['i′'] = 6150 is defined but not in ordk.",
+     "fix": "Drop 'G' from ordk, or plot it as a separate marker. Better still, show the per-band predictions as markers (with horizontal bars for bandwidth) joined by a light line. Then change the caption to 'Blue points and band: per-band predictions ...'."
+    },
+    {
+     "id": "P15",
+     "severity": "clarity",
+     "location": "Page 2, Figure 1 caption, opening sentence",
+     "quote": "Figure 1. TESS photometry of TIC 71316387 (Sectors 68, 95, 105 and 106 at 200-s cadence, in 6-min bins).",
+     "problem": "The opening parenthesis reads as if it covers the whole figure, but panel (b) shows all six sectors, including S1 and S28 at 30- and 10-min cadence.",
+     "evidence": "make_figures.py: panels a, c and d use `fast = d['texp'] < 0.003` (the 200-s sectors). Panel b loops over all six product keys.",
+     "fix": "\"Figure 1. TESS photometry of TIC 71316387. Panels a, c and d use Sectors 68, 95, 105 and 106 (200-s cadence) in 6-min bins; panel b uses all six sectors.\""
+    },
+    {
+     "id": "P16",
+     "severity": "clarity",
+     "location": "Page 2, Figure 1 caption, panel (b)",
+     "quote": "Sectors 1 and 28 come from the 30- and 10-min TESS-SPOC FFI light curves, whose depth scale sits about 7% higher, within the ±8% spread between data products.",
+     "problem": "Panel (b) shows the S1 and S28 primary depths about 8% above the adopted line, but their secondary depths lie on the line (1–2% high). A reader comparing the panel with 'depth scale sits about 7% higher' will see the mismatch.",
+     "evidence": "depths_by_product.json scale factors: SPOC1 prim 1.083, sec 1.019, both 1.070. SPOC28 prim 1.081, sec 1.010, both 1.066.",
+     "fix": "\"Sectors 1 and 28 come from the 30- and 10-min TESS-SPOC FFI light curves. Their primary depths sit about 8% higher (the secondaries agree within their ~5% errors; joint scale factor 1.07), within the ±8% spread between data products.\""
+    },
+    {
+     "id": "P17",
+     "severity": "clarity",
+     "location": "Page 5, Section 6.3, last paragraph",
+     "quote": "The outer orbit would have a ≈ 30–650 au and P ≈ 10 2–10 4 yr, and Pout/Pin ≥ 3×10 4 makes it dynamically very stable.",
+     "problem": "The plain symbols 'a' and 'P' are used for the outer orbit, while Tables 2–5 use them for the inner 1.30 d binary (a = 4.35 R☉, P = 1.30367228 d). Later in the same sentence the subscripted forms P_out and P_in appear.",
+     "evidence": "Table 2 'Orbital period P'. Table 3 'a = 4.35 ± 0.09 R☉'. Table 5 'T0 + E × P'.",
+     "fix": "\"The outer orbit would have a_out ≈ 30–650 au and P_out ≈ 10^2–10^4 yr; P_out/P_in ≥ 3×10^4 makes it dynamically very stable.\""
+    },
+    {
+     "id": "P18",
+     "severity": "clarity",
+     "location": "Page 6, Table 5 caption",
+     "quote": "Table 5. Primary eclipses from 2026-10-17 to 2027-01-20 that are fully observable at night from three southern sites",
+     "problem": "The caption promises a window to 2027-01-20, but the last row is 2026-11-21. A reader may think the table was cut off.",
+     "evidence": "eclipse_windows.py searches 2026-10-17 to 2027-01-20. eclipse_windows.json ends at epoch 921 (2026-11-21).",
+     "fix": "Append: \"No later event in this window meets these criteria.\" Or change the stated window to the period the table actually covers."
+    },
+    {
+     "id": "P19",
+     "severity": "clarity",
+     "location": "Page 1, Summary bullet 2, with Table 1 'Radial velocity', Section 3 and Section 6.2",
+     "quote": "Gaia DR3 finds its radial velocity constant over 15 epochs spanning 946 d",
+     "problem": "The same quantity is called '15 epochs' in the Summary and '15 transits' in Table 1 and Section 3. Section 6.2 also has '47 of 47 and 48 of 48 transits'. In a TESS report, 'transits' will be read as planetary transits, not Gaia field-of-view transits.",
+     "evidence": "Table 1: \"15 transits over 946 d\". Section 3: \"Gaia DR3 RVS measured the star in 15 transits over 946 d\".",
+     "fix": "Use one term throughout. Table 1 and Section 3: \"15 Gaia RVS field-of-view transits (epochs) over 946 d\". Section 6.2: \"in 47 of 47 and 48 of 48 Gaia field-of-view transits\"."
+    },
+    {
+     "id": "P20",
+     "severity": "nit",
+     "location": "Page 1 Summary bullet 2; Figure 2b and Figure 3a legends; Table 4 Gaia DR4 row; Figure 1 O−C axes",
+     "quote": "would move it by at least 18 km/s.",
+     "problem": "Units are written inconsistently. 'km/s' appears only here; everywhere else it is 'km s−1'. The Figure 2b legend ('beyond 0.6″', 'beyond 1.0″') and the Figure 3a legend ('2.94 ± 0.28″') use ″, while the axes and text say 'arcsec'. Table 4 gives depths in ppm except the Gaia DR4 row (ppt). Figure 1c,d plot flux in ppt but residuals in ppm.",
+     "evidence": "Rendered pages 1, 2, 4 and 6. make_figures.py legend strings.",
+     "fix": "\"at least 18 km s−1\". Legends: \"excluded beyond 0.6 arcsec\", \"excluded beyond 1.0 arcsec\", \"shift 2.94 ± 0.28 arcsec\". Table 4 Gaia row in ppm (see P2). Optionally show the Figure 1 O−C panels in ppt (±0.4)."
+    },
+    {
+     "id": "P21",
+     "severity": "nit",
+     "location": "Page 5, Table 4 row 1, Technique column",
+     "quote": "Near-IR AO (H, Ks), 8-m class",
+     "problem": "The technique lists H and Ks, but the prediction in the same row also gives ΔJ ≈ 2.9–3.2.",
+     "evidence": "Table 4 row 1 Prediction: \"ΔKs ≈ 2.4–2.8, ΔH ≈ 2.6–2.9, ΔJ ≈ 2.9–3.2 mag\".",
+     "fix": "\"Near-IR AO (J, H, Ks), 8-m class\"."
+    },
+    {
+     "id": "P22",
+     "severity": "presentation",
+     "location": "Page 6, Table 4 rows 'Optical speckle' and 'Multi-colour eclipse photometry', Prediction column",
+     "quote": "Deep / shallow depths (ppm): g′ 1,150 / 200; V 1,900 / 370; i′ 5,600–6,700 / 2,200–3,000; z′ 7,200 / 3,800; J 12,100 / 8,900; Ks 18,000 / 13,800",
+     "problem": "The line wrap splits deep/shallow pairs across lines ('V 1,900 /' then '370;', and 'J' then '12,100 / 8,900'), and the speckle row splits '≈' from '5.1–5.6 mag'. The values are hard to read.",
+     "evidence": "Seen in the 220 dpi crop of page 6.",
+     "fix": "Join each band entry with non-breaking spaces (for example 'V&nbsp;1,900&nbsp;/&nbsp;370'), or give one band per line ('g′: 1,150 / 200<br/>V: 1,900 / 370<br/>...')."
+    },
+    {
+     "id": "P23",
+     "severity": "nit",
+     "location": "Page 4, Figure 2a, grey arrows",
+     "quote": "Grey arrows show the direction away from that camera's boresight",
+     "problem": "The six arrows have no labels and all have the same arbitrary length (1.55 arcsec). The S1/S95 and S28/S68 arrows nearly coincide, so the reader cannot match arrows to sectors. Matching them is the whole point of the panel.",
+     "evidence": "make_figures.py: `ax.annotate('', xy=(-1.55*u[0], -1.55*u[1]), xytext=(0,0), ...)` with no labels. The rendered panel shows two overlapping pairs.",
+     "fix": "Label each arrow tip with its sector, or draw each arrow in the same colour or marker as its point. Add to the caption: \"Arrow lengths are arbitrary.\""
+    },
+    {
+     "id": "P24",
+     "severity": "nit",
+     "location": "Page 4, Figure 2b legend",
+     "quote": "VHS residual source? (ΔKs ≈ 4.2)",
+     "problem": "A question mark in a legend reads as informal. The caption calls it 'an unexplained faint VHS residual', and Section 8 gives ΔKs ≈ 4.0–4.4.",
+     "evidence": "make_figures.py legend label. Section 8: \"(ΔKs ≈ 4.0–4.4)\".",
+     "fix": "Legend: \"unexplained VHS residual (ΔKs ≈ 4.0–4.4)\"."
+    },
+    {
+     "id": "P25",
+     "severity": "nit",
+     "location": "Page 1, Section 1, first sentence",
+     "quote": "TIC 71316387 is a T = 11.36 G dwarf at 297.4 ± 1.5 pc.",
+     "problem": "Variables are styled inconsistently. T is italic here, but every other variable in the report is upright (P, T in Table 3, K, k, a, i).",
+     "evidence": "build_report.py: '<i>T</i> = 11.36' is the only <i> markup on a variable.",
+     "fix": "Make it upright ('T = 11.36') to match the rest, or italicise all variables throughout."
+    },
+    {
+     "id": "P26",
+     "severity": "nit",
+     "location": "All pages: bullets; page 5 Section 6.3 and Table 4 '≲'; page 3 Section 3 line 1",
+     "quote": "If the pair is bound, its projected separation is most likely ≲0.9 arcsec (≲270 au).",
+     "problem": "There are three small typographic faults. (1) The bullet glyphs are set in a non-embedded Helvetica, which is reportlab's default bullet font. (2) The '≲' glyph comes from DejaVu Sans and looks visibly heavier than the Liberation Serif text around it. (3) Justified text without hyphenation leaves very wide word gaps, for example in Section 3 line 1, 'If the G star (1.03 M☉) were eclipsed by a companion ...'.",
+     "evidence": "pdffonts lists 'Helvetica Type 1 ... emb no'. In build_report.py, the BUL and SUM styles do not set bulletFontName, and SPECIAL maps '≲' to DJ. The 220 dpi crops of pages 3 and 5 show the effects.",
+     "fix": "Set bulletFontName='Serif' in BUL and SUM. Use '&lt;~' or a serif-compatible '≲' (or write 'within about 0.9 arcsec'). Use TA_LEFT, or enable hyphenation, for paragraphs with long unbreakable tokens."
+    },
+    {
+     "id": "P27",
+     "severity": "nit",
+     "location": "Page 1 Summary bullet 3; page 3 Section 4",
+     "quote": "The raw offsets of the deeper eclipse are 2.0–3.6 arcsec.",
+     "problem": "The range shown in Figure 2a is 2.08–3.65 arcsec, which rounds to 2.1–3.7.",
+     "evidence": "localise/v3/results/s05_baseline.json deep offsets: S68 2.08, S95 2.51, S28 2.60, S1 2.63, S106 2.72, S105 3.65 arcsec.",
+     "fix": "\"The raw offsets of the deeper eclipse are 2.1–3.7 arcsec.\" (same change in the Summary)."
+    },
+    {
+     "id": "P28",
+     "severity": "nit",
+     "location": "Page 2, Table 2 row 'Primary epoch T0'",
+     "quote": "BJDTDB 2460165.670416 ± 0.00018",
+     "problem": "The uncertainty has no unit and is quoted to fewer decimal places than the value.",
+     "evidence": "Table 2 as rendered.",
+     "fix": "\"BJD_TDB 2460165.67042 ± 0.00018 d (± 0.26 min)\", or keep 6 decimals on both: \"2460165.670416 ± 0.000180 d\"."
+    },
+    {
+     "id": "P29",
+     "severity": "nit",
+     "location": "Page 2 Table 2 caption; page 6 Section 9",
+     "quote": "our own TESScut photometry (S95, S105, S106)",
+     "problem": "The MAST service is officially written 'TESSCut' (Brasseur et al. 2019, which is in the reference list).",
+     "evidence": "MAST/Astrocut naming; the reference list entry is Brasseur et al. 2019, Astrocut.",
+     "fix": "\"our own TESSCut photometry\" (also in Section 9: \"TESSCut full-frame-image cutouts\")."
+    },
+    {
+     "id": "P30",
+     "severity": "nit",
+     "location": "Page 5, Section 6.3 first sentence",
+     "quote": "per 1.24-arcsec circle",
+     "problem": "It is not clear whether 1.24 arcsec is the radius or the diameter of the circle. Elsewhere, 1.24 arcsec is the 95% radius.",
+     "evidence": "Section 4: \"The source lies within 1.24 arcsec of the G star at 95% confidence\".",
+     "fix": "\"within a circle of radius 1.24 arcsec\"."
+    }
+   ]
+  }
+ },
+ "note_workflow": {
+  "draft:1": {
+   "note": "CTOI 71316387.01 is an EB at 2x the CTOI period, not a planet. P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018 (TESS-SPOC/TESScut, S1-S106). Depths 5770/2600 ppm, secondary at phase 0.5; the CTOI epoch is an EB secondary. The G star is not the EB: its Gaia DR3 RV is constant (15 RVS transits over 946 d). Colour-corrected TESS difference-image centroids put the source within 1.24 arcsec (95%); catalogued neighbours excluded. Eclipse colours (shallower in SuperWASP, deeper in W1) and shape suggest an early-M + mid-M pair giving ~2.6% of TESS flux (MS-model estimates, not dynamical). Likely a bound hierarchical triple (chance alignment improbable), unconfirmed. Suggest FP/EB.\nTo confirm: NIR AO/speckle (delta-Ks ~2.6 mag, likely below 0.9 arcsec) plus 2nd-epoch CPM, or M-dwarf RVs. No G-star PRV needed. Full report and figures uploaded under [file/tag].",
+   "chars": 894,
+   "rationale": "The note is 894 characters, counted with Python. That includes the single newline between the two paragraphs, which the ExoFOP editor stores as <br>. Two of the three style studies recommend 450-900 characters for this kind of note and the third recommends 650-1200, so 894 sits at the top of the stricter range. If [file/tag] is replaced by a full ExoFOP filename such as TIC71316387.01O-xx20261016-EB-vetting.pdf, the note grows to about 930 characters. That is still well inside the analogue range (median 916) and far below the ~4,000-character cap.\n\nStructure follows the TFOP analytic-prose model (quinn, hartman, latham triples):\n- The verdict and the 2x-period statement come first.\n- The ephemeris follows, with its time system and data sources.\n- Each line of evidence gets one clause with one number, strongest first: eclipse depths, then the G star's constant RV, then the centroid limit with the catalogued neighbours excluded, then the eclipse colours and light fraction.\n- Next is the hedged interpretation and a suggested disposition in community wording (\"Suggest FP/EB\"; no \"Retired as\" or Master Disp syntax).\n- It closes with a concrete follow-up request, a statement of what is not needed, and a pointer to the uploaded file.\n\nEvery number comes from the verified/audited facts:\n- P = 1.30367228 +/- 0.00000019 d and T0 = BJD_TDB 2460165.67042 +/- 0.00018 are the adopted fit. It uses only TESS-SPOC S1/S28/S68 and the campaign's own re-barycentred TESScut S95/S105/S106 times, with no QLP time stamps, so the QLP S103-105 barycentric bug does not affect it.\n- The early QLP-biased ephemeris (1.3036712 d) is not used.\n- Depths are 5770/2600 ppm, with the secondary at phase 0.5.\n- The CTOI epoch falls on an EB secondary, which warns observers not to schedule on the CTOI ephemeris.\n- The Gaia RV is given in the audit-corrected form: 15 RVS transits over 946 d, not 15 epochs.\n- The source lies within 1.24 arcsec (95%), and every resolved Gaia neighbour is excluded (the lesson from the sabin retraction).\n- SuperWASP depths are shallower and W1 depths deeper than TESS. The pair contributes ~2.6% of TESS flux, flagged as an MS-model estimate rather than dynamical.\n- Predicted delta-Ks is ~2.6 mag and the separation is likely below 0.9 arcsec.\n\nOverclaiming is avoided: the triple is \"likely ... unconfirmed\", and the chance-alignment odds are given as \"improbable\" rather than as a figure. I left out the odds number because it depends on the priors (worst case ~200), professional notes use no e-notation, and the PDF gives the full grid.\n\nFormatting is safe for the ExoFOP export:\n- Plain ASCII only: \"+/-\", \"arcsec\", \"delta-Ks\".\n- No double-quote character, so the export cannot drop an arcsec mark.\n- No bare < or > (I wrote \"below 0.9 arcsec\").\n- No Markdown, no signature, no email.\n\nThe note does not mention AI. The corpus has no precedent for it, and disclosure goes in the PDF. Neither the QLP pipeline issue nor TIC 214311908 is mentioned.\n\nThe draft text is also saved at <scratch>/obsnote/wf/note_draft/note_v4.txt. Nothing was submitted or posted, and no repo files were modified."
+  },
+  "draft:2": {
+   "note": "CTOI 71316387.01 is an eclipsing binary at twice the CTOI period, not a planet: P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018 (TESS-SPOC/TESScut); the CTOI epoch is a secondary eclipse. (1) Alternating depths of 5770 and 2600 ppm (phase 0.5) in all six sectors. (2) The G star is not the EB: its Gaia DR3 RV is constant over 946 d (chi2 p = 0.28). (3) Colour-corrected difference-image centroids place the EB within 1.24 arcsec of the G star (95%); resolved Gaia neighbours excluded. (4) Eclipses are shallower in SuperWASP and deeper in NEOWISE W1; colours and shape suggest an early-M + mid-M pair giving ~2.6% of TESS flux. Likely a bound hierarchical triple, unconfirmed. Suggest FP (blended EB). Needed: NIR AO/speckle (expected below ~0.9 arcsec, delta-Ks ~2.6 mag) plus a 2nd epoch for CPM, or M-dwarf RVs. Full report and figures uploaded under [file/tag].",
+   "chars": 898,
+   "rationale": "Length: 898 characters, measured with Python on <scratch>/obsnote/wf/draft/note_final.txt (ASCII only, also 898 bytes). The three style studies recommend 450-900, 450-900 and 650-1200 characters, so the note is kept inside the range they share (650-900). That is about 2x the 466-char referee draft, room for the ephemeris and a clause for each evidence line, and still well below the ~1,800-char notes that later needed corrections.\n\nStructure: it follows the best community EB vetters (holstkristiansen/vanderburg openers, hartman/dyregaardnielsen 2x-period wording, bermudez inline numbering).\n- The first sentence gives the verdict and says the planet interpretation is not supported.\n- The corrected ephemeris comes next, with BJD_TDB and its data source.\n- Four numbered evidence clauses follow inline as (1)-(4) in one plain paragraph, with one number each where possible. There is no Markdown and there are no line breaks, which avoids the editor and export pitfalls.\n- Then a hedged interpretation, a suggested disposition (\"Suggest FP (blended EB)\", not the TFOPWG-only \"Retired as\"), a concrete follow-up request, and a pointer to the uploaded report.\n\nNumbers: all come from the verified facts or the audit.\n- P and T0 are the adopted lcmodel v6 values, built only from TESS-SPOC S1/28/68 and our own re-barycentred TESScut S95/105/106 times. No QLP S103-105 times are used and the biased early-vetting ephemeris is not quoted.\n- \"CTOI epoch is a secondary eclipse\": cycle -842.4995. This warns observers away from the CTOI ephemeris.\n- \"946 d\" is the Gaia rv_time_duration. I avoided \"15 epochs\" as the audit asked. \"chi2 p = 0.28\" is rv_chisq_pvalue 0.275 rounded.\n- 1.24 arcsec (95%), the ~2.6% light fraction, the separation below ~0.9 arcsec and delta-Ks ~2.6 mag match the README and the final referee.\n\nHedging:\n- Established results are stated plainly: EB at 2P, G star not the EB, centroid limit, resolved Gaia neighbours excluded (the lesson of the sabin retraction).\n- Inferences are marked: \"suggest\", \"Likely ... unconfirmed\", \"expected\".\n- Component masses are deliberately left out of the note, so it makes no non-dynamical mass claim. The PDF should give them with that caveat.\n\nLeft out on purpose, for the PDF:\n- the odds figures (which have no e-notation precedent in the corpus);\n- K1/K2, the 832 nm contrast, sigma values and method details.\n\nNot included: no AI mention (0 precedents in 33,156 notes; disclosure is handled in the PDF), no signature or email (ExoFOP shows the username), and no double-quote character for arcsec, which the ExoFOP export mangles. \"<\" is written as \"below\".\n\nBefore posting: replace [file/tag] with the actual data tag and/or the PDF filename once uploaded."
+  },
+  "draft:3": {
+   "note": "CTOI 71316387.01 is an eclipsing binary at twice the CTOI period, not a planet. EB ephemeris (TESS-SPOC S1/28/68, TESScut S95/105/106): P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018; the CTOI epoch is a secondary eclipse. Depths alternate (5770/2600 ppm), deeper on the same parity in all six sectors. The G star is not in the EB: its Gaia DR3 RV is constant (-6.07 +/- 0.86 km/s over 946 d; an EB partner would give K of 18 km/s or more). Colour-corrected TESS difference-image centroids place the source within 1.24 arcsec of the G star (95%), excluding resolved Gaia neighbours (18-55 arcsec). Shallower SuperWASP and deeper NEOWISE W1 eclipses suggest an early-M eclipsed star. It is probably an unresolved ~M2V + ~M4V pair with ~2.6% of the TESS flux, likely bound in a hierarchical triple (chance alignment disfavoured by a factor ~1000-10000, prior-dependent) but unconfirmed. We suggest FP (blended EB). AO/speckle could resolve the pair (predicted delta-Ks ~2.6 mag, delta-mag ~3.8 at 832 nm; separation likely below 0.9, possibly below 0.1 arcsec); a second epoch or M-dwarf RVs would test association. Full report and figures uploaded under [file/tag].",
+   "chars": 1197,
+   "rationale": "Length: 1197 characters, measured with Python (ASCII only, so it is also 1197 bytes). It is one paragraph of 10 sentences. That sits at the top of the 650-1200 range the closest-analogue study gives for multi-part EB and source-attribution notes (median 916, IQR 804-1375). It is longer than the 450-900 range for single-thread notes, as expected for a note making five separate arguments. It stays below the ~1,300-1,800 level where community notes start to read like reports and have needed corrections.\n\nStructure follows the TFOP/community house style:\n1. Verdict and 2x period in the first sentence, with the CTOI named.\n2. Ephemeris: P and T0 with errors in BJD_TDB, and the source products/sectors.\n3. Evidence, one clause and one number each, strongest first: alternating depths on the same parity in all six sectors; the constant Gaia DR3 RV against the K of 18 km/s or more required if the G star were eclipsed; the colour-corrected centroid within 1.24 arcsec (95%), with resolved neighbours explicitly excluded (the lesson of the sabin retraction); the SuperWASP/W1 colour of the eclipses.\n4. Hedged interpretation: 'probably', 'likely', 'prior-dependent', 'unconfirmed'.\n5. Suggested disposition, worded as 'We suggest FP (blended EB)', not SG1 'Retired as'/'Master Disp'.\n6. Concrete follow-up with predicted contrasts and separation.\n7. A pointer to the upload, with the [file/tag] placeholder.\n\nEvery number comes from the verified/audited facts:\n- P 1.30367228 +/- 0.00000019 d.\n- T0 BJD_TDB 2460165.67042 +/- 0.00018.\n- 5770/2600 ppm.\n- RV -6.07 +/- 0.86 km/s over 946 d (no '15 epochs' wording).\n- K1 of 18 km/s or more.\n- 1.24 arcsec (95%).\n- Gaia neighbours at 18-55 arcsec.\n- ~2.6% light fraction.\n- M1-M2.5V + M4-M4.5V types.\n- Odds 1e3-1e4, written as plain numbers with the direction stated.\n- delta-Ks ~2.6 and ~3.8 mag at 832 nm.\n- Separation below 0.9 / 0.1 arcsec.\n\nThe ephemeris uses only TESS-SPOC and TESScut times. No QLP S103-105 time stamps are used, so the barycentric bug does not affect it and the note does not need to mention it. Saying that the CTOI epoch is a secondary eclipse stops observers scheduling on the CTOI ephemeris.\n\nDeliberately left out:\n- Masses: they are not dynamical and are better in the PDF, so only model-based spectral types are given, hedged.\n- Undiluted depths, K1/K2 predictions, the Gaia IPD diagnostics, the drift of the CTOI ephemeris, and method details. All of these go in the PDF.\n\nFormatting and other conventions:\n- No double-quote or '<'/'>' characters, which avoids the export and HTML problems found in the corpus. Units are written 'arcsec', '+/-' and 'delta-Ks'; there is no Unicode and no Markdown.\n- No signature, email or AI mention (the corpus has no precedent for AI disclosure; per the brief, disclosure goes in the PDF).\n\nDraft versions are saved in <scratch>/obsnote/wf/note_draft/ (the final one is v6.txt). Nothing was posted or submitted, and no repo files were changed."
+  },
+  "judge:2": {
+   "scores": [
+    {
+     "draft": 0,
+     "accuracy": 7,
+     "style_fit": 8,
+     "clarity": 7,
+     "length_fit": 9,
+     "professionalism": 8,
+     "total": 39,
+     "issues": [
+      "'(TESS-SPOC/TESScut, S1-S106)' reads as a contiguous run of sectors. Only six were used (TESS-SPOC S1/28/68, TESScut S95/105/106); list them.",
+      "The RV clause '15 RVS transits over 946 d' gives no constancy statistic, so 'constant' rests on assertion. Add rv_chisq_pvalue 0.28, or the K >= 18 km/s comparison from Draft 2.",
+      "'Suggest FP/EB' uses a slash and is ambiguous. 'Suggest FP (blended EB)' reads as a clear community suggestion in TFOP vocabulary.",
+      "'(chance alignment improbable)' gives no magnitude. That is acceptable for the TFOP register, but it loses the prior-dependent ~10^3-10^4 information.",
+      "'[file/tag]' is a placeholder and must become a real filename or tag.",
+      "There is a raw newline before 'To confirm:'. It must be entered as an editor line break or <br>; a bulk .txt upload would lose it.",
+      "It omits the 832 nm contrast (~3.8 mag), which is the useful number for optical speckle (Zorro/HRCam).",
+      "Strengths: verdict first, plain one-paragraph TFOP prose plus a next-step line, the 'MS-model estimates, not dynamical' hedge, 'No G-star PRV needed', ASCII only, arcsec spelled out, and 894 chars, inside the 450-900 professional range."
+     ]
+    },
+    {
+     "draft": 1,
+     "accuracy": 7,
+     "style_fit": 6,
+     "clarity": 8,
+     "length_fit": 9,
+     "professionalism": 7,
+     "total": 37,
+     "issues": [
+      "'Alternating depths of 5770 and 2600 ppm ... in all six sectors' implies those exact depths in every sector. They are on the S68 PDCSAP scale and vary by +/-8% (S1/S28 are 5-8% deeper). Say instead that the deeper eclipse falls on the same parity in all six sectors.",
+      "The inline '(1)...(4)' numbered evidence list is the 2025-26 independent-vetter format (bermudez-like). The TFOP-style research flags it as standing out against professional prose. This is a mixed signal at best.",
+      "It drops the caveat that the pair's types and the 2.6% light fraction are main-sequence-model estimates, not dynamical. That leaves the inference less hedged than in Drafts 0 and 2.",
+      "'(TESS-SPOC/TESScut)' names no sectors, so readers cannot tell which data set the ephemeris rests on.",
+      "'Needed:' is a terse label in the imperative. 'Would confirm' or 'Requesting' matches the community register better.",
+      "It does not say what is not needed (no G-star PRV), and gives no 832 nm contrast for optical speckle.",
+      "'[file/tag]' is a placeholder.",
+      "Strengths: compact, easy to scan, the 'chi2 p = 0.28' RV-constancy number, 'Suggest FP (blended EB)', and 898 chars, in range."
+     ]
+    },
+    {
+     "draft": 2,
+     "accuracy": 8,
+     "style_fit": 7,
+     "clarity": 7,
+     "length_fit": 5,
+     "professionalism": 8,
+     "total": 35,
+     "issues": [
+      "At 1197 chars it is above the 450-900 range from two of the three style studies (about the 97th percentile of the corpus). It sits at the ceiling of the multi-part-analogue range. Trim about 250-300 chars.",
+      "'-6.07 +/- 0.86 km/s over 946 d' presents the uncertainty of the mean RV as if it showed constancy. Per-transit scatter is about 2.6 km/s, and the constancy evidence is rv_chisq_pvalue 0.28 from 15 RVS transits (12 visibility periods). Quote that instead, or drop the RV value.",
+      "'probably an unresolved ~M2V + ~M4V pair' gives specific spectral types without saying they are main-sequence-relation estimates (not dynamical).",
+      "'possibly below 0.1 arcsec' adds little and could discourage AO requests. The posterior inside 0.1 arcsec is under 2% to 30%, depending on the IPD assumption. Optional to keep.",
+      "The two sentences that split the colour evidence from the pair interpretation are slightly redundant and could merge.",
+      "'[file/tag]' is a placeholder.",
+      "Strengths: the most complete and accurate content, with explicit sectors, the K >= 18 km/s argument, the resolved-neighbour separations (18-55 arcsec), the 832 nm contrast, and odds in words with 'prior-dependent'. It uses 'We suggest FP (blended EB)', is plain prose, and is ASCII only."
+     ]
+    }
+   ],
+   "best": 0,
+   "graft": [
+    "From Draft 2: replace 'S1-S106' with the explicit data set '(TESS-SPOC S1/28/68, TESScut S95/105/106)'.",
+    "From Draft 2: the short physical argument 'an EB partner would give K >= 18 km/s'. Pair it with Draft 1's constancy statistic '(chi2 p = 0.28)' instead of quoting -6.07 +/- 0.86 km/s.",
+    "From Draft 2: 'deeper on the same parity in all six sectors' for the odd-even evidence. It is robust and avoids implying fixed depths per sector.",
+    "From Draft 2: 'resolved Gaia neighbours (18-55 arcsec) excluded'. Naming the separations answers the sabin-retraction concern about catalogued neighbours.",
+    "From Draft 2: add 'delta-mag ~3.8 at 832 nm' next to 'delta-Ks ~2.6 mag' so optical speckle teams (Zorro/HRCam) have their number.",
+    "From Draft 2 (optional): 'chance alignment disfavoured by ~1000-10000 (prior-dependent)', in place of Draft 0's bare 'improbable', written in words or plain numbers with no e-notation.",
+    "From Drafts 1/2: 'Suggest FP (blended EB)', or 'Suggest FP (blended EB, likely hierarchical triple)', in place of 'FP/EB'.",
+    "Keep from Draft 0: '(MS-model estimates, not dynamical)', 'No G-star PRV needed', and the separate final line holding the follow-up request.",
+    "Optional, from the fact sheet: one clause saying the CTOI ephemeris runs ~5 min late by Nov 2026, so observers should schedule on the EB ephemeris."
+   ],
+   "must_fix": [
+    "Replace the '[file/tag]' placeholder with the real attachment name in ExoFOP pattern, e.g. TIC71316387.01O-<initials>20261016-EB-vetting.pdf, or with 'attached under this tag', and use one named tag (e.g. 20261016_<username>_EBvetting_71316387) for both the note and the files.",
+    "Do not write 'S1-S106'. State the six sectors and products: TESS-SPOC S1/28/68 and TESScut S95/105/106.",
+    "RV wording: base 'constant' on '15 Gaia RVS transits (12 visibility periods) spanning 946 d, chi2 p = 0.28'. Do not present +/-0.86 km/s as the scatter, and do not say '15 epochs'.",
+    "Keep the hedge that the early-M + mid-M (~M2V + ~M4V) types and the ~2.6% light fraction are main-sequence-model estimates, not dynamical. Keep the triple as 'likely ... unconfirmed'.",
+    "Do not imply the 5770/2600 ppm depths hold in every sector; they are on the S68 PDCSAP scale, +/-8% between sectors and products.",
+    "Keep the final length at about 800-950 characters, in one paragraph plus at most one line break before the request or filename line. Do not grow toward 1200.",
+    "Suggest the disposition rather than decree it: 'Suggest FP (blended EB)'. No 'Retired as' or 'Master Disp' syntax, and no slash form 'FP/EB'.",
+    "ASCII only: write 'arcsec' or '' (never \"), 'below 0.9 arcsec' rather than '<0.9', and +/- rather than the plus-minus sign. Type or paste the note as plain text, not from a chat window. Enter the line break with the editor, or as <br> in a bulk .txt.",
+    "Use only the adopted ephemeris P = 1.30367228 +/- 0.00000019 d and T0 = BJD_TDB 2460165.67042 +/- 0.00018. Never use the QLP-S105-biased 1.3036712 d / 2460165.6697. Leave the QLP S103-105 time-stamp issue out of this note, except an optional clause that no QLP times were used.",
+    "Whether to disclose AI assistance is the user's decision. If they do, use one neutral clause at the end, e.g. 'Analysis by <name> with AI-assisted code (Claude Code); full methods in attached report.'"
+   ]
+  },
+  "judge:1": {
+   "scores": [
+    {
+     "draft": 0,
+     "accuracy": 7,
+     "style_fit": 8,
+     "clarity": 7,
+     "length_fit": 8,
+     "professionalism": 8,
+     "total": 38,
+     "issues": [
+      "'(TESS-SPOC/TESScut, S1-S106)' reads as continuous coverage of S1 to S106. The ephemeris uses only six sectors: TESS-SPOC S1/28/68 and TESScut S95/105/106. Name them; this also shows that no QLP S103-105 times were used.",
+      "'put the source within 1.24 arcsec (95%)' does not say what the distance is measured from. It should read 'of the G star'.",
+      "The AO/speckle request leaves out 'possibly below 0.1 arcsec'. 20-30% of the separation posterior lies inside 0.1 arcsec if the IPD signal is not the pair's, so without the caveat a null AO result could be over-read as refuting the scenario.",
+      "It gives only delta-Ks ~2.6 mag, which applies to NIR AO. Optical speckle needs Delta-m(832 nm) ~3.8 mag.",
+      "The RV argument is not quantified. 'Constant (15 RVS transits over 946 d)' gives no scale. Adding chi2 p = 0.28 or 'an EB partner would give K >= 18 km/s' would make the exclusion self-evident.",
+      "'The G star is not the EB' is loose. Better: 'not a component of the EB'.",
+      "'Chance alignment improbable' drops the direction and size of the odds (~1000-10000, prior-dependent). This is acceptable but weaker than draft 2.",
+      "The [file/tag] placeholder is unfilled.",
+      "The second paragraph needs an editor line break (Enter or <br>). That is fine, but keep it to one break.",
+      "Strengths: verdict first, correct P/T0 in BJD_TDB, the CTOI epoch identified as the EB secondary, the good hedge '(MS-model estimates, not dynamical)', the effort statement 'No G-star PRV needed', and ASCII only with no double-quote or '<' characters."
+     ]
+    },
+    {
+     "draft": 1,
+     "accuracy": 7,
+     "style_fit": 7,
+     "clarity": 8,
+     "length_fit": 8,
+     "professionalism": 7,
+     "total": 37,
+     "issues": [
+      "The ephemeris source '(TESS-SPOC/TESScut)' names no sectors. Only '(1) ... in all six sectors' implies the count later.",
+      "'Alternating depths of 5770 and 2600 ppm ... in all six sectors' reads as if those values hold in each sector. Per-sector primary depths vary about +/-8% (S1/S28 ~6200 ppm; 5770/2600 is the S68 PDCSAP scale). The verified wording is 'deeper eclipse on the same parity in all six sectors'.",
+      "There is no main-sequence caveat on '~2.6% of TESS flux'. 'Colours and shape suggest' overstates the shape: shape alone gives only a lower limit (>2.2%), and 2.6% needs the MS prior.",
+      "There is no chance-alignment statement at all. 'Likely a bound hierarchical triple' carries no basis or prior dependence.",
+      "It omits 'possibly below 0.1 arcsec' and the Delta-m(832 nm) ~3.8 mag contrast that speckle observers need.",
+      "'Needed:' implies the follow-up is required for the FP verdict. It is needed only to confirm the triple, so 'To confirm:' (draft 0) is better.",
+      "The RV exclusion lacks the K >= 18 km/s scale. 'chi2 p = 0.28' (0.275) is correct but jargon-ish.",
+      "Inline (1)-(4) numbering fits the 2026 community style (bermudez) but less so TFOP prose.",
+      "There is no effort statement (e.g. no G-star PRV needed).",
+      "The [file/tag] placeholder is unfilled.",
+      "Strengths: 'within 1.24 arcsec of the G star (95%)' and 'resolved Gaia neighbours excluded' are precise. The note is easy to scan and correctly states that the CTOI epoch is a secondary eclipse."
+     ]
+    },
+    {
+     "draft": 2,
+     "accuracy": 9,
+     "style_fit": 7,
+     "clarity": 8,
+     "length_fit": 6,
+     "professionalism": 8,
+     "total": 38,
+     "issues": [
+      "At 1197 chars it sits at the ceiling of the widest recommended range (650-1200) and above the 450-900 ranges, around the 95th+ percentile of the corpus. Trim about 200-250 chars, e.g. condense the RV parenthetical, merge the colour sentence into the pair sentence, and shorten the follow-up clause.",
+      "'constant (-6.07 +/- 0.86 km/s over 946 d ...)' presents the median RV and its uncertainty as if it were the constancy measure. The per-transit scatter is ~2.6 km/s and rv_amplitude_robust is 9.9 km/s. Either drop the value or label it 'mean RV', and state the constancy as '15 RVS transits over 946 d, chi2 p = 0.28' together with the K >= 18 km/s comparison, which is correct.",
+      "'Shallower SuperWASP and deeper NEOWISE W1 eclipses suggest an early-M eclipsed star' over-attributes. Those ratios alone give Teff ~4040 (+330/-280) K, roughly K7-M0. The M1.5-M2.5 type comes mainly from the TESS centroid colour shift (BP-RP ~2.3), which the note does not mention. Say 'eclipse colours (TESS centroid colour shift, SuperWASP, W1) indicate a red, early-M eclipsed star' or 'consistent with'.",
+      "'~M2V + ~M4V pair with ~2.6% of the TESS flux' has no main-sequence-model caveat; only 'probably' hedges it. Graft draft 0's '(MS-model estimates, not dynamical)'.",
+      "There is no effort statement. Draft 0's 'No G-star PRV needed' is useful to TFOP schedulers.",
+      "The [file/tag] placeholder is unfilled.",
+      "Long, dense sentences. The pair/triple sentence carries three hedges and a parenthetical.",
+      "Strengths: every number matches the verified facts. The sectors are explicit, so the ephemeris is visibly free of QLP S103-105 times. It has the same-parity statement, the K >= 18 km/s argument, both contrasts (delta-Ks 2.6, 832 nm 3.8), the 'likely below 0.9, possibly below 0.1 arcsec' caveat, plain-number odds whose direction is clear and marked prior-dependent, 'We suggest FP (blended EB)', and 'a second epoch or M-dwarf RVs would test association'. It is ASCII only."
+     ]
+    }
+   ],
+   "best": 2,
+   "graft": [
+    "From draft 0: '(MS-model estimates, not dynamical)' after the pair/light-fraction clause. It keeps the 2.6% and the M2V+M4V types as inferences.",
+    "From draft 0: the effort statement 'No G-star PRV needed', as TFOP notes do ('No more TRES recon spectra are needed').",
+    "From draft 0: the 'To confirm:' framing, which separates the established EB/FP verdict from the triple confirmation (better than draft 1's 'Needed:').",
+    "From draft 1: 'within 1.24 arcsec of the G star (95%)' and 'chi2 p = 0.28' as the compact RV-constancy statistic. Pair it with draft 2's 'an EB partner would give K >= 18 km/s'.",
+    "From draft 1: the order of evidence (alternation, RV, centroid, colours). It can stay as prose; there is no need for the (1)-(4) numbering if a TFOP register is wanted.",
+    "From draft 2: the explicit sector list '(TESS-SPOC S1/28/68, TESScut S95/105/106)' in place of 'S1-S106'. It quietly shows that no QLP S103-105 times are in the ephemeris, so no QLP caveat is needed.",
+    "From draft 2: 'deeper on the same parity in all six sectors' (verified, 11-18 sigma per sector) in place of implying fixed per-sector depths.",
+    "From draft 2: both contrasts, 'delta-Ks ~2.6 mag (NIR AO), Delta-m(832 nm) ~3.8 mag (speckle)', and 'separation likely below 0.9, possibly below 0.1 arcsec'.",
+    "From draft 2: 'chance alignment disfavoured by a factor ~1000-10000, prior-dependent', stated in plain numbers with the direction explicit.",
+    "From draft 2: 'a second epoch or M-dwarf RVs would test association'. This states the purpose of each follow-up.",
+    "Optional (about 60 chars): 'use this ephemeris; the CTOI ephemeris is ~5 min late by Nov 2026'. This helps observers who would otherwise schedule on the CTOI epoch, which is a secondary eclipse.",
+    "Optional and the user's decision: one neutral provenance clause, e.g. 'Independent analysis of public TESS, Gaia, SuperWASP and NEOWISE data, AI-assisted (Claude Code); full methods attached.' The corpus has no precedent for this, so keep it to one clause or leave it out."
+   ],
+   "must_fix": [
+    "Replace the [file/tag] placeholder with the real tag and file name (e.g. tag 20261016_<username>_EBvetting_71316387 and file TIC71316387.01O-<initials>20261016-EB-vetting.pdf), or drop the line if nothing is uploaded.",
+    "Trim the final note to about 900-1000 chars, with 1200 as the hard ceiling. Keep it one paragraph, optionally with one line break before the follow-up sentence.",
+    "Name the six sectors and pipelines behind the ephemeris (TESS-SPOC S1/28/68, TESScut S95/105/106); do not write 'S1-S106'. Keep exactly P = 1.30367228 +/- 0.00000019 d and T0 = BJD_TDB 2460165.67042 +/- 0.00018 (primary). Never use the QLP-S105-biased early-vetting values 1.3036712 / 1.303671 d / 2460165.6697.",
+    "Do not present '-6.07 +/- 0.86 km/s' as the constancy evidence. That is the median RV and its uncertainty. State the constancy as 15 Gaia RVS transits over 946 d (chi2 p = 0.28) versus K >= 18 km/s expected for any EB partner. Do not write '15 epochs'.",
+    "Attribute the early-M type to the combined colour evidence, including the TESS centroid colour shift (BP-RP ~2.3), or soften it to 'consistent with'. SuperWASP/W1 alone indicate only ~4000 K.",
+    "Mark the ~2.6% light fraction and the ~M2V + ~M4V types as main-sequence-model estimates (shape alone gives only >2.2%; masses not dynamical).",
+    "Keep 'within 1.24 arcsec of the G star (95%)' and 'possibly below 0.1 arcsec' in the AO request, so a null AO detection is not read as refuting the scenario. If speckle is requested, give Delta-m(832 nm) ~3.8 mag as well as delta-Ks ~2.6 mag.",
+    "Keep the triple hedged ('likely ... unconfirmed') and the odds in plain numbers with explicit direction and 'prior-dependent'. No e-notation, no 'odds ~1e3-1e4'.",
+    "Stay ASCII: 'arcsec' and '+/-', with no double-quote character for arcsec and no bare '<' (write 'below'). Use 'Suggest FP (blended EB)', not TFOPWG 'Retired as' or 'Master Disp' syntax."
+   ]
+  },
+  "judge:3": {
+   "scores": [
+    {
+     "draft": 0,
+     "accuracy": 8,
+     "style_fit": 8,
+     "clarity": 7,
+     "length_fit": 9,
+     "professionalism": 8,
+     "total": 40,
+     "issues": [
+      "'(TESS-SPOC/TESScut, S1-S106)' suggests continuous coverage of S1-S106 and spans the QLP-affected S103-105. The target was observed only in S1, S28, S68, S95, S105 and S106; list them so a reader who knows the QLP barycentre bug can see that no QLP times were used.",
+      "'To confirm: NIR AO/speckle (delta-Ks ~2.6 mag, likely below 0.9 arcsec)' does not say what is below 0.9 arcsec (the separation). It also leaves out 'possibly below 0.1 arcsec', so an AO non-detection could be misread as ruling out the scenario.",
+      "'Likely a bound hierarchical triple (chance alignment improbable)' gives no number or direction. A skeptical reader will ask what 'likely' is based on.",
+      "'Suggest FP/EB' is ambiguous: FP or EB? 'Suggest FP (blended EB)' is clearer and uses TFOP wording.",
+      "The Gaia RV is called 'constant' with no constancy statistic (rv_chisq_pvalue 0.28) and no K argument (>= 18 km/s for a >= 0.1 Msun partner). '15 RVS transits over 946 d' is correctly worded.",
+      "Leaves out the 832 nm contrast (~3.8 mag), which the Gemini speckle observers (SG3) would use.",
+      "Writes 'W1' without naming NEOWISE.",
+      "Placeholder '[file/tag]' is unfilled.",
+      "Strengths: concise (894 chars), ASCII-only, flags the MS-model estimates as 'not dynamical', and 'No G-star PRV needed' helps SG2 set priorities."
+     ]
+    },
+    {
+     "draft": 1,
+     "accuracy": 8,
+     "style_fit": 7,
+     "clarity": 8,
+     "length_fit": 9,
+     "professionalism": 8,
+     "total": 40,
+     "issues": [
+      "The inline numbered list (1)-(4) reads like the 2025-26 automated vetting notes rather than TFOP analytic prose. It is acceptable (bermudez precedent) but less professional in register.",
+      "'Alternating depths of 5770 and 2600 ppm (phase 0.5) in all six sectors' implies the same depths in every sector. Depths vary by about +/-8% between sectors and products (5770/2600 is the S68 PDCSAP scale). What holds in all six sectors is that the deeper eclipse falls on the same parity.",
+      "'Likely a bound hierarchical triple, unconfirmed' gives no basis for 'likely', because the chance-alignment odds were dropped.",
+      "Drops the caveat that the M-dwarf pair and the 2.6% light fraction are main-sequence-model estimates, not dynamical.",
+      "'Needed:' reads as if AO/CPM/RVs were required for the disposition. They are only needed to confirm the triple; the FP/EB conclusion stands without them.",
+      "Leaves out 'possibly below 0.1 arcsec' and the 832 nm contrast.",
+      "The ephemeris source is 'TESS-SPOC/TESScut' with no sector list.",
+      "Placeholder '[file/tag]' is unfilled. No statement that G-star PRV is not needed.",
+      "Strengths: 'chi2 p = 0.28' quantifies RV constancy; 'NEOWISE W1' is named; the evidence is easy to scan; 898 chars."
+     ]
+    },
+    {
+     "draft": 2,
+     "accuracy": 9,
+     "style_fit": 8,
+     "clarity": 8,
+     "length_fit": 7,
+     "professionalism": 9,
+     "total": 41,
+     "issues": [
+      "1197 chars is at the top of the acceptable range and above the 450-900 professional target. Trim about 200-300 chars, e.g. drop the mean RV value and shorten the colour sentence.",
+      "'-6.07 +/- 0.86 km/s over 946 d' is the mean RV and its error, not a test of constancy. Add or replace with the constancy statistic (15 RVS transits, rv_chisq_pvalue 0.28).",
+      "'an EB partner would give K of 18 km/s or more' should be qualified: '(>= 0.1 Msun partner)'.",
+      "'AO/speckle could resolve the pair' is ambiguous. The M+M pair itself (a ~0.02 au orbit) cannot be resolved. The point is to detect the pair as a companion to the G star.",
+      "'~M2V + ~M4V pair with ~2.6% of the TESS flux' lacks the 'main-sequence-model estimate, not dynamical' caveat.",
+      "'excluding resolved Gaia neighbours (18-55 arcsec)' can be read as 'only these were checked'. Given the sabin retraction, say 'all resolved Gaia sources excluded (nearest at 18 arcsec)'. The localisation excludes anything at 1.5 arcsec or more.",
+      "Placeholder '[file/tag]' is unfilled. No statement that further G-star PRV is not needed.",
+      "Strengths: names the exact sectors and pipelines, which answers the QLP S103-105 concern; same-parity alternation in all six sectors; the K argument; odds stated with explicit direction and 'prior-dependent'; the 832 nm contrast; 'possibly below 0.1 arcsec'; 'We suggest FP (blended EB)'; hedged single-paragraph TFOP-like prose; ASCII-only."
+     ]
+    }
+   ],
+   "best": 2,
+   "graft": [
+    "From Draft 0: '(MS-model estimates, not dynamical)' after the M-dwarf pair and light fraction.",
+    "From Draft 0: 'No further PRV of the G star is needed' (helps SG2 priorities), phrased as a suggestion.",
+    "From Draft 1: quantify RV constancy as '15 Gaia RVS transits over 946 d, rv_chisq_pvalue 0.28' instead of quoting the mean RV -6.07 +/- 0.86 km/s. This also saves characters.",
+    "From Draft 1: keep 'NEOWISE W1' rather than a bare 'W1'.",
+    "From Draft 1: the compact opening sentence that carries the verdict, P, T0 and 'the CTOI epoch is a secondary eclipse' together.",
+    "From Draft 2: the explicit sector/pipeline list 'TESS-SPOC S1/28/68, TESScut S95/105/106', which shows no QLP times were used.",
+    "From Draft 2: 'deeper on the same parity in all six sectors' rather than implying identical depths per sector.",
+    "From Draft 2: direction-explicit odds 'chance alignment disfavoured by a factor ~1000-10000 (prior-dependent)', in words, not e-notation.",
+    "From Draft 2: 'separation likely below 0.9, possibly below 0.1 arcsec' and 'delta-mag ~3.8 at 832 nm' for speckle observers.",
+    "New: 'observers should use this ephemeris; the CTOI ephemeris runs ~5 min late by Nov 2026' (optional, short).",
+    "New: 'all resolved Gaia sources excluded (nearest 18 arcsec)' instead of a distance range that implies a limited search.",
+    "Decision for the user: whether to add one neutral AI-assistance clause at the end. There is no precedent in the corpus, so keep it to one short line if used."
+   ],
+   "must_fix": [
+    "Replace the '[file/tag]' placeholder with the real tag (e.g. 20261016_<username>_EBvetting_71316387) and the ExoFOP-pattern filename (e.g. TIC71316387.01O-<initials>20261016-EB-vetting.pdf). If nothing will be uploaded, delete the sentence; do not promise attachments that do not exist.",
+    "State the ephemeris data explicitly as TESS-SPOC S1/S28/S68 + TESScut S95/S105/S106. Never write 'S1-S106', and never use the superseded QLP-biased ephemeris (P = 1.3036712 d / T0 = 2460165.6697).",
+    "Keep P = 1.30367228 +/- 0.00000019 d and T0 = BJD_TDB 2460165.67042 +/- 0.00018 (time system labelled), plus 'the CTOI epoch is an EB secondary eclipse'.",
+    "Label the M-dwarf pair, the 2.6% light fraction, the contrasts and the separation as main-sequence-model predictions (not dynamical). Keep 'likely ... unconfirmed' for the triple.",
+    "Give the basis for 'likely bound' with direction-explicit odds in words or plain numbers (chance alignment disfavoured by ~1000-10000, prior-dependent). No e-notation.",
+    "Quantify RV constancy with the constancy statistic (15 RVS transits over 946 d, rv_chisq_pvalue 0.28) and/or 'K >= 18 km/s for a >= 0.1 Msun partner'. Do not present the mean RV error as proof of constancy, and do not call the 15 transits epochs.",
+    "Word the AO request as detecting the M-dwarf pair as a companion to the G star (not 'resolving the pair'). Include 'possibly below 0.1 arcsec' so a non-detection is not read as a refutation.",
+    "Present the disposition as a suggestion in TFOP vocabulary: 'Suggest FP (blended EB, likely hierarchical triple)'. Not 'FP/EB', and no 'Retired as' or 'Master Disp'.",
+    "Present follow-up as needed to confirm the triple, not to establish the FP.",
+    "Stay ASCII-only: write 'arcsec' and 'below', not the double-quote character or '<'. No Unicode, no Markdown, and do not paste from a chat window.",
+    "Target length about 700-1000 chars. Trim Draft 2's 1197 chars, e.g. by replacing the mean RV value with the p-value and merging the colour and pair sentences."
+   ]
+  },
+  "final:synthesise": {
+   "note": "CTOI 71316387.01 is an EB at 2x the CTOI period, not a planet: P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018 (TESS-SPOC S1/28/68, TESScut S95/105/106); the CTOI epoch is a secondary eclipse. Depths 5770/2600 ppm, deeper on the same parity in every sector. The G star is not in the EB: Gaia DR3 RV constant over 946 d (15 RVS transits, chi2 p = 0.28) vs K of 18 km/s or more if it were. Colour-corrected difference-image centroids put the EB within 1.24 arcsec of the G star (95%); resolved Gaia neighbours excluded. Eclipse colours (TESS centroid shift, SuperWASP, NEOWISE W1) suggest an ~M2V + ~M4V pair with ~2.6% of TESS flux (MS-model estimates). Likely a bound triple (chance alignment disfavoured ~1000-10000x, prior-dependent), unconfirmed. Suggest FP (blended EB).\nTo confirm: AO/speckle (delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag; likely within 0.9, possibly within 0.1 arcsec), then CPM or M-dwarf RVs. No G-star PRV needed. Report and figures: [file/tag].",
+   "chars": 998,
+   "changes": [
+    "Started from draft 0 (894 chars). The final note is 998 chars including the one line break. It is pure ASCII: no double-quote character, no '<' or '>', no Unicode, no Markdown, no e-notation. Checked with Python; saved at <scratch>/obsnote/wf/final/note_final.txt. Earlier trims are v1-v7 in the same folder, starting from a 1286-char merge.",
+    "Merged the verdict and the ephemeris into the opening sentence, following draft 1's compact opener: 'is an EB at 2x the CTOI period, not a planet: P = 1.30367228 +/- 0.00000019 d, primary T0 = BJD_TDB 2460165.67042 +/- 0.00018'. These are the exact adopted values. The QLP-biased 1.3036712 d and 2460165.6697 appear nowhere.",
+    "Replaced 'S1-S106' with the exact data set '(TESS-SPOC S1/28/68, TESScut S95/105/106)', grafted from draft 2. This shows no QLP S103-105 time stamps went into the ephemeris, so the note needs no QLP caveat.",
+    "Kept 'the CTOI epoch is a secondary eclipse'. Verified: cycle -842.4995, +0.2 +/- 0.6 min. It stops observers scheduling on the shallow eclipse.",
+    "Depths: 'Depths 5770/2600 ppm, deeper on the same parity in every sector', from draft 2's same-parity wording. It no longer implies fixed depths per sector (depths vary +/-8% between sectors and products).",
+    "RV evidence rewritten per the must-fixes. Constancy now rests on '15 RVS transits' over 946 d with chi2 p = 0.28 (rv_chisq_pvalue 0.275, from draft 1), against 'K of 18 km/s or more if it were' (from draft 2). Removed the mean RV +/- error. Does not say 'epochs'. 'The G star is not the EB' became 'not in the EB'.",
+    "Centroid sentence now reads 'within 1.24 arcsec of the G star (95%)' (draft 1) and keeps 'resolved Gaia neighbours excluded'.",
+    "Colour/pair sentence: the early-M classification is now credited to the combined colour evidence 'Eclipse colours (TESS centroid shift, SuperWASP, NEOWISE W1)', softened to 'suggest'. Named NEOWISE (draft 1). The ~M2V + ~M4V types and the ~2.6% flux fraction are labelled '(MS-model estimates)'. Shape is no longer claimed as support for the 2.6%.",
+    "Triple sentence: 'Likely a bound triple (chance alignment disfavoured ~1000-10000x, prior-dependent), unconfirmed.' The odds are plain numbers with the direction stated (draft 2), replacing 'chance alignment improbable'. Dropped 'hierarchical' to save length.",
+    "Disposition changed from the ambiguous 'Suggest FP/EB' to 'Suggest FP (blended EB)'. No TFOPWG 'Retired as' or 'Master Disp' wording.",
+    "Follow-up line keeps draft 0's 'To confirm:' framing and its single line break. Added both contrasts (delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag), so NIR AO and optical speckle teams each get their number. Added 'likely within 0.9, possibly within 0.1 arcsec', so a null AO result is not read as a refutation. Associating the pair with the G star is now 'then CPM or M-dwarf RVs'. The note does not claim AO can 'resolve the pair'.",
+    "Kept draft 0's effort statement 'No G-star PRV needed.'",
+    "Kept the [file/tag] placeholder as instructed: 'Report and figures: [file/tag].' Replace it before submitting, e.g. with tag 20261016_<username>_EBvetting_71316387 and the file TIC71316387.01O-<initials>20261016-EB-vetting.pdf. If nothing gets uploaded, delete the sentence.",
+    "Left out for length; both are optional and belong in the PDF. (1) The CTOI ephemeris runs ~5 min late by Nov 2026. (2) 'not dynamical' after MS-model estimates.",
+    "No AI-assistance clause was added. The corpus has no precedent, so this is the user's decision. If wanted, append one short clause such as 'Analysis AI-assisted (Claude Code); full methods in report.' That adds about 60 chars, staying within the 1200 ceiling.",
+    "Entry note for the user: type the note into the ExoFOP editor as plain text, not pasted from a chat window. Enter the single break before 'To confirm:' with the editor's Enter key, or as <br> in a bulk .txt upload. Nothing was posted or submitted, and no repo files were modified."
+   ],
+   "file_reference_placeholder": "[file/tag]"
+  },
+  "verify:1": {
+   "issues": [
+    {
+     "quote": "Report and figures: [file/tag].",
+     "problem": "This is still a literal placeholder. If the note is posted as it stands, it points readers to attachments that do not exist. ExoFOP links files only through a shared data tag or a get_file.php link, so the reference has to be the real tag string or filename.",
+     "severity": "blocking",
+     "fix": "Before posting, replace it with the real tag and filename, e.g. 'Report and figures attached under tag 20261016_<user>_EBvetting_71316387 (TIC71316387.01O-<initials>20261016-EB-vetting.pdf)'. If nothing is uploaded, delete the sentence."
+    },
+    {
+     "quote": "Eclipse colours (TESS centroid shift, SuperWASP, NEOWISE W1) suggest an ~M2V + ~M4V pair with ~2.6% of TESS flux (MS-model estimates).",
+     "problem": "This credits the colours with more than they show. (1) Only the TESS colour shift gives about M2 (BP-RP 2.31, M1.5-M2.5). The SuperWASP and W1 depth ratios give an eclipsed-star Teff of 4040 +330/-280 K, i.e. K7-M0, and the final referee says late-K (K5-K7) is 'disfavoured by the TESS colour shift but allowed by the archival depth ratios'. The README also says 'possibly late-K'. (2) The ~M4V secondary, the 2.6% light fraction and the spectral types come mainly from the light-curve shape fitted with main-sequence relations, not from the colours. The campaign's own draft said 'eclipse colours and shape'. The only model-independent result is the lower limit of 2.2% or more from the shape.",
+     "severity": "minor",
+     "fix": "'Eclipse colours (TESS centroid shift, SuperWASP, NEOWISE W1) show a red, early-M (possibly late-K) eclipsed star; the light-curve shape under MS relations gives an ~M2V + ~M4V pair with ~2.6% of TESS flux (>=2.2% from shape alone).'"
+    },
+    {
+     "quote": "Likely a bound triple (chance alignment disfavoured ~1000-10000x, prior-dependent), unconfirmed.",
+     "problem": "The range does not match the final referee's numbers. Baseline variants give 5.1e3-1.4e4 (median 8.2e3), so the baseline median is near the top of the stated range and its upper end goes beyond it. The full set of 160 variants gives 5.8e2-3.8e4, and the worst case is about 200. A floor of '~1000' hides the 200-600 cases, and 'prior-dependent' does not say how far the number can fall.",
+     "severity": "minor",
+     "fix": "'Likely a bound hierarchical triple: a bound companion is favoured over chance alignment by ~5000-14000x for baseline priors (>~200x in the worst case); unconfirmed.' A shorter alternative: '... by of order 10^4 (worst case ~200)'."
+    },
+    {
+     "quote": "Gaia DR3 RV constant over 946 d (15 RVS transits, chi2 p = 0.28) vs K of 18 km/s or more if it were.",
+     "problem": "Each number checks out: rv_chisq_pvalue 0.2751, rv_time_duration 945.6 d, rv_nb_transits 15, and K1 = 17.96 km/s for a 0.1 Msun partner with Mtot 1.13. But the note does not say where 18 km/s comes from: it is the floor for a 0.1 Msun eclipsing partner at sin i ~ 1. It also does not say that the 15 transits fall in only 12 visibility periods (6 of them deblended). A reader who looks up rv_amplitude_robust = 9.9 km/s could take that as variability, although it matches the ~2.6 km/s per-transit noise.",
+     "severity": "minor",
+     "fix": "'Gaia DR3 RV constant (15 RVS transits in 12 visibility periods over 946 d; chi2 p = 0.28), whereas any >=0.1 Msun eclipsing partner would give K >= 18 km/s.'"
+    },
+    {
+     "quote": "Colour-corrected difference-image centroids put the EB within 1.24 arcsec of the G star (95%)",
+     "problem": "1.24 arcsec is the baseline 95.45% limit. It depends on a colour-correction model calibrated on only 13-45 field stars redder than BP-RP 2 (4 beyond 2.7). The shallow-eclipse colour (BP-RP >~ 3) is extrapolated beyond that calibration, and across the 16 analysis variants the 95% limit runs from 1.06 to 1.54 arcsec. Giving one number with no range overstates the precision. 'Centroids' are also really PRF fits to stacked difference images, which is acceptable shorthand.",
+     "severity": "minor",
+     "fix": "'...within 1.24 arcsec of the G star (95%; 1.06-1.54 arcsec across analysis variants; >=1.5 arcsec excluded at p = 0.002)'. Or keep 1.24 and give the variant range in the PDF."
+    },
+    {
+     "quote": "Depths 5770/2600 ppm, deeper on the same parity in every sector.",
+     "problem": "The numbers match the facts (5770 +/- 100, 2600 +/- 55 ppm), and the same-parity claim is confirmed in all six sectors (oddeven.json: deeper parity ph0 in SPOC1/28/68 and TC95/105/106). But the note does not say these are diluted TESS-band depths on the S68 PDCSAP flux scale, with +/-8% between products (S1/S28 are 5-8% deeper, QLP S95/S105 11-26% shallower). It also never labels which number is the primary and which the secondary, or gives the phase of the secondary. An observer comparing them with QLP or with the CTOI depth of 5495 ppm could think they disagree.",
+     "severity": "style",
+     "fix": "'Primary/secondary (phase 0.5) depths 5770/2600 ppm (TESS, diluted; +/-8% between products), the deeper eclipse on the same parity in all six sectors.'"
+    },
+    {
+     "quote": "AO/speckle (delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag; likely within 0.9, possibly within 0.1 arcsec)",
+     "problem": "The contrasts are main-sequence-model predictions for the unresolved pair combined: dKs 2.4-2.8 and d832nm 3.7-4.0, each +/-0.2 mag. The note gives them as plain numbers. '0.9' has no unit of its own, and the 95% bound is 0.79-0.90 arcsec. The note also does not say that a non-detection would not rule the pair out: 20-30% of the posterior lies inside 0.1 arcsec if the Gaia IPD signature is not the pair's, and under 2% if it is.",
+     "severity": "style",
+     "fix": "'AO/speckle (predicted for the pair: delta-Ks ~2.6, delta-m(832 nm) ~3.8 mag, +/-0.2; expected within 0.9 arcsec (95%), most likely 0.15-0.85 arcsec, possibly inside 0.1 arcsec)'."
+    },
+    {
+     "quote": "CTOI 71316387.01 is an EB at 2x the CTOI period, not a planet:",
+     "problem": "The note does not disclose that the analysis was AI-run. The campaign README says 'AI-run analysis; no human has reviewed it yet.' The note will appear under the user's ExoFOP username, and ExoFOP accounts assume work 'at a level consistent with publication in a professional journal'. Readers cannot tell how the analysis was produced or checked. The corpus has no precedent either way, so disclosure is the user's choice, but leaving it out could mislead.",
+     "severity": "minor",
+     "fix": "Add one neutral clause at the end, e.g. 'Analysis performed with AI assistance (Claude Code) and reviewed by <name>; full methods in the attached report.' Only say 'reviewed' if the user has actually reviewed it."
+    },
+    {
+     "quote": "No G-star PRV needed. Report and figures: [file/tag].",
+     "problem": "Format and length. The note is 998 characters, above the 450-900 range that two of the three style studies recommend, though inside the 650-1200 range of the third. It has a bare newline between two paragraphs, which ExoFOP stores only as <br>. The RAVEN source (Lafarga et al. 2026) is not credited, although the conduct policy and courtesy both favour it.",
+     "severity": "style",
+     "fix": "Use the editor's line break, or <br> in a bulk upload. Optionally add 'listed as a RAVEN (Lafarga et al. 2026) high-probability planet'. To save characters, trim e.g. '(MS-model estimates)' and 'deeper on the same parity in every sector', or move the follow-up details into the PDF."
+    }
+   ],
+   "verdict": "Every number in the note matches the verified facts and the raw files: P = 1.30367228 +/- 0.00000019 d; T0 = BJD_TDB 2460165.67042 +/- 0.00018 (from 2460165.6704159); TESS-SPOC S1/28/68 + TESScut S95/105/106, no QLP times; the CTOI epoch is a secondary eclipse (+0.20 +/- 0.59 min); 5770/2600 ppm, with the deeper eclipse on the same parity in all six sectors (oddeven.json); Gaia RV p = 0.2751, 945.6 d, 15 transits; K1 = 17.96 km/s; 1.24 arcsec (95.45%); ~2.6%; dKs 2.6 and d832nm 3.8 inside their predicted ranges; <0.9 arcsec (95% bound 0.79-0.90). The text is plain ASCII, uses no double-quote arcsec marks and is 998 characters long. One blocking item: the '[file/tag]' placeholder must be filled in or removed before posting. The remaining issues are minor overclaims or wording. The note credits the eclipse colours with the ~M2V + ~M4V types and the 2.6% light fraction. In fact those come from the light-curve shape under main-sequence relations, and the archival colours allow a late-K (K7-M0, 4040 K) eclipsed star. The '~1000-10000x' odds range leaves out the ~200 worst case. The 18 km/s floor and the 1.24 arcsec limit need their basis and variant range stated. The AI-run analysis is not disclosed. With the placeholder filled and these fixes made, the note is fit to post."
+  }
+ }
+}

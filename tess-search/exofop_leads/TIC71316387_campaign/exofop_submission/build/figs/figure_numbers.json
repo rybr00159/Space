@@ -1,0 +1,9 @@
+{
+ "model": "msml_msfree_ml.json geom",
+ "model_L3": 0.9724499815347106,
+ "model_depth_primary_ppm": 5779.140875652011,
+ "model_depth_secondary_ppm": 2607.3079366274455,
+ "template_depth_primary_ppm": 5777.962833717719,
+ "template_depth_secondary_ppm": 2614.3349339587476,
+ "chi2": 24857.259919801658
+}

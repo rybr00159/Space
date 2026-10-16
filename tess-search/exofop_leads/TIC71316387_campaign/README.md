@@ -84,13 +84,16 @@ Masses, radii, inclination and light fraction rest on main-sequence assumptions;
   - This tests the M-dwarf nature, not whether the pair is bound.
 - **Gaia DR4 (planned December 2026).** Its epoch photometry should contain the eclipses (~3.6 and ~1.2 mmag in G).
 
-## Draft ExoFOP observing note (final referee's version, for human review)
+## ExoFOP observing note and supporting report
 
-> CTOI 71316387.01 is an EB, not a planet: P=1.3036723 d (2x CTOI P), eclipses 5770/2600 ppm. The G star is not
-> the EB (Gaia RV constant). Colour-corrected TESS centroids put the source within 1.24" (95%); eclipse colours and
-> shape suggest an early-M + mid-M pair giving ~2.6% of TESS flux (dKs~2.6, d832nm~3.8; likely <0.9", possibly
-> <0.1"). Likely a bound triple (chance alignment improbable, odds ~1e3-1e4) but unconfirmed: AO + 2nd-epoch CPM or
-> M-dwarf RVs needed.
+The final observing note and an 8-page supporting PDF report, ready for the account holder to review and post, are in
+[`exofop_submission/`](exofop_submission/), with posting instructions and a review log. Nothing has been posted. The
+note supersedes the final referee's 470-character draft. It follows ExoFOP house style, learned from all 33,156 public
+notes, and was fact-checked again. The review of the report also corrected a few numbers quoted on this page:
+
+- the G star's Gaia FLAME radius is 1.08 R☉ (1.07 is the TIC value);
+- the predicted V-band deep-eclipse depth is a range, 1,600–1,900 ppm;
+- the W1/TESS ratio expected for an eclipsed G/F star reaches 1.35 in the most favourable case.
 
 ## Open issues and caveats
 

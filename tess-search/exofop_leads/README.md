@@ -107,8 +107,9 @@ ExoFOP notes are short. These drafts were written by the referees and checked ag
 - **100918213.01:** True period is twice the CTOI value: P = 0.5128982 d, with alternate eclipses ~5.8 and ~3.2 ppt.
   Difference images in S30/S97/S104/S105 move the source to within ~4″ of Gaia DR3 4964530230474371968 (14″,
   G = 15.7), a Gaia DR3/VSX eclipsing binary with P = 0.512897 d whose epoch matches. Suggest NEB/FP.
-- **71316387.01:** *Superseded by the dedicated campaign in [`TIC71316387_campaign/`](TIC71316387_campaign/), which
-  has the final-referee version of this note. Its main corrections: the source is within 1.24″, not 4″; the
+- **71316387.01:** *Superseded by the dedicated campaign in [`TIC71316387_campaign/`](TIC71316387_campaign/). The
+  final observing note and supporting report, ready to post, are in
+  [`TIC71316387_campaign/exofop_submission/`](TIC71316387_campaign/exofop_submission/). The campaign's main corrections: the source is within 1.24″, not 4″; the
   eclipsing stars are red M dwarfs; a bound triple is favoured.* Original draft: alternate events differ in depth by
   ~2× in every sector (TESS S1, 28, 68, 95, 105). PDCSAP gives ~5,700 vs ~2,700 ppm, > 15σ; the same tests on 6 known
   planets give < 1.1σ. Indicates an EB at P = 1.303671 d, deeper eclipse BJD_TDB 2460165.670. Gaia RVs are constant,
