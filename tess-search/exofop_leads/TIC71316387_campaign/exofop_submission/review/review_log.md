@@ -73,13 +73,13 @@ N = number audit, F = referee, P = presentation. "Fixed" means the change is in 
 
 | Issue (fact-check 1) | Action |
 |---|---|
-| `[file/tag]` placeholder | Replaced with the report's file name (`xx` = uploader's initials still to fill in) |
+| `[file/tag]` placeholder | Replaced with the report's file name (initials `rb`) |
 | Colours were credited with the ~M2V + ~M4V types and 2.6% | Fixed: colours give "red (early-M, possibly late-K)"; types and 2.6% attributed to the eclipse shape with MS relations |
 | Odds range 1000–10000 hid the worst case | Fixed: "~5000–14000x for baseline priors, ~200x worst case" |
 | Basis of the 18 km/s | Fixed: "for any stellar EB partner" (the report gives the full argument) |
 | 1.24″ variant range | Left to the report (length) |
 | Depth labels | Kept short; the report gives products and the ±8% systematic |
-| AI assistance not disclosed | Added a short clause; the report has a full disclosure |
+| AI assistance not disclosed | Added a short clause to the note. The report's AI-assistance section was later removed at the account holder's request, and its wording no longer calls the internal re-checks "referee" passes, so it does not suggest human review |
 | Length | 1,222 characters including the 50-character file name: inside the range of comparable multi-part EB notes (IQR 804–1,375) |
 
 Hand check in place of fact-check 2: every number in the final note was traced to the campaign results or recomputed

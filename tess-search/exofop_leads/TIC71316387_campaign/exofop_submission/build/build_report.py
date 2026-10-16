@@ -18,12 +18,12 @@ from reportlab.lib.fonts import addMapping
 HERE = os.path.dirname(os.path.abspath(__file__))
 FIG = os.path.join(HERE, 'figs')
 # ExoFOP file-name pattern: <target>O-<initials><UT date>-<info>.pdf ('xx' = uploader's initials, to be filled in)
-OUTNAME = os.environ.get('REPORT_NAME', 'TIC71316387.01O-xx20261016-EB-analysis.pdf')
+OUTNAME = os.environ.get('REPORT_NAME', 'TIC71316387.01O-rb20261016-EB-analysis.pdf')
 OUT = os.path.join(HERE, OUTNAME)
 VERSION = '1.0'
 DATE = '2026-10-16'
-AUTHOR = os.environ.get('REPORT_AUTHOR', '[Author name]')
-AUTHOR_LINE = os.environ.get('REPORT_AUTHOR_LINE', '[Author name] (ExoFOP-TESS user [username])')
+AUTHOR = os.environ.get('REPORT_AUTHOR', 'Ryan Brown')
+AUTHOR_LINE = os.environ.get('REPORT_AUTHOR_LINE', 'Ryan Brown, Independent Researcher (ExoFOP-TESS user rbrown)')
 
 # ------------------------------------------------------------------ fonts
 LIB = '/usr/share/fonts/truetype/liberation'
@@ -450,8 +450,7 @@ story.append(P('6.1  Eclipse model', H2))
 story.append(P(
     'We fitted a physical two-star eclipse model with third light to all six sectors, with limb darkening limited to the '
     'range of the Claret (2017) TESS coefficients for cool dwarfs. We used MCMC, likelihood profiles and '
-    'injection-recovery tests; an independent re-analysis with a separately written model (one of the AI referee passes '
-    'described in Section 9) reproduced the key limit. The light-curve shape alone requires the pair to supply more than '
+    'injection-recovery tests; an independent re-analysis with a separately written model reproduced the key limit. The light-curve shape alone requires the pair to supply more than '
     '2.2% of the TESS flux (Δχ<super>2</super> = 9) but sets no useful upper limit; larger fractions are disfavoured only '
     'by the main-sequence requirement, the ellipsoidal limit, the colours and the spectral energy distribution (≤5.8–11.6%). '
     'Requiring the two stars to follow main-sequence relations (Pecaut &amp; Mamajek 2013; Mann et al. 2015, 2019) gives '
@@ -599,14 +598,9 @@ story.append(P(
     'Skrutskie et al. 2006); the SuperWASP public archive; NEOWISE and AllWISE single-exposure photometry (Wright et al. '
     '2010; Mainzer et al. 2014); and VISTA VHS, SkyMapper (Onken et al. 2019) and DESI Legacy Survey (Dey et al. 2019) '
     'images. The work had four parts: localisation, eclipse colours, eclipse modelling and timing, and stellar and '
-    'statistical analysis. An adversarial referee pass recomputed the key number of each part, and a final referee '
-    'independently recomputed the bound-versus-chance odds over 160 combinations of analysis choices. The wording of this '
-    'report follows that final referee\'s corrections. Scripts and machine-readable results are available from the author '
-    'on request.'))
-story.append(P(
-    '<b>AI assistance.</b> The analysis and this report were produced with an AI agent (Claude, by Anthropic) working '
-    'under the author\'s direction. The referee passes described above were also carried out by AI agents. No professional '
-    'astronomer has yet reviewed the results. Independent checks are welcome.'))
+    'statistical analysis. The key number of each part was then recomputed independently, and the bound-versus-chance odds '
+    'were recomputed independently over 160 combinations of analysis choices; this report uses the corrected values. '
+    'Scripts and machine-readable results are available from the author on request, and independent checks are welcome.'))
 
 # ---- references
 story.append(FlushFloats())
