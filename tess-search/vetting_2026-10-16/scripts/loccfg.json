@@ -1,0 +1,59 @@
+{
+ "90086266": {
+  "mode": "eclipse",
+  "P": 2.339469,
+  "t0": 4185.1529,
+  "T14": 0.128,
+  "flat": 0.12,
+  "knot": 1.0,
+  "gaia_id": 6722830841491505536,
+  "gaia": "out/90086266/gaia_4arcmin.csv"
+ },
+ "214311906": {
+  "mode": "eclipse",
+  "P": 5.69149,
+  "t0": 3840.913,
+  "T14": 0.067,
+  "flat": 0.78,
+  "knot": 1.0,
+  "gaia_id": 5925373268528684288,
+  "gaia": "out/214311906/gaia_150arcsec_all.csv",
+  "map_radius": 90,
+  "map_step": 2
+ },
+ "55829034": {
+  "mode": "eclipse",
+  "P": 0.616146,
+  "t0": 3837.8667,
+  "T14": 0.085,
+  "flat": 0.0,
+  "knot": 0.75,
+  "gaia_id": 4038825960551504768,
+  "gaia": "out/55829034/gaia_150arcsec_all.csv",
+  "map_radius": 60,
+  "map_step": 1.5
+ },
+ "61332759": {
+  "mode": "fourier_free",
+  "P": 1.480598,
+  "t0": 3148.7857,
+  "K": 2,
+  "knot": 2.0,
+  "gaia_id": 6711181721954396928,
+  "gaia": "out/61332759/gaia_4arcmin.csv",
+  "map_radius": 150,
+  "map_step": 3
+ },
+ "61141412": {
+  "mode": "eclipse",
+  "P": 6.528604,
+  "t0": 3143.003,
+  "T14": 0.042,
+  "flat": 0.3,
+  "knot": 0.75,
+  "gaia_id": 6712312986277027968,
+  "gaia": "out/61141412/gaia_4arcmin.csv",
+  "map_radius": 90,
+  "map_step": 2
+ }
+}

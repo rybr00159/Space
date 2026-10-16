@@ -1,0 +1,223 @@
+{
+ "tic": 214311906,
+ "P": 5.69148961856133,
+ "t0": 3840.912976069211,
+ "dur_h": 1.4992216556210334,
+ "joint_snr": 16.014797070046367,
+ "second_alias_snr": 14.24078140706619,
+ "per_sector_P": [
+  {
+   "sector": 12,
+   "prov": "QLP",
+   "P": 5.802732370196846,
+   "snr": 5.823078544721707
+  },
+  {
+   "sector": 39,
+   "prov": "QLP",
+   "P": 5.69029141022058,
+   "snr": 6.97000057301613
+  },
+  {
+   "sector": 66,
+   "prov": "QLP",
+   "P": 5.690238741722085,
+   "snr": 7.98066746259104
+  },
+  {
+   "sector": 93,
+   "prov": "QLP",
+   "P": 5.697609499871611,
+   "snr": 6.179693295139817
+  },
+  {
+   "sector": 103,
+   "prov": "QLP",
+   "P": 5.783287838215545,
+   "snr": 8.06027356384792
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "P": 5.689118164553596,
+   "snr": 11.01206437810267
+  }
+ ],
+ "depths": [
+  {
+   "sector": 12,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1353,
+   "err_ppm": 453,
+   "snr": 3.0
+  },
+  {
+   "sector": 12,
+   "prov": "QLP",
+   "col": "KSPSAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1484,
+   "err_ppm": 450,
+   "snr": 3.3
+  },
+  {
+   "sector": 39,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2459,
+   "err_ppm": 439,
+   "snr": 5.6
+  },
+  {
+   "sector": 39,
+   "prov": "QLP",
+   "col": "KSPSAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2512,
+   "err_ppm": 442,
+   "snr": 5.7
+  },
+  {
+   "sector": 66,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2808,
+   "err_ppm": 446,
+   "snr": 6.3
+  },
+  {
+   "sector": 66,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2821,
+   "err_ppm": 444,
+   "snr": 6.4
+  },
+  {
+   "sector": 93,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2493,
+   "err_ppm": 479,
+   "snr": 5.2
+  },
+  {
+   "sector": 93,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2582,
+   "err_ppm": 468,
+   "snr": 5.5
+  },
+  {
+   "sector": 103,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1267,
+   "err_ppm": 289,
+   "snr": 4.4
+  },
+  {
+   "sector": 103,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1422,
+   "err_ppm": 245,
+   "snr": 5.8
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2391,
+   "err_ppm": 203,
+   "snr": 11.8
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2671,
+   "err_ppm": 194,
+   "snr": 13.8
+  }
+ ],
+ "even": [
+  0.002380083714476622,
+  0.00029469398524193904
+ ],
+ "odd": [
+  0.002432461674322206,
+  0.0002634817833695412
+ ],
+ "oddeven_sigma": 0.1324996313400904,
+ "shape": {
+  "dt0": 0.00040330651146345685,
+  "depth": 0.002036767180525743,
+  "depth_err": 0.00013669171052565912,
+  "T14_h": 1.6058076321067483,
+  "T14_err_h": 0.09221012435135423,
+  "flat_frac": 0.7831147534774812,
+  "flat_frac_err": 0.08502890910272272,
+  "dchi2_V": 15.204920697841544,
+  "chi2": 1033.8833643186497,
+  "n": 938
+ },
+ "batman": {
+  "t0": 3840.9136072144065,
+  "rp": 0.04249072701323278,
+  "rp_err": 0.034806785794640055,
+  "aR": 28.835350815597714,
+  "aR_err": 100.86137575756409,
+  "b": 0.07349984261595614,
+  "b_err": 47.74685779411797,
+  "rho": 9.928899133579044,
+  "chi2": 1035.6119760600845,
+  "n": 938
+ },
+ "secondary": {
+  "max_phase": 0.9150000000000007,
+  "max_depth": 0.00038956438827186297,
+  "max_err": 0.00012565851750614033,
+  "max_snr": 3.10018290843537,
+  "at05_depth": 3.581202498388711e-05,
+  "at05_err": 0.00011150140731576522,
+  "snr_rms": 1.2507372493666187,
+  "n_trials": 177
+ },
+ "phase_curve": {
+  "cos1": -1.3788457099911267e-05,
+  "cos1_err": 1.8600253106402907e-05,
+  "sin1": 5.218703550208664e-05,
+  "sin1_err": 1.754936823232867e-05,
+  "cos2": 6.475002763184875e-06,
+  "cos2_err": 1.8418914675407896e-05
+ },
+ "n_events": 20,
+ "event_chi2": 36.67270125728473,
+ "event_dof": 19,
+ "rho_star_catalogue": NaN
+}

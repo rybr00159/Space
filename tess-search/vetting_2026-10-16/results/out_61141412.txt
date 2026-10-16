@@ -1,0 +1,27 @@
+TIC 61141412: P=6.545797 d t0=3136.4461 dur=1.83 h joint S/N 18.9 (next alias 18.8)
+  per-sector P: [(13, np.float64(6.6456), np.float64(10.0)), (27, np.float64(6.53109), np.float64(9.6)), (67, np.float64(6.52853), np.float64(10.7)), (94, np.float64(6.58915), np.float64(36.3)), (104, np.float64(6.52742), np.float64(10.7))]
+ sector      prov         col aper    crowd  depth_ppm  err_ppm  snr
+     13       QLP    SAP_FLUX           NaN         15      130  0.1
+     13       QLP KSPSAP_FLUX           NaN         84      122  0.7
+     13      SPOC    SAP_FLUX      0.980658        104      108  1.0
+     13      SPOC PDCSAP_FLUX      0.980658        160       94  1.7
+     13 TESS-SPOC    SAP_FLUX      0.973514        -52      130 -0.4
+     13 TESS-SPOC PDCSAP_FLUX      0.973514         49      104  0.5
+     27       QLP    SAP_FLUX           NaN         76      111  0.7
+     27       QLP KSPSAP_FLUX           NaN        105      113  0.9
+     27 TESS-SPOC    SAP_FLUX      0.952641        -11       84 -0.1
+     27 TESS-SPOC PDCSAP_FLUX      0.952641        -16       90 -0.2
+     67       QLP    SAP_FLUX           NaN        484      105  4.6
+     67       QLP    DET_FLUX           NaN        397      106  3.8
+     67 TESS-SPOC    SAP_FLUX      0.958932        637       91  7.0
+     67 TESS-SPOC PDCSAP_FLUX      0.958932        494       93  5.3
+     94       QLP    SAP_FLUX           NaN       1986       87 22.8
+     94       QLP    DET_FLUX           NaN       -103       83 -1.2
+    104       QLP    SAP_FLUX           NaN        146       82  1.8
+    104       QLP    DET_FLUX           NaN        208       78  2.6
+  even 1064±56  odd 147±52  (12.0 sigma)
+  trapezoid: depth 578±63 ppm T14 5.36±0.62 h flat fraction 0.55±0.16  dchi2(V-shape) 37.0
+  batman: Rp/R* 0.0290±0.0029 a/R* 3.46±0.94 b 0.96±0.03 rho 0.013 (catalogue 0.078) rho_sun
+  secondary: at 0.5 30±41 ppm; strongest at phase 0.710: 181±39 ppm (4.7 sigma; rms of scan S/N 1.62, 177 trials)
+  phase curve (ppm): cos1 -15±6 sin1 8±6 cos2 -24±6
+  events: 19; depth chi2 689.4 for 18 dof

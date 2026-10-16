@@ -1,0 +1,262 @@
+[
+ {
+  "sector": 13,
+  "prov": "SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1677.419,
+  "dur_h": 0.75,
+  "depth": 2338,
+  "snr": 9.2,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1677.641,
+  "dur_h": 0.75,
+  "depth": 2808,
+  "snr": 11.0,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1682.308,
+  "dur_h": 0.75,
+  "depth": 1739,
+  "snr": 6.8,
+  "n_flag": 7
+ },
+ {
+  "sector": 13,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 1680.6,
+  "dur_h": 0.75,
+  "depth": 1495,
+  "snr": 5.2,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 1682.058,
+  "dur_h": 3.0,
+  "depth": 892,
+  "snr": 5.4,
+  "n_flag": 3
+ },
+ {
+  "sector": 27,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 2039.669,
+  "dur_h": 0.75,
+  "depth": 1400,
+  "snr": 5.6,
+  "n_flag": 0
+ },
+ {
+  "sector": 27,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 2052.724,
+  "dur_h": 0.75,
+  "depth": 1777,
+  "snr": 7.1,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1677.433,
+  "dur_h": 0.75,
+  "depth": 2487,
+  "snr": 10.7,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1677.641,
+  "dur_h": 0.75,
+  "depth": 2733,
+  "snr": 11.8,
+  "n_flag": 0
+ },
+ {
+  "sector": 13,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1682.141,
+  "dur_h": 1.5,
+  "depth": 955,
+  "snr": 5.1,
+  "n_flag": 1
+ },
+ {
+  "sector": 13,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 1682.35,
+  "dur_h": 0.75,
+  "depth": 2010,
+  "snr": 8.7,
+  "n_flag": 0
+ },
+ {
+  "sector": 27,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 2041.599,
+  "dur_h": 1.5,
+  "depth": 1112,
+  "snr": 5.2,
+  "n_flag": 7
+ },
+ {
+  "sector": 67,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 3129.946,
+  "dur_h": 0.75,
+  "depth": 1598,
+  "snr": 6.2,
+  "n_flag": 0
+ },
+ {
+  "sector": 67,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 3143.004,
+  "dur_h": 0.75,
+  "depth": 1768,
+  "snr": 6.8,
+  "n_flag": 0
+ },
+ {
+  "sector": 67,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 3150.761,
+  "dur_h": 0.75,
+  "depth": 1355,
+  "snr": 5.2,
+  "n_flag": 34
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3126.673,
+  "dur_h": 0.75,
+  "depth": 1358,
+  "snr": 6.1,
+  "n_flag": 3
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3129.944,
+  "dur_h": 0.75,
+  "depth": 1348,
+  "snr": 6.0,
+  "n_flag": 0
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3136.335,
+  "dur_h": 0.75,
+  "depth": 1376,
+  "snr": 6.1,
+  "n_flag": 57
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3143.002,
+  "dur_h": 0.75,
+  "depth": 1660,
+  "snr": 7.4,
+  "n_flag": 0
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3147.995,
+  "dur_h": 3.0,
+  "depth": 776,
+  "snr": 6.6,
+  "n_flag": 3
+ },
+ {
+  "sector": 67,
+  "prov": "TESS-SPOC",
+  "col": "PDCSAP_FLUX",
+  "t": 3150.474,
+  "dur_h": 3.0,
+  "depth": 746,
+  "snr": 6.3,
+  "n_flag": 0
+ },
+ {
+  "sector": 94,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 3856.461,
+  "dur_h": 0.75,
+  "depth": 9035,
+  "snr": 40.0,
+  "n_flag": 59
+ },
+ {
+  "sector": 94,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 3869.657,
+  "dur_h": 0.75,
+  "depth": 7207,
+  "snr": 31.9,
+  "n_flag": 6
+ },
+ {
+  "sector": 104,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 4190.913,
+  "dur_h": 0.75,
+  "depth": 2519,
+  "snr": 11.3,
+  "n_flag": 75
+ },
+ {
+  "sector": 104,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 4193.726,
+  "dur_h": 3.0,
+  "depth": 1338,
+  "snr": 11.4,
+  "n_flag": 64
+ },
+ {
+  "sector": 104,
+  "prov": "QLP",
+  "col": "SAP_FLUX",
+  "t": 4197.586,
+  "dur_h": 0.75,
+  "depth": 2037,
+  "snr": 9.1,
+  "n_flag": 90
+ }
+]

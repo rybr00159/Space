@@ -15,9 +15,9 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
 > corrected; details in [Novelty re-audit](#novelty-re-audit-2026-10-13).
 >
 > **Correction (2026-10-16).** Running our pipeline on the published candidate TIC 4206066 showed that our recurrence
-> test was too coarse for stars with few TESS sectors. With a finer version, five more Sector 104 signals recur. They
-> have not been vetted, so the earlier statement that every recurring signal was vetted no longer holds. See
-> [Caveats](#caveats).
+> test was too coarse for stars with few TESS sectors. With a finer version, five more Sector 104 signals recur. All
+> five were then vetted, and none is a planet. One of them, TIC 90086266, is a newly identified eclipsing binary.
+> Details in [`vetting_2026-10-16/`](vetting_2026-10-16/) and under [Caveats](#caveats).
 
 ## Results
 
@@ -41,8 +41,15 @@ An independent search of public NASA TESS data, run by Claude Code in October 20
   - TIC 158159741, most likely an eclipsing binary or blend. Its 1.807-day signal was already a QLP
     threshold-crossing event, labelled by eye in [Tey et al. 2023](https://ui.adsabs.harvard.edu/abs/2023AJ....165...95T),
     although it never became a TOI.
-- **Five recurring signals have not been vetted yet** (found 2026-10-16). The recurrence test was too coarse for stars
-  with few other TESS sectors. A finer version passes five more Sector 104 signals; see [Caveats](#caveats).
+- **Five more recurring signals, vetted 2026-10-16: none is a planet** ([`vetting_2026-10-16/`](vetting_2026-10-16/)).
+  They were missed at first because the recurrence test was too coarse for stars with few other TESS sectors (see
+  [Caveats](#caveats)).
+  - TIC 90086266: a newly identified 3% eclipsing binary, blended within ~1″ of an F star (period 2.33947 d, or
+    twice that);
+  - TIC 61332759: not a transit, but 1.48-day variability of an RS CVn star 57″ away;
+  - TIC 61141412: an eclipsing pair with eclipse-timing variations, in or near a 5.45-day spectroscopic binary. It was
+    already a TESS-SPOC pipeline alert;
+  - TIC 214311906 and 55829034: eclipsing binaries blended with giant stars; the eclipsing star is unidentified.
 - **62 eclipsing or close binary stars, first identified and characterised as eclipsing binaries.** None of them is
   in a vetted eclipsing-binary or variable-star catalogue (VSX, Gaia DR3 eclipsing binaries, Prša+22, the vetted
   Kostov+25 tables, IJspeert+24, ASAS-SN). A 63rd, TIC 87055315, was found by tracing the TIC 87055304 signal to it;
@@ -416,15 +423,16 @@ the investigators' and referee's reports, and the CTOI cross-match.
     in Sector 98, but the test gives p ≈ 0.004 and drops it. With 3,000 random periods the test gives p = 0.0003
     ([`../tic4206066/pipeline_check/`](../tic4206066/pipeline_check/)).
   - Five Sector 104 signals missed the cut with at least one sector at that floor. All five pass when re-tested with
-    3,000 random periods ([`reaudit/recurrence_retest.py`](reaudit/recurrence_retest.py)). **None has been vetted:**
+    3,000 random periods ([`reaudit/recurrence_retest.py`](reaudit/recurrence_retest.py)). **All five have since been
+    vetted, and none is a planet** ([`vetting_2026-10-16/`](vetting_2026-10-16/)):
 
-    | TIC | Period (d) | Depth (ppm) | p with 150 → 3,000 random periods | Notes |
+    | TIC | Period found (d) | Depth (ppm) | p with 150 → 3,000 random periods | Verdict |
     |---|---|---|---|---|
-    | 90086266 | 2.3606 | 7,100 | 0.0066 → 0.0003 | Only one other sector (S13), where the signal is strong (S/N 175). Late-F star, T = 11.1 |
-    | 61332759 | 0.7398 | 550 | 0.0020 → 0.00002 | Late-F star, T = 11.2 |
-    | 214311906 | 5.6873 | 1,900 | 0.0015 → 0.00002 | The star is a catalogued long-period variable (VSX, ASAS-SN, Gaia), probably a red giant, so a blend is likely |
-    | 55829034 | 0.6158 | 1,000 | 0.0011 → 0.00005 | The star is a catalogued semi-regular variable (VSX, ASAS-SN), probably a cool giant, so a blend is likely |
-    | 61141412 | 6.5252 | 1,130 | 0.0024 → 0.00005 | A 2019 SPOC alert on this star at 16.62 d, a different period. Gao+25 rotation period 5.77 d |
+    | 90086266 | 2.3606 | 7,100 | 0.0066 → 0.0003 | Eclipsing binary blended within ~1″ of the F star; true period 2.33947 d, 3% deep. New |
+    | 61332759 | 0.7398 | 550 | 0.0020 → 0.00002 | Not a transit: 1.4806 d variability of the RS CVn star Gaia DR3 6711181657530577280, 57″ away |
+    | 214311906 | 5.6873 | 1,900 | 0.0015 → 0.00002 | Eclipsing binary blended with a Mira-type giant; source within ~10″, unidentified |
+    | 55829034 | 0.6158 | 1,000 | 0.0011 → 0.00005 | Eclipsing binary blended with a bulge red giant; source within ~5–8″, unidentified |
+    | 61141412 | 6.5252 | 1,130 | 0.0024 → 0.00005 | Eclipsing pair with timing variations, in or near a 5.45 d Gaia binary; true period 6.5285 d. Already a TESS-SPOC alert (13.054 d) |
 
   - No other signal could pass with a finer test: even if every sector at the floor dropped to 1 in 3,000, the rest
     would stay above 0.001. A sixth near-miss, TIC 360570893, was tested in an earlier run but no longer passes the
@@ -447,7 +455,8 @@ the investigators' and referee's reports, and the CTOI cross-match.
    [AAVSO Variable Star Index](https://vsx.aavso.org/). VSX allows 5 submissions a week (1 until a new user's first is
    approved) and asks that systematic searches go to a journal instead. See [ExoFOP and other venues](#can-any-of-this-go-to-exofop).
 3. Get radial velocities for TYC 7034-792-1, to measure the M dwarf's mass directly.
-4. Vet the five recurring signals listed under [Caveats](#caveats), starting with TIC 90086266.
+4. For TIC 90086266, use high-resolution imaging or spectroscopy to find the eclipsing pair hidden by the F star, and
+   two-colour eclipse photometry to measure its colour ([`vetting_2026-10-16/`](vetting_2026-10-16/)).
 
 ## Files
 
@@ -462,4 +471,5 @@ the investigators' and referee's reports, and the CTOI cross-match.
 | `candidates/TIC*/`, `candidates/EB_TIC*/` | Vetting plots and numbers for other candidates |
 | `reviews/` | Dossiers sent for independent review, and the reviews |
 | `reaudit/` | 2026-10-13 novelty re-audit and ExoFOP policy check: per-star prior periods, spot checks, referee and critic reports, CTOI cross-match. 2026-10-16 recurrence re-test (`recurrence_retest.py`, `.json`) |
+| `vetting_2026-10-16/` | Vetting of the five signals passed by the finer recurrence test: verdicts, scripts, results, figures |
 | `exofop_leads/` | Ten existing ExoFOP planet candidates shown to be eclipsing binaries or blends: vetting reports, independent re-check, figures, draft observing notes |

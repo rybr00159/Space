@@ -1,0 +1,17 @@
+TIC 55829034: P=0.616146 d t0=3837.8667 dur=0.83 h joint S/N 13.7 (next alias 13.5)
+  per-sector P: [(13, np.float64(0.61571), np.float64(5.3)), (66, np.float64(0.6169), np.float64(6.2)), (93, np.float64(0.61585), np.float64(5.8)), (104, np.float64(0.61551), np.float64(12.0))]
+ sector prov         col aper crowd  depth_ppm  err_ppm  snr
+     13  QLP    SAP_FLUX       None        977      415  2.4
+     13  QLP KSPSAP_FLUX       None       1094      422  2.6
+     66  QLP    SAP_FLUX       None       2146      417  5.2
+     66  QLP    DET_FLUX       None       2037      420  4.9
+     93  QLP    SAP_FLUX       None       2318      465  5.0
+     93  QLP    DET_FLUX       None       2426      472  5.1
+    104  QLP    SAP_FLUX       None       1274      132  9.7
+    104  QLP    DET_FLUX       None       1200      126  9.5
+  even 1777±316  odd 1712±317  (0.1 sigma)
+  trapezoid: depth 1588±261 ppm T14 2.05±0.18 h flat fraction 0.07±0.18  dchi2(V-shape) 0.3
+  batman: Rp/R* 0.2883±271.1241 a/R* 1.50±230.09 b 1.24±281.46 rho 0.118 (catalogue nan) rho_sun
+  secondary: at 0.5 13±109 ppm; strongest at phase 0.060: 348±106 ppm (3.3 sigma; rms of scan S/N 1.22, 63 trials)
+  phase curve (ppm): cos1 -84±47 sin1 -87±35 cos2 -115±49
+  events: 99; depth chi2 132.8 for 98 dof

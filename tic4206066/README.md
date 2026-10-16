@@ -90,7 +90,8 @@ Checked 2026-10-16; details in [`pipeline_check/`](pipeline_check/).
 - **Given the Sector 98 data, our search would have detected the 3.18-day signal** (S/N 11.8, 9 transits), found it
   in no catalogue and classed it as planet-like.
 - **Our recurrence test would then have dropped it,** with p ≈ 0.004 against a cut of 0.001. The test was too coarse:
-  with finer random trials it gives p = 0.0003. The same flaw left five of our own recurring signals unvetted.
+  with finer random trials it gives p = 0.0003. The same flaw had left five of our own recurring signals unvetted;
+  they have since been [vetted](../tess-search/vetting_2026-10-16/), and none is a planet.
 - **The 11.13-day signal would not have been reported.** Our search keeps one signal per star and sector and needs
   three transits in a sector.
 

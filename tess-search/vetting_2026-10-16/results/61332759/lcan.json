@@ -1,0 +1,237 @@
+{
+ "tic": 61332759,
+ "P": 0.7402990431971511,
+ "t0": 3148.7857281025695,
+ "dur_h": 2.822822519854557,
+ "joint_snr": 31.784364036191597,
+ "second_alias_snr": 31.77782440159614,
+ "per_sector_P": [
+  {
+   "sector": 13,
+   "prov": "TESS-SPOC",
+   "P": 0.7290549180090973,
+   "snr": 4.239126160927267
+  },
+  {
+   "sector": 27,
+   "prov": "TESS-SPOC",
+   "P": 0.7294497487255929,
+   "snr": 4.5157152509852665
+  },
+  {
+   "sector": 67,
+   "prov": "QLP",
+   "P": 0.7400054270645565,
+   "snr": 33.393314979276504
+  },
+  {
+   "sector": 94,
+   "prov": "QLP",
+   "P": 0.7412140925232165,
+   "snr": 34.96731315818237
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "P": 0.7400172767259158,
+   "snr": 13.360511086598288
+  }
+ ],
+ "depths": [
+  {
+   "sector": 13,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 443,
+   "err_ppm": 78,
+   "snr": 5.7
+  },
+  {
+   "sector": 13,
+   "prov": "QLP",
+   "col": "KSPSAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": -122,
+   "err_ppm": 73,
+   "snr": -1.7
+  },
+  {
+   "sector": 13,
+   "prov": "TESS-SPOC",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": 0.9489938,
+   "depth_ppm": 172,
+   "err_ppm": 51,
+   "snr": 3.4
+  },
+  {
+   "sector": 13,
+   "prov": "TESS-SPOC",
+   "col": "PDCSAP_FLUX",
+   "aper": "",
+   "crowd": 0.9489938,
+   "depth_ppm": 80,
+   "err_ppm": 46,
+   "snr": 1.7
+  },
+  {
+   "sector": 27,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1338,
+   "err_ppm": 79,
+   "snr": 17.0
+  },
+  {
+   "sector": 27,
+   "prov": "QLP",
+   "col": "KSPSAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 195,
+   "err_ppm": 70,
+   "snr": 2.8
+  },
+  {
+   "sector": 27,
+   "prov": "TESS-SPOC",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": 0.93453056,
+   "depth_ppm": 103,
+   "err_ppm": 45,
+   "snr": 2.3
+  },
+  {
+   "sector": 27,
+   "prov": "TESS-SPOC",
+   "col": "PDCSAP_FLUX",
+   "aper": "",
+   "crowd": 0.93453056,
+   "depth_ppm": 52,
+   "err_ppm": 48,
+   "snr": 1.1
+  },
+  {
+   "sector": 67,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 2707,
+   "err_ppm": 78,
+   "snr": 34.9
+  },
+  {
+   "sector": 67,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 833,
+   "err_ppm": 63,
+   "snr": 13.3
+  },
+  {
+   "sector": 94,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 1617,
+   "err_ppm": 45,
+   "snr": 36.2
+  },
+  {
+   "sector": 94,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 431,
+   "err_ppm": 41,
+   "snr": 10.5
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "col": "SAP_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 423,
+   "err_ppm": 40,
+   "snr": 10.5
+  },
+  {
+   "sector": 104,
+   "prov": "QLP",
+   "col": "DET_FLUX",
+   "aper": "",
+   "crowd": null,
+   "depth_ppm": 430,
+   "err_ppm": 39,
+   "snr": 11.0
+  }
+ ],
+ "even": [
+  0.0011176783446954497,
+  3.0943665394766045e-05
+ ],
+ "odd": [
+  0.0010686754236071128,
+  3.068723679939673e-05
+ ],
+ "oddeven_sigma": 1.1244358477547802,
+ "shape": {
+  "dt0": 0.022108117200626613,
+  "depth": 0.0007761375276228326,
+  "depth_err": 6.21194803928261e-05,
+  "T14_h": 7.972370627962319,
+  "T14_err_h": 0.39097101860439404,
+  "flat_frac": 0.10515623208614892,
+  "flat_frac_err": 0.08843457939317323,
+  "dchi2_V": 0.04307130925008096,
+  "chi2": 37142.285434133766,
+  "n": 11910
+ },
+ "batman": {
+  "t0": 3148.8061331829836,
+  "rp": 0.05238252801447603,
+  "rp_err": 0.09618798067421731,
+  "aR": 1.0419065092172402,
+  "aR_err": 0.10021521061695904,
+  "b": 1.0026499296263598,
+  "b_err": 0.136872158704581,
+  "rho": 0.02768529490511699,
+  "chi2": 37116.932090741284,
+  "n": 11910
+ },
+ "secondary": {
+  "max_phase": 0.06,
+  "max_depth": 0.0006630639264930878,
+  "max_err": 1.9283692087557106e-05,
+  "max_snr": 34.384697882670146,
+  "at05_depth": -9.440349332484431e-05,
+  "at05_err": 1.9109174000992406e-05,
+  "snr_rms": 11.289414803025005,
+  "n_trials": 23
+ },
+ "phase_curve": {
+  "cos1": -0.00018512889640787648,
+  "cos1_err": 3.9362207812728716e-05,
+  "sin1": -8.334485222209595e-05,
+  "sin1_err": 1.3274652550586878e-05,
+  "cos2": -8.284603370353569e-05,
+  "cos2_err": 7.07567047932306e-05
+ },
+ "n_events": 140,
+ "event_chi2": 9946.08929002399,
+ "event_dof": 139,
+ "rho_star_catalogue": 0.33349272943841446
+}

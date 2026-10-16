@@ -400,3 +400,27 @@ tic4206066/pipeline_check/ and the tess-search README caveats.
   - none has been vetted;
   - 214311906 and 55829034 sit on catalogued giant variables (LPV, SR), so blends are likely;
   - TIC 360570893 was in an earlier stage-2 run but is not in the final candidate list.
+
+**Vetting of the five recurrence re-test signals (2026-10-16).** Full write-up: tess-search/vetting_2026-10-16/.
+None is a planet.
+- TIC 90086266:
+  - true P = 2.339469 d (S13 2.33940, S104 2.33936, N = 1078); the stage-1 P (2.3606) and stage-2 P (2.35477) were
+    artefacts;
+  - eclipses ~2.9% in SAP and 3.2% in PDCSAP, T14 3.1 h, near-V, no secondary (-60 +- 45 ppm);
+  - PRF amplitude-image localisation is on target in S13 and S104 (offsets equal to injection on target within 0.1");
+  - a companion of ~0.3 Rsun is excluded on the F star by Gaia RV (5 transits, 5 km/s) and by the missing secondary;
+  - verdict: a fainter EB within ~1" (hidden triple or chance alignment); new;
+  - odd/even: S13 equal; S104 differs by 7.5% (5.6-8.9 sigma, confirmed in own TESScut photometry); unexplained.
+- TIC 61332759: not a transit.
+  - 1.4806 d double-humped variability of Gaia DR3 6711181657530577280 (RS class, G 14.4, 57" SW).
+  - All 5 sectors localise to (-36.5, -44.3)" +- 0.3"; target delta-chi2 1.9e5.
+  - The signal is in QLP apertures only.
+- TIC 61141412:
+  - Gaia SB1 (5.452 d); dips ~1-2 ppt, ~1 h, with true P 6.5285 d in S13/27/67/94/104 (11 events);
+  - linear ephemeris chi2 243/9, quadratic 22/8, i.e. ETVs (a third body);
+  - on target (own map; TESS-SPOC S67 DV 3.3 +- 2.9");
+  - not new: TESS-SPOC S67 TCE at 13.054 d (2P).
+- TIC 214311906 (Mira) and TIC 55829034 (bulge SR giant):
+  - the eclipses cannot be on the giants;
+  - the sources are within ~10" and ~5-8" respectively, and unidentified;
+  - 214311906 candidate: an M-dwarf binary 6.5" away (Gaia DR3 5925373272850782208, 61 pc, RUWE 13.7).
