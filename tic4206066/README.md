@@ -81,10 +81,24 @@ See [`reddit-post/comments.md`](reddit-post/comments.md) for the saved comments.
 4. Re-derive headline numbers from the raw output, never from a summary the agent wrote.
 5. Watch which way a check fails. An empty list wired to "pass" looks identical to a clean result.
 
+## Would our own search have found it?
+
+Checked 2026-10-16; details in [`pipeline_check/`](pipeline_check/).
+
+- **No, because the star was never in our data.** TESS observed it only in Sectors 6, 32 and 98, and our
+  [search](../tess-search/) covered Sectors 104 and 105.
+- **Given the Sector 98 data, our search would have detected the 3.18-day signal** (S/N 11.8, 9 transits), found it
+  in no catalogue and classed it as planet-like.
+- **Our recurrence test would then have dropped it,** with p ≈ 0.004 against a cut of 0.001. The test was too coarse:
+  with finer random trials it gives p = 0.0003. The same flaw left five of our own recurring signals unvetted.
+- **The 11.13-day signal would not have been reported.** Our search keeps one signal per star and sector and needs
+  three transits in a sector.
+
 ## Files
 
 | Path | What it is |
 |---|---|
+| [`pipeline_check/`](pipeline_check/) | Our search pipeline run on this star's light curves: scripts, outputs, write-up |
 | [`reddit-post/post.md`](reddit-post/post.md) | The r/ClaudeAI post (2026-10-07), verbatim, with its 3 images |
 | [`reddit-post/comments.md`](reddit-post/comments.md) | 100 of the thread's 732 comments, threaded, as saved on 2026-10-11 |
 | [`predicted_transits_S110.csv`](predicted_transits_S110.csv) | Predicted Sector 110 transit windows, derived from the frozen ephemeris |

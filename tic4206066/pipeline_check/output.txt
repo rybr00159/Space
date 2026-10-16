@@ -1,0 +1,67 @@
+### would_detect.py
+
+== Sector 98 QLP DET_FLUX (camera/CCD (1, 2)): 4055 points, baseline 50.7 d, sigma 357 ppm per bin
+   BLS winner: P=3.18114 d  depth=477 ppm  dur=1.50 h  n_tr=9  snr_w=11.7  snr_red=11.79  SDE=4.9  masked=0  alias_of=None
+   stage-1 pass (snr_red>=8.5 & passed): True;  final cut (snr_red>=9, >=3 transits, no dominant event): True
+   at published A 3.18 d: depth=441±36 ppm  n_tr=9  snr_red=12.01  red_ratio=1.03  oddeven=0.4  max_event_frac=0.20
+   at published B 11.13 d: depth=829±70 ppm  n_tr=3  snr_red=10.91  red_ratio=1.16  oddeven=2.4  max_event_frac=0.57
+   top BLS peaks (d): 11.138, 3.182, 18.547, 18.955, 3.712, 8.220, 16.440, 5.303, 22.460, 20.885
+   rank of 3.18 d (or 2x/0.5x) among top 15 peaks: [2]
+
+duration check: predicted max duration for a central transit = 2.02 h; published 1.87 h
+### would_detect2.py
+
+== S98 QLP DET_FLUX: 4055 pts, BTJD 3995.2-4045.9, gaps>1 d: [(np.float64(4003.2), np.float64(4009.4)), (np.float64(4017.7), np.float64(4023.5)), (np.float64(4032.0), np.float64(4038.1))], sigma 357 ppm
+   winner: P=3.18114 d depth=477 ppm dur=1.50 h n_tr=9 snr_red=11.79 SDE=4.9 alias_of=None
+   passes stage-1 cuts: True
+   at published 3.18 d ephemeris: depth=441±36 ppm n_tr=9 snr_red=12.01
+
+products used by stage 2: [(6, 'TESS-SPOC', np.float64(1800.0)), (32, 'SPOC', np.float64(120.0)), (98, 'QLP', np.float64(200.0))]
+ sector      prov  exptime
+     32      SPOC    120.0
+      6       QLP   1800.0
+      6 TESS-SPOC   1800.0
+     32 TESS-SPOC    600.0
+     32       QLP    600.0
+     98       QLP    200.0
+
+== S6 QLP 1800s (binned to >=10 min): 824 pts, BTJD 1468.4-1489.7, gaps>1 d: [(np.float64(1476.9), np.float64(1478.9))], sigma 207 ppm
+   winner: P=11.11854 d depth=1110 ppm dur=1.00 h n_tr=2 snr_red=9.82 SDE=4.0 alias_of=5.559269896386456
+   passes stage-1 cuts: False
+   at published 3.18 d ephemeris: depth=314±62 ppm n_tr=3 snr_red=4.62
+
+== S32 QLP 600s (binned to >=10 min): 3076 pts, BTJD 2174.3-2199.5, gaps>1 d: [(np.float64(2184.7), np.float64(2187.4))], sigma 394 ppm
+   winner: P=3.18382 d depth=310 ppm dur=1.50 h n_tr=8 snr_red=7.00 SDE=5.4 alias_of=None
+   passes stage-1 cuts: False
+   at published 3.18 d ephemeris: depth=225±43 ppm n_tr=8 snr_red=4.85
+
+== S6 TESS-SPOC 1800s (binned to >=10 min): 975 pts, BTJD 1468.3-1490.0, gaps>1 d: [(np.float64(1477.0), np.float64(1478.2))], sigma 212 ppm
+   winner: P=3.18249 d depth=427 ppm dur=2.00 h n_tr=6 snr_red=10.74 SDE=6.1 alias_of=None
+   passes stage-1 cuts: True
+   at published 3.18 d ephemeris: depth=420±47 ppm n_tr=6 snr_red=8.58
+
+== S32 TESS-SPOC 600s (binned to >=10 min): 3423 pts, BTJD 2174.2-2200.1, gaps>1 d: [(np.float64(2185.2), np.float64(2187.2))], sigma 411 ppm
+   winner: P=3.18265 d depth=446 ppm dur=1.50 h n_tr=8 snr_red=8.19 SDE=4.3 alias_of=None
+   passes stage-1 cuts: False
+   at published 3.18 d ephemeris: depth=346±43 ppm n_tr=8 snr_red=7.07
+
+== S32 SPOC 120s (binned to >=10 min): 3424 pts, BTJD 2174.2-2200.0, gaps>1 d: [(np.float64(2185.1), np.float64(2187.2))], sigma 415 ppm
+   winner: P=3.18397 d depth=426 ppm dur=1.50 h n_tr=8 snr_red=6.94 SDE=4.3 alias_of=None
+   passes stage-1 cuts: False
+   at published 3.18 d ephemeris: depth=363±44 ppm n_tr=8 snr_red=6.67
+
+classification: [{'track': 'planet', 'depth_ppm': 476.59, 'rp_re': 1.54, 'dur_ratio': 0.74, 'm_oddeven_sig': 0.25, 'm_sec_sig': 0.84, 'm_oot_rms_ratio': 1.48, 'm_oot_dip_sig': 4.26, 'm_oot_dip_ratio': 0.34, 'red_ratio': 1.02}]
+
+stage 2: sectors [6, 32, 98]  other sectors with FAP<=1%: 1 / 2  combined p: 0.0035
+   S6 TESS-SPOC: narrow S/N 9.5, FAP 0.007, depth at joint ephemeris 444±53 ppm (6 transits)
+   S32 SPOC: narrow S/N 8.5, FAP 0.060, depth at joint ephemeris 419±49 ppm (8 transits)
+   S98 QLP: narrow S/N 10.4, FAP 0.013, depth at joint ephemeris 408±40 ppm (9 transits)
+   joint: P=3.182789 d (published 3.182784), S/N 15.4, next-best alias S/N 13.3
+   S6+S32 only: P=3.182858, S/N 11.8, next-best alias 10.6
+### null_hires.py
+nnull=150: FAP S6=0.0066 S32=0.0728  combined p=0.0042  (vetting cut 1e-3)
+nnull=3000: FAP S6=0.0003 S32=0.0646  combined p=0.00025  (vetting cut 1e-3)
+### s6_b_check.py
+S6 QLP winner events (BTJD): [1473.735 1484.854] P 11.1185 dur h 1.0
+  nearest predicted B transits: [1473.733 1484.865]  offset (h): [ 0.06 -0.28]  1-sigma pred (h): nan
+  nearest predicted A transits: [1474.787 1484.335]  offset (h): [-25.23  12.45]  1-sigma pred (h): [0.07 0.07]

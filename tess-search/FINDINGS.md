@@ -382,3 +382,21 @@ Eight are not reportable.
 - Planets:
   - TOI 3288.01 (confirmed);
   - TOI 6787.01 and TOI 2486.01. Their flags came from corrupted QLP light curves.
+
+**Pipeline check on TIC 4206066 and recurrence re-test (2026-10-16).** Full write-up:
+tic4206066/pipeline_check/ and the tess-search README caveats.
+- TIC 4206066 was never in our data. TESS observed it in Sectors 6, 32 and 98 only (Sector 110 next); we searched
+  Sectors 104 and 105.
+- Our unchanged stage 1 on S98 QLP: P 3.18114 d, 477 ppm, 9 transits, snr_red 11.79. Passes the cuts, is not in
+  TOI/CTOI/TCE, and is classed planet (odd/even 0.25 sigma, sec 0.84 sigma, Rp 1.5 Re).
+- Stage 2 (S6 TESS-SPOC, S32 SPOC): FAP 0.0066 (the 1/151 floor) and 0.06-0.07, giving p_comb 0.0035-0.0042. That
+  fails our p < 1e-3 vetting cut. With 3000 nulls: FAP 0.0003 and 0.065, giving p_comb 0.00025, which passes.
+- Joint 3-sector P = 3.182789 d (published 3.182784).
+- Root cause: 150 random periods per sector, so FAP >= 1/151. A star with 1 other sector can never pass; with 2 it
+  passes only if both are strong.
+- Re-test of S104 near-misses (p >= 1e-3 with a floor sector), 3000 nulls (reaudit/recurrence_retest.py):
+  - all five now pass: 61332759 (1.5e-5), 214311906 (1.5e-5), 61141412 (4.7e-5), 55829034 (5.3e-5),
+    90086266 (3.3e-4);
+  - none has been vetted;
+  - 214311906 and 55829034 sit on catalogued giant variables (LPV, SR), so blends are likely;
+  - TIC 360570893 was in an earlier stage-2 run but is not in the final candidate list.
