@@ -88,4 +88,6 @@ README, captions, figures, `key_numbers.json`, `corrections_to_repo.md` and the 
 * **The mass, K, TSM and ESM** are scaled to the adopted radius, not recomputed.
 * **The transit duration** from raw-pixel apertures is shorter (1.3–1.5 h at 1.5–2σ) than the density-prior value;
   only a ground-based light curve will settle it.
-* **ADS full text** has still not been searched for the star's identifiers.
+* **ADS full text** was searched afterwards, on 2026-10-17, once an ADS API token was available: no record names the
+  M3 dwarf's TIC, Gaia DR3 or 2MASS identifier or the Mira's TIC number ([`novelty/README.md`](novelty/README.md),
+  section 4).

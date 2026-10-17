@@ -132,7 +132,8 @@ star; validation still needs a ground-based detection and high-resolution imagin
   Add 8-m speckle imaging and low-precision radial velocities.
 
 **Novelty.** None of the three stars has a TOI, CTOI, SPOC or TESS-SPOC alert, QLP-alert (Tey+23) entry, VSX period
-or any ExoFOP record (checked 2026-10-12, 2026-10-16 and 2026-10-17; ADS full text not searched).
+or any ExoFOP record (checked 2026-10-12, 2026-10-16 and 2026-10-17). An ADS full-text search on 2026-10-17 finds no
+paper naming TIC 214311908 or TIC 214311906 ([`../tic214311908/novelty/`](../tic214311908/novelty/)).
 
 ## TIC 90086266: a 3% eclipsing binary coincident with an F star
 

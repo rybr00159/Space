@@ -57,7 +57,7 @@ the floor of ~3 × 10⁻⁵ is a background-star term carried over from phase 2.
 | No secondary eclipse, no timing variations | An occultation-shaped dip at phase 0.5 in the cleaned photometry measures +0.3 ± 0.8 ppt (INV) and +0.3 ± 0.9 ppt (REF); 3σ limits 2.8–3.1 ppt. Any occulter hotter than ~2,540 K in the TESS band (about M8 or earlier) is excluded; an M8 dwarf at ~2,570 K only marginally, and the 2,540 K comes from the phase-2 bound of 2.5 ppt. The transit times fit a constant period: χ² 8.9/17 (INV) and 12.6/19 (REF) with the referee's injection-calibrated errors (9.9/16 and 15.4/19 with the analyst's) | Strong |
 | The host is a single, metal-rich M3 dwarf | It is 0.75 mag brighter than the main sequence at its colour. Its G−Ks and G−W1 colours are 0.09 mag redder than normal at fixed BP−RP, as for metal-rich single stars ([Fe/H] ≈ +0.2). An unresolved equal-mass twin would keep normal colours. P(twin) ≈ 0.3–1% (0.2–5% over photometric systematics) | Moderate: indirect, and a spectrum would settle it. The colours allow a companion that supplies up to a third of the Ks light |
 | FPP 0.0013 (REF) to 0.0033 (INV) | Explicit Bayesian comparison of every scenario. Both phase-2 codes used the photo-eccentric density relation with the wrong sign; this was found and fixed in phase 3. The sign-fixed values come from the `referee2_fpp` framework, re-run independently by `bd`, `referee3_bd` and the final review (the `fpp` code was not re-run). Over 64 light-curve, eccentricity and brown-dwarf-rate variants the FPP is 0.0007–0.0037. Over 1,500 joint draws of all priors (binary statistics, companion limits, occurrence rates, white-dwarf and brown-dwarf rates), re-run after the sign fix, the median is 0.0022, the 5–95% range 0.0002–0.012 and P(FPP < 0.015) = 0.97; pessimistic prior combinations reach 0.015–0.045. Probability that the occulter is a planet on the M3 dwarf or on an unresolved companion of it: 0.9995 (0.9986–0.9996 over variants); including a planet on the bound pair star A, 0.9999 | Moderate: rests on literature occurrence rates and on archival companion limits, not on imaging |
-| Not previously reported as a candidate | No TOI or CTOI; no ExoFOP community data (notes, files, imaging, spectra); no NASA Exoplanet Archive entry; no VSX or Gaia DR3 variability or non-single-star entry; no hit in arXiv or a web search, for the M3 dwarf, the Mira or the pair (checked 2026-10-16 and 2026-10-17; [`novelty/`](novelty/)). The M3 dwarf appears only in catalogues (Gaia DR3 and its nearby-star catalogue, El-Badry et al. 2021, eROSITA, Hardegree-Ullman et al. 2023) | As of those dates. ADS full text was not searched; repeat the check just before any submission |
+| Not previously reported as a candidate | No TOI or CTOI; no ExoFOP community data (notes, files, imaging, spectra); no NASA Exoplanet Archive entry; no VSX or Gaia DR3 variability or non-single-star entry; no hit in arXiv or a web search, for the M3 dwarf, the Mira or the pair (checked 2026-10-16 and 2026-10-17; [`novelty/`](novelty/)). An ADS full-text search finds no paper that names the M3 dwarf's TIC, Gaia DR3 or 2MASS identifier or the Mira's TIC number in its text (18 written forms; controls for well-known stars return 1–38 papers each). The M3 dwarf appears only in catalogues (Gaia DR3 and its nearby-star catalogue, El-Badry et al. 2021, eROSITA, Hardegree-Ullman et al. 2023) | As of 2026-10-17. ADS cannot see stars listed only in machine-readable tables, or most variable-star bulletins; repeat the check just before any submission |
 
 ![Folded transit](figures/fold.png)
 
@@ -327,9 +327,11 @@ gives replacement text.
   ±0.15 extrapolation.
 * **Activity is unresolved.** The eRASS:3 X-ray source may belong to the M3 dwarf or to pair A (p = 0.54 against
   0.38), and its flux is half the eRASS1 value. The kinematics suggest an old star.
-* **The novelty check** covered ExoFOP, the NASA Exoplanet Archive, SIMBAD, VizieR, VSX, Gaia DR3, MAST, arXiv and a
-  web search ([`novelty/`](novelty/)). ADS full text was not searched and Semantic Scholar was rate-limited, so a paper
-  that names the star only in its body text cannot be ruled out.
+* **The novelty check** covered ExoFOP, the NASA Exoplanet Archive, SIMBAD, VizieR, VSX, Gaia DR3, MAST, arXiv, a web
+  search and the full text of papers in NASA ADS ([`novelty/`](novelty/)). ADS holds the text of nearly all journal
+  papers and arXiv preprints, but not of most variable-star bulletins, and it does not index machine-readable tables.
+  Only four identifiers were searched in ADS (the M3 dwarf's TIC, Gaia DR3 and 2MASS names and the Mira's TIC
+  number), not the other names of the Mira or the pair.
 
 ## How it was done
 

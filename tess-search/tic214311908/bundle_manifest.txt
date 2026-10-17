@@ -1,4 +1,4 @@
-# Bundle manifest for tess-search/tic214311908/ (prepared 2026-10-17; nothing has been copied or committed)
+# Bundle manifest for tess-search/tic214311908/ (prepared 2026-10-17 and used to copy this folder into the repository; the ADS search files were added afterwards)
 #
 # Source root: the tic214/ analysis folder of the session scratchpad (the folder that holds phot/, loc/, ..., writeup/).
 # Copy each "<folder>/<path>" below to "tic214311908/analysis/<folder>/<path>", and each "writeup/<path>" to
@@ -121,6 +121,8 @@ writeup/novelty/out/vizier_catalogues_m3v.csv
 writeup/novelty/out/vizier_status.json
 writeup/novelty/out/vsx_status.json
 writeup/novelty/out/xray_mdwarf.json
+writeup/novelty/out/ads_fulltext.json
+writeup/novelty/out/n09.log
 writeup/novelty/raw/ctoi_rows_within_60arcmin.csv
 writeup/novelty/raw/exofop_1515709322_filelist.txt
 writeup/novelty/raw/exofop_1515709322_imaging.txt
@@ -271,6 +273,8 @@ writeup/novelty/raw/vizier_xray_J_A_A_712_A171_dr2mg.csv
 writeup/novelty/raw/vizier_xray_J_A_A_712_A171_erass3_m.csv
 writeup/novelty/raw/vsx_api_5arcmin.json
 writeup/novelty/raw/vsx_vizier_5arcmin.csv
+writeup/novelty/raw/ads_full_TIC_214311906.json
+writeup/novelty/raw/ads_full_TIC_214311908.json
 writeup/novelty/scripts/n01_exofop.py
 writeup/novelty/scripts/n02_nea_simbad.py
 writeup/novelty/scripts/n03_gaia_vsx.py
@@ -280,6 +284,7 @@ writeup/novelty/scripts/n05_vizier.py
 writeup/novelty/scripts/n06_mast.py
 writeup/novelty/scripts/n07_xray_mdwarf.py
 writeup/novelty/scripts/n08_gaia_dispersion.py
+writeup/novelty/scripts/n09_ads_fulltext.py
 
 ## analysis files (copy to tic214311908/analysis/)
 bd/README.md

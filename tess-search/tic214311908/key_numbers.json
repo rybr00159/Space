@@ -1,6 +1,6 @@
 {
  "description": "Every number in writeup/README.md with value, uncertainty, method and source file (paths relative to the tic214/ analysis root; in the repository they live under analysis/<folder>/, writeup files at the folder top level). readme_text is the exact text as it appears in the README.",
- "n_entries": 273,
+ "n_entries": 274,
  "entries": [
   {
    "readme_text": "Status, 2026-10-17",
@@ -2936,6 +2936,17 @@
    "method": "Ramos-Ceja et al. 2026",
    "source": [
     "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "18 written forms; controls for well-known stars return 1–38 papers each",
+   "quantity": "ADS full-text search (field full) for the M3 dwarf's TIC, Gaia DR3 and 2MASS identifiers and the Mira's TIC number",
+   "value": "0 records naming any of them (18 written forms); positive controls 1-38 records",
+   "uncertainty": null,
+   "method": "ADS search API, 2026-10-17 19:28-19:30 UTC, every hit checked in its highlight snippets",
+   "source": [
+    "writeup/novelty/out/ads_fulltext.json",
+    "writeup/novelty/out/n09.log"
    ]
   }
  ]

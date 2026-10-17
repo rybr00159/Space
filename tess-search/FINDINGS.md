@@ -495,5 +495,8 @@ None is a planet.
   the carried-over background term.
 - Not statistically validated: no ground-based detection, no high-resolution imaging, TRICERATOPS unstable
   (0.002-0.04). First full windows April-August 2027.
+- Novelty (2026-10-17): no TOI/CTOI/ExoFOP data/NEA entry; ADS full text (field full, 18 written forms of the M3V's
+  TIC, Gaia DR3 and 2MASS IDs and the Mira's TIC) gives 0 records naming them; controls return 1-38. ADS cannot see
+  machine-readable tables or most variable-star bulletins. tic214311908/novelty/.
 - Side results: Mira period 313-320 d (not 294 d); Mira TESS image displaced 5-7.5" by colour (not 16-17");
   the eRASS:3 X-ray source may be the M3V or pair A (p 0.54 vs 0.38).
