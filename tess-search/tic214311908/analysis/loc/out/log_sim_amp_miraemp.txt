@@ -1,0 +1,10 @@
+S12 model built (3s): n_real 3 n_fake 259
+S39 model built (6s): n_real 4 n_fake 289
+S66 model built (11s): n_real 4 n_fake 297
+S93 model built (16s): n_real 3 n_fake 338
+S103 model built (21s): n_real 3 n_fake 332
+S104 model built (27s): n_real 4 n_fake 350
+noise draws done (27s)
+noise-only done (47s)
+injected Mira                   A=  14.5 (61s)
+saved out/sim_amp_miraemp.npz (61s)

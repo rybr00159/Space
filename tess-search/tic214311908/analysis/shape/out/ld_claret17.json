@@ -1,0 +1,116 @@
+{
+ "source": "Claret 2017 A&A 600 A30, VizieR J/A+A/600/A30/tableab (PHOENIX, TESS band, Z=0 only)",
+ "table": {
+  "PC_q_LSM_single": [
+   0.15999200000000002,
+   0.45026999999999995
+  ],
+  "PC_q_LSM_twin": [
+   0.154172,
+   0.470324
+  ],
+  "PC_q_LSM_single_m2s": [
+   0.15586,
+   0.4682879999999999
+  ],
+  "PC_q_LSM_single_p2s": [
+   0.1698,
+   0.433156
+  ],
+  "PC_q_LSM_single_lg45": [
+   0.17645,
+   0.4439
+  ],
+  "PC_q_LSM_single_lg50": [
+   0.1542,
+   0.45315
+  ],
+  "PC_q_PCM_single": [
+   0.115334,
+   0.5776140000000001
+  ],
+  "PC_q_PCM_twin": [
+   0.12402500000000002,
+   0.5699069999999999
+  ],
+  "PC_q_PCM_single_m2s": [
+   0.119504,
+   0.580416
+  ],
+  "PC_q_PCM_single_p2s": [
+   0.119284,
+   0.570776
+  ],
+  "PC_q_PCM_single_lg45": [
+   0.11305,
+   0.60895
+  ],
+  "PC_q_PCM_single_lg50": [
+   0.11895,
+   0.56155
+  ],
+  "PC_r_LSM_single": [
+   0.133666,
+   0.488396
+  ],
+  "PC_r_LSM_twin": [
+   0.125997,
+   0.512505
+  ],
+  "PC_r_LSM_single_m2s": [
+   0.127396,
+   0.510256
+  ],
+  "PC_r_LSM_single_p2s": [
+   0.14599600000000001,
+   0.466824
+  ],
+  "PC_r_LSM_single_lg45": [
+   0.1477,
+   0.48345
+  ],
+  "PC_r_LSM_single_lg50": [
+   0.12845,
+   0.49150000000000005
+  ],
+  "PC_r_PCM_single": [
+   0.115334,
+   0.5776140000000001
+  ],
+  "PC_r_PCM_twin": [
+   0.12402500000000002,
+   0.5699069999999999
+  ],
+  "PC_r_PCM_single_m2s": [
+   0.119504,
+   0.580416
+  ],
+  "PC_r_PCM_single_p2s": [
+   0.119284,
+   0.570776
+  ],
+  "PC_r_PCM_single_lg45": [
+   0.11305,
+   0.60895
+  ],
+  "PC_r_PCM_single_lg50": [
+   0.11895,
+   0.56155
+  ]
+ },
+ "adopted_single": {
+  "u1": 0.1245,
+  "u2": 0.5330050000000001
+ },
+ "adopted_twin": {
+  "u1": 0.125011,
+  "u2": 0.541206
+ },
+ "spread_single": {
+  "u1_min": 0.11305,
+  "u1_max": 0.17645,
+  "u2_min": 0.433156,
+  "u2_max": 0.60895
+ },
+ "prior_note": "Gaussian prior with sigma 0.1 on each of u1, u2 around the adopted values (covers model/method spread and the absent [Fe/H]=+0.2 grid; PHOENIX vs observed M-dwarf LD differences are ~0.1, e.g. Patel & Espinoza 2022)"
+}

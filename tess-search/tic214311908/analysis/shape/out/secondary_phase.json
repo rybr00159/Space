@@ -1,0 +1,104 @@
+{
+ "secondary": {
+  "inv_depth_ppt": -0.15886654219271087,
+  "inv_err_formal_ppt": 0.9539320891567181,
+  "inv_err_empirical_ppt": 0.7914686423610773,
+  "inv_err_emp_robust_ppt": 0.7862601271999214,
+  "inv_err_emp_std_ppt": 0.7914686423610773,
+  "n_random": 400,
+  "ref_depth_ppt": 0.29,
+  "ref_err_ppt": 0.77,
+  "ref_source": "../referee_phot/out/phase_scan_clean.json (+0.28 +- 0.75 e-/s)",
+  "upper3_inv_ppt": 2.215539384890521,
+  "upper3_ref_ppt": 2.6,
+  "adopted_upper3_ppt": 2.215539384890521,
+  "scan_max_abs_snr_empirical": 3.6161193536262544,
+  "scan_max_depth_ppt": 1.672678336108294,
+  "scan_phase_of_max": 0.4920000000000004,
+  "scan_max_pos_snr_empirical": 2.11338547932667,
+  "scan_min_snr_empirical": -3.6161193536262544,
+  "scan_phase_of_min": 0.5760000000000005,
+  "p_random_ge_scanmax": 0.0025,
+  "n_independent_trials": 71.03098329642523,
+  "p_global_scanmax": 0.16289000446056834,
+  "any_phase_upper3_ppt": 4.047084263191525
+ },
+ "limits": {
+  "Rp_over_a": 0.0053739166541378405,
+  "Ag_upper3": 76.71806168762711,
+  "Tb_upper3_K_blackbody": 2464.1129017026237,
+  "surface_brightness_ratio_upper3": 0.15214697739855895,
+  "transit_depth_model": 0.01582575543406306,
+  "Teq_K_A0_full": 499.88630170474175,
+  "expected_reflection_Ag1_ppm": 28.878980205620046,
+  "expected_thermal_dayside_ppm": 5.307858514600002e-07
+ },
+ "phase_curve": {
+  "A_P_ppt": 2.9215289458557043,
+  "A_Phalf_ppt": 0.4060155885476946,
+  "coeffs": [
+   -0.0011408666633503208,
+   0.002689564023764567,
+   -0.00020286291818039093,
+   0.0003517034184807803
+  ],
+  "A_P_95_ppt": 4.220129132281275,
+  "A_Phalf_95_ppt": 2.1371122981576707,
+  "A_P_997_ppt": 10.327177468680942,
+  "A_Phalf_997_ppt": 2.6309433674537286,
+  "frac_random_ge_obs_P": 0.20666666666666667,
+  "frac_random_ge_obs_Phalf": 0.7733333333333333,
+  "note": "raw INV flux, per-orbit quadratic baselines; random-period calibration"
+ },
+ "predicted_companion_signals": {
+  "Neptune_17ME": {
+   "m2_msun": 5.1e-05,
+   "K1_kms": 0.011800008923260224,
+   "A_beam_ppt": 0.00021229758497121772,
+   "A_ell_ppt": 1.2694250619263687e-05
+  },
+  "Jupiter": {
+   "m2_msun": 0.000955,
+   "K1_kms": 0.22060182443607457,
+   "A_beam_ppt": 0.003968915182403408,
+   "A_ell_ppt": 0.0002371267869440977
+  },
+  "BD_30MJ": {
+   "m2_msun": 0.0286,
+   "K1_kms": 6.2973966861770485,
+   "A_beam_ppt": 0.11329839805847867,
+   "A_ell_ppt": 0.006608870059276173
+  },
+  "BD_70MJ": {
+   "m2_msun": 0.0668,
+   "K1_kms": 13.838040279514123,
+   "A_beam_ppt": 0.24896443309329327,
+   "A_ell_ppt": 0.014086149944279742
+  },
+  "M_0.1": {
+   "m2_msun": 0.1,
+   "K1_kms": 19.728223336108044,
+   "A_beam_ppt": 0.3549365256642014,
+   "A_ell_ppt": 0.019597497438085722
+  },
+  "M3V_twin_0.37": {
+   "m2_msun": 0.37,
+   "K1_kms": 53.934558163726024,
+   "A_beam_ppt": 0.9703532021978456,
+   "A_ell_ppt": 0.04605411897950144
+  },
+  "WD_0.6": {
+   "m2_msun": 0.6,
+   "K1_kms": 73.02249067660163,
+   "A_beam_ppt": 1.3137700589926848,
+   "A_ell_ppt": 0.05697416780969251
+  },
+  "WD_1.0": {
+   "m2_msun": 1.0,
+   "K1_kms": 96.68063694983553,
+   "A_beam_ppt": 1.7394110353145642,
+   "A_ell_ppt": 0.06723229048102401
+  }
+ },
+ "alpha_beam": 1.348448471274251
+}

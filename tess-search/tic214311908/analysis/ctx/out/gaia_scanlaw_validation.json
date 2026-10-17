@@ -1,0 +1,13 @@
+{
+ "n_dr3_G_obs": 39,
+ "n_pred_in_dr3_window": 58,
+ "match_dt_seconds_median": 10.630841553211212,
+ "match_dt_seconds_max": 14.378276467323303,
+ "n_obs_matched_within_60s": 39,
+ "n_pred_without_dr3_obs": 19,
+ "g_mag_range": [
+  11.349751748648021,
+  13.316887864910859
+ ],
+ "rejected_by_photometry": 0
+}

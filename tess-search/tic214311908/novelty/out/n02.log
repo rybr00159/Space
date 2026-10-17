@@ -1,0 +1,21 @@
+NEA pscomppars_cone_10arcmin 200 0 []
+NEA pscomppars_by_id 200 0 []
+NEA ps_cone_10arcmin 200 0 []
+NEA stellarhosts_cone_10arcmin 200 0 []
+NEA toi_by_tid 200 0 []
+NEA toi_cone_30arcmin 200 1 [{'toi': '4398.01', 'tid': '214243287', 'ra': '260.799238', 'dec': '-51.024433', 'tfopwg_disp': 'APC', 'pl_orbper': '5.752521'}]
+NEA toi_table_size 200 1 [{'n': '8151', 'max_toi': '999', 'last_update': '2026-10-09 16:00:03'}]
+NEA pscomppars_size 200 1 [{'n': '6451'}]
+SIMBAD M3V Gaia DR3 5925373272850784768 PM* nbref 1 | ids: ['Gaia DR3 5925373272850784768'] | bib: ['2021A&A...649A...6G'] | mes: {'mesVar': 0, 'mesSpT': 0, 'mesFe_h': 0, 'mesRot': 0, 'mesVelocities': 1, 'mesDistance': 1, 'mesXmm': 0}
+SIMBAD Mira 2MASS J17235464-5119254 LP* nbref 1 | ids: ['Gaia DR3 5925373268528684288', '2MASS J17235464-5119254'] | bib: ['2023A&A...674A..15L'] | mes: {'mesVar': 1, 'mesSpT': 0, 'mesFe_h': 0, 'mesRot': 0, 'mesVelocities': 0, 'mesDistance': 0, 'mesXmm': 0}
+retry mesRot_pairA ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+retry mesRot_pairA ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+SIMBAD pairA Gaia DR3 5925373272850782208 PM* nbref 1 | ids: ['Gaia DR3 5925373272850782208'] | bib: ['2021A&A...649A...6G'] | mes: {'mesVar': 0, 'mesSpT': 0, 'mesFe_h': 0, 'mesRot': 0, 'mesVelocities': 0, 'mesDistance': 1, 'mesXmm': 0}
+SIMBAD cone 60":                         main_id otype  nbref  sep_arcsec
+0  Gaia DR3 5925373272850784768   PM*      1    0.007361
+1  Gaia DR3 5925373272850782208   PM*      1   11.709461
+2       2MASS J17235464-5119254   LP*      1   16.208724
+3  Gaia DR3 5925373272827278208   EB*      1   28.332510
+4               TYC 8353-2676-1     *      0   53.467356
+5  Gaia DR3 5925373204107739648   EB*      1   59.865117
+SIMBAD Pl/EB within 30': {'n': 249, 'n_planet_types': 0, 'within_3arcmin': [{'main_id': 'Gaia DR3 5925373272827278208', 'otype': 'EB*', 'ra': '260.96765915532666', 'dec': '-51.31653302486528', 'sep_arcmin': '0.4722084926028119'}, {'main_id': 'Gaia DR3 5925373204107739648', 'otype': 'EB*', 'ra': '260.9920844943979', 'dec': '-51.33391725153529', 'sep_arcmin': '0.9977519528999008'}, {'main_id': 'Gaia DR3 5925378392451781120', 'otype': 'EB*', 'ra': '261.04300039264325', 'dec': '-51.31439805504306', 'sep_arcmin': '2.7821446404502246'}, {'main_id': 'Gaia DR3 5925384852082638720', 'otype': 'EB*', 'ra': '260.89534759363664', 'dec': '-51.32489421704084', 'sep_arcmin': '2.817542143417021'}]}

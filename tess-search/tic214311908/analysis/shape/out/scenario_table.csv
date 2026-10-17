@@ -1,0 +1,34 @@
+group,scenario,dataset,dchi2_lc,dchi2_total,detail,file
+background EB,bg3_celm,ref,10.113802934567502,19.56633910055598,"A 0.30 Msun, 0.175 Rsun, 8000 K; B 0.66 Msun, 0.64 Rsun; T14 2.21 h; sec 1.45 ppt; phot chi2 4.1, plx 3.4",bg_eb_ref_bg3_celm.json
+background EB,bg3_celm_lconly,ref,-0.0004893079308203596,-0.13759970829869417,"A 0.27 Msun, 0.060 Rsun, 11681 K; B 0.41 Msun, 0.42 Rsun; T14 1.60 h; sec 0.34 ppt; phot chi2 721.8, plx 21.8",bg_eb_ref_bg3_celm_lconly.json
+background EB,bg3_cms_unphysical,ref,3.926541159044973,11.088960507691354,"A 1.40 Msun, 0.204 Rsun, 7683 K; B 0.67 Msun, 0.65 Rsun; T14 1.99 h; sec 1.91 ppt; phot chi2 2.6, plx 1.7",bg_eb_ref_bg3_cms_unphysical.json
+background EB,bg3_csdb,ref,15.951813360532014,84.17058238596292,"A 0.55 Msun, 0.100 Rsun, 20000 K; B 0.78 Msun, 0.75 Rsun; T14 1.89 h; sec 0.50 ppt; phot chi2 60.2, plx 0.9",bg_eb_ref_bg3_csdb.json
+background EB,bg3_cwd,ref,21.10652556194009,58.05617705411578,"A 0.17 Msun, 0.055 Rsun, 21605 K; B 0.66 Msun, 0.64 Rsun; T14 1.73 h; sec 0.21 ppt; phot chi2 23.2, plx 6.7",bg_eb_ref_bg3_cwd.json
+background EB,bg3_cwd_lconly,ref,0.0029636435392603744,-0.13678148491362663,"A 0.17 Msun, 0.055 Rsun, 11776 K; B 0.39 Msun, 0.40 Rsun; T14 1.60 h; sec 0.33 ppt; phot chi2 15853.6, plx 5.3",bg_eb_ref_bg3_cwd_lconly.json
+background EB,bg3_msbd,ref,133.17317002272512,143.17984618019955,"A 0.73 Msun, 0.713 Rsun, 4600 K; B 0.08 Msun, 0.25 Rsun; T14 3.23 h; sec 0.00 ppt; phot chi2 3.0, plx 0.0",bg_eb_ref_bg3_msbd.json
+background EB,bg3_msms11,ref,86.81408522066522,92.54684015359544,"A 0.73 Msun, 0.712 Rsun, 4590 K; B 0.74 Msun, 0.72 Rsun; T14 5.15 h; sec 0.00 ppt; phot chi2 2.6, plx 3.4",bg_eb_ref_bg3_msms11.json
+background EB,bg3_msms5,ref,56.63042928637742,65.47548458881056,"A 0.81 Msun, 0.776 Rsun, 5034 K; B 0.46 Msun, 0.47 Rsun; T14 3.63 h; sec 2.41 ppt; phot chi2 0.6, plx 1.8",bg_eb_ref_bg3_msms5.json
+background EB,bg5_celm,ref,17.654658884775017,27.41289305311693,"A 0.30 Msun, 0.351 Rsun, 7087 K; B 0.37 Msun, 0.36 Rsun; T14 2.58 h; sec 0.94 ppt; phot chi2 0.8, plx 9.6",bg_eb_ref_bg5_celm.json
+background EB,bg5_csdb,ref,12.792100125585876,40.0981454853204,"A 0.55 Msun, 0.100 Rsun, 20000 K; B 0.70 Msun, 0.70 Rsun; T14 1.86 h; sec 0.36 ppt; phot chi2 13.2, plx 6.7",bg_eb_ref_bg5_csdb.json
+background EB,bg5_cwd,ref,19.056222543258627,55.1567915897449,"A 0.17 Msun, 0.055 Rsun, 32662 K; B 0.69 Msun, 0.67 Rsun; T14 1.72 h; sec 0.12 ppt; phot chi2 17.0, plx 11.6",bg_eb_ref_bg5_cwd.json
+background EB,bg5_msbd,ref,186.65972431533646,201.56597412197607,"A 0.83 Msun, 0.787 Rsun, 5122 K; B 0.08 Msun, 0.25 Rsun; T14 3.47 h; sec 0.00 ppt; phot chi2 6.5, plx 1.0",bg_eb_ref_bg5_msbd.json
+background EB,bg5_msms11,ref,94.30420990415041,96.52604636930346,"A 0.86 Msun, 0.797 Rsun, 5170 K; B 0.88 Msun, 0.81 Rsun; T14 5.47 h; sec 0.00 ppt; phot chi2 3.5, plx 0.1",bg_eb_ref_bg5_msms11.json
+background EB,bg5_msms5,ref,64.23401167428347,76.32425653142809,"A 0.88 Msun, 0.822 Rsun, 5295 K; B 0.55 Msun, 0.56 Rsun; T14 3.95 h; sec 2.42 ppt; phot chi2 4.5, plx 0.2",bg_eb_ref_bg5_msms5.json
+compact star occulted (bound),lateM,inv,92.32797975028006,94.73124643582969,"M_A 0.15, R_A 0.0232, R_B 0.130, b 0.00, T14 0.81 h, ingress 7.4 min, sec 1.06 ppt, e 0.00",compact_inv_lateM.json
+compact star occulted (bound),single,inv,0.7325731099181212,3.090411248572309,"M_A 0.47, R_A 0.0143, R_B 0.390, b 0.00, T14 1.39 h, ingress 3.0 min, sec 0.88 ppt, e 0.00",compact_inv_single.json
+compact star occulted (bound),single_Rfree,inv,0.16113591768316837,0.17107294407787776,"M_A 0.32, R_A 0.0050, R_B 0.381, b 0.24, T14 1.38 h, ingress 1.1 min, sec -0.24 ppt, e 0.00",compact_inv_single_Rfree.json
+compact star occulted (bound),twin,inv,7.694664993761762,17.89194477274168,"M_A 0.25, R_A 0.0190, R_B 0.304, b 0.00, T14 1.31 h, ingress 4.6 min, sec 1.97 ppt, e 0.00",compact_inv_twin.json
+compact star occulted (bound),twin_Rfree,inv,2.3176926417254435,4.479577506671831,"M_A 0.15, R_A 0.0050, R_B 0.302, b 0.00, T14 1.34 h, ingress 1.3 min, sec 0.04 ppt, e 0.00",compact_inv_twin_Rfree.json
+compact star occulted (bound),any,ref,2.9446114570000645,2.9451389486193875,"M_A 0.60, R_A 0.0124, R_B 0.382, b 0.00, T14 1.28 h, ingress 2.4 min, sec 0.27 ppt, e 0.00",compact_ref_any.json
+compact star occulted (bound),lateM,ref,112.8952263320025,113.90746086688432,"M_A 0.15, R_A 0.0232, R_B 0.130, b 0.00, T14 0.81 h, ingress 7.4 min, sec 1.06 ppt, e 0.00",compact_ref_lateM.json
+compact star occulted (bound),single,ref,2.9447554547650725,2.9457962641454287,"M_A 0.61, R_A 0.0124, R_B 0.381, b 0.02, T14 1.28 h, ingress 2.4 min, sec 0.27 ppt, e 0.00",compact_ref_single.json
+compact star occulted (bound),single_ecc,ref,1.8014318090581583,1.8014333174796775,"M_A 0.78, R_A 0.0109, R_B 0.381, b 0.34, T14 1.40 h, ingress 2.6 min, sec -0.34 ppt, e 0.20",compact_ref_single_ecc.json
+compact star occulted (bound),twin,ref,4.1187682166946615,11.078630878130753,"M_A 0.25, R_A 0.0189, R_B 0.302, b 0.00, T14 1.30 h, ingress 4.6 min, sec 1.98 ppt, e 0.00",compact_ref_twin.json
+bound hierarchical EB,best P5.69,inv,47.55352758719255,47.59454665464955,"m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",bound_eb_inv.json
+bound hierarchical EB,best P11.38,inv,27.51426786648608,27.51426786648608,"m1 0.11, MS m2 0.11, k 1.00, m0 0.34145592097617955, f_src 0.075, P 11.38, b 0.77, T14 1.70 h",bound_eb_inv.json
+bound hierarchical EB,best occulter_BD,inv,47.55352758719255,47.59454665464955,"m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",bound_eb_inv.json
+bound hierarchical EB,best no_third_light,inv,46.29552393445374,46.29552393445374,"m1 0.28, MS m2 0.26, k 0.94, m0 nan, f_src 1.000, P 11.38, b 1.70, T14 1.42 h",bound_eb_inv.json
+bound hierarchical EB,best P5.69,ref,58.38109266122592,58.52293782904508,"m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",bound_eb_ref.json
+bound hierarchical EB,best P11.38,ref,33.73248938390225,33.73248938390225,"m1 0.11, MS m2 0.11, k 1.00, m0 0.34145592097617955, f_src 0.075, P 11.38, b 0.74, T14 1.71 h",bound_eb_ref.json
+bound hierarchical EB,best occulter_BD,ref,58.38109266122592,58.52293782904508,"m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",bound_eb_ref.json
+bound hierarchical EB,best no_third_light,ref,54.82278023476101,54.82278023476101,"m1 0.28, MS m2 0.26, k 0.94, m0 nan, f_src 1.000, P 11.38, b 1.70, T14 1.44 h",bound_eb_ref.json

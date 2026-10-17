@@ -1,0 +1,165 @@
+tic,star,catalog,description,n
+214311906,Mira,I/284/out,data (around 0+0),2
+214311906,Mira,I/297/out,Example of the an output of NOMAD-1,2
+214311906,Mira,I/305/out,records of GSC2.3.2 (near 0+0),1
+214311906,Mira,I/317/sample,Example of formatted output,2
+214311906,Mira,I/320/spm4,SPM4 output (out of 103319647 stars),1
+214311906,Mira,I/322A/out,UCAC4 output (out of 113780093 stars),1
+214311906,Mira,I/324/igsl3,the IGSL3 data release,1
+214311906,Mira,I/345/gaia2,GaiaSource DR2 data,1
+214311906,Mira,I/347/gaia2dis,Estimating distances from parallaxes (1331909727 sources),1
+214311906,Mira,I/350/gaiaedr3,GaiaSource EDR3 data,2
+214311906,Mira,I/352/gedr3dis,Estimating distances from parallaxes (1467744818 sources),2
+214311906,Mira,I/353/gsc242,records of GSC 2.4.2,3
+214311906,Mira,I/355/gaiadr3,Gaia DR3 source catalog (1811709771 sources),2
+214311906,Mira,I/355/paramp,1D astrophysical parameters produced by the Apsis processing chain developed in Gaia DPAC CU8 (1590932717 sources) (astrophysical_parameters),1
+214311906,Mira,I/355/epphot,"Light curves for a given object in bands G, BP and RP (555868797 rows) (epoch_photometry)",40
+214311906,Mira,I/355/xpsummary,Auxiliary information about the mean BP/RP spectrum (219197643 sources) (xp_summary),1
+214311906,Mira,I/355/xpsample,BP/RP externally calibrated sampled mean spectrum (11822651939 rows) (xp_sampled_mean_spectrum),50
+214311906,Mira,I/355/xpcont,Mean BP and RP spectra based on the continuous representation in basis functions (219197643 rows) (gaia_dr3_xpcont),1
+214311906,Mira,I/358/varisum,"Information on where a source_id can be found in the different Variability tables and statistical parameters of time series, using only transits not rejected (11754237 sources) (vari_summary)",1
+214311906,Mira,I/358/vclassre,Variability classification results of all classifiers (vari_classifier_result),1
+214311906,Mira,I/358/vlpv,Long Period Variable stars (vari_long_period_variable),1
+214311906,Mira,II/246/out,"2MASS Point Source Catalogue, output (on a total of 470,992,970 sources)",1
+214311906,Mira,II/297/irc,AKARI/IRC All-Sky Survey Point Source Catalogue (Version 1.0),1
+214311906,Mira,II/311/wise,"the WISE All-Sky release (among 563,921,584 sources)",1
+214311906,Mira,II/328/allwise,"*the AllWISE data release (among 747,634,026 sources) (updated version, 16-Feb-2021)",1
+214311906,Mira,II/336/apass9,"The APASS catalog, output (on a total of 62 million sources)",2
+214311906,Mira,II/358/smss,SkyMapper DR1.1,1
+214311906,Mira,II/359/vhs_dr4,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR4.1; output (on a total of 1,155,634,198 sources)",3
+214311906,Mira,II/363/unwise,"the band-merged unWISE catalog (among 2,214,734,224 sources)",1
+214311906,Mira,II/365/catwise,"the CatWISE2020 catalog (among 1,890,715,640 sources)",1
+214311906,Mira,II/366/catv2021,ASAS-SN catalog of variable stars (from the ASAS-SN Variable Stars Database (AVSD); http://asas-sn.osu.edu/variables on 10-Sep-2024) (08-Oct-2021 version),1
+214311906,Mira,II/367/vhs_dr5,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR5 (version 3); output (on a total of 1,374,207,485 sources)",3
+214311906,Mira,II/379/smssdr4,SkyMapper DR4,1
+214311906,Mira,IV/38/tic,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.0 (TIC-8), outpout (on a total of 1,727,987,580 sources)",1
+214311906,Mira,IV/39/tic82,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.2 (TIC-8.2), outpout (on a total of 1,727,987,580 sources)",1
+214311906,Mira,V/155/gdr2ap,records of GDR2AP,1
+214311906,Mira,V/160/shboost,Data model of the Gaia DR3 SHBoost catalogue,1
+214311906,Mira,VI/42/out,Compute constellation name from position,1
+214311906,Mira,VI/137/gum_mw,"Gaia Universe Model Snapshot (GUMS): Milky Way stars (among 2,143,475,885 stars)",1
+214311906,Mira,B/denis/denis,DENIS output,1
+214311906,Mira,B/vsx/vsx,"Variable Star indeX, Version 2026-10-05 (\originalcolumnnames)",1
+214311906,Mira,J/ApJ/867/105/refcat2,"ATLAS all-sky stellar reference catalog, ATLAS-REFCAT2",1
+214311906,Mira,J/ApJ/984/58/table1,Stellar Parameters Derived from XP Spectra,1
+214311906,Mira,J/A+A/648/A44/tabled1,Catalog of large amplitude variables from Gaia DR2,1
+214311906,Mira,J/A+A/674/A22/catalog,Cross-match catalog of 17841723 of Gaia sources,2
+214311906,Mira,J/A+A/674/A25/vspursig,Spurious signals (vari\_vari\_spursign),1
+214311906,Mira,J/A+A/677/A137/catalog,Gaia DR3 three-band photometric dispersions catalog,1
+214311906,Mira,J/A+A/684/A29/extend,Extended Catalogue,1
+214311906,Mira,J/A+A/692/A115/pristine_ca,Photometry catalogue that includes both the synthetic CaHKsyn and the Pristine CaHK photometric information (table 1) (219194028 sources),1
+214311906,Mira,J/A+A/704/A317/tequila,TEQUILA master frame catalog,1
+214311906,Mira,J/MNRAS/524/1855/xpparams,Astrometrics and revised stellar atmospheric parameters of Gaia XP stars inferred from our data-driven model with straightforward built-in physical assumptions,1
+214311908,M3V,I/284/out,data (around 0+0),3
+214311908,M3V,I/297/out,Example of the an output of NOMAD-1,3
+214311908,M3V,I/305/out,records of GSC2.3.2 (near 0+0),1
+214311908,M3V,I/317/sample,Example of formatted output,3
+214311908,M3V,I/320/spm4,SPM4 output (out of 103319647 stars),1
+214311908,M3V,I/322A/out,UCAC4 output (out of 113780093 stars),1
+214311908,M3V,I/324/igsl3,the IGSL3 data release,3
+214311908,M3V,I/337/gaia,GaiaSource data,2
+214311908,M3V,I/345/gaia2,GaiaSource DR2 data,4
+214311908,M3V,I/347/gaia2dis,Estimating distances from parallaxes (1331909727 sources),3
+214311908,M3V,I/349/starhorse,Starhorse catalog,1
+214311908,M3V,I/350/gaiaedr3,GaiaSource EDR3 data,4
+214311908,M3V,I/352/gedr3dis,Estimating distances from parallaxes (1467744818 sources),4
+214311908,M3V,I/353/gsc242,records of GSC 2.4.2,5
+214311908,M3V,I/354/starhorse2021,"First 1000 lines as an example, Starhorse 2021",1
+214311908,M3V,I/355/gaiadr3,Gaia DR3 source catalog (1811709771 sources),4
+214311908,M3V,I/355/paramp,1D astrophysical parameters produced by the Apsis processing chain developed in Gaia DPAC CU8 (1590932717 sources) (astrophysical_parameters),4
+214311908,M3V,I/355/paramsup,"Additional parameters from the Apsis processing chain, compared to the main table astrophysical parameters, from modules that produce more than one result for a parameter (473020612 sources) (astrophysical_parameters_supp)",1
+214311908,M3V,I/355/xpsummary,Auxiliary information about the mean BP/RP spectrum (219197643 sources) (xp_summary),1
+214311908,M3V,I/355/xpsample,BP/RP externally calibrated sampled mean spectrum (11822651939 rows) (xp_sampled_mean_spectrum),50
+214311908,M3V,I/355/xpcont,Mean BP and RP spectra based on the continuous representation in basis functions (219197643 rows) (gaia_dr3_xpcont),1
+214311908,M3V,I/360/syntphot,Synthetic photometry generated from the Gaia BP/RP mean spectra (218936915 sources) (synthetic_photometry_gspc),1
+214311908,M3V,I/363/gaia_rv_dr3,"the catalog, as in VizieR version",1
+214311908,M3V,II/246/out,"2MASS Point Source Catalogue, output (on a total of 470,992,970 sources)",1
+214311908,M3V,II/311/wise,"the WISE All-Sky release (among 563,921,584 sources)",1
+214311908,M3V,II/328/allwise,"*the AllWISE data release (among 747,634,026 sources) (updated version, 16-Feb-2021)",1
+214311908,M3V,II/358/smss,SkyMapper DR1.1,1
+214311908,M3V,II/359/vhs_dr4,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR4.1; output (on a total of 1,155,634,198 sources)",5
+214311908,M3V,II/363/unwise,"the band-merged unWISE catalog (among 2,214,734,224 sources)",1
+214311908,M3V,II/367/vhs_dr5,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR5 (version 3); output (on a total of 1,374,207,485 sources)",5
+214311908,M3V,II/374/table2,Catalogue with RGB magnitudes for Gaia DR3 objects,1
+214311908,M3V,II/379/smssdr4,SkyMapper DR4,1
+214311908,M3V,IV/35/wn18_b10,"IDs, positions, magnitudes and probabilities (118,964,029 sources)",1
+214311908,M3V,IV/38/tic,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.0 (TIC-8), outpout (on a total of 1,727,987,580 sources)",5
+214311908,M3V,IV/39/tic82,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.2 (TIC-8.2), outpout (on a total of 1,727,987,580 sources)",5
+214311908,M3V,V/160/shboost,Data model of the Gaia DR3 SHBoost catalogue,1
+214311908,M3V,VI/42/out,Compute constellation name from position,1
+214311908,M3V,VI/137/gum_mw,"Gaia Universe Model Snapshot (GUMS): Milky Way stars (among 2,143,475,885 stars)",5
+214311908,M3V,B/denis/denis,DENIS output,1
+214311908,M3V,J/ApJ/867/105/refcat2,"ATLAS all-sky stellar reference catalog, ATLAS-REFCAT2",3
+214311908,M3V,J/ApJ/891/58/table6,Exposure times calculated in this work,1
+214311908,M3V,J/ApJ/984/58/table1,Stellar Parameters Derived from XP Spectra,1
+214311908,M3V,J/A+A/649/A6/table1c,Selected objects,1
+214311908,M3V,J/A+A/653/A98/aspic1_1,All-sky PLATO input catalog (2675539 sources),1
+214311908,M3V,J/A+A/657/A7/tablea3,CPM candidate companions for Gaia stars within 100 pc,2
+214311908,M3V,J/A+A/669/A104/catalog,Catalog (table A1),1
+214311908,M3V,J/A+A/677/A137/catalog,Gaia DR3 three-band photometric dispersions catalog,1
+214311908,M3V,J/A+A/682/A34/erass1-m,"All extended X-ray sources and all point-like X-ray sources with detection likelihood >6, detected over a broad 0.2-2.3keV band",1
+214311908,M3V,J/A+A/684/A29/extend,Extended Catalogue,1
+214311908,M3V,J/A+A/684/A121/like_ctp,Likely coronal identifications of the eRASS1 main sources,1
+214311908,M3V,J/A+A/692/A115/pristine_ca,Photometry catalogue that includes both the synthetic CaHKsyn and the Pristine CaHK photometric information (table 1) (219194028 sources),1
+214311908,M3V,J/A+A/692/A150/allskytg,"Entire sample, classified into thin disk, thick disk candidate, thick disk, halo candidate, and halo",1
+214311908,M3V,J/A+A/704/A237/80pcbpok,Data for the initial 99416 stars within 80 pc of beta Pictoris,1
+214311908,M3V,J/A+A/704/A344/dr1ls10,Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the Legacy Survey DR10,1
+214311908,M3V,J/A+A/704/A344/dr1ge3,Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the Gaia DR3 survey,1
+214311908,M3V,J/A+A/704/A344/dr1cw2020,Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the CatWISE2020 survey,1
+214311908,M3V,J/AJ/158/93/table2,Results of our regression in Gaia DR2 (Cat. I/345),1
+214311908,M3V,J/AJ/159/84/table2,"Results of our regression for Gaia DR2 (Cat. I/345) (1000 sources among 132,739,322)",1
+214311908,M3V,J/AJ/161/234/table2,Best matches found in this study with a Bayesian probability greater than 95% for all cross matches in this study,1
+214311908,M3V,J/AJ/161/234/table3,All of the possible matches for the cross match between Gaia and 2MASS,4
+214311908,M3V,J/AJ/161/234/table4,All of the possible matches for the cross match between Gaia and AllWISE,1
+214311908,M3V,J/AJ/165/267/table1,Photo-astrometric properties of main sequence stars within 120pc,1
+214311908,M3V,J/MNRAS/506/2269/catalog,*Full binary catalogue,1
+214311908,M3V,J/MNRAS/524/1855/xpparams,Astrometrics and revised stellar atmospheric parameters of Gaia XP stars inferred from our data-driven model with straightforward built-in physical assumptions,1
+214311910,pairA,I/243/out,"* output (out of 526,280,881 stars)",1
+214311910,pairA,I/252/out,"* output (out of 526,280,881 stars)",1
+214311910,pairA,I/284/out,data (around 0+0),2
+214311910,pairA,I/297/out,Example of the an output of NOMAD-1,3
+214311910,pairA,I/305/out,records of GSC2.3.2 (near 0+0),1
+214311910,pairA,I/317/sample,Example of formatted output,2
+214311910,pairA,I/319/xpm,"formatted catalog (on a total of 313,610,083 sources)",1
+214311910,pairA,I/320/spm4,SPM4 output (out of 103319647 stars),2
+214311910,pairA,I/322A/out,UCAC4 output (out of 113780093 stars),1
+214311910,pairA,I/324/igsl3,the IGSL3 data release,2
+214311910,pairA,I/337/gaia,GaiaSource data,1
+214311910,pairA,I/345/gaia2,GaiaSource DR2 data,5
+214311910,pairA,I/347/gaia2dis,Estimating distances from parallaxes (1331909727 sources),2
+214311910,pairA,I/350/gaiaedr3,GaiaSource EDR3 data,5
+214311910,pairA,I/352/gedr3dis,Estimating distances from parallaxes (1467744818 sources),3
+214311910,pairA,I/353/gsc242,records of GSC 2.4.2,3
+214311910,pairA,I/354/starhorse2021,"First 1000 lines as an example, Starhorse 2021",1
+214311910,pairA,I/355/gaiadr3,Gaia DR3 source catalog (1811709771 sources),5
+214311910,pairA,I/355/paramp,1D astrophysical parameters produced by the Apsis processing chain developed in Gaia DPAC CU8 (1590932717 sources) (astrophysical_parameters),4
+214311910,pairA,I/355/paramsup,"Additional parameters from the Apsis processing chain, compared to the main table astrophysical parameters, from modules that produce more than one result for a parameter (473020612 sources) (astrophysical_parameters_supp)",1
+214311910,pairA,I/355/xpsummary,Auxiliary information about the mean BP/RP spectrum (219197643 sources) (xp_summary),2
+214311910,pairA,I/355/xpsample,BP/RP externally calibrated sampled mean spectrum (11822651939 rows) (xp_sampled_mean_spectrum),50
+214311910,pairA,I/355/xpcont,Mean BP and RP spectra based on the continuous representation in basis functions (219197643 rows) (gaia_dr3_xpcont),2
+214311910,pairA,I/360/syntphot,Synthetic photometry generated from the Gaia BP/RP mean spectra (218936915 sources) (synthetic_photometry_gspc),2
+214311910,pairA,II/246/out,"2MASS Point Source Catalogue, output (on a total of 470,992,970 sources)",2
+214311910,pairA,II/336/apass9,"The APASS catalog, output (on a total of 62 million sources)",2
+214311910,pairA,II/358/smss,SkyMapper DR1.1,2
+214311910,pairA,II/359/vhs_dr4,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR4.1; output (on a total of 1,155,634,198 sources)",2
+214311910,pairA,II/366/catv2021,ASAS-SN catalog of variable stars (from the ASAS-SN Variable Stars Database (AVSD); http://asas-sn.osu.edu/variables on 10-Sep-2024) (08-Oct-2021 version),1
+214311910,pairA,II/367/vhs_dr5,"VISTA Hemisphere Survey band-merged multi-waveband catalogues (VHS) DR5 (version 3); output (on a total of 1,374,207,485 sources)",2
+214311910,pairA,II/374/table2,Catalogue with RGB magnitudes for Gaia DR3 objects,2
+214311910,pairA,II/379/smssdr4,SkyMapper DR4,1
+214311910,pairA,IV/38/tic,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.0 (TIC-8), outpout (on a total of 1,727,987,580 sources)",6
+214311910,pairA,IV/39/tic82,"Transiting Exoplanet Survey Satellite (TESS) Input Catalog - v8.2 (TIC-8.2), outpout (on a total of 1,727,987,580 sources)",6
+214311910,pairA,V/160/shboost,Data model of the Gaia DR3 SHBoost catalogue,2
+214311910,pairA,VI/42/out,Compute constellation name from position,1
+214311910,pairA,J/ApJ/867/105/refcat2,"ATLAS all-sky stellar reference catalog, ATLAS-REFCAT2",4
+214311910,pairA,J/ApJ/984/58/table1,Stellar Parameters Derived from XP Spectra,2
+214311910,pairA,J/A+A/648/A44/tabled1,Catalog of large amplitude variables from Gaia DR2,1
+214311910,pairA,J/A+A/649/A6/table1c,Selected objects,1
+214311910,pairA,J/A+A/657/A7/tablea3,CPM candidate companions for Gaia stars within 100 pc,1
+214311910,pairA,J/A+A/674/A22/catalog,Cross-match catalog of 17841723 of Gaia sources,1
+214311910,pairA,J/A+A/677/A137/catalog,Gaia DR3 three-band photometric dispersions catalog,1
+214311910,pairA,J/A+A/684/A29/extend,Extended Catalogue,1
+214311910,pairA,J/A+A/684/A121/like_ctp,Likely coronal identifications of the eRASS1 main sources,1
+214311910,pairA,J/A+A/692/A115/pristine_ca,Photometry catalogue that includes both the synthetic CaHKsyn and the Pristine CaHK photometric information (table 1) (219194028 sources),2
+214311910,pairA,J/AJ/165/267/table1,Photo-astrometric properties of main sequence stars within 120pc,1
+214311910,pairA,J/AJ/166/218/table1,*All Gaia EDR3 red candidate binaries within 200pc,2
+214311910,pairA,J/MNRAS/524/1855/xpparams,Astrometrics and revised stellar atmospheric parameters of Gaia XP stars inferred from our data-driven model with straightforward built-in physical assumptions,2

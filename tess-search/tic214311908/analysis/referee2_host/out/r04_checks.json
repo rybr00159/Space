@@ -1,0 +1,101 @@
+{
+ "rv": {
+  "normal RUWE<1.2 |dMK|<0.25": {
+   "n": 979,
+   "median": 2.088618,
+   "p95": 3.2239160999999954,
+   "target_pct": 0.6159346271705822,
+   "frac_gt_p95_normal": null
+  },
+  "normal, |dBPRP|<0.15": {
+   "n": 218,
+   "median": 2.1793141499999997,
+   "p95": 3.437738755,
+   "target_pct": 0.5229357798165137,
+   "frac_gt_p95_normal": null
+  },
+  "normal, deblended frac>0.4": {
+   "n": 46,
+   "median": 2.07822645,
+   "p95": 2.7143486,
+   "target_pct": 0.5869565217391305,
+   "frac_gt_p95_normal": null
+  },
+  "overlum RUWE<1.1 -1.0<dMK<-0.5": {
+   "n": 123,
+   "median": 2.1477644,
+   "p95": 4.374708839999995,
+   "target_pct": 0.5528455284552846,
+   "frac_gt_p95_normal": null
+  },
+  "RUWE>2": {
+   "n": 419,
+   "median": 2.4201334,
+   "p95": 4.368965329999999,
+   "target_pct": 0.36515513126491644,
+   "frac_gt_p95_normal": null
+  }
+ },
+ "denis": {
+  "target": {
+   "sep": 0.3231709854120604,
+   "image": 1724791,
+   "dJ": 0.4109999999999996,
+   "dK": 0.3410000000000011,
+   "DENIS_J": 11.774,
+   "DENIS_K": 10.823
+  },
+  "J same image": {
+   "n": 36,
+   "median": 0.3855000000000004,
+   "robust_sd": 0.04003019999999888,
+   "images": [
+    1724791
+   ]
+  },
+  "J other images": {
+   "n": 42,
+   "median": 0.08250000000000046,
+   "robust_sd": 0.1749468000000018,
+   "images": [
+    1724790,
+    1724792,
+    1774305,
+    1774306,
+    1774307
+   ]
+  },
+  "K same image": {
+   "n": 52,
+   "median": 0.30100000000000104,
+   "robust_sd": 0.04596059999999823,
+   "images": [
+    1724791
+   ]
+  },
+  "K other images": {
+   "n": 68,
+   "median": 0.050499999999999545,
+   "robust_sd": 0.18680759999999916,
+   "images": [
+    1724790,
+    1724792,
+    1774305,
+    1774306,
+    1774307
+   ]
+  }
+ },
+ "h15_cmd_check": {
+  "model_single_frac_as_bright": 0.09483371543987616,
+  "model_single_density_at_target": 0.3024217550113743,
+  "model_twin_component_density": 0.7449380366741833,
+  "empirical_all_frac_as_bright": 0.0276688955499193,
+  "empirical_all_density_at_target": 0.14872031358081622,
+  "empirical_density_at_twin_component_position": 0.9684113442471755,
+  "ratio_model_single_to_empirical_all": 2.033493258115241,
+  "note": "h15 single-star dMKs model = N(a + b f, 0.29) integrated over the kinematic [Fe/H] prior; empirical = all clean field stars (singles + binaries) at the M3V colour"
+ },
+ "cmd_only_P_twin_empirical": 0.15237209302325583,
+ "cmd_only_P_twin_h15_style": 0.06047494128933814
+}

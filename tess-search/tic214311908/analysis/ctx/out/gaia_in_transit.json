@@ -1,0 +1,48 @@
+{
+ "DR4": {
+  "n_fov_transits": 96,
+  "expected_in_transit": 2.80182537912978e-290,
+  "in_or_near_transit": []
+ },
+ "DR5": {
+  "n_fov_transits": 110,
+  "expected_in_transit": 2.4797482308459506,
+  "in_or_near_transit": [
+   {
+    "utc": "2020-02-14 21:26:11.660",
+    "btjd": 1894.394,
+    "fov": 2,
+    "ac_deg": -0.2037,
+    "epoch": -342,
+    "dt_min": -42.3385,
+    "sigma_tc_min": 6.5037,
+    "p_in_transit": 0.8435,
+    "frac_in_transit": 0.4473
+   },
+   {
+    "utc": "2023-07-26 18:38:23.052",
+    "btjd": 3152.2775,
+    "fov": 1,
+    "ac_deg": -0.0646,
+    "epoch": -121,
+    "dt_min": 47.9012,
+    "sigma_tc_min": 2.866,
+    "p_in_transit": 0.6363,
+    "frac_in_transit": 0.0681
+   },
+   {
+    "utc": "2024-10-29 18:20:36.632",
+    "btjd": 3613.2651,
+    "fov": 1,
+    "ac_deg": -0.2486,
+    "epoch": -40,
+    "dt_min": 13.9377,
+    "sigma_tc_min": 2.5148,
+    "p_in_transit": 1.0,
+    "frac_in_transit": 1.0
+   }
+  ]
+ },
+ "note": "Commanded scanning law (cosmos.esa.int full-mission file); realised attitude may differ by <~30 arcsec; outages and rejected transits are not modelled: in the DR3 window 14 of 48 predicted |AC|<0.35 crossings of the Mira have no DR3 epoch. |AC| < 0.42 deg.",
+ "duty_cycle": 0.011933006155633804
+}

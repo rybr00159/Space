@@ -1,0 +1,30 @@
+{
+ "n_normal": 84,
+ "n_metal_rich": 20,
+ "n_metal_poor": 11,
+ "n_overlum": 144,
+ "metal_rich": {
+  "corr_M3V": 0.7141008786559669,
+  "null_median": 0.032236967600304096,
+  "null_sd": 0.3745306362082195,
+  "pct_of_normal_stars_below": 0.9880952380952381
+ },
+ "metal_poor": {
+  "corr_M3V": 0.1293313707603402,
+  "null_median": 0.034786815261902436,
+  "null_sd": 0.25335957990155394,
+  "pct_of_normal_stars_below": 0.6190476190476191
+ },
+ "overluminous_field": {
+  "corr_M3V": 0.71262104970339,
+  "null_median": 0.03839394186397594,
+  "null_sd": 0.359357789511828,
+  "pct_of_normal_stars_below": 0.9761904761904762
+ },
+ "metal_rich_minus_poor": {
+  "corr_M3V": 0.46861461675571586,
+  "null_median": -0.004551537304028843,
+  "null_sd": 0.26014464847020474,
+  "pct_of_normal_stars_below": 0.9880952380952381
+ }
+}

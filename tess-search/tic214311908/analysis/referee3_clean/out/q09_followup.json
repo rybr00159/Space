@@ -1,0 +1,24 @@
+{
+ "mags": {
+  "V": 15.608053092555906,
+  "I_C": 12.921638705321548,
+  "G": 14.281043,
+  "SMSS_i": 13.3869,
+  "SMSS_z": 12.7683
+ },
+ "predictions_summary": {
+  "sig_min_2026_10": 1.829620624978441,
+  "sig_min_2027_12": 2.5049520929645057,
+  "max_abs_shift_vs_phase1_min": 0.6127975881099701,
+  "max_abs_csv_utc_error_min": 0.9961328655481339
+ },
+ "precision_per_2min_for_5sigma_depth15.2_dil1.0": 14.236161280345202,
+ "precision_per_2min_for_10sigma_depth15.2_dil1.0": 7.118080640172601,
+ "precision_per_2min_for_5sigma_depth15.2_dil0.96": 13.666714829131394,
+ "precision_per_2min_for_10sigma_depth15.2_dil0.96": 6.833357414565697,
+ "precision_per_2min_for_5sigma_depth17.0_dil1.0": 15.922022484596608,
+ "precision_per_2min_for_10sigma_depth17.0_dil1.0": 7.961011242298304,
+ "precision_per_2min_for_5sigma_depth17.0_dil0.96": 15.285141585212745,
+ "precision_per_2min_for_10sigma_depth17.0_dil0.96": 7.642570792606373,
+ "n_in_2min_eff": 43.86
+}

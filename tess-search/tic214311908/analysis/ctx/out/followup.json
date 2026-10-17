@@ -1,0 +1,846 @@
+{
+ "csv_check": {
+  "n_csv": 42,
+  "n_matched": 42,
+  "max_abs_diff_min": 0.0709591805934906,
+  "max_sigma_diff_min": 0.04896998145106224,
+  "csv_epochs": [
+   108,
+   149
+  ],
+  "note": "CSV bjd_tdb is rounded to 1e-4 d (0.14 min); sigma already includes the chi2/dof = 4.86 inflation"
+ },
+ "observable_full_window_sun_lt_-12": {
+  "CTIO": [
+   "2027-04-11 07:36",
+   "2027-05-21 03:43",
+   "2027-06-07 05:30",
+   "2027-06-24 07:17",
+   "2027-07-17 01:41",
+   "2027-08-03 03:30"
+  ],
+  "La Silla": [
+   "2027-04-11 07:36",
+   "2027-05-21 03:43",
+   "2027-06-07 05:30",
+   "2027-06-24 07:17",
+   "2027-07-17 01:41",
+   "2027-08-03 03:30"
+  ],
+  "SAAO Sutherland": [
+   "2027-04-17 00:12",
+   "2027-05-04 01:57",
+   "2027-05-26 20:19",
+   "2027-06-12 22:06",
+   "2027-06-29 23:53",
+   "2027-08-08 20:06"
+  ],
+  "Siding Spring": [
+   "2027-04-22 16:47",
+   "2027-06-01 12:54",
+   "2027-06-18 14:41",
+   "2027-07-28 10:53",
+   "2027-08-14 12:42"
+  ]
+ },
+ "n_observable": {
+  "CTIO": {
+   "sun12": 6,
+   "sun18": 6,
+   "plus2sigma": 5
+  },
+  "La Silla": {
+   "sun12": 6,
+   "sun18": 6,
+   "plus2sigma": 5
+  },
+  "SAAO Sutherland": {
+   "sun12": 6,
+   "sun18": 6,
+   "plus2sigma": 5
+  },
+  "Siding Spring": {
+   "sun12": 5,
+   "sun18": 5,
+   "plus2sigma": 5
+  }
+ },
+ "late_2026": {
+  "n_transits": 13,
+  "observable_full": [],
+  "best_partial": [
+   {
+    "site": "CTIO",
+    "utc_mid": "2026-11-02 23:04",
+    "frac_window_observable": 0.16,
+    "alt_mid": 44.0
+   },
+   {
+    "site": "La Silla",
+    "utc_mid": "2026-11-02 23:04",
+    "frac_window_observable": 0.12,
+    "alt_mid": 43.3
+   },
+   {
+    "site": "CTIO",
+    "utc_mid": "2026-10-28 06:28",
+    "frac_window_observable": 0.0,
+    "alt_mid": -6.8
+   },
+   {
+    "site": "CTIO",
+    "utc_mid": "2026-10-22 13:51",
+    "frac_window_observable": 0.0,
+    "alt_mid": 21.2
+   },
+   {
+    "site": "CTIO",
+    "utc_mid": "2026-11-08 15:40",
+    "frac_window_observable": 0.0,
+    "alt_mid": 48.1
+   },
+   {
+    "site": "CTIO",
+    "utc_mid": "2026-11-14 08:16",
+    "frac_window_observable": 0.0,
+    "alt_mid": -5.5
+   }
+  ]
+ },
+ "epochs_observable_from_any_site": 17,
+ "first_observable": [
+  {
+   "site": "CTIO",
+   "utc_mid": "2027-04-11 07:36",
+   "sigma_min": 4.3,
+   "moon_illum": 0.22,
+   "moon_sep_deg": 155.4
+  },
+  {
+   "site": "La Silla",
+   "utc_mid": "2027-04-11 07:36",
+   "sigma_min": 4.3,
+   "moon_illum": 0.22,
+   "moon_sep_deg": 155.3
+  },
+  {
+   "site": "SAAO Sutherland",
+   "utc_mid": "2027-04-17 00:12",
+   "sigma_min": 4.4,
+   "moon_illum": 0.82,
+   "moon_sep_deg": 105.3
+  },
+  {
+   "site": "Siding Spring",
+   "utc_mid": "2027-04-22 16:47",
+   "sigma_min": 4.4,
+   "moon_illum": 0.96,
+   "moon_sep_deg": 37.2
+  },
+  {
+   "site": "SAAO Sutherland",
+   "utc_mid": "2027-05-04 01:57",
+   "sigma_min": 4.4,
+   "moon_illum": 0.07,
+   "moon_sep_deg": 109.7
+  }
+ ],
+ "season_months_observable": [
+  "2027-04",
+  "2027-05",
+  "2027-06",
+  "2027-07",
+  "2027-08"
+ ],
+ "precision": {
+  "0.4m_g": {
+   "nominal": {
+    "star_e": 40167.042,
+    "sky_e": 5697.21,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 5.816,
+    "scint_ppt": 0.896,
+    "per_exposure_ppt": 5.884,
+    "cadence_s": 130.0,
+    "per_min_ppt": 8.661,
+    "peak_e_M3V": 2879.306,
+    "peak_e_Mira": 5471.265,
+    "texp_for_M3V_peak_30ke": 1250.301
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 36971.737,
+    "sky_e": 51032.255,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 8.872,
+    "scint_ppt": 1.583,
+    "per_exposure_ppt": 9.012,
+    "cadence_s": 130.0,
+    "per_min_ppt": 13.265,
+    "peak_e_M3V": 1177.891,
+    "peak_e_Mira": 2238.233,
+    "texp_for_M3V_peak_30ke": 3056.309
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0012,
+     "snr_white": 12.1365,
+     "sigma_red": 0.0014,
+     "snr_red": 11.0753,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0012,
+     "snr_white": 14.5638,
+     "sigma_red": 0.0014,
+     "snr_red": 13.2904,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0019,
+     "snr_white": 7.9244,
+     "sigma_red": 0.0022,
+     "snr_red": 6.8394,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0019,
+     "snr_white": 9.5093,
+     "sigma_red": 0.0022,
+     "snr_red": 8.2073,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   }
+  },
+  "0.4m_r": {
+   "nominal": {
+    "star_e": 81981.087,
+    "sky_e": 10478.667,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 3.88,
+    "scint_ppt": 0.896,
+    "per_exposure_ppt": 3.982,
+    "cadence_s": 130.0,
+    "per_min_ppt": 5.861,
+    "peak_e_M3V": 5876.674,
+    "peak_e_Mira": 14201.414,
+    "texp_for_M3V_peak_30ke": 612.591
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 78291.33,
+    "sky_e": 93861.733,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 5.593,
+    "scint_ppt": 1.583,
+    "per_exposure_ppt": 5.813,
+    "cadence_s": 130.0,
+    "per_min_ppt": 8.556,
+    "peak_e_M3V": 2494.302,
+    "peak_e_Mira": 6027.664,
+    "texp_for_M3V_peak_30ke": 1443.289
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0008,
+     "snr_white": 17.9352,
+     "sigma_red": 0.001,
+     "snr_red": 14.9536,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0008,
+     "snr_white": 21.5222,
+     "sigma_red": 0.001,
+     "snr_red": 17.9443,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0012,
+     "snr_white": 12.2859,
+     "sigma_red": 0.0016,
+     "snr_red": 9.0991,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0012,
+     "snr_white": 14.7431,
+     "sigma_red": 0.0016,
+     "snr_red": 10.9189,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   }
+  },
+  "0.4m_i": {
+   "nominal": {
+    "star_e": 247027.315,
+    "sky_e": 16785.619,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 2.113,
+    "scint_ppt": 0.896,
+    "per_exposure_ppt": 2.295,
+    "cadence_s": 130.0,
+    "per_min_ppt": 3.378,
+    "peak_e_M3V": 17707.73,
+    "peak_e_Mira": 140269.382,
+    "texp_for_M3V_peak_30ke": 203.301
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 241404.287,
+    "sky_e": 150355.693,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 2.657,
+    "scint_ppt": 1.583,
+    "per_exposure_ppt": 3.093,
+    "cadence_s": 130.0,
+    "per_min_ppt": 4.552,
+    "peak_e_M3V": 7690.957,
+    "peak_e_Mira": 60922.872,
+    "texp_for_M3V_peak_30ke": 468.082
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0005,
+     "snr_white": 31.1137,
+     "sigma_red": 0.0007,
+     "snr_red": 20.4281,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0005,
+     "snr_white": 37.3364,
+     "sigma_red": 0.0007,
+     "snr_red": 24.5137,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0006,
+     "snr_white": 23.0913,
+     "sigma_red": 0.0013,
+     "snr_red": 11.6811,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0006,
+     "snr_white": 27.7096,
+     "sigma_red": 0.0013,
+     "snr_red": 14.0174,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   }
+  },
+  "0.4m_z": {
+   "nominal": {
+    "star_e": 160007.108,
+    "sky_e": 15259.196,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 2.681,
+    "scint_ppt": 0.896,
+    "per_exposure_ppt": 2.826,
+    "cadence_s": 130.0,
+    "per_min_ppt": 4.16,
+    "peak_e_M3V": 11469.835,
+    "peak_e_Mira": 156587.533,
+    "texp_for_M3V_peak_30ke": 313.867
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 157086.649,
+    "sky_e": 136682.897,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 3.563,
+    "scint_ppt": 1.583,
+    "per_exposure_ppt": 3.899,
+    "cadence_s": 130.0,
+    "per_min_ppt": 5.74,
+    "peak_e_M3V": 5004.661,
+    "peak_e_Mira": 68324.217,
+    "texp_for_M3V_peak_30ke": 719.329
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0006,
+     "snr_white": 25.2674,
+     "sigma_red": 0.0008,
+     "snr_red": 18.4754,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0006,
+     "snr_white": 30.3209,
+     "sigma_red": 0.0008,
+     "snr_red": 22.1704,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0008,
+     "snr_white": 18.3144,
+     "sigma_red": 0.0014,
+     "snr_red": 10.8885,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0008,
+     "snr_white": 21.9773,
+     "sigma_red": 0.0014,
+     "snr_red": 13.0661,
+     "n_in": 38.3677,
+     "n_out": 55.3846
+    }
+   }
+  },
+  "1.0m_g": {
+   "nominal": {
+    "star_e": 125522.008,
+    "sky_e": 17803.782,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 3.139,
+    "scint_ppt": 0.688,
+    "per_exposure_ppt": 3.213,
+    "cadence_s": 80.0,
+    "per_min_ppt": 3.71,
+    "peak_e_M3V": 4212.281,
+    "peak_e_Mira": 8004.188,
+    "texp_for_M3V_peak_30ke": 427.322
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 115536.678,
+    "sky_e": 159475.795,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 4.755,
+    "scint_ppt": 1.215,
+    "per_exposure_ppt": 4.908,
+    "cadence_s": 80.0,
+    "per_min_ppt": 5.667,
+    "peak_e_M3V": 1723.196,
+    "peak_e_Mira": 3274.423,
+    "texp_for_M3V_peak_30ke": 1044.57
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0005,
+     "snr_white": 28.3312,
+     "sigma_red": 0.0008,
+     "snr_red": 19.5771,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0005,
+     "snr_white": 33.9975,
+     "sigma_red": 0.0008,
+     "snr_red": 23.4925,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0008,
+     "snr_white": 18.5496,
+     "sigma_red": 0.0014,
+     "snr_red": 10.9373,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0008,
+     "snr_white": 22.2595,
+     "sigma_red": 0.0014,
+     "snr_red": 13.1247,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   }
+  },
+  "1.0m_r": {
+   "nominal": {
+    "star_e": 256190.896,
+    "sky_e": 32745.835,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 2.141,
+    "scint_ppt": 0.688,
+    "per_exposure_ppt": 2.249,
+    "cadence_s": 80.0,
+    "per_min_ppt": 2.597,
+    "peak_e_M3V": 8597.281,
+    "peak_e_Mira": 20775.96,
+    "texp_for_M3V_peak_30ke": 209.369
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 244660.406,
+    "sky_e": 293317.917,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 3.072,
+    "scint_ppt": 1.215,
+    "per_exposure_ppt": 3.303,
+    "cadence_s": 80.0,
+    "per_min_ppt": 3.814,
+    "peak_e_M3V": 3649.04,
+    "peak_e_Mira": 8818.172,
+    "texp_for_M3V_peak_30ke": 493.28
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0004,
+     "snr_white": 40.484,
+     "sigma_red": 0.0007,
+     "snr_red": 22.5105,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0004,
+     "snr_white": 48.5808,
+     "sigma_red": 0.0007,
+     "snr_red": 27.0126,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0005,
+     "snr_white": 27.5586,
+     "sigma_red": 0.0012,
+     "snr_red": 12.1536,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0005,
+     "snr_white": 33.0703,
+     "sigma_red": 0.0012,
+     "snr_red": 14.5843,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   }
+  },
+  "1.0m_i": {
+   "nominal": {
+    "star_e": 771960.359,
+    "sky_e": 52455.059,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 1.185,
+    "scint_ppt": 0.688,
+    "per_exposure_ppt": 1.37,
+    "cadence_s": 80.0,
+    "per_min_ppt": 1.582,
+    "peak_e_M3V": 25905.526,
+    "peak_e_Mira": 205207.112,
+    "texp_for_M3V_peak_30ke": 69.483
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 754388.396,
+    "sky_e": 469861.542,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 1.483,
+    "scint_ppt": 1.215,
+    "per_exposure_ppt": 1.917,
+    "cadence_s": 80.0,
+    "per_min_ppt": 2.214,
+    "peak_e_M3V": 11251.486,
+    "peak_e_Mira": 89127.123,
+    "texp_for_M3V_peak_30ke": 159.979
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0002,
+     "snr_white": 66.4593,
+     "sigma_red": 0.0006,
+     "snr_red": 25.0806,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0002,
+     "snr_white": 79.7511,
+     "sigma_red": 0.0006,
+     "snr_red": 30.0967,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0003,
+     "snr_white": 47.4849,
+     "sigma_red": 0.0012,
+     "snr_red": 13.0224,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0003,
+     "snr_white": 56.9819,
+     "sigma_red": 0.0012,
+     "snr_red": 15.6269,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   }
+  },
+  "1.0m_z": {
+   "nominal": {
+    "star_e": 500022.212,
+    "sky_e": 47684.988,
+    "aperture_radius_arcsec": 3.0,
+    "photon_noise_ppt": 1.496,
+    "scint_ppt": 0.688,
+    "per_exposure_ppt": 1.647,
+    "cadence_s": 80.0,
+    "per_min_ppt": 1.901,
+    "peak_e_M3V": 16779.797,
+    "peak_e_Mira": 229079.753,
+    "texp_for_M3V_peak_30ke": 107.272
+   },
+   "poor_seeing3_airmass1p8_moon": {
+    "star_e": 490895.778,
+    "sky_e": 427134.054,
+    "aperture_radius_arcsec": 4.5,
+    "photon_noise_ppt": 1.98,
+    "scint_ppt": 1.215,
+    "per_exposure_ppt": 2.323,
+    "cadence_s": 80.0,
+    "per_min_ppt": 2.683,
+    "peak_e_M3V": 7321.569,
+    "peak_e_Mira": 99954.923,
+    "texp_for_M3V_peak_30ke": 245.849
+   },
+   "snr": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0003,
+     "snr_white": 55.288,
+     "sigma_red": 0.0006,
+     "snr_red": 24.3218,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0003,
+     "snr_white": 66.3456,
+     "sigma_red": 0.0006,
+     "snr_red": 29.1862,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   },
+   "snr_poor": {
+    "0.015": {
+     "depth": 0.015,
+     "sigma_white": 0.0004,
+     "snr_white": 39.1829,
+     "sigma_red": 0.0012,
+     "snr_red": 12.7988,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    },
+    "0.018": {
+     "depth": 0.018,
+     "sigma_white": 0.0004,
+     "snr_white": 47.0195,
+     "sigma_red": 0.0012,
+     "snr_red": 15.3586,
+     "n_in": 62.3475,
+     "n_out": 90.0
+    }
+   }
+  }
+ },
+ "contamination": {
+  "fwhm1.2_beta2.5": {
+   "aperture_radius": 2.5,
+   "g": {
+    "mira_over_target_in_aperture": 1.34e-05,
+    "mira_at_max": 8.43e-05,
+    "pair_over_target": 5.1e-05
+   },
+   "r": {
+    "mira_over_target_in_aperture": 1.7e-05,
+    "mira_at_max": 0.000107,
+    "pair_over_target": 5.33e-05
+   },
+   "i": {
+    "mira_over_target_in_aperture": 5.57e-05,
+    "mira_at_max": 0.000352,
+    "pair_over_target": 6.28e-05
+   },
+   "z": {
+    "mira_over_target_in_aperture": 9.6e-05,
+    "mira_at_max": 0.000606,
+    "pair_over_target": 7.04e-05
+   }
+  },
+  "fwhm1.2_beta4.0": {
+   "aperture_radius": 2.5,
+   "g": {
+    "mira_over_target_in_aperture": 2.82e-08,
+    "mira_at_max": 1.78e-07,
+    "pair_over_target": 4.18e-07
+   },
+   "r": {
+    "mira_over_target_in_aperture": 3.58e-08,
+    "mira_at_max": 2.26e-07,
+    "pair_over_target": 4.37e-07
+   },
+   "i": {
+    "mira_over_target_in_aperture": 1.17e-07,
+    "mira_at_max": 7.4e-07,
+    "pair_over_target": 5.15e-07
+   },
+   "z": {
+    "mira_over_target_in_aperture": 2.02e-07,
+    "mira_at_max": 1.28e-06,
+    "pair_over_target": 5.76e-07
+   }
+  },
+  "fwhm2.0_beta2.5": {
+   "aperture_radius": 3.0,
+   "g": {
+    "mira_over_target_in_aperture": 9.75e-05,
+    "mira_at_max": 0.000615,
+    "pair_over_target": 0.000376
+   },
+   "r": {
+    "mira_over_target_in_aperture": 0.000124,
+    "mira_at_max": 0.000782,
+    "pair_over_target": 0.000393
+   },
+   "i": {
+    "mira_over_target_in_aperture": 0.000406,
+    "mira_at_max": 0.00256,
+    "pair_over_target": 0.000463
+   },
+   "z": {
+    "mira_over_target_in_aperture": 0.0007,
+    "mira_at_max": 0.00442,
+    "pair_over_target": 0.000519
+   }
+  },
+  "fwhm2.0_beta4.0": {
+   "aperture_radius": 3.0,
+   "g": {
+    "mira_over_target_in_aperture": 9.23e-07,
+    "mira_at_max": 5.82e-06,
+    "pair_over_target": 1.39e-05
+   },
+   "r": {
+    "mira_over_target_in_aperture": 1.17e-06,
+    "mira_at_max": 7.41e-06,
+    "pair_over_target": 1.45e-05
+   },
+   "i": {
+    "mira_over_target_in_aperture": 3.85e-06,
+    "mira_at_max": 2.43e-05,
+    "pair_over_target": 1.71e-05
+   },
+   "z": {
+    "mira_over_target_in_aperture": 6.63e-06,
+    "mira_at_max": 4.18e-05,
+    "pair_over_target": 1.91e-05
+   }
+  },
+  "fwhm3.0_beta2.5": {
+   "aperture_radius": 4.5,
+   "g": {
+    "mira_over_target_in_aperture": 0.000799,
+    "mira_at_max": 0.00504,
+    "pair_over_target": 0.00336
+   },
+   "r": {
+    "mira_over_target_in_aperture": 0.00102,
+    "mira_at_max": 0.00641,
+    "pair_over_target": 0.00351
+   },
+   "i": {
+    "mira_over_target_in_aperture": 0.00333,
+    "mira_at_max": 0.021,
+    "pair_over_target": 0.00414
+   },
+   "z": {
+    "mira_over_target_in_aperture": 0.00574,
+    "mira_at_max": 0.0362,
+    "pair_over_target": 0.00463
+   }
+  },
+  "fwhm3.0_beta4.0": {
+   "aperture_radius": 4.5,
+   "g": {
+    "mira_over_target_in_aperture": 2.81e-05,
+    "mira_at_max": 0.000177,
+    "pair_over_target": 0.000486
+   },
+   "r": {
+    "mira_over_target_in_aperture": 3.57e-05,
+    "mira_at_max": 0.000226,
+    "pair_over_target": 0.000508
+   },
+   "i": {
+    "mira_over_target_in_aperture": 0.000117,
+    "mira_at_max": 0.000739,
+    "pair_over_target": 0.000599
+   },
+   "z": {
+    "mira_over_target_in_aperture": 0.000202,
+    "mira_at_max": 0.00127,
+    "pair_over_target": 0.00067
+   }
+  }
+ },
+ "notes": [
+  "Precision model: throughputs, sky brightness and read noise are generic assumptions (uncertain by ~30%); scintillation uses Young (1967) x 1.5 (Osborn et al. 2015) for 2200 m altitude.",
+  "Red-noise floor 1 ppt per 30-min block (nominal) or 2 ppt (poor conditions) is an assumption typical of ground-based transit photometry of a T~13 star; real systematics near a bright saturated Mira could be worse.",
+  "The Mira: V 12.9-17.0 (VSX, P 294 d); SkyMapper single epoch i 11.14, z 9.93, i.e. 2.2-2.8 mag brighter than the M3V in i/z; at maximum it may be ~2 mag brighter still. Its PSF core will saturate in i/z on a 1 m in 60 s (peak_e_Mira)."
+ ]
+}

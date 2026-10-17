@@ -1,0 +1,152 @@
+{
+ "ephemeris": {
+  "label": "ephemeris_final.json:combined",
+  "T0_BJD_TDB": 2460692.9358294453,
+  "E_ref": -26,
+  "P": 5.691502042902054,
+  "cov": [
+   [
+    8.310112597828406e-07,
+    -1.4381361893671132e-11
+   ],
+   [
+    -1.4381361893671132e-11,
+    6.160127997869851e-11
+   ]
+  ]
+ },
+ "n_transits": 139,
+ "epoch_range": [
+  89,
+  227
+ ],
+ "sigma_min_range": [
+  1.8454376585073566,
+  3.143942677488689
+ ],
+ "sigma_2027_min": [
+  1.9348419364798064,
+  2.5049520929645053
+ ],
+ "sigma_2028_min": [
+  2.514584945200957,
+  3.143942677488689
+ ],
+ "window_h_range": [
+  4.884543765850736,
+  5.0143942677488695
+ ],
+ "light_time_check": {
+  "ltt_min_s": -432.73134560565336,
+  "ltt_max_s": 449.5755423133279,
+  "ecliptic_lat_deg": -28.084195739207985,
+  "expected_amplitude_s": 440.2505318654939,
+  "TDB_minus_UTC_s_2027": 69.18489933013916,
+  "pm_effect_on_ltt_ms": 3.4727369432232535,
+  "note": "UTC = BJD_TDB - ltt_bary - (TDB-UTC); TDB-UTC = 32.184 + 37 leap s (+ <2 ms periodic) assuming no new leap second before 2029"
+ },
+ "ctx_comparison": [
+  {
+   "site": "CTIO",
+   "n": 75,
+   "dBJD_min_range": [
+    0.043200328946113586,
+    0.6192000210285187
+   ],
+   "dUTC_min_range": [
+    0.0,
+    1.000000610947609
+   ],
+   "sigma_ratio_range": [
+    0.4707317073170732,
+    0.4901960784313726
+   ],
+   "ctx_full_sun12": 6,
+   "new_full_sun12_same_epochs": 5,
+   "epochs_full_ctx_not_new": [
+    130
+   ],
+   "epochs_full_new_not_ctx": []
+  },
+  {
+   "site": "SAAO Sutherland",
+   "n": 75,
+   "dBJD_min_range": [
+    0.043200328946113586,
+    0.6192000210285187
+   ],
+   "dUTC_min_range": [
+    0.0,
+    1.000000610947609
+   ],
+   "sigma_ratio_range": [
+    0.4707317073170732,
+    0.4901960784313726
+   ],
+   "ctx_full_sun12": 6,
+   "new_full_sun12_same_epochs": 4,
+   "epochs_full_ctx_not_new": [
+    121,
+    125
+   ],
+   "epochs_full_new_not_ctx": []
+  },
+  {
+   "site": "Siding Spring",
+   "n": 75,
+   "dBJD_min_range": [
+    0.043200328946113586,
+    0.6192000210285187
+   ],
+   "dUTC_min_range": [
+    0.0,
+    1.000000610947609
+   ],
+   "sigma_ratio_range": [
+    0.4707317073170732,
+    0.4901960784313726
+   ],
+   "ctx_full_sun12": 5,
+   "new_full_sun12_same_epochs": 5,
+   "epochs_full_ctx_not_new": [],
+   "epochs_full_new_not_ctx": []
+  },
+  {
+   "site": "La Silla",
+   "n": 75,
+   "dBJD_min_range": [
+    0.043200328946113586,
+    0.6192000210285187
+   ],
+   "dUTC_min_range": [
+    0.0,
+    1.000000610947609
+   ],
+   "sigma_ratio_range": [
+    0.4707317073170732,
+    0.4901960784313726
+   ],
+   "ctx_full_sun12": 6,
+   "new_full_sun12_same_epochs": 5,
+   "epochs_full_ctx_not_new": [
+    130
+   ],
+   "epochs_full_new_not_ctx": []
+  },
+  {
+   "check": "ctx BJD converted here minus ctx utc_mid (minute-rounded)",
+   "min": 0.0016220659017562866,
+   "max": 0.9961335361003876,
+   "naive_no_bary_minus_ctx_range": [
+    -7.073061615228653,
+    8.342925980687141
+   ]
+  }
+ ],
+ "ctx_ephemeris": "ephemeris_v2: T0 2460840.9153 +- 0.0019, P 5.6914968 +- 0.0000145 (ctx/README)",
+ "expected_bjd_shift_from_ephemeris_change_min": [
+  0.07081769406795502,
+  1.112687587738037
+ ],
+ "criteria": "full = whole window (T14 1.70 h + 2x3 sigma + 2x1.5 h) at alt > 30 deg (airmass < 2) and Sun < -18 deg; good_partial = transit +-3 sigma covered at Sun<-18/alt>30 with >=0.75 h baseline each side"
+}

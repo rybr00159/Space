@@ -1,0 +1,46 @@
+S12: windows 3; beta 0.91
+S39: windows 4; beta 0.85
+S66: windows 3; beta 0.63
+S93: windows 3; beta 0.69
+S103: windows 3; beta 0.83
+S104: windows 3; beta 0.70
+best [14.734  1.509  0.716  1.223] 5283.511085842196 5196
+flat 0.0: dchi2 37.50 T14 1.97 A 19.3
+flat 0.1: dchi2 32.85 T14 1.96 A 17.7
+flat 0.2: dchi2 25.27 T14 1.93 A 16.6
+flat 0.3: dchi2 17.36 T14 1.86 A 16.0
+flat 0.4: dchi2 11.14 T14 1.74 A 15.7
+flat 0.5: dchi2 6.04 T14 1.64 A 15.5
+flat 0.6: dchi2 1.95 T14 1.58 A 15.1
+flat 0.7: dchi2 0.03 T14 1.52 A 14.7
+flat 0.8: dchi2 0.15 T14 1.42 A 14.7
+flat 0.9: dchi2 -0.66 T14 1.32 A 14.7
+flat 1.0: dchi2 3.93 T14 1.31 A 14.3
+T14 1.2: dchi2 15.93 flat 1.00 A 14.8
+T14 1.3: dchi2 -0.69 flat 0.93 A 14.7
+T14 1.4: dchi2 0.08 flat 0.82 A 14.7
+T14 1.5: dchi2 0.00 flat 0.72 A 14.7
+T14 1.6: dchi2 1.61 flat 0.64 A 14.7
+T14 1.7: dchi2 6.50 flat 0.54 A 14.9
+T14 1.8: dchi2 10.47 flat 0.47 A 14.9
+T14 1.9: dchi2 14.48 flat 0.40 A 15.0
+{'dropped': 'S12 E-388', 'best_flat': 0.9, 'dchi2_flat0': 37.32820432313474, 'dchi2_flat0p15': 29.245079504973546, 'dchi2_flat0p30': 17.394477203283714}
+{'dropped': 'S12 E-387', 'best_flat': 0.9, 'dchi2_flat0': 38.391522037634786, 'dchi2_flat0p15': 30.2105371597836, 'dchi2_flat0p30': 18.132328905342547}
+{'dropped': 'S12 E-385', 'best_flat': 0.9, 'dchi2_flat0': 36.84107048783244, 'dchi2_flat0p15': 29.164127367729634, 'dchi2_flat0p30': 17.672904277209454}
+{'dropped': 'S39 E-259', 'best_flat': 0.75, 'dchi2_flat0': 32.67901497343155, 'dchi2_flat0p15': 25.220775715913078, 'dchi2_flat0p30': 14.797760546684003}
+{'dropped': 'S39 E-258', 'best_flat': 0.9, 'dchi2_flat0': 35.57082739419366, 'dchi2_flat0p15': 28.225444536851683, 'dchi2_flat0p30': 17.416748195425498}
+{'dropped': 'S39 E-257', 'best_flat': 0.9, 'dchi2_flat0': 39.47443757698056, 'dchi2_flat0p15': 31.234347025720126, 'dchi2_flat0p30': 19.347490482060493}
+{'dropped': 'S39 E-256', 'best_flat': 0.6, 'dchi2_flat0': 29.76767790926715, 'dchi2_flat0p15': 22.567414784461107, 'dchi2_flat0p30': 11.938046745199244}
+{'dropped': 'S66 E-130', 'best_flat': 0.9, 'dchi2_flat0': 40.32524230969557, 'dchi2_flat0p15': 32.16473472324469, 'dchi2_flat0p30': 19.785055448592175}
+{'dropped': 'S66 E-128', 'best_flat': 0.9, 'dchi2_flat0': 38.29436984709628, 'dchi2_flat0p15': 29.737321079092, 'dchi2_flat0p30': 17.420512039569985}
+{'dropped': 'S66 E-127', 'best_flat': 0.9, 'dchi2_flat0': 37.04079038731015, 'dchi2_flat0p15': 29.348385754510673, 'dchi2_flat0p30': 17.7397369981054}
+{'dropped': 'S93 E-1', 'best_flat': 0.9, 'dchi2_flat0': 29.932894083390238, 'dchi2_flat0p15': 22.69590627043999, 'dchi2_flat0p30': 12.057998561955173}
+{'dropped': 'S93 E1', 'best_flat': 0.9, 'dchi2_flat0': 37.52506312891637, 'dchi2_flat0p15': 29.4290288244556, 'dchi2_flat0p30': 17.897774537528676}
+{'dropped': 'S93 E2', 'best_flat': 0.9, 'dchi2_flat0': 35.65793202261284, 'dchi2_flat0p15': 27.681411305005895, 'dchi2_flat0p30': 16.202958757891793}
+{'dropped': 'S103 E55', 'best_flat': 0.9, 'dchi2_flat0': 34.85168878837885, 'dchi2_flat0p15': 27.580263397991075, 'dchi2_flat0p30': 16.466135440196922}
+{'dropped': 'S103 E56', 'best_flat': 0.75, 'dchi2_flat0': 36.47518839434724, 'dchi2_flat0p15': 28.89065900566584, 'dchi2_flat0p30': 18.240969265360036}
+{'dropped': 'S103 E59', 'best_flat': 0.9, 'dchi2_flat0': 40.809971712341394, 'dchi2_flat0p15': 32.74955466252595, 'dchi2_flat0p30': 20.848099627553893}
+{'dropped': 'S104 E60', 'best_flat': 0.9, 'dchi2_flat0': 34.51132486473125, 'dchi2_flat0p15': 26.886931933116102, 'dchi2_flat0p30': 15.73203011044825}
+{'dropped': 'S104 E61', 'best_flat': 0.9, 'dchi2_flat0': 34.51997227629636, 'dchi2_flat0p15': 27.946798693576056, 'dchi2_flat0p30': 17.10469967806057}
+{'dropped': 'S104 E63', 'best_flat': 0.75, 'dchi2_flat0': 39.20320861161326, 'dchi2_flat0p15': 31.59797479149256, 'dchi2_flat0p30': 20.175505966510173}
+fine profile [37.44, 29.28, 17.31, 8.56, 1.89, 0.0, 3.46, 3.88]

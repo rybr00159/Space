@@ -1,0 +1,7 @@
+TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes
+
+
+
+
+
+

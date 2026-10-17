@@ -1,0 +1,1322 @@
+{
+ "i": {
+  "n_psf_stars": 6,
+  "saturation_check": {
+   "peak_obs": 66.07965850830078,
+   "peak_model": 86.84079584055027,
+   "fitted_flux": 2682.29132962593,
+   "catalogue_flux": 4549.880601500485,
+   "centre_resid_frac": -0.03062948949453452
+  },
+  "curve": [
+   {
+    "sep": 0.5,
+    "n_pa": 16,
+    "sd": 13.915966601775802,
+    "naive_5sig_dm": 3.514400644370308,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 1.0232028082444669,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.027717194257014976
+     },
+     "3.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.026313168791292186
+     },
+     "3.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.025097703920401577
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.024065809518892842
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.02320280824446677
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.022489530392589184
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.021905577184307058
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.021431417901577536
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.02104922994353372
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.02071844280561176
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.020466345961577623
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.020264187690686775
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.020102330237912774
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.01997275635872808
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.019869673316930785
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.01978724269913533
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.019721410444546138
+     }
+    },
+    "recovered_fraction": -0.022489530392589184,
+    "investigator_dm5": 5.415501894520646,
+    "corrected_dm5": null
+   },
+   {
+    "sep": 0.75,
+    "n_pa": 16,
+    "sd": 10.400173216134306,
+    "naive_5sig_dm": 3.195685468488874,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 0.8991932842268322,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.07823821510103131
+     },
+     "3.25": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.08583569724614656
+     },
+     "3.50": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.09196982518017198
+     },
+     "3.75": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.09687784897294466
+     },
+     "4.00": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.1008067157731678
+     },
+     "4.25": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.10394555510695552
+     },
+     "4.50": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.10644926531718016
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.10844367879409807
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11004418472569821
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11131242800777424
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11232156468047508
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11312425268986769
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11376250803503389
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11427015130076221
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11467354501827706
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.1149941789612201
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11524876177375469
+     }
+    },
+    "recovered_fraction": 0.10394555510695552,
+    "investigator_dm5": 5.281859324640382,
+    "corrected_dm5": 2.8238741318299114
+   },
+   {
+    "sep": 1.0,
+    "n_pa": 16,
+    "sd": 10.89953838041091,
+    "naive_5sig_dm": 3.0217404606184317,
+    "injected_90pct_dm": 3.25,
+    "absorbed_fraction_at_dm4": 0.6674987567652495,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.3023422196035964
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.3129283792481695
+     },
+     "3.50": {
+      "frac_det": 0.625,
+      "recovered_fraction_med": 0.32111782392641
+     },
+     "3.75": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.3275120662155586
+     },
+     "4.00": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.3325012432347505
+     },
+     "4.25": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.3364171341071456
+     },
+     "4.50": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.3394978611905054
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.34193182075536366
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.3438531826568585
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.34537237009470156
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.3465747586271545
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.3475271814485499
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.3482819061138743
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.3488802474256203
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.34935496353853057
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.349731972413333
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.35003066328458354
+     }
+    },
+    "recovered_fraction": 0.3364171341071456,
+    "investigator_dm5": 5.420592414806185,
+    "corrected_dm5": 4.237787681808497
+   },
+   {
+    "sep": 1.25,
+    "n_pa": 16,
+    "sd": 11.879882929424921,
+    "naive_5sig_dm": 3.0381657793256083,
+    "injected_90pct_dm": 3.5,
+    "absorbed_fraction_at_dm4": 0.43221600458495546,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.5468899092161293
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.5543375117948974
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.5600176333129823
+     },
+     "3.75": {
+      "frac_det": 0.875,
+      "recovered_fraction_med": 0.564390286485619
+     },
+     "4.00": {
+      "frac_det": 0.5,
+      "recovered_fraction_med": 0.5677839954150445
+     },
+     "4.25": {
+      "frac_det": 0.375,
+      "recovered_fraction_med": 0.5704222073344003
+     },
+     "4.50": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.5724899743450397
+     },
+     "4.75": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.5741134220322638
+     },
+     "5.00": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.5753911940952718
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5763989168473456
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5771947464634898
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5778239967247835
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5783220005721266
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5787168259274814
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.579029244623757
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5792771378895608
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.5794739152634716
+     }
+    },
+    "recovered_fraction": 0.5704222073344003,
+    "investigator_dm5": 5.681328174117298,
+    "corrected_dm5": 5.071819236278749
+   },
+   {
+    "sep": 1.5,
+    "n_pa": 16,
+    "sd": 12.860805080197968,
+    "naive_5sig_dm": 3.2213153289399896,
+    "injected_90pct_dm": 3.75,
+    "absorbed_fraction_at_dm4": 0.2663515447054826,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.7236197883631541
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.7271965306518333
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.7299187719399194
+     },
+     "3.75": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.7320289348111252
+     },
+     "4.00": {
+      "frac_det": 0.875,
+      "recovered_fraction_med": 0.7336484552945174
+     },
+     "4.25": {
+      "frac_det": 0.625,
+      "recovered_fraction_med": 0.7349095039560609
+     },
+     "4.50": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.7358957773789329
+     },
+     "4.75": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.7366696262666377
+     },
+     "5.00": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.7372783927323152
+     },
+     "5.25": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.7377582724326424
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7381371601584101
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7384366640917446
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7386737348883765
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7388614637590539
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7390102691259446
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7391279295177796
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.739221622669641
+     }
+    },
+    "recovered_fraction": 0.7349095039560609,
+    "investigator_dm5": 6.135031873251062,
+    "corrected_dm5": 5.800616532688697
+   },
+   {
+    "sep": 2.0,
+    "n_pa": 15,
+    "sd": 17.251338185956037,
+    "naive_5sig_dm": 3.6905954096482474,
+    "injected_90pct_dm": 3.75,
+    "absorbed_fraction_at_dm4": 0.13568650602927512,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8633392014514727
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8636807718031836
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8639455665807636
+     },
+     "3.75": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8641519668527639
+     },
+     "4.00": {
+      "frac_det": 0.75,
+      "recovered_fraction_med": 0.8643134939707249
+     },
+     "4.25": {
+      "frac_det": 0.375,
+      "recovered_fraction_med": 0.8644403136001703
+     },
+     "4.50": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.8645400830484298
+     },
+     "4.75": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.8646187721033853
+     },
+     "5.00": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.8646809257393617
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.864730048212558
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8647689638326632
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8647997123836477
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8648240941045608
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8648434968534012
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8648587853725547
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8648710338665505
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8648806157080766
+     }
+    },
+    "recovered_fraction": 0.8644403136001703,
+    "investigator_dm5": 5.734848493205772,
+    "corrected_dm5": 5.576686023757632
+   },
+   {
+    "sep": 2.5,
+    "n_pa": 14,
+    "sd": 11.512066393203977,
+    "naive_5sig_dm": 4.570594181420395,
+    "injected_90pct_dm": 4.25,
+    "absorbed_fraction_at_dm4": 0.12552968697364775,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744119369337624
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744321231425332
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744479339302188
+     },
+     "3.75": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744604152385759
+     },
+     "4.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744703130263523
+     },
+     "4.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8744780519070006
+     },
+     "4.50": {
+      "frac_det": 0.7142857142857143,
+      "recovered_fraction_med": 0.8744841706161436
+     },
+     "4.75": {
+      "frac_det": 0.2857142857142857,
+      "recovered_fraction_med": 0.8744890737485753
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8744929344691662
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8744959958295896
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8744984179148194
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8745003257588099
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8745018567703573
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8745030742483031
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8745039987596965
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8745047928640712
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.874505346933455
+     }
+    },
+    "recovered_fraction": 0.8744780519070006,
+    "investigator_dm5": 6.165309860401157,
+    "corrected_dm5": 6.019682144922757
+   },
+   {
+    "sep": 3.0,
+    "n_pa": 14,
+    "sd": 11.894362772029567,
+    "naive_5sig_dm": 5.023133708452575,
+    "injected_90pct_dm": 4.0,
+    "absorbed_fraction_at_dm4": 0.1319812907131881,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.868018659899569
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8680186706155152
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8680186707128229
+     },
+     "3.75": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.868018705977359
+     },
+     "4.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8680187092868119
+     },
+     "4.25": {
+      "frac_det": 0.8571428571428571,
+      "recovered_fraction_med": 0.8680186906344403
+     },
+     "4.50": {
+      "frac_det": 0.5714285714285714,
+      "recovered_fraction_med": 0.8680186950938805
+     },
+     "4.75": {
+      "frac_det": 0.14285714285714285,
+      "recovered_fraction_med": 0.8680186980472858
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187004415671
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187021404925
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187034839284
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.86801870809964
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187097868516
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187034916872
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187120997305
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187167301762
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8680187147323659
+     }
+    },
+    "recovered_fraction": 0.8680186980472858,
+    "investigator_dm5": 6.885930949439274,
+    "corrected_dm5": 6.73225365054668
+   }
+  ]
+ },
+ "z": {
+  "n_psf_stars": 6,
+  "saturation_check": {
+   "peak_obs": 112.55030059814453,
+   "peak_model": 160.61382661627036,
+   "fitted_flux": 4195.57094642539,
+   "catalogue_flux": 7863.212274584189,
+   "centre_resid_frac": -0.03416552725882807
+  },
+  "curve": [
+   {
+    "sep": 0.5,
+    "n_pa": 16,
+    "sd": 31.42744087366184,
+    "naive_5sig_dm": 3.0780012629738627,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 1.0689822799050106,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.07576852524749614
+     },
+     "3.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.07414082058638419
+     },
+     "3.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.07250040101776815
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.07038620615663849
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06898227990501055
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06783129112426083
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06687206116091242
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.0660813508060518
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06543493515369497
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06490953550452438
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06448495174584458
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06414301602736622
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.0638684742456312
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.0636484805974004
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06347240549757244
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06333144072119629
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": -0.06321958933623946
+     }
+    },
+    "recovered_fraction": -0.06783129112426083,
+    "investigator_dm5": 4.401880037464407,
+    "corrected_dm5": null
+   },
+   {
+    "sep": 0.75,
+    "n_pa": 16,
+    "sd": 41.92545781507564,
+    "naive_5sig_dm": 2.660388485981997,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 0.8762876448118712,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.08523808537365057
+     },
+     "3.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.09786774045228183
+     },
+     "3.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.10822055314424728
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.11695188666123241
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.12371235518812884
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.12902785413211434
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.13332352511331536
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.13667058218721675
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.13932794379327237
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14143782749909706
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14311318671322026
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14444362020959745
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14550015068141064
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14633916116289442
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14700567082987548
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14753437983302115
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.14795483635621656
+     }
+    },
+    "recovered_fraction": 0.12902785413211434,
+    "investigator_dm5": 4.5789967400834914,
+    "corrected_dm5": 2.3557054264917174
+   },
+   {
+    "sep": 1.0,
+    "n_pa": 16,
+    "sd": 39.48132713748002,
+    "naive_5sig_dm": 2.5661901912184186,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 0.5776444597447808,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.375,
+      "recovered_fraction_med": 0.3884893685408207
+     },
+     "3.25": {
+      "frac_det": 0.125,
+      "recovered_fraction_med": 0.4000990545556244
+     },
+     "3.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4092312588423918
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4167796771577489
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.42235554025521915
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.42677416903320675
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.43018072042542127
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4328584403165199
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.43496791564048143
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4366328443365015
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.43794854023704555
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4389897328056032
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4398134482266988
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.44046677334855
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4409842688133706
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.4413949576650652
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.44172106147187296
+     }
+    },
+    "recovered_fraction": 0.42677416903320675,
+    "investigator_dm5": 4.886726449052732,
+    "corrected_dm5": 3.9622217625678813
+   },
+   {
+    "sep": 1.25,
+    "n_pa": 16,
+    "sd": 43.02464971353199,
+    "naive_5sig_dm": 2.5877922797049884,
+    "injected_90pct_dm": 3.0,
+    "absorbed_fraction_at_dm4": 0.3377706672900421,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.6445734982061762
+     },
+     "3.25": {
+      "frac_det": 0.625,
+      "recovered_fraction_med": 0.6507293368098339
+     },
+     "3.50": {
+      "frac_det": 0.25,
+      "recovered_fraction_med": 0.6557542698256067
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.659384148101007
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6622293327099579
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6644079653853158
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6661101431383492
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6674449852843799
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6684946123451826
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6693217430789145
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6699745721652912
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6704905715846352
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.670899013522416
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6712221537975639
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6714782989150405
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.671681419257613
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.6718421007769539
+     }
+    },
+    "recovered_fraction": 0.6644079653853158,
+    "investigator_dm5": 4.976710953526256,
+    "corrected_dm5": 4.532798029614295
+   },
+   {
+    "sep": 1.5,
+    "n_pa": 16,
+    "sd": 49.8479894711548,
+    "naive_5sig_dm": 2.6625075461937193,
+    "injected_90pct_dm": 3.0,
+    "absorbed_fraction_at_dm4": 0.2003806248876988,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.7934644209439792
+     },
+     "3.25": {
+      "frac_det": 0.75,
+      "recovered_fraction_med": 0.7956471589271699
+     },
+     "3.50": {
+      "frac_det": 0.5,
+      "recovered_fraction_med": 0.7973155468057017
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7986216395050254
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.7996193751123012
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8003978732520418
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.801007725787543
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8014869156648767
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8018642356102255
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8021619571115337
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8023971018533225
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8025830980598954
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8027303861635533
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8028469011437381
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8029392287873265
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8030125449221622
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.803070903414875
+     }
+    },
+    "recovered_fraction": 0.8003978732520418,
+    "investigator_dm5": 5.199284779752685,
+    "corrected_dm5": 4.957549594742675
+   },
+   {
+    "sep": 2.0,
+    "n_pa": 15,
+    "sd": 82.95189881349229,
+    "naive_5sig_dm": 2.77631751860475,
+    "injected_90pct_dm": null,
+    "absorbed_fraction_at_dm4": 0.11310142750866059,
+    "detail": {
+     "3.00": {
+      "frac_det": 0.5,
+      "recovered_fraction_med": 0.8863964097314256
+     },
+     "3.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8865761081708632
+     },
+     "3.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.886710901721875
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8868161080786843
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8868985724913394
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8869633207490663
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8870144049671773
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8870546295072466
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8870864634374677
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871115839701107
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871315125968944
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871472784750967
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871596014170957
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871694516840852
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871774736681672
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871837353708696
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8871883716739151
+     }
+    },
+    "recovered_fraction": 0.8869633207490663,
+    "investigator_dm5": 5.373991083605104,
+    "corrected_dm5": 5.243755234859588
+   },
+   {
+    "sep": 2.5,
+    "n_pa": 14,
+    "sd": 60.99533529164212,
+    "naive_5sig_dm": 3.4184067317585267,
+    "injected_90pct_dm": 3.0,
+    "absorbed_fraction_at_dm4": 0.11237389137709419,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8876127238796
+     },
+     "3.25": {
+      "frac_det": 0.7142857142857143,
+      "recovered_fraction_med": 0.887617344250684
+     },
+     "3.50": {
+      "frac_det": 0.42857142857142855,
+      "recovered_fraction_med": 0.8876209996385694
+     },
+     "3.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.887623851912755
+     },
+     "4.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876261086229058
+     },
+     "4.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876278765121148
+     },
+     "4.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876293564343908
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876304579064397
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876313302339306
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876320054614989
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876325651779059
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876327945689909
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876332076489536
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876337222358684
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876334627912795
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8876339584753794
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.887634069571357
+     }
+    },
+    "recovered_fraction": 0.8876278765121148,
+    "investigator_dm5": 5.750458800212183,
+    "corrected_dm5": 5.621036132876408
+   },
+   {
+    "sep": 3.0,
+    "n_pa": 14,
+    "sd": 25.3191337686101,
+    "naive_5sig_dm": 4.749941298869488,
+    "injected_90pct_dm": 3.75,
+    "absorbed_fraction_at_dm4": 0.11957278418466444,
+    "detail": {
+     "3.00": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8804274803621348
+     },
+     "3.25": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8804274148499803
+     },
+     "3.50": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8804273438156803
+     },
+     "3.75": {
+      "frac_det": 1.0,
+      "recovered_fraction_med": 0.8804273030101053
+     },
+     "4.00": {
+      "frac_det": 0.8571428571428571,
+      "recovered_fraction_med": 0.8804272158153356
+     },
+     "4.25": {
+      "frac_det": 0.7142857142857143,
+      "recovered_fraction_med": 0.8804271746121274
+     },
+     "4.50": {
+      "frac_det": 0.2857142857142857,
+      "recovered_fraction_med": 0.8804271996193697
+     },
+     "4.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804271203671262
+     },
+     "5.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804270549949081
+     },
+     "5.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804270980571707
+     },
+     "5.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804271904755624
+     },
+     "5.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804269633275745
+     },
+     "6.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804271373294635
+     },
+     "6.25": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.880426944991912
+     },
+     "6.50": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804269234455336
+     },
+     "6.75": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804265638163724
+     },
+     "7.00": {
+      "frac_det": 0.0,
+      "recovered_fraction_med": 0.8804266068013881
+     }
+    },
+    "recovered_fraction": 0.8804271996193697,
+    "investigator_dm5": 7.238888498983926,
+    "corrected_dm5": 7.100622126571494
+   }
+  ]
+ }
+}

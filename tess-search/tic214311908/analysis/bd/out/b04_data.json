@@ -1,0 +1,25 @@
+{
+ "method": "b04: light-curve data sets for the shape fits and the injection calibration.\nREF (independent local-window PRF photometry, ../referee_phot): real windows = lc_M3V_referee_windows.csv (strict\n  selection, 21 transits); FAKE windows = the referee's own fake-epoch windows (data/win_s*.npz 'fake_*': identical\n  processing, per-pixel baselines fitted out-of-'transit' |dt| > 0.07 d, 62-104 per sector), flux = 1 + aM/979,\n  per-window error = robust OOT scatter /979 (as r23_export).\nINV-clean (model-B deblended photometry, ../phot, with the Gaia DR3 RRab leak removed by ../referee2_search r01): the\n  raw model-B flux (flux_raw_norm, rescaled to the 979 e-/s scale) is re-detrended here with wotan biweight 0.75 d\n  (as phot/p06), masking +-0.1 d around the real AND (for fake sets) the fake epochs, then the referee2_search\n  3-harmonic RRab model (per sector, 'model' in m3v_clean_r2.npz) is subtracted. Real windows use the same code with only\n  the real epochs masked (checked against the delivered cleaned flux). Fake ephemerides: 48 phase offsets in\n  0.12-0.38 and 0.62-0.88. Flares (flare_flag) and quality_ok == 0 removed. Windows +-0.30 d.\nOutputs: data/ref_real.npz, data/ref_fake.npz, data/inv_real.npz, data/inv_fake.npz, out/b04_data.json",
+ "info": {
+  "ref_real": {
+   "n": 4663,
+   "n_windows": 21
+  },
+  "ref_fake": {
+   "n": 112545,
+   "n_windows": 496
+  },
+  "inv_real": {
+   "n": 3696,
+   "n_windows": 22,
+   "check_vs_delivered_clean": {
+    "median_ppt": 0.019494378655227074,
+    "rms_ppt": 0.09475424069679901
+   }
+  },
+  "inv_fake": {
+   "n_sets": 48,
+   "n": 190044
+  }
+ }
+}

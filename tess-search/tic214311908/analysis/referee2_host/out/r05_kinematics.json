@@ -1,0 +1,209 @@
+{
+ "target": {
+  "U_LSR": 33.119776470765174,
+  "V_LSR": 6.634872909075996,
+  "W_LSR": 47.7789356163475,
+  "vtot_LSR": 58.51297138775402,
+  "vtan_helio": 43.51693201142764
+ },
+ "groups": [
+  {
+   "label": "all clean",
+   "n": 3808,
+   "frac_as_bright": 0.025210084033613446,
+   "dens_target": 0.1353453650599561,
+   "dens_component": 0.984478374572164,
+   "ratio_comp_over_target": 7.273824073222263,
+   "n_window": 109,
+   "window_median_rGK": 0.07078175578070045,
+   "frac_window_rGK_ge_target": 0.25688073394495414,
+   "P_twin_cmd_only_fT0.008": 0.05819059258577811,
+   "P_twin_cmd_only_fT0.015": 0.10910736109833395,
+   "P_twin_cmd_only_fT0.0235": 0.1709348657207232,
+   "ratio_16_84": [
+    6.614221045141335,
+    8.145064640927794
+   ]
+  },
+  {
+   "label": "vtan 0-25",
+   "n": 1260,
+   "frac_as_bright": 0.03253968253968254,
+   "dens_target": 0.1582217315246673,
+   "dens_component": 1.127305320163034,
+   "ratio_comp_over_target": 7.124845046884621,
+   "n_window": 44,
+   "window_median_rGK": 0.06985683644459972,
+   "frac_window_rGK_ge_target": 0.29545454545454547,
+   "P_twin_cmd_only_fT0.008": 0.05699876037507698,
+   "P_twin_cmd_only_fT0.015": 0.10687267570326932,
+   "P_twin_cmd_only_fT0.0235": 0.1674338586017886,
+   "ratio_16_84": [
+    6.154118666299583,
+    8.518783159573646
+   ]
+  },
+  {
+   "label": "vtan 25-40",
+   "n": 977,
+   "frac_as_bright": 0.021494370522006142,
+   "dens_target": 0.14347402126197686,
+   "dens_component": 1.0046663401148503,
+   "ratio_comp_over_target": 7.002426859426882,
+   "n_window": 27,
+   "window_median_rGK": 0.07249755325731533,
+   "frac_window_rGK_ge_target": 0.14814814814814814,
+   "P_twin_cmd_only_fT0.008": 0.056019414875415056,
+   "P_twin_cmd_only_fT0.015": 0.10503640289140323,
+   "P_twin_cmd_only_fT0.0235": 0.16455703119653173,
+   "ratio_16_84": [
+    5.723485231692583,
+    8.391668559257946
+   ]
+  },
+  {
+   "label": "vtan 30-60",
+   "n": 1447,
+   "frac_as_bright": 0.019350380096751902,
+   "dens_target": 0.1431273409706602,
+   "dens_component": 0.9380432880097311,
+   "ratio_comp_over_target": 6.553907042834124,
+   "n_window": 41,
+   "window_median_rGK": 0.06790236231797175,
+   "frac_window_rGK_ge_target": 0.21951219512195122,
+   "P_twin_cmd_only_fT0.008": 0.052431256342673,
+   "P_twin_cmd_only_fT0.015": 0.09830860564251187,
+   "P_twin_cmd_only_fT0.0235": 0.15401681550660193,
+   "ratio_16_84": [
+    5.549079140575526,
+    7.620801746622403
+   ]
+  },
+  {
+   "label": "vtan 40-70",
+   "n": 1094,
+   "frac_as_bright": 0.021937842778793418,
+   "dens_target": 0.1308061423439989,
+   "dens_component": 0.905161823343372,
+   "ratio_comp_over_target": 6.919872470231127,
+   "n_window": 31,
+   "window_median_rGK": 0.06780245944095364,
+   "frac_window_rGK_ge_target": 0.2903225806451613,
+   "P_twin_cmd_only_fT0.008": 0.05535897976184901,
+   "P_twin_cmd_only_fT0.015": 0.1037980870534669,
+   "P_twin_cmd_only_fT0.0235": 0.16261700305043147,
+   "ratio_16_84": [
+    6.068017984362877,
+    8.369752133880565
+   ]
+  },
+  {
+   "label": "vtan 35-55",
+   "n": 956,
+   "frac_as_bright": 0.0198744769874477,
+   "dens_target": 0.1570908933856942,
+   "dens_component": 0.9525600468201713,
+   "ratio_comp_over_target": 6.063750904270546,
+   "n_window": 29,
+   "window_median_rGK": 0.06790236231797175,
+   "frac_window_rGK_ge_target": 0.2413793103448276,
+   "P_twin_cmd_only_fT0.008": 0.048510007234164376,
+   "P_twin_cmd_only_fT0.015": 0.0909562635640582,
+   "P_twin_cmd_only_fT0.0235": 0.14249814625035784,
+   "ratio_16_84": [
+    5.063530523841153,
+    7.27725748190644
+   ]
+  },
+  {
+   "label": "vtan 70-400",
+   "n": 477,
+   "frac_as_bright": 0.020964360587002098,
+   "dens_target": 0.06877117570405318,
+   "dens_component": 0.747553081994092,
+   "ratio_comp_over_target": 10.870151256553743,
+   "n_window": 7,
+   "window_median_rGK": 0.07078175578070045,
+   "frac_window_rGK_ge_target": 0.2857142857142857,
+   "P_twin_cmd_only_fT0.008": 0.08696121005242996,
+   "P_twin_cmd_only_fT0.015": 0.16305226884830615,
+   "P_twin_cmd_only_fT0.0235": 0.255448554529013,
+   "ratio_16_84": [
+    7.656465300286604,
+    17.159569144184793
+   ]
+  },
+  {
+   "label": "with Gaia RV",
+   "n": 2256,
+   "frac_as_bright": 0.03900709219858156,
+   "dens_target": 0.2021859774348083,
+   "dens_component": 1.1179119755911375,
+   "ratio_comp_over_target": 5.529127142121371,
+   "n_window": 97,
+   "window_median_rGK": 0.07078175578070045,
+   "frac_window_rGK_ge_target": 0.25773195876288657,
+   "P_twin_cmd_only_fT0.008": 0.04423301713697096,
+   "P_twin_cmd_only_fT0.015": 0.08293690713182056,
+   "P_twin_cmd_only_fT0.0235": 0.1299344878398522,
+   "ratio_16_84": [
+    4.99213451100499,
+    6.095170252879994
+   ]
+  },
+  {
+   "label": "|W_LSR| 25-70 (target 48)",
+   "n": 384,
+   "frac_as_bright": 0.013020833333333334,
+   "dens_target": 0.11320977930051818,
+   "dens_component": 1.0863716355138326,
+   "ratio_comp_over_target": 9.596093572711878,
+   "n_window": 10,
+   "window_median_rGK": 0.08347697906853302,
+   "frac_window_rGK_ge_target": 0.2,
+   "P_twin_cmd_only_fT0.008": 0.07676874858169501,
+   "P_twin_cmd_only_fT0.015": 0.14394140359067817,
+   "P_twin_cmd_only_fT0.0235": 0.22550819895872912,
+   "ratio_16_84": [
+    7.453121147102129,
+    15.73380030524984
+   ]
+  },
+  {
+   "label": "v_tot 35-75 (target 59)",
+   "n": 992,
+   "frac_as_bright": 0.03326612903225806,
+   "dens_target": 0.19454045230724315,
+   "dens_component": 1.0511508304750887,
+   "ratio_comp_over_target": 5.403250676188297,
+   "n_window": 38,
+   "window_median_rGK": 0.0783676226030301,
+   "frac_window_rGK_ge_target": 0.34210526315789475,
+   "P_twin_cmd_only_fT0.008": 0.04322600540950638,
+   "P_twin_cmd_only_fT0.015": 0.08104876014282446,
+   "P_twin_cmd_only_fT0.0235": 0.12697639089042498,
+   "ratio_16_84": [
+    4.531396992076941,
+    6.512457750469364
+   ]
+  },
+  {
+   "label": "|W|>20 & vtot>35",
+   "n": 493,
+   "frac_as_bright": 0.02231237322515213,
+   "dens_target": 0.12706712683120583,
+   "dens_component": 1.105387686775467,
+   "ratio_comp_over_target": 8.699242001779488,
+   "n_window": 14,
+   "window_median_rGK": 0.08470106019807888,
+   "frac_window_rGK_ge_target": 0.2857142857142857,
+   "P_twin_cmd_only_fT0.008": 0.0695939360142359,
+   "P_twin_cmd_only_fT0.015": 0.1304886300266923,
+   "P_twin_cmd_only_fT0.0235": 0.20443218704181798,
+   "ratio_16_84": [
+    6.838755199874899,
+    12.067495802065336
+   ]
+  }
+ ]
+}

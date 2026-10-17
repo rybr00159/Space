@@ -1,0 +1,306 @@
+{
+ "hri": {
+  "ref_beta__signfixed": {
+   "Zorro832 analyst nominal": 0.969,
+   "Zorro832 cons A (dI=1.2 at 0.03\")": 0.934,
+   "Zorro832 cons B (faint, poor seeing; dI=1.2 at 0.04\")": 0.883,
+   "Zorro832 cons C (dI=1.2 at 0.05\")": 0.814,
+   "HRCam median (analyst)": 0.657,
+   "HRCam 16th pct (analyst)": 0.631,
+   "HRCam pessimistic": 0.504
+  },
+  "inv_beta__signfixed": {
+   "Zorro832 analyst nominal": 0.969,
+   "Zorro832 cons A (dI=1.2 at 0.03\")": 0.933,
+   "Zorro832 cons B (faint, poor seeing; dI=1.2 at 0.04\")": 0.88,
+   "Zorro832 cons C (dI=1.2 at 0.05\")": 0.807,
+   "HRCam median (analyst)": 0.65,
+   "HRCam 16th pct (analyst)": 0.626,
+   "HRCam pessimistic": 0.507
+  }
+ },
+ "sep_cdf": {
+  "ref_beta__signfixed": {
+   "0.02": 0.03,
+   "0.03": 0.067,
+   "0.04": 0.117,
+   "0.05": 0.184,
+   "0.06": 0.268,
+   "0.08": 0.478,
+   "0.1": 0.502,
+   "0.2": 0.592,
+   "0.5": 0.853
+  },
+  "inv_beta__signfixed": {
+   "0.02": 0.029,
+   "0.03": 0.065,
+   "0.04": 0.115,
+   "0.05": 0.181,
+   "0.06": 0.264,
+   "0.08": 0.471,
+   "0.1": 0.495,
+   "0.2": 0.587,
+   "0.5": 0.844
+  }
+ },
+ "twoband": {
+  "ref_beta__signfixed": {
+   "BT-Settl r/z": {
+    "pct16_50_84_975": [
+     0.675,
+     0.754,
+     0.831,
+     0.862
+    ],
+    "BF_s0.05": 0.0022100097960496353,
+    "rej3sig_s0.05": 0.925,
+    "BF_s0.07": 0.02261621893478732,
+    "rej3sig_s0.07": 0.644,
+    "BF_s0.1": 0.10259353629761195,
+    "rej3sig_s0.1": 0.262,
+    "BF_s0.14": 0.25689171799756816,
+    "rej3sig_s0.14": 0.044
+   },
+   "BT-Settl g/z": {
+    "pct16_50_84_975": [
+     0.717,
+     0.785,
+     0.853,
+     0.881
+    ],
+    "BF_s0.05": 0.006843169812025939,
+    "rej3sig_s0.05": 0.826,
+    "BF_s0.07": 0.04450698461379436,
+    "rej3sig_s0.07": 0.524,
+    "BF_s0.1": 0.15643709949099038,
+    "rej3sig_s0.1": 0.087,
+    "BF_s0.14": 0.33690354959228547,
+    "rej3sig_s0.14": 0.033
+   },
+   "empirical r/z": {
+    "pct16_50_84_975": [
+     0.751,
+     0.807,
+     0.858,
+     0.876
+    ],
+    "BF_s0.05": 0.007357965960644137,
+    "rej3sig_s0.05": 0.783,
+    "BF_s0.07": 0.053605210420212906,
+    "rej3sig_s0.07": 0.381,
+    "BF_s0.1": 0.19105423224733842,
+    "rej3sig_s0.1": 0.055,
+    "BF_s0.14": 0.3922568378902116,
+    "rej3sig_s0.14": 0.008
+   },
+   "empirical g/z": {
+    "pct16_50_84_975": [
+     0.709,
+     0.77,
+     0.83,
+     0.852
+    ],
+    "BF_s0.05": 0.0014974404954167253,
+    "rej3sig_s0.05": 0.965,
+    "BF_s0.07": 0.02093126782325755,
+    "rej3sig_s0.07": 0.599,
+    "BF_s0.1": 0.10979559784126477,
+    "rej3sig_s0.1": 0.126,
+    "BF_s0.14": 0.283307288854796,
+    "rej3sig_s0.14": 0.041
+   },
+   "empirical V/Ic": {
+    "pct16_50_84_975": [
+     0.779,
+     0.843,
+     0.881,
+     0.894
+    ],
+    "BF_s0.05": 0.023600906634670817,
+    "rej3sig_s0.05": 0.55,
+    "BF_s0.07": 0.11064622118958126,
+    "rej3sig_s0.07": 0.202,
+    "BF_s0.1": 0.29160270404206184,
+    "rej3sig_s0.1": 0.05,
+    "BF_s0.14": 0.4985108737255324,
+    "rej3sig_s0.14": 0.006
+   },
+   "referee2 Mann V/I (used inside r05 chroma)": {
+    "pct16_50_84_975": [
+     0.688,
+     0.752,
+     0.815,
+     0.839
+    ],
+    "BF_s0.05": 0.0006073225220464252,
+    "rej3sig_s0.05": 1.0,
+    "BF_s0.07": 0.012464772244701184,
+    "rej3sig_s0.07": 0.693,
+    "BF_s0.1": 0.08140255845427236,
+    "rej3sig_s0.1": 0.217,
+    "BF_s0.14": 0.2377626871821436,
+    "rej3sig_s0.14": 0.039
+   }
+  },
+  "inv_beta__signfixed": {
+   "BT-Settl r/z": {
+    "pct16_50_84_975": [
+     0.656,
+     0.741,
+     0.824,
+     0.861
+    ],
+    "BF_s0.05": 0.001850788778148699,
+    "rej3sig_s0.05": 0.938,
+    "BF_s0.07": 0.019203334214721566,
+    "rej3sig_s0.07": 0.695,
+    "BF_s0.1": 0.0892952844689808,
+    "rej3sig_s0.1": 0.329,
+    "BF_s0.14": 0.22992652418423698,
+    "rej3sig_s0.14": 0.089
+   },
+   "BT-Settl g/z": {
+    "pct16_50_84_975": [
+     0.7,
+     0.774,
+     0.847,
+     0.88
+    ],
+    "BF_s0.05": 0.005754350003285599,
+    "rej3sig_s0.05": 0.854,
+    "BF_s0.07": 0.038084678766953955,
+    "rej3sig_s0.07": 0.577,
+    "BF_s0.1": 0.13759429252664462,
+    "rej3sig_s0.1": 0.161,
+    "BF_s0.14": 0.30470250050148606,
+    "rej3sig_s0.14": 0.063
+   },
+   "empirical r/z": {
+    "pct16_50_84_975": [
+     0.728,
+     0.799,
+     0.854,
+     0.875
+    ],
+    "BF_s0.05": 0.006244100629070001,
+    "rej3sig_s0.05": 0.817,
+    "BF_s0.07": 0.04651423491641133,
+    "rej3sig_s0.07": 0.441,
+    "BF_s0.1": 0.17021251774945104,
+    "rej3sig_s0.1": 0.119,
+    "BF_s0.14": 0.35792884883666626,
+    "rej3sig_s0.14": 0.009
+   },
+   "empirical g/z": {
+    "pct16_50_84_975": [
+     0.688,
+     0.76,
+     0.825,
+     0.851
+    ],
+    "BF_s0.05": 0.0012604568267905727,
+    "rej3sig_s0.05": 0.971,
+    "BF_s0.07": 0.017936206908147602,
+    "rej3sig_s0.07": 0.654,
+    "BF_s0.1": 0.0966704660867447,
+    "rej3sig_s0.1": 0.199,
+    "BF_s0.14": 0.25605513348390757,
+    "rej3sig_s0.14": 0.08
+   },
+   "empirical V/Ic": {
+    "pct16_50_84_975": [
+     0.753,
+     0.836,
+     0.878,
+     0.894
+    ],
+    "BF_s0.05": 0.020335000833781022,
+    "rej3sig_s0.05": 0.605,
+    "BF_s0.07": 0.09753294471264584,
+    "rej3sig_s0.07": 0.271,
+    "BF_s0.1": 0.2625321347815619,
+    "rej3sig_s0.1": 0.108,
+    "BF_s0.14": 0.4582493038083257,
+    "rej3sig_s0.14": 0.007
+   },
+   "referee2 Mann V/I (used inside r05 chroma)": {
+    "pct16_50_84_975": [
+     0.672,
+     0.742,
+     0.81,
+     0.838
+    ],
+    "BF_s0.05": 0.000509784516560827,
+    "rej3sig_s0.05": 1.0,
+    "BF_s0.07": 0.010633096458695923,
+    "rej3sig_s0.07": 0.738,
+    "BF_s0.1": 0.07133245469378126,
+    "rej3sig_s0.1": 0.285,
+    "BF_s0.14": 0.21437465828202168,
+    "rej3sig_s0.14": 0.074
+   }
+  }
+ },
+ "ladder": {
+  "ref_beta": {
+   "composition_now": {
+    "PTP": 0.0008349208570364,
+    "BD": 0.0001330172347235,
+    "WD": 6.481901846557194e-05,
+    "HEB": 7.696214738669553e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0003704950914456
+   },
+   "bd_factor_from_zorro": 0.8158124648003106,
+   "steps": {
+    "now": 0.0014409475164367407,
+    "speckle: Zorro832 analyst nominal": 0.0005999514572838983,
+    "speckle: Zorro832 cons B (faint, poor seeing; dI=1.2 at 0.04\")": 0.0006724165254565543,
+    "speckle: Zorro832 cons C (dI=1.2 at 0.05\")": 0.0007305571034090341,
+    "two-band BT-Settl r/z sigma 0.05": 0.00016487852673344075,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.05": 0.00013873409460970335,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.05 + low-res RV (BD closed)": 3.0216976489003355e-05,
+    "two-band BT-Settl r/z sigma 0.1": 0.0002494633998886423,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.1": 0.00014863052476886193,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.1 + low-res RV (BD closed)": 4.0113406648161935e-05,
+    "two-band empirical r/z sigma 0.05": 0.00016921628248247779,
+    "Zorro consB + two-band empirical r/z sigma 0.05": 0.00013924161203234068,
+    "Zorro consB + two-band empirical r/z sigma 0.05 + low-res RV (BD closed)": 3.0724493911640685e-05,
+    "two-band empirical r/z sigma 0.1": 0.0003240018924769855,
+    "Zorro consB + two-band empirical r/z sigma 0.1": 0.0001573515284016981,
+    "Zorro consB + two-band empirical r/z sigma 0.1 + low-res RV (BD closed)": 4.88344102809981e-05,
+    "now, f_BD 1.3e-4": 0.0013252225222272957
+   }
+  },
+  "inv_beta": {
+   "composition_now": {
+    "PTP": 0.0027370790785706,
+    "BD": 0.0005122616657416,
+    "WD": 4.417285903093517e-05,
+    "HEB": 5.244815746533166e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0004267477407557
+   },
+   "bd_factor_from_zorro": 0.8412204063652722,
+   "steps": {
+    "now": 0.0037555052598723677,
+    "speckle: Zorro832 analyst nominal": 0.0010168567071579657,
+    "speckle: Zorro832 cons B (faint, poor seeing; dI=1.2 at 0.04\")": 0.0012609235337521904,
+    "speckle: Zorro832 cons C (dI=1.2 at 0.05\")": 0.001461113178037341,
+    "two-band BT-Settl r/z sigma 0.05": 0.0005473362280582505,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.05": 0.0004615331221222573,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.05 + low-res RV (BD closed)": 3.0608155501757334e-05,
+    "two-band BT-Settl r/z sigma 0.1": 0.000787137358017731,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.1": 0.000490309257717395,
+    "Zorro consB + two-band BT-Settl r/z sigma 0.1 + low-res RV (BD closed)": 5.938429109689499e-05,
+    "two-band empirical r/z sigma 0.05": 0.0005593841121222185,
+    "Zorro consB + two-band empirical r/z sigma 0.05": 0.0004629788682099335,
+    "Zorro consB + two-band empirical r/z sigma 0.05 + low-res RV (BD closed)": 3.205390158943351e-05,
+    "two-band empirical r/z sigma 0.1": 0.001009038620304798,
+    "Zorro consB + two-band empirical r/z sigma 0.1": 0.000516937409191843,
+    "Zorro consB + two-band empirical r/z sigma 0.1 + low-res RV (BD closed)": 8.601244257134303e-05,
+    "now, f_BD 1.3e-4": 0.0033098376106771754
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+  obs_collection    provenance_name                       target_name  n                     sectors
+0           HLSP            ELEANOR  postcard-s0012-1-2-cal-1490-0268  1                        [12]
+1           HLSP            ELEANOR  postcard-s0012-1-2-cal-1588-0268  1                        [12]
+2           HLSP  GSFC-ELEANOR-LITE                         214311908  1                        [12]
+3           HLSP                QLP                         214311908  6  [12, 39, 66, 93, 103, 104]
+4           HLSP               TARS                         214311908  4            [12, 39, 66, 93]
+5           HLSP               TICA                          TICA FFI  5      [39, 66, 93, 103, 104]
+TESS mission time-series rows (SPOC 2-min/20-s): 0

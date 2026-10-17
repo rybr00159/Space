@@ -1,0 +1,621 @@
+{
+ "method": "w05: follow-up FPP ladder recomputed with the ADOPTED false-positive composition (writeup/fpp_ladder_adopted.json).\n\nWhy: the ladder in referee3_followup/out/r05_hri_ladder.json starts every step after 'now' from a brown-dwarf (BD) posterior\ncomputed with f_BD = 1e-3 and the uncalibrated r03 shape grid (its composition_now BD = 1.33e-4 REF / 5.12e-4 INV), while\nthe adopted FPP (referee3_bd) uses f_BD = 1.3e-4 and the Ferreira+26 short-period BD eccentricity law. This script keeps\nreferee3_followup's bookkeeping rules and factors (r05_hri_ladder.py: speckle removes the fraction x of PTP and HEB and\nmultiplies the BD term by the Zorro BD factor; a two-band transit multiplies PTP and HEB by the colour Bayes factor and\nremoves NTP (pair A resolved) and WD (chromatic); 'BD closed' sets BD = 0) and only swaps in the adopted composition:\nPTP, NTP from referee3_bd/out/s12_summary.json (Kipping planet e, short-period BD e law, f_BD 1.3e-4); WD, HEB, BG\nfrom referee3_bd/out/s02_fpp_fixed.csv (same row). Three BD versions: without the Gaia RV factor (the one the adopted\ntotal FPP uses), with the median Gaia RV factor (the README table), and with the RV factor and the injection-calibrated\nshape likelihood ratio. As in the referee's ladder, the speckle-only step runs over the three Zorro contrast curves\n(analyst nominal, conservative B and C) and the combined steps use conservative curve B; the two-band steps run over the\nreferee's colour models and depth-ratio precisions (empirical g/z, empirical r/z, BT-Settl r/z; 5% and 10%). Ranges are\ngiven per BD version ('ranges') and over all three ('ranges_all_bd'). The background term (3e-5) is carried over\nunchanged, as in the referee's ladder.\nCross-check: with the referee's own composition_now the script reproduces the published steps to < 1e-12.",
+ "ladders": {
+  "ref_beta": {
+   "BD without Gaia RV factor (as in the adopted total FPP)": {
+    "composition": {
+     "PTP": 0.0008574639123494,
+     "NTP": 0.0003694500505748,
+     "WD": 6.531358501895195e-05,
+     "HEB": 7.754936553462196e-06,
+     "BG": 2.9999100026999194e-05,
+     "BD": 1.4130600408983248e-05
+    },
+    "steps": {
+     "now": 0.0013441121849325965,
+     "speckle nominal": 0.0005031124398855007,
+     "speckle consB": 0.0005775212608911469,
+     "speckle consC": 0.0006372213614654445,
+     "two-band empirical g/z 0.05": 4.542531417772743e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 4.156718400175419e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.003926405299329e-05,
+     "speckle consB + two-band empirical g/z 0.05": 4.167860678354426e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0150686834783358e-05,
+     "speckle consC + two-band empirical g/z 0.05": 4.176800413172466e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.0240084182963763e-05,
+     "two-band empirical g/z 0.1": 0.00013912692121480314,
+     "speckle nominal + two-band empirical g/z 0.1": 4.447193381990354e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.294401387114264e-05,
+     "speckle consB + two-band empirical g/z 0.1": 5.264169480688211e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 4.111377485812121e-05,
+     "speckle consC + two-band empirical g/z 0.1": 5.919650304062075e-05,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 4.766858309185985e-05,
+     "two-band empirical r/z 0.05": 5.049595127471741e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 4.172437375176088e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.019645380299998e-05,
+     "speckle consB + two-band empirical r/z 0.05": 4.227187132389208e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.074395137513118e-05,
+     "speckle consC + two-band empirical r/z 0.05": 4.2711142631764796e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.1183222683003896e-05,
+     "two-band empirical r/z 0.1": 0.00020943342333904467,
+     "speckle nominal + two-band empirical r/z 0.1": 4.665143538575503e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 3.512351543699413e-05,
+     "speckle consB + two-band empirical r/z 0.1": 6.086755555541837e-05,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 4.933963560665747e-05,
+     "speckle consC + two-band empirical r/z 0.1": 7.227351243572968e-05,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 6.074559248696878e-05,
+     "two-band BT-Settl r/z 0.05": 4.604184256778456e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 4.158629638184596e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.005837643308506e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 4.175074060518094e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.022282065642004e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 4.188267841227529e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.0354758463514387e-05,
+     "two-band BT-Settl r/z 0.1": 0.00013289556181627626,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 4.4278761678549204e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.2750841729788304e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 5.191262575725447e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 4.038470580849357e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 5.803747019249475e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 4.650955024373385e-05
+    }
+   },
+   "BD with the median Gaia RV factor (README table)": {
+    "composition": {
+     "PTP": 0.0008574639123494,
+     "NTP": 0.0003694500505748,
+     "WD": 6.531358501895195e-05,
+     "HEB": 7.754936553462196e-06,
+     "BG": 2.9999100026999194e-05,
+     "BD": 7.968790202058859e-06
+    },
+    "steps": {
+     "now": 0.0013379503747256722,
+     "speckle nominal": 0.000498085558312958,
+     "speckle consB": 0.0005724943793186042,
+     "speckle consC": 0.0006321944798929018,
+     "two-band empirical g/z 0.05": 3.9263503970803044e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 3.6540302429211495e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.003926405299329e-05,
+     "speckle consB + two-band empirical g/z 0.05": 3.665172521100156e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0150686834783358e-05,
+     "speckle consC + two-band empirical g/z 0.05": 3.6741122559181966e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.0240084182963763e-05,
+     "two-band empirical g/z 0.1": 0.00013296511100787875,
+     "speckle nominal + two-band empirical g/z 0.1": 3.944505224736084e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.294401387114264e-05,
+     "speckle consB + two-band empirical g/z 0.1": 4.7614813234339416e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 4.111377485812121e-05,
+     "speckle consC + two-band empirical g/z 0.1": 5.416962146807805e-05,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 4.766858309185985e-05,
+     "two-band empirical r/z 0.05": 4.433414106779302e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 3.669749217921818e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.019645380299998e-05,
+     "speckle consB + two-band empirical r/z 0.05": 3.7244989751349385e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.074395137513118e-05,
+     "speckle consC + two-band empirical r/z 0.05": 3.76842610592221e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.1183222683003896e-05,
+     "two-band empirical r/z 0.1": 0.00020327161313212028,
+     "speckle nominal + two-band empirical r/z 0.1": 4.162455381321233e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 3.512351543699413e-05,
+     "speckle consB + two-band empirical r/z 0.1": 5.5840673982875675e-05,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 4.933963560665747e-05,
+     "speckle consC + two-band empirical r/z 0.1": 6.724663086318698e-05,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 6.074559248696878e-05,
+     "two-band BT-Settl r/z 0.05": 3.988003236086017e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 3.655941480930326e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.005837643308506e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 3.672385903263824e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.022282065642004e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 3.685579683973259e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.0354758463514387e-05,
+     "two-band BT-Settl r/z 0.1": 0.00012673375160935187,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 3.925188010600651e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.2750841729788304e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 4.6885744184711775e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 4.038470580849357e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 5.301058861995205e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 4.650955024373385e-05
+    }
+   },
+   "BD with Gaia RV factor and calibrated shape LR": {
+    "composition": {
+     "PTP": 0.0008574639123494,
+     "NTP": 0.0003694500505748,
+     "WD": 6.531358501895195e-05,
+     "HEB": 7.754936553462196e-06,
+     "BG": 2.9999100026999194e-05,
+     "BD": 6.029816126524805e-07
+    },
+    "steps": {
+     "now": 0.0013305845661362658,
+     "speckle nominal": 0.0004920764398523872,
+     "speckle consB": 0.0005664852608580332,
+     "speckle consC": 0.0006261853614323308,
+     "two-band empirical g/z 0.05": 3.189769538139667e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 3.0531183968640577e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.003926405299329e-05,
+     "speckle consB + two-band empirical g/z 0.05": 3.064260675043064e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0150686834783358e-05,
+     "speckle consC + two-band empirical g/z 0.05": 3.073200409861105e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.0240084182963763e-05,
+     "two-band empirical g/z 0.1": 0.00012559930241847237,
+     "speckle nominal + two-band empirical g/z 0.1": 3.3435933786789924e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.294401387114264e-05,
+     "speckle consB + two-band empirical g/z 0.1": 4.16056947737685e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 4.111377485812121e-05,
+     "speckle consC + two-band empirical g/z 0.1": 4.816050300750713e-05,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 4.766858309185985e-05,
+     "two-band empirical r/z 0.05": 3.6968332478386635e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 3.0688373718647264e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.019645380299998e-05,
+     "speckle consB + two-band empirical r/z 0.05": 3.123587129077847e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.074395137513118e-05,
+     "speckle consC + two-band empirical r/z 0.05": 3.167514259865119e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.1183222683003896e-05,
+     "two-band empirical r/z 0.1": 0.0001959058045427139,
+     "speckle nominal + two-band empirical r/z 0.1": 3.561543535264141e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 3.512351543699413e-05,
+     "speckle consB + two-band empirical r/z 0.1": 4.9831555522304763e-05,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 4.933963560665747e-05,
+     "speckle consC + two-band empirical r/z 0.1": 6.123751240261606e-05,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 6.074559248696878e-05,
+     "two-band BT-Settl r/z 0.05": 3.251422377145379e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 3.055029634873235e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.005837643308506e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 3.0714740572067325e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.022282065642004e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 3.084667837916167e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.0354758463514387e-05,
+     "two-band BT-Settl r/z 0.1": 0.0001193679430199455,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 3.324276164543559e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.2750841729788304e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 4.0876625724140856e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 4.038470580849357e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 4.700147015938113e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 4.650955024373385e-05
+    }
+   }
+  },
+  "inv_beta": {
+   "BD without Gaia RV factor (as in the adopted total FPP)": {
+    "composition": {
+     "PTP": 0.0025936262250934,
+     "NTP": 0.0004156477649069,
+     "WD": 4.299997604979939e-05,
+     "HEB": 5.105554778073016e-06,
+     "BG": 2.999910002699919e-05,
+     "BD": 4.165066884547607e-05
+    },
+    "steps": {
+     "now": 0.0031290292897006478,
+     "speckle nominal": 0.0006042449187312911,
+     "speckle consB": 0.0008355320471398521,
+     "speckle consC": 0.0010252394670704696,
+     "two-band empirical g/z 0.05": 7.492535808541187e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 6.5138035864177e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.0100643292600226e-05,
+     "speckle consB + two-band empirical g/z 0.05": 6.542956330412835e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0392170732551584e-05,
+     "speckle consC + two-band empirical g/z 0.05": 6.566868131667273e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.063128874509596e-05,
+     "two-band empirical g/z 0.1": 0.0003228703812670862,
+     "speckle nominal + two-band empirical g/z 0.1": 7.28243315828089e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.778693901123214e-05,
+     "speckle consB + two-band empirical g/z 0.1": 9.518296608592927e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 6.0145573514352505e-05,
+     "speckle consC + two-band empirical g/z 0.1": 0.00011352207079073586,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 7.84846782191591e-05,
+     "two-band empirical r/z 0.05": 8.787651161395493e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 6.553952162356182e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.050212905198506e-05,
+     "speckle consB + two-band empirical r/z 0.05": 6.698370172755351e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.1946309155976754e-05,
+     "speckle consC + two-band empirical r/z 0.05": 6.816825394768153e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.3130861376104765e-05,
+     "two-band empirical r/z 0.1": 0.0005139864480799109,
+     "speckle nominal + two-band empirical r/z 0.1": 7.874892965400647e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 4.371153708242971e-05,
+     "speckle consB + two-band empirical r/z 0.1": 0.00011811689410346822,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 8.307950153189145e-05,
+     "speckle consC + two-band empirical r/z 0.1": 0.000150407471685611,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 0.00011537007911403423,
+     "two-band BT-Settl r/z 0.05": 7.645947248807978e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 6.51855934106597e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.014820083908293e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 6.561365703244849e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.057626446087173e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 6.596476539638762e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.092737282481086e-05,
+     "two-band BT-Settl r/z 0.1": 0.00030370426241467925,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 7.223018189838429e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.719278932680752e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 9.288303182364043e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 5.784563925206366e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 0.00010982300985222132,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 7.478561728064455e-05
+    }
+   },
+   "BD with the median Gaia RV factor (README table)": {
+    "composition": {
+     "PTP": 0.0025936262250934,
+     "NTP": 0.0004156477649069,
+     "WD": 4.299997604979939e-05,
+     "HEB": 5.105554778073016e-06,
+     "BG": 2.999910002699919e-05,
+     "BD": 2.3525092140764436e-05
+    },
+    "steps": {
+     "now": 0.003110903712995936,
+     "speckle nominal": 0.0005889973137301487,
+     "speckle consB": 0.0008202844421387097,
+     "speckle consC": 0.001009991862069327,
+     "two-band empirical g/z 0.05": 5.679978138070024e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 4.989043086303456e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.0100643292600226e-05,
+     "speckle consB + two-band empirical g/z 0.05": 5.0181958302985915e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0392170732551584e-05,
+     "speckle consC + two-band empirical g/z 0.05": 5.042107631553029e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.063128874509596e-05,
+     "two-band empirical g/z 0.1": 0.0003047448045623746,
+     "speckle nominal + two-band empirical g/z 0.1": 5.757672658166647e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.778693901123214e-05,
+     "speckle consB + two-band empirical g/z 0.1": 7.993536108478684e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 6.0145573514352505e-05,
+     "speckle consC + two-band empirical g/z 0.1": 9.827446578959342e-05,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 7.84846782191591e-05,
+     "two-band empirical r/z 0.05": 6.97509349092433e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 5.029191662241939e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.050212905198506e-05,
+     "speckle consB + two-band empirical r/z 0.05": 5.173609672641108e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.1946309155976754e-05,
+     "speckle consC + two-band empirical r/z 0.05": 5.29206489465391e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.3130861376104765e-05,
+     "two-band empirical r/z 0.1": 0.0004958608713751992,
+     "speckle nominal + two-band empirical r/z 0.1": 6.350132465286404e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 4.371153708242971e-05,
+     "speckle consB + two-band empirical r/z 0.1": 0.00010286928910232579,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 8.307950153189145e-05,
+     "speckle consC + two-band empirical r/z 0.1": 0.00013515986668446856,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 0.00011537007911403423,
+     "two-band BT-Settl r/z 0.05": 5.833389578336814e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 4.9937988409517264e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.014820083908293e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 5.036605203130606e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.057626446087173e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 5.071716039524519e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.092737282481086e-05,
+     "two-band BT-Settl r/z 0.1": 0.0002855786857099676,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 5.698257689724185e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.719278932680752e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 7.7635426822498e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 5.784563925206366e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 9.457540485107887e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 7.478561728064455e-05
+    }
+   },
+   "BD with Gaia RV factor and calibrated shape LR": {
+    "composition": {
+     "PTP": 0.0025936262250934,
+     "NTP": 0.0004156477649069,
+     "WD": 4.299997604979939e-05,
+     "HEB": 5.105554778073016e-06,
+     "BG": 2.999910002699919e-05,
+     "BD": 6.923521372826261e-06
+    },
+    "steps": {
+     "now": 0.0030943021422279978,
+     "speckle nominal": 0.0005750317336224419,
+     "speckle consB": 0.0008063188620310029,
+     "speckle consC": 0.0009960262819616202,
+     "two-band empirical g/z 0.05": 4.0198210612762064e-05,
+     "speckle nominal + two-band empirical g/z 0.05": 3.592485075532778e-05,
+     "speckle nominal + two-band empirical g/z 0.05 + BD closed": 3.0100643292600226e-05,
+     "speckle consB + two-band empirical g/z 0.05": 3.621637819527914e-05,
+     "speckle consB + two-band empirical g/z 0.05 + BD closed": 3.0392170732551584e-05,
+     "speckle consC + two-band empirical g/z 0.05": 3.645549620782351e-05,
+     "speckle consC + two-band empirical g/z 0.05 + BD closed": 3.063128874509596e-05,
+     "two-band empirical g/z 0.1": 0.00028814323379443643,
+     "speckle nominal + two-band empirical g/z 0.1": 4.361114647395969e-05,
+     "speckle nominal + two-band empirical g/z 0.1 + BD closed": 3.778693901123214e-05,
+     "speckle consB + two-band empirical g/z 0.1": 6.596978097708006e-05,
+     "speckle consB + two-band empirical g/z 0.1 + BD closed": 6.0145573514352505e-05,
+     "speckle consC + two-band empirical g/z 0.1": 8.430888568188666e-05,
+     "speckle consC + two-band empirical g/z 0.1 + BD closed": 7.84846782191591e-05,
+     "two-band empirical r/z 0.05": 5.3149364141305124e-05,
+     "speckle nominal + two-band empirical r/z 0.05": 3.632633651471262e-05,
+     "speckle nominal + two-band empirical r/z 0.05 + BD closed": 3.050212905198506e-05,
+     "speckle consB + two-band empirical r/z 0.05": 3.7770516618704304e-05,
+     "speckle consB + two-band empirical r/z 0.05 + BD closed": 3.1946309155976754e-05,
+     "speckle consC + two-band empirical r/z 0.05": 3.895506883883232e-05,
+     "speckle consC + two-band empirical r/z 0.05 + BD closed": 3.3130861376104765e-05,
+     "two-band empirical r/z 0.1": 0.00047925930060726103,
+     "speckle nominal + two-band empirical r/z 0.1": 4.953574454515726e-05,
+     "speckle nominal + two-band empirical r/z 0.1 + BD closed": 4.371153708242971e-05,
+     "speckle consB + two-band empirical r/z 0.1": 8.890370899461901e-05,
+     "speckle consB + two-band empirical r/z 0.1 + BD closed": 8.307950153189145e-05,
+     "speckle consC + two-band empirical r/z 0.1": 0.00012119428657676178,
+     "speckle consC + two-band empirical r/z 0.1 + BD closed": 0.00011537007911403423,
+     "two-band BT-Settl r/z 0.05": 4.173232501542997e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05": 3.597240830181049e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.05 + BD closed": 3.014820083908293e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05": 3.640047192359929e-05,
+     "speckle consB + two-band BT-Settl r/z 0.05 + BD closed": 3.057626446087173e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05": 3.675158028753842e-05,
+     "speckle consC + two-band BT-Settl r/z 0.05 + BD closed": 3.092737282481086e-05,
+     "two-band BT-Settl r/z 0.1": 0.0002689771149420294,
+     "speckle nominal + two-band BT-Settl r/z 0.1": 4.301699678953508e-05,
+     "speckle nominal + two-band BT-Settl r/z 0.1 + BD closed": 3.719278932680752e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1": 6.366984671479122e-05,
+     "speckle consB + two-band BT-Settl r/z 0.1 + BD closed": 5.784563925206366e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1": 8.060982474337211e-05,
+     "speckle consC + two-band BT-Settl r/z 0.1 + BD closed": 7.478561728064455e-05
+    }
+   }
+  }
+ },
+ "ranges": {
+  "ref_beta": {
+   "BD without Gaia RV factor (as in the adopted total FPP)": {
+    "now": [
+     0.0013441121849325965,
+     0.0013441121849325965
+    ],
+    "speckle": [
+     0.0005031124398855007,
+     0.0006372213614654445
+    ],
+    "two-band only": [
+     4.542531417772743e-05,
+     0.00020943342333904467
+    ],
+    "speckle + two-band": [
+     4.167860678354426e-05,
+     6.086755555541837e-05
+    ],
+    "speckle + two-band + BD closed": [
+     3.0150686834783358e-05,
+     4.933963560665747e-05
+    ]
+   },
+   "BD with the median Gaia RV factor (README table)": {
+    "now": [
+     0.0013379503747256722,
+     0.0013379503747256722
+    ],
+    "speckle": [
+     0.000498085558312958,
+     0.0006321944798929018
+    ],
+    "two-band only": [
+     3.9263503970803044e-05,
+     0.00020327161313212028
+    ],
+    "speckle + two-band": [
+     3.665172521100156e-05,
+     5.5840673982875675e-05
+    ],
+    "speckle + two-band + BD closed": [
+     3.0150686834783358e-05,
+     4.933963560665747e-05
+    ]
+   },
+   "BD with Gaia RV factor and calibrated shape LR": {
+    "now": [
+     0.0013305845661362658,
+     0.0013305845661362658
+    ],
+    "speckle": [
+     0.0004920764398523872,
+     0.0006261853614323308
+    ],
+    "two-band only": [
+     3.189769538139667e-05,
+     0.0001959058045427139
+    ],
+    "speckle + two-band": [
+     3.064260675043064e-05,
+     4.9831555522304763e-05
+    ],
+    "speckle + two-band + BD closed": [
+     3.0150686834783358e-05,
+     4.933963560665747e-05
+    ]
+   },
+   "published composition (f_BD 1e-3, uncalibrated shape grid)": {
+    "now": [
+     0.0014409475164367407,
+     0.0014409475164367407
+    ],
+    "speckle": [
+     0.0005999514572838983,
+     0.0007305571034090341
+    ],
+    "two-band only": [
+     0.00016427810367590463,
+     0.0003240018924769856
+    ],
+    "speckle + two-band": [
+     0.0001386638451119716,
+     0.0001573515284016981
+    ],
+    "speckle + two-band + BD closed": [
+     3.0146726991271628e-05,
+     4.883441028099809e-05
+    ]
+   }
+  },
+  "inv_beta": {
+   "BD without Gaia RV factor (as in the adopted total FPP)": {
+    "now": [
+     0.0031290292897006478,
+     0.0031290292897006478
+    ],
+    "speckle": [
+     0.0006042449187312911,
+     0.0010252394670704696
+    ],
+    "two-band only": [
+     7.492535808541187e-05,
+     0.0005139864480799109
+    ],
+    "speckle + two-band": [
+     6.542956330412835e-05,
+     0.00011811689410346822
+    ],
+    "speckle + two-band + BD closed": [
+     3.0392170732551584e-05,
+     8.307950153189145e-05
+    ]
+   },
+   "BD with the median Gaia RV factor (README table)": {
+    "now": [
+     0.003110903712995936,
+     0.003110903712995936
+    ],
+    "speckle": [
+     0.0005889973137301487,
+     0.001009991862069327
+    ],
+    "two-band only": [
+     5.679978138070024e-05,
+     0.0004958608713751992
+    ],
+    "speckle + two-band": [
+     5.0181958302985915e-05,
+     0.00010286928910232579
+    ],
+    "speckle + two-band + BD closed": [
+     3.0392170732551584e-05,
+     8.307950153189145e-05
+    ]
+   },
+   "BD with Gaia RV factor and calibrated shape LR": {
+    "now": [
+     0.0030943021422279978,
+     0.0030943021422279978
+    ],
+    "speckle": [
+     0.0005750317336224419,
+     0.0009960262819616202
+    ],
+    "two-band only": [
+     4.0198210612762064e-05,
+     0.00047925930060726103
+    ],
+    "speckle + two-band": [
+     3.621637819527914e-05,
+     8.890370899461901e-05
+    ],
+    "speckle + two-band + BD closed": [
+     3.0392170732551584e-05,
+     8.307950153189145e-05
+    ]
+   },
+   "published composition (f_BD 1e-3, uncalibrated shape grid)": {
+    "now": [
+     0.0037555052598723677,
+     0.0037555052598723677
+    ],
+    "speckle": [
+     0.0010168567071579657,
+     0.001461113178037341
+    ],
+    "two-band only": [
+     0.0005457173466424622,
+     0.001009038620304798
+    ],
+    "speckle + two-band": [
+     0.00046133885635236277,
+     0.000516937409191843
+    ],
+    "speckle + two-band + BD closed": [
+     3.0413889731862745e-05,
+     8.601244257134303e-05
+    ]
+   }
+  }
+ },
+ "ranges_all_bd": {
+  "ref_beta": {
+   "now": [
+    0.0013305845661362658,
+    0.0013441121849325965
+   ],
+   "speckle": [
+    0.0004920764398523872,
+    0.0006372213614654445
+   ],
+   "two-band only": [
+    3.189769538139667e-05,
+    0.00020943342333904467
+   ],
+   "speckle + two-band": [
+    3.064260675043064e-05,
+    6.086755555541837e-05
+   ],
+   "speckle + two-band + BD closed": [
+    3.0150686834783358e-05,
+    4.933963560665747e-05
+   ]
+  },
+  "inv_beta": {
+   "now": [
+    0.0030943021422279978,
+    0.0031290292897006478
+   ],
+   "speckle": [
+    0.0005750317336224419,
+    0.0010252394670704696
+   ],
+   "two-band only": [
+    4.0198210612762064e-05,
+    0.0005139864480799109
+   ],
+   "speckle + two-band": [
+    3.621637819527914e-05,
+    0.00011811689410346822
+   ],
+   "speckle + two-band + BD closed": [
+    3.0392170732551584e-05,
+    8.307950153189145e-05
+   ]
+  }
+ },
+ "published_check": {
+  "ref_beta": {
+   "speckle consB": {
+    "published": 0.0006724165254565543,
+    "recomputed": 0.0006724165254565543,
+    "absdiff": 0.0
+   },
+   "speckle consB + two-band BT-Settl r/z 0.05": {
+    "published": 0.00013873409460970335,
+    "recomputed": 0.00013873409460970335,
+    "absdiff": 0.0
+   },
+   "speckle consB + two-band empirical r/z 0.1 + BD closed": {
+    "published": 4.88344102809981e-05,
+    "recomputed": 4.883441028099809e-05,
+    "absdiff": 6.776263578034403e-21
+   }
+  },
+  "inv_beta": {
+   "speckle consB": {
+    "published": 0.0012609235337521904,
+    "recomputed": 0.0012609235337521904,
+    "absdiff": 0.0
+   },
+   "speckle consB + two-band BT-Settl r/z 0.05": {
+    "published": 0.0004615331221222573,
+    "recomputed": 0.0004615331221222574,
+    "absdiff": 5.421010862427522e-20
+   },
+   "speckle consB + two-band empirical r/z 0.1 + BD closed": {
+    "published": 8.601244257134303e-05,
+    "recomputed": 8.601244257134303e-05,
+    "absdiff": 0.0
+   }
+  }
+ }
+}

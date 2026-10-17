@@ -1,0 +1,104 @@
+{
+ "12": {
+  "ffi_bary": {
+   "frac_matched": 1.0,
+   "median_s": -17.433262446866138,
+   "rstd_s": 4.02123045822198
+  },
+  "spacecraft": {
+   "frac_matched": 1.0,
+   "median_s": 437.5577116217755,
+   "rstd_s": 11.39126685379073
+  },
+  "target_bary": {
+   "frac_matched": 1.0,
+   "median_s": 1.3159698450181168,
+   "rstd_s": 0.3575563776430499
+  }
+ },
+ "39": {
+  "ffi_bary": {
+   "frac_matched": 1.0,
+   "median_s": -11.558712772966828,
+   "rstd_s": 3.7027375795750412
+  },
+  "spacecraft": {
+   "frac_matched": 0.9994844031967002,
+   "median_s": -156.3972151488997,
+   "rstd_s": 4.27776803370245
+  },
+  "target_bary": {
+   "frac_matched": 1.0,
+   "median_s": 1.3191157500841655,
+   "rstd_s": 0.29472628095798425
+  }
+ },
+ "66": {
+  "ffi_bary": {
+   "frac_matched": 1.0,
+   "median_s": -5.206049945263658,
+   "rstd_s": 7.337485484564822
+  },
+  "spacecraft": {
+   "frac_matched": 0.9991772256047392,
+   "median_s": 46.33893325008103,
+   "rstd_s": 4.366211274914676
+  },
+  "target_bary": {
+   "frac_matched": 1.0,
+   "median_s": 1.6257651826890651,
+   "rstd_s": 0.5968643217245698
+  }
+ },
+ "93": {
+  "ffi_bary": {
+   "frac_matched": 1.0,
+   "median_s": -5.171967725618742,
+   "rstd_s": 6.092670326794032
+  },
+  "spacecraft": {
+   "frac_matched": 0.9992758214899973,
+   "median_s": 49.92249937058659,
+   "rstd_s": 2.2586075850002816
+  },
+  "target_bary": {
+   "frac_matched": 1.0,
+   "median_s": 2.505526393360924,
+   "rstd_s": 0.6327956026489846
+  }
+ },
+ "103": {
+  "ffi_bary": {
+   "frac_matched": 0.7101422838380154,
+   "median_s": 35.83446352276951,
+   "rstd_s": 43.74786802817339
+  },
+  "spacecraft": {
+   "frac_matched": 1.0,
+   "median_s": -4.107735212892294,
+   "rstd_s": 3.4950964618474244e-07
+  },
+  "target_bary": {
+   "frac_matched": 0.731302444363371,
+   "median_s": 33.05936506512808,
+   "rstd_s": 33.04158415936137
+  }
+ },
+ "104": {
+  "ffi_bary": {
+   "frac_matched": 0.9992874320833705,
+   "median_s": -52.03601593966596,
+   "rstd_s": 17.105190586483804
+  },
+  "spacecraft": {
+   "frac_matched": 1.0,
+   "median_s": -4.127735403017141,
+   "rstd_s": 1.0485289385542274e-06
+  },
+  "target_bary": {
+   "frac_matched": 0.9992874320833705,
+   "median_s": -39.75108568556607,
+   "rstd_s": 16.5845866482344
+  }
+ }
+}

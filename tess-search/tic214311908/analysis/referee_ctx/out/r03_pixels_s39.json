@@ -1,0 +1,226 @@
+{
+ "n_fake_windows": 30,
+ "fit_radius_px": 3.5,
+ "n_pix": 39,
+ "real": {
+  "M3V": {
+   "amp": 14.078657605336383,
+   "chi2": 30.197217717388032
+  },
+  "M3V_colour3.5": {
+   "amp": 15.12878285834328,
+   "chi2": 24.90682698342814
+  },
+  "G17.5_3.1": {
+   "amp": 14.049602401688126,
+   "chi2": 36.48126551570257
+  },
+  "G17.7_5.5": {
+   "amp": 12.793633164596844,
+   "chi2": 46.270235527030955
+  },
+  "pairA": {
+   "amp": 16.865876775355513,
+   "chi2": 48.75548306064721
+  },
+  "Mira_gaia": {
+   "amp": 14.391604166461748,
+   "chi2": 75.84683595286052
+  },
+  "Mira_shift7.5": {
+   "amp": 14.214931130959902,
+   "chi2": 78.73153467442664
+  }
+ },
+ "real_free": {
+  "chi2": 24.847143463046425,
+  "EN_from_Mira": [
+   -17.5,
+   -3.5
+  ],
+  "offset_from_M3V": 3.7519974290248683
+ },
+ "fake_single_window_chi2_median": 26.35967269417604,
+ "emulated_tglc_psf_dF": {
+  "M3V": 13.369541810582641,
+  "pairA": 13.219321265826844,
+  "pairB": 13.24502074944956,
+  "Mira": 10.229703201364151,
+  "ref1": -2.296062792458839,
+  "ref2": -1.9619116927054274
+ },
+ "emulated_tglc_psf_err": {
+  "M3V": 2.44,
+  "pairA": 3.17,
+  "pairB": 3.17,
+  "Mira": 3.26,
+  "ref1": 2.24,
+  "ref2": 1.94
+ },
+ "emulated_tglc_aperture_dF": {
+  "M3V": 14.894915848415412,
+  "pairA": 14.877600182866953,
+  "pairB": 14.907829696510088,
+  "Mira": 10.053263581720723,
+  "ref1": 3.5544926698438406,
+  "ref2": -0.3670722709229223
+ },
+ "real_tglc_psf_dF_referee": {
+  "M3V": 13.38,
+  "pairA": 12.42,
+  "pairB": 12.12,
+  "Mira": 9.66,
+  "ref1": -4.47,
+  "ref2": -3.79
+ },
+ "real_tglc_aperture_dF_referee": {
+  "M3V": 15.53,
+  "pairA": 14.59,
+  "pairB": 14.35,
+  "Mira": 10.01,
+  "ref1": 3.48,
+  "ref2": -1.66
+ },
+ "leak_model_on_emulated": {
+  "chi2": {
+   "M3V": 5.273984723363977,
+   "M3V_colour3.5": 6.360373826624859,
+   "G17.5_3.1": 3.5240312960738813,
+   "G17.7_5.5": 4.9048626718023485,
+   "pairA": 6.585081808654452,
+   "Mira_gaia": 28.928559312463925,
+   "Mira_shift7.5": 42.052143206387335
+  },
+  "free_EN": [
+   -12.0,
+   0.0
+  ],
+  "free_chi2": 0.7815784850198353
+ },
+ "injections": {
+  "M3V": {
+   "dchi2_G17_7_minus_M3V_pct": [
+    -0.3,
+    4.9,
+    11.9,
+    17.1,
+    21.6
+   ],
+   "dchi2_G17_5_minus_M3V_pct": [
+    -2.5,
+    1.0,
+    4.9,
+    8.2,
+    10.5
+   ],
+   "free_offset_from_M3V_pct": [
+    3.2,
+    3.9,
+    6.4
+   ],
+   "leak_model_dchi2_M3V_minus_free_pct": [
+    2.0,
+    6.0,
+    8.0,
+    11.0
+   ],
+   "frac_leak_dchi2_ge_13": 0.006666666666666667,
+   "frac_dchi2_G17_7_ge_observed": 0.2075,
+   "frac_dchi2_G17_5_ge_observed": 0.335,
+   "frac_leak_dchi2_ge_emulated_observed": 0.20666666666666667
+  },
+  "M3V_colour3.5": {
+   "dchi2_G17_7_minus_M3V_pct": [
+    8.1,
+    13.3,
+    19.4,
+    25.1,
+    30.9
+   ],
+   "dchi2_G17_5_minus_M3V_pct": [
+    2.0,
+    5.1,
+    8.5,
+    12.0,
+    15.3
+   ],
+   "free_offset_from_M3V_pct": [
+    3.7,
+    4.7,
+    7.4
+   ],
+   "leak_model_dchi2_M3V_minus_free_pct": [
+    3.2,
+    7.5,
+    9.5,
+    11.3
+   ],
+   "frac_leak_dchi2_ge_13": 0.006666666666666667,
+   "frac_dchi2_G17_7_ge_observed": 0.7225,
+   "frac_dchi2_G17_5_ge_observed": 0.7325,
+   "frac_leak_dchi2_ge_emulated_observed": 0.38666666666666666
+  },
+  "G17.7_5.5": {
+   "dchi2_G17_7_minus_M3V_pct": [
+    -17.1,
+    -11.1,
+    -4.4,
+    0.3,
+    4.8
+   ],
+   "dchi2_G17_5_minus_M3V_pct": [
+    -10.7,
+    -7.3,
+    -3.6,
+    -0.8,
+    1.9
+   ],
+   "free_offset_from_M3V_pct": [
+    4.9,
+    5.9,
+    8.4
+   ],
+   "leak_model_dchi2_M3V_minus_free_pct": [
+    2.2,
+    4.9,
+    7.2,
+    10.7
+   ],
+   "frac_leak_dchi2_ge_13": 0.006666666666666667,
+   "frac_dchi2_G17_7_ge_observed": 0.0,
+   "frac_dchi2_G17_5_ge_observed": 0.0,
+   "frac_leak_dchi2_ge_emulated_observed": 0.2
+  },
+  "G17.5_3.1": {
+   "dchi2_G17_7_minus_M3V_pct": [
+    -9.3,
+    -3.1,
+    3.1,
+    8.1,
+    12.3
+   ],
+   "dchi2_G17_5_minus_M3V_pct": [
+    -7.1,
+    -3.7,
+    -0.1,
+    3.1,
+    5.5
+   ],
+   "free_offset_from_M3V_pct": [
+    3.1,
+    4.0,
+    5.9
+   ],
+   "leak_model_dchi2_M3V_minus_free_pct": [
+    1.6,
+    4.4,
+    7.1,
+    9.5
+   ],
+   "frac_leak_dchi2_ge_13": 0.0,
+   "frac_dchi2_G17_7_ge_observed": 0.0075,
+   "frac_dchi2_G17_5_ge_observed": 0.015,
+   "frac_leak_dchi2_ge_emulated_observed": 0.16
+  }
+ }
+}

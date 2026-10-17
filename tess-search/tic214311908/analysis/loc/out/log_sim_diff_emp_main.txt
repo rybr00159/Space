@@ -1,0 +1,16 @@
+S12 model built (3s): n_real 3 n_fake 259
+S39 model built (6s): n_real 4 n_fake 285
+S66 model built (11s): n_real 3 n_fake 290
+S93 model built (17s): n_real 3 n_fake 320
+S103 model built (22s): n_real 4 n_fake 327
+S104 model built (28s): n_real 4 n_fake 339
+noise draws done (28s)
+noise-only done (46s)
+injected M3V                    A=  14.3 (62s)
+injected pairA                  A=  14.3 (76s)
+injected pairB                  A=  14.3 (90s)
+injected Mira                   A=  14.3 (105s)
+injected 5925373272827260544    A=  14.3 (122s)
+injected 5925373272827262208    A=  14.3 (138s)
+injected 5925373272827256576    A=  14.3 (156s)
+saved out/sim_diff_emp_main.npz (158s)

@@ -1,0 +1,7 @@
+TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        
+1515709327          0                             0                             0                             0                   0                   0                        0                                       0                        
+
+
+
+
+

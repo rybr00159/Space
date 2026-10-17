@@ -1,0 +1,42 @@
+{
+ "DET_FLUX": {
+  "referee": {
+   "mean_recovered_ppm": 14997.880588806136,
+   "sd_ppm": 12.819037760392444,
+   "n": 15,
+   "bias_pct": -0.014129407959095897
+  },
+  "ctx_unmasked": {
+   "mean_recovered_ppm": 14172.82028122674,
+   "sd_ppm": 159.59223354145865,
+   "n": 15,
+   "bias_pct": -5.514531458488403
+  },
+  "ctx_masked": {
+   "mean_recovered_ppm": 14998.370993271186,
+   "sd_ppm": 13.166838544538654,
+   "n": 15,
+   "bias_pct": -0.010860044858751472
+  }
+ },
+ "SAP_FLUX": {
+  "referee": {
+   "mean_recovered_ppm": 15723.86686005519,
+   "sd_ppm": 352.81856488844784,
+   "n": 15,
+   "bias_pct": 4.825779067034608
+  },
+  "ctx_unmasked": {
+   "mean_recovered_ppm": 13849.24141849364,
+   "sd_ppm": 144.26761459995248,
+   "n": 15,
+   "bias_pct": -7.671723876709057
+  },
+  "ctx_masked": {
+   "mean_recovered_ppm": 14988.808438444965,
+   "sd_ppm": 26.62550040815689,
+   "n": 15,
+   "bias_pct": -0.0746104103668932
+  }
+ }
+}

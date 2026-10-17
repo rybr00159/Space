@@ -1,0 +1,2 @@
+_r,recno,Gaia,2MASS,Name,RAJ2000,DEJ2000,pmRA,e_pmRA,pmDE,e_pmDE,Gmag,e_Gmag,BPmag,e_BPmag,RPmag,e_RPmag,Vmag,e_Vmag,Ksmag,e_Ksmag,Dist,E_Dist,e_Dist,Teff,e_Teff,Lum,e_Lum,Rad,e_Rad,Mass,e_Mass,RUWE,GCNS,Gaiabin,AObin,DR3bin,SIMBADbin,Any-bin,SVel,e_SVel,r_SVel,SimbadName
+2.268,73439,5925373272850784768,17235292-5119271,,260.9704821,-51.3242014,-113.6712,0.0311,85.5436,0.0224,14.281,0.0028,15.8307,0.0045,13.0746,0.004,,,10.482,0.026,64.53,0.1,0.1,3293,110,0.0152,0.00043,0.383,0.012,0.374,0.012,1.08,T,T,F,F,F,T,16.2837,2.2174,1,

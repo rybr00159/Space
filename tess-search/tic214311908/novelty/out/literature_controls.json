@@ -1,0 +1,15 @@
+{
+ "queried_utc": "2026-10-17T10:45:00+00:00 (approx.; run started after n04)",
+ "arxiv_controls": {
+  "TIC 172900988": 5,
+  "172900988": 5,
+  "TOI-3884": 8,
+  "TOI 3884": 8
+ },
+ "s2_snippet": {
+  "TOI-3884": {
+   "http_status": 429
+  }
+ },
+ "note": "Semantic Scholar snippet search: the first query (control TOI-3884) got HTTP 429 on 5 attempts over ~8 min, and a separate single request also got 429; the run was stopped and the search recorded as not usable. Rebuilt from out/n04b.log."
+}

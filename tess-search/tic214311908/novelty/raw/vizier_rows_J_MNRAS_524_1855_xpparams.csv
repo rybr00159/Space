@@ -1,0 +1,2 @@
+_r,GaiaDR3,RA_ICRS,DE_ICRS,Teff,e_Teff,[Fe/H],e_[Fe/H],logg,e_logg,Ext,e_Ext,Plx,e_Plx,Quality,Chi2,ln(Prior),ConfTeff,Conf[Fe/H],Conflogg
+0.038,5925373272850784768,260.96967,-51.323822,2.2614,0.2102,-3.6893,0.1178,8.5992,0.476,0.9278,0.0079,15.4377,0.0251,31,20944.0,-53.0938,1e-04,0.026,0.0

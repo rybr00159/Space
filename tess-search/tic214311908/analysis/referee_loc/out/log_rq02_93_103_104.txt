@@ -1,0 +1,54 @@
+S93: WCS offset (+0.065,+0.185) +- (0.008,0.009) px, variants x[+0.049,+0.066] y[+0.097,+0.185] chi2r 0.2 nstar 520
+   Mira R3: dEN (-2.0,-6.1)+-(0.5,0.5) rad -6.4 tan -0.0 flux 11524 rms 5.3%
+   Mira R3 blur: dEN (-2.0,-6.1) rad -6.4 tan -0.0 blur 0.00px rms 5.3%; centroid (-1.9,-4.4) rad -4.8
+     R2.0_blur0: dEN (-2.0,-5.9) rad -6.2 tan -0.1 flux 12372 chi2r 2.9 blur 0.00 trio 1.00
+     R2.0_blur1: dEN (-2.0,-5.9) rad -6.2 tan -0.1 flux 12372 chi2r 3.5 blur 0.00 trio 1.00
+     R3.0_blur0: dEN (-2.0,-6.1) rad -6.4 tan -0.0 flux 11524 chi2r 1.7 blur 0.00 trio 1.00
+     R3.0_blur1: dEN (-2.0,-6.1) rad -6.4 tan -0.0 flux 11524 chi2r 1.8 blur 0.00 trio 1.00
+     R4.0_blur0: dEN (-1.9,-6.2) rad -6.5 tan +0.1 flux 11259 chi2r 1.2 blur 0.00 trio 1.00
+     R4.0_blur1: dEN (-1.9,-6.2) rad -6.5 tan +0.1 flux 11259 chi2r 1.2 blur 0.12 trio 1.00
+     R3.0_blur0_trioscale: dEN (-3.3,-5.9) rad -6.6 tan -1.3 flux 12761 chi2r 1.7 blur 0.00 trio 0.20
+     R3.0_blur0_linear: dEN (-2.0,-6.2) rad -6.5 tan -0.0 flux 11525 chi2r 1.7 blur 0.00 trio 1.00
+     WCS curve_R2.0_F0.03: (+0.065,+0.185) chi2r 0.20
+     WCS curve_R2.5_F0.03: (+0.065,+0.185) chi2r 0.19
+     WCS curve_R3.5_F0.03: (+0.065,+0.184) chi2r 0.19
+     WCS linear_R2.5_F0.03: (+0.063,+0.171) chi2r 0.19
+     WCS none_R2.5_F0.03: (+0.049,+0.097) chi2r 0.26
+     WCS curve_far: (+0.066,+0.184) chi2r 0.19
+     WCS curve_R2.5_F0.05: (+0.064,+0.184) chi2r 0.13
+S103: WCS offset (+0.027,+0.104) +- (0.009,0.007) px, variants x[-0.015,+0.028] y[+0.016,+0.106] chi2r 0.4 nstar 472
+   Mira R3: dEN (-1.8,+4.7)+-(0.5,0.5) rad -5.0 tan +0.4 flux 9697 rms 5.4%
+   Mira R3 blur: dEN (-1.8,+4.7) rad -5.0 tan +0.4 blur 0.00px rms 5.4%; centroid (-1.9,+3.0) rad -3.4
+     R2.0_blur0: dEN (-1.9,+4.7) rad -5.0 tan +0.5 flux 10323 chi2r 3.6 blur 0.00 trio 1.00
+     R2.0_blur1: dEN (-1.9,+4.7) rad -5.0 tan +0.5 flux 10323 chi2r 4.1 blur 0.08 trio 1.00
+     R3.0_blur0: dEN (-1.8,+4.7) rad -5.0 tan +0.4 flux 9697 chi2r 1.7 blur 0.00 trio 1.00
+     R3.0_blur1: dEN (-1.8,+4.7) rad -5.0 tan +0.4 flux 9697 chi2r 1.8 blur 0.00 trio 1.00
+     R4.0_blur0: dEN (-1.8,+4.7) rad -5.0 tan +0.4 flux 9597 chi2r 1.1 blur 0.00 trio 1.00
+     R4.0_blur1: dEN (-1.8,+4.7) rad -5.0 tan +0.4 flux 9597 chi2r 1.1 blur 0.00 trio 1.00
+     R3.0_blur0_trioscale: dEN (-2.9,+4.6) rad -5.3 tan +1.4 flux 10639 chi2r 1.7 blur 0.00 trio 0.38
+     R3.0_blur0_linear: dEN (-1.9,+4.8) rad -5.1 tan +0.5 flux 9705 chi2r 1.7 blur 0.00 trio 1.00
+     WCS curve_R2.0_F0.03: (+0.027,+0.104) chi2r 0.38
+     WCS curve_R2.5_F0.03: (+0.027,+0.104) chi2r 0.38
+     WCS curve_R3.5_F0.03: (+0.025,+0.105) chi2r 0.38
+     WCS linear_R2.5_F0.03: (+0.021,+0.090) chi2r 0.37
+     WCS none_R2.5_F0.03: (-0.015,+0.016) chi2r 0.42
+     WCS curve_far: (+0.022,+0.106) chi2r 0.37
+     WCS curve_R2.5_F0.05: (+0.028,+0.103) chi2r 0.22
+S104: WCS offset (-0.121,+0.140) +- (0.008,0.007) px, variants x[-0.121,-0.064] y[+0.102,+0.141] chi2r 0.2 nstar 524
+   Mira R3: dEN (-7.0,-1.4)+-(0.5,0.5) rad -7.1 tan -0.1 flux 7593 rms 4.2%
+   Mira R3 blur: dEN (-7.0,-1.4) rad -7.1 tan -0.1 blur 0.00px rms 4.2%; centroid (-4.9,-1.4) rad -5.1
+     R2.0_blur0: dEN (-7.0,-1.2) rad -7.1 tan -0.3 flux 8375 chi2r 1.2 blur 0.00 trio 1.00
+     R2.0_blur1: dEN (-7.0,-1.2) rad -7.1 tan -0.3 flux 8375 chi2r 1.4 blur 0.00 trio 1.00
+     R3.0_blur0: dEN (-7.0,-1.4) rad -7.1 tan -0.1 flux 7593 chi2r 1.1 blur 0.00 trio 1.00
+     R3.0_blur1: dEN (-7.0,-1.4) rad -7.1 tan -0.1 flux 7593 chi2r 1.1 blur 0.00 trio 1.00
+     R4.0_blur0: dEN (-6.9,-1.4) rad -7.0 tan -0.1 flux 7328 chi2r 0.9 blur 0.00 trio 1.00
+     R4.0_blur1: dEN (-6.9,-1.4) rad -7.0 tan -0.1 flux 7328 chi2r 0.9 blur 0.00 trio 1.00
+     R3.0_blur0_trioscale: dEN (-7.5,-1.5) rad -7.7 tan -0.1 flux 8174 chi2r 1.0 blur 0.00 trio 0.63
+     R3.0_blur0_linear: dEN (-7.1,-1.4) rad -7.2 tan -0.1 flux 7574 chi2r 1.1 blur 0.00 trio 1.00
+     WCS curve_R2.0_F0.03: (-0.121,+0.140) chi2r 0.22
+     WCS curve_R2.5_F0.03: (-0.121,+0.140) chi2r 0.22
+     WCS curve_R3.5_F0.03: (-0.121,+0.141) chi2r 0.22
+     WCS linear_R2.5_F0.03: (-0.113,+0.134) chi2r 0.22
+     WCS none_R2.5_F0.03: (-0.064,+0.102) chi2r 0.31
+     WCS curve_far: (-0.121,+0.141) chi2r 0.22
+     WCS curve_R2.5_F0.05: (-0.119,+0.140) chi2r 0.14

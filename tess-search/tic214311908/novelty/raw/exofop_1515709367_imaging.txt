@@ -1,0 +1,7 @@
+TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes
+
+
+
+
+
+

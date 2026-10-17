@@ -1,0 +1,38 @@
+{
+ "12": {
+  "lag_min": -0.09343980493637645,
+  "peak_corr": 0.4261130766585276,
+  "cadence_min": 30.000413713441958,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ },
+ "39": {
+  "lag_min": -0.2545661802125327,
+  "peak_corr": 0.4289313043460584,
+  "cadence_min": 10.000072559960245,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ },
+ "66": {
+  "lag_min": 0.0015121272930920188,
+  "peak_corr": 0.48725994223538693,
+  "cadence_min": 3.3333156952721765,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ },
+ "93": {
+  "lag_min": -0.03551313730490825,
+  "peak_corr": 0.5222586385973398,
+  "cadence_min": 3.333304266416235,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ },
+ "103": {
+  "lag_min": -0.0017338583111115944,
+  "peak_corr": 0.5966253718918445,
+  "cadence_min": 3.3335268819064368,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ },
+ "104": {
+  "lag_min": 0.051123056570393795,
+  "peak_corr": 0.5202040860295659,
+  "cadence_min": 3.3334027969976887,
+  "note": "positive lag: QLP time stamps late relative to TESScut (after the corrections applied)"
+ }
+}

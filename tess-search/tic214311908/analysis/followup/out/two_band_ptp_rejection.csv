@@ -1,0 +1,199 @@
+case,telescope,pair,simultaneous,events_per_band,total_events,sigma_R,frac_PTP_rejected_3sigma
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,1,2,0.088,0.046
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,2,4,0.0622,0.268
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,3,6,0.0508,0.505
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,4,8,0.044,0.633
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,6,12,0.0359,0.809
+ref_beta__signfixed,LCOGT 1m Sinistro,g/i,False,8,16,0.0311,0.905
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,1,2,0.088,0.251
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,2,4,0.0622,0.631
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,3,6,0.0508,0.815
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,4,8,0.044,0.914
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,6,12,0.0359,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,g/z,False,8,16,0.0311,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,1,2,0.08,0.294
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,2,4,0.0566,0.656
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,3,6,0.0462,0.835
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,4,8,0.04,0.933
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,6,12,0.0327,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,8,16,0.0283,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,1,2,0.064,0.735
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,2,4,0.0453,0.985
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,3,6,0.037,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,4,8,0.032,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,6,12,0.0261,1.0
+ref_beta__signfixed,LCOGT 1m Sinistro,r/z,False,8,16,0.0226,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,1,1,0.057,0.719
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,2,2,0.0403,0.967
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,3,3,0.0329,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,4,4,0.0285,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,6,6,0.0233,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/z,True,8,8,0.0202,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,1,1,0.057,0.375
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,2,2,0.0403,0.717
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,3,3,0.0329,0.87
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,4,4,0.0285,0.958
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,6,6,0.0233,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,g/i,True,8,8,0.0202,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,1,1,0.05,0.925
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,2,2,0.0354,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,3,3,0.0289,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,4,4,0.025,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,6,6,0.0204,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/z,True,8,8,0.0177,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,1,1,0.05,0.701
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,2,2,0.0354,0.956
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,3,3,0.0289,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,4,4,0.025,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,6,6,0.0204,1.0
+ref_beta__signfixed,FTS 2m MuSCAT4,r/i,True,8,8,0.0177,1.0
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,1,1,0.121,0.047
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,2,2,0.0856,0.324
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,3,3,0.0699,0.552
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,4,4,0.0605,0.689
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,6,6,0.0494,0.855
+ref_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,8,8,0.0428,0.951
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,1,2,0.15,0.009
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,2,4,0.1061,0.054
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,3,6,0.0866,0.266
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,4,8,0.075,0.439
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,6,12,0.0612,0.629
+ref_beta__signfixed,Amateur 0.4m,r/Ic,False,8,16,0.053,0.769
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,1,2,0.131,0.046
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,2,4,0.0926,0.315
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,3,6,0.0756,0.55
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,4,8,0.0655,0.686
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,6,12,0.0535,0.854
+ref_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,8,16,0.0463,0.95
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,1,2,0.088,0.093
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,2,4,0.0622,0.334
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,3,6,0.0508,0.558
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,4,8,0.044,0.686
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,6,12,0.0359,0.839
+inv_beta__signfixed,LCOGT 1m Sinistro,g/i,False,8,16,0.0311,0.921
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,1,2,0.088,0.319
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,2,4,0.0622,0.684
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,3,6,0.0508,0.844
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,4,8,0.044,0.928
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,6,12,0.0359,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,g/z,False,8,16,0.0311,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,1,2,0.08,0.359
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,2,4,0.0566,0.706
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,3,6,0.0462,0.861
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,4,8,0.04,0.944
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,6,12,0.0327,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,V/Ic,False,8,16,0.0283,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,1,2,0.064,0.775
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,2,4,0.0453,0.988
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,3,6,0.037,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,4,8,0.032,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,6,12,0.0261,1.0
+inv_beta__signfixed,LCOGT 1m Sinistro,r/z,False,8,16,0.0226,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,1,1,0.057,0.761
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,2,2,0.0403,0.973
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,3,3,0.0329,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,4,4,0.0285,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,6,6,0.0233,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/z,True,8,8,0.0202,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,1,1,0.057,0.436
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,2,2,0.0403,0.76
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,3,3,0.0329,0.891
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,4,4,0.0285,0.966
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,6,6,0.0233,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,g/i,True,8,8,0.0202,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,1,1,0.05,0.938
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,2,2,0.0354,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,3,3,0.0289,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,4,4,0.025,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,6,6,0.0204,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/z,True,8,8,0.0177,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,1,1,0.05,0.745
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,2,2,0.0354,0.963
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,3,3,0.0289,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,4,4,0.025,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,6,6,0.0204,1.0
+inv_beta__signfixed,FTS 2m MuSCAT4,r/i,True,8,8,0.0177,1.0
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,1,1,0.121,0.097
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,2,2,0.0856,0.388
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,3,3,0.0699,0.607
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,4,4,0.0605,0.735
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,6,6,0.0494,0.878
+inv_beta__signfixed,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,8,8,0.0428,0.96
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,1,2,0.15,0.01
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,2,4,0.1061,0.118
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,3,6,0.0866,0.332
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,4,8,0.075,0.495
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,6,12,0.0612,0.683
+inv_beta__signfixed,Amateur 0.4m,r/Ic,False,8,16,0.053,0.804
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,1,2,0.131,0.095
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,2,4,0.0926,0.379
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,3,6,0.0756,0.604
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,4,8,0.0655,0.732
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,6,12,0.0535,0.878
+inv_beta__signfixed,TRAPPIST-South 0.6m,V/I+z,False,8,16,0.0463,0.959
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,1,2,0.088,0.057
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,2,4,0.0622,0.292
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,3,6,0.0508,0.531
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,4,8,0.044,0.658
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,6,12,0.0359,0.825
+ref_beta__as_published,LCOGT 1m Sinistro,g/i,False,8,16,0.0311,0.914
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,1,2,0.088,0.275
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,2,4,0.0622,0.655
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,3,6,0.0508,0.83
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,4,8,0.044,0.922
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,6,12,0.0359,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,g/z,False,8,16,0.0311,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,1,2,0.08,0.319
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,2,4,0.0566,0.68
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,3,6,0.0462,0.849
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,4,8,0.04,0.939
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,6,12,0.0327,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,V/Ic,False,8,16,0.0283,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,1,2,0.064,0.755
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,2,4,0.0453,0.987
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,3,6,0.037,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,4,8,0.032,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,6,12,0.0261,1.0
+ref_beta__as_published,LCOGT 1m Sinistro,r/z,False,8,16,0.0226,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,1,1,0.057,0.74
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,2,2,0.0403,0.97
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,3,3,0.0329,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,4,4,0.0285,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,6,6,0.0233,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/z,True,8,8,0.0202,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,1,1,0.057,0.401
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,2,2,0.0403,0.739
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,3,3,0.0329,0.882
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,4,4,0.0285,0.963
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,6,6,0.0233,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,g/i,True,8,8,0.0202,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,1,1,0.05,0.932
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,2,2,0.0354,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,3,3,0.0289,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,4,4,0.025,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,6,6,0.0204,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/z,True,8,8,0.0177,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,1,1,0.05,0.723
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,2,2,0.0354,0.96
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,3,3,0.0289,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,4,4,0.025,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,6,6,0.0204,1.0
+ref_beta__as_published,FTS 2m MuSCAT4,r/i,True,8,8,0.0177,1.0
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,1,1,0.121,0.058
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,2,2,0.0856,0.349
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,3,3,0.0699,0.578
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,4,4,0.0605,0.711
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,6,6,0.0494,0.868
+ref_beta__as_published,ASTEP+ 0.4m (Dome C),ASTEP_blue/ASTEP_red,True,8,8,0.0428,0.956
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,1,2,0.15,0.012
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,2,4,0.1061,0.067
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,3,6,0.0866,0.29
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,4,8,0.075,0.465
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,6,12,0.0612,0.654
+ref_beta__as_published,Amateur 0.4m,r/Ic,False,8,16,0.053,0.787
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,1,2,0.131,0.057
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,2,4,0.0926,0.34
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,3,6,0.0756,0.576
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,4,8,0.0655,0.709
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,6,12,0.0535,0.867
+ref_beta__as_published,TRAPPIST-South 0.6m,V/I+z,False,8,16,0.0463,0.955

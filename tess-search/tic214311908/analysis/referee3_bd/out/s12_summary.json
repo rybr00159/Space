@@ -1,0 +1,570 @@
+{
+ "method": "s12: combine the referee-3 results into the final channel estimates.\n(a) FPP / PTP / BD rows of s02 (sign-fixed r05, f_BD 1.3e-4, BD e laws) for the adopted and variant settings;\n(b) Gaia RVS factor (s05, median and range of the mass-averaged LR over CCF width/peak/e/sampling, empirical BD masses)\n    applied to the BD-on-M3V and BD-on-primary terms;\n(c) shape-noise correction: ratio of my calibrated grazing-BD likelihood ratio on the cleaned curves (s11) to the\n    exp(-dchi2/2) carried by the referee2_fpp r03 grids (r11: 0.05 REF, 0.11 INV) - applied as an alternative;\n(d) my independent evidence-ratio estimate of BD-on-M3V (s06) with f_BD/f_N;\n(e) P(e > 0.5) for the BD e laws.\nOutput: out/s12_summary.json",
+ "rv_factor_empirical_masses_min_med_max": [
+  0.24598300752684266,
+  0.4901063023824477,
+  0.8028165228558847
+ ],
+ "rv_factor_uniform_masses_min_med_max": [
+  0.4696981997371931,
+  0.6896767331932407,
+  0.8952626094176256
+ ],
+ "table": [
+  {
+   "ds": "ref_beta",
+   "planet_e": "kipping",
+   "bd_e": "bdsp",
+   "FPP": 0.0013441121849325,
+   "FPP_system": 0.000486648272583,
+   "P_planet_any_star": 0.999513351727417,
+   "PTP": 0.0008574639123494,
+   "NTP": 0.0003694500505748,
+   "BD_total_noRV": 1.4130600408983248e-05,
+   "BD_total_RVmed": 7.968790202058859e-06,
+   "BD_total_RVmin": 5.018682332481813e-06,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 6.029816126524805e-07
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "kipping",
+   "bd_e": "bdlp",
+   "FPP": 0.0013836544785285,
+   "FPP_system": 0.0005262245179037,
+   "P_planet_any_star": 0.9994737754820964,
+   "PTP": 0.0008574299606247,
+   "NTP": 0.00036943542201,
+   "BD_total_noRV": 5.3724367479980645e-05,
+   "BD_total_RVmed": 2.974873146732609e-05,
+   "BD_total_RVmin": 1.8269846187873187e-05,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 2.2510240098803623e-06
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdsp",
+   "FPP": 0.0016206414533973,
+   "FPP_system": 0.0004166107941831,
+   "P_planet_any_star": 0.9995833892058168,
+   "PTP": 0.0012040306592142,
+   "NTP": 0.0002981291509628,
+   "BD_total_noRV": 1.4338578561618575e-05,
+   "BD_total_RVmed": 8.086077098368593e-06,
+   "BD_total_RVmin": 5.092548711118461e-06,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 6.118564656836941e-07
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdlp",
+   "FPP": 0.0016607546077451,
+   "FPP_system": 0.0004567723243985,
+   "P_planet_any_star": 0.9995432276756014,
+   "PTP": 0.0012039822833466,
+   "NTP": 0.0002981171726496,
+   "BD_total_noRV": 5.451506606637689e-05,
+   "BD_total_RVmed": 3.0186564075165756e-05,
+   "BD_total_RVmin": 1.8538736120543154e-05,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 2.284153883456253e-06
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "vaneylen",
+   "bd_e": "bdsp",
+   "FPP": 0.0014647295951696,
+   "FPP_system": 0.0004721204180777,
+   "P_planet_any_star": 0.9995278795819222,
+   "PTP": 0.0009926091770918,
+   "NTP": 0.0003496543110588,
+   "BD_total_noRV": 1.498426012930282e-05,
+   "BD_total_RVmed": 8.450201820693994e-06,
+   "BD_total_RVmin": 5.3218716402479285e-06,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 6.394090184184467e-07
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "vaneylen",
+   "bd_e": "bdlp",
+   "FPP": 0.0015066555583704,
+   "FPP_system": 0.0005140880584201,
+   "P_planet_any_star": 0.99948591194158,
+   "PTP": 0.0009925674999503,
+   "NTP": 0.0003496396299612,
+   "BD_total_noRV": 5.696983487323504e-05,
+   "BD_total_RVmed": 3.154584034913591e-05,
+   "BD_total_RVmin": 1.9373520234935926e-05,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 2.387007463351858e-06
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "circ",
+   "bd_e": "bdsp",
+   "FPP": 0.000731838264572,
+   "FPP_system": 0.0007015441863374,
+   "P_planet_any_star": 0.9992984558136626,
+   "PTP": 3.029407823459142e-05,
+   "NTP": 0.0006004416110697,
+   "BD_total_noRV": 1.1522304049462171e-05,
+   "BD_total_RVmed": 6.497871354151751e-06,
+   "BD_total_RVmin": 4.092309037750246e-06,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 4.916802737412361e-07
+  },
+  {
+   "ds": "ref_beta",
+   "planet_e": "circ",
+   "bd_e": "bdlp",
+   "FPP": 0.0007641016495077,
+   "FPP_system": 0.0007338085493785,
+   "P_planet_any_star": 0.9992661914506216,
+   "PTP": 3.0293100129269164e-05,
+   "NTP": 0.0006004222246031,
+   "BD_total_noRV": 4.380797725517192e-05,
+   "BD_total_RVmed": 2.425774025122703e-05,
+   "BD_total_RVmin": 1.4897616180443247e-05,
+   "shape_corr_factor": 0.07566789906160297,
+   "BD_total_RVmed_shapecal": 1.8355322407924303e-06
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "kipping",
+   "bd_e": "bdsp",
+   "FPP": 0.0031290292897007,
+   "FPP_system": 0.0005354030646072,
+   "P_planet_any_star": 0.9994645969353928,
+   "PTP": 0.0025936262250934,
+   "NTP": 0.0004156477649069,
+   "BD_total_noRV": 4.165066884547607e-05,
+   "BD_total_RVmed": 2.3525092140764436e-05,
+   "BD_total_RVmin": 1.4847056842451924e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 6.923521372826261e-06
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "kipping",
+   "bd_e": "bdlp",
+   "FPP": 0.0032375324929513,
+   "FPP_system": 0.0006441885679365,
+   "P_planet_any_star": 0.9993558114320634,
+   "PTP": 0.0025933439250147,
+   "NTP": 0.0004156025242336,
+   "BD_total_noRV": 0.0001504866488358,
+   "BD_total_RVmed": 8.306697413891391e-05,
+   "BD_total_RVmin": 5.0788259571545765e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 2.4446916823344212e-05
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdsp",
+   "FPP": 0.0032966322068579,
+   "FPP_system": 0.0004435741898567,
+   "P_planet_any_star": 0.9995564258101431,
+   "PTP": 0.0028530580170012,
+   "NTP": 0.0003293250218966,
+   "BD_total_noRV": 3.909559108408465e-05,
+   "BD_total_RVmed": 2.2081935489749932e-05,
+   "BD_total_RVmin": 1.3936257909042152e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 6.498795048361773e-06
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdlp",
+   "FPP": 0.0033984627920565,
+   "FPP_system": 0.0005456962645565,
+   "P_planet_any_star": 0.9994543037354436,
+   "PTP": 0.0028527665275,
+   "NTP": 0.0003292913756175,
+   "BD_total_noRV": 0.000141255925378,
+   "BD_total_RVmed": 7.797171636895416e-05,
+   "BD_total_RVmin": 4.7672950787413834e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 2.2947363671361145e-05
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "vaneylen",
+   "bd_e": "bdsp",
+   "FPP": 0.003225187487365,
+   "FPP_system": 0.0005089591178455,
+   "P_planet_any_star": 0.9994910408821543,
+   "PTP": 0.0027162283695194,
+   "NTP": 0.0003866239959004,
+   "BD_total_noRV": 4.284781536449628e-05,
+   "BD_total_RVmed": 2.4201263327124745e-05,
+   "BD_total_RVmin": 1.5273799147181258e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 7.1225210465551804e-06
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "vaneylen",
+   "bd_e": "bdlp",
+   "FPP": 0.0033367982333712,
+   "FPP_system": 0.0006208740050388,
+   "P_planet_any_star": 0.9993791259949611,
+   "PTP": 0.0027159242283324,
+   "NTP": 0.0003865807048862,
+   "BD_total_noRV": 0.0001548115348595,
+   "BD_total_RVmed": 8.545426363111558e-05,
+   "BD_total_RVmin": 5.224788031322103e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 2.5149504924741747e-05
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "circ",
+   "bd_e": "bdsp",
+   "FPP": 0.0019234373340656,
+   "FPP_system": 0.0007755828400488,
+   "P_planet_any_star": 0.9992244171599513,
+   "PTP": 0.0011478544940167,
+   "NTP": 0.0006607951385829,
+   "BD_total_noRV": 3.934549338382916e-05,
+   "BD_total_RVmed": 2.222308507487399e-05,
+   "BD_total_RVmin": 1.4025339639353167e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 6.5403358917950105e-06
+  },
+  {
+   "ds": "inv_beta",
+   "planet_e": "circ",
+   "bd_e": "bdlp",
+   "FPP": 0.002026059954416,
+   "FPP_system": 0.0008783234832448,
+   "P_planet_any_star": 0.9991216765167552,
+   "PTP": 0.0011477364711712,
+   "NTP": 0.0006607271953697,
+   "BD_total_noRV": 0.0001421587522709,
+   "BD_total_RVmed": 7.847006687875133e-05,
+   "BD_total_RVmin": 4.7977648957918075e-05,
+   "shape_corr_factor": 0.2943036877984906,
+   "BD_total_RVmed_shapecal": 2.3094030064210706e-05
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "kipping",
+   "bd_e": "bdsp",
+   "FPP": 0.0011463232330232,
+   "FPP_system": 0.0007661992272094,
+   "P_planet_any_star": 0.9992338007727906,
+   "PTP": 0.0003801240058137,
+   "NTP": 0.0004985607896919,
+   "BD_total_noRV": 8.084902402949509e-09,
+   "BD_total_RVmed": 4.386661435935119e-09,
+   "BD_total_RVmin": 2.616043806699975e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "kipping",
+   "bd_e": "bdlp",
+   "FPP": 0.0011463445659927,
+   "FPP_system": 0.0007662205682974,
+   "P_planet_any_star": 0.9992337794317026,
+   "PTP": 0.0003801239976952,
+   "NTP": 0.0004985607790439,
+   "BD_total_noRV": 2.94417136482668e-08,
+   "BD_total_RVmed": 1.579576411868532e-08,
+   "BD_total_RVmin": 9.26245300666335e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdsp",
+   "FPP": 0.0011032128582807,
+   "FPP_system": 0.0005943657306691,
+   "P_planet_any_star": 0.9994056342693308,
+   "PTP": 0.0005088471276115,
+   "NTP": 0.0003374707385765,
+   "BD_total_noRV": 7.719391757072155e-09,
+   "BD_total_RVmed": 4.188344700026349e-09,
+   "BD_total_RVmin": 2.497774987390354e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdlp",
+   "FPP": 0.0011032332276864,
+   "FPP_system": 0.0005943861104512,
+   "P_planet_any_star": 0.9994056138895488,
+   "PTP": 0.0005088471172352,
+   "NTP": 0.0003374707316949,
+   "BD_total_noRV": 2.8110682175586844e-08,
+   "BD_total_RVmed": 1.5081652860482908e-08,
+   "BD_total_RVmin": 8.843706441386101e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "vaneylen",
+   "bd_e": "bdsp",
+   "FPP": 0.0011507196740719,
+   "FPP_system": 0.0007243041926263,
+   "P_planet_any_star": 0.9992756958073736,
+   "PTP": 0.0004264154814456,
+   "NTP": 0.000446975185453,
+   "BD_total_noRV": 8.414592389145746e-09,
+   "BD_total_RVmed": 4.5655427972900074e-09,
+   "BD_total_RVmin": 2.722722082272605e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "vaneylen",
+   "bd_e": "bdlp",
+   "FPP": 0.0011507418768695,
+   "FPP_system": 0.0007243264049024,
+   "P_planet_any_star": 0.9992756735950976,
+   "PTP": 0.0004264154719671,
+   "NTP": 0.0004469751755175,
+   "BD_total_noRV": 3.064230178981154e-08,
+   "BD_total_RVmed": 1.6439891268147214e-08,
+   "BD_total_RVmin": 9.640161701689327e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "circ",
+   "bd_e": "bdsp",
+   "FPP": 0.0013820917937606,
+   "FPP_system": 0.0013807331738452,
+   "P_planet_any_star": 0.9986192668261548,
+   "PTP": 1.3586199154789642e-06,
+   "NTP": 0.0011286359181639,
+   "BD_total_noRV": 7.556164443578187e-09,
+   "BD_total_RVmed": 4.099781730962669e-09,
+   "BD_total_RVmin": 2.4449592845818216e-09
+  },
+  {
+   "ds": "ref_white",
+   "planet_e": "circ",
+   "bd_e": "bdlp",
+   "FPP": 0.0013821117268868,
+   "FPP_system": 0.0013807531069984,
+   "P_planet_any_star": 0.9986192468930016,
+   "PTP": 1.358619888359941e-06,
+   "NTP": 0.0011286358956355,
+   "BD_total_noRV": 2.7516278991396613e-08,
+   "BD_total_RVmed": 1.4762749803377154e-08,
+   "BD_total_RVmin": 8.656705384778197e-09
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "kipping",
+   "bd_e": "bdsp",
+   "FPP": 0.0028983357341395,
+   "FPP_system": 0.0005188797375579,
+   "P_planet_any_star": 0.999481120262442,
+   "PTP": 0.0023794559965815,
+   "NTP": 0.0003530393236917,
+   "BD_total_noRV": 1.1324140099240306e-05,
+   "BD_total_RVmed": 6.2332859881079735e-06,
+   "BD_total_RVmin": 3.795922896456287e-06
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "kipping",
+   "bd_e": "bdlp",
+   "FPP": 0.0029287284013213,
+   "FPP_system": 0.000549344932965,
+   "P_planet_any_star": 0.999450655067035,
+   "PTP": 0.0023793834683562,
+   "NTP": 0.0003530285626961,
+   "BD_total_noRV": 4.18038919114748e-05,
+   "BD_total_RVmed": 2.2664276084228973e-05,
+   "BD_total_RVmin": 1.3500746313515263e-05
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdsp",
+   "FPP": 0.0035837086850366,
+   "FPP_system": 0.0004492195410851,
+   "P_planet_any_star": 0.9995507804589148,
+   "PTP": 0.0031344891439514,
+   "NTP": 0.0002873787171447,
+   "BD_total_noRV": 1.0990722265026262e-05,
+   "BD_total_RVmed": 6.049758700739714e-06,
+   "BD_total_RVmin": 3.684159143986918e-06
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "rayleigh19",
+   "bd_e": "bdlp",
+   "FPP": 0.0036131862484449,
+   "FPP_system": 0.0004787898339112,
+   "P_planet_any_star": 0.9995212101660887,
+   "PTP": 0.0031343964145337,
+   "NTP": 0.0002873702154527,
+   "BD_total_noRV": 4.0573091988487166e-05,
+   "BD_total_RVmed": 2.1996989188594684e-05,
+   "BD_total_RVmin": 1.3103254195840229e-05
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "vaneylen",
+   "bd_e": "bdsp",
+   "FPP": 0.0031743707635726,
+   "FPP_system": 0.0005048878328562,
+   "P_planet_any_star": 0.9994951121671438,
+   "PTP": 0.0026694829307164,
+   "NTP": 0.0003335029912246,
+   "BD_total_noRV": 1.1786340257733324e-05,
+   "BD_total_RVmed": 6.487700517280841e-06,
+   "BD_total_RVmin": 3.950855292999762e-06
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "vaneylen",
+   "bd_e": "bdlp",
+   "FPP": 0.0032059951253207,
+   "FPP_system": 0.0005365968841341,
+   "P_planet_any_star": 0.999463403115866,
+   "PTP": 0.0026693982411865,
+   "NTP": 0.0003334924108192,
+   "BD_total_noRV": 4.351008349100714e-05,
+   "BD_total_RVmed": 2.358929993351544e-05,
+   "BD_total_RVmin": 1.4051768207034204e-05
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "circ",
+   "bd_e": "bdsp",
+   "FPP": 0.0008932354971867,
+   "FPP_system": 0.0006868346646783,
+   "P_planet_any_star": 0.9993131653353216,
+   "PTP": 0.0002064008325084,
+   "NTP": 0.0005384487711519,
+   "BD_total_noRV": 9.869078836163688e-06,
+   "BD_total_RVmed": 5.432358685594061e-06,
+   "BD_total_RVmin": 3.3081772207709727e-06
+  },
+  {
+   "ds": "inv_white",
+   "planet_e": "circ",
+   "bd_e": "bdlp",
+   "FPP": 0.0009197763184952,
+   "FPP_system": 0.000713380968932,
+   "P_planet_any_star": 0.999286619031068,
+   "PTP": 0.0002063953495632,
+   "NTP": 0.0005384344675027,
+   "BD_total_noRV": 3.6432569463556645e-05,
+   "BD_total_RVmed": 1.9752175575624945e-05,
+   "BD_total_RVmin": 1.1766054675449676e-05
+  }
+ ],
+ "P_e_gt_0p5": {
+  "bdsp": 0.089925,
+  "bdlp": 0.4107825,
+  "kipping": 0.1012
+ },
+ "P_e_gt_0p4": {
+  "bdsp": 0.1358575,
+  "bdlp": 0.5267325
+ },
+ "independent_BD_on_M3V": {
+  "ref_beta|f_BD 0.00013|BD e bdsp": {
+   "ratio": 5.426626111207905e-05,
+   "post_BD_on_M3V_approx": 2.2574764622624883e-06
+  },
+  "ref_beta|f_BD 0.00013|BD e bdlp": {
+   "ratio": 0.00020467130391011086,
+   "post_BD_on_M3V_approx": 8.51432624266061e-06
+  },
+  "ref_beta|f_BD 0.00013|BD e kipping": {
+   "ratio": 7.364969147399388e-05,
+   "post_BD_on_M3V_approx": 3.0638271653181447e-06
+  },
+  "ref_beta|f_BD 0.001|BD e bdsp": {
+   "ratio": 5.426626111207905e-05,
+   "post_BD_on_M3V_approx": 1.7365203555865293e-05
+  },
+  "ref_beta|f_BD 0.001|BD e bdlp": {
+   "ratio": 0.00020467130391011086,
+   "post_BD_on_M3V_approx": 6.549481725123547e-05
+  },
+  "ref_beta|f_BD 0.001|BD e kipping": {
+   "ratio": 7.364969147399388e-05,
+   "post_BD_on_M3V_approx": 2.356790127167804e-05
+  },
+  "ref_white|f_BD 0.00013|BD e bdsp": {
+   "ratio": 1.9815714926061997e-07,
+   "post_BD_on_M3V_approx": 8.243337409241791e-09
+  },
+  "ref_white|f_BD 0.00013|BD e bdlp": {
+   "ratio": 7.455494629908826e-07,
+   "post_BD_on_M3V_approx": 3.101485766042071e-08
+  },
+  "ref_white|f_BD 0.00013|BD e kipping": {
+   "ratio": 2.6461858033164107e-07,
+   "post_BD_on_M3V_approx": 1.1008132941796266e-08
+  },
+  "ref_white|f_BD 0.001|BD e bdsp": {
+   "ratio": 1.9815714926061997e-07,
+   "post_BD_on_M3V_approx": 6.341028776339838e-08
+  },
+  "ref_white|f_BD 0.001|BD e bdlp": {
+   "ratio": 7.455494629908826e-07,
+   "post_BD_on_M3V_approx": 2.385758281570824e-07
+  },
+  "ref_white|f_BD 0.001|BD e kipping": {
+   "ratio": 2.6461858033164107e-07,
+   "post_BD_on_M3V_approx": 8.467794570612514e-08
+  },
+  "inv_beta|f_BD 0.00013|BD e bdsp": {
+   "ratio": 0.00016541039321410145,
+   "post_BD_on_M3V_approx": 6.881072357706619e-06
+  },
+  "inv_beta|f_BD 0.00013|BD e bdlp": {
+   "ratio": 0.0006316920203920436,
+   "post_BD_on_M3V_approx": 2.627838804830901e-05
+  },
+  "inv_beta|f_BD 0.00013|BD e kipping": {
+   "ratio": 0.00020846345598383558,
+   "post_BD_on_M3V_approx": 8.672079768927558e-06
+  },
+  "inv_beta|f_BD 0.001|BD e bdsp": {
+   "ratio": 0.00016541039321410145,
+   "post_BD_on_M3V_approx": 5.2931325828512464e-05
+  },
+  "inv_beta|f_BD 0.001|BD e bdlp": {
+   "ratio": 0.0006316920203920436,
+   "post_BD_on_M3V_approx": 0.00020214144652545396
+  },
+  "inv_beta|f_BD 0.001|BD e kipping": {
+   "ratio": 0.00020846345598383558,
+   "post_BD_on_M3V_approx": 6.670830591482738e-05
+  },
+  "inv_white|f_BD 0.00013|BD e bdsp": {
+   "ratio": 0.00011020356358412232,
+   "post_BD_on_M3V_approx": 4.584468245099488e-06
+  },
+  "inv_white|f_BD 0.00013|BD e bdlp": {
+   "ratio": 0.00043603561357047615,
+   "post_BD_on_M3V_approx": 1.8139081524531805e-05
+  },
+  "inv_white|f_BD 0.00013|BD e kipping": {
+   "ratio": 0.00014376764186234688,
+   "post_BD_on_M3V_approx": 5.980733901473629e-06
+  },
+  "inv_white|f_BD 0.001|BD e bdsp": {
+   "ratio": 0.00011020356358412232,
+   "post_BD_on_M3V_approx": 3.526514034691914e-05
+  },
+  "inv_white|f_BD 0.001|BD e bdlp": {
+   "ratio": 0.00043603561357047615,
+   "post_BD_on_M3V_approx": 0.00013953139634255234
+  },
+  "inv_white|f_BD 0.001|BD e kipping": {
+   "ratio": 0.00014376764186234688,
+   "post_BD_on_M3V_approx": 4.6005645395950994e-05
+  }
+ }
+}

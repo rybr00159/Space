@@ -1,0 +1,155 @@
+{
+ "method": "r11: how robust is the brown-dwarf (BD) channel added in r05? Re-evaluates the r05 scenario model for the BD terms\nunder (i) the four light-curve/noise choices (REF/INV x beta-inflated/white), (ii) the three eccentricity priors, and\n(iii) a calibrated grazing penalty: referee2_shape r07b found that a V-shaped (grazing) truth reproduces the observed\nflat-bottom preference in 0/25 REF and 1/25 INV injections, i.e. p(data | grazing) / p(data | flat) <~ 0.04; the grid\nlikelihood with beta noise gives exp(-dchi2/2) = 0.05 (REF) / 0.11 (INV) for the best grazing solution, so the beta grid\nis at least as lenient as the calibrated value.\nOutput: out/r11_bd_noise.json",
+ "scenarios": {
+  "ref_beta|kipping": {
+   "FPP": 0.0031313362545921652,
+   "FPP_without_BD_terms": 0.002192699940855136,
+   "BD_total": 0.000951852277722947,
+   "BD_on_M3V": 0.0007687238393722967,
+   "BD_primary": 7.739744409403271e-05,
+   "BDHEB": 0.00010573099425661754,
+   "PTP": 0.0016214480768836686,
+   "dominant": "PTP_companion"
+  },
+  "ref_beta|vaneylen": {
+   "FPP": 0.0034305319280794055,
+   "FPP_without_BD_terms": 0.0024091950572866505,
+   "BD_total": 0.0010196400734736079,
+   "BD_on_M3V": 0.0008166047348577414,
+   "BD_primary": 8.161710093449002e-05,
+   "BDHEB": 0.00012141823768137653,
+   "PTP": 0.001878922693510431,
+   "dominant": "PTP_companion"
+  },
+  "ref_beta|circ": {
+   "FPP": 0.0007260373781575735,
+   "FPP_without_BD_terms": 0.0007207925871525189,
+   "BD_total": 3.685178310275458e-12,
+   "BD_on_M3V": 1.0376452954691517e-14,
+   "BD_primary": 1.4314319544962073e-17,
+   "BDHEB": 3.674787543001221e-12,
+   "PTP": 3.0545158530803705e-05,
+   "dominant": "NTP_pairA"
+  },
+  "inv_beta|kipping": {
+   "FPP": 0.00685825278554264,
+   "FPP_without_BD_terms": 0.0046812742034915145,
+   "BD_total": 0.0021769047488980893,
+   "BD_on_M3V": 0.0017713898981136103,
+   "BD_primary": 0.00015313245719400075,
+   "BDHEB": 0.0002523823935904783,
+   "PTP": 0.004115207857361707,
+   "dominant": "PTP_companion"
+  },
+  "inv_beta|vaneylen": {
+   "FPP": 0.007974255136582564,
+   "FPP_without_BD_terms": 0.005085646587352555,
+   "BD_total": 0.0028974660760336945,
+   "BD_on_M3V": 0.0023697529932473513,
+   "BD_primary": 0.0002032046869245484,
+   "BDHEB": 0.00032450839586179516,
+   "PTP": 0.004546842975117647,
+   "dominant": "PTP_companion"
+  },
+  "inv_beta|circ": {
+   "FPP": 0.0019009104648024522,
+   "FPP_without_BD_terms": 0.001892055528056824,
+   "BD_total": 2.0216449529221713e-08,
+   "BD_on_M3V": 2.452899686527412e-10,
+   "BD_primary": 4.654320866847237e-12,
+   "BDHEB": 1.9966505239702125e-08,
+   "PTP": 0.0011582542584485634,
+   "dominant": "PTP_companion"
+  },
+  "ref_white|kipping": {
+   "FPP": 0.0016861316948887373,
+   "FPP_without_BD_terms": 0.001676720698905454,
+   "BD_total": 5.262512335027682e-07,
+   "BD_on_M3V": 4.447591661175765e-07,
+   "BD_primary": 3.939581370288669e-08,
+   "BDHEB": 4.2096253682304944e-08,
+   "PTP": 0.0007468433785655883,
+   "dominant": "PTP_companion"
+  },
+  "ref_white|vaneylen": {
+   "FPP": 0.0017249308988266376,
+   "FPP_without_BD_terms": 0.0017342704833099853,
+   "BD_total": 5.34897940432816e-07,
+   "BD_on_M3V": 4.441626843769169e-07,
+   "BD_primary": 3.962660141359792e-08,
+   "BDHEB": 5.110865464230123e-08,
+   "PTP": 0.0008390985746606077,
+   "dominant": "PTP_companion"
+  },
+  "ref_white|circ": {
+   "FPP": 0.0013481891753699404,
+   "FPP_without_BD_terms": 0.0013903176228712288,
+   "BD_total": 3.491068001901301e-25,
+   "BD_on_M3V": 1.1612175511816803e-33,
+   "BD_primary": 5.538756506943642e-40,
+   "BDHEB": 3.4910679902891197e-25,
+   "PTP": 1.3245610346455235e-06,
+   "dominant": "NTP_pairA"
+  },
+  "inv_white|kipping": {
+   "FPP": 0.0051500695106944105,
+   "FPP_without_BD_terms": 0.004507494587503991,
+   "BD_total": 0.0006453964074474563,
+   "BD_on_M3V": 0.0005406087914766026,
+   "BD_primary": 4.497756654335066e-05,
+   "BDHEB": 5.981004942750313e-05,
+   "PTP": 0.003945659000139726,
+   "dominant": "PTP_companion"
+  },
+  "inv_white|vaneylen": {
+   "FPP": 0.0057714560508003165,
+   "FPP_without_BD_terms": 0.005078137648169445,
+   "BD_total": 0.0006937769882013494,
+   "BD_on_M3V": 0.0005804370694661801,
+   "BD_primary": 4.844338412046736e-05,
+   "BDHEB": 6.489653461470196e-05,
+   "PTP": 0.004538612490575837,
+   "dominant": "PTP_companion"
+  },
+  "inv_white|circ": {
+   "FPP": 0.0008813838908459104,
+   "FPP_without_BD_terms": 0.0008804473675280144,
+   "BD_total": 5.853262248585372e-13,
+   "BD_on_M3V": 6.568582129208975e-17,
+   "BD_primary": 1.5920337786383628e-19,
+   "BDHEB": 5.852603798338673e-13,
+   "PTP": 0.00020592132568941188,
+   "dominant": "NTP_pairA"
+  }
+ },
+ "grazing_on_M3V": {
+  "ref_beta": {
+   "dchi2_best_grazing_BD": 5.848468250548422,
+   "rho_c": 1.729966071624195,
+   "b": 1.0,
+   "k": 0.21643655372322473,
+   "LR_exp_minus_half_dchi2": 0.05370580808684286
+  },
+  "inv_beta": {
+   "dchi2_best_grazing_BD": 4.272693527139154,
+   "rho_c": 1.729966071624195,
+   "b": 1.0,
+   "k": 0.20823634218971132,
+   "LR_exp_minus_half_dchi2": 0.11808545005626327
+  },
+  "ref_white": {
+   "dchi2_best_grazing_BD": 21.08338513275885,
+   "rho_c": 1.729966071624195,
+   "b": 1.0,
+   "k": 0.214299232544695,
+   "LR_exp_minus_half_dchi2": 2.6411987830740484e-05
+  },
+  "inv_white": {
+   "dchi2_best_grazing_BD": 7.342316185677191,
+   "rho_c": 1.729966071624195,
+   "b": 1.0,
+   "k": 0.21000873780078813,
+   "LR_exp_minus_half_dchi2": 0.025446982906943458
+  }
+ }
+}

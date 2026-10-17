@@ -1,0 +1,221 @@
+{
+ "baseline": {
+  "M3V": {
+   "chi2": 21.4,
+   "dF": 13.85
+  },
+  "pairA": {
+   "chi2": 55.13,
+   "dF": 11.08
+  },
+  "Mira": {
+   "chi2": 88.09,
+   "dF": 7.36
+  },
+  "G17.5_3.1asec": {
+   "chi2": 13.81,
+   "dF": 14.48
+  },
+  "G17.7_5.5asec": {
+   "chi2": 9.72,
+   "dF": 14.96
+  },
+  "free_best_chi2": 8.06,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   7.5
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.992,
+   "pairA": 0.863,
+   "pairB": 0.862,
+   "Mira": 0.531,
+   "ref1": -0.099,
+   "ref2": -0.052
+  }
+ },
+ "gauss0.20": {
+  "M3V": {
+   "chi2": 21.4,
+   "dF": 13.85
+  },
+  "pairA": {
+   "chi2": 55.13,
+   "dF": 11.08
+  },
+  "Mira": {
+   "chi2": 88.09,
+   "dF": 7.36
+  },
+  "G17.5_3.1asec": {
+   "chi2": 13.81,
+   "dF": 14.48
+  },
+  "G17.7_5.5asec": {
+   "chi2": 9.72,
+   "dF": 14.96
+  },
+  "free_best_chi2": 8.06,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   7.5
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.992,
+   "pairA": 0.863,
+   "pairB": 0.862,
+   "Mira": 0.531,
+   "ref1": -0.099,
+   "ref2": -0.052
+  }
+ },
+ "gauss0.35": {
+  "M3V": {
+   "chi2": 21.2,
+   "dF": 13.88
+  },
+  "pairA": {
+   "chi2": 54.28,
+   "dF": 11.23
+  },
+  "Mira": {
+   "chi2": 87.03,
+   "dF": 7.63
+  },
+  "G17.5_3.1asec": {
+   "chi2": 13.89,
+   "dF": 14.48
+  },
+  "G17.7_5.5asec": {
+   "chi2": 9.76,
+   "dF": 14.96
+  },
+  "free_best_chi2": 7.98,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   7.5
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.992,
+   "pairA": 0.868,
+   "pairB": 0.866,
+   "Mira": 0.538,
+   "ref1": -0.1,
+   "ref2": -0.055
+  }
+ },
+ "gauss0.50": {
+  "M3V": {
+   "chi2": 20.89,
+   "dF": 13.91
+  },
+  "pairA": {
+   "chi2": 50.8,
+   "dF": 11.95
+  },
+  "Mira": {
+   "chi2": 81.79,
+   "dF": 9.03
+  },
+  "G17.5_3.1asec": {
+   "chi2": 15.3,
+   "dF": 14.36
+  },
+  "G17.7_5.5asec": {
+   "chi2": 11.19,
+   "dF": 14.83
+  },
+  "free_best_chi2": 8.12,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   9.0
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.992,
+   "pairA": 0.895,
+   "pairB": 0.894,
+   "Mira": 0.576,
+   "ref1": -0.1,
+   "ref2": -0.072
+  }
+ },
+ "power0.90_heavier_wings": {
+  "M3V": {
+   "chi2": 20.38,
+   "dF": 14.1
+  },
+  "pairA": {
+   "chi2": 52.07,
+   "dF": 11.72
+  },
+  "Mira": {
+   "chi2": 85.06,
+   "dF": 8.22
+  },
+  "G17.5_3.1asec": {
+   "chi2": 13.41,
+   "dF": 14.7
+  },
+  "G17.7_5.5asec": {
+   "chi2": 9.6,
+   "dF": 15.17
+  },
+  "free_best_chi2": 7.83,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   7.5
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.986,
+   "pairA": 0.865,
+   "pairB": 0.863,
+   "Mira": 0.545,
+   "ref1": -0.097,
+   "ref2": -0.06
+  }
+ },
+ "power1.10_lighter_wings": {
+  "M3V": {
+   "chi2": 22.76,
+   "dF": 13.6
+  },
+  "pairA": {
+   "chi2": 58.75,
+   "dF": 10.4
+  },
+  "Mira": {
+   "chi2": 91.15,
+   "dF": 6.55
+  },
+  "G17.5_3.1asec": {
+   "chi2": 14.67,
+   "dF": 14.23
+  },
+  "G17.7_5.5asec": {
+   "chi2": 10.22,
+   "dF": 14.71
+  },
+  "free_best_chi2": 8.66,
+  "free_best_EN_from_Mira": [
+   -15.5,
+   7.5
+  ],
+  "coeffs_if_M3V": {
+   "M3V": 0.996,
+   "pairA": 0.861,
+   "pairB": 0.861,
+   "Mira": 0.516,
+   "ref1": -0.1,
+   "ref2": -0.045
+  }
+ },
+ "observed_dF": {
+  "M3V": 14.97,
+  "pairA": 13.92,
+  "pairB": 13.51,
+  "Mira": 12.24,
+  "ref1": -4.47,
+  "ref2": -2.24
+ },
+ "note": "dof = 5 for fixed-position hypotheses (6 stars, 1 amplitude); M3V at (E,N) = (-18.4, +0.1) arcsec from the Mira"
+}

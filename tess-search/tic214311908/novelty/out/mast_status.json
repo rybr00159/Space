@@ -1,0 +1,49 @@
+{
+ "queried_utc": "2026-10-17T10:17:56+00:00",
+ "n_rows": 24,
+ "summary": [
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "ELEANOR",
+   "target_name": "postcard-s0012-1-2-cal-1490-0268",
+   "n": "1",
+   "sectors": "[12]"
+  },
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "ELEANOR",
+   "target_name": "postcard-s0012-1-2-cal-1588-0268",
+   "n": "1",
+   "sectors": "[12]"
+  },
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "GSFC-ELEANOR-LITE",
+   "target_name": "214311908",
+   "n": "1",
+   "sectors": "[12]"
+  },
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "QLP",
+   "target_name": "214311908",
+   "n": "6",
+   "sectors": "[12, 39, 66, 93, 103, 104]"
+  },
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "TARS",
+   "target_name": "214311908",
+   "n": "4",
+   "sectors": "[12, 39, 66, 93]"
+  },
+  {
+   "obs_collection": "HLSP",
+   "provenance_name": "TICA",
+   "target_name": "TICA FFI",
+   "n": "5",
+   "sectors": "[39, 66, 93, 103, 104]"
+  }
+ ],
+ "tess_mission_timeseries_rows": []
+}

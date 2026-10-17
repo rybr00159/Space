@@ -1,0 +1,312 @@
+{
+ "adopted": {
+  "M3V": {
+   "g": {
+    "mag": 16.363358,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "r": {
+    "mag": 14.982698,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "i": {
+    "mag": 13.574788,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "z": {
+    "mag": 12.814884,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "V": {
+    "mag": 15.590686,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "Ic": {
+    "mag": 12.858676,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "J": {
+    "mag": 11.363,
+    "source": "2MASS PSC"
+   },
+   "Ks": {
+    "mag": 10.482,
+    "source": "2MASS PSC"
+   },
+   "G": {
+    "mag": 14.281043,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 15.830741,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 13.074592,
+    "source": "Gaia DR3"
+   }
+  },
+  "pairA": {
+   "g": {
+    "mag": 16.442001,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "r": {
+    "mag": 15.311522,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "i": {
+    "mag": 13.832687,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "z": {
+    "mag": 12.883251,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "V": {
+    "mag": 15.946725,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "Ic": {
+    "mag": 13.094182,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "G": {
+    "mag": 14.654037,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 15.977035,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 13.099223,
+    "source": "Gaia DR3"
+   }
+  },
+  "pairB": {
+   "g": {
+    "mag": 16.3712,
+    "source": "DECaPS2 mean"
+   },
+   "r": {
+    "mag": 15.0625,
+    "source": "DECaPS2 mean"
+   },
+   "i": {
+    "mag": 13.3629,
+    "source": "SkyMapper DR4 PSF"
+   },
+   "z": {
+    "mag": 12.6212,
+    "source": "SkyMapper DR4 PSF"
+   },
+   "J": {
+    "mag": 12.188,
+    "source": "VHS DR6 Jpmag"
+   },
+   "Ks": {
+    "mag": 10.4101,
+    "source": "VHS DR6 Kspmag"
+   },
+   "G": {
+    "mag": 15.740896,
+    "source": "Gaia DR3"
+   }
+  },
+  "Mira": {
+   "g": {
+    "mag": 15.2222,
+    "source": "DECaPS2 mean"
+   },
+   "r": {
+    "mag": 13.951,
+    "source": "SkyMapper DR4 PSF"
+   },
+   "i": {
+    "mag": 11.1419,
+    "source": "SkyMapper DR4 PSF"
+   },
+   "z": {
+    "mag": 9.9313,
+    "source": "SkyMapper DR4 PSF"
+   },
+   "V": {
+    "mag": 15.885454914393241,
+    "source": "Gaia G,BP-RP -> V (Riello+21)"
+   },
+   "Ic": {
+    "mag": 11.257425340619422,
+    "source": "Gaia G,BP-RP -> Ic (Riello+21)"
+   },
+   "J": {
+    "mag": 8.077,
+    "source": "2MASS PSC"
+   },
+   "Ks": {
+    "mag": 6.684,
+    "source": "2MASS PSC"
+   },
+   "G": {
+    "mag": 12.660598,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 15.611915,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 10.928166,
+    "source": "Gaia DR3"
+   }
+  },
+  "star3.1": {
+   "g": {
+    "mag": 18.1644,
+    "source": "DECaPS2 mean"
+   },
+   "r": {
+    "mag": 17.3522,
+    "source": "DECaPS2 mean"
+   },
+   "i": {
+    "mag": 17.1004,
+    "source": "DECaPS2 mean"
+   },
+   "z": {
+    "mag": 16.9002,
+    "source": "DECaPS2 mean"
+   },
+   "V": {
+    "mag": 17.833170184456645,
+    "source": "Gaia G,BP-RP -> V (Riello+21)"
+   },
+   "Ic": {
+    "mag": 16.638073950504378,
+    "source": "Gaia G,BP-RP -> Ic (Riello+21)"
+   },
+   "J": {
+    "mag": 17.1706,
+    "source": "VHS DR6 Jpmag"
+   },
+   "Ks": {
+    "mag": 14.7106,
+    "source": "VHS DR6 Kspmag"
+   },
+   "G": {
+    "mag": 17.484058,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 17.875881,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 16.56004,
+    "source": "Gaia DR3"
+   }
+  },
+  "star5.5": {
+   "g": {
+    "mag": 18.0898,
+    "source": "DECaPS2 mean"
+   },
+   "r": {
+    "mag": 17.589,
+    "source": "DECaPS2 mean"
+   },
+   "i": {
+    "mag": 17.4068,
+    "source": "DECaPS2 mean"
+   },
+   "z": {
+    "mag": 17.3035,
+    "source": "DECaPS2 mean"
+   },
+   "V": {
+    "mag": 17.87378866344425,
+    "source": "Gaia G,BP-RP -> V (Riello+21)"
+   },
+   "Ic": {
+    "mag": 17.021347184973287,
+    "source": "Gaia G,BP-RP -> Ic (Riello+21)"
+   },
+   "J": {
+    "mag": 16.927,
+    "source": "VHS DR6 Jpmag"
+   },
+   "Ks": {
+    "mag": 15.9715,
+    "source": "VHS DR6 Kspmag"
+   },
+   "G": {
+    "mag": 17.675425,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 18.045498,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 17.088518,
+    "source": "Gaia DR3"
+   }
+  },
+  "star12.0_G17.0": {
+   "g": {
+    "mag": 17.53501,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "r": {
+    "mag": 16.968008,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "i": {
+    "mag": 16.662302,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "z": {
+    "mag": 16.376019,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "V": {
+    "mag": 17.24871,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "Ic": {
+    "mag": 16.196178,
+    "source": "Gaia DR3 XP synthetic (gspc)"
+   },
+   "J": {
+    "mag": 14.829,
+    "source": "2MASS PSC"
+   },
+   "Ks": {
+    "mag": 9.736,
+    "source": "2MASS PSC"
+   },
+   "G": {
+    "mag": 17.008398,
+    "source": "Gaia DR3"
+   },
+   "BP": {
+    "mag": 17.282658,
+    "source": "Gaia DR3"
+   },
+   "RP": {
+    "mag": 16.15342,
+    "source": "Gaia DR3"
+   }
+  }
+ },
+ "star_ids": {
+  "M3V": "5925373272850784768",
+  "pairA": "5925373272850782208",
+  "pairB": "5925373272827253632",
+  "Mira": "5925373268528684288",
+  "star3.1": "5925373272827260544",
+  "star5.5": "5925373272827262208",
+  "star12.0_G17.0": "5925373272827256576"
+ },
+ "note": "g r i z AB (SDSS-like); V Ic Vega (JKC); J Ks Vega (2MASS); the Mira values are single-epoch or mean values of a large-amplitude variable (see f03_mira for its range)"
+}

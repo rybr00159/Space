@@ -1,0 +1,32 @@
+{
+ "queried_utc": "2026-10-17T10:42:21+00:00",
+ "m3v_gaia_photometry_counters": [
+  {
+   "source_id": "5925373272850784768",
+   "phot_g_n_obs": "343",
+   "phot_bp_n_obs": "38",
+   "phot_rp_n_obs": "39",
+   "phot_bp_n_blended_transits": "2",
+   "phot_rp_n_blended_transits": "0",
+   "phot_bp_n_contaminated_transits": "0",
+   "phot_rp_n_contaminated_transits": "1",
+   "phot_bp_rp_excess_factor": "1.452786",
+   "phot_g_mean_flux_over_error": "1938.5111",
+   "phot_bp_mean_flux_over_error": "310.32056",
+   "phot_rp_mean_flux_over_error": "866.98584"
+  }
+ ],
+ "comparison": {
+  "selection": "VizieR cone 15 deg around the M3V; 13.8 < G < 14.8, 2.6 < BP-RP < 2.95, plx > 8 mas",
+  "n": 287,
+  "frac_G_variable": 0.9372822299651568,
+  "frac_all_three_V": 0.6585365853658537,
+  "SG_percentiles_mmag": {
+   "16": 5.59864416,
+   "50": 8.641262,
+   "84": 17.109431439999998,
+   "95": 32.1866497
+  },
+  "m3v_SG_percentile": 42.1602787456446
+ }
+}

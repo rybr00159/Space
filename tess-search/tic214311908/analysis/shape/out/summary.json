@@ -1,0 +1,495 @@
+{
+ "scenarios": [
+  {
+   "group": "background EB",
+   "scenario": "bg3_celm",
+   "dataset": "ref",
+   "dchi2_lc": 10.113802934567502,
+   "dchi2_total": 19.56633910055598,
+   "detail": "A 0.30 Msun, 0.175 Rsun, 8000 K; B 0.66 Msun, 0.64 Rsun; T14 2.21 h; sec 1.45 ppt; phot chi2 4.1, plx 3.4",
+   "file": "bg_eb_ref_bg3_celm.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_celm_lconly",
+   "dataset": "ref",
+   "dchi2_lc": -0.0004893079308203596,
+   "dchi2_total": -0.13759970829869417,
+   "detail": "A 0.27 Msun, 0.060 Rsun, 11681 K; B 0.41 Msun, 0.42 Rsun; T14 1.60 h; sec 0.34 ppt; phot chi2 721.8, plx 21.8",
+   "file": "bg_eb_ref_bg3_celm_lconly.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_cms_unphysical",
+   "dataset": "ref",
+   "dchi2_lc": 3.926541159044973,
+   "dchi2_total": 11.088960507691354,
+   "detail": "A 1.40 Msun, 0.204 Rsun, 7683 K; B 0.67 Msun, 0.65 Rsun; T14 1.99 h; sec 1.91 ppt; phot chi2 2.6, plx 1.7",
+   "file": "bg_eb_ref_bg3_cms_unphysical.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_csdb",
+   "dataset": "ref",
+   "dchi2_lc": 15.951813360532014,
+   "dchi2_total": 84.17058238596292,
+   "detail": "A 0.55 Msun, 0.100 Rsun, 20000 K; B 0.78 Msun, 0.75 Rsun; T14 1.89 h; sec 0.50 ppt; phot chi2 60.2, plx 0.9",
+   "file": "bg_eb_ref_bg3_csdb.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_cwd",
+   "dataset": "ref",
+   "dchi2_lc": 21.10652556194009,
+   "dchi2_total": 58.05617705411578,
+   "detail": "A 0.17 Msun, 0.055 Rsun, 21605 K; B 0.66 Msun, 0.64 Rsun; T14 1.73 h; sec 0.21 ppt; phot chi2 23.2, plx 6.7",
+   "file": "bg_eb_ref_bg3_cwd.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_cwd_lconly",
+   "dataset": "ref",
+   "dchi2_lc": 0.0029636435392603744,
+   "dchi2_total": -0.13678148491362663,
+   "detail": "A 0.17 Msun, 0.055 Rsun, 11776 K; B 0.39 Msun, 0.40 Rsun; T14 1.60 h; sec 0.33 ppt; phot chi2 15853.6, plx 5.3",
+   "file": "bg_eb_ref_bg3_cwd_lconly.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_msbd",
+   "dataset": "ref",
+   "dchi2_lc": 133.17317002272512,
+   "dchi2_total": 143.17984618019955,
+   "detail": "A 0.73 Msun, 0.713 Rsun, 4600 K; B 0.08 Msun, 0.25 Rsun; T14 3.23 h; sec 0.00 ppt; phot chi2 3.0, plx 0.0",
+   "file": "bg_eb_ref_bg3_msbd.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_msms11",
+   "dataset": "ref",
+   "dchi2_lc": 86.81408522066522,
+   "dchi2_total": 92.54684015359544,
+   "detail": "A 0.73 Msun, 0.712 Rsun, 4590 K; B 0.74 Msun, 0.72 Rsun; T14 5.15 h; sec 0.00 ppt; phot chi2 2.6, plx 3.4",
+   "file": "bg_eb_ref_bg3_msms11.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg3_msms5",
+   "dataset": "ref",
+   "dchi2_lc": 56.63042928637742,
+   "dchi2_total": 65.47548458881056,
+   "detail": "A 0.81 Msun, 0.776 Rsun, 5034 K; B 0.46 Msun, 0.47 Rsun; T14 3.63 h; sec 2.41 ppt; phot chi2 0.6, plx 1.8",
+   "file": "bg_eb_ref_bg3_msms5.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_celm",
+   "dataset": "ref",
+   "dchi2_lc": 17.654658884775017,
+   "dchi2_total": 27.41289305311693,
+   "detail": "A 0.30 Msun, 0.351 Rsun, 7087 K; B 0.37 Msun, 0.36 Rsun; T14 2.58 h; sec 0.94 ppt; phot chi2 0.8, plx 9.6",
+   "file": "bg_eb_ref_bg5_celm.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_csdb",
+   "dataset": "ref",
+   "dchi2_lc": 12.792100125585876,
+   "dchi2_total": 40.0981454853204,
+   "detail": "A 0.55 Msun, 0.100 Rsun, 20000 K; B 0.70 Msun, 0.70 Rsun; T14 1.86 h; sec 0.36 ppt; phot chi2 13.2, plx 6.7",
+   "file": "bg_eb_ref_bg5_csdb.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_cwd",
+   "dataset": "ref",
+   "dchi2_lc": 19.056222543258627,
+   "dchi2_total": 55.1567915897449,
+   "detail": "A 0.17 Msun, 0.055 Rsun, 32662 K; B 0.69 Msun, 0.67 Rsun; T14 1.72 h; sec 0.12 ppt; phot chi2 17.0, plx 11.6",
+   "file": "bg_eb_ref_bg5_cwd.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_msbd",
+   "dataset": "ref",
+   "dchi2_lc": 186.65972431533646,
+   "dchi2_total": 201.56597412197607,
+   "detail": "A 0.83 Msun, 0.787 Rsun, 5122 K; B 0.08 Msun, 0.25 Rsun; T14 3.47 h; sec 0.00 ppt; phot chi2 6.5, plx 1.0",
+   "file": "bg_eb_ref_bg5_msbd.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_msms11",
+   "dataset": "ref",
+   "dchi2_lc": 94.30420990415041,
+   "dchi2_total": 96.52604636930346,
+   "detail": "A 0.86 Msun, 0.797 Rsun, 5170 K; B 0.88 Msun, 0.81 Rsun; T14 5.47 h; sec 0.00 ppt; phot chi2 3.5, plx 0.1",
+   "file": "bg_eb_ref_bg5_msms11.json"
+  },
+  {
+   "group": "background EB",
+   "scenario": "bg5_msms5",
+   "dataset": "ref",
+   "dchi2_lc": 64.23401167428347,
+   "dchi2_total": 76.32425653142809,
+   "detail": "A 0.88 Msun, 0.822 Rsun, 5295 K; B 0.55 Msun, 0.56 Rsun; T14 3.95 h; sec 2.42 ppt; phot chi2 4.5, plx 0.2",
+   "file": "bg_eb_ref_bg5_msms5.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "lateM",
+   "dataset": "inv",
+   "dchi2_lc": 92.32797975028006,
+   "dchi2_total": 94.73124643582969,
+   "detail": "M_A 0.15, R_A 0.0232, R_B 0.130, b 0.00, T14 0.81 h, ingress 7.4 min, sec 1.06 ppt, e 0.00",
+   "file": "compact_inv_lateM.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "single",
+   "dataset": "inv",
+   "dchi2_lc": 0.7325731099181212,
+   "dchi2_total": 3.090411248572309,
+   "detail": "M_A 0.47, R_A 0.0143, R_B 0.390, b 0.00, T14 1.39 h, ingress 3.0 min, sec 0.88 ppt, e 0.00",
+   "file": "compact_inv_single.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "single_Rfree",
+   "dataset": "inv",
+   "dchi2_lc": 0.16113591768316837,
+   "dchi2_total": 0.17107294407787776,
+   "detail": "M_A 0.32, R_A 0.0050, R_B 0.381, b 0.24, T14 1.38 h, ingress 1.1 min, sec -0.24 ppt, e 0.00",
+   "file": "compact_inv_single_Rfree.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "twin",
+   "dataset": "inv",
+   "dchi2_lc": 7.694664993761762,
+   "dchi2_total": 17.89194477274168,
+   "detail": "M_A 0.25, R_A 0.0190, R_B 0.304, b 0.00, T14 1.31 h, ingress 4.6 min, sec 1.97 ppt, e 0.00",
+   "file": "compact_inv_twin.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "twin_Rfree",
+   "dataset": "inv",
+   "dchi2_lc": 2.3176926417254435,
+   "dchi2_total": 4.479577506671831,
+   "detail": "M_A 0.15, R_A 0.0050, R_B 0.302, b 0.00, T14 1.34 h, ingress 1.3 min, sec 0.04 ppt, e 0.00",
+   "file": "compact_inv_twin_Rfree.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "any",
+   "dataset": "ref",
+   "dchi2_lc": 2.9446114570000645,
+   "dchi2_total": 2.9451389486193875,
+   "detail": "M_A 0.60, R_A 0.0124, R_B 0.382, b 0.00, T14 1.28 h, ingress 2.4 min, sec 0.27 ppt, e 0.00",
+   "file": "compact_ref_any.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "lateM",
+   "dataset": "ref",
+   "dchi2_lc": 112.8952263320025,
+   "dchi2_total": 113.90746086688432,
+   "detail": "M_A 0.15, R_A 0.0232, R_B 0.130, b 0.00, T14 0.81 h, ingress 7.4 min, sec 1.06 ppt, e 0.00",
+   "file": "compact_ref_lateM.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "single",
+   "dataset": "ref",
+   "dchi2_lc": 2.9447554547650725,
+   "dchi2_total": 2.9457962641454287,
+   "detail": "M_A 0.61, R_A 0.0124, R_B 0.381, b 0.02, T14 1.28 h, ingress 2.4 min, sec 0.27 ppt, e 0.00",
+   "file": "compact_ref_single.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "single_ecc",
+   "dataset": "ref",
+   "dchi2_lc": 1.8014318090581583,
+   "dchi2_total": 1.8014333174796775,
+   "detail": "M_A 0.78, R_A 0.0109, R_B 0.381, b 0.34, T14 1.40 h, ingress 2.6 min, sec -0.34 ppt, e 0.20",
+   "file": "compact_ref_single_ecc.json"
+  },
+  {
+   "group": "compact star occulted (bound)",
+   "scenario": "twin",
+   "dataset": "ref",
+   "dchi2_lc": 4.1187682166946615,
+   "dchi2_total": 11.078630878130753,
+   "detail": "M_A 0.25, R_A 0.0189, R_B 0.302, b 0.00, T14 1.30 h, ingress 4.6 min, sec 1.98 ppt, e 0.00",
+   "file": "compact_ref_twin.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best P5.69",
+   "dataset": "inv",
+   "dchi2_lc": 47.55352758719255,
+   "dchi2_total": 47.59454665464955,
+   "detail": "m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",
+   "file": "bound_eb_inv.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best P11.38",
+   "dataset": "inv",
+   "dchi2_lc": 27.51426786648608,
+   "dchi2_total": 27.51426786648608,
+   "detail": "m1 0.11, MS m2 0.11, k 1.00, m0 0.34145592097617955, f_src 0.075, P 11.38, b 0.77, T14 1.70 h",
+   "file": "bound_eb_inv.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best occulter_BD",
+   "dataset": "inv",
+   "dchi2_lc": 47.55352758719255,
+   "dchi2_total": 47.59454665464955,
+   "detail": "m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",
+   "file": "bound_eb_inv.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best no_third_light",
+   "dataset": "inv",
+   "dchi2_lc": 46.29552393445374,
+   "dchi2_total": 46.29552393445374,
+   "detail": "m1 0.28, MS m2 0.26, k 0.94, m0 nan, f_src 1.000, P 11.38, b 1.70, T14 1.42 h",
+   "file": "bound_eb_inv.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best P5.69",
+   "dataset": "ref",
+   "dchi2_lc": 58.38109266122592,
+   "dchi2_total": 58.52293782904508,
+   "detail": "m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",
+   "file": "bound_eb_ref.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best P11.38",
+   "dataset": "ref",
+   "dchi2_lc": 33.73248938390225,
+   "dchi2_total": 33.73248938390225,
+   "detail": "m1 0.11, MS m2 0.11, k 1.00, m0 0.34145592097617955, f_src 0.075, P 11.38, b 0.74, T14 1.71 h",
+   "file": "bound_eb_ref.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best occulter_BD",
+   "dataset": "ref",
+   "dchi2_lc": 58.38109266122592,
+   "dchi2_total": 58.52293782904508,
+   "detail": "m1 0.15, BD m2 0.07, k 0.42, m0 0.3405486778374248, f_src 0.107, P 5.69, b 0.00, T14 1.37 h",
+   "file": "bound_eb_ref.json"
+  },
+  {
+   "group": "bound hierarchical EB",
+   "scenario": "best no_third_light",
+   "dataset": "ref",
+   "dchi2_lc": 54.82278023476101,
+   "dchi2_total": 54.82278023476101,
+   "detail": "m1 0.28, MS m2 0.26, k 0.94, m0 nan, f_src 1.000, P 11.38, b 1.70, T14 1.44 h",
+   "file": "bound_eb_ref.json"
+  }
+ ],
+ "wd_with_astrometry": {
+  "sigma_CCD_0.22": {
+   "profile": [
+    {
+     "M": 0.17,
+     "dchi2_lc_sec": 17.90293465969353,
+     "m2lnL_astrom": 6.185162111589365,
+     "total": 24.088096771282892,
+     "Teff_needed": 4662.444285054477,
+     "R": 0.022159907437406347,
+     "sec_ppt": 3.252348246956069
+    },
+    {
+     "M": 0.2,
+     "dchi2_lc_sec": 13.929189863734337,
+     "m2lnL_astrom": 8.003412810514494,
+     "total": 21.93260267424883,
+     "Teff_needed": 4776.283481514139,
+     "R": 0.02083467190626932,
+     "sec_ppt": 2.880723576392574
+    },
+    {
+     "M": 0.25,
+     "dchi2_lc_sec": 9.543226443786807,
+     "m2lnL_astrom": 10.143478974010765,
+     "total": 19.686705417797572,
+     "Teff_needed": 4957.0680113853705,
+     "R": 0.019079716920368868,
+     "sec_ppt": 2.375811716364496
+    },
+    {
+     "M": 0.3,
+     "dchi2_lc_sec": 6.741505403114843,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 19.025050540621876,
+     "Teff_needed": 5128.556715086602,
+     "R": 0.017687793632866804,
+     "sec_ppt": 1.966649286255241
+    },
+    {
+     "M": 0.35,
+     "dchi2_lc_sec": 4.8835914299406795,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 17.167136567447713,
+     "Teff_needed": 5296.93369214918,
+     "R": 0.016529573633292882,
+     "sec_ppt": 1.6165875715260385
+    },
+    {
+     "M": 0.45,
+     "dchi2_lc_sec": 3.131917146235537,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 15.415462283742572,
+     "Teff_needed": 5692.982692712847,
+     "R": 0.014650311353751187,
+     "sec_ppt": 0.994499800858067
+    },
+    {
+     "M": 0.6,
+     "dchi2_lc_sec": 2.9469698919260736,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 15.230515029433109,
+     "Teff_needed": 6290.812642957015,
+     "R": 0.012445115865244629,
+     "sec_ppt": 0.29342277155997926
+    },
+    {
+     "M": 0.8,
+     "dchi2_lc_sec": 5.653843210114701,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 17.937388347621734,
+     "Teff_needed": 6271.244423923574,
+     "R": 0.013054783937385569,
+     "sec_ppt": 0.02911140363485977
+    },
+    {
+     "M": 1.0,
+     "dchi2_lc_sec": 13.589355465831432,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 25.872900603338465,
+     "Teff_needed": 7499.234792680931,
+     "R": 0.010202326863939811,
+     "sec_ppt": -0.8168208356700706
+    },
+    {
+     "M": 1.2,
+     "dchi2_lc_sec": 28.319290704859213,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 40.60283584236625,
+     "Teff_needed": 10324.232857225228,
+     "R": 0.007187603640447283,
+     "sec_ppt": -1.5862213324812635
+    }
+   ],
+   "min_total": 15.230515029433109,
+   "M_at_min": 0.6
+  },
+  "sigma_CCD_0.35": {
+   "profile": [
+    {
+     "M": 0.17,
+     "dchi2_lc_sec": 17.90293465969353,
+     "m2lnL_astrom": 1.5893633537181322,
+     "total": 19.49229801341166,
+     "Teff_needed": 4662.444285054477,
+     "R": 0.022159907437406347,
+     "sec_ppt": 3.252348246956069
+    },
+    {
+     "M": 0.2,
+     "dchi2_lc_sec": 13.929189863734337,
+     "m2lnL_astrom": 2.0296736379222016,
+     "total": 15.958863501656538,
+     "Teff_needed": 4776.283481514139,
+     "R": 0.02083467190626932,
+     "sec_ppt": 2.880723576392574
+    },
+    {
+     "M": 0.25,
+     "dchi2_lc_sec": 9.543226443786807,
+     "m2lnL_astrom": 4.238838655630339,
+     "total": 13.782065099417146,
+     "Teff_needed": 4957.0680113853705,
+     "R": 0.019079716920368868,
+     "sec_ppt": 2.375811716364496
+    },
+    {
+     "M": 0.3,
+     "dchi2_lc_sec": 6.741505403114843,
+     "m2lnL_astrom": 6.4480036733384765,
+     "total": 13.18950907645332,
+     "Teff_needed": 5128.556715086602,
+     "R": 0.017687793632866804,
+     "sec_ppt": 1.966649286255241
+    },
+    {
+     "M": 0.35,
+     "dchi2_lc_sec": 4.8835914299406795,
+     "m2lnL_astrom": 8.393184161394661,
+     "total": 13.27677559133534,
+     "Teff_needed": 5296.93369214918,
+     "R": 0.016529573633292882,
+     "sec_ppt": 1.6165875715260385
+    },
+    {
+     "M": 0.45,
+     "dchi2_lc_sec": 3.131917146235537,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 15.415462283742572,
+     "Teff_needed": 5692.982692712847,
+     "R": 0.014650311353751187,
+     "sec_ppt": 0.994499800858067
+    },
+    {
+     "M": 0.6,
+     "dchi2_lc_sec": 2.9469698919260736,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 15.230515029433109,
+     "Teff_needed": 6290.812642957015,
+     "R": 0.012445115865244629,
+     "sec_ppt": 0.29342277155997926
+    },
+    {
+     "M": 0.8,
+     "dchi2_lc_sec": 5.653843210114701,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 17.937388347621734,
+     "Teff_needed": 6271.244423923574,
+     "R": 0.013054783937385569,
+     "sec_ppt": 0.02911140363485977
+    },
+    {
+     "M": 1.0,
+     "dchi2_lc_sec": 13.589355465831432,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 25.872900603338465,
+     "Teff_needed": 7499.234792680931,
+     "R": 0.010202326863939811,
+     "sec_ppt": -0.8168208356700706
+    },
+    {
+     "M": 1.2,
+     "dchi2_lc_sec": 28.319290704859213,
+     "m2lnL_astrom": 12.283545137507035,
+     "total": 40.60283584236625,
+     "Teff_needed": 10324.232857225228,
+     "R": 0.007187603640447283,
+     "sec_ppt": -1.5862213324812635
+    }
+   ],
+   "min_total": 13.18950907645332,
+   "M_at_min": 0.3
+  }
+ }
+}

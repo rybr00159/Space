@@ -1,0 +1,14 @@
+{
+ "93": {
+  "lag_uncorrected_min": -0.035513137305034574,
+  "timecorr_median_min": 7.601216062903404
+ },
+ "103": {
+  "lag_uncorrected_min": -5.173784219193851,
+  "timecorr_median_min": 5.172255020588636
+ },
+ "104": {
+  "lag_uncorrected_min": -7.405765448296083,
+  "timecorr_median_min": 7.465134859085083
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "12": {
+  "scale": 0.9742883283602571,
+  "beta_sector": 1.115356662652091,
+  "beta_sector_robust": 0.9957303013023016,
+  "beta_single": 1.1829313890510704,
+  "beta_single_robust": 1.1101943222796338,
+  "n_fake": 62,
+  "n_single": 153,
+  "beta": 1.1465628556653522,
+  "beta_sector_level": 1.0555434819771963
+ },
+ "39": {
+  "scale": 1.0025452593918078,
+  "beta_sector": 0.8708875242445068,
+  "beta_sector_robust": 1.0532404607913572,
+  "beta_single": 1.0990985019383899,
+  "beta_single_robust": 1.0666793414939515,
+  "n_fake": 62,
+  "n_single": 276,
+  "beta": 1.0828889217161706,
+  "beta_sector_level": 1.0
+ },
+ "66": {
+  "scale": 0.9998952599939639,
+  "beta_sector": 1.7751656083770098,
+  "beta_sector_robust": 1.8005604733599858,
+  "beta_single": 1.498920754789246,
+  "beta_single_robust": 1.5110824313938909,
+  "n_fake": 62,
+  "n_single": 180,
+  "beta": 1.5050015930915683,
+  "beta_sector_level": 1.7878630408684977
+ },
+ "93": {
+  "scale": 0.9994991498753447,
+  "beta_sector": 0.9220638301852183,
+  "beta_sector_robust": 0.9051888765993696,
+  "beta_single": 1.353725671915398,
+  "beta_single_robust": 1.6132021671432732,
+  "n_fake": 62,
+  "n_single": 234,
+  "beta": 1.4834639195293358,
+  "beta_sector_level": 1.0
+ },
+ "103": {
+  "scale": 0.9992918223042524,
+  "beta_sector": 1.333675766822002,
+  "beta_sector_robust": 1.0932089078846694,
+  "beta_single": 1.5030811677302929,
+  "beta_single_robust": 1.4588759971276806,
+  "n_fake": 62,
+  "n_single": 226,
+  "beta": 1.4809785824289867,
+  "beta_sector_level": 1.2134423373533356
+ },
+ "104": {
+  "scale": 0.9980603414317794,
+  "beta_sector": 1.3181590687984077,
+  "beta_sector_robust": 1.4010654494865118,
+  "beta_single": 1.3169539061705555,
+  "beta_single_robust": 1.176820392716445,
+  "n_fake": 62,
+  "n_single": 235,
+  "beta": 1.2468871494435003,
+  "beta_sector_level": 1.3596122591424598
+ },
+ "_note": "beta adopted = mean(beta_single, beta_single_robust) (per-window fake-epoch depth scatter / formal); beta_sector_level = sector-combined value (noisier: 62 strongly overlapping fake ephemerides)"
+}

@@ -1,0 +1,177 @@
+{
+ "method": "b03: brown-dwarf radius / temperature prior from the ATMO 2020 evolutionary tracks (Phillips et al. 2020,\n2020A&A...637A..38P; chemical-equilibrium set, downloaded 2026-10-17 from perso.ens-lyon.fr/isabelle.baraffe/ATMO2020,\ndata/models/evolutionary_tracks/ATMO_CEQ/MKO_WISE_IRAC/), plus the empirical radius inflation of transiting BDs.\nDraws: M_BD from the observed M-dwarf short-period BD mass distribution (Larsen+25, 2025AJ....169..246L: 2/13 systems\nwith P < 13 d at 13-40 M_J): P(13-40) = 0.18, P(40-78.5) = 0.82, uniform inside; age uniform 1-10 Gyr (thin-disk\nfield star; star/ kinematics favour several Gyr, the X-ray activity a younger age - both inside this range); radius and\nTeff interpolated in (mass, log age); radius inflation (1 + delta), delta ~ N(0.09, 0.10) (mean 5-14 %, intrinsic\ndispersion 8-12 %: Beatty 2026, arXiv:2607.27352; 8.7 +- 1.9 %: Mehrotra+26, RNAAS 10, 128); R* ~ N(0.383, 0.012).\nTESS-band flux ratio BD/M3V = (R_bd/R*)^2 x SB ratio, SB ratio = blackbody at Teff_BD over blackbody at 3350 K,\nintegrated over the TESS response (../shape/data/filt_TESS.Red.dat, photon-weighted). Checks: TOI-2119 b (T_b,TESS\n2100 K for Teff 2030 K: 2022AJ....163...89C / 2022MNRAS.514.4944C) and the Mamajek dwarf table M_RP (L0V, L5V).\nOutputs: data/bd_draws.npz, out/b03_bd_models.json",
+ "R_RJ": {
+  "p2p5": 0.715299237376333,
+  "p16": 0.7977830077629059,
+  "p50": 0.8900286320303525,
+  "p84": 0.9925168288661219,
+  "p97p5": 1.1087502475947661
+ },
+ "R_model_RJ": {
+  "p2p5": 0.752546558053939,
+  "p50": 0.8110111746366573,
+  "p97p5": 0.9544893406064937
+ },
+ "k": {
+  "p2p5": 0.19030012404103014,
+  "p16": 0.2131838901838962,
+  "p50": 0.23889503232623968,
+  "p84": 0.2677072560002461,
+  "p97p5": 0.3001279615830523,
+  "frac_below_0p19": 0.024265
+ },
+ "Teff": {
+  "p16": 671.3175431130848,
+  "p50": 985.3013613715236,
+  "p84": 1464.788436980559,
+  "p95": 1803.5133951693024
+ },
+ "flux_ratio_ppt": {
+  "p50": 0.00047881305743790596,
+  "p84": 0.0886903820629242,
+  "p95": 0.7554550751498889,
+  "p99": 1.9841085495021786,
+  "frac_gt_1ppt": 0.036055,
+  "frac_gt_2ppt": 0.00984
+ },
+ "grid": {
+  "M15_age1": {
+   "R_RJ": 1.0144103786755263,
+   "Teff": 587.9589063902688,
+   "flux_ratio_ppt_noinfl": 2.7220023956037772e-08
+  },
+  "M15_age3": {
+   "R_RJ": 0.9789713244343445,
+   "Teff": 428.79227093571257,
+   "flux_ratio_ppt_noinfl": 3.2979101331846098e-12
+  },
+  "M15_age5": {
+   "R_RJ": 0.9654104085962866,
+   "Teff": 375.8822216690414,
+   "flux_ratio_ppt_noinfl": 3.3522789645384406e-14
+  },
+  "M15_age10": {
+   "R_RJ": 0.947659544759541,
+   "Teff": 323.47774575793005,
+   "flux_ratio_ppt_noinfl": 8.70910807794331e-17
+  },
+  "M30_age1": {
+   "R_RJ": 0.934833386569886,
+   "Teff": 963.0243589023012,
+   "flux_ratio_ppt_noinfl": 0.0003991338794503147
+  },
+  "M30_age3": {
+   "R_RJ": 0.8903018320821136,
+   "Teff": 680.5756490755141,
+   "flux_ratio_ppt_noinfl": 6.008041233945714e-07
+  },
+  "M30_age5": {
+   "R_RJ": 0.8753197763988785,
+   "Teff": 584.9228390276982,
+   "flux_ratio_ppt_noinfl": 1.784903148785849e-08
+  },
+  "M30_age10": {
+   "R_RJ": 0.8590008966502012,
+   "Teff": 485.5575313506753,
+   "flux_ratio_ppt_noinfl": 1.1718805834964944e-10
+  },
+  "M50_age1": {
+   "R_RJ": 0.8904573527100665,
+   "Teff": 1450.6467443289657,
+   "flux_ratio_ppt_noinfl": 0.08100957077321995
+  },
+  "M50_age3": {
+   "R_RJ": 0.8233534889524773,
+   "Teff": 1031.0332357337631,
+   "flux_ratio_ppt_noinfl": 0.0008773722016969512
+  },
+  "M50_age5": {
+   "R_RJ": 0.8036054616532958,
+   "Teff": 878.5729164121956,
+   "flux_ratio_ppt_noinfl": 6.553008684935726e-05
+  },
+  "M50_age10": {
+   "R_RJ": 0.7825048148704022,
+   "Teff": 749.9093549244495,
+   "flux_ratio_ppt_noinfl": 3.4073019579392064e-06
+  },
+  "M65_age1": {
+   "R_RJ": 0.8872262329835942,
+   "Teff": 1812.7085296111684,
+   "flux_ratio_ppt_noinfl": 0.7456204907280636
+  },
+  "M65_age3": {
+   "R_RJ": 0.8022473370558386,
+   "Teff": 1331.8899826868849,
+   "flux_ratio_ppt_noinfl": 0.02483072356443659
+  },
+  "M65_age5": {
+   "R_RJ": 0.7762868089843079,
+   "Teff": 1156.0701027087678,
+   "flux_ratio_ppt_noinfl": 0.003910555504623993
+  },
+  "M65_age10": {
+   "R_RJ": 0.7468650194593345,
+   "Teff": 973.1309953791692,
+   "flux_ratio_ppt_noinfl": 0.00030000436298037285
+  },
+  "M75_age1": {
+   "R_RJ": 0.9154806551882825,
+   "Teff": 2121.1997987884456,
+   "flux_ratio_ppt_noinfl": 3.011971588347051
+  },
+  "M75_age3": {
+   "R_RJ": 0.83215149094074,
+   "Teff": 1744.6643589654138,
+   "flux_ratio_ppt_noinfl": 0.4609734165482264
+  },
+  "M75_age5": {
+   "R_RJ": 0.8095958840353019,
+   "Teff": 1612.416380400744,
+   "flux_ratio_ppt_noinfl": 0.2031865749333457
+  },
+  "M75_age10": {
+   "R_RJ": 0.785465157301235,
+   "Teff": 1461.0609084541493,
+   "flux_ratio_ppt_noinfl": 0.06816880164469329
+  },
+  "M78.5_age1": {
+   "R_RJ": 0.9358448753188743,
+   "Teff": 2236.5221127163163,
+   "flux_ratio_ppt_noinfl": 4.744004843253284
+  },
+  "M78.5_age3": {
+   "R_RJ": 0.8672735320154978,
+   "Teff": 1993.0407138748228,
+   "flux_ratio_ppt_noinfl": 1.6274193769991332
+  },
+  "M78.5_age5": {
+   "R_RJ": 0.8555124587340587,
+   "Teff": 1940.1247757566805,
+   "flux_ratio_ppt_noinfl": 1.2612346255972138
+  },
+  "M78.5_age10": {
+   "R_RJ": 0.850588451015404,
+   "Teff": 1916.802056092724,
+   "flux_ratio_ppt_noinfl": 1.1235971721278812
+  }
+ },
+ "check_TOI2119": {
+  "note": "TOI-2119 b: R 1.08 R_J around R* 0.50; T_b 2100 K -> predicted TESS secondary (BB, T_host 3621 K)",
+  "pred_ppt": 1.5173961897969122
+ },
+ "check_mamajek": {
+  "L0V": {
+   "Teff": 2270.0,
+   "ratio_RP_table": 0.003981071705534969,
+   "ratio_BB_TESS": 0.005927643371536225,
+   "BB_over_table": 1.4889566955789557
+  },
+  "L5V": {
+   "Teff": 1710.0,
+   "ratio_RP_table": 0.0007112135136533303,
+   "ratio_BB_TESS": 0.00042794497896990474,
+   "BB_over_table": 0.6017109781444615
+  }
+ }
+}

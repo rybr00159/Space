@@ -1,0 +1,271 @@
+{
+ "old_repo_file": {
+  "file": "/home/user/Space/tess-search/vetting_2026-10-16/results/214311906/predicted_transits_2027.csv",
+  "old_utc_minus_correct_min": [
+   -3.42,
+   -3.23
+  ],
+  "old_utc_minus_correct_min_range": [
+   -3.42,
+   7.3
+  ],
+  "old_utc_minus_naive_tdb_to_utc_min_range": [
+   -1.05,
+   0.06
+  ],
+  "old_bjd_minus_adopted_min_range": [
+   -1.58,
+   -0.93
+  ],
+  "old_utc_minus_new_utc_min_range": [
+   -5.0,
+   6.0
+  ],
+  "old_sigma_min": [
+   4.2,
+   4.9
+  ],
+  "new_sigma_min": [
+   2.9,
+   3.5
+  ]
+ },
+ "bary_conversion_check": {
+  "followup_utc_minus_this_s": [
+   -1.0,
+   0.0
+  ],
+  "referee3_followup_utc_minus_this_s": [
+   -1.0,
+   -0.0
+  ],
+  "referee3_delay_minus_this_s": [
+   -0.0,
+   0.0
+  ],
+  "note": "both reference files give UTC truncated to the second, so differences of 0-1 s are rounding; referee3 includes Shapiro and parallax-curvature terms"
+ },
+ "adopted_minus_clean_bjd_min": [
+  0.68,
+  1.46
+ ],
+ "sigma_min_range": {
+  "all": [
+   2.7090878098725404,
+   4.598377728547319
+  ],
+  "y2027": [
+   2.844136705575173,
+   3.6815815697061502
+  ],
+  "y2028": [
+   3.695516976229442,
+   4.598377728547319
+  ]
+ },
+ "n_transits": 139,
+ "epoch_range": [
+  89,
+  227
+ ],
+ "ctio_vs_cerro_pachon_full_differs_epochs": [],
+ "full_epochs_2026_excl_DomeC": [],
+ "full_epochs_2026_incl_DomeC": [],
+ "full_epochs_2026_sun12_incl_DomeC": [],
+ "full_epochs_2027_excl_DomeC": [
+  118,
+  124,
+  126,
+  127,
+  128,
+  129,
+  131,
+  137,
+  138,
+  139
+ ],
+ "full_epochs_2027_incl_DomeC": [
+  118,
+  119,
+  122,
+  124,
+  126,
+  127,
+  128,
+  129,
+  131,
+  132,
+  135,
+  137,
+  138,
+  139
+ ],
+ "full_epochs_2027_sun12_incl_DomeC": [
+  116,
+  118,
+  119,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129,
+  131,
+  132,
+  134,
+  135,
+  136,
+  137,
+  138,
+  139,
+  142
+ ],
+ "full_epochs_2028_excl_DomeC": [
+  182,
+  184,
+  186,
+  192,
+  193,
+  194,
+  195,
+  196,
+  202
+ ],
+ "full_epochs_2028_incl_DomeC": [
+  182,
+  184,
+  186,
+  187,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  196,
+  197,
+  200,
+  202
+ ],
+ "full_epochs_2028_sun12_incl_DomeC": [
+  181,
+  182,
+  184,
+  186,
+  187,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  196,
+  197,
+  200,
+  202,
+  203,
+  204
+ ],
+ "full_windows_per_site": {
+  "CTIO_SOAR_GeminiS": {
+   "2027": [
+    "E124 2027-05-21T03:45 moon 0.99/28deg",
+    "E127 2027-06-07T05:32 moon 0.08/144deg",
+    "E137 2027-08-03T03:32 moon 0.01/118deg"
+   ],
+   "2028": [
+    "E182 2028-04-15T06:22 moon 0.64/30deg",
+    "E192 2028-06-11T04:17 moon 0.85/50deg",
+    "E195 2028-06-28T06:04 moon 0.36/91deg",
+    "E202 2028-08-07T02:17 moon 0.97/74deg"
+   ]
+  },
+  "LCO": {
+   "2027": [
+    "E124 2027-05-21T03:45 moon 0.99/28deg",
+    "E127 2027-06-07T05:32 moon 0.08/144deg",
+    "E137 2027-08-03T03:32 moon 0.01/118deg"
+   ],
+   "2028": [
+    "E182 2028-04-15T06:22 moon 0.64/30deg",
+    "E192 2028-06-11T04:17 moon 0.85/50deg",
+    "E195 2028-06-28T06:04 moon 0.36/91deg",
+    "E202 2028-08-07T02:17 moon 0.97/74deg"
+   ]
+  },
+  "La_Silla": {
+   "2027": [
+    "E124 2027-05-21T03:45 moon 0.99/28deg",
+    "E127 2027-06-07T05:32 moon 0.08/144deg",
+    "E137 2027-08-03T03:32 moon 0.01/118deg"
+   ],
+   "2028": [
+    "E182 2028-04-15T06:22 moon 0.64/30deg",
+    "E192 2028-06-11T04:17 moon 0.85/50deg",
+    "E195 2028-06-28T06:04 moon 0.36/91deg",
+    "E202 2028-08-07T02:17 moon 0.97/74deg"
+   ]
+  },
+  "Paranal": {
+   "2027": [
+    "E127 2027-06-07T05:32 moon 0.08/144deg",
+    "E137 2027-08-03T03:32 moon 0.01/118deg"
+   ],
+   "2028": [
+    "E182 2028-04-15T06:22 moon 0.64/30deg",
+    "E192 2028-06-11T04:17 moon 0.85/50deg",
+    "E202 2028-08-07T02:17 moon 0.97/74deg"
+   ]
+  },
+  "SAAO": {
+   "2027": [
+    "E118 2027-04-17T00:13 moon 0.82/104deg",
+    "E128 2027-06-12T22:07 moon 0.66/74deg",
+    "E131 2027-06-29T23:55 moon 0.22/134deg",
+    "E138 2027-08-08T20:08 moon 0.46/46deg"
+   ],
+   "2028": [
+    "E186 2028-05-08T00:43 moon 0.99/50deg",
+    "E193 2028-06-16T20:52 moon 0.34/111deg",
+    "E196 2028-07-03T22:40 moon 0.92/28deg"
+   ]
+  },
+  "Siding_Spring": {
+   "2027": [
+    "E126 2027-06-01T12:56 moon 0.14/122deg",
+    "E129 2027-06-18T14:43 moon 1.00/24deg",
+    "E139 2027-08-14T12:44 moon 0.93/37deg"
+   ],
+   "2028": [
+    "E184 2028-04-26T15:33 moon 0.04/146deg",
+    "E194 2028-06-22T13:28 moon 0.00/154deg"
+   ]
+  },
+  "Dome_C": {
+   "2027": [
+    "E119 2027-04-22T16:48 moon 0.96/37deg",
+    "E122 2027-05-09T18:34 moon 0.14/154deg",
+    "E126 2027-06-01T12:56 moon 0.14/122deg",
+    "E129 2027-06-18T14:43 moon 1.00/24deg",
+    "E132 2027-07-05T16:31 moon 0.04/132deg",
+    "E135 2027-07-22T18:19 moon 0.86/83deg"
+   ],
+   "2028": [
+    "E184 2028-04-26T15:33 moon 0.04/146deg",
+    "E187 2028-05-13T17:19 moon 0.75/40deg",
+    "E190 2028-05-30T19:05 moon 0.44/107deg",
+    "E191 2028-06-05T11:41 moon 0.96/38deg",
+    "E194 2028-06-22T13:28 moon 0.00/154deg",
+    "E197 2028-07-09T15:16 moon 0.92/62deg",
+    "E200 2028-07-26T17:04 moon 0.28/76deg"
+   ]
+  }
+ },
+ "first_full_window": {
+  "epoch": 118,
+  "utc_mid": "2027-04-17T00:13:08",
+  "sites": "SAAO"
+ }
+}

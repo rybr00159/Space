@@ -1,0 +1,81 @@
+{
+ "contamination": {
+  "n_colour_matched_field": 84,
+  "target_rms_z": 1.071123606303722,
+  "field_rms_z_median": 1.0181050408461747,
+  "field_rms_z_p90": 1.4775559036701582,
+  "target_percentile": 0.6071428571428571
+ },
+ "mira_fraction": {
+  "best_fraction_of_mira_flux": 0.0005000000000000074,
+  "range_1sigma": [
+   0.0005000000000000074,
+   0.0005000000000000074
+  ],
+  "note": "fraction of the Mira XP flux (absolute) added to a colour-matched template, chi2 rescaled; target-relative contribution at 800 nm = e * Mira/M3V flux ratio",
+  "mira_over_m3v_flux_800nm": 5.130554586858461
+ },
+ "xp_feh": {
+  "n_cal": 738,
+  "n_comp": 30,
+  "ridge_lambda": 1,
+  "cv_robust_scatter": 0.11066565206601214,
+  "cv_rms": 0.11953768351393018,
+  "cv_robust_scatter_local_colour": 0.11291461399110374,
+  "n_local": 208,
+  "target_pred": 0.12922249223373056,
+  "target_pred_mc_sd": 0.07716983654482006,
+  "cv_pred_vs_true_slope": 0.6436493422889358,
+  "cv_pred_vs_true_intercept": -0.007410112063229775,
+  "target_debiased": 0.212278014316102,
+  "cv_median_pred_true_gt_0p25": 0.19200350737420968,
+  "n_true_gt_0p25": 62,
+  "cv_median_pred_true_m0p1_0p1": -0.007271092889079598,
+  "true_feh_of_cal_with_similar_pred": {
+   "n": 65,
+   "median": 0.1599999964237213,
+   "p16": 0.0374000038206577,
+   "p84": 0.2738000014424324,
+   "frac_gt_0p3": 0.07692307692307693
+  },
+  "lamost_check": {
+   "n": 141,
+   "corr": 0.5783672587966582,
+   "median_diff_pred_minus_lamost": 0.3272147140649716,
+   "robust_sd": 0.20146082769160137
+  },
+  "cv_resid_dMK_-0.3_0.3": {
+   "n": 327,
+   "median": 0.00921473379189883
+  },
+  "cv_resid_dMK_-1.0_-0.45": {
+   "n": 150,
+   "median": -0.04703785711830323
+  }
+ },
+ "xp_feh_field_normal": {
+  "n": 293,
+  "median": -0.03582499587826388,
+  "p16": -0.14962615546817545,
+  "p84": 0.04976867512716464,
+  "frac_gt_target": 0.034129692832764506
+ },
+ "xp_feh_field_overlum": {
+  "n": 293,
+  "median": 0.13020983659770355,
+  "p16": 0.006240782558881309,
+  "p84": 0.21162584699057654,
+  "frac_gt_target": 0.5017064846416383
+ },
+ "target_dMK_local": -0.6980263657277028,
+ "composite": {
+  "best_single_colour": 2.77,
+  "chi2_single": 292.1461043362218,
+  "best_comp_c1": 2.6999999999999997,
+  "best_comp_c2": 3.216666666666667,
+  "dMG_comp": 1.6320989203108898,
+  "chi2_comp": 275.2196641179024,
+  "n_points": 291,
+  "note": "chi2 uses the star-to-star scatter of colour-matched normal field stars as noise; templates are solar-neighbourhood medians"
+ }
+}

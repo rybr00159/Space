@@ -1,0 +1,19 @@
+{
+ "n": 16,
+ "dt_ref_inv_rms_min": 8.061269674852248,
+ "dt_ref_inv_mean_min": 3.204720000053385,
+ "dt_ref_inv_robust_min": 5.582878559253913,
+ "ddepth_rms_e_s": 4.48642466375046,
+ "ddepth_mean_e_s": -0.9921018125000007,
+ "ref_formal_tc_err_med_min": 3.70152,
+ "ref_cal_tc_err_med_min": 6.94656,
+ "inv_formal_tc_err_med_min": 7.3490400000000005,
+ "inv_cal_tc_err_med_min": 10.3572,
+ "n_qlp": 11,
+ "dt_qlp_ref_rms_min": 10.748933819572885,
+ "dt_qlp_ref_mean_min": 5.6509527273076605,
+ "dt_qlp_inv_rms_min": 9.664855784463194,
+ "dt_qlp_inv_mean_min": 7.979956363699537,
+ "ref_depth_err_med": 3.7227425,
+ "inv_depth_err_med_e_s": 3.3589875
+}

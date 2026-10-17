@@ -1,0 +1,256 @@
+{
+ "adopted": "adopted_planning",
+ "adopted_planning": {
+  "description": "Conservative planning ephemeris (referee3_clean README item 4). Use +-10 min (about 3 sigma) margins around predicted mid-times in 2027-2028.",
+  "reference_epoch": 0,
+  "T0_ref_BJD_TDB": 2460840.915,
+  "T0_ref_err_d": 0.0013,
+  "T0_ref_BTJD_TDB": 3840.915,
+  "P_d": 5.691506,
+  "P_err_d": 1.1e-05,
+  "corr_T0ref_P": 0.35,
+  "cov_T0ref_P": [
+   [
+    1.69e-06,
+    5.004999999999999e-09
+   ],
+   [
+    5.004999999999999e-09,
+    1.21e-10
+   ]
+  ],
+  "corr_note": "rho = 0.35 assumed: referee3_clean comb_cor has 0.345 at epoch 0 (comb_ind 0.377); with rho = 0 the 2027 1-sigma would be 2.6-3.0 min instead of 2.9-3.5 min",
+  "sigma_min_at_epochs": {
+   "100": 2.84,
+   "108": 2.94,
+   "130": 3.23,
+   "149": 3.49,
+   "160": 3.64,
+   "227": 4.6
+  },
+  "time_system": "BJD_TDB, target-barycentred (TESScut TIME - TIMECORR + Roemer delay to the M3V; phot p00 / referee_phot r02 / referee3_clean q01 agree to < 0.6 s)",
+  "epoch_numbering": "epoch 0 = the transit at BTJD 3840.915 (2025-06-14, in Sector 93); phase-1 numbering used in every analysis folder",
+  "T14_h": 1.7,
+  "planning_window": "T14 + 2 x 3 sigma + 2 x 1.5 h baseline",
+  "source": "referee3_clean/README.md (item 4), referee3_clean/out/q05_timing.json, referee3_clean/out/q05b_eph_variants.json"
+ },
+ "why_this_one": [
+  "clean/ adopted the combined INV+REF fit T0 = 2460840.91488 +- 0.00093, P = 5.6915020 +- 0.0000078 d (clean/out/ephemeris_final.json).",
+  "referee3_clean re-measured the per-transit times (reproduced to 0.1 min rms) but found that P moves by about 1 sigma with the timing-error model: with sector-uniform light-curve-level injection-calibrated errors the combined fit gives P = 5.6915097-5.6915111 and T0 = 3840.91500-3840.91510 BTJD_TDB (q05_timing.json comb_ind / comb_cor); global MCMC fits give P = 5.6915045-5.6915067.",
+  "The 2027 predictions of the clean and referee fits differ by +1.5 to +2.2 min, comparable to their quoted 1 sigma (clean 1.9-2.5 min; referee 2.6-3.5 min). referee3_followup adds that the INV, REF and phase-1 ephemerides differ from the clean one by up to 2.2 min over 2026-2028 (pipeline systematic of about 1 min).",
+  "The adopted values sit between the clean and referee solutions with errors that cover both; 1 sigma is about 3 min in 2027, so +-10 min windows are about 3 sigma.",
+  "Difference adopted minus clean combined: +0.17 min at epoch 0, +0.9 min at epoch 130 (mid-2027), +1.5 min at epoch 227 (end of 2028)."
+ ],
+ "alternatives": {
+  "clean_combined": {
+   "T0_epoch0_BJD_TDB": 2460840.9148825607,
+   "T0_epoch0_err_d": 0.0009337590129310506,
+   "P_d": 5.691502042902054,
+   "P_err_d": 7.848648289909448e-06,
+   "reference_epoch": -26,
+   "T0_ref_BJD_TDB": 2460692.9358294453,
+   "T0_ref_err_d": 0.000911598189874706,
+   "cov_T0ref_P": [
+    [
+     8.310112597828406e-07,
+     -1.4381361893671132e-11
+    ],
+    [
+     -1.4381361893671132e-11,
+     6.160127997869851e-11
+    ]
+   ],
+   "chi2": 15.874576454209636,
+   "dof": 19
+  },
+  "clean_INV": {
+   "T0_epoch0_BJD_TDB": 2460840.9142501988,
+   "T0_epoch0_err_d": 0.00139556234666718,
+   "P_d": 5.691510643180969,
+   "P_err_d": 1.5072718058342533e-05,
+   "reference_epoch": 2,
+   "T0_ref_BJD_TDB": 2460852.297271485,
+   "T0_ref_err_d": 0.0013951575222375377,
+   "cov_T0ref_P": [
+    [
+     1.9464645118559857e-06,
+     -5.525106513882164e-11
+    ],
+    [
+     -5.525106513882165e-11,
+     2.2718682966628508e-10
+    ]
+   ],
+   "chi2": 9.87523359627956,
+   "dof": 16
+  },
+  "clean_REF": {
+   "T0_epoch0_BJD_TDB": 2460840.914757365,
+   "T0_epoch0_err_d": 0.0009627982053663115,
+   "P_d": 5.691499745084439,
+   "P_err_d": 7.901388613057367e-06,
+   "reference_epoch": -34,
+   "T0_ref_BJD_TDB": 2460647.403766032,
+   "T0_ref_err_d": 0.0009235505437022643,
+   "cov_T0ref_P": [
+    [
+     8.52945606772748e-07,
+     2.7403713456165866e-11
+    ],
+    [
+     2.7403713456165866e-11,
+     6.243194201455263e-11
+    ]
+   ],
+   "chi2": 15.379762857029508,
+   "dof": 19
+  },
+  "referee3_comb_cor": {
+   "T0_epoch0_BJD_TDB": 2460840.9150003716,
+   "T0_epoch0_err_d": 0.0015594767920647375,
+   "P_d": 5.691511134118224,
+   "P_err_d": 1.0819632265391538e-05,
+   "corr_epoch0": 0.34542717478295437,
+   "reference_epoch": 0,
+   "T0_ref_BJD_TDB": 2460840.9150003716,
+   "cov_T0ref_P": [
+    [
+     2.431967864988525e-06,
+     5.828380774050371e-09
+    ],
+    [
+     5.828380774050371e-09,
+     1.1706444235830163e-10
+    ]
+   ],
+   "chi2": 10.103344032301928,
+   "dof": 19,
+   "sigma_2027_min_E100_130_160": [
+    3.1444431806277113,
+    3.5053681760311814,
+    3.889039710864591
+   ]
+  },
+  "referee3_comb_ind": {
+   "T0_epoch0_BJD_TDB": 2460840.91509784,
+   "T0_epoch0_err_d": 0.0011608174246832857,
+   "P_d": 5.691509682518182,
+   "P_err_d": 8.034336285169565e-06,
+   "corr_epoch0": 0.37654117249999647,
+   "reference_epoch": 0,
+   "T0_ref_BJD_TDB": 2460840.91509784,
+   "cov_T0ref_P": [
+    [
+     1.3474970934483356e-06,
+     3.5117726707829635e-09
+    ],
+    [
+     3.5117726707829635e-09,
+     6.455055954319229e-11
+    ]
+   ],
+   "chi2": 17.841412599776426,
+   "dof": 19,
+   "sigma_2027_min_E100_130_160": [
+    2.364126210186168,
+    2.636207981960417,
+    2.9242137375879675
+   ]
+  },
+  "referee3_INV": {
+   "T0_epoch0_BJD_TDB": 2460840.914157716,
+   "T0_epoch0_err_d": 0.0021611040364753337,
+   "P_d": 5.691507556266611,
+   "P_err_d": 1.337741762613252e-05,
+   "corr_epoch0": 0.5630284084153218,
+   "reference_epoch": 0,
+   "T0_ref_BJD_TDB": 2460840.914157716,
+   "cov_T0ref_P": [
+    [
+     4.67037065646998e-06,
+     1.6277146349218857e-08
+    ],
+    [
+     1.6277146349218857e-08,
+     1.7895530234396102e-10
+    ]
+   ],
+   "chi2": 8.875637228430566,
+   "dof": 17,
+   "sigma_2027_min_E100_130_160": [
+    4.488402374632712,
+    4.973063155629738,
+    5.475847469574753
+   ]
+  },
+  "referee3_REF": {
+   "T0_epoch0_BJD_TDB": 2460840.915516914,
+   "T0_epoch0_err_d": 0.0013915247496041577,
+   "P_d": 5.691509515771591,
+   "P_err_d": 1.0399382478136146e-05,
+   "corr_epoch0": 0.2512171727556147,
+   "reference_epoch": 0,
+   "T0_ref_BJD_TDB": 2460840.915516914,
+   "cov_T0ref_P": [
+    [
+     1.936341128760914e-06,
+     3.635363229364132e-09
+    ],
+    [
+     3.635363229364132e-09,
+     1.081471559265651e-10
+    ]
+   ],
+   "chi2": 12.580782139550829,
+   "dof": 19,
+   "sigma_2027_min_E100_130_160": [
+    2.7866456948047373,
+    3.124907003955588,
+    3.488316275070308
+   ]
+  },
+  "phase1_phot_global": {
+   "T0_epoch0_BJD_TDB": 2460840.91414,
+   "T0_epoch0_err_d": 0.00134,
+   "P_d": 5.6915087,
+   "P_err_d": 9e-06,
+   "source": "phot/out/transits.json (phot/README.md)"
+  },
+  "phase1_phot_timing": {
+   "T0_epoch0_BJD_TDB": 2460840.91272,
+   "T0_epoch0_err_d": 0.00175,
+   "P_d": 5.6915092,
+   "P_err_d": 1.22e-05,
+   "source": "phot/out/timing.json"
+  },
+  "phase1_referee_phot": {
+   "T0_epoch0_BJD_TDB": 2460840.91564,
+   "T0_epoch0_err_d": 0.00118,
+   "P_d": 5.6915051,
+   "P_err_d": 9.2e-06,
+   "source": "referee_phot/out/oddeven_timing.json (README)"
+  },
+  "phase2_shape": {
+   "T0_epoch0_BJD_TDB": 2460840.9155,
+   "T0_epoch0_err_d": 0.0015,
+   "P_d": 5.691508,
+   "P_err_d": 9e-06,
+   "source": "shape/out/final_params.json"
+  },
+  "repo_vetting_v2_SUPERSEDED": {
+   "T0_epoch0_BJD_TDB": 2460840.9153,
+   "T0_epoch0_err_d": 0.0019,
+   "P_d": 5.6914968,
+   "P_err_d": 1.45e-05,
+   "source": "tess-search/vetting_2026-10-16/results/214311906/ephemeris_v2.json (13 QLP transits, errors scaled by chi2/dof 53.4/11)",
+   "note": "used for the repo's predicted_transits_2027.csv; its P is 0.8 sigma (adopted errors) shorter than adopted; its mid-2027 (epoch 130) mid-time is 1.3 min earlier than adopted"
+  },
+  "repo_findings_first_SUPERSEDED": {
+   "T0_epoch0_BJD_TDB": 2460840.9101,
+   "T0_epoch0_err_d": 0.0022,
+   "P_d": 5.691471,
+   "P_err_d": 1.8e-05,
+   "source": "tess-search/FINDINGS.md line 440 (14 events, uncorrected QLP S103/S104 time stamps)"
+  }
+ }
+}

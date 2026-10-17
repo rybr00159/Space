@@ -1,0 +1,313 @@
+{
+ "n_pointings_parsed": 38,
+ "pointing_comparison_max_diff_deg": 0.004900000000020555,
+ "pointings_105_134": {
+  "105": {
+   "field": "Southern ecliptic pole",
+   "ra": 2.5764,
+   "dec": -50.5513,
+   "roll": 282.7413,
+   "start": "2026 Jun 13",
+   "stop": "2026 Jul 11"
+  },
+  "106": {
+   "field": "Southern ecliptic pole",
+   "ra": 25.0148,
+   "dec": -40.1221,
+   "roll": 279.1045,
+   "start": "2026 Jul 11",
+   "stop": "2026 Aug 09"
+  },
+  "107": {
+   "field": "Southern ecliptic pole",
+   "ra": 45.8709,
+   "dec": -31.2349,
+   "roll": 271.3363,
+   "start": "2026 Aug 09",
+   "stop": "2026 Sep 07"
+  },
+  "108": {
+   "field": "Southern hemisphere",
+   "ra": 66.27,
+   "dec": -25.18,
+   "roll": 261.16,
+   "start": "2026 Sep 07",
+   "stop": "2026 Oct 05"
+  },
+  "109": {
+   "field": "Southern hemisphere",
+   "ra": 86.38,
+   "dec": -22.67,
+   "roll": 249.9,
+   "start": "2026 Oct 05",
+   "stop": "2026 Oct 31"
+  },
+  "110": {
+   "field": "Southern hemisphere",
+   "ra": 106.07,
+   "dec": -23.79,
+   "roll": 238.7,
+   "start": "2026 Oct 31",
+   "stop": "2026 Nov 26"
+  },
+  "111": {
+   "field": "Southern hemisphere",
+   "ra": 125.46,
+   "dec": -28.27,
+   "roll": 228.41,
+   "start": "2026 Nov 26",
+   "stop": "2026 Dec 22"
+  },
+  "112": {
+   "field": "Southern hemisphere",
+   "ra": 145.16,
+   "dec": -35.69,
+   "roll": 219.77,
+   "start": "2026 Dec 22",
+   "stop": "2027 Jan 17"
+  },
+  "113": {
+   "field": "Southern hemisphere",
+   "ra": 166.48,
+   "dec": -45.53,
+   "roll": 213.97,
+   "start": "2027 Jan 17",
+   "stop": "2027 Feb 13"
+  },
+  "114": {
+   "field": "Southern hemisphere",
+   "ra": 192.22,
+   "dec": -56.62,
+   "roll": 213.77,
+   "start": "2027 Feb 13",
+   "stop": "2027 Mar 14"
+  },
+  "115": {
+   "field": "Ecliptic",
+   "ra": 219.65,
+   "dec": -16.06,
+   "roll": 251.35,
+   "start": "2027 Mar 14",
+   "stop": "2027 Apr 12"
+  },
+  "116": {
+   "field": "Ecliptic",
+   "ra": 288.16,
+   "dec": -23.34,
+   "roll": 276.79,
+   "start": "2027 Apr 12",
+   "stop": "2027 May 10"
+  },
+  "117": {
+   "field": "Northern hemisphere",
+   "ra": 251.56,
+   "dec": 32.28,
+   "roll": 347.64,
+   "start": "2027 May 10",
+   "stop": "2027 Jun 07"
+  },
+  "118": {
+   "field": "Northern hemisphere",
+   "ra": 269.06,
+   "dec": 30.57,
+   "roll": 359.36,
+   "start": "2027 Jun 07",
+   "stop": "2027 Jul 03"
+  },
+  "119": {
+   "field": "Northern hemisphere",
+   "ra": 274.19,
+   "dec": 61.9,
+   "roll": 19.43,
+   "start": "2027 Jul 03",
+   "stop": "2027 Jul 29"
+  },
+  "120": {
+   "field": "Northern hemisphere",
+   "ra": 278.15,
+   "dec": 62.96,
+   "roll": 40.31,
+   "start": "2027 Jul 29",
+   "stop": "2027 Aug 23"
+  },
+  "121": {
+   "field": "Northern hemisphere",
+   "ra": 281.23,
+   "dec": 64.67,
+   "roll": 62.67,
+   "start": "2027 Aug 23",
+   "stop": "2027 Sep 19"
+  },
+  "122": {
+   "field": "Northern hemisphere",
+   "ra": 282.65,
+   "dec": 66.88,
+   "roll": 87.81,
+   "start": "2027 Sep 19",
+   "stop": "2027 Oct 17"
+  },
+  "123": {
+   "field": "Northern hemisphere",
+   "ra": 281.25,
+   "dec": 69.25,
+   "roll": 117.08,
+   "start": "2027 Oct 17",
+   "stop": "2027 Nov 15"
+  },
+  "124": {
+   "field": "Northern hemisphere",
+   "ra": 276.07,
+   "dec": 71.06,
+   "roll": 151.14,
+   "start": "2027 Nov 15",
+   "stop": "2027 Dec 14"
+  },
+  "125": {
+   "field": "Northern hemisphere",
+   "ra": 268.28,
+   "dec": 71.53,
+   "roll": 187.86,
+   "start": "2027 Dec 14",
+   "stop": "2028 Jan 11"
+  },
+  "126": {
+   "field": "Northern hemisphere",
+   "ra": 261.5,
+   "dec": 70.49,
+   "roll": 222.43,
+   "start": "2028 Jan 11",
+   "stop": "2028 Feb 07"
+  },
+  "127": {
+   "field": "Northern hemisphere",
+   "ra": 257.95,
+   "dec": 68.55,
+   "roll": 252.29,
+   "start": "2028 Feb 07",
+   "stop": "2028 Mar 04"
+  },
+  "128": {
+   "field": "Northern hemisphere",
+   "ra": 257.48,
+   "dec": 66.33,
+   "roll": 278.36,
+   "start": "2028 Mar 04",
+   "stop": "2028 Mar 30"
+  },
+  "129": {
+   "field": "Northern hemisphere",
+   "ra": 259.32,
+   "dec": 64.26,
+   "roll": 302.21,
+   "start": "2028 Mar 30",
+   "stop": "2028 Apr 25"
+  },
+  "130": {
+   "field": "Northern hemisphere",
+   "ra": 241.73,
+   "dec": 34.57,
+   "roll": 341.3,
+   "start": "2028 Apr 25",
+   "stop": "2028 May 22"
+  },
+  "131": {
+   "field": "Northern hemisphere",
+   "ra": 259.74,
+   "dec": 31.1,
+   "roll": 353.07,
+   "start": "2028 May 22",
+   "stop": "2028 Jun 19"
+  },
+  "132": {
+   "field": "Northern hemisphere",
+   "ra": 278.24,
+   "dec": 30.91,
+   "roll": 5.56,
+   "start": "2028 Jun 19",
+   "stop": "2028 Jul 18"
+  },
+  "133": {
+   "field": "Ecliptic",
+   "ra": 236.48,
+   "dec": -18.9,
+   "roll": 76.99,
+   "start": "2028 Jul 18",
+   "stop": "2028 Aug 16"
+  },
+  "134": {
+   "field": "Ecliptic",
+   "ra": 314.21,
+   "dec": -16.82,
+   "roll": 105.19,
+   "start": "2028 Aug 16",
+   "stop": "2028 Sep 13"
+  }
+ },
+ "on_silicon_with_heasarc_pointings": {
+  "Mira": [
+   {
+    "sector": 103,
+    "camera": 2,
+    "ccd": 3,
+    "col": 846.2286802677872,
+    "row": 151.51537592645053
+   },
+   {
+    "sector": 104,
+    "camera": 1,
+    "ccd": 4,
+    "col": 1321.3516281752543,
+    "row": 1474.7722098902402
+   }
+  ],
+  "M3V": [
+   {
+    "sector": 103,
+    "camera": 2,
+    "ccd": 3,
+    "col": 846.8053981595971,
+    "row": 150.8412035616479
+   },
+   {
+    "sector": 104,
+    "camera": 1,
+    "ccd": 4,
+    "col": 1322.0674830814532,
+    "row": 1474.2605078079107
+   }
+  ]
+ },
+ "closest_camera_centre_deg_105_134": {
+  "105": 31.7,
+  "106": 55.4,
+  "107": 78.6,
+  "108": 99.7,
+  "109": 89.7,
+  "110": 75.1,
+  "111": 58.4,
+  "112": 40.6,
+  "113": 24.3,
+  "114": 20.6,
+  "115": 27.6,
+  "116": 29.2,
+  "117": 50.2,
+  "118": 46.3,
+  "119": 81.5,
+  "120": 90.9,
+  "121": 104.3,
+  "122": 106.2,
+  "123": 95.1,
+  "124": 88.2,
+  "125": 87.7,
+  "126": 93.4,
+  "127": 103.3,
+  "128": 108.8,
+  "129": 94.4,
+  "130": 57.3,
+  "131": 46.8,
+  "132": 49.4,
+  "133": 30.5,
+  "134": 31.3
+ },
+ "note": "A camera's field is 24x24 deg, so a target more than ~17 deg from every camera centre cannot be on silicon."
+}

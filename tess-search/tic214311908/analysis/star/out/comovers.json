@@ -1,0 +1,43 @@
+{
+ "n_plx_window": 94,
+ "candidates": [
+  {
+   "source_id": 5925373272850784768,
+   "ra": 260.9697,
+   "dec": -51.3238,
+   "parallax": 15.4973,
+   "parallax_error": 0.025100000202655792,
+   "pmra": -113.6712,
+   "pmdec": 85.5436,
+   "pmra_error": 0.031099999323487282,
+   "pmdec_error": 0.02239999920129776,
+   "phot_g_mean_mag": 14.281000137329102,
+   "bp_rp": 2.7560999393463135,
+   "ruwe": 1.076200008392334,
+   "radial_velocity": 16.283700942993164,
+   "radial_velocity_error": 2.217400074005127,
+   "sep": 0.001,
+   "dv_tan_kms": 0.0,
+   "sep_au": 0.0656
+  },
+  {
+   "source_id": 5925373272850782208,
+   "ra": 260.9749,
+   "dec": -51.3241,
+   "parallax": 16.4126,
+   "parallax_error": 0.3928999900817871,
+   "pmra": -112.796,
+   "pmdec": 87.2053,
+   "pmra_error": 0.44119998812675476,
+   "pmdec_error": 0.3228999972343445,
+   "phot_g_mean_mag": 14.654000282287598,
+   "bp_rp": 2.8777999877929688,
+   "ruwe": 13.717000007629395,
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "sep": 11.7275,
+   "dv_tan_kms": 0.5725,
+   "sep_au": 754.2096
+  }
+ ]
+}

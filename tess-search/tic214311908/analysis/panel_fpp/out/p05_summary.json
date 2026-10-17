@@ -1,0 +1,47 @@
+{
+ "n": 1500,
+ "FPP_pct_5_16_50_84_95": [
+  0.00024296626145798306,
+  0.0006488399511895437,
+  0.0021516122380390024,
+  0.006046422644109923,
+  0.011887187502084244
+ ],
+ "frac_FPP_lt_0p015": 0.968,
+ "frac_FPP_lt_0p01": 0.93,
+ "NFPP_pct_5_50_95": [
+  1.6304924272668065e-09,
+  1.1426994775313757e-06,
+  0.0005623764462828117
+ ],
+ "frac_NFPP_lt_1em3": 0.9893333333333333,
+ "FPP_strict_pct_5_50_95": [
+  0.0022199438403005304,
+  0.012732870892152474,
+  0.10617938473504795
+ ],
+ "frac_strict_lt_0p015": 0.5566666666666666,
+ "FPP_system_pct_5_50_95": [
+  5.266226572288098e-05,
+  0.0002964652748200783,
+  0.0028051315921232786
+ ],
+ "FPP_median_by_ds": {
+  "inv_beta": 0.003098700083034034,
+  "inv_white": 0.002776220483660441,
+  "ref_beta": 0.0014299607492032074,
+  "ref_white": 0.0013267730737773764
+ },
+ "FPP_median_by_ipd": {
+  "L_ipd": 0.0018942083184410041,
+  "L_ipd84": 0.0019765193299398076,
+  "L_ipd_far": 0.0036340075857210774,
+  "L_ipd_red": 0.0015283233057508117
+ },
+ "variants_FPP_range": [
+  0.0006312368689206371,
+  0.045420865889712614
+ ],
+ "variants_n_ge_0p015": 6,
+ "method": "p05: sign-fixed re-run of the referee2_fpp prior-dimension variants and joint prior draws (which referee3_bd did not\nre-run: its 64/192 variants vary only light curve x noise x planet e prior x BD e law x f_BD).\nAdopted settings: BD e law Ferreira+26 short-period, f_BD 1.3e-4 (referee3_bd). Outputs: out/p05_variants.csv,\nout/p05_draws.csv, out/p05_summary.json"
+}

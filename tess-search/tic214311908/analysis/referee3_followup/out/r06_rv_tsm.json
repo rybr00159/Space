@@ -1,0 +1,354 @@
+{
+ "CK17": {
+  "M": [
+   13.29,
+   16.6,
+   21.34,
+   28.29,
+   38.78
+  ],
+  "K": [
+   9.21,
+   11.53,
+   14.83,
+   19.67,
+   26.96
+  ],
+  "N5sig_ESPRESSO_jit5": [
+   5,
+   9,
+   14
+  ],
+  "N5sig_ESPRESSO_jit10": [
+   15,
+   26,
+   42
+  ],
+  "N5sig_ESPRESSO_jit15": [
+   31,
+   54,
+   90
+  ],
+  "N5sig_NIRPS+HARPS_jit5": [
+   9,
+   16,
+   25
+  ],
+  "N5sig_NIRPS+HARPS_jit10": [
+   19,
+   33,
+   54
+  ],
+  "N5sig_NIRPS+HARPS_jit15": [
+   35,
+   61,
+   101
+  ],
+  "N5sig_HARPS_jit5": [
+   14,
+   24,
+   39
+  ],
+  "N5sig_HARPS_jit10": [
+   23,
+   41,
+   67
+  ],
+  "N5sig_HARPS_jit15": [
+   40,
+   69,
+   114
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit5": [
+   22,
+   39,
+   64
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit10": [
+   32,
+   56,
+   92
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit15": [
+   48,
+   84,
+   139
+  ],
+  "N5sig_NIRPS_jit5": [
+   15,
+   27,
+   44
+  ],
+  "N5sig_NIRPS_jit10": [
+   25,
+   44,
+   72
+  ],
+  "N5sig_NIRPS_jit15": [
+   41,
+   72,
+   119
+  ]
+ },
+ "Otegi20": {
+  "M": [
+   16.62,
+   19.05,
+   21.95,
+   25.37,
+   29.33
+  ],
+  "K": [
+   11.51,
+   13.22,
+   15.25,
+   17.65,
+   20.42
+  ],
+  "N5sig_ESPRESSO_jit5": [
+   6,
+   8,
+   11
+  ],
+  "N5sig_ESPRESSO_jit10": [
+   18,
+   25,
+   32
+  ],
+  "N5sig_ESPRESSO_jit15": [
+   38,
+   51,
+   68
+  ],
+  "N5sig_NIRPS+HARPS_jit5": [
+   11,
+   15,
+   19
+  ],
+  "N5sig_NIRPS+HARPS_jit10": [
+   23,
+   31,
+   41
+  ],
+  "N5sig_NIRPS+HARPS_jit15": [
+   43,
+   58,
+   77
+  ],
+  "N5sig_HARPS_jit5": [
+   17,
+   23,
+   30
+  ],
+  "N5sig_HARPS_jit10": [
+   29,
+   39,
+   51
+  ],
+  "N5sig_HARPS_jit15": [
+   49,
+   66,
+   87
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit5": [
+   28,
+   37,
+   49
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit10": [
+   40,
+   53,
+   70
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit15": [
+   60,
+   80,
+   106
+  ],
+  "N5sig_NIRPS_jit5": [
+   19,
+   25,
+   33
+  ],
+  "N5sig_NIRPS_jit10": [
+   31,
+   41,
+   55
+  ],
+  "N5sig_NIRPS_jit15": [
+   51,
+   68,
+   91
+  ]
+ },
+ "empirical": {
+  "M": [
+   6.95,
+   12.01,
+   21.05,
+   36.86,
+   63.48
+  ],
+  "K": [
+   4.82,
+   8.34,
+   14.62,
+   25.62,
+   44.15
+  ],
+  "N5sig_ESPRESSO_jit5": [
+   3,
+   9,
+   27
+  ],
+  "N5sig_ESPRESSO_jit10": [
+   9,
+   27,
+   81
+  ],
+  "N5sig_ESPRESSO_jit15": [
+   19,
+   56,
+   170
+  ],
+  "N5sig_NIRPS+HARPS_jit5": [
+   6,
+   16,
+   48
+  ],
+  "N5sig_NIRPS+HARPS_jit10": [
+   11,
+   33,
+   102
+  ],
+  "N5sig_NIRPS+HARPS_jit15": [
+   21,
+   63,
+   192
+  ],
+  "N5sig_HARPS_jit5": [
+   8,
+   24,
+   74
+  ],
+  "N5sig_HARPS_jit10": [
+   14,
+   42,
+   128
+  ],
+  "N5sig_HARPS_jit15": [
+   24,
+   71,
+   218
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit5": [
+   13,
+   40,
+   122
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit10": [
+   19,
+   58,
+   176
+  ],
+  "N5sig_HARPS (TOI-674 scaling)_jit15": [
+   29,
+   87,
+   266
+  ],
+  "N5sig_NIRPS_jit5": [
+   9,
+   27,
+   83
+  ],
+  "N5sig_NIRPS_jit10": [
+   15,
+   45,
+   137
+  ],
+  "N5sig_NIRPS_jit15": [
+   25,
+   74,
+   227
+  ]
+ },
+ "Teq": [
+  439.38,
+  454.33,
+  470.03,
+  486.03,
+  501.66
+ ],
+ "ESM": [
+  6.59,
+  7.75,
+  9.13,
+  10.71,
+  12.47
+ ],
+ "TSM_CK17": [
+  59.2,
+  81.42,
+  108.26,
+  139.35,
+  174.16
+ ],
+ "TSM_Otegi20": [
+  76.89,
+  90.04,
+  105.28,
+  122.51,
+  141.46
+ ],
+ "TSM_empirical": [
+  37.53,
+  63.63,
+  109.65,
+  188.75,
+  321.39
+ ],
+ "ranking": {
+  "rank_TSM": 9,
+  "rank_ESM": 15,
+  "n_total": 19,
+  "n_missing_teq": 0,
+  "above_by_TSM": [
+   "AU Mic b",
+   "GJ 436 b",
+   "GJ 3470 b",
+   "TOI-3884 b",
+   "TOI-674 b",
+   "TOI-3785 b",
+   "TOI-1883 b",
+   "TOI-1728 b"
+  ],
+  "cooler_than_3400K": [
+   "TOI-3884 b"
+  ]
+ },
+ "empirical_fit": {
+  "n_empirical": 9,
+  "empirical_lnM_at4p9": 3.0509896373920977,
+  "slope": 2.7581453387712545,
+  "scatter_ln": 0.5427020543773472,
+  "planets": [
+   "GJ 436 b",
+   "GJ 3470 b",
+   "AU Mic b",
+   "TOI-674 b",
+   "TOI-3884 b",
+   "TOI-672 b",
+   "TOI-1728 b",
+   "TOI-532 b",
+   "TOI-3785 b"
+  ]
+ },
+ "BD_K_kms": {
+  "13MJ": 2.8073777475747375,
+  "20MJ": 4.269471017705348,
+  "40MJ": 8.270667583380263,
+  "60MJ": 12.033776077395355,
+  "80MJ": 15.584359997489859
+ },
+ "WD0.6_K_kms": 73.01154364191824
+}

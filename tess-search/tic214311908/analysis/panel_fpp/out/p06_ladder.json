@@ -1,0 +1,214 @@
+{
+ "ref_beta": {
+  "BD noRV": {
+   "comp": {
+    "PTP": 0.0008574639123494,
+    "BD": 1.4130600408983248e-05,
+    "WD": 6.531358501895195e-05,
+    "HEB": 7.754936553462196e-06,
+    "BG": 2.9999100026999194e-05,
+    "NTP": 0.0003694500505748
+   },
+   "steps": {
+    "now": 0.0013441121849325965,
+    "Zorro consB": 0.0005775212608911469,
+    "Zorro+two-band empirical g/z s0.05": 4.167860678354426e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0150686834783358e-05,
+    "Zorro+two-band empirical g/z s0.1": 5.264169480688211e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 4.111377485812121e-05,
+    "Zorro+two-band empirical r/z s0.05": 4.227187132389208e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.074395137513118e-05,
+    "Zorro+two-band empirical r/z s0.1": 6.086755555541837e-05,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 4.933963560665747e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 4.175074060518094e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.022282065642004e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 5.191262575725447e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 4.038470580849357e-05
+   }
+  },
+  "BD RVmed (README table)": {
+   "comp": {
+    "PTP": 0.0008574639123494,
+    "BD": 7.968790202058859e-06,
+    "WD": 6.531358501895195e-05,
+    "HEB": 7.754936553462196e-06,
+    "BG": 2.9999100026999194e-05,
+    "NTP": 0.0003694500505748
+   },
+   "steps": {
+    "now": 0.0013379503747256722,
+    "Zorro consB": 0.0005724943793186042,
+    "Zorro+two-band empirical g/z s0.05": 3.665172521100156e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0150686834783358e-05,
+    "Zorro+two-band empirical g/z s0.1": 4.7614813234339416e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 4.111377485812121e-05,
+    "Zorro+two-band empirical r/z s0.05": 3.7244989751349385e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.074395137513118e-05,
+    "Zorro+two-band empirical r/z s0.1": 5.5840673982875675e-05,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 4.933963560665747e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 3.672385903263824e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.022282065642004e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 4.6885744184711775e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 4.038470580849357e-05
+   }
+  },
+  "BD RVmed+shapecal": {
+   "comp": {
+    "PTP": 0.0008574639123494,
+    "BD": 6.029816126524805e-07,
+    "WD": 6.531358501895195e-05,
+    "HEB": 7.754936553462196e-06,
+    "BG": 2.9999100026999194e-05,
+    "NTP": 0.0003694500505748
+   },
+   "steps": {
+    "now": 0.0013305845661362658,
+    "Zorro consB": 0.0005664852608580332,
+    "Zorro+two-band empirical g/z s0.05": 3.064260675043064e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0150686834783358e-05,
+    "Zorro+two-band empirical g/z s0.1": 4.16056947737685e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 4.111377485812121e-05,
+    "Zorro+two-band empirical r/z s0.05": 3.123587129077847e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.074395137513118e-05,
+    "Zorro+two-band empirical r/z s0.1": 4.9831555522304763e-05,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 4.933963560665747e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 3.0714740572067325e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.022282065642004e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 4.0876625724140856e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 4.038470580849357e-05
+   }
+  },
+  "ladder as published (f_BD 1e-3, BD e = planet e)": {
+   "comp": {
+    "PTP": 0.0008574639123494,
+    "BD": 0.0001330172347235,
+    "WD": 6.531358501895195e-05,
+    "HEB": 7.754936553462196e-06,
+    "BG": 2.9999100026999194e-05,
+    "NTP": 0.0003694500505748
+   },
+   "steps": {
+    "now": 0.0014629988192471134,
+    "Zorro consB": 0.000674510459063086,
+    "Zorro+two-band empirical g/z s0.05": 0.00013866780495548335,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0150686834783358e-05,
+    "Zorro+two-band empirical g/z s0.1": 0.00014963089297882122,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 4.111377485812121e-05,
+    "Zorro+two-band empirical r/z s0.05": 0.0001392610694958312,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.074395137513118e-05,
+    "Zorro+two-band empirical r/z s0.1": 0.00015785675372735747,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 4.933963560665747e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 0.00013873993877712003,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.022282065642004e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 0.00014890182392919357,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 4.038470580849357e-05
+   }
+  }
+ },
+ "inv_beta": {
+  "BD noRV": {
+   "comp": {
+    "PTP": 0.0025936262250934,
+    "BD": 4.165066884547607e-05,
+    "WD": 4.299997604979939e-05,
+    "HEB": 5.105554778073016e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0004156477649069
+   },
+   "steps": {
+    "now": 0.0031290292897006478,
+    "Zorro consB": 0.0008355320471398521,
+    "Zorro+two-band empirical g/z s0.05": 6.542956330412835e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0392170732551584e-05,
+    "Zorro+two-band empirical g/z s0.1": 9.518296608592927e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 6.0145573514352505e-05,
+    "Zorro+two-band empirical r/z s0.05": 6.698370172755351e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.1946309155976754e-05,
+    "Zorro+two-band empirical r/z s0.1": 0.00011811689410346822,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 8.307950153189145e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 6.561365703244849e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.057626446087173e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 9.288303182364043e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 5.784563925206366e-05
+   }
+  },
+  "BD RVmed (README table)": {
+   "comp": {
+    "PTP": 0.0025936262250934,
+    "BD": 2.3525092140764436e-05,
+    "WD": 4.299997604979939e-05,
+    "HEB": 5.105554778073016e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0004156477649069
+   },
+   "steps": {
+    "now": 0.003110903712995936,
+    "Zorro consB": 0.0008202844421387097,
+    "Zorro+two-band empirical g/z s0.05": 5.0181958302985915e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0392170732551584e-05,
+    "Zorro+two-band empirical g/z s0.1": 7.993536108478684e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 6.0145573514352505e-05,
+    "Zorro+two-band empirical r/z s0.05": 5.173609672641108e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.1946309155976754e-05,
+    "Zorro+two-band empirical r/z s0.1": 0.00010286928910232579,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 8.307950153189145e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 5.036605203130606e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.057626446087173e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 7.7635426822498e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 5.784563925206366e-05
+   }
+  },
+  "BD RVmed+shapecal": {
+   "comp": {
+    "PTP": 0.0025936262250934,
+    "BD": 6.923521372826261e-06,
+    "WD": 4.299997604979939e-05,
+    "HEB": 5.105554778073016e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0004156477649069
+   },
+   "steps": {
+    "now": 0.0030943021422279978,
+    "Zorro consB": 0.0008063188620310029,
+    "Zorro+two-band empirical g/z s0.05": 3.621637819527914e-05,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0392170732551584e-05,
+    "Zorro+two-band empirical g/z s0.1": 6.596978097708006e-05,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 6.0145573514352505e-05,
+    "Zorro+two-band empirical r/z s0.05": 3.7770516618704304e-05,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.1946309155976754e-05,
+    "Zorro+two-band empirical r/z s0.1": 8.890370899461901e-05,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 8.307950153189145e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 3.640047192359929e-05,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.057626446087173e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 6.366984671479122e-05,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 5.784563925206366e-05
+   }
+  },
+  "ladder as published (f_BD 1e-3, BD e = planet e)": {
+   "comp": {
+    "PTP": 0.0025936262250934,
+    "BD": 0.0005122616657416,
+    "WD": 4.299997604979939e-05,
+    "HEB": 5.105554778073016e-06,
+    "BG": 2.999910002699919e-05,
+    "NTP": 0.0004156477649069
+   },
+   "steps": {
+    "now": 0.003599640286596772,
+    "Zorro consB": 0.0012314196211887754,
+    "Zorro+two-band empirical g/z s0.05": 0.0004613171373530516,
+    "Zorro+two-band empirical g/z s0.05 + BD closed": 3.0392170732551584e-05,
+    "Zorro+two-band empirical g/z s0.1": 0.0004910705401348526,
+    "Zorro+two-band empirical g/z s0.1 + BD closed": 6.0145573514352505e-05,
+    "Zorro+two-band empirical r/z s0.05": 0.00046287127577647675,
+    "Zorro+two-band empirical r/z s0.05 + BD closed": 3.1946309155976754e-05,
+    "Zorro+two-band empirical r/z s0.1": 0.0005140044681523915,
+    "Zorro+two-band empirical r/z s0.1 + BD closed": 8.307950153189145e-05,
+    "Zorro+two-band BT-Settl r/z s0.05": 0.00046150123108137177,
+    "Zorro+two-band BT-Settl r/z s0.05 + BD closed": 3.057626446087173e-05,
+    "Zorro+two-band BT-Settl r/z s0.1": 0.0004887706058725637,
+    "Zorro+two-band BT-Settl r/z s0.1 + BD closed": 5.784563925206366e-05
+   }
+  }
+ }
+}

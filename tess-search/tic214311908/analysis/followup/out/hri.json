@@ -1,0 +1,1471 @@
+{
+ "curves": {
+  "Zorro 832 nm (nominal)": {
+   "band": "I",
+   "points": [
+    [
+     0.017,
+     0.0
+    ],
+    [
+     0.025,
+     2.5
+    ],
+    [
+     0.05,
+     3.8
+    ],
+    [
+     0.1,
+     4.3
+    ],
+    [
+     0.2,
+     4.8
+    ],
+    [
+     0.5,
+     5.2
+    ],
+    [
+     1.2,
+     5.5
+    ]
+   ],
+   "note": "ASSUMED shape from Howell & Furlan 2022 statements"
+  },
+  "Zorro 832 nm (poor seeing)": {
+   "band": "I",
+   "points": [
+    [
+     0.02,
+     0.0
+    ],
+    [
+     0.03,
+     2.0
+    ],
+    [
+     0.05,
+     3.0
+    ],
+    [
+     0.1,
+     3.5
+    ],
+    [
+     0.2,
+     3.8
+    ],
+    [
+     0.5,
+     4.0
+    ],
+    [
+     1.2,
+     4.2
+    ]
+   ],
+   "note": "nominal minus ~1-1.3 mag, larger IWA"
+  },
+  "Zorro 562 nm (nominal)": {
+   "band": "V",
+   "points": [
+    [
+     0.026,
+     0.0
+    ],
+    [
+     0.04,
+     2.0
+    ],
+    [
+     0.1,
+     3.5
+    ],
+    [
+     0.2,
+     4.0
+    ],
+    [
+     0.5,
+     4.5
+    ],
+    [
+     1.2,
+     4.8
+    ]
+   ],
+   "note": "ASSUMED; faint 562-nm targets are often not detected"
+  },
+  "SOAR HRCam I (median of 2684 TOIs)": {
+   "band": "I",
+   "points": [
+    [
+     0.04,
+     0.0
+    ],
+    [
+     0.1,
+     2.04
+    ],
+    [
+     0.2,
+     4.04
+    ],
+    [
+     1.0,
+     4.75
+    ],
+    [
+     1.5,
+     5.28
+    ],
+    [
+     3.0,
+     6.19
+    ]
+   ],
+   "note": "Ziegler+2026 Table 2 median"
+  },
+  "SOAR HRCam I (16th percentile)": {
+   "band": "I",
+   "points": [
+    [
+     0.04,
+     0.0
+    ],
+    [
+     0.1,
+     1.9
+    ],
+    [
+     0.2,
+     3.43
+    ],
+    [
+     1.0,
+     3.95
+    ],
+    [
+     1.5,
+     4.31
+    ],
+    [
+     3.0,
+     4.91
+    ]
+   ],
+   "note": "Ziegler+2026 Table 2 16th pct (fainter target)"
+  },
+  "SOAR HRCam I (faint, pessimistic)": {
+   "band": "I",
+   "points": [
+    [
+     0.06,
+     0.0
+    ],
+    [
+     0.1,
+     1.4
+    ],
+    [
+     0.2,
+     2.9
+    ],
+    [
+     1.0,
+     3.45
+    ],
+    [
+     1.5,
+     3.8
+    ],
+    [
+     3.0,
+     4.4
+    ]
+   ],
+   "note": "16th pct - 0.5 mag, IWA 0.06\""
+  },
+  "VLT/ERIS-NIX Ks LGS (nominal)": {
+   "band": "Ks",
+   "points": [
+    [
+     0.05,
+     0.0
+    ],
+    [
+     0.06,
+     1.5
+    ],
+    [
+     0.1,
+     2.5
+    ],
+    [
+     0.2,
+     4.0
+    ],
+    [
+     0.5,
+     5.5
+    ],
+    [
+     1.0,
+     6.5
+    ],
+    [
+     2.0,
+     7.0
+    ]
+   ],
+   "note": "ASSUMED typical LGS-AO K curve"
+  },
+  "VLT/ERIS-NIX Ks LGS (pessimistic)": {
+   "band": "Ks",
+   "points": [
+    [
+     0.07,
+     0.0
+    ],
+    [
+     0.1,
+     1.5
+    ],
+    [
+     0.2,
+     3.0
+    ],
+    [
+     0.5,
+     4.5
+    ],
+    [
+     1.0,
+     5.5
+    ],
+    [
+     2.0,
+     6.0
+    ]
+   ],
+   "note": "ASSUMED"
+  },
+  "VLT/SPHERE IRDIS (degraded, G=14.3)": {
+   "band": "Ks",
+   "points": [
+    [
+     0.1,
+     0.0
+    ],
+    [
+     0.15,
+     2.0
+    ],
+    [
+     0.3,
+     4.0
+    ],
+    [
+     0.5,
+     5.0
+    ],
+    [
+     1.0,
+     6.0
+    ]
+   ],
+   "note": "ASSUMED; SAXO degraded for G > 12.5"
+  }
+ },
+ "exclusion": [
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "Zorro 832 nm (nominal)",
+   "band": "I",
+   "note": "ASSUMED shape from Howell & Furlan 2022 statements",
+   "excl_PTP": 0.9688796111498686,
+   "excl_BDHEB": 0.9379942626207561,
+   "excl_TPdil": 0.8389789536323675,
+   "excl_config": 0.6876396022217848,
+   "PTP_sep_below_IWA": 0.019208149436465056
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "Zorro 832 nm (poor seeing)",
+   "band": "I",
+   "note": "nominal minus ~1-1.3 mag, larger IWA",
+   "excl_PTP": 0.9520437967234954,
+   "excl_BDHEB": 0.9051219387973015,
+   "excl_TPdil": 0.7192840751184753,
+   "excl_config": 0.5975159227074214,
+   "PTP_sep_below_IWA": 0.029867476374444948
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "Zorro 562 nm (nominal)",
+   "band": "V",
+   "note": "ASSUMED; faint 562-nm targets are often not detected",
+   "excl_PTP": 0.8929881526961861,
+   "excl_BDHEB": 0.6231485471001699,
+   "excl_TPdil": 0.49915550415317494,
+   "excl_config": 0.41994200756813344,
+   "PTP_sep_below_IWA": 0.05026679079397812
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "SOAR HRCam I (median of 2684 TOIs)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 median",
+   "excl_PTP": 0.6538673807006302,
+   "excl_BDHEB": 0.5673284963455687,
+   "excl_TPdil": 0.5635644931963258,
+   "excl_config": 0.41249047746020456,
+   "PTP_sep_below_IWA": 0.11611531748950654
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "SOAR HRCam I (16th percentile)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 16th pct (fainter target)",
+   "excl_PTP": 0.628372436682148,
+   "excl_BDHEB": 0.5408339119150345,
+   "excl_TPdil": 0.48258239123267327,
+   "excl_config": 0.35842236852917814,
+   "PTP_sep_below_IWA": 0.11611531748950654
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "SOAR HRCam I (faint, pessimistic)",
+   "band": "I",
+   "note": "16th pct - 0.5 mag, IWA 0.06\"",
+   "excl_PTP": 0.5044064147942567,
+   "excl_BDHEB": 0.3678154710751505,
+   "excl_TPdil": 0.32624702256960014,
+   "excl_config": 0.21968275199599172,
+   "PTP_sep_below_IWA": 0.2664271831797541
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "VLT/ERIS-NIX Ks LGS (nominal)",
+   "band": "Ks",
+   "note": "ASSUMED typical LGS-AO K curve",
+   "excl_PTP": 0.7665077114712666,
+   "excl_BDHEB": 0.6698015363421724,
+   "excl_TPdil": 0.7595437404317908,
+   "excl_config": 0.5508945146307449,
+   "PTP_sep_below_IWA": 0.18266560297612003
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "VLT/ERIS-NIX Ks LGS (pessimistic)",
+   "band": "Ks",
+   "note": "ASSUMED",
+   "excl_PTP": 0.5141252780462755,
+   "excl_BDHEB": 0.4447944376544297,
+   "excl_TPdil": 0.5752797523785491,
+   "excl_config": 0.360704520022518,
+   "PTP_sep_below_IWA": 0.3650019271377283
+  },
+  {
+   "case": "ref_beta|as_published",
+   "instrument": "VLT/SPHERE IRDIS (degraded, G=14.3)",
+   "band": "Ks",
+   "note": "ASSUMED; SAXO degraded for G > 12.5",
+   "excl_PTP": 0.47208708976165176,
+   "excl_BDHEB": 0.386217648366158,
+   "excl_TPdil": 0.5451012766300659,
+   "excl_config": 0.3247903319140088,
+   "PTP_sep_below_IWA": 0.4997025963595599
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "Zorro 832 nm (nominal)",
+   "band": "I",
+   "note": "ASSUMED shape from Howell & Furlan 2022 statements",
+   "excl_PTP": 0.9691559056758136,
+   "excl_BDHEB": 0.9432761452829199,
+   "excl_TPdil": 0.8394667792309275,
+   "excl_config": 0.6876396022217848,
+   "PTP_sep_below_IWA": 0.01859623171363725
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "Zorro 832 nm (poor seeing)",
+   "band": "I",
+   "note": "nominal minus ~1-1.3 mag, larger IWA",
+   "excl_PTP": 0.9522042341645753,
+   "excl_BDHEB": 0.9096250776698286,
+   "excl_TPdil": 0.7255636524769454,
+   "excl_config": 0.5975159227074214,
+   "PTP_sep_below_IWA": 0.029089109624452467
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "Zorro 562 nm (nominal)",
+   "band": "V",
+   "note": "ASSUMED; faint 562-nm targets are often not detected",
+   "excl_PTP": 0.8858515697596415,
+   "excl_BDHEB": 0.5845941263538107,
+   "excl_TPdil": 0.5159431736590238,
+   "excl_config": 0.41994200756813344,
+   "PTP_sep_below_IWA": 0.048679378245245396
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "SOAR HRCam I (median of 2684 TOIs)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 median",
+   "excl_PTP": 0.6460017148686039,
+   "excl_BDHEB": 0.5776776725097874,
+   "excl_TPdil": 0.5673849882467344,
+   "excl_config": 0.41249047746020456,
+   "PTP_sep_below_IWA": 0.11399164314824457
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "SOAR HRCam I (16th percentile)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 16th pct (fainter target)",
+   "excl_PTP": 0.6217047459118366,
+   "excl_BDHEB": 0.5489365005579979,
+   "excl_TPdil": 0.4909434914885052,
+   "excl_config": 0.35842236852917814,
+   "PTP_sep_below_IWA": 0.11399164314824457
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "SOAR HRCam I (faint, pessimistic)",
+   "band": "I",
+   "note": "16th pct - 0.5 mag, IWA 0.06\"",
+   "excl_PTP": 0.5085095327731048,
+   "excl_BDHEB": 0.358221002465934,
+   "excl_TPdil": 0.33120466824390804,
+   "excl_config": 0.21968275199599172,
+   "PTP_sep_below_IWA": 0.26181760704213686
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "VLT/ERIS-NIX Ks LGS (nominal)",
+   "band": "Ks",
+   "note": "ASSUMED typical LGS-AO K curve",
+   "excl_PTP": 0.7680862231112285,
+   "excl_BDHEB": 0.6880024965495474,
+   "excl_TPdil": 0.747894883164477,
+   "excl_config": 0.5508945146307449,
+   "PTP_sep_below_IWA": 0.17893357605814827
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "VLT/ERIS-NIX Ks LGS (pessimistic)",
+   "band": "Ks",
+   "note": "ASSUMED",
+   "excl_PTP": 0.5213510864913076,
+   "excl_BDHEB": 0.4663127462966738,
+   "excl_TPdil": 0.5613361228018471,
+   "excl_config": 0.360704520022518,
+   "PTP_sep_below_IWA": 0.3582767861682924
+  },
+  {
+   "case": "inv_beta|as_published",
+   "instrument": "VLT/SPHERE IRDIS (degraded, G=14.3)",
+   "band": "Ks",
+   "note": "ASSUMED; SAXO degraded for G > 12.5",
+   "excl_PTP": 0.4777038125782401,
+   "excl_BDHEB": 0.41061285458306424,
+   "excl_TPdil": 0.5284412772419291,
+   "excl_config": 0.3247903319140088,
+   "PTP_sep_below_IWA": 0.49126683300455143
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "Zorro 832 nm (nominal)",
+   "band": "I",
+   "note": "ASSUMED shape from Howell & Furlan 2022 statements",
+   "excl_PTP": 0.9688595088124938,
+   "excl_BDHEB": 0.9522519089065576,
+   "excl_TPdil": 0.8329211064280752,
+   "excl_config": 0.6876396022217848,
+   "PTP_sep_below_IWA": 0.01937460579124598
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "Zorro 832 nm (poor seeing)",
+   "band": "I",
+   "note": "nominal minus ~1-1.3 mag, larger IWA",
+   "excl_PTP": 0.9521380026633154,
+   "excl_BDHEB": 0.9152699574694851,
+   "excl_TPdil": 0.7062287021342373,
+   "excl_config": 0.5975159227074214,
+   "PTP_sep_below_IWA": 0.03003050683708084
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "Zorro 562 nm (nominal)",
+   "band": "V",
+   "note": "ASSUMED; faint 562-nm targets are often not detected",
+   "excl_PTP": 0.894947695592669,
+   "excl_BDHEB": 0.5597205235532879,
+   "excl_TPdil": 0.4775118722373041,
+   "excl_config": 0.41994200756813344,
+   "PTP_sep_below_IWA": 0.050714684759139594
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "SOAR HRCam I (median of 2684 TOIs)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 median",
+   "excl_PTP": 0.6567783752676019,
+   "excl_BDHEB": 0.5693225869866847,
+   "excl_TPdil": 0.5574062529459727,
+   "excl_config": 0.41249047746020456,
+   "PTP_sep_below_IWA": 0.11679453698309838
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "SOAR HRCam I (16th percentile)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 16th pct (fainter target)",
+   "excl_PTP": 0.6314839189970892,
+   "excl_BDHEB": 0.5380522855082783,
+   "excl_TPdil": 0.47179398427774943,
+   "excl_config": 0.35842236852917814,
+   "PTP_sep_below_IWA": 0.11679453698309838
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "SOAR HRCam I (faint, pessimistic)",
+   "band": "I",
+   "note": "16th pct - 0.5 mag, IWA 0.06\"",
+   "excl_PTP": 0.5036735810451008,
+   "excl_BDHEB": 0.3680267679381112,
+   "excl_TPdil": 0.31653958114685826,
+   "excl_config": 0.21968275199599172,
+   "PTP_sep_below_IWA": 0.26771588574897276
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "VLT/ERIS-NIX Ks LGS (nominal)",
+   "band": "Ks",
+   "note": "ASSUMED typical LGS-AO K curve",
+   "excl_PTP": 0.76627143197303,
+   "excl_BDHEB": 0.6937354419801465,
+   "excl_TPdil": 0.7661688039250738,
+   "excl_config": 0.5508945146307449,
+   "PTP_sep_below_IWA": 0.18376814309039488
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "VLT/ERIS-NIX Ks LGS (pessimistic)",
+   "band": "Ks",
+   "note": "ASSUMED",
+   "excl_PTP": 0.5125569686209654,
+   "excl_BDHEB": 0.4846698325118607,
+   "excl_TPdil": 0.5844387437869073,
+   "excl_config": 0.360704520022518,
+   "PTP_sep_below_IWA": 0.3667237917141609
+  },
+  {
+   "case": "ref_beta|signfixed",
+   "instrument": "VLT/SPHERE IRDIS (degraded, G=14.3)",
+   "band": "Ks",
+   "note": "ASSUMED; SAXO degraded for G > 12.5",
+   "excl_PTP": 0.4710926757615519,
+   "excl_BDHEB": 0.4308323886679925,
+   "excl_TPdil": 0.5565215020399449,
+   "excl_config": 0.3247903319140088,
+   "PTP_sep_below_IWA": 0.5016277284493429
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "Zorro 832 nm (nominal)",
+   "band": "I",
+   "note": "ASSUMED shape from Howell & Furlan 2022 statements",
+   "excl_PTP": 0.9691375617772202,
+   "excl_BDHEB": 0.9538424370437534,
+   "excl_TPdil": 0.8358145616868956,
+   "excl_config": 0.6876396022217848,
+   "PTP_sep_below_IWA": 0.01881961296931967
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "Zorro 832 nm (poor seeing)",
+   "band": "I",
+   "note": "nominal minus ~1-1.3 mag, larger IWA",
+   "excl_PTP": 0.9523224213791079,
+   "excl_BDHEB": 0.9173887785409448,
+   "excl_TPdil": 0.7166401149315131,
+   "excl_config": 0.5975159227074214,
+   "PTP_sep_below_IWA": 0.029335011958023703
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "Zorro 562 nm (nominal)",
+   "band": "V",
+   "note": "ASSUMED; faint 562-nm targets are often not detected",
+   "excl_PTP": 0.8893515228858492,
+   "excl_BDHEB": 0.5287279653590492,
+   "excl_TPdil": 0.49988462221255264,
+   "excl_config": 0.41994200756813344,
+   "PTP_sep_below_IWA": 0.049311759303870085
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "SOAR HRCam I (median of 2684 TOIs)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 median",
+   "excl_PTP": 0.6500671666863875,
+   "excl_BDHEB": 0.5828911344060165,
+   "excl_TPdil": 0.5629599747090782,
+   "excl_config": 0.41249047746020456,
+   "PTP_sep_below_IWA": 0.11496652637431479
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "SOAR HRCam I (16th percentile)",
+   "band": "I",
+   "note": "Ziegler+2026 Table 2 16th pct (fainter target)",
+   "excl_PTP": 0.6257320640958287,
+   "excl_BDHEB": 0.550317041063783,
+   "excl_TPdil": 0.4828927984452028,
+   "excl_config": 0.35842236852917814,
+   "PTP_sep_below_IWA": 0.11496652637431479
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "SOAR HRCam I (faint, pessimistic)",
+   "band": "I",
+   "note": "16th pct - 0.5 mag, IWA 0.06\"",
+   "excl_PTP": 0.5070307898656446,
+   "excl_BDHEB": 0.35477053647996126,
+   "excl_TPdil": 0.32454890560487254,
+   "excl_config": 0.21968275199599172,
+   "PTP_sep_below_IWA": 0.2639167424745234
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "VLT/ERIS-NIX Ks LGS (nominal)",
+   "band": "Ks",
+   "note": "ASSUMED typical LGS-AO K curve",
+   "excl_PTP": 0.7676786660153015,
+   "excl_BDHEB": 0.7100817570027753,
+   "excl_TPdil": 0.7541486213709692,
+   "excl_config": 0.5508945146307449,
+   "PTP_sep_below_IWA": 0.18067676382372988
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "VLT/ERIS-NIX Ks LGS (pessimistic)",
+   "band": "Ks",
+   "note": "ASSUMED",
+   "excl_PTP": 0.5184087293669178,
+   "excl_BDHEB": 0.5001826806470676,
+   "excl_TPdil": 0.5695511564426359,
+   "excl_config": 0.360704520022518,
+   "PTP_sep_below_IWA": 0.3612696494621334
+  },
+  {
+   "case": "inv_beta|signfixed",
+   "instrument": "VLT/SPHERE IRDIS (degraded, G=14.3)",
+   "band": "Ks",
+   "note": "ASSUMED; SAXO degraded for G > 12.5",
+   "excl_PTP": 0.4755124728445129,
+   "excl_BDHEB": 0.44838371093785334,
+   "excl_TPdil": 0.5385276872162221,
+   "excl_config": 0.3247903319140088,
+   "PTP_sep_below_IWA": 0.49485579408778013
+  }
+ ],
+ "fpp_steps": [
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "0 none",
+   "FPP": 0.0031313362545921652,
+   "FPP_strict": 0.007966416352478523,
+   "NFPP": 0.0004520787228962731,
+   "PTP": 0.0016214480768836686,
+   "BD": 0.000951852277722947,
+   "WD": 6.789646508946061e-05,
+   "HEB": 8.061611972767147e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "1a speckle Zorro 832 (nominal)",
+   "FPP": 0.0014428598542631788,
+   "FPP_strict": 0.0021920698993841414,
+   "NFPP": 0.0004398319118343981,
+   "PTP": 7.238631342658104e-05,
+   "BD": 0.0008315926707372132,
+   "WD": 6.686104836509461e-05,
+   "HEB": 2.18880987277892e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "1b speckle SOAR HRCam (16th pct)",
+   "FPP": 0.002140941793404183,
+   "FPP_strict": 0.004055930103509353,
+   "NFPP": 0.0004456927394845074,
+   "PTP": 0.0007128144436213774,
+   "BD": 0.0008797177129805247,
+   "WD": 6.749753888642285e-05,
+   "HEB": 5.220258404587029e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "1c AO ERIS Ks (nominal)",
+   "FPP": 0.0017954323824456164,
+   "FPP_strict": 0.003981393001987077,
+   "NFPP": 0.00044014932343037344,
+   "PTP": 0.00040509570925551305,
+   "BD": 0.0008497753074561682,
+   "WD": 6.654812282107052e-05,
+   "HEB": 3.864819455777163e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "1d referee2 generic HRI curve",
+   "FPP": 0.0015090831428655749,
+   "FPP_strict": 0.0026823727635844063,
+   "NFPP": 0.00044122591834238895,
+   "PTP": 0.00012773571188289434,
+   "BD": 0.0008405213042009935,
+   "WD": 6.696207530758389e-05,
+   "HEB": 2.6390331048401126e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "2a two-band 10% + pair resolved",
+   "FPP": 0.00111200195061667,
+   "FPP_strict": 0.005489615543120885,
+   "NFPP": 7.55473824553337e-09,
+   "PTP": 0.00012678844216619002,
+   "BD": 0.0008783268316707423,
+   "WD": 6.872056182385825e-05,
+   "HEB": 8.159460190520232e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "2b two-band 5% + pair resolved",
+   "FPP": 0.0009569541606436749,
+   "FPP_strict": 0.0046483970523920615,
+   "NFPP": 7.580640477896051e-09,
+   "PTP": 9.234704350404715e-07,
+   "BD": 0.0008488803961051412,
+   "WD": 6.89561776589281e-05,
+   "HEB": 8.187435777091197e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "3 Zorro + two-band 5%",
+   "FPP": 0.0009228584855662803,
+   "FPP_strict": 0.001562230040611623,
+   "NFPP": 7.2620076143696615e-09,
+   "PTP": 3.428392286401647e-08,
+   "BD": 0.0008237673220497682,
+   "WD": 6.686168678639316e-05,
+   "HEB": 2.188830772583446e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "3b HRCam(16th) + two-band 5%",
+   "FPP": 0.0009474775406392855,
+   "FPP_strict": 0.002425967864104983,
+   "NFPP": 7.462780013270882e-09,
+   "PTP": 3.36125925384195e-07,
+   "BD": 0.000843388595564754,
+   "WD": 6.845216701581357e-05,
+   "HEB": 5.294089326394306e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "4 Zorro + two-band 5% + low-precision RV (BD/WD channels closed)",
+   "FPP": 3.2232287944466975e-05,
+   "FPP_strict": 0.0006724097205538238,
+   "NFPP": 7.2711608038726224e-09,
+   "PTP": 3.432713505264848e-08,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 2.1915896216394187e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "4b two-band 5% + low-precision RV (no imaging)",
+   "FPP": 3.912118011106802e-05,
+   "FPP_strict": 0.0037320187220489798,
+   "NFPP": 7.58362770550066e-09,
+   "PTP": 9.238343378510108e-07,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 8.19066211848486e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "5 BD prior from ../bd (f_BD 1.3e-4), no follow-up",
+   "FPP": 0.0023146225243352303,
+   "FPP_strict": 0.007172503097847449,
+   "NFPP": 0.0004542105613960923,
+   "PTP": 0.0016290942350872953,
+   "BD": 0.00012500236015358562,
+   "WD": 6.821664007436596e-05,
+   "HEB": 8.099627596824934e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "5b BD prior 1.3e-4 + Zorro + two-band 5%",
+   "FPP": 0.0002062629187519205,
+   "FPP_strict": 0.0008461111323428971,
+   "NFPP": 7.267421521135773e-09,
+   "PTP": 3.430948190661442e-08,
+   "BD": 0.00010712024634013781,
+   "WD": 6.691153291128157e-05,
+   "HEB": 2.190462570064092e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "0 none",
+   "FPP": 0.006609662366788838,
+   "FPP_strict": 0.014021126016566354,
+   "NFPP": 0.00047453796280731025,
+   "PTP": 0.003973803560264488,
+   "BD": 0.0020812520149287228,
+   "WD": 4.47557089695263e-05,
+   "HEB": 5.314019791796521e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "1a speckle Zorro 832 (nominal)",
+   "FPP": 0.002503266217672606,
+   "FPP_strict": 0.0036189171042984025,
+   "NFPP": 0.0004624445977367254,
+   "PTP": 0.00017641134328069192,
+   "BD": 0.0017888200684777942,
+   "WD": 4.4145916658579755e-05,
+   "HEB": 1.4451914917268888e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "1b speckle SOAR HRCam (16th pct)",
+   "FPP": 0.004295573720118129,
+   "FPP_strict": 0.007253966917214694,
+   "NFPP": 0.0004727444930073469,
+   "PTP": 0.0017696480640370879,
+   "BD": 0.001974745199065207,
+   "WD": 4.49596829378698e-05,
+   "HEB": 3.477181043873484e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "1c AO ERIS Ks (nominal)",
+   "FPP": 0.003440831517775522,
+   "FPP_strict": 0.0067801992159278734,
+   "NFPP": 0.0004670650245564344,
+   "PTP": 0.000996508027475214,
+   "BD": 0.0019003376176339047,
+   "WD": 4.434631125241e-05,
+   "HEB": 2.575436830593786e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "1d referee2 generic HRI curve",
+   "FPP": 0.0027105793386228427,
+   "FPP_strict": 0.0044773282022614325,
+   "NFPP": 0.0004660491690729717,
+   "PTP": 0.00030680555122377116,
+   "BD": 0.0018615585600982583,
+   "WD": 4.4416466954062415e-05,
+   "HEB": 1.750491246774905e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "2a two-band 10% + pair resolved",
+   "FPP": 0.002177818164098011,
+   "FPP_strict": 0.008744811029201993,
+   "NFPP": 7.902611371088024e-09,
+   "PTP": 0.00026090430425940116,
+   "BD": 0.001836404798145285,
+   "WD": 4.514215501728326e-05,
+   "HEB": 5.359904037483262e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "2b two-band 5% + pair resolved",
+   "FPP": 0.0019177938357208824,
+   "FPP_strict": 0.007371916652369803,
+   "NFPP": 7.998901426120249e-09,
+   "PTP": 1.8303197425778602e-06,
+   "BD": 0.0018348390112674794,
+   "WD": 4.569219352819753e-05,
+   "HEB": 5.425212254033667e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "3 Zorro + two-band 5%",
+   "FPP": 0.0018236740638348792,
+   "FPP_strict": 0.0027570432819392643,
+   "NFPP": 7.629302419326677e-09,
+   "PTP": 6.78770102413096e-08,
+   "BD": 0.0017480441008025523,
+   "WD": 4.411129848542313e-05,
+   "HEB": 1.4440582070860462e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "3b HRCam(16th) + two-band 5%",
+   "FPP": 0.001883093042978734,
+   "FPP_strict": 0.004059455346226426,
+   "NFPP": 7.843884527567427e-09,
+   "PTP": 6.63923962799829e-07,
+   "BD": 0.0018037461716181276,
+   "WD": 4.518165511826286e-05,
+   "HEB": 3.4943483681848373e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "4 Zorro + two-band 5% + low-precision RV (BD/WD channels closed)",
+   "FPP": 3.152657601035447e-05,
+   "FPP_strict": 0.0009697552894238903,
+   "NFPP": 7.669023634253662e-09,
+   "PTP": 6.82304052392017e-08,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 1.451576554538814e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "4b two-band 5% + low-precision RV (no imaging)",
+   "FPP": 3.72965385621038e-05,
+   "FPP_strict": 0.005516880307963823,
+   "NFPP": 8.036241922132396e-09,
+   "PTP": 1.838864046777622e-06,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 5.450538246409979e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "5 BD prior from ../bd (f_BD 1.3e-4), no follow-up",
+   "FPP": 0.004829364549638893,
+   "FPP_strict": 0.012282394050953105,
+   "NFPP": 0.000477199323024752,
+   "PTP": 0.0039960899178082595,
+   "BD": 0.00027572567301241413,
+   "WD": 4.5006713257255466e-05,
+   "HEB": 5.343822509338696e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "5b BD prior 1.3e-4 + Zorro + two-band 5%",
+   "FPP": 0.00031386891893936397,
+   "FPP_strict": 0.0012548804617550369,
+   "NFPP": 7.691770310144607e-09,
+   "PTP": 6.843277975099118e-08,
+   "BD": 0.00023786533540951144,
+   "WD": 4.44724769557698e-05,
+   "HEB": 1.4558819971859736e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "0 none",
+   "FPP": 0.0014409475164370855,
+   "FPP_strict": 0.004969253693708597,
+   "NFPP": 0.0003704950914456847,
+   "PTP": 0.0008349208570364629,
+   "BD": 0.00013301723472358747,
+   "WD": 6.481901846557194e-05,
+   "HEB": 7.696214738669553e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "1a speckle Zorro 832 (nominal)",
+   "FPP": 0.0005985520124363042,
+   "FPP_strict": 0.0011532319699431026,
+   "NFPP": 0.00035765747011556496,
+   "PTP": 3.697041744766393e-05,
+   "BD": 0.0001085171181207755,
+   "WD": 6.333454298991562e-05,
+   "HEB": 2.0733637352991278e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "NTP_pairA"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "1b speckle SOAR HRCam (16th pct)",
+   "FPP": 0.000946463505063444,
+   "FPP_strict": 0.002344481909690832,
+   "NFPP": 0.0003646451939075836,
+   "PTP": 0.0003649084281496432,
+   "BD": 0.00011760610581801783,
+   "WD": 6.432943950421388e-05,
+   "HEB": 4.975237657173229e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "1c AO ERIS Ks (nominal)",
+   "FPP": 0.0007784269160203694,
+   "FPP_strict": 0.002390087431240362,
+   "NFPP": 0.00036060931694931083,
+   "PTP": 0.00020873838216205177,
+   "BD": 0.00011187903081645291,
+   "WD": 6.35125586942509e-05,
+   "HEB": 3.688527371203484e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "NTP_pairA"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "1d referee2 generic HRI curve",
+   "FPP": 0.0006300296566167374,
+   "FPP_strict": 0.0014946789135866778,
+   "NFPP": 0.0003587924822962219,
+   "PTP": 6.567715806837034e-05,
+   "BD": 0.00010963056791278351,
+   "WD": 6.343049772393566e-05,
+   "HEB": 2.499850588277586e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "NTP_pairA"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "2a two-band 10% + pair resolved",
+   "FPP": 0.0002851857146095593,
+   "FPP_strict": 0.0035058337946977103,
+   "NFPP": 6.158551222575203e-09,
+   "PTP": 6.893888545727278e-05,
+   "BD": 0.00011323540643892109,
+   "WD": 6.525784572537127e-05,
+   "HEB": 7.74831840985352e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "2b two-band 5% + pair resolved",
+   "FPP": 0.00021215634722993038,
+   "FPP_strict": 0.002982642224092169,
+   "NFPP": 6.200512570660566e-09,
+   "PTP": 5.199469515830041e-07,
+   "BD": 0.00010812750740083515,
+   "WD": 6.570248068590314e-05,
+   "HEB": 7.801111651984926e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "3 Zorro + two-band 5%",
+   "FPP": 0.00020192586100020726,
+   "FPP_strict": 0.0006815860352165082,
+   "NFPP": 5.907652159022777e-09,
+   "PTP": 1.9121980740350168e-08,
+   "BD": 0.00010646643861332092,
+   "WD": 6.336106088335452e-05,
+   "HEB": 2.0742318435382843e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "3b HRCam(16th) + two-band 5%",
+   "FPP": 0.00020846570467436543,
+   "FPP_strict": 0.0013114272347898304,
+   "NFPP": 6.06745010680592e-09,
+   "PTP": 1.880259803286462e-07,
+   "BD": 0.00010842797339633764,
+   "WD": 6.483054469716811e-05,
+   "HEB": 5.013993123494798e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "4 Zorro + two-band 5% + low-precision RV (BD/WD channels closed)",
+   "FPP": 3.2098313859640903e-05,
+   "FPP_strict": 0.0005117476019174116,
+   "NFPP": 5.907518081519267e-09,
+   "PTP": 1.912154675619355e-08,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 2.074184767674676e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "4b two-band 5% + low-precision RV (no imaging)",
+   "FPP": 3.833040045597702e-05,
+   "FPP_strict": 0.0028101608253852106,
+   "NFPP": 6.2035217493971154e-09,
+   "PTP": 5.201992877073177e-07,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 7.804897619521818e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "5 BD prior from ../bd (f_BD 1.3e-4), no follow-up",
+   "FPP": 0.0013268572415038316,
+   "FPP_strict": 0.004859153422865026,
+   "NFPP": 0.0003709140678201289,
+   "PTP": 0.0008358650317953348,
+   "BD": 1.748180441432007e-05,
+   "WD": 6.489231940255807e-05,
+   "HEB": 7.704918044658222e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "5b BD prior 1.3e-4 + Zorro + two-band 5%",
+   "FPP": 0.00010935696642599968,
+   "FPP_strict": 0.0005892333373759273,
+   "NFPP": 5.910314908962518e-09,
+   "PTP": 1.913059957092676e-08,
+   "BD": 1.3868039175630096e-05,
+   "WD": 6.338961954871048e-05,
+   "HEB": 2.0751667599090716e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "EB_WD_on_M3V"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "0 none",
+   "FPP": 0.0037555052598727823,
+   "FPP_strict": 0.010199796420380491,
+   "NFPP": 0.00042674774075576684,
+   "PTP": 0.0027370790785706776,
+   "BD": 0.0005122616657416762,
+   "WD": 4.4172859030935174e-05,
+   "HEB": 5.244815746533166e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "1a speckle Zorro 832 (nominal)",
+   "FPP": 0.0010405820337792138,
+   "FPP_strict": 0.0020149034499564733,
+   "NFPP": 0.0004139273931063245,
+   "PTP": 0.00012094363253077911,
+   "BD": 0.0004309249666205284,
+   "WD": 4.336724126320141e-05,
+   "HEB": 1.41970023134779e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "1b speckle SOAR HRCam (16th pct)",
+   "FPP": 0.002185406879044338,
+   "FPP_strict": 0.0047449024358448,
+   "NFPP": 0.00042262387828460955,
+   "PTP": 0.0012077165433726413,
+   "BD": 0.00047754364387085386,
+   "WD": 4.411208560745059e-05,
+   "HEB": 3.411627882071959e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "1c AO ERIS Ks (nominal)",
+   "FPP": 0.0016370012874044049,
+   "FPP_strict": 0.004536888614693035,
+   "NFPP": 0.00041768608710432534,
+   "PTP": 0.0006840182227088591,
+   "BD": 0.00045924533157074037,
+   "WD": 4.3524817851905786e-05,
+   "HEB": 2.5277281418664163e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "1d referee2 generic HRI curve",
+   "FPP": 0.00114885282637045,
+   "FPP_strict": 0.002683365853990871,
+   "NFPP": 0.00041566112085804216,
+   "PTP": 0.000211879528751984,
+   "BD": 0.0004461227244775741,
+   "WD": 4.347689052587758e-05,
+   "HEB": 1.7134617298861656e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "2a two-band 10% + pair resolved",
+   "FPP": 0.0007226831265635392,
+   "FPP_strict": 0.006460349179343905,
+   "NFPP": 7.100904701267607e-09,
+   "PTP": 0.00019901240875443645,
+   "BD": 0.00044386112246696586,
+   "WD": 4.4517641318770036e-05,
+   "HEB": 5.285753091591488e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "2b two-band 5% + pair resolved",
+   "FPP": 0.0005235392286186968,
+   "FPP_strict": 0.005309792445706063,
+   "NFPP": 7.170879643444392e-09,
+   "PTP": 1.4383360444229616e-06,
+   "BD": 0.0004418004461821046,
+   "WD": 4.495633462732432e-05,
+   "HEB": 5.337840858221964e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "3 Zorro + two-band 5%",
+   "FPP": 0.0004962312171404859,
+   "FPP_strict": 0.0013170481183930605,
+   "NFPP": 6.841189618202132e-09,
+   "PTP": 5.321161891494597e-08,
+   "BD": 0.0004213395549035586,
+   "WD": 4.341136471429649e-05,
+   "HEB": 1.4211446873911747e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "3b HRCam(16th) + two-band 5%",
+   "FPP": 0.0005121746522624981,
+   "FPP_strict": 0.00241994773200771,
+   "NFPP": 7.023942189092792e-09,
+   "PTP": 5.209622894215336e-07,
+   "BD": 0.0004338097383966361,
+   "WD": 4.440365013042015e-05,
+   "HEB": 3.434177476866406e-06,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "4 Zorro + two-band 5% + low-precision RV (BD/WD channels closed)",
+   "FPP": 3.1482220925971305e-05,
+   "FPP_strict": 0.0008533649907443985,
+   "NFPP": 6.850073218132949e-09,
+   "PTP": 5.328071665386169e-08,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 1.4229901092477768e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "4b two-band 5% + low-precision RV (no imaging)",
+   "FPP": 3.6788393615649895e-05,
+   "FPP_strict": 0.004827236904330734,
+   "NFPP": 7.177165133222643e-09,
+   "PTP": 1.43959678884407e-06,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 5.342519634860331e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BG_all"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "5 BD prior from ../bd (f_BD 1.3e-4), no follow-up",
+   "FPP": 0.003315888593298899,
+   "FPP_strict": 0.009770607549098975,
+   "NFPP": 0.0004274382803312211,
+   "PTP": 0.0027415080684501636,
+   "BD": 6.74455047665543e-05,
+   "WD": 4.424433710664286e-05,
+   "HEB": 5.253302617096401e-06,
+   "BG": 2.9999100026999188e-05,
+   "dominant": "PTP_companion"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "5b BD prior 1.3e-4 + Zorro + two-band 5%",
+   "FPP": 0.00013187890493093768,
+   "FPP_strict": 0.0009538798516113278,
+   "NFPP": 6.851058176312062e-09,
+   "PTP": 5.3288377780390716e-08,
+   "BD": 5.692248424062441e-05,
+   "WD": 4.3473986509513885e-05,
+   "HEB": 1.4231947181186995e-06,
+   "BG": 2.999910002699919e-05,
+   "dominant": "BD_on_M3V_single"
+  },
+  {
+   "sign": "as_published",
+   "lc": "inv_beta",
+   "step": "6 + precise RV mass on the M3V (K detected at >= 5 sigma)",
+   "FPP": 3.999910002699919e-05,
+   "FPP_strict": NaN,
+   "NFPP": 0.0,
+   "PTP": 0.0,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 0.0,
+   "BG": 2.999910002699919e-05,
+   "dominant": "background (carried 3e-5) + residual twin-host ambiguity"
+  },
+  {
+   "sign": "as_published",
+   "lc": "ref_beta",
+   "step": "6 + precise RV mass on the M3V (K detected at >= 5 sigma)",
+   "FPP": 3.99991000269992e-05,
+   "FPP_strict": NaN,
+   "NFPP": 0.0,
+   "PTP": 0.0,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 0.0,
+   "BG": 2.9999100026999194e-05,
+   "dominant": "background (carried 3e-5) + residual twin-host ambiguity"
+  },
+  {
+   "sign": "fixed",
+   "lc": "inv_beta",
+   "step": "6 + precise RV mass on the M3V (K detected at >= 5 sigma)",
+   "FPP": 3.999910002699919e-05,
+   "FPP_strict": NaN,
+   "NFPP": 0.0,
+   "PTP": 0.0,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 0.0,
+   "BG": 2.999910002699919e-05,
+   "dominant": "background (carried 3e-5) + residual twin-host ambiguity"
+  },
+  {
+   "sign": "fixed",
+   "lc": "ref_beta",
+   "step": "6 + precise RV mass on the M3V (K detected at >= 5 sigma)",
+   "FPP": 3.999910002699919e-05,
+   "FPP_strict": NaN,
+   "NFPP": 0.0,
+   "PTP": 0.0,
+   "BD": 0.0,
+   "WD": 0.0,
+   "HEB": 0.0,
+   "BG": 2.999910002699919e-05,
+   "dominant": "background (carried 3e-5) + residual twin-host ambiguity"
+  }
+ ],
+ "notes": [
+  "excl_PTP = posterior-weighted fraction of the PTP companions that the curve would detect (single epoch)",
+  "sign-fixed rows follow ../bd/b10; BD channel priors in r05 are 1e-3 per star unless step 5 (1.3e-4 from ../bd)",
+  "RV step 6 is bookkeeping: background scenarios are carried at 3e-5 in r05"
+ ]
+}

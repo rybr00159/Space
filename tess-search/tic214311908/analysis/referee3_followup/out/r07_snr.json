@@ -1,0 +1,250 @@
+{
+ "table": [
+  {
+   "telescope": "MuSCAT4 2m FTS",
+   "band": "g",
+   "e_per_s": 2475,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 1.98,
+   "sig_scint_exp_ppt": 0.35,
+   "sig_2min_ppt": 2.01,
+   "white_depth_ppt": 0.53,
+   "SN_red0.5": 20.9,
+   "sdepth_red0.5": 0.729,
+   "SN_red1.0": 13.4,
+   "sdepth_red1.0": 1.132,
+   "SN_red1.5": 9.6,
+   "sdepth_red1.5": 1.591
+  },
+  {
+   "telescope": "MuSCAT4 2m FTS",
+   "band": "r",
+   "e_per_s": 8608,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 1.02,
+   "sig_scint_exp_ppt": 0.35,
+   "sig_2min_ppt": 1.08,
+   "white_depth_ppt": 0.285,
+   "SN_red0.5": 26.4,
+   "sdepth_red0.5": 0.575,
+   "SN_red1.0": 14.6,
+   "sdepth_red1.0": 1.04,
+   "SN_red1.5": 10.0,
+   "sdepth_red1.5": 1.527
+  },
+  {
+   "telescope": "MuSCAT4 2m FTS",
+   "band": "i",
+   "e_per_s": 24666,
+   "t_exp": 44.5,
+   "sig_phot_exp_ppt": 0.98,
+   "sig_scint_exp_ppt": 0.57,
+   "sig_2min_ppt": 0.74,
+   "white_depth_ppt": 0.194,
+   "SN_red0.5": 28.3,
+   "sdepth_red0.5": 0.536,
+   "SN_red1.0": 14.9,
+   "sdepth_red1.0": 1.019,
+   "SN_red1.5": 10.0,
+   "sdepth_red1.5": 1.513
+  },
+  {
+   "telescope": "MuSCAT4 2m FTS",
+   "band": "z",
+   "e_per_s": 22938,
+   "t_exp": 47.8,
+   "sig_phot_exp_ppt": 0.98,
+   "sig_scint_exp_ppt": 0.55,
+   "sig_2min_ppt": 0.75,
+   "white_depth_ppt": 0.199,
+   "SN_red0.5": 28.3,
+   "sdepth_red0.5": 0.538,
+   "SN_red1.0": 14.9,
+   "sdepth_red1.0": 1.02,
+   "SN_red1.5": 10.0,
+   "sdepth_red1.5": 1.513
+  },
+  {
+   "telescope": "LCOGT 1m",
+   "band": "g",
+   "e_per_s": 592,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 4.1,
+   "sig_scint_exp_ppt": 0.49,
+   "sig_2min_ppt": 4.13,
+   "white_depth_ppt": 1.087,
+   "SN_red0.5": 12.7,
+   "sdepth_red0.5": 1.197,
+   "SN_red1.0": 10.3,
+   "sdepth_red1.0": 1.477,
+   "SN_red1.5": 8.2,
+   "sdepth_red1.5": 1.853
+  },
+  {
+   "telescope": "LCOGT 1m",
+   "band": "r",
+   "e_per_s": 2060,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 2.11,
+   "sig_scint_exp_ppt": 0.49,
+   "sig_2min_ppt": 2.16,
+   "white_depth_ppt": 0.57,
+   "SN_red0.5": 20.0,
+   "sdepth_red0.5": 0.758,
+   "SN_red1.0": 13.2,
+   "sdepth_red1.0": 1.151,
+   "SN_red1.5": 9.5,
+   "sdepth_red1.5": 1.605
+  },
+  {
+   "telescope": "LCOGT 1m",
+   "band": "i",
+   "e_per_s": 5903,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 1.22,
+   "sig_scint_exp_ppt": 0.49,
+   "sig_2min_ppt": 1.31,
+   "white_depth_ppt": 0.345,
+   "SN_red0.5": 25.0,
+   "sdepth_red0.5": 0.608,
+   "SN_red1.0": 14.4,
+   "sdepth_red1.0": 1.058,
+   "SN_red1.5": 9.9,
+   "sdepth_red1.5": 1.539
+  },
+  {
+   "telescope": "LCOGT 1m",
+   "band": "z",
+   "e_per_s": 4117,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 1.46,
+   "sig_scint_exp_ppt": 0.49,
+   "sig_2min_ppt": 1.54,
+   "white_depth_ppt": 0.406,
+   "SN_red0.5": 23.6,
+   "sdepth_red0.5": 0.644,
+   "SN_red1.0": 14.1,
+   "sdepth_red1.0": 1.079,
+   "SN_red1.5": 9.8,
+   "sdepth_red1.5": 1.554
+  },
+  {
+   "telescope": "SPECULOOS 1m",
+   "band": "I+z",
+   "e_per_s": 30750,
+   "t_exp": 31.1,
+   "sig_phot_exp_ppt": 1.03,
+   "sig_scint_exp_ppt": 0.91,
+   "sig_2min_ppt": 0.8,
+   "white_depth_ppt": 0.212,
+   "SN_red0.5": 28.0,
+   "sdepth_red0.5": 0.543,
+   "SN_red1.0": 14.9,
+   "sdepth_red1.0": 1.022,
+   "SN_red1.5": 10.0,
+   "sdepth_red1.5": 1.515
+  },
+  {
+   "telescope": "TRAPPIST 0.6m",
+   "band": "I+z",
+   "e_per_s": 7810,
+   "t_exp": 35.8,
+   "sig_phot_exp_ppt": 1.92,
+   "sig_scint_exp_ppt": 1.22,
+   "sig_2min_ppt": 1.34,
+   "white_depth_ppt": 0.354,
+   "SN_red0.5": 24.8,
+   "sdepth_red0.5": 0.612,
+   "SN_red1.0": 14.3,
+   "sdepth_red1.0": 1.061,
+   "SN_red1.5": 9.9,
+   "sdepth_red1.5": 1.541
+  },
+  {
+   "telescope": "TRAPPIST 0.6m",
+   "band": "z",
+   "e_per_s": 2064,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 2.04,
+   "sig_scint_exp_ppt": 0.67,
+   "sig_2min_ppt": 2.15,
+   "white_depth_ppt": 0.566,
+   "SN_red0.5": 20.1,
+   "sdepth_red0.5": 0.755,
+   "SN_red1.0": 13.2,
+   "sdepth_red1.0": 1.149,
+   "SN_red1.5": 9.5,
+   "sdepth_red1.5": 1.603
+  },
+  {
+   "telescope": "amateur 0.4m",
+   "band": "i",
+   "e_per_s": 897,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 3.3,
+   "sig_scint_exp_ppt": 1.11,
+   "sig_2min_ppt": 3.48,
+   "white_depth_ppt": 0.916,
+   "SN_red0.5": 14.6,
+   "sdepth_red0.5": 1.044,
+   "SN_red1.0": 11.2,
+   "sdepth_red1.0": 1.356,
+   "SN_red1.5": 8.6,
+   "sdepth_red1.5": 1.758
+  },
+  {
+   "telescope": "amateur 0.4m",
+   "band": "r",
+   "e_per_s": 268,
+   "t_exp": 120.0,
+   "sig_phot_exp_ppt": 6.38,
+   "sig_scint_exp_ppt": 1.11,
+   "sig_2min_ppt": 6.47,
+   "white_depth_ppt": 1.704,
+   "SN_red0.5": 8.6,
+   "sdepth_red0.5": 1.776,
+   "SN_red1.0": 7.7,
+   "sdepth_red1.0": 1.976,
+   "SN_red1.5": 6.7,
+   "sdepth_red1.5": 2.27
+  }
+ ],
+ "ratio": {
+  "MuSCAT4 r/z red0.5": {
+   "sigma_R_event": 0.052,
+   "events_for_5pct": 1.1
+  },
+  "MuSCAT4 g/z red0.5": {
+   "sigma_R_event": 0.06,
+   "events_for_5pct": 1.4
+  },
+  "LCOGT1m r/z alternating red0.5": {
+   "sigma_R_pair": 0.065,
+   "events_for_5pct": 3.4
+  },
+  "MuSCAT4 r/z red1.0": {
+   "sigma_R_event": 0.096,
+   "events_for_5pct": 3.7
+  },
+  "MuSCAT4 g/z red1.0": {
+   "sigma_R_event": 0.1,
+   "events_for_5pct": 4.0
+  },
+  "LCOGT1m r/z alternating red1.0": {
+   "sigma_R_pair": 0.104,
+   "events_for_5pct": 8.6
+  },
+  "MuSCAT4 r/z red1.5": {
+   "sigma_R_event": 0.141,
+   "events_for_5pct": 8.0
+  },
+  "MuSCAT4 g/z red1.5": {
+   "sigma_R_event": 0.144,
+   "events_for_5pct": 8.3
+  },
+  "LCOGT1m r/z alternating red1.5": {
+   "sigma_R_pair": 0.147,
+   "events_for_5pct": 17.3
+  }
+ }
+}

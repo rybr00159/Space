@@ -1,0 +1,716 @@
+{
+ "plan": [
+  {
+   "priority": 1,
+   "step": "Seeing-limited multi-band transit on the M3V (MuSCAT4 g r i zs at FTS; or LCOGT 1m g/i/zs at CTIO/SAAO/SSO, SPECULOOS/TRAPPIST I+z)",
+   "tests": "signal is real and on the M3V (not a Mira/scene systematic); pair A, 3.1\" and 5.5\" stars resolved; achromaticity (PTP, WD, background EB)",
+   "events": "1-2 (MuSCAT4), 3-5 (1m alternating bands)",
+   "FPP_after_REF_INV_signfixed": [
+    0.00014645386654399685,
+    0.0004785828939912757
+   ]
+  },
+  {
+   "priority": 2,
+   "step": "Speckle imaging Gemini-S/Zorro 832+562 nm (or SOAR/HRCam as a cheaper first look)",
+   "tests": "bound companions >= 0.02\" (PTP 97% excluded with Zorro; 63% with HRCam)",
+   "events": "1 visit",
+   "FPP_after_REF_INV_signfixed": [
+    0.0005985520124363,
+    0.0010405820337792
+   ],
+   "FPP_with_step1": [
+    0.00013856480011684548,
+    0.00045281985242610353
+   ]
+  },
+  {
+   "priority": 3,
+   "step": "2-4 low-precision RV epochs near quadrature (sigma <= 0.5 km/s; FEROS, GHOST, SALT-HRS, HARPS/NIRPS)",
+   "tests": "BD (K 2.8-15.6 km/s) and WD (K ~73 km/s) channels; SB2",
+   "events": "2-4 spectra",
+   "FPP_after_REF_INV_signfixed": [
+    3.2098313859640903e-05,
+    3.1482220925971305e-05
+   ]
+  },
+  {
+   "priority": 4,
+   "step": "Precise RV mass (ESPRESSO; or NIRPS+HARPS in Jun-Nov when |Vsys-BERV| > 10 km/s)",
+   "tests": "planet mass, K ~15 m/s; confirms the host",
+   "events": "9-26 ESPRESSO epochs (jitter 5-10 m/s); 16-33 NIRPS+HARPS",
+   "FPP_after_REF_INV_signfixed": [
+    3.999910002699919e-05,
+    3.999910002699919e-05
+   ]
+  }
+ ],
+ "fpp_now": {
+  "REF_signfixed": 0.001440947516437,
+  "INV_signfixed": 0.0037555052598727,
+  "REF_published": 0.0031313362545921,
+  "INV_published": 0.0066096623667888
+ },
+ "two_band_rejection": [
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.088,
+   "frac_PTP_rejected_3sigma": 0.046
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.0622,
+   "frac_PTP_rejected_3sigma": 0.268
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.0508,
+   "frac_PTP_rejected_3sigma": 0.505
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.044,
+   "frac_PTP_rejected_3sigma": 0.633
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0359,
+   "frac_PTP_rejected_3sigma": 0.809
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/i",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.0311,
+   "frac_PTP_rejected_3sigma": 0.905
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.088,
+   "frac_PTP_rejected_3sigma": 0.251
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.0622,
+   "frac_PTP_rejected_3sigma": 0.631
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.0508,
+   "frac_PTP_rejected_3sigma": 0.815
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.044,
+   "frac_PTP_rejected_3sigma": 0.914
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0359,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "g/z",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.0311,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.08,
+   "frac_PTP_rejected_3sigma": 0.294
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.0566,
+   "frac_PTP_rejected_3sigma": 0.656
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.0462,
+   "frac_PTP_rejected_3sigma": 0.835
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.04,
+   "frac_PTP_rejected_3sigma": 0.933
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0327,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "V/Ic",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.0283,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.064,
+   "frac_PTP_rejected_3sigma": 0.735
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.0453,
+   "frac_PTP_rejected_3sigma": 0.985
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.037,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.032,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0261,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "LCOGT 1m Sinistro",
+   "pair": "r/z",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.0226,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 1,
+   "total_events": 1,
+   "sigma_R": 0.057,
+   "frac_PTP_rejected_3sigma": 0.719
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 2,
+   "total_events": 2,
+   "sigma_R": 0.0403,
+   "frac_PTP_rejected_3sigma": 0.967
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 3,
+   "total_events": 3,
+   "sigma_R": 0.0329,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 4,
+   "total_events": 4,
+   "sigma_R": 0.0285,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 6,
+   "total_events": 6,
+   "sigma_R": 0.0233,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/z",
+   "simultaneous": true,
+   "events_per_band": 8,
+   "total_events": 8,
+   "sigma_R": 0.0202,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 1,
+   "total_events": 1,
+   "sigma_R": 0.057,
+   "frac_PTP_rejected_3sigma": 0.375
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 2,
+   "total_events": 2,
+   "sigma_R": 0.0403,
+   "frac_PTP_rejected_3sigma": 0.717
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 3,
+   "total_events": 3,
+   "sigma_R": 0.0329,
+   "frac_PTP_rejected_3sigma": 0.87
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 4,
+   "total_events": 4,
+   "sigma_R": 0.0285,
+   "frac_PTP_rejected_3sigma": 0.958
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 6,
+   "total_events": 6,
+   "sigma_R": 0.0233,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "g/i",
+   "simultaneous": true,
+   "events_per_band": 8,
+   "total_events": 8,
+   "sigma_R": 0.0202,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 1,
+   "total_events": 1,
+   "sigma_R": 0.05,
+   "frac_PTP_rejected_3sigma": 0.925
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 2,
+   "total_events": 2,
+   "sigma_R": 0.0354,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 3,
+   "total_events": 3,
+   "sigma_R": 0.0289,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 4,
+   "total_events": 4,
+   "sigma_R": 0.025,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 6,
+   "total_events": 6,
+   "sigma_R": 0.0204,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/z",
+   "simultaneous": true,
+   "events_per_band": 8,
+   "total_events": 8,
+   "sigma_R": 0.0177,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 1,
+   "total_events": 1,
+   "sigma_R": 0.05,
+   "frac_PTP_rejected_3sigma": 0.701
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 2,
+   "total_events": 2,
+   "sigma_R": 0.0354,
+   "frac_PTP_rejected_3sigma": 0.956
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 3,
+   "total_events": 3,
+   "sigma_R": 0.0289,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 4,
+   "total_events": 4,
+   "sigma_R": 0.025,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 6,
+   "total_events": 6,
+   "sigma_R": 0.0204,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "FTS 2m MuSCAT4",
+   "pair": "r/i",
+   "simultaneous": true,
+   "events_per_band": 8,
+   "total_events": 8,
+   "sigma_R": 0.0177,
+   "frac_PTP_rejected_3sigma": 1.0
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 1,
+   "total_events": 1,
+   "sigma_R": 0.121,
+   "frac_PTP_rejected_3sigma": 0.047
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 2,
+   "total_events": 2,
+   "sigma_R": 0.0856,
+   "frac_PTP_rejected_3sigma": 0.324
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 3,
+   "total_events": 3,
+   "sigma_R": 0.0699,
+   "frac_PTP_rejected_3sigma": 0.552
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 4,
+   "total_events": 4,
+   "sigma_R": 0.0605,
+   "frac_PTP_rejected_3sigma": 0.689
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 6,
+   "total_events": 6,
+   "sigma_R": 0.0494,
+   "frac_PTP_rejected_3sigma": 0.855
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "ASTEP+ 0.4m (Dome C)",
+   "pair": "ASTEP_blue/ASTEP_red",
+   "simultaneous": true,
+   "events_per_band": 8,
+   "total_events": 8,
+   "sigma_R": 0.0428,
+   "frac_PTP_rejected_3sigma": 0.951
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.15,
+   "frac_PTP_rejected_3sigma": 0.009
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.1061,
+   "frac_PTP_rejected_3sigma": 0.054
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.0866,
+   "frac_PTP_rejected_3sigma": 0.266
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.075,
+   "frac_PTP_rejected_3sigma": 0.439
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0612,
+   "frac_PTP_rejected_3sigma": 0.629
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "Amateur 0.4m",
+   "pair": "r/Ic",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.053,
+   "frac_PTP_rejected_3sigma": 0.769
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 1,
+   "total_events": 2,
+   "sigma_R": 0.131,
+   "frac_PTP_rejected_3sigma": 0.046
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 2,
+   "total_events": 4,
+   "sigma_R": 0.0926,
+   "frac_PTP_rejected_3sigma": 0.315
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 3,
+   "total_events": 6,
+   "sigma_R": 0.0756,
+   "frac_PTP_rejected_3sigma": 0.55
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 4,
+   "total_events": 8,
+   "sigma_R": 0.0655,
+   "frac_PTP_rejected_3sigma": 0.686
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 6,
+   "total_events": 12,
+   "sigma_R": 0.0535,
+   "frac_PTP_rejected_3sigma": 0.854
+  },
+  {
+   "case": "ref_beta__signfixed",
+   "telescope": "TRAPPIST-South 0.6m",
+   "pair": "V/I+z",
+   "simultaneous": false,
+   "events_per_band": 8,
+   "total_events": 16,
+   "sigma_R": 0.0463,
+   "frac_PTP_rejected_3sigma": 0.95
+  }
+ ]
+}

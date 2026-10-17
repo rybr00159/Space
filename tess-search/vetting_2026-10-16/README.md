@@ -2,6 +2,15 @@
 
 *AI-run analysis; no human has reviewed it yet. Nothing has been submitted anywhere.*
 
+> **Update (2026-10-17).** The planet candidate on TIC 214311908 has been tested further in a separate campaign:
+> eleven investigations in three phases, each checked by an adversarial referee. See [`../tic214311908/`](../tic214311908/).
+> The signal is on the sky and on the M3 dwarf. The transiting body is 4.95 ± 0.24 (stat) +0.25/−0.18 (sys) R⊕, and
+> the false-positive probability is 0.0013–0.0033. It is a strong candidate but not statistically validated: a
+> ground-based multi-band transit and high-resolution imaging are still needed. The numbers in the TIC 214311908
+> section below have been updated to the campaign's values (the superseded ones are listed in
+> [`../tic214311908/corrections_to_repo.md`](../tic214311908/corrections_to_repo.md)). The 2027 predictions now use the
+> campaign's ephemeris and correct barycentric UTC times.
+
 On 2026-10-16 we found that our recurrence test had been too coarse for stars with few TESS sectors (see the
 [search README](../README.md#caveats)). With a finer test, five more Sector 104 signals recur. This page vets them as
 we vetted the earlier candidates:
@@ -17,13 +26,13 @@ The verdicts were then checked three ways:
 - by our own re-tests of the points they raised.
 
 **None of the five is a planet orbiting the star we searched. One signal, however, found on the Mira-type giant
-TIC 214311906, comes from a neighbouring M dwarf 18″ away, TIC 214311908. There it is a Neptune-sized transiting
-planet candidate.** It is unconfirmed. One ground-based transit would confirm the host; predictions for 2027 are
-below.
+TIC 214311906, comes from a neighbouring M dwarf 18″ away, TIC 214311908. There it is a transiting planet candidate
+a little larger than Neptune.** It is a strong candidate but not yet validated (false-positive probability 0.0013–0.0033). A
+ground-based multi-band transit and high-resolution imaging are needed; see [`../tic214311908/`](../tic214311908/).
 
 | TIC | Signal as first found | Verdict | Decisive evidence | New? |
 |---|---|---|---|---|
-| 214311906 | 5.69 d, 1,900 ppm | **Planet candidate on the neighbour TIC 214311908**, an M3 dwarf 64 pc away: a ~5–6 R⊕ body every 5.6915 d | The Mira cannot host it. Pixel analyses place the dimming on the M3 dwarf 18″ away; our own search had flagged it there. Flat-bottomed, no secondary eclipse, consistent depth for 7 years | Yes: no TOI, CTOI, alert or ExoFOP record |
+| 214311906 | 5.69 d, 1,900 ppm | **Planet candidate on the neighbour TIC 214311908**, an M3 dwarf 64 pc away: a ~5 R⊕ body (4.95 ± 0.24 (stat) +0.25/−0.18 (sys) R⊕) every 5.6915 d | The Mira cannot host it. Pixel analyses place the dimming on the M3 dwarf 18″ away; our own search had flagged it there. Flat-bottomed, no secondary eclipse, consistent depth for 7 years | Yes: no TOI, CTOI, alert or ExoFOP record |
 | 90086266 | 2.36 d, 0.7% box | **Eclipsing binary** coincident with an F star; true period 2.33947 d (or 4.679 d) | The dimming is on the F star to within 1–2.5″. A 3% eclipse of it would need a 3 R_Jup companion (a star), which Gaia RVs and the missing secondary eclipse rule out. So a fainter, unresolved binary is eclipsing | Yes, as an eclipsing binary |
 | 61332759 | 0.740 d, 550 ppm | **Not a transit**: 1.4806 d variability of a neighbouring star | Two independent pixel analyses trace it to the catalogued RS CVn variable Gaia DR3 6711181657530577280, 57″ away | No period found for the neighbour in VSX, ASAS-SN or Gaia DR3 |
 | 61141412 | 6.525 d, 1,100 ppm | **Not a planet**: dips every 6.5285 d with timing variations, in or near a 5.45 d spectroscopic binary | The star is a Gaia SB1, so a 6.53 d planet orbit is impossible. The dip times drift by tens of minutes | No: a TESS-SPOC alert at 13.054 d (2×) in 2023 |
@@ -38,83 +47,92 @@ barycentric correction**, so they are 5–7.5 min early.
 - All timings on this page use corrected times. See the [search README caveats](../README.md#caveats) for the effect
   on our earlier results.
 
-## TIC 214311908: a Neptune-sized planet candidate next to a Mira
+## TIC 214311908: a super-Neptune planet candidate next to a Mira
 
 ![The two giant-star signals](figures/giants.png)
 
-*Left: the dips as first found in the Mira's light curve (TIC 214311906), folded on 5.6915 d; flat-bottomed, 1.6 h.
+*Left: the dips as first found in the Mira's light curve (TIC 214311906), folded on 5.6915 d; flat-bottomed, 1.7 h.
 Right: TIC 55829034 (see below).*
 
 **The stars.**
-- **TIC 214311906**, the star we searched, is a Mira-type long-period variable: Gaia LPV, VSX and ASAS-SN P ≈ 294 d,
-  BP−RP 4.7, parallax 0.15 ± 0.09 mas. It is a distant giant hundreds of R☉ across. A 5.7 d orbit would lie deep
-  inside it, so it cannot host the dips.
-- **TIC 214311908**, 17.8″ west of it, is an M3 dwarf: Gaia DR3 5925373272850784768, T = 13.01, 64.5 pc, Teff 3,300 K,
-  R 0.38 R☉, M 0.37 M☉, RUWE 1.08.
-- **TIC 214311910**, 6.2″ west of the Mira and 11.7″ from TIC 214311908, shares its proper motion: an M3–M4 dwarf at
-  61 pc (G 14.65).
+- **TIC 214311906**, the star we searched, is a Mira-type long-period variable. VSX and ASAS-SN list P ≈ 294 d, but
+  NEOWISE and Gaia epochs give 313–320 d. BP−RP 4.7, parallax 0.15 ± 0.09 mas. It is a distant giant hundreds of R☉
+  across. A 5.7 d orbit would lie deep inside it, so it cannot host the dips.
+- **TIC 214311908**, 17.8″ west of it, is an M3 dwarf: Gaia DR3 5925373272850784768, T = 13.01, 64.31 ± 0.15 pc,
+  Teff 3,350 ± 55 K, R 0.381 ± 0.012 R☉, M 0.370 ± 0.011 M☉, RUWE 1.08. It is 0.75 mag brighter than the main
+  sequence at its colour, most likely because it is metal-rich ([Fe/H] ≈ +0.2).
+- **TIC 214311910**, 6.2″ west of the Mira and 11.7″ from TIC 214311908, is a bound companion of TIC 214311908
+  (El-Badry et al. 2021; chance-alignment probability 2 × 10⁻⁵), 754 au away: an M3–M4 dwarf (G 14.65). Its own
+  parallax (61 pc) is unreliable because of its RUWE.
   - Gaia resolves a fainter star 0.83″ from it (Gaia DR3 5925373272827253632, G 15.74). That explains its RUWE of 13.7.
-  - The M dwarfs form one bound system about 62 pc away. The Mira, several kiloparsecs away, is unrelated.
+  - The M dwarfs form one bound system 64.3 pc away. The Mira, several kiloparsecs away, is unrelated.
 
 **The signal.**
-- Dips every **P = 5.691497 ± 0.000014 d**, T0 = BTJD 3840.9153 ± 0.0019 (BJD_TDB 2460840.9153). This comes from 13
-  transits in TIC 214311908's QLP light curve, with the Sector 103/104 times corrected.
-- Flat-bottomed: T14 = 1.61–1.65 h, the flat part about 60–80% of the transit; a V shape is worse by Δχ² = 8.
-- Odd and even depths agree within 1.9σ.
-- No dip at phase 0.5 (−700 ± 600 ppm), so half the period is ruled out. No secondary eclipse at any phase: the one
-  feature in the scan, at phase 0.825, is a single artefact in Sector 103.
-- The flux lost per transit is 14–17 e⁻/s and stays constant while the Mira's flux changes by a factor of ~2. So it
-  belongs to a star of constant brightness, not to the Mira.
+- Dips every **P = 5.691506 ± 0.000011 d**, T0 = BJD_TDB 2460840.9150 ± 0.0013. This comes from 21 transit times
+  measured in two deblended photometries of the TESS pixels
+  ([`../tic214311908/ephemeris_adopted.json`](../tic214311908/ephemeris_adopted.json)). The first version, from 13 QLP
+  transits, was P = 5.691497 ± 0.000014 d.
+- Flat-bottomed: T14 = 1.70 ± 0.07 h, the flat part 71–74% of the transit (fits with the star's density as a prior;
+  without it, 1.65–1.75 h). Simulated V-shaped (grazing) eclipses reproduce the observed flat-bottom preference in only
+  0 of 25 and 1 of 25 trials.
+- Odd and even depths agree in every photometry (raw 3×3 pixel box: −1.1 ± 2.2 ppt).
+- A transit-shaped dip at phase 0.5 measures −0.98 ± 0.78 ppt, against 14.66 ± 0.78 ppt at phase 0 with the same
+  fixed shape, so half the period is excluded at 14σ. No secondary eclipse: an occultation-shaped dip at phase 0.5
+  measures +0.3 ± 0.8 ppt (3σ limit 2.8–3.1 ppt).
+- The flux lost per transit is ≈ 15 e⁻/s (13.9 ± 1.4 e⁻/s in a raw 3×3 pixel box that holds ~78% of the M3 dwarf's
+  light; χ² 4.2/5 across sectors) and does not follow the Mira's flux. The Mira is excluded mainly by the pixel image
+  (Δχ² +285) and because it cannot host a 5.69-d orbit.
 - It is present in all six sectors (2019–2026).
 - Our Sector 104 search found the signal on TIC 214311908 itself (1.2% deep in its QLP light curve). That detection was
   dropped because, after masking instrumental time windows, one of its three transits carried 58% of the S/N (the
   limit was 50%). The copy of the signal in the Mira's light curve passed.
 
-**Which star dims.** Three independent pixel tests agree on TIC 214311908:
-1. **Small apertures.** The flux lost per transit, in apertures of radius 0.75 pixel, is 4.5 ± 0.3 e⁻/s on
-   TIC 214311908, 3.9 ± 0.4 on the M-dwarf pair, 2.1 ± 0.3 on the Mira and 1.4 ± 0.3 at the mirror point east of the
-   Mira. A forward model with the TESS PRF fits much better with the source on TIC 214311908 (χ² = 66 for 19 degrees
-   of freedom) than on the pair (151) or on the Mira (204).
-2. **Difference images.** The referee's PRF fits put the source at (−17.2 ± 1.7, +3.7 ± 1.0)″ from the Mira in every
-   sector; TIC 214311908 is at (−17.8, −0.4)″. In its injection tests, χ² (2 degrees of freedom) is 1.6 for
-   TIC 214311908, 28.9 for the pair and 56 for the Mira.
-3. **Injection-calibrated map** (our matched-filter method). This map is biased towards the Mira, and cannot place
-   even a fake signal correctly. But the real signal's pattern of Δχ² values across the four candidate stars is much
-   closer to that of a fake signal injected on TIC 214311908 than to fakes injected on the pair or the Mira.
+**Which star dims.** Injection-calibrated PRF fits of the transit images (six sectors, two separate codes) put the
+dimming 0.7–1.6″ from TIC 214311908, with a 95% region of 4.6″. Relative to it, the M-dwarf pair is worse by
+Δχ² +126 and +146 and the Mira by +285. None of 1,000 injections on these stars reaches those values. A model-free test
+finds the dip only in the raw pixels around the M3 dwarf and the Mira (0.9 px apart); no pixel more than 2.5 px away
+dims. The faint star 3.1″ away lies inside the 95% region; the pixels disfavour it, and it would need a 50–55% deep
+eclipse, which its colours and parallax rule out. Earlier tests on this page (small apertures, a PRF forward model with
+χ² 66 / 151 / 204, and the first referee's difference images) pointed the same way and are superseded by these
+([`../tic214311908/`](../tic214311908/)).
 
 **A mistake we made first, and fixed.**
 - Our first localisation pointed to the M-dwarf pair, 6″ from the Mira, and an earlier version of this page said so.
-- It was wrong. In Sectors 93, 103 and 104 we had calibrated the image positions on the Mira itself. Its extreme
-  colour (BP−RP 4.7) shifts its TESS image, and the calibration was off by 16–17″, about the distance to
-  TIC 214311908.
+- It was wrong. In Sectors 93, 103 and 104 we had calibrated the image positions on the Mira itself, and the
+  calibration was off by 16–17″, about the distance to TIC 214311908. The Mira's colour (BP−RP 4.7) displaces its
+  TESS image by only 5–7.5″; the rest came from a degenerate fit of its direct image, which the TESS PRF does not
+  describe, with the pair 6″ away. (An earlier version of this page blamed the colour alone.)
 - A normal-colour star in the same images gives offsets of ≤ 0.25 pixel. With that calibration, every test points to
   TIC 214311908.
 - The injection tests had not caught the error because they used the same shifted frame.
 
 **What it would be.**
-- On TIC 214311908 (about 940 e⁻/s in TESS), the transit is 1.5–1.8% deep.
-- The transiting body is about **5–6 R⊕**, between Neptune and Saturn in size. That is smaller than any star or old
-  brown dwarf.
-- The duration fits the star's density with an impact parameter of about 0.6.
-- It orbits at about 0.045 au, receiving ~8 times Earth's sunlight; its equilibrium temperature is near 460 K.
+- On TIC 214311908 (979 e⁻/s in TESS, on the same scale as the fits), the transit is 15.8 ± 0.9 (stat)
+  +1.5/−1.1 (sys) ppt deep.
+- The transiting body is about **5 R⊕** (4.95 ± 0.24 (stat) +0.25/−0.18 (sys) R⊕), a little larger than
+  Neptune. That is smaller than any star or old brown dwarf.
+- The duration fits the star's density with an impact parameter of about 0.5.
+- It orbits at about 0.045 au, receiving 8.2 times Earth's sunlight; its equilibrium temperature is about 470 K.
 
-**What is not yet excluded.**
-- An eclipsing binary unresolved from TIC 214311908, for example behind it or bound to it within ~1″. Its eclipses
-  would have to be deeper and diluted. The flat bottom and the lack of a secondary eclipse argue against this but do
-  not exclude it.
-- The pixel tests rest on signals of S/N 4–8 per sector next to a much brighter, very red, variable star. The PRF
-  forward model fits only roughly (χ² 66 for 19). A direct ground-based measurement is needed.
+**What is not yet excluded.** Every eclipsing-binary scenario that was modelled is strongly disfavoured, and the
+false-positive probability is 0.0013–0.0033. The largest remaining term is a planet on an unresolved ~0.2 M☉
+companion, which would still be a planet. All pixel tests use TESS pixels next to a much brighter, very red, variable
+star; validation still needs a ground-based detection and high-resolution imaging
+([`../tic214311908/`](../tic214311908/)).
 
 **The decisive test.** Seeing-limited images separate TIC 214311908 from the Mira (17.8″) and the M-dwarf pair
 (11.7″).
-- On TIC 214311908, the transit should be 1.5–1.8% deep and 1.6 h long.
+- On TIC 214311908, the transit should be ~1.6% deep and 1.7 h long.
 - [`results/214311906/predicted_transits_2027.csv`](results/214311906/predicted_transits_2027.csv) lists 42
-  predicted transits for February–October 2027, each with ±4–5 min (1σ) timing. The field is at Dec −51°.
-- If the host is confirmed, the next steps are multi-colour photometry (a planet's transit depth is the same in all
-  colours) and high-resolution imaging.
+  predicted transits for February–October 2027, each with ±2.9–3.5 min (1σ) timing, in barycentre-corrected
+  geocentric UTC. It was corrected on 2026-10-17: the first version's `utc_mid` lacked the barycentric correction
+  (errors −3.4 to +7.3 min) and used an older ephemeris. Full observing windows exist only in April–August 2027; the
+  campaign folder has predictions to 2028 and per-site windows. The field is at Dec −51°.
+- Observe the transit in two bands at once (g and z, or g and i), which tests the host and the colour in one event.
+  Add 8-m speckle imaging and low-precision radial velocities.
 
 **Novelty.** None of the three stars has a TOI, CTOI, SPOC or TESS-SPOC alert, QLP-alert (Tey+23) entry, VSX period
-or any ExoFOP record (checked 2026-10-12 and 2026-10-16).
+or any ExoFOP record (checked 2026-10-12, 2026-10-16 and 2026-10-17; ADS full text not searched).
 
 ## TIC 90086266: a 3% eclipsing binary coincident with an F star
 
@@ -305,15 +323,20 @@ Superseded files:
   - `ephemeris.json` (uncorrected QLP times) is replaced by `ephemeris_v2.json`;
   - `host_hypotheses.csv`, `joint_injection_test.json` and `host_v3.json` (Mira-based calibration) are replaced by
     `host_v4.json` and `forward_apertures_v2.json`;
-  - the free-fit positions in `loc/` are unreliable.
+  - the free-fit positions in `loc/` are unreliable;
+  - `ephemeris_v2.json` is superseded by
+    [`../tic214311908/ephemeris_adopted.json`](../tic214311908/ephemeris_adopted.json), and
+    `predicted_transits_2027.csv` was recomputed from it on 2026-10-17 (the uncorrected version is in the git
+    history).
 - `mira214.py` gave depths inconsistent with QLP and is not used.
 
 ## Caveats
 
 - **TIC 214311908 is a planet candidate, not a planet.**
-  - The host rests on TESS pixel tests of modest S/N next to a bright, very red, variable star.
-  - An unresolved eclipsing binary at the same position is not excluded.
-  - The planet's size depends on the star's TESS brightness and on dilution, both estimated.
+  - The host and the false-positive probability (0.0013–0.0033) rest on TESS pixels next to a bright, very red,
+    variable star; no ground-based detection or high-resolution imaging exists yet.
+  - The planet's radius carries a +0.25/−0.18 R⊕ systematic from the depth normalisation and the photometry method.
+  - See [`../tic214311908/`](../tic214311908/) for the full campaign.
 - **TIC 90086266's companion binary is inferred, not seen.** Its separation, brightness and period (2.34 or 4.68 d)
   are unknown.
 - **TIC 55829034:** the conclusion that the eclipsed star is not the giant rests on physics. Its source is not

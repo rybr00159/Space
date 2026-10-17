@@ -1,0 +1,45 @@
+{
+ "phase05": {
+  "planet_white": {
+   "depth_ppt": 0.2195470692353495,
+   "formal_ppt": 0.8684452667419313,
+   "empirical_std_ppt": 0.9230597651128575,
+   "empirical_robust_ppt": 0.8725178664816944,
+   "z": 0.2378470793909067,
+   "upper3_ppt": 2.988726364573922,
+   "cal_mean_ppt": 0.0131350628714045
+  },
+  "planet_beta": {
+   "depth_ppt": -0.09479529508633952,
+   "formal_ppt": 1.1386454745633159,
+   "empirical_std_ppt": 0.8812155313129586,
+   "empirical_robust_ppt": 0.8589166360290424,
+   "z": -0.10757333673533896,
+   "upper3_ppt": 2.5488512988525365,
+   "cal_mean_ppt": -0.002206323737520719
+  },
+  "wdtransit_white": {
+   "depth_ppt": 0.19805159820925947,
+   "formal_ppt": 0.9086934152967501,
+   "empirical_std_ppt": 0.8998998725325548,
+   "empirical_robust_ppt": 0.8651797710148075,
+   "z": 0.22008181604903468,
+   "upper3_ppt": 2.8977512158069234,
+   "cal_mean_ppt": -0.03153853626297265
+  },
+  "wdtransit_beta": {
+   "depth_ppt": -0.11571231700306517,
+   "formal_ppt": 1.193004994051508,
+   "empirical_std_ppt": 0.881719873654873,
+   "empirical_robust_ppt": 0.6867454365314538,
+   "z": -0.13123478381338813,
+   "upper3_ppt": 2.529447303961554,
+   "cal_mean_ppt": -0.046554913521560784
+  }
+ },
+ "injection_recovery_of_2ppt": {
+  "planet": 0.002003633379135607,
+  "wdtransit": 0.002003540005188431
+ },
+ "n_cal": 62
+}

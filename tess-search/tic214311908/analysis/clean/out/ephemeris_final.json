@@ -1,0 +1,109 @@
+{
+ "inv": {
+  "reference_epoch": 2,
+  "T0_ref_BTJD_TDB": 3852.2972714848925,
+  "T0_ref_BJD_TDB": 2460852.297271485,
+  "T0_ref_err_d": 0.0013951575222375377,
+  "P_d": 5.691510643180969,
+  "P_err_d": 1.5072718058342533e-05,
+  "cov_T0ref_P": [
+   [
+    1.9464645118559857e-06,
+    -5.525106513882164e-11
+   ],
+   [
+    -5.525106513882165e-11,
+    2.2718682966628508e-10
+   ]
+  ],
+  "corr_T0ref_P": -0.0026273978141354813,
+  "T0_epoch0_BTJD_TDB": 3840.9142501985307,
+  "T0_epoch0_BJD_TDB": 2460840.9142501988,
+  "T0_epoch0_err_d": 0.00139556234666718,
+  "cov_T0epoch0_P": [
+   [
+    1.9475942634352058e-06,
+    -5.096247244712866e-10
+   ],
+   [
+    -5.096247244713904e-10,
+    2.2718682966628498e-10
+   ]
+  ],
+  "chi2": 9.87523359627956,
+  "dof": 16,
+  "error_scale_applied": 1.0
+ },
+ "ref": {
+  "reference_epoch": -34,
+  "T0_ref_BTJD_TDB": 3647.4037660320246,
+  "T0_ref_BJD_TDB": 2460647.403766032,
+  "T0_ref_err_d": 0.0009235505437022643,
+  "P_d": 5.691499745084439,
+  "P_err_d": 7.901388613057367e-06,
+  "cov_T0ref_P": [
+   [
+    8.52945606772748e-07,
+    2.7403713456165866e-11
+   ],
+   [
+    2.7403713456165866e-11,
+    6.243194201455263e-11
+   ]
+  ],
+  "corr_T0ref_P": 0.0037553059661427596,
+  "T0_epoch0_BTJD_TDB": 3840.9147573648947,
+  "T0_epoch0_BJD_TDB": 2460840.914757365,
+  "T0_epoch0_err_d": 0.0009627982053663115,
+  "cov_T0epoch0_P": [
+   [
+    9.269803842565902e-07,
+    2.1500897419509564e-09
+   ],
+   [
+    2.1500897419509556e-09,
+    6.243194201455265e-11
+   ]
+  ],
+  "chi2": 15.379762857029508,
+  "dof": 19,
+  "error_scale_applied": 1.0
+ },
+ "combined": {
+  "reference_epoch": -26,
+  "T0_ref_BTJD_TDB": 3692.935829445466,
+  "T0_ref_BJD_TDB": 2460692.9358294453,
+  "T0_ref_err_d": 0.000911598189874706,
+  "P_d": 5.691502042902054,
+  "P_err_d": 7.848648289909448e-06,
+  "cov_T0ref_P": [
+   [
+    8.310112597828406e-07,
+    -1.4381361893671132e-11
+   ],
+   [
+    -1.4381361893671132e-11,
+    6.160127997869851e-11
+   ]
+  ],
+  "corr_T0ref_P": -0.002010026081719591,
+  "T0_epoch0_BTJD_TDB": 3840.9148825609172,
+  "T0_epoch0_BJD_TDB": 2460840.9148825607,
+  "T0_epoch0_err_d": 0.0009337590129310506,
+  "cov_T0epoch0_P": [
+   [
+    8.719058942299699e-07,
+    1.5872519175524925e-09
+   ],
+   [
+    1.5872519175524902e-09,
+    6.160127997869851e-11
+   ]
+  ],
+  "chi2": 15.874576454209636,
+  "dof": 19,
+  "error_scale_applied": 1.0
+ },
+ "adopted": "combined",
+ "notes": "Linear ephemeris T(E) = T0 + P (E - E_ref) from per-transit mid-times of the cleaned light curves (variables excluded from field-wide estimators), errors calibrated by pixel-level injections (c05); BTJD_TDB = BJD_TDB - 2457000, target-barycentred. Epoch 0 = the phase-1 numbering (T ~ 3840.914 BTJD). Errors scaled by sqrt(chi2/dof) when > 1. Combined = per event the inverse-variance average of the INV and REF times, its variance including the per-sector INV-REF timing-error correlation measured at the same fake transits (c05), then a weighted linear fit."
+}

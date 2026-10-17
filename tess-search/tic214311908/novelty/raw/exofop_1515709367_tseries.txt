@@ -1,0 +1,7 @@
+TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+{
+ "ref_beta | none": {
+  "FPP": 0.0031313362545921652,
+  "FPP_strict": 0.007966416352478523,
+  "NFPP": 0.0004520787228962731,
+  "dominant": "PTP_companion",
+  "BD_total": 0.000951852277722947
+ },
+ "ref_beta | two-band 10% + pair resolved": {
+  "FPP": 0.001112641953507909,
+  "FPP_strict": 0.005491220814655473,
+  "NFPP": 7.556404073679905e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0008789219237743524
+ },
+ "ref_beta | two-band 5% + pair resolved": {
+  "FPP": 0.000955467434252899,
+  "FPP_strict": 0.0046439551870077755,
+  "NFPP": 7.574571889831936e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0008474561714224041
+ },
+ "ref_beta | speckle": {
+  "FPP": 0.0014823630394088516,
+  "FPP_strict": 0.002645381809506908,
+  "NFPP": 0.00043736347430703475,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0008193911099915042
+ },
+ "ref_beta | speckle + two-band 10%": {
+  "FPP": 0.0009433356883696842,
+  "FPP_strict": 0.002042995561077565,
+  "NFPP": 7.29234960305924e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0008329274148265792
+ },
+ "ref_beta | speckle + two-band 10%, no BD class": {
+  "FPP": 0.00011045695445788262,
+  "FPP_strict": 0.0012107825776802583,
+  "NFPP": 7.2967645004467165e-09,
+  "dominant": "EB_WD_on_M3V",
+  "BD_total": 0.0
+ },
+ "inv_beta | none": {
+  "FPP": 0.006879378158188509,
+  "FPP_strict": 0.014598097524207487,
+  "NFPP": 0.000488129424696904,
+  "dominant": "PTP_companion",
+  "BD_total": 0.0021057132348335983
+ },
+ "inv_beta | two-band 10% + pair resolved": {
+  "FPP": 0.0022650174406142476,
+  "FPP_strict": 0.009121054467153167,
+  "NFPP": 8.15429246922247e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0019082390722817446
+ },
+ "inv_beta | two-band 5% + pair resolved": {
+  "FPP": 0.0019512123679014115,
+  "FPP_strict": 0.00762067816322376,
+  "NFPP": 8.224713559553757e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0018678153191471795
+ },
+ "inv_beta | speckle": {
+  "FPP": 0.0027318065625681065,
+  "FPP_strict": 0.004563791570231901,
+  "NFPP": 0.00047772032840375054,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0018543856139542328
+ },
+ "inv_beta | speckle + two-band 10%": {
+  "FPP": 0.00191175204746441,
+  "FPP_strict": 0.0036074254430584762,
+  "NFPP": 7.878671207681166e-09,
+  "dominant": "BD_on_M3V_single",
+  "BD_total": 0.0018122351530860245
+ },
+ "inv_beta | speckle + two-band 10%, no BD class": {
+  "FPP": 9.956033163682765e-05,
+  "FPP_strict": 0.0017962932459376635,
+  "NFPP": 7.883594089381475e-09,
+  "dominant": "EB_WD_on_M3V",
+  "BD_total": 0.0
+ }
+}

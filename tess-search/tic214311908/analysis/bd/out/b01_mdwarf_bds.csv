@@ -1,0 +1,16 @@
+name,M_MJ,sM_MJ,R_RJ,sR_RJ,P_d,e,e_note,Mstar,Teff,age_note,grazing,source
+NLTT 41135 b,33.7,2.8,1.13,0.27,2.889,0.0,<0.02 (circular fit),0.19,3230.0,field,True,"2010ApJ...718.1353I (abstract: 31-34+-3 MJ, circular, grazing); R, M from Carmichael cat.; M* Ferreira+26 Tab. A1"
+LP 261-75 C (TOI-1779),68.1,2.1,0.9,0.02,1.882,0.0,<0.01,0.3,3100.0,young/field (debated),False,2018AJ....156..140I; values Carmichael cat.; obliquity arXiv:2411.10402
+AD 3116 b,54.6,6.9,0.95,0.07,1.983,0.14,0.14+-0.05 (cat.); 0.133+-0.025 (Ferreira refit),0.28,3165.0,Praesepe (sub-Gyr),False,2017ApJ...849...11G; values Carmichael cat.
+NGTS-7A b,75.5,13.7,1.38,0.14,0.676,0.0,0 (fixed),0.48,3359.0,~55 Myr,False,"2019MNRAS.489.5146J (abstract: 16.2 h, ~55 Myr); values Carmichael cat."
+TOI-263 b,61.6,4.0,0.91,0.07,0.557,0.0,<0.02 (cat.); 0.150+-0.016 (Ferreira refit),0.44,3471.0,field,False,2021A&A...650A..55P; values Carmichael cat.; M* Ferreira+26
+TOI-2119 b,64.4,2.3,1.08,0.03,7.2009,0.337,"0.337+-0.002 (Carmichael+22), 0.3362+-0.0005 (Canas+22); Ferreira refit 0.885 (rejected: contradicts secondary-eclipse timing)",0.53,3621.0,field,False,"2022MNRAS.514.4944C, 2022AJ....163...89C (abstracts; TESS secondary: T_b 2100+-80 K / Teff 2030+-84 K)"
+TOI-5375 B,77.0,8.0,0.99,0.16,1.7216,0.02,0.021+-0.012 (Ferreira refit),0.64,3885.0,active,False,"2023A&A...674A.132M (abstract), 2023AJ....165..218L"
+NGTS-28A b,69.0,5.0,0.95,0.05,1.254,0.1,0.095+-0.098 (Ferreira refit),0.56,3626.0,>0.5 Gyr,False,2024MNRAS.530..318H (arXiv:2402.09943 abstract); M* Ferreira+26
+TOI-5610 b,40.4,1.0,0.887,0.031,7.95346,0.354,0.354+-0.012,0.53,3618.0,~1.5 Gyr (Sonora),False,2025AJ....169..246L (arXiv:2501.16554 abstract; M* from paper text)
+TOI-5389A b,68.0,2.2,0.824,0.032,10.40046,0.096,0.096 (+0.003/-0.005),0.43,3569.0,>~2 Gyr,False,2025AJ....169..246L (arXiv:2501.16554 abstract; M* from paper text)
+LHS 6343 C,62.1,1.2,0.783,0.011,12.71,0.056,e cos w = 0.0228 (Montet+15); 0.056 (Johnson+11); 0.088 (Ferreira refit),0.37,3130.0,>1 Gyr,False,"2011ApJ...730...79J, 2015ApJ...800..134M (abstracts); M* Ferreira+26 (Johnson+11 quote 0.45/0.36 for the AB pair)"
+TOI-1278 B,18.5,0.5,1.09,0.24,14.476,0.013,0.013 (slight but non-zero),0.55,3799.0,field,True,"2021AJ....162..144A (abstract: grazing transit); R, e Carmichael cat./NEA"
+TOI-6508 b,72.5,6.4,1.03,0.03,19.0,0.28,0.28 (+0.09/-0.08),0.174,2930.0,field,False,arXiv:2502.19940 (abstract)
+TOI-5575 b,72.4,4.1,0.84,0.07,32.0,0.187,0.187+-0.002,0.21,,field,False,2025ApJ...988L..78G (arXiv:2507.09461 abstract)
+ZTF J2020+5033 b,80.1,1.6,1.05,0.02,0.0792,0.0,0,,2856.0,old (thick disk),False,arXiv:2307.15729 (abstract; OJAp 2023); at the H-burning limit

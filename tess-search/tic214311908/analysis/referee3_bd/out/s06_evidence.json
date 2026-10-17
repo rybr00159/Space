@@ -1,0 +1,432 @@
+{
+ "method": "s06: own marginal-likelihood (evidence) ratio of a BD on the M3V versus a Neptune on the M3V, from my own likelihood\ngrid of the CLEANED light curves (lc3; beta and white noise), independent of the r03/r05 machinery.\nGrid: k (planet 0.095-0.175; BD 0.200-0.275; diluted-host bodies 0.15-0.45), b uniform in [0, 1+k) (64 steps), rho_c log\ngrid 0.5-80 g/cm3 (46); D = 1 for the M3V hosts and D in {0.12, 0.18, 0.25, 0.35} for a companion host; LD nominal;\ndT0 fixed at the best planet fit; per-window linear baselines profiled.\nEvidence for a body class on a host of density rho_h and radius R_h:  Z = sum_k p(k) sum_rho W(rho) sum_b L(k,b,rho) db\nwith W(rho bin) = E[(1+e sin w)/(1-e^2) 1(rho_h g^3 in bin)] (g = (1+e sin w)/sqrt(1-e^2); correct photo-eccentric sign),\nand the geometric factor R_h/a common to classes on the same host. L = exp(-(chi2 - chi2_best_planet)/2).\nPriors: Neptunes flat in ln R over 4-7 R_E; BDs R ~ N(0.88, 0.08) R_J (>= 0.72); M3V rho ~ N(9.42, 0.88).\ne priors: Kipping13, Van Eylen singles, Sagear & Ballard 23 Rayleigh 0.19 (planets); Ferreira+26 short/long-period\nBeta (BDs). Output ratio R = Z_BD/Z_TP, so P(BD on M3V)/P(planet on M3V) = (f_BD/f_N) R.\nAlso: a representative PTP companion (0.20 Msun, R 0.22 Rsun, rho 26.5, D 0.25) - evidence of a 4-10 R_E planet on it\nrelative to the M3V planet, per unit configuration prior, for each planet e prior (tests the e-dependence of PTP).\nOutput: out/s06_evidence.json",
+ "results": {
+  "ref_beta": {
+   "chi2_best_planet_grid": 2825.2890977214656,
+   "chi2_best_BD_grid": 2834.903248515944,
+   "dchi2_BD_grid": 9.614150794478519,
+   "Z": {
+    "TP_kipping": 0.016741587115001483,
+    "BD_kipping": 1.2330127258048505e-06,
+    "W_out_of_grid_kipping": 0.04435145392295667,
+    "TP_vaneylen": 0.01642626643154661,
+    "BD_vaneylen": 1.4137057270225286e-06,
+    "W_out_of_grid_vaneylen": 0.07101341142830336,
+    "TP_rayleigh19": 0.018035754537036087,
+    "BD_rayleigh19": 6.388071989628962e-07,
+    "W_out_of_grid_rayleigh19": 0.0030274989751194743,
+    "TP_circ": 0.01652966416000947,
+    "BD_circ": 2.3133945708085118e-17,
+    "W_out_of_grid_circ": 0.0,
+    "TP_bdsp": 0.016554288752585716,
+    "BD_bdsp": 9.085033378132887e-07,
+    "W_out_of_grid_bdsp": 0.088005988560693,
+    "TP_bdlp": 0.011907674531348852,
+    "BD_bdlp": 3.4265224643520645e-06,
+    "W_out_of_grid_bdlp": 0.6386754438771457
+   },
+   "ratio_BD_over_TP": {
+    "BD e kipping / TP e kipping": 7.364969147399388e-05,
+    "BD e kipping / TP e vaneylen": 7.506348024629944e-05,
+    "BD e kipping / TP e rayleigh19": 6.836490945099535e-05,
+    "BD e bdsp / TP e kipping": 5.426626111207905e-05,
+    "BD e bdsp / TP e vaneylen": 5.530796310892109e-05,
+    "BD e bdsp / TP e rayleigh19": 5.0372349875781137e-05,
+    "BD e bdlp / TP e kipping": 0.00020467130391011086,
+    "BD e bdlp / TP e vaneylen": 0.0002086002000899873,
+    "BD e bdlp / TP e rayleigh19": 0.00018998497996386922
+   },
+   "BD_bdsp_frac_from_rho_lt_3": 0.9940526098940043,
+   "PTP_representative": {
+    "rho_host": 26.48650460689199,
+    "D": 0.25,
+    "by_planet_e": {
+     "kipping": {
+      "Z_C": 0.0013368608402528693,
+      "ratio_vs_TP_same_e": 0.05657592452360574,
+      "Z_C_D0.12": 0.0012663896143204983,
+      "Z_C_D0.18": 0.0017010748085714725,
+      "Z_C_D0.25": 0.0013368608402528693,
+      "Z_C_D0.35": 0.0032658882035673915
+     },
+     "vaneylen": {
+      "Z_C": 0.0014889522180672893,
+      "ratio_vs_TP_same_e": 0.06422202318056622,
+      "Z_C_D0.12": 0.0013915287470336172,
+      "Z_C_D0.18": 0.0018914771878810908,
+      "Z_C_D0.25": 0.0014889522180672893,
+      "Z_C_D0.35": 0.0036420903832633023
+     },
+     "rayleigh19": {
+      "Z_C": 0.0018800741415592025,
+      "ratio_vs_TP_same_e": 0.0738554833709408,
+      "Z_C_D0.12": 0.0017760375850486721,
+      "Z_C_D0.18": 0.0024209545147542717,
+      "Z_C_D0.25": 0.0018800741415592025,
+      "Z_C_D0.35": 0.004677432505452309
+     },
+     "circ": {
+      "Z_C": 9.149039883501774e-05,
+      "ratio_vs_TP_same_e": 0.003921512246299607,
+      "Z_C_D0.12": 0.00013252332440780265,
+      "Z_C_D0.18": 0.00011184291545053487,
+      "Z_C_D0.25": 9.149039883501774e-05,
+      "Z_C_D0.35": 0.00013962919059422817
+     }
+    },
+    "note": "ratio_vs_TP_same_e = [Z(planet 4-10 R_E on companion) (R_c/a_c)] / [Z(Neptune on M3V) (R*/a)], per unit configuration prior and equal per-star occurrence"
+   },
+   "chi2_min_C_by_D": {
+    "0.12": 3.2042968925766218,
+    "0.18": 2.2847837927006367,
+    "0.25": 3.592896658241898,
+    "0.35": 0.6823504048884388
+   }
+  },
+  "ref_white": {
+   "chi2_best_planet_grid": 4942.52894113056,
+   "chi2_best_BD_grid": 4963.788991240142,
+   "dchi2_BD_grid": 21.260050109582153,
+   "Z": {
+    "TP_kipping": 0.006287744039042522,
+    "BD_kipping": 1.663853901100171e-09,
+    "W_out_of_grid_kipping": 0.04467407256115322,
+    "TP_vaneylen": 0.006313193571863931,
+    "BD_vaneylen": 1.9636955048719316e-09,
+    "W_out_of_grid_vaneylen": 0.07353269457262467,
+    "TP_rayleigh19": 0.0072779014296808706,
+    "BD_rayleigh19": 8.025087817413595e-10,
+    "W_out_of_grid_rayleigh19": 0.002875995958972227,
+    "TP_circ": 0.004869724780905039,
+    "BD_circ": 1.6600896777863058e-27,
+    "W_out_of_grid_circ": 0.0,
+    "TP_bdsp": 0.005805732339384481,
+    "BD_bdsp": 1.2459614340571227e-09,
+    "W_out_of_grid_bdsp": 0.09072755754873243,
+    "TP_bdlp": 0.004696436120911883,
+    "BD_bdlp": 4.687824191732276e-09,
+    "W_out_of_grid_bdlp": 0.6414138189582715
+   },
+   "ratio_BD_over_TP": {
+    "BD e kipping / TP e kipping": 2.6461858033164107e-07,
+    "BD e kipping / TP e vaneylen": 2.635518588429609e-07,
+    "BD e kipping / TP e rayleigh19": 2.2861726243153167e-07,
+    "BD e bdsp / TP e kipping": 1.9815714926061997e-07,
+    "BD e bdsp / TP e vaneylen": 1.973583448494294e-07,
+    "BD e bdsp / TP e rayleigh19": 1.7119789902289964e-07,
+    "BD e bdlp / TP e kipping": 7.455494629908826e-07,
+    "BD e bdlp / TP e vaneylen": 7.425440291621257e-07,
+    "BD e bdlp / TP e rayleigh19": 6.44117571119376e-07
+   },
+   "BD_bdsp_frac_from_rho_lt_3": 0.999802487497814,
+   "PTP_representative": {
+    "rho_host": 26.48650460689199,
+    "D": 0.25,
+    "by_planet_e": {
+     "kipping": {
+      "Z_C": 0.00011254765697842585,
+      "ratio_vs_TP_same_e": 0.012681881441054189,
+      "Z_C_D0.12": 4.796315781353832e-05,
+      "Z_C_D0.18": 0.00021787672094572777,
+      "Z_C_D0.25": 0.00011254765697842585,
+      "Z_C_D0.35": 0.0007935920534719196
+     },
+     "vaneylen": {
+      "Z_C": 0.00012795866511503465,
+      "ratio_vs_TP_same_e": 0.014360272457234622,
+      "Z_C_D0.12": 5.293815016208532e-05,
+      "Z_C_D0.18": 0.0002444253852015714,
+      "Z_C_D0.25": 0.00012795866511503465,
+      "Z_C_D0.35": 0.0008940378022929661
+     },
+     "rayleigh19": {
+      "Z_C": 0.00016663633952961336,
+      "ratio_vs_TP_same_e": 0.016222046141457423,
+      "Z_C_D0.12": 6.797019994509614e-05,
+      "Z_C_D0.18": 0.0003175783623380413,
+      "Z_C_D0.25": 0.00016663633952961336,
+      "Z_C_D0.35": 0.001157538793045608
+     },
+     "circ": {
+      "Z_C": 1.6308572041671652e-06,
+      "ratio_vs_TP_same_e": 0.0002372758861017274,
+      "Z_C_D0.12": 2.997616339343149e-06,
+      "Z_C_D0.18": 6.029895971261713e-06,
+      "Z_C_D0.25": 1.6308572041671652e-06,
+      "Z_C_D0.35": 1.6941069464458964e-05
+     }
+    },
+    "note": "ratio_vs_TP_same_e = [Z(planet 4-10 R_E on companion) (R_c/a_c)] / [Z(Neptune on M3V) (R*/a)], per unit configuration prior and equal per-star occurrence"
+   },
+   "chi2_min_C_by_D": {
+    "0.12": 9.129479595279918,
+    "0.18": 5.06415315389404,
+    "0.25": 6.4005505090462975,
+    "0.35": 2.774913309740441
+   }
+  },
+  "inv_beta": {
+   "chi2_best_planet_grid": 2075.8852294380963,
+   "chi2_best_BD_grid": 2082.8410521096716,
+   "dchi2_BD_grid": 6.9558226715753335,
+   "Z": {
+    "TP_kipping": 0.02414165976888174,
+    "BD_kipping": 5.0326538286070125e-06,
+    "W_out_of_grid_kipping": 0.044469773705084606,
+    "TP_vaneylen": 0.02306442769609748,
+    "BD_vaneylen": 6.03834058374663e-06,
+    "W_out_of_grid_vaneylen": 0.07179496782631682,
+    "TP_rayleigh19": 0.02422769909551736,
+    "BD_rayleigh19": 2.5091577143543687e-06,
+    "W_out_of_grid_rayleigh19": 0.003034124203719052,
+    "TP_circ": 0.028674523111046905,
+    "BD_circ": 5.760076416430473e-15,
+    "W_out_of_grid_circ": 0.0,
+    "TP_bdsp": 0.025464249814647667,
+    "BD_bdsp": 3.993281435211782e-06,
+    "W_out_of_grid_bdsp": 0.0906566688379837,
+    "TP_bdlp": 0.016627815353273876,
+    "BD_bdlp": 1.5250093835022222e-05,
+    "W_out_of_grid_bdlp": 0.6363339837159954
+   },
+   "ratio_BD_over_TP": {
+    "BD e kipping / TP e kipping": 0.00020846345598383558,
+    "BD e kipping / TP e vaneylen": 0.0002181998137963138,
+    "BD e kipping / TP e rayleigh19": 0.0002077231440247729,
+    "BD e bdsp / TP e kipping": 0.00016541039321410145,
+    "BD e bdsp / TP e vaneylen": 0.00017313594283926016,
+    "BD e bdsp / TP e rayleigh19": 0.0001648229747062784,
+    "BD e bdlp / TP e kipping": 0.0006316920203920436,
+    "BD e bdlp / TP e vaneylen": 0.0006611954146862509,
+    "BD e bdlp / TP e rayleigh19": 0.0006294487055868964
+   },
+   "BD_bdsp_frac_from_rho_lt_3": 0.9954481525050757,
+   "PTP_representative": {
+    "rho_host": 26.48650460689199,
+    "D": 0.25,
+    "by_planet_e": {
+     "kipping": {
+      "Z_C": 0.005600116635144153,
+      "ratio_vs_TP_same_e": 0.16435087927119954,
+      "Z_C_D0.12": 0.005573425388890852,
+      "Z_C_D0.18": 0.0060389212369771515,
+      "Z_C_D0.25": 0.005600116635144153,
+      "Z_C_D0.35": 0.0038372527674894285
+     },
+     "vaneylen": {
+      "Z_C": 0.006384285391385791,
+      "ratio_vs_TP_same_e": 0.1961153984137429,
+      "Z_C_D0.12": 0.00620140647385289,
+      "Z_C_D0.18": 0.006808727827035317,
+      "Z_C_D0.25": 0.006384285391385791,
+      "Z_C_D0.35": 0.0043624630602438685
+     },
+     "rayleigh19": {
+      "Z_C": 0.008041335954649563,
+      "ratio_vs_TP_same_e": 0.23515711322894178,
+      "Z_C_D0.12": 0.007902203804437423,
+      "Z_C_D0.18": 0.008634530696840932,
+      "Z_C_D0.25": 0.008041335954649563,
+      "Z_C_D0.35": 0.005315865971382092
+     },
+     "circ": {
+      "Z_C": 0.00024898442044928395,
+      "ratio_vs_TP_same_e": 0.006152024466060656,
+      "Z_C_D0.12": 0.0005867320425182288,
+      "Z_C_D0.18": 0.0004280973420149456,
+      "Z_C_D0.25": 0.00024898442044928395,
+      "Z_C_D0.35": 0.00022290533418082423
+     }
+    },
+    "note": "ratio_vs_TP_same_e = [Z(planet 4-10 R_E on companion) (R_c/a_c)] / [Z(Neptune on M3V) (R*/a)], per unit configuration prior and equal per-star occurrence"
+   },
+   "chi2_min_C_by_D": {
+    "0.12": 0.5436639764088795,
+    "0.18": 0.21832634789370786,
+    "0.25": -0.14372108018551444,
+    "0.35": 0.14957974957997067
+   }
+  },
+  "inv_white": {
+   "chi2_best_planet_grid": 2799.9348647088486,
+   "chi2_best_BD_grid": 2807.885538563475,
+   "dchi2_BD_grid": 7.95067385462653,
+   "Z": {
+    "TP_kipping": 0.014744669180765417,
+    "BD_kipping": 2.119806318159066e-06,
+    "W_out_of_grid_kipping": 0.04426978940188936,
+    "TP_vaneylen": 0.014079825554436286,
+    "BD_vaneylen": 2.475335512050057e-06,
+    "W_out_of_grid_vaneylen": 0.07255645617745012,
+    "TP_rayleigh19": 0.014760508319111847,
+    "BD_rayleigh19": 9.893857998203144e-07,
+    "W_out_of_grid_rayleigh19": 0.002902974737699941,
+    "TP_circ": 0.017737787078435437,
+    "BD_circ": 6.017937100434459e-18,
+    "W_out_of_grid_circ": 0.0,
+    "TP_bdsp": 0.01563879734715561,
+    "BD_bdsp": 1.6249150875893305e-06,
+    "W_out_of_grid_bdsp": 0.08956425253747638,
+    "TP_bdlp": 0.010085629625189637,
+    "BD_bdlp": 6.429200873128738e-06,
+    "W_out_of_grid_bdlp": 0.6346028877921258
+   },
+   "ratio_BD_over_TP": {
+    "BD e kipping / TP e kipping": 0.00014376764186234688,
+    "BD e kipping / TP e vaneylen": 0.0001505562913377968,
+    "BD e kipping / TP e rayleigh19": 0.0001436133683427656,
+    "BD e bdsp / TP e kipping": 0.00011020356358412232,
+    "BD e bdsp / TP e vaneylen": 0.00011540733095782927,
+    "BD e bdsp / TP e rayleigh19": 0.0001100853068512144,
+    "BD e bdlp / TP e kipping": 0.00043603561357047615,
+    "BD e bdlp / TP e vaneylen": 0.00045662503759522923,
+    "BD e bdlp / TP e rayleigh19": 0.00043556771448068863
+   },
+   "BD_bdsp_frac_from_rho_lt_3": 0.9987249052730702,
+   "PTP_representative": {
+    "rho_host": 26.48650460689199,
+    "D": 0.25,
+    "by_planet_e": {
+     "kipping": {
+      "Z_C": 0.0034182219779493295,
+      "ratio_vs_TP_same_e": 0.16425073209181273,
+      "Z_C_D0.12": 0.0033046374639604512,
+      "Z_C_D0.18": 0.004295677947948387,
+      "Z_C_D0.25": 0.0034182219779493295,
+      "Z_C_D0.35": 0.0029859860020776856
+     },
+     "vaneylen": {
+      "Z_C": 0.003913013701395554,
+      "ratio_vs_TP_same_e": 0.1969047438026334,
+      "Z_C_D0.12": 0.0036743318063506758,
+      "Z_C_D0.18": 0.004849269530421679,
+      "Z_C_D0.25": 0.003913013701395554,
+      "Z_C_D0.35": 0.003415660297439818
+     },
+     "rayleigh19": {
+      "Z_C": 0.00499437564870636,
+      "ratio_vs_TP_same_e": 0.23972977358987685,
+      "Z_C_D0.12": 0.004776309484823,
+      "Z_C_D0.18": 0.006275954248734339,
+      "Z_C_D0.25": 0.00499437564870636,
+      "Z_C_D0.35": 0.004213620905005264
+     },
+     "circ": {
+      "Z_C": 4.680404759929855e-05,
+      "ratio_vs_TP_same_e": 0.0018695025404106532,
+      "Z_C_D0.12": 0.00017058915834504835,
+      "Z_C_D0.18": 0.00011402356864366105,
+      "Z_C_D0.25": 4.680404759929855e-05,
+      "Z_C_D0.35": 6.112563835682261e-05
+     }
+    },
+    "note": "ratio_vs_TP_same_e = [Z(planet 4-10 R_E on companion) (R_c/a_c)] / [Z(Neptune on M3V) (R*/a)], per unit configuration prior and equal per-star occurrence"
+   },
+   "chi2_min_C_by_D": {
+    "0.12": 1.3291947315083235,
+    "0.18": 0.17071770424172428,
+    "0.25": 0.26698386262796703,
+    "0.35": 0.09873234463384506
+   }
+  }
+ },
+ "grids": {
+  "KP": [
+   0.095,
+   0.1,
+   0.105,
+   0.11,
+   0.115,
+   0.12,
+   0.125,
+   0.13,
+   0.135,
+   0.14,
+   0.145,
+   0.15,
+   0.155,
+   0.16,
+   0.165,
+   0.17,
+   0.175
+  ],
+  "KB": [
+   0.2,
+   0.215,
+   0.23,
+   0.245,
+   0.26,
+   0.275
+  ],
+  "KC": [
+   0.15,
+   0.175,
+   0.2,
+   0.225,
+   0.25,
+   0.275,
+   0.3,
+   0.325,
+   0.35,
+   0.375,
+   0.4,
+   0.425,
+   0.45
+  ],
+  "RHO": [
+   0.5,
+   0.5596937385946728,
+   0.6265141620441638,
+   0.7013121072740133,
+   0.7850399904838014,
+   0.8787639344404102,
+   0.9836773436182341,
+   1.101116100041132,
+   1.2325755733176138,
+   1.3797296614612147,
+   1.544452104946379,
+   1.7288403453957015,
+   1.9352422326956509,
+   2.166285920607461,
+   2.4249133315395848,
+   2.7144176165949063,
+   3.038485087878489,
+   3.401242156997748,
+   3.807307877431756,
+   4.261852759801457,
+   4.770664608946602,
+   5.340222221125231,
+   5.977777879735857,
+   6.691449699995794,
+   7.4903249984176945,
+   8.384576003307073,
+   9.385589379644228,
+   10.506111217615066,
+   11.760409330956815,
+   13.164454931693786,
+   14.736125994561542,
+   16.495434900596585,
+   18.46478325851989,
+   20.66924714860264,
+   23.136896421077388,
+   25.89915211478101,
+   28.991186547107812,
+   32.45237116969271,
+   36.32677789245459,
+   40.6637402594524,
+   45.51848162211126,
+   50.95281830846473,
+   57.03594674199939,
+   63.84532453263259,
+   71.46765675891864,
+   79.99999999999997
+  ],
+  "NB": 64,
+  "DC": [
+   0.12,
+   0.18,
+   0.25,
+   0.35
+  ]
+ }
+}

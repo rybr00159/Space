@@ -1,0 +1,309 @@
+site,epoch,utc_mid,sigma_min,full_ok,full_2sig_ok,frac
+CTIO,87,2026-10-22 13:51,3.8,False,False,0.0
+CTIO,88,2026-10-28 06:28,3.9,False,False,0.0
+CTIO,89,2026-11-02 23:04,3.9,False,False,0.14
+CTIO,90,2026-11-08 15:40,3.9,False,False,0.0
+CTIO,91,2026-11-14 08:16,3.9,False,False,0.0
+CTIO,92,2026-11-20 00:52,3.9,False,False,0.0
+CTIO,93,2026-11-25 17:28,3.9,False,False,0.0
+CTIO,94,2026-12-01 10:04,4.0,False,False,0.0
+CTIO,95,2026-12-07 02:40,4.0,False,False,0.0
+CTIO,96,2026-12-12 19:16,4.0,False,False,0.0
+CTIO,97,2026-12-18 11:52,4.0,False,False,0.0
+CTIO,98,2026-12-24 04:28,4.0,False,False,0.0
+CTIO,99,2026-12-29 21:03,4.0,False,False,0.0
+CTIO,100,2027-01-04 13:39,4.1,False,False,0.0
+CTIO,101,2027-01-10 06:14,4.1,False,False,0.0
+CTIO,102,2027-01-15 22:50,4.1,False,False,0.0
+CTIO,103,2027-01-21 15:25,4.1,False,False,0.0
+CTIO,104,2027-01-27 08:00,4.1,False,False,0.18
+CTIO,105,2027-02-02 00:35,4.1,False,False,0.0
+CTIO,106,2027-02-07 17:11,4.2,False,False,0.0
+CTIO,107,2027-02-13 09:46,4.2,False,False,0.41
+CTIO,108,2027-02-19 02:21,4.2,False,False,0.0
+CTIO,109,2027-02-24 18:56,4.2,False,False,0.0
+CTIO,110,2027-03-02 11:31,4.2,False,False,0.0
+CTIO,111,2027-03-08 04:06,4.2,False,False,0.03
+CTIO,112,2027-03-13 20:41,4.3,False,False,0.0
+CTIO,113,2027-03-19 13:16,4.3,False,False,0.0
+CTIO,114,2027-03-25 05:51,4.3,False,False,0.79
+CTIO,115,2027-03-30 22:26,4.3,False,False,0.0
+CTIO,116,2027-04-05 15:01,4.3,False,False,0.0
+CTIO,117,2027-04-11 07:36,4.3,True,True,1.0
+CTIO,118,2027-04-17 00:12,4.4,False,False,0.0
+CTIO,119,2027-04-22 16:47,4.4,False,False,0.0
+CTIO,120,2027-04-28 09:22,4.4,False,False,0.75
+CTIO,121,2027-05-04 01:57,4.4,False,False,0.45
+CTIO,122,2027-05-09 18:32,4.4,False,False,0.0
+CTIO,123,2027-05-15 11:08,4.4,False,False,0.32
+CTIO,124,2027-05-21 03:43,4.5,True,True,1.0
+CTIO,125,2027-05-26 20:19,4.5,False,False,0.0
+CTIO,126,2027-06-01 12:54,4.5,False,False,0.0
+CTIO,127,2027-06-07 05:30,4.5,True,True,1.0
+CTIO,128,2027-06-12 22:06,4.5,False,False,0.11
+CTIO,129,2027-06-18 14:41,4.5,False,False,0.0
+CTIO,130,2027-06-24 07:17,4.6,True,False,1.0
+CTIO,131,2027-06-29 23:53,4.6,False,False,0.79
+CTIO,132,2027-07-05 16:29,4.6,False,False,0.0
+CTIO,133,2027-07-11 09:05,4.6,False,False,0.23
+CTIO,134,2027-07-17 01:41,4.6,True,True,1.0
+CTIO,135,2027-07-22 18:17,4.7,False,False,0.0
+CTIO,136,2027-07-28 10:53,4.7,False,False,0.0
+CTIO,137,2027-08-03 03:30,4.7,True,True,1.0
+CTIO,138,2027-08-08 20:06,4.7,False,False,0.0
+CTIO,139,2027-08-14 12:42,4.7,False,False,0.0
+CTIO,140,2027-08-20 05:19,4.7,False,False,0.55
+CTIO,141,2027-08-25 21:55,4.8,False,False,0.14
+CTIO,142,2027-08-31 14:32,4.8,False,False,0.0
+CTIO,143,2027-09-06 07:08,4.8,False,False,0.0
+CTIO,144,2027-09-11 23:45,4.8,False,False,0.59
+CTIO,145,2027-09-17 16:21,4.8,False,False,0.0
+CTIO,146,2027-09-23 08:57,4.8,False,False,0.0
+CTIO,147,2027-09-29 01:34,4.9,False,False,0.85
+CTIO,148,2027-10-04 18:10,4.9,False,False,0.0
+CTIO,149,2027-10-10 10:47,4.9,False,False,0.0
+CTIO,150,2027-10-16 03:23,4.9,False,False,0.05
+CTIO,151,2027-10-21 20:00,4.9,False,False,0.0
+CTIO,152,2027-10-27 12:36,5.0,False,False,0.0
+CTIO,153,2027-11-02 05:12,5.0,False,False,0.0
+CTIO,154,2027-11-07 21:48,5.0,False,False,0.0
+CTIO,155,2027-11-13 14:25,5.0,False,False,0.0
+CTIO,156,2027-11-19 07:01,5.0,False,False,0.0
+CTIO,157,2027-11-24 23:37,5.0,False,False,0.0
+CTIO,158,2027-11-30 16:13,5.1,False,False,0.0
+CTIO,159,2027-12-06 08:49,5.1,False,False,0.0
+CTIO,160,2027-12-12 01:24,5.1,False,False,0.0
+CTIO,161,2027-12-17 18:00,5.1,False,False,0.0
+CTIO,162,2027-12-23 10:36,5.1,False,False,0.0
+CTIO,163,2027-12-29 03:12,5.2,False,False,0.0
+La Silla,87,2026-10-22 13:51,3.8,False,False,0.0
+La Silla,88,2026-10-28 06:28,3.9,False,False,0.0
+La Silla,89,2026-11-02 23:04,3.9,False,False,0.14
+La Silla,90,2026-11-08 15:40,3.9,False,False,0.0
+La Silla,91,2026-11-14 08:16,3.9,False,False,0.0
+La Silla,92,2026-11-20 00:52,3.9,False,False,0.0
+La Silla,93,2026-11-25 17:28,3.9,False,False,0.0
+La Silla,94,2026-12-01 10:04,4.0,False,False,0.0
+La Silla,95,2026-12-07 02:40,4.0,False,False,0.0
+La Silla,96,2026-12-12 19:16,4.0,False,False,0.0
+La Silla,97,2026-12-18 11:52,4.0,False,False,0.0
+La Silla,98,2026-12-24 04:28,4.0,False,False,0.0
+La Silla,99,2026-12-29 21:03,4.0,False,False,0.0
+La Silla,100,2027-01-04 13:39,4.1,False,False,0.0
+La Silla,101,2027-01-10 06:14,4.1,False,False,0.0
+La Silla,102,2027-01-15 22:50,4.1,False,False,0.0
+La Silla,103,2027-01-21 15:25,4.1,False,False,0.0
+La Silla,104,2027-01-27 08:00,4.1,False,False,0.18
+La Silla,105,2027-02-02 00:35,4.1,False,False,0.0
+La Silla,106,2027-02-07 17:11,4.2,False,False,0.0
+La Silla,107,2027-02-13 09:46,4.2,False,False,0.42
+La Silla,108,2027-02-19 02:21,4.2,False,False,0.0
+La Silla,109,2027-02-24 18:56,4.2,False,False,0.0
+La Silla,110,2027-03-02 11:31,4.2,False,False,0.0
+La Silla,111,2027-03-08 04:06,4.2,False,False,0.0
+La Silla,112,2027-03-13 20:41,4.3,False,False,0.0
+La Silla,113,2027-03-19 13:16,4.3,False,False,0.0
+La Silla,114,2027-03-25 05:51,4.3,False,False,0.78
+La Silla,115,2027-03-30 22:26,4.3,False,False,0.0
+La Silla,116,2027-04-05 15:01,4.3,False,False,0.0
+La Silla,117,2027-04-11 07:36,4.3,True,True,1.0
+La Silla,118,2027-04-17 00:12,4.4,False,False,0.0
+La Silla,119,2027-04-22 16:47,4.4,False,False,0.0
+La Silla,120,2027-04-28 09:22,4.4,False,False,0.74
+La Silla,121,2027-05-04 01:57,4.4,False,False,0.44
+La Silla,122,2027-05-09 18:32,4.4,False,False,0.0
+La Silla,123,2027-05-15 11:08,4.4,False,False,0.3
+La Silla,124,2027-05-21 03:43,4.5,True,True,1.0
+La Silla,125,2027-05-26 20:19,4.5,False,False,0.0
+La Silla,126,2027-06-01 12:54,4.5,False,False,0.0
+La Silla,127,2027-06-07 05:30,4.5,True,True,1.0
+La Silla,128,2027-06-12 22:06,4.5,False,False,0.1
+La Silla,129,2027-06-18 14:41,4.5,False,False,0.0
+La Silla,130,2027-06-24 07:17,4.6,True,False,1.0
+La Silla,131,2027-06-29 23:53,4.6,False,False,0.78
+La Silla,132,2027-07-05 16:29,4.6,False,False,0.0
+La Silla,133,2027-07-11 09:05,4.6,False,False,0.22
+La Silla,134,2027-07-17 01:41,4.6,True,True,1.0
+La Silla,135,2027-07-22 18:17,4.7,False,False,0.0
+La Silla,136,2027-07-28 10:53,4.7,False,False,0.0
+La Silla,137,2027-08-03 03:30,4.7,True,True,1.0
+La Silla,138,2027-08-08 20:06,4.7,False,False,0.0
+La Silla,139,2027-08-14 12:42,4.7,False,False,0.0
+La Silla,140,2027-08-20 05:19,4.7,False,False,0.53
+La Silla,141,2027-08-25 21:55,4.8,False,False,0.14
+La Silla,142,2027-08-31 14:32,4.8,False,False,0.0
+La Silla,143,2027-09-06 07:08,4.8,False,False,0.0
+La Silla,144,2027-09-11 23:45,4.8,False,False,0.59
+La Silla,145,2027-09-17 16:21,4.8,False,False,0.0
+La Silla,146,2027-09-23 08:57,4.8,False,False,0.0
+La Silla,147,2027-09-29 01:34,4.9,False,False,0.84
+La Silla,148,2027-10-04 18:10,4.9,False,False,0.0
+La Silla,149,2027-10-10 10:47,4.9,False,False,0.0
+La Silla,150,2027-10-16 03:23,4.9,False,False,0.04
+La Silla,151,2027-10-21 20:00,4.9,False,False,0.0
+La Silla,152,2027-10-27 12:36,5.0,False,False,0.0
+La Silla,153,2027-11-02 05:12,5.0,False,False,0.0
+La Silla,154,2027-11-07 21:48,5.0,False,False,0.0
+La Silla,155,2027-11-13 14:25,5.0,False,False,0.0
+La Silla,156,2027-11-19 07:01,5.0,False,False,0.0
+La Silla,157,2027-11-24 23:37,5.0,False,False,0.0
+La Silla,158,2027-11-30 16:13,5.1,False,False,0.0
+La Silla,159,2027-12-06 08:49,5.1,False,False,0.0
+La Silla,160,2027-12-12 01:24,5.1,False,False,0.0
+La Silla,161,2027-12-17 18:00,5.1,False,False,0.0
+La Silla,162,2027-12-23 10:36,5.1,False,False,0.0
+La Silla,163,2027-12-29 03:12,5.2,False,False,0.0
+SAAO,87,2026-10-22 13:51,3.8,False,False,0.0
+SAAO,88,2026-10-28 06:28,3.9,False,False,0.0
+SAAO,89,2026-11-02 23:04,3.9,False,False,0.0
+SAAO,90,2026-11-08 15:40,3.9,False,False,0.0
+SAAO,91,2026-11-14 08:16,3.9,False,False,0.0
+SAAO,92,2026-11-20 00:52,3.9,False,False,0.0
+SAAO,93,2026-11-25 17:28,3.9,False,False,0.0
+SAAO,94,2026-12-01 10:04,4.0,False,False,0.0
+SAAO,95,2026-12-07 02:40,4.0,False,False,0.0
+SAAO,96,2026-12-12 19:16,4.0,False,False,0.0
+SAAO,97,2026-12-18 11:52,4.0,False,False,0.0
+SAAO,98,2026-12-24 04:28,4.0,False,False,0.0
+SAAO,99,2026-12-29 21:03,4.0,False,False,0.0
+SAAO,100,2027-01-04 13:39,4.1,False,False,0.0
+SAAO,101,2027-01-10 06:14,4.1,False,False,0.0
+SAAO,102,2027-01-15 22:50,4.1,False,False,0.0
+SAAO,103,2027-01-21 15:25,4.1,False,False,0.0
+SAAO,104,2027-01-27 08:00,4.1,False,False,0.0
+SAAO,105,2027-02-02 00:35,4.1,False,False,0.16
+SAAO,106,2027-02-07 17:11,4.2,False,False,0.0
+SAAO,107,2027-02-13 09:46,4.2,False,False,0.0
+SAAO,108,2027-02-19 02:21,4.2,False,False,0.71
+SAAO,109,2027-02-24 18:56,4.2,False,False,0.0
+SAAO,110,2027-03-02 11:31,4.2,False,False,0.0
+SAAO,111,2027-03-08 04:06,4.2,False,False,0.37
+SAAO,112,2027-03-13 20:41,4.3,False,False,0.0
+SAAO,113,2027-03-19 13:16,4.3,False,False,0.0
+SAAO,114,2027-03-25 05:51,4.3,False,False,0.0
+SAAO,115,2027-03-30 22:26,4.3,False,False,0.59
+SAAO,116,2027-04-05 15:01,4.3,False,False,0.0
+SAAO,117,2027-04-11 07:36,4.3,False,False,0.0
+SAAO,118,2027-04-17 00:12,4.4,True,True,1.0
+SAAO,119,2027-04-22 16:47,4.4,False,False,0.0
+SAAO,120,2027-04-28 09:22,4.4,False,False,0.0
+SAAO,121,2027-05-04 01:57,4.4,True,True,1.0
+SAAO,122,2027-05-09 18:32,4.4,False,False,0.25
+SAAO,123,2027-05-15 11:08,4.4,False,False,0.0
+SAAO,124,2027-05-21 03:43,4.5,False,False,0.7
+SAAO,125,2027-05-26 20:19,4.5,True,False,1.0
+SAAO,126,2027-06-01 12:54,4.5,False,False,0.0
+SAAO,127,2027-06-07 05:30,4.5,False,False,0.21
+SAAO,128,2027-06-12 22:06,4.5,True,True,1.0
+SAAO,129,2027-06-18 14:41,4.5,False,False,0.0
+SAAO,130,2027-06-24 07:17,4.6,False,False,0.0
+SAAO,131,2027-06-29 23:53,4.6,True,True,1.0
+SAAO,132,2027-07-05 16:29,4.6,False,False,0.45
+SAAO,133,2027-07-11 09:05,4.6,False,False,0.0
+SAAO,134,2027-07-17 01:41,4.6,False,False,0.53
+SAAO,135,2027-07-22 18:17,4.7,False,False,0.9
+SAAO,136,2027-07-28 10:53,4.7,False,False,0.0
+SAAO,137,2027-08-03 03:30,4.7,False,False,0.0
+SAAO,138,2027-08-08 20:06,4.7,True,True,1.0
+SAAO,139,2027-08-14 12:42,4.7,False,False,0.0
+SAAO,140,2027-08-20 05:19,4.7,False,False,0.0
+SAAO,141,2027-08-25 21:55,4.8,False,False,0.84
+SAAO,142,2027-08-31 14:32,4.8,False,False,0.0
+SAAO,143,2027-09-06 07:08,4.8,False,False,0.0
+SAAO,144,2027-09-11 23:45,4.8,False,False,0.04
+SAAO,145,2027-09-17 16:21,4.8,False,False,0.22
+SAAO,146,2027-09-23 08:57,4.8,False,False,0.0
+SAAO,147,2027-09-29 01:34,4.9,False,False,0.0
+SAAO,148,2027-10-04 18:10,4.9,False,False,0.67
+SAAO,149,2027-10-10 10:47,4.9,False,False,0.0
+SAAO,150,2027-10-16 03:23,4.9,False,False,0.0
+SAAO,151,2027-10-21 20:00,4.9,False,False,0.36
+SAAO,152,2027-10-27 12:36,5.0,False,False,0.0
+SAAO,153,2027-11-02 05:12,5.0,False,False,0.0
+SAAO,154,2027-11-07 21:48,5.0,False,False,0.0
+SAAO,155,2027-11-13 14:25,5.0,False,False,0.0
+SAAO,156,2027-11-19 07:01,5.0,False,False,0.0
+SAAO,157,2027-11-24 23:37,5.0,False,False,0.0
+SAAO,158,2027-11-30 16:13,5.1,False,False,0.0
+SAAO,159,2027-12-06 08:49,5.1,False,False,0.0
+SAAO,160,2027-12-12 01:24,5.1,False,False,0.0
+SAAO,161,2027-12-17 18:00,5.1,False,False,0.0
+SAAO,162,2027-12-23 10:36,5.1,False,False,0.0
+SAAO,163,2027-12-29 03:12,5.2,False,False,0.0
+Siding Spring,87,2026-10-22 13:51,3.8,False,False,0.0
+Siding Spring,88,2026-10-28 06:28,3.9,False,False,0.0
+Siding Spring,89,2026-11-02 23:04,3.9,False,False,0.0
+Siding Spring,90,2026-11-08 15:40,3.9,False,False,0.0
+Siding Spring,91,2026-11-14 08:16,3.9,False,False,0.0
+Siding Spring,92,2026-11-20 00:52,3.9,False,False,0.0
+Siding Spring,93,2026-11-25 17:28,3.9,False,False,0.0
+Siding Spring,94,2026-12-01 10:04,4.0,False,False,0.0
+Siding Spring,95,2026-12-07 02:40,4.0,False,False,0.0
+Siding Spring,96,2026-12-12 19:16,4.0,False,False,0.0
+Siding Spring,97,2026-12-18 11:52,4.0,False,False,0.0
+Siding Spring,98,2026-12-24 04:28,4.0,False,False,0.0
+Siding Spring,99,2026-12-29 21:03,4.0,False,False,0.0
+Siding Spring,100,2027-01-04 13:39,4.1,False,False,0.0
+Siding Spring,101,2027-01-10 06:14,4.1,False,False,0.0
+Siding Spring,102,2027-01-15 22:50,4.1,False,False,0.0
+Siding Spring,103,2027-01-21 15:25,4.1,False,False,0.0
+Siding Spring,104,2027-01-27 08:00,4.1,False,False,0.0
+Siding Spring,105,2027-02-02 00:35,4.1,False,False,0.0
+Siding Spring,106,2027-02-07 17:11,4.2,False,False,0.45
+Siding Spring,107,2027-02-13 09:46,4.2,False,False,0.0
+Siding Spring,108,2027-02-19 02:21,4.2,False,False,0.0
+Siding Spring,109,2027-02-24 18:56,4.2,False,False,0.49
+Siding Spring,110,2027-03-02 11:31,4.2,False,False,0.0
+Siding Spring,111,2027-03-08 04:06,4.2,False,False,0.0
+Siding Spring,112,2027-03-13 20:41,4.3,False,False,0.08
+Siding Spring,113,2027-03-19 13:16,4.3,False,False,0.21
+Siding Spring,114,2027-03-25 05:51,4.3,False,False,0.0
+Siding Spring,115,2027-03-30 22:26,4.3,False,False,0.0
+Siding Spring,116,2027-04-05 15:01,4.3,False,False,0.97
+Siding Spring,117,2027-04-11 07:36,4.3,False,False,0.0
+Siding Spring,118,2027-04-17 00:12,4.4,False,False,0.0
+Siding Spring,119,2027-04-22 16:47,4.4,True,True,1.0
+Siding Spring,120,2027-04-28 09:22,4.4,False,False,0.0
+Siding Spring,121,2027-05-04 01:57,4.4,False,False,0.0
+Siding Spring,122,2027-05-09 18:32,4.4,False,False,0.82
+Siding Spring,123,2027-05-15 11:08,4.4,False,False,0.63
+Siding Spring,124,2027-05-21 03:43,4.5,False,False,0.0
+Siding Spring,125,2027-05-26 20:19,4.5,False,False,0.38
+Siding Spring,126,2027-06-01 12:54,4.5,True,True,1.0
+Siding Spring,127,2027-06-07 05:30,4.5,False,False,0.0
+Siding Spring,128,2027-06-12 22:06,4.5,False,False,0.0
+Siding Spring,129,2027-06-18 14:41,4.5,True,True,1.0
+Siding Spring,130,2027-06-24 07:17,4.6,False,False,0.27
+Siding Spring,131,2027-06-29 23:53,4.6,False,False,0.0
+Siding Spring,132,2027-07-05 16:29,4.6,False,False,0.89
+Siding Spring,133,2027-07-11 09:05,4.6,False,False,0.74
+Siding Spring,134,2027-07-17 01:41,4.6,False,False,0.0
+Siding Spring,135,2027-07-22 18:17,4.7,False,False,0.1
+Siding Spring,136,2027-07-28 10:53,4.7,True,True,1.0
+Siding Spring,137,2027-08-03 03:30,4.7,False,False,0.0
+Siding Spring,138,2027-08-08 20:06,4.7,False,False,0.0
+Siding Spring,139,2027-08-14 12:42,4.7,True,True,1.0
+Siding Spring,140,2027-08-20 05:19,4.7,False,False,0.0
+Siding Spring,141,2027-08-25 21:55,4.8,False,False,0.0
+Siding Spring,142,2027-08-31 14:32,4.8,False,False,0.4
+Siding Spring,143,2027-09-06 07:08,4.8,False,False,0.07
+Siding Spring,144,2027-09-11 23:45,4.8,False,False,0.0
+Siding Spring,145,2027-09-17 16:21,4.8,False,False,0.0
+Siding Spring,146,2027-09-23 08:57,4.8,False,False,0.52
+Siding Spring,147,2027-09-29 01:34,4.9,False,False,0.0
+Siding Spring,148,2027-10-04 18:10,4.9,False,False,0.0
+Siding Spring,149,2027-10-10 10:47,4.9,False,False,0.68
+Siding Spring,150,2027-10-16 03:23,4.9,False,False,0.0
+Siding Spring,151,2027-10-21 20:00,4.9,False,False,0.0
+Siding Spring,152,2027-10-27 12:36,5.0,False,False,0.0
+Siding Spring,153,2027-11-02 05:12,5.0,False,False,0.0
+Siding Spring,154,2027-11-07 21:48,5.0,False,False,0.0
+Siding Spring,155,2027-11-13 14:25,5.0,False,False,0.0
+Siding Spring,156,2027-11-19 07:01,5.0,False,False,0.0
+Siding Spring,157,2027-11-24 23:37,5.0,False,False,0.0
+Siding Spring,158,2027-11-30 16:13,5.1,False,False,0.0
+Siding Spring,159,2027-12-06 08:49,5.1,False,False,0.0
+Siding Spring,160,2027-12-12 01:24,5.1,False,False,0.0
+Siding Spring,161,2027-12-17 18:00,5.1,False,False,0.0
+Siding Spring,162,2027-12-23 10:36,5.1,False,False,0.0
+Siding Spring,163,2027-12-29 03:12,5.2,False,False,0.0

@@ -1,0 +1,172 @@
+{
+ "parameters": {
+  "ds": "inv",
+  "ecc": "kipping",
+  "f_sub": 0.15,
+  "f_N": 0.003,
+  "f_S": 0.0005,
+  "f_J": 0.0015,
+  "beta_sub": 0.0,
+  "beta_N": 0.0,
+  "beta_S": 1.0,
+  "beta_J": 1.5,
+  "f_mult": 0.27,
+  "mu_loga": 1.3,
+  "sig_loga": 1.16,
+  "gamma_q": 0.0,
+  "F_twin": 0.1,
+  "S_close": 0.25,
+  "sig_s": 0.3,
+  "ipd": "LR",
+  "ast": "base",
+  "dec": true,
+  "dT_twin": 0.75,
+  "r_close": 0.024,
+  "p_ecl_ms": 0.05,
+  "dchi2_bdms": null,
+  "r_wd": 2e-05,
+  "f_Twd": 0.3,
+  "p_ecl_wd": 0.029,
+  "dchi2_wd": 13.2,
+  "dchi2_wd_twin": null,
+  "f_occ": 0.1,
+  "dchi2_heb": null,
+  "p_ecl_heb": 0.06,
+  "r_eb_field": 0.0017,
+  "f_compact": 0.01,
+  "dchi2_bg3_ms": 65.5,
+  "dchi2_bg3_c": 19.6,
+  "dchi2_bg5_ms": 76.3,
+  "dchi2_bg5_c": 27.4,
+  "lr_bg3": 0.0001336697575408284,
+  "lr_bg5": 6.582644239262465e-11,
+  "lr_pairA": 0.0006056673786594935,
+  "lr_pairB": 3.950089161871931e-11,
+  "lr_mira": 5.185110375946842e-27,
+  "kappa": 2.2,
+  "eps_dss": 0.02,
+  "f_Mdw_bg": 0.2,
+  "dchi2_unc_ms": 30.0,
+  "S_pair": null,
+  "hri": null,
+  "chroma": null,
+  "sb2": false
+ },
+ "result": {
+  "FPP": 0.011109116281482923,
+  "NFPP": 0.0006276146141831486,
+  "post": {
+   "TP_single": 0.6707926664026717,
+   "TP_diluted": 0.1858635074074059,
+   "TP_on_twin": 0.13223470990843952,
+   "PTP_companion": 0.010386629602151417,
+   "EB_WD_on_M3V": 1.1990366550088663e-05,
+   "EB_WD_on_twin": 1.0235839075485828e-06,
+   "EB_MS_BD_on_M3V": 1.4313224683148785e-08,
+   "HEB_bound": 5.057880380812958e-05,
+   "BEB_bg3_3.1as": 8.883380184926299e-09,
+   "BEB_bg5_5.5as": 8.855171771363728e-17,
+   "BTP_uncatalogued": 3.10693781331553e-05,
+   "BEB_uncat_compact": 1.7872386216402828e-07,
+   "BEB_uncat_MSMS": 8.012282334529482e-09,
+   "NTP_pairA": 0.0006273539494967773,
+   "NEB_pairA": 2.606627678551946e-07,
+   "NTP_pairB": 1.9015160735535753e-12,
+   "NEB_pairB": 1.700010947406841e-14,
+   "NEB_NTP_Mira": 0.0
+  },
+  "FPP_strict": 0.14334382618992247,
+  "FPP_system": 0.0007224866793315021,
+  "dominant_FP": "PTP_companion",
+  "E": {
+   "TP_single": 7.487506407531856e-08,
+   "TP_diluted": 2.0746413494686255e-08,
+   "TP_on_twin": 1.4760272246971807e-08,
+   "PTP_companion": 1.159373970437597e-09,
+   "EB_WD_on_M3V": 1.3383859256229777e-12,
+   "EB_WD_on_twin": 1.1425424650984204e-13,
+   "EB_MS_BD_on_M3V": 1.597667459637761e-15,
+   "HEB_bound": 5.645695556416991e-12,
+   "BEB_bg3_3.1as": 9.915786111956259e-16,
+   "BEB_bg5_5.5as": 9.884299381722796e-24,
+   "BTP_uncatalogued": 3.4680189498431865e-12,
+   "BEB_uncat_compact": 1.9949473662383382e-14,
+   "BEB_uncat_MSMS": 8.943451281372694e-16,
+   "NTP_pairA": 7.002635764994743e-11,
+   "NEB_pairA": 2.909563926790397e-14,
+   "NTP_pairB": 2.1225058796648324e-19,
+   "NEB_pairB": 1.897582293176413e-21,
+   "NEB_NTP_Mira": 0.0
+  },
+  "config": {
+   "P_single": 0.5286051036481002,
+   "P_binary": 0.4713948963518999,
+   "P_twin_dT_le_0p3": 0.281470328957586,
+   "P_companion_dT_0p3_2": 0.16538067671056828,
+   "P_companion_dT_2_4p5": 0.019846979250297703
+  },
+  "PTP_by_dT": {
+   "0.75-1.5": 0.009948236993011728,
+   "1.5-2.5": 0.0004291509738752563,
+   "2.5-3.5": 8.332292040167544e-06,
+   "3.5-5": 9.093432242662612e-07
+  },
+  "PTP_by_a": {
+   "0-0.5": 1.1959430511738041e-05,
+   "0.5-4": 0.0002201281874316202,
+   "4-6": 0.0011903452176105062,
+   "6-65": 0.006995261446551933,
+   "65-100000.0": 0.0019636960871147104
+  },
+  "PTP_Rp_pct_16_50_84": [
+   5.698937990081977,
+   5.822406460085385,
+   6.098344274488674
+  ],
+  "PTP_m2_pct_16_50_84": [
+   0.19646732397840244,
+   0.21224757092556468,
+   0.22002863386629612
+  ],
+  "PTP_sep_arcsec_pct_16_50_84": [
+   0.04808165680848206,
+   0.13616984318434705,
+   0.6364784901802037
+  ],
+  "PTP_depth_ratio_V_over_I_pct_16_50_84": [
+   0.722182149471259,
+   0.7971818997087402,
+   0.8347294852245053
+  ],
+  "PTP_mean_companion_mass": 0.2088559257574914,
+  "PTP_mean_dT": 1.0373211407819545,
+  "Z_TP_single": 1.8000097956865634e-06,
+  "nb_uncatalogued": {
+   "faint": 0.0002080560000178306,
+   "bright": 1.0489800717744865e-05
+  }
+ },
+ "grid_checks": {
+  "inv": {
+   "Z_single_kipping": 0.0005992507897780211,
+   "Z_twin_kipping": 0.000709490664594171,
+   "lnB_single_twin_kipping": -0.16886714753085894,
+   "lnB_single_twin_circ": -0.6003080135340466,
+   "dchi2_min_single_rho9p4": 0.0935718757491486,
+   "dchi2_min_twin_rho15p5": 0.056005385295065935,
+   "best_b_single": 0.55,
+   "k_single": 0.11814167441536481
+  },
+  "ref": {
+   "Z_single_kipping": 0.00041577208635840623,
+   "Z_twin_kipping": 0.0004542251657348055,
+   "lnB_single_twin_kipping": -0.08845579406697734,
+   "lnB_single_twin_circ": -0.5016590764325892,
+   "dchi2_min_single_rho9p4": 0.37055431296994357,
+   "dchi2_min_twin_rho15p5": 0.14405810340394964,
+   "best_b_single": 0.5,
+   "k_single": 0.11931756405750041
+  }
+ },
+ "method": "f04: explicit Bayesian scenario comparison for the 5.69-d signal on TIC 214311908, with sensitivity analysis.\n\nEvidence of each scenario S:  E_S = (prior probability per target star that S exists, per unit ln P at P = 5.69 d)\n                                     x (likelihood of all data under S, integrated over S's internal parameters).\nAll E_S use the same period normalisation (per ln P) and the same light-curve reference chi2 (best planet fit on the grid),\nso FPP = 1 - E(planet on the M3V or its twin) / sum E, NFPP = E(resolved neighbours) / sum E.\nThree FPP definitions are reported:\n  FPP        (task definition): planet on the M3V (single or diluted) or on a near-equal companion (Delta T <= dT_twin = 0.75)\n  FPP_strict (TRICERATOPS-like): only a planet on the brighter component counts; a planet on the twin is an FP\n  FPP_system : any planet-sized body transiting any star of the unresolved bound system counts (PTP radii are 5.7-6.1 R_e)\n\nPLANET scenarios (TP single; TP diluted by a companion; TP-twin = planet on a near-equal companion; PTP = planet on a\nfainter bound companion = false positive), from the f02 grid:\n   Z = < (R/a)_true (1+e sin w)/(1-e^2) * sum_b db sqrt(2 pi) sigma_k g(k_hat R_h) / k_hat exp(-(chi2 - chi2_ref)/2) >_{e,w}\n   evaluated at rho_circ = rho_host * [(1+e sin w)/sqrt(1-e^2)]^-3 (photo-eccentric effect), with g = planet occurrence per\n   ln R per ln P for the host (classes: 2-4, 4-7, 7-10, 10-22 R_earth; f_class integrated over P = 3-10 d, uniform in ln R\n   and ln P inside each class; host-mass scaling (M/0.37)^beta_class). e prior: Kipping (2013) beta(0.867, 3.03).\n   Binary configurations from f03 (Winters+19 population; IPD, astrometry, DECaPS2, CMD likelihoods), planet suppression\n   S(a) (Moe & Kratter 2021 / Kraus+16: S_close for a <= 10 au, log-linear to 1 at 200 au) and Holman & Wiegert (1999)\n   stability for the S-type orbit.\nEB scenarios use the maximum-likelihood Delta chi2 of the physical models fitted by the shape agent (shape/out/summary.json;\n   relative to the free planet fit, including secondary eclipse, photometry, parallax and RUWE terms where stated),\n   times an Occam factor f_occ (fraction of the class's parameter space that reproduces depth and duration; 0.1, generous\n   compared with the planet's own ~0.05), times literature rates and eclipse probabilities.\nBACKGROUND / NEARBY scenarios add the injection-calibrated localisation likelihoods (f01) and archival-imaging limits.\n\nOutputs: out/fpp_baseline.json, out/fpp_variants.csv, out/fpp_random.csv, out/fpp_summary.json"
+}

@@ -1,0 +1,133 @@
+63 catalogues; 0 not in the ctx/ list:
+Empty DataFrame
+Columns: [catalog, description, min_r]
+Index: []
+---- J/A+A/649/A6
+J/A+A/649/A6    Gaia Catalogue of Nearby Stars - GCNS (Gaia collaboration, 2021)
+---- J/A+A/653/A98
+J/A+A/653/A98         asPIC1.1 catalogue                       (Montalto+, 2021)
+---- J/A+A/657/A7
+J/A+A/657/A7  Stellar and substellar companions from Gaia EDR3 (Kervella+, 2022)
+---- J/A+A/669/A104
+J/A+A/669/A104      Stellar parameters from Gaia DR3         (Kordopatis+, 2023)
+---- J/A+A/677/A137
+J/A+A/677/A137      Stellar variability in Gaia DR3      (Maiz Apellaniz+, 2023)
+---- J/A+A/682/A34
+J/A+A/682/A34      SRG/eROSITA all-sky survey catalogs (eRASS1) (Merloni+, 2024)
+---- J/A+A/684/A121
+J/A+A/684/A121      SRG/eROSITA all-sky survey coronal content   (Freund+, 2024)
+---- J/A+A/684/A29
+J/A+A/684/A29       Radial velocities from Gaia BP/RP spectra  (Verberne+, 2024)
+---- J/A+A/692/A115
+J/A+A/692/A115          Pristine survey DR1                      (Martin+, 2024)
+---- J/A+A/692/A150
+J/A+A/692/A150      Exoplanet yields around FGK stars        (Boettner+, 2024)
+---- J/A+A/704/A237
+J/A+A/704/A237  Stellar encounters kinematics with beta Pic (Gragera-Mas+, 2025)
+---- J/A+A/704/A344
+J/A+A/704/A344        eRASS1 counterparts and classification    (Salvato+, 2025)
+---- J/AJ/158/93
+J/AJ/158/93 Regression of stellar effective temperatures in GaiaDR2 (Bai+, 2019)
+---- J/AJ/159/84
+J/AJ/159/84  Machine-learning regression of extinction in Gaia DR2  (Bai+, 2020)
+---- J/AJ/161/234
+J/AJ/161/234        1.7 million K and M dwarfs cross-matching     (Medan+, 2021)
+---- J/AJ/165/267
+J/AJ/165/267 O2 levels in Nearby Transiting Exoplanets (Hardegree-Ullman+, 2023)
+---- J/ApJ/867/105
+J/ApJ/867/105  ATLAS all-sky stellar ref. catalog, ATLAS-REFCAT2 (Tonry+, 2018)
+---- J/ApJ/891/58
+J/ApJ/891/58  TIC star exposure times for JWST, LUVOIR and OST  (Suissa+, 2020)
+---- J/ApJ/984/58
+J/ApJ/984/58        Stellar parameters from XP and RVS spectra    (Huson+, 2025)
+---- J/MNRAS/506/2269
+J/MNRAS/506/2269       Validation of Gaia EDR3 parallaxes      (El-Badry+, 2021)
+---- J/MNRAS/524/1855
+J/MNRAS/524/1855  Revised stars atmos. param. from GaiaXP DR3 sp  (Zhang+, 2023)
+rows J/A+A/649/A6/table1c [{'_r': '0.03', 'recno': '237309', 'GaiaEDR3': '5925373272850784768', 'RA_ICRS': '260.9696737', 'e_RA_ICRS': '0.01992', 'DE_ICRS': '-51.3238212', 'e_DE_ICRS': '0.01784', 'Plx': '15.497', 'e_Plx': '0.02512', 'pmRA': '-113.671', 'e_pmRA': '0.03112', 'pmDE': '85.544', 'e_pmDE': '0.0224', 'Gmag': '14.281', 'RFG': '1938.51', 'BPmag': '15.8307', 'RFBP': '310.32', 'RPmag': '13.0746', 'RFRP': '866.99', 'E(BP/RP)': '1.4528', 'RUWE': '1.0800000429153442', 'IPDfmp': '0', 'f_RV': 'F', 'GCNSprob': '1.0', 'WD
+rows J/MNRAS/506/2269/catalog [{'_r': '0.03', 'recno': '145151', 'SolID1': '1636042515805110273', 'SolID2': '1636042515805110273', 'Source1': '5925373272850784768', 'Source2': '5925373272850782208', 'RandomI1': '1604238877', 'RandomI2': '288222962', 'refEpoch1': '2016.0', 'refEpoch2': '2016.0', 'RA_ICRS': '260.9696736991784', 'RA2deg': '260.9748734355775', 'e_RA_ICRS': '0.01991734', 'e_RA2deg': '0.31392914', 'DE_ICRS': '-51.323821211802624', 'DE2deg': '-51.32405517386763', 'e_DE_ICRS': '0.017842075', 'e_DE2deg': '0.2785787',
+rows J/A+A/657/A7/tablea3 [{'_r': '0.03', 'recno': '684292', 'T': '0', 'EDR3-Parent': '5925373272850782208', 'EDR3-Source': '5925373272850784768', 'Name': 'Gaia EDR3 5925373272850784768', 'RA_ICRS': '260.96967369918', 'DE_ICRS': '-51.3238212118', 'rPos': 'G', 'Vmag': '14.960000038146973', 'Gmag': '14.281000137329102', 'Kmag': '10.482000350952148', 'E(B-V)': '0.006000000052154064', 'r_E(B-V)': 'S', 'Plx': '15.548999786376953', 'e_Plx': '0.027000000700354576', 'r_Plx': 'G', 'RUWE': '1.0759999752044678', 'pmRA': '-113.671',
+rows J/A+A/682/A34/erass1-m [{'_r': '3.571', 'recno': '860446', 'IAUName': '1eRASS J172352.9-511928', 'DetUId': 'em01_261141_020_ML00349_003_c010', 'SkyTile': '261141', 'IdSrc': '349', 'UId': '126114100349', 'UIdHard': '0', 'IdCluster': '346', 'RA_ICRS': '260.97079953267', 'DE_ICRS': '-51.32452182901', 'RARdeg': '260.97189637854854', 'DERdeg': '-51.32469464648454', 'e_RA_ICRS': '4.5892434', 'E_RA_ICRS': '4.717150688', 'e_DE_ICRS': '4.085439682', 'E_DE_ICRS': '4.1413879', 'posErr': '5.38125563', 'RADEErr': '6.58061409', 'GL
+rows J/A+A/684/A121/like_ctp [{'_r': '0.625', 'recno': '121828', 'ERO': '1eRASS J172352.9-511928', 'MJD': '58934.01', 'ePos': '5.380000114440918', 'CtpRank': '1', 'CtpId': '5925373272850784768', 'CtpSep': '4.179999828338623', 'p-coronal': '0.9948999881744385', 'p-ij': '0.7271999716758728', 'RAJ2000': '260.969452', 'DEJ2000': '-51.323721', 'FX': '4.930000093057718e-14', 'Gmag': '14.279999732971191', 'BP-RP': '2.759999990463257', 'plx': '15.5', 'SName': 'Gaia DR3 5925373272850784768', 'SOType': 'HighPM*', 'TrainSet': '0', 'Co
+rows J/AJ/165/267/table1 [{'_r': '2.268', 'recno': '73439', 'Gaia': '5925373272850784768', '2MASS': '17235292-5119271', 'RAJ2000': '260.9704821', 'DEJ2000': '-51.3242014', 'pmRA': '-113.6712', 'e_pmRA': '0.0311', 'pmDE': '85.5436', 'e_pmDE': '0.0224', 'Gmag': '14.281', 'e_Gmag': '0.00279999990016222', 'BPmag': '15.8307', 'e_BPmag': '0.0044999998062849045', 'RPmag': '13.0746', 'e_RPmag': '0.004000000189989805', 'Ksmag': '10.482000350952148', 'e_Ksmag': '0.026000000536441803', 'Dist': '64.52999877929688', 'E_Dist': '0.100
+rows J/ApJ/984/58/table1 [{'_r': '0.029', 'recno': '179308858', 'GaiaDR3': '5925373272850784768', 'RAJ2000': '260.969674', 'DEJ2000': '-51.323821', 'logTeff': '3.5209999084472656', 'e_logTeff': '0.0010000000474974513', 'log(g)': '4.800000190734863', 'e_log(g)': '0.009999999776482582', '[Fe/H]': '-0.029999999329447746', 'e_[Fe/H]': '0.0'}]
+rows J/ApJ/891/58/table6 [{'_r': '2.29', 'recno': '3992', 'TIC': '214311908', '2MASS': '17235292-5119271', 'Vmag': '15.859999656677246', 'Ksmag': '10.482000350952148', 'TFlag': 'cdwrf', 'Teff': '3301.0', 'Rad': '0.38066', 'Mass': '0.36949', 'LumCl': 'DWARF', 'Lum': '0.0155', 'Dist': '64.1712', 'f_TIC': 'TRML', 'jwst2.7-0ppm': '121576.9197', 'jwst1.4-0ppm': '694080.5769', 'jwst1.8-0ppm': '560601.3571', 'ost6.0-0ppm': '211670.9987', 'luva1.4-0ppm': '130847.3194', 'luva1.8-0ppm': '106658.7273', 'luvb1.4-0ppm': '463031.4555
+rows J/A+A/704/A344/dr1ge3 [{'_r': '3.571', 'recno': '879692', 'IAUName': '1eRASS J172352.9-511928', 'DetUId': 'em01_261141_020_ML00349_003_c010', 'SkyTile': '261141', 'IdSrc': '349', 'UId': '126114100349', 'UIdHard': '0', 'IdCluster': '346', 'RA_ICRS': '260.97079953267', 'DE_ICRS': '-51.32452182901', 'RARdeg': '260.97189637855', 'DERdeg': '-51.32469464648', 'e_RA_ICRS': '4.589243', 'E_RA_ICRS': '4.717151', 'e_DE_ICRS': '4.08544', 'E_DE_ICRS': '4.141388', 'RADEErr': '6.580614', 'posErr': '5.381256', 'GLON': '338.833130627
+rows J/A+A/704/A237/80pcbpok [{'_r': '0.03', 'recno': '65786', 'GaiaDR3': '5925373272850784768', 'RA_ICRS': '260.96967369918', 'e_RA_ICRS': '0.01991734', 'DE_ICRS': '-51.3238212118', 'e_DE_ICRS': '0.017842075', 'plx': '15.49730578833524', 'e_plx': '0.025122179', 'pmRA': '-113.67115174283741', 'e_pmRA': '0.031123962', 'pmDE': '85.54355028285138', 'e_pmDE': '0.02239997', 'RV': '16.283681869506836', 'e_RV': '2.21736741065979', 'RADEcor': '0.09892836', 'RAPlxcor': '-0.16353513', 'RApmRAcor': '-0.16941555', 'RApmDEcor': '-0.1829
+rows J/A+A/692/A150/allskytg [{'_r': '0.03', 'recno': '2258705', 'GaiaDR2': '5925373272850784768', 'GaiaDR3': '5925373272850784768', 'plx': '15.4973', 'e_plx': '0.0251', 'RA_ICRS': '260.96967369918', 'e_RA_ICRS': '0.01991734', 'DE_ICRS': '-51.3238212118', 'e_DE_ICRS': '0.017842075', 'pmRA': '-113.671', 'e_pmRA': '0.03099999949336052', 'pmDE': '85.544', 'e_pmDE': '0.02199999988079071', 'RV': '16.283682', 'e_RV': '2.2173674', 'GLON': '338.832180527', 'GLAT': '-8.5475275048', 'U': '22.01975', 'V': '-5.60512', 'W': '40.5289', '
+rows J/A+A/653/A98/aspic1_1 [{'_r': '0.07', 'recno': '350991', 'PICDR1id': '9844052', 'PICDR1': 'PIC DR1 9844052', 'GaiaDR2': '5925373272850784768', 'RAICRS': '260.96969903043', 'e_RAICRS': '0.057100001722574234', 'DEICRS': '-51.32383313824', 'e_DEICRS': '0.07689999788999557', 'Plx': '15.5552', 'e_Plx': '0.08389999717473984', 'pmRA*': '-114.067', 'e_pmRA*': '0.11400000005960464', 'pmDE': '85.78', 'e_pmDE': '0.12999999523162842', 'pm': '142.722', 'e_pm': '0.13899999856948853', 'Epoch': '2015.5', 'FG': '35884.24629', 'e_FG':
+rows J/A+A/669/A104/catalog [{'_r': '0.03', 'GaiaDR3': '5925373272850784768', 'RA_ICRS': '260.96967369918', 'DE_ICRS': '-51.3238212118', 'Xdgeo': '8.189698', 'b_Xdgeo': '8.189598', 'B_Xdgeo': '8.189763', 'Ydgeo': '-0.022963', 'b_Ydgeo': '-0.023002', 'B_Ydgeo': '-0.022938', 'Zdgeo': '0.011093', 'b_Zdgeo': '0.011077', 'B_Zdgeo': '0.011104', 'rdgeo': '8.189731', 'b_rdgeo': '8.18963', 'B_rdgeo': '8.189795', 'VRdgeo': '-32.277', 'b_VRdgeo': '-34.798', 'B_VRdgeo': '-30.618', 'Vphidgeo': '245.017', 'b_Vphidgeo': '244.043', 'B_Vph
+rows J/A+A/677/A137/catalog [{'_r': '0.03', 'Source': '5925373272850784768', 'RA_ICRS': '260.96967369918', 'DE_ICRS': '-51.3238212118', 'Gmag': '14.28104', 'BP-RP': '2.756149', 'Cstar': '0.008114', 'plx': '15.54875', 'e_plx': '0.036319', 'GMAG': '10.23952', 'Gal': 'M', 'SG0': '10.373006', 'SG': '8.000615', 'SSG': '0.687263', 'SIG': '6.51442', 'SBP0': '21.567862', 'SBP': '18.6175', 'SSBP': '1.26752', 'SIBP': '10.596045', 'SRP0': '7.82071', 'SRP': '6.796642', 'SSRP': '0.388893', 'SIRP': '3.788387', 'Var': 'NOT_AVAILABLE', 'E
+rows J/A+A/684/A29/extend [{'_r': '0.03', 'recno': '101312900', 'GaiaDR3': '5925373272850784768', 'RA_ICRS': '260.96967369918', 'DE_ICRS': '-51.3238212118', 'RV': '75.012', 'e_RV': '80.8795', 'Offset': '366.892', 'UnderFactor': '2.287', 'NoiseFloor': '26.968', 'CMDoutfrac': '0.309238', 'BadMeas': '0.8399999737739563', 'warning': '14', 'Teff': '3100', 'logg': '2.0', '[Fe/H]': '-1.0', 'rchi2': '6.31132', 'Skew': '5.801'}]
+rows J/A+A/692/A115/pristine_ca [{'_r': '0.029', 'GaiaDR3': '5925373272850784768', 'RAICRS': '260.969674', 'DEICRS': '-51.323821', 'FCaHK': '3.62722e-18', 'e_FCaHK': '3.87807e-19', 'CaHKsynmag': '18.256999969482422', 'e_CaHKsynmag': '0.11599999666213989', 'Pvar': '0.8560000061988831'}]
+rows J/A+A/704/A344/dr1cw2020 [{'_r': '3.571', 'recno': '918257', 'IAUName': '1eRASS J172352.9-511928', 'DetUId': 'em01_261141_020_ML00349_003_c010', 'SkyTile': '261141', 'IdSrc': '349', 'UId': '126114100349', 'UIdHard': '0', 'IdCluster': '346', 'RA_ICRS': '260.97079953267', 'DE_ICRS': '-51.32452182901', 'RARdeg': '260.97189637855', 'DERdeg': '-51.32469464648', 'e_RA_ICRS': '4.589243', 'E_RA_ICRS': '4.717151', 'e_DE_ICRS': '4.08544', 'E_DE_ICRS': '4.141388', 'RADEErr': '5.381256', 'posErr': '6.580614', 'GLON': '338.833130627
+rows J/A+A/704/A344/dr1ls10 [{'_r': '3.571', 'recno': '885107', 'IAUName': '1eRASS J172352.9-511928', 'DetUId': 'em01_261141_020_ML00349_003_c010', 'SkyTile': '261141', 'IdSrc': '349', 'UId': '126114100349', 'UIdHard': '0', 'IdCluster': '346', 'RA_ICRS': '260.97079953267', 'DE_ICRS': '-51.32452182901', 'RARdeg': '260.97189637855', 'DERdeg': '-51.32469464648', 'e_RA_ICRS': '4.589243', 'E_RA_ICRS': '4.717151', 'e_DE_ICRS': '4.08544', 'E_DE_ICRS': '4.141388', 'RADEErr': '5.381256', 'posErr': '6.580614', 'GLON': '338.833130627
+rows J/AJ/158/93/table2 [{'_r': '0.07', 'Source': '5925373272850784768', 'RA_ICRS': '260.96969903043', 'DE_ICRS': '-51.32383313824', 'Teff': '4915', 'e_Teff': '763'}]
+rows J/AJ/159/84/table2 [{'_r': '0.07', 'Source': '5925373272850784768', 'RA_ICRS': '260.96969903043', 'DE_ICRS': '-51.32383313824', 'E(BP-RP)': '1.659999966621399', 'e_E(BP-RP)': '0.1579'}]
+rows J/AJ/161/234/table2 [{'_r': '0.07', 'recno': '4083099', 'GaiaDR2': '5925373272850784768', 'Gmag': '14.3011', 'BPmag': '15.8456', 'RPmag': '13.0904', 'RA_ICRS': '260.96969903043', 'DE_ICRS': '-51.32383313824', 'plx': '15.5552', 'e_plx': '0.08389999717473984', 'pmRA': '-114.067', 'pmDE': '85.78', 'SDSS': '99.0', '2MASS': '17235292-5119271', 'Jmag': '11.36299991607666', 'e_Jmag': '0.02800000086426735', 'Hmag': '10.739999771118164', 'e_Hmag': '0.03099999949336052', 'Ksmag': '10.482000350952148', 'e_Ksmag': '0.026000000
+rows J/AJ/161/234/table3 [{'_r': '0.07', 'recno': '5632620', 'GaiaDR2': '5925373272850784768', 'Gmag': '14.3011', 'RA_ICRS': '260.96969903043', 'DE_ICRS': '-51.32383313824', '2MASS': '17235289-5119392', 'Jmag': '16.511999130249023', 'e_Jmag': '0.15399999916553497', 'Hmag': '16.222999572753906', 'e_Hmag': '0.2759999930858612', 'Ksmag': '15.914999961853027', 'RA2deg': '260.970379', 'DE2deg': '-51.327572', '2MASSProb': '0.0', '2MASSSep': '11.9781462', '_RA.icrs': '260.96969903043', '_DE.icrs': '-51.32383313824'}, {'_r': '0
+rows J/AJ/161/234/table4 [{'_r': '0.07', 'recno': '5499462', 'GaiaDR2': '5925373272850784768', 'Gmag': '14.3011', 'RA_ICRS': '260.96969903043', 'DE_ICRS': '-51.32383313824', 'AllWISE': 'J172352.86-511926.1', 'W1mag': '10.112000465393066', 'e_W1mag': '0.02199999988079071', 'W2mag': '9.883999824523926', 'e_W2mag': '0.019999999552965164', 'W3mag': '9.380000114440918', 'e_W3mag': '0.03700000047683716', 'W4mag': '7.1519999504089355', 'e_W4mag': '0.10100000351667404', 'RAAdeg': '260.9702814', 'DEAdeg': '-51.3239338', 'WISEPro
+rows J/ApJ/867/105/refcat2 [{'_r': '3.108', 'GaiaDR2': 'GaiaDR2', 'RA_ICRS': '260.97023847', 'DE_ICRS': '-51.32302533', 'Plx': '0.57', 'e_Plx': '0.15000000596046448', 'pmRA': '2.8', 'e_pmRA': '0.23999999463558197', 'pmDE': '-1.2', 'e_pmDE': '0.25999999046325684', 'Gmag': '17.50200080871582', 'e_Gmag': '0.0020000000949949026', 'BPmag': '17.86400032043457', 'e_BPmag': '0.042', 'RPmag': '16.558000564575195', 'e_RPmag': '0.028999999165534973', 'dupvar': '2', 'Ag': '0.625', 'rp1': '2.700000047683716', 'r1': '3.0', 'r10': '3.09
+rows J/MNRAS/524/1855/xpparams [{'_r': '0.038', 'GaiaDR3': '5925373272850784768', 'RA_ICRS': '260.96967', 'DE_ICRS': '-51.323822', 'Teff': '2.2614', 'e_Teff': '0.2102', '[Fe/H]': '-3.6893', 'e_[Fe/H]': '0.1178', 'logg': '8.5992', 'e_logg': '0.476', 'Ext': '0.9278', 'e_Ext': '0.0079', 'Plx': '15.4377', 'e_Plx': '0.0251', 'Quality': '31', 'Chi2': '20944.0', 'ln(Prior)': '-53.0938', 'ConfTeff': '9.999999747378752e-05', 'Conf[Fe/H]': '0.026000000536441803', 'Conflogg': '0.0'}]
+X-ray/UV/radio within 30": [
+{
+"catalog": "J/A+A/665/A78/bkgev",
+"description": "Events generated by the simulated background (eRASS1_mock_events_BKG.fits)",
+"n": 3,
+"min_r": 18.511
+},
+{
+"catalog": "J/A+A/682/A34/erass1-m",
+"description": "All extended X-ray sources and all point-like X-ray sources with detection likelihood >6, detected over a broad 0.2-2.3keV band",
+"n": 1,
+"min_r": 3.571
+},
+{
+"catalog": "J/A+A/684/A29/extend",
+"description": "Extended Catalogue",
+"n": 5,
+"min_r": 0.03
+},
+{
+"catalog": "J/A+A/684/A121/like_ctp",
+"description": "Likely coronal identifications of the eRASS1 main sources",
+"n": 2,
+"min_r": 0.625
+},
+{
+"catalog": "J/A+A/704/A344/dr1ls10",
+"description": "Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the Legacy Survey DR10",
+"n": 1,
+"min_r": 3.571
+},
+{
+"catalog": "J/A+A/704/A344/dr1ge3",
+"description": "Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the Gaia DR3 survey",
+"n": 1,
+"min_r": 3.571
+},
+{
+"catalog": "J/A+A/704/A344/dr1cw2020",
+"description": "Identification and characterization of the counterparts to the X-ray point sources in the eROSITA/DR1 main catalogue using the CatWISE2020 survey",
+"n": 1,
+"min_r": 3.571
+},
+{
+"catalog": "J/A+A/712/A171/erass3-m",
+"description": "eROSITA/eRASS:3 main catalogue. X-ray sources detected in the 0.2>2.3keV band using eSASS adopting a detection likelihood threshold of 5",
+"n": 1,
+"min_r": 5.801
+},
+{
+"catalog": "J/A+A/712/A171/dr2mc",
+"description": "eROSITA/eRASS:3 main catalogue of identified counterparts using CatWISE2020 survey",
+"n": 1,
+"min_r": 5.801
+},
+{
+"catalog": "J/A+A/712/A171/dr2mg",
+"description": "eROSITA/eRASS:3 main catalogue of identified counterparts using GAIA DR3",
+"n": 2,
+"min_r": 5.801
+}
+]

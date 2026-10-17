@@ -1,0 +1,107 @@
+{
+ "per_sector": {
+  "12": {
+   "n": 13,
+   "inv_over_tic_median": 1.1159733488860786,
+   "inv_over_tic_err": 0.029642485063062093,
+   "inv_over_ref_median": 0.9822578822794013,
+   "inv_over_ref_rstd": 0.04958220177132322,
+   "investigator_faint_scale": 1.1294286843458394
+  },
+  "39": {
+   "n": 13,
+   "inv_over_tic_median": 1.0728731886484788,
+   "inv_over_tic_err": 0.01674943372485261,
+   "inv_over_ref_median": 0.968128070087584,
+   "inv_over_ref_rstd": 0.05160106127741536,
+   "investigator_faint_scale": 1.098898641883352
+  },
+  "66": {
+   "n": 15,
+   "inv_over_tic_median": 1.14113834495624,
+   "inv_over_tic_err": 0.015105647649195381,
+   "inv_over_ref_median": 0.9863023454577439,
+   "inv_over_ref_rstd": 0.05835121661902384,
+   "investigator_faint_scale": 1.1213296079949941
+  },
+  "93": {
+   "n": 16,
+   "inv_over_tic_median": 1.1230940882015608,
+   "inv_over_tic_err": 0.020223916707813358,
+   "inv_over_ref_median": 1.0132218165837332,
+   "inv_over_ref_rstd": 0.06930026306007372,
+   "investigator_faint_scale": 1.1240718832159473
+  },
+  "103": {
+   "n": 17,
+   "inv_over_tic_median": 1.0641877313888557,
+   "inv_over_tic_err": 0.019728436700119856,
+   "inv_over_ref_median": 0.9807037664251008,
+   "inv_over_ref_rstd": 0.060899837333983624,
+   "investigator_faint_scale": 1.0925468183722842
+  },
+  "104": {
+   "n": 20,
+   "inv_over_tic_median": 1.098047671270157,
+   "inv_over_tic_err": 0.012975742392178115,
+   "inv_over_ref_median": 0.983494370404205,
+   "inv_over_ref_rstd": 0.0681421243004028,
+   "investigator_faint_scale": 1.1275524250359013
+  }
+ },
+ "prf_over_tic_overall": 1.1070105100781178,
+ "prf_over_tic_err": 0.011135471272219588,
+ "F_M3V_tic_catalogue": 934.7409284187505,
+ "F_M3V_prf_from_TIC": 1034.7680319597343,
+ "F_M3V_prf_from_XP": 978.7682782338793,
+ "F_M3V_prf_from_XP_noext": 966.059851368213,
+ "F_M3V_prf_from_SED_T": 968.3737384399302,
+ "depth_ppt_inv_TIC_cat_935": [
+  16.47058823529412,
+  0.8556149732620322
+ ],
+ "depth_ppt_ref_TIC_cat_935": [
+  16.33342842074145,
+  0.9601471060438508
+ ],
+ "depth_ppt_inv_TIC_x_scale": [
+  14.88256258828767,
+  0.7731201344565022
+ ],
+ "depth_ppt_ref_TIC_x_scale": [
+  14.758627152860788,
+  0.8675737135508395
+ ],
+ "depth_ppt_inv_XP": [
+  15.734061209858837,
+  0.8173538290835759
+ ],
+ "depth_ppt_ref_XP": [
+  15.603034868426771,
+  0.9172115240298825
+ ],
+ "depth_ppt_inv_XP_noext": [
+  15.941041311456283,
+  0.8281060421535732
+ ],
+ "depth_ppt_ref_XP_noext": [
+  15.808291330774328,
+  0.929277355724442
+ ],
+ "depth_ppt_inv_SED_T": [
+  15.902950884241982,
+  0.8261273186619211
+ ],
+ "depth_ppt_ref_SED_T": [
+  15.770518103884523,
+  0.927056887764505
+ ],
+ "depth_ppt_inv_Gaia_colour_837": [
+  18.39904420549582,
+  0.9557945041816011
+ ],
+ "depth_ppt_ref_Gaia_colour_837": [
+  18.24582505781751,
+  1.072565763621267
+ ]
+}

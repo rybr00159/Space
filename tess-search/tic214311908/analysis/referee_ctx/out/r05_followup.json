@@ -1,0 +1,99 @@
+{
+ "csv_check": {
+  "n": 42,
+  "max_abs_dbjd_min": 0.0709591805934906,
+  "max_abs_dsigma_min": 0.04896998145106224,
+  "utc_mid_minus_true_utc_min": [
+   -3.36769999999996,
+   7.308100000000035
+  ],
+  "utc_mid_minus_naive_tdb_as_utc_min": [
+   -1.0469102430249322,
+   0.05709361574536942
+  ],
+  "note": "CSV utc_mid equals BJD_TDB converted to UTC without removing the barycentric light-travel time if utc_mid_minus_naive is ~0 (+-0.5 min rounding)"
+ },
+ "n_site_epochs_full": 23,
+ "n_epochs_full_any_site": 17,
+ "n_epochs_full_2sigma_any_site": 15,
+ "per_site": {
+  "CTIO": 6,
+  "La Silla": 6,
+  "SAAO": 6,
+  "Siding Spring": 5
+ },
+ "months": [
+  "2027-04",
+  "2027-05",
+  "2027-06",
+  "2027-07",
+  "2027-08"
+ ],
+ "first": [
+  {
+   "site": "CTIO",
+   "epoch": 117,
+   "utc_mid": "2027-04-11 07:36",
+   "sigma_min": 4.3,
+   "full_ok": true,
+   "full_2sig_ok": true,
+   "frac": 1.0
+  },
+  {
+   "site": "La Silla",
+   "epoch": 117,
+   "utc_mid": "2027-04-11 07:36",
+   "sigma_min": 4.3,
+   "full_ok": true,
+   "full_2sig_ok": true,
+   "frac": 1.0
+  },
+  {
+   "site": "SAAO",
+   "epoch": 118,
+   "utc_mid": "2027-04-17 00:12",
+   "sigma_min": 4.4,
+   "full_ok": true,
+   "full_2sig_ok": true,
+   "frac": 1.0
+  }
+ ],
+ "late2026_best": [
+  {
+   "site": "CTIO",
+   "epoch": 89,
+   "utc_mid": "2026-11-02 23:04",
+   "sigma_min": 3.9,
+   "full_ok": false,
+   "full_2sig_ok": false,
+   "frac": 0.14
+  },
+  {
+   "site": "La Silla",
+   "epoch": 89,
+   "utc_mid": "2026-11-02 23:04",
+   "sigma_min": 3.9,
+   "full_ok": false,
+   "full_2sig_ok": false,
+   "frac": 0.14
+  },
+  {
+   "site": "CTIO",
+   "epoch": 88,
+   "utc_mid": "2026-10-28 06:28",
+   "sigma_min": 3.9,
+   "full_ok": false,
+   "full_2sig_ok": false,
+   "frac": 0.0
+  },
+  {
+   "site": "CTIO",
+   "epoch": 87,
+   "utc_mid": "2026-10-22 13:51",
+   "sigma_min": 3.8,
+   "full_ok": false,
+   "full_2sig_ok": false,
+   "frac": 0.0
+  }
+ ]
+}

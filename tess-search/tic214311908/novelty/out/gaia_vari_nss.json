@@ -1,0 +1,377 @@
+{
+ "queried_utc": "2026-10-17T10:06:28+00:00",
+ "gaia_source_flags": [
+  {
+   "source_id": "5925373272827262208",
+   "phot_g_mean_mag": "17.675425",
+   "bp_rp": "0.95697975",
+   "parallax": "0.28251932514756156",
+   "ruwe": "0.9779687",
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "0",
+   "ipd_gof_harmonic_amplitude": "0.042744625",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.99998504",
+   "label": "star_5p8"
+  },
+  {
+   "source_id": "5925373268528684288",
+   "phot_g_mean_mag": "12.660598",
+   "bp_rp": "4.6837482",
+   "parallax": "0.14951579777061094",
+   "ruwe": "0.83759546",
+   "phot_variable_flag": "VARIABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "True",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "6",
+   "ipd_gof_harmonic_amplitude": "0.407059",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.9999948",
+   "label": "Mira"
+  },
+  {
+   "source_id": "5925373272850782208",
+   "phot_g_mean_mag": "14.654037",
+   "bp_rp": "2.8778114",
+   "parallax": "16.41261411278699",
+   "ruwe": "13.716986",
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "20",
+   "ipd_gof_harmonic_amplitude": "0.04761648",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.9997813",
+   "label": "pairA"
+  },
+  {
+   "source_id": "5925373272827260544",
+   "phot_g_mean_mag": "17.484058",
+   "bp_rp": "1.3158417",
+   "parallax": "0.6547692565010333",
+   "ruwe": "1.0591775",
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "0",
+   "ipd_gof_harmonic_amplitude": "0.03629278",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.99999803",
+   "label": "star_3p1"
+  },
+  {
+   "source_id": "5925373272827258752",
+   "phot_g_mean_mag": "18.597738",
+   "bp_rp": "1.570631",
+   "parallax": "0.5753438555854127",
+   "ruwe": "0.98899746",
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "1",
+   "ipd_gof_harmonic_amplitude": "0.026562283",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.9999682",
+   "label": "star_4p3"
+  },
+  {
+   "source_id": "5925373272827253632",
+   "phot_g_mean_mag": "15.740896",
+   "bp_rp": NaN,
+   "parallax": NaN,
+   "ruwe": NaN,
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": NaN,
+   "radial_velocity_error": NaN,
+   "rv_nb_transits": NaN,
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "0",
+   "ipd_gof_harmonic_amplitude": "0.0720023",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.92940974",
+   "label": "pairB"
+  },
+  {
+   "source_id": "5925373272850784768",
+   "phot_g_mean_mag": "14.281043",
+   "bp_rp": "2.7561493",
+   "parallax": "15.49730578833524",
+   "ruwe": "1.0762035",
+   "phot_variable_flag": "NOT_AVAILABLE",
+   "non_single_star": "0",
+   "has_epoch_photometry": "False",
+   "has_epoch_rv": "False",
+   "has_rvs": "False",
+   "radial_velocity": "16.283682",
+   "radial_velocity_error": "2.2173674",
+   "rv_nb_transits": "21",
+   "rv_chisq_pvalue": NaN,
+   "rv_renormalised_gof": NaN,
+   "rv_amplitude_robust": NaN,
+   "ipd_frac_multi_peak": "0",
+   "ipd_gof_harmonic_amplitude": "0.013222777",
+   "duplicated_source": "False",
+   "classprob_dsc_combmod_star": "0.99296397",
+   "label": "M3V"
+  }
+ ],
+ "tables": {
+  "vari_summary": {
+   "n": 1,
+   "sources": [
+    "Mira"
+   ],
+   "rows": [
+    {
+     "solution_id": "375316653866487564",
+     "source_id": "5925373268528684288",
+     "num_selected_g_fov": "39",
+     "mean_obs_time_g_fov": "2411.122501538592",
+     "time_duration_g_fov": "974.2688",
+     "min_mag_g_fov": "11.349751",
+     "max_mag_g_fov": "13.316888",
+     "mean_mag_g_fov": "12.274666",
+     "median_mag_g_fov": "11.90889",
+     "range_mag_g_fov": "1.9671361",
+     "trimmed_range_mag_g_fov": "1.7729467",
+     "std_dev_mag_g_fov": "0.5645868",
+     "skewness_mag_g_fov": "0.5087175",
+     "kurtosis_mag_g_fov": "-0.96965295",
+     "mad_mag_g_fov": "0.5414417",
+     "abbe_mag_g_fov": "0.4126318",
+     "iqr_mag_g_fov": "0.8051431",
+     "stetson_mag_g_fov": "174.84811",
+     "std_dev_over_rms_err_mag_g_fov": "159.9244",
+     "outlier_median_g_fov": "775.8241",
+     "num_selected_bp": "39",
+     "mean_obs_time_bp": "2435.196907517659",
+     "time_duration_bp": "974.2688",
+     "min_mag_bp": "13.484782",
+     "max_mag_bp": "17.18653",
+     "mean_mag_bp": "15.253477",
+     "median_mag_bp": "14.538473",
+     "range_mag_bp": "3.701748",
+     "trimmed_range_mag_bp": "3.6507807",
+     "std_dev_mag_bp": "1.1151844",
+     "skewness_mag_bp": "0.3671616",
+     "kurtosis_mag_bp": "-1.1184039",
+     "mad_mag_bp": "1.4492522",
+     "abbe_mag_bp": "0.3727594",
+     "iqr_mag_bp": "1.6443517",
+     "stetson_mag_bp": "200.06172",
+     "std_dev_over_rms_err_mag_bp": "136.37096",
+     "outlier_median_bp": "461.78198",
+     "num_selected_rp": "39",
+     "mean_obs_time_rp": "2435.196995511167",
+     "time_duration_rp": "974.2688",
+     "min_mag_rp": "9.983914",
+     "max_mag_rp": "11.727903",
+     "mean_mag_rp": "10.803729",
+     "median_mag_rp": "10.473298",
+     "range_mag_rp": "1.7439892",
+     "trimmed_range_mag_rp": "1.5870743",
+     "std_dev_mag_rp": "0.49587172",
+     "skewness_mag_rp": "0.56474686",
+     "kurtosis_mag_rp": "-0.8877802",
+     "mad_mag_rp": "0.37747404",
+     "abbe_mag_rp": "0.39717698",
+     "iqr_mag_rp": "0.7015991",
+     "stetson_mag_rp": "483.0343",
+     "std_dev_over_rms_err_mag_rp": "517.07306",
+     "outlier_median_rp": "981.0321",
+     "in_vari_classification_result": "True",
+     "in_vari_rrlyrae": "False",
+     "in_vari_cepheid": "False",
+     "in_vari_planetary_transit": "False",
+     "in_vari_short_timescale": "False",
+     "in_vari_long_period_variable": "True",
+     "in_vari_eclipsing_binary": "False",
+     "in_vari_rotation_modulation": "False",
+     "in_vari_ms_oscillator": "False",
+     "in_vari_agn": "False",
+     "in_vari_microlensing": "False",
+     "in_vari_compact_companion": "False"
+    }
+   ]
+  },
+  "vari_classifier_result": {
+   "n": 1,
+   "sources": [
+    "Mira"
+   ],
+   "rows": [
+    {
+     "solution_id": "375316653866487564",
+     "source_id": "5925373268528684288",
+     "classifier_name": "nTransits:5+",
+     "best_class_name": "LPV",
+     "best_class_score": "0.979418"
+    }
+   ]
+  },
+  "vari_rotation_modulation": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_eclipsing_binary": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_planetary_transit": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_short_timescale": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_long_period_variable": {
+   "n": 1,
+   "sources": [
+    "Mira"
+   ],
+   "rows": [
+    {
+     "solution_id": "375316653866487564",
+     "source_id": "5925373268528684288",
+     "frequency": "0.0030658833477751244",
+     "frequency_error": "0.0004286047",
+     "amplitude": "0.750167",
+     "median_delta_wl_rp": "5.953",
+     "is_cstar": "False"
+    }
+   ]
+  },
+  "vari_rrlyrae": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_cepheid": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_agn": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_compact_companion": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_ms_oscillator": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "vari_microlensing": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "nss_two_body_orbit": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "nss_acceleration_astro": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "nss_non_linear_spectro": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  },
+  "nss_vim_fl": {
+   "n": 0,
+   "sources": [],
+   "rows": []
+  }
+ },
+ "variable_or_nss_within_60arcsec": [
+  {
+   "source_id": "5925373268528684288",
+   "phot_g_mean_mag": "12.660598",
+   "bp_rp": "4.6837482",
+   "parallax": "0.14951579777061094",
+   "non_single_star": "0",
+   "phot_variable_flag": "VARIABLE",
+   "sep": "17.836258248517094"
+  },
+  {
+   "source_id": "5925373272827278208",
+   "phot_g_mean_mag": "19.495329",
+   "bp_rp": "0.78439903",
+   "parallax": "-0.6016932317067981",
+   "non_single_star": "0",
+   "phot_variable_flag": "VARIABLE",
+   "sep": "26.57329090079819"
+  }
+ ],
+ "ecl_within_60arcsec": [
+  {
+   "source_id": "5925373272827278208",
+   "frequency": "3.1637263632708112",
+   "global_ranking": "0.5449354",
+   "model_type": "TWOGAUSSIANS",
+   "period_d": "0.31608296204421177"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes
+
+
+
+
+
+

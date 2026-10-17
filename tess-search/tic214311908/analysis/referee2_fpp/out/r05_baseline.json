@@ -1,0 +1,111 @@
+{
+ "parameters": {
+  "ds": "ref_beta",
+  "ecc": "kipping",
+  "alpha": 0.0,
+  "f_sub": 0.15,
+  "f_N": 0.003,
+  "f_S": 0.0005,
+  "f_J": 0.0015,
+  "f_BD": 0.001,
+  "beta_sub": 0.0,
+  "beta_N": 0.0,
+  "beta_S": 1.0,
+  "beta_J": 1.5,
+  "beta_BD": 0.0,
+  "f_mult": 0.27,
+  "mu_loga": 1.3,
+  "sig_loga": 1.16,
+  "gamma_q": 0.0,
+  "F_twin": 0.1,
+  "S_close": 0.25,
+  "S_BD": false,
+  "cmd": "colour",
+  "cmd_Ft": 0.1,
+  "cmd_sb": "marg",
+  "sig_s": 0.3,
+  "xobs": null,
+  "ipd": "L_ipd",
+  "ast": "base",
+  "dec": "graded",
+  "wide": true,
+  "dT_twin": 0.75,
+  "r_wd": 2e-05,
+  "f_Twd": 0.3,
+  "p_ecl_wd": 0.029,
+  "dchi2_wd": 10.0,
+  "f_occ": 0.1,
+  "dchi2_heb": 27.5,
+  "r_close": 0.024,
+  "p_ecl_heb": 0.06,
+  "lr_pairA": 0.0006056673786594935,
+  "bg_post": 3e-05,
+  "hri": null,
+  "chroma": null
+ },
+ "result": {
+  "FPP": 0.0031313362545921652,
+  "NFPP": 0.0004520787228962731,
+  "FPP_strict": 0.007966416352478523,
+  "FPP_system": 0.0015098881777084738,
+  "post": {
+   "TP_single": 0.9567636852286968,
+   "BD_on_M3V_single": 0.0007687238393722967,
+   "TP_diluted": 0.03526989841882476,
+   "TP_on_twin": 0.004835080097886365,
+   "PTP_companion": 0.0016214480768836686,
+   "BD_on_primary_of_binary": 7.739744409403271e-05,
+   "BDHEB_on_companion": 0.00010573099425661754,
+   "EB_WD_on_M3V": 6.789646508946061e-05,
+   "HEB_MSMS": 8.061611972767147e-06,
+   "NTP_pairA": 0.0004520787228962731,
+   "BG_all": 2.999910002699919e-05
+  },
+  "dominant_FP": "PTP_companion",
+  "config": {
+   "P_single": 0.9025463182645146,
+   "P_binary": 0.09745368173548541,
+   "P_dT_le_0p3": 0.020136030703869066,
+   "P_dT_0p3_0p75": 0.0075858672337673185,
+   "P_dT_0p75_2": 0.0275270738597363,
+   "P_dT_gt2": 0.04220470993811272,
+   "CMD_single_over_twin": 0.7625126062437052
+  },
+  "PTP_by_a": {
+   "0-4": 2.4991601094763904e-05,
+   "4-6": 0.0001552942819101753,
+   "6-65": 0.0013154804164094696,
+   "65-10000000.0": 0.00012568177746926
+  },
+  "PTP_by_dT": {
+   "0.75-1.5": 0.0014523228051967884,
+   "1.5-2.5": 0.00016060992677363435,
+   "2.5-9": 8.515344913246123e-06
+  },
+  "BDHEB_by_dT": {
+   "0-1": 2.9646587834022436e-05,
+   "1-2": 2.7970214300731455e-05,
+   "2-3": 2.727960985914133e-05,
+   "3-9": 2.0834582262722335e-05
+  },
+  "PTP_mean": {
+   "m2": 0.20157785532553868,
+   "dT": 1.1885086878667117,
+   "sep": 0.22525658713915153,
+   "a": 27.788737012785763
+  },
+  "BDHEB_mean": {
+   "m2": 0.17835089550998165,
+   "dT": 1.7755445421474405,
+   "sep": 0.19577263198342224
+  },
+  "Ztp_by_class": {
+   "sub": 3.0226742208404172e-24,
+   "N": 0.0007186840018664711,
+   "S": 2.416319478976879e-06,
+   "J": 1.4737174695167074e-06,
+   "BD": 1.7350539794520007e-06
+  }
+ },
+ "method": "r05: own Bayesian scenario comparison for the 5.69-d signal (referee-2 re-derivation of fpp/f04).\nEvidence E_S = prior per target per ln P at 5.69 d x likelihood of all data (integrated over internal parameters).\nPlanet-like bodies (planets of four radius classes AND brown dwarfs, a class the analyst omitted) on any host use the\nr03 light-curve grid: Z = < (R/a) geo sum_b db I(D, rho_c, b) w(k_best R_host) >_{e, w}, rho_c = rho_host g(e,w)^-3,\nwith I = int exp(-(chi2 - chi2_ref)/2) dlnk and w = occurrence density per ln R (flat in ln R within a class, or a\npower law R^-alpha across 4-10 R_e, normalised to the same 4-7 R_e rate).\nConfigurations: single star (1 - f_mult) S(x_obs) or a bound companion from r04 (weights: q and a re-weighting, IPD,\nastrometry, DECaPS2, Gaia-wide, CMD S(x_obs - delta)), with S the single-star offset density from r02 (mixture fit)\nor a Gaussian (analyst's form). Planet suppression in binaries S(a) and S-type stability.\nEBs: WD occulted by the M3V (referee2_shape revised dchi2 ~9-11), MS hierarchical EB (shape dchi2 27.5), NTP/NEB pair A\nwith the r01 pixel LRs. Background-star scenarios are < 1e-4 in the analyst's own bookkeeping and are carried as a fixed\n3e-5 posterior-equivalent term (checked, not re-derived).\nUsage: r05_fpp.py   -> out/r05_baseline.json, out/r05_variants.csv, out/r05_random.csv"
+}

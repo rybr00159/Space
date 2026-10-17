@@ -1,0 +1,10 @@
+93 hypotheses; grid 7381 points
+models built 5s; k_med S12:1.00 S39:0.86 S66:1.00 S93:1.00 S103:0.99 S104:1.00
+S12: chi2(M3V) 68.2/77  null 119.5  A(M3V) 16.8+-2.3  pairA -1.5 pairB +3.0 Mira +14.1 G175 -0.5 G177 +1.8 G170 -8.2  best 5925373272827256448  free [8.9 4. ] (-8.7)
+S39: chi2(M3V) 77.3/74  null 272.3  A(M3V) 15.3+-1.1  pairA +36.7 pairB +42.7 Mira +102.8 G175 +13.9 G177 +31.2 G170 +50.0  best M3V  free [ 1.  -0.2] (-0.3)
+S66: chi2(M3V) 90.1/73  null 143.2  A(M3V) 12.3+-1.7  pairA +0.3 pairB +2.6 Mira +12.9 G175 -1.6 G177 +4.9 G170 +9.2  best G175  free [5.8 1.8] (-4.8)
+S93: chi2(M3V) 54.6/74  null 149.4  A(M3V) 15.4+-1.6  pairA +20.4 pairB +23.9 Mira +48.8 G175 +4.4 G177 +14.9 G170 +37.3  best M3V  free [2.1 0.8] (-1.2)
+S103: chi2(M3V) 71.5/74  null 133.2  A(M3V) 13.9+-1.8  pairA +16.3 pairB +18.9 Mira +31.1 G175 +0.8 G177 +2.4 G170 +20.7  best M3V  free [-0.  -1.8] (-0.7)
+S104: chi2(M3V) 105.5/74  null 247.7  A(M3V) 16.7+-1.4  pairA +50.0 pairB +50.8 Mira +74.2 G175 +16.1 G177 +28.1 G170 +75.9  best M3V  free [ 0.3 -0.2] (+0.0)
+COMBINED real: M3V +0.0 pairA +122.2 pairB +141.9 Mira +283.9 G175 +33.2 G177 +83.2 G170 +184.8 | best M3V | free [1.77 0.32] dchi2 -3.82 | A_M3V 15.12+-0.62
+done 4.828863620758057

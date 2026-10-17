@@ -1,0 +1,12 @@
+{
+ "mirab": {
+  "corr_with_template": 0.9586660766150257,
+  "l2_frac_diff": 0.27385146760461904,
+  "projection_on_template": 1.0140539093445509
+ },
+ "altpos": {
+  "corr_with_template": 0.9983928256720374,
+  "l2_frac_diff": 0.056655246708705524,
+  "projection_on_template": 1.0190981256572291
+ }
+}

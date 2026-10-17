@@ -1,0 +1,68 @@
+{
+ "method": "s11: calibrated shape likelihood ratio for the grazing BD on the M3V from the s04 fake-epoch injections.\nLambda_obs from s03 (cleaned curves, beta noise). Under BD truth: empirical exceedance P(Lambda >= Lambda_obs) and a\nmaximum-likelihood fit of Lambda ~ s * chi2_nu (s, nu free; zeros floored at 1e-4) for the tail and the density at\nLambda_obs. Under planet truth: Gaussian KDE density at Lambda_obs and the empirical quantile of Lambda_obs.\nLR_cal = f_BD(Lambda_obs)/f_planet(Lambda_obs), compared with the formal exp(-Lambda_obs/2) and with the\nbest-grazing-BD dchi2 that the referee2_fpp r03 grids carry (r11: 5.8 REF beta, 4.3 INV beta).\nOutput: out/s11_calibration.json",
+ "ref": {
+  "Lambda_obs": 9.225948130261258,
+  "formal_LR": 0.009922264920665311,
+  "BD_truth": {
+   "n": 60,
+   "mean": 0.4043762270774693,
+   "p50": 0.06225294765681605,
+   "p95": 2.192838748311873,
+   "max": 3.2036201524724675,
+   "n_ge_obs": 0,
+   "frac_ge_4": 0.0,
+   "scaled_chi2_s": 1.011453327163363,
+   "scaled_chi2_nu": 0.3998052321707215,
+   "tail_P_ge_obs": 0.000587671035372701,
+   "density_at_obs": 0.00033412737275926837,
+   "chi2_1_tail": 0.002386090998489516,
+   "chi2_1_density": 0.0013032129289086275
+  },
+  "planet_truth": {
+   "n": 50,
+   "mean": 9.857734384875993,
+   "sd": 4.187760181687735,
+   "p16": 5.551838521823247,
+   "p50": 9.532334672756178,
+   "p84": 14.34401436266202,
+   "quantile_of_obs": 0.48,
+   "density_at_obs": 0.08831416674784312,
+   "frac_lt_4": 0.12
+  },
+  "LR_calibrated_BD_over_planet": 0.003783394953080149,
+  "LR_formal_over_calibrated": 2.622582374749791
+ },
+ "inv": {
+  "Lambda_obs": 6.633603895636043,
+  "formal_LR": 0.03626863547098809,
+  "BD_truth": {
+   "n": 28,
+   "mean": 0.5513634229657952,
+   "p50": 0.1197409201445225,
+   "p95": 2.8987707417091424,
+   "max": 3.431077927563365,
+   "n_ge_obs": 0,
+   "frac_ge_4": 0.0,
+   "scaled_chi2_s": 1.2701663948312942,
+   "scaled_chi2_nu": 0.434087225072484,
+   "tail_P_ge_obs": 0.00664646304940679,
+   "density_at_obs": 0.0032384170203275417,
+   "chi2_1_tail": 0.010007259464273862,
+   "chi2_1_density": 0.005617803115127157
+  },
+  "planet_truth": {
+   "n": 28,
+   "mean": 6.2634100770891825,
+   "sd": 3.6510674987682528,
+   "p16": 2.9669457911300743,
+   "p50": 5.5618349221169865,
+   "p84": 9.853161926924203,
+   "quantile_of_obs": 0.6071428571428571,
+   "density_at_obs": 0.10003325119870064,
+   "frac_lt_4": 0.2857142857142857
+  },
+  "LR_calibrated_BD_over_planet": 0.03237340565783396,
+  "LR_formal_over_calibrated": 1.1203219041680137
+ },
+ "r11_grid_dchi2": {}
+}

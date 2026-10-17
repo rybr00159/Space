@@ -1,0 +1,449 @@
+[
+ {
+  "findings": [
+   {
+    "id": "SYS-1",
+    "severity": "major",
+    "location": "writeup/README.md lines 12-14 ('In one paragraph'), lines 46-47 (localisation caption); corrections_to_repo.md line 41 (last sentence of the replacement text) and line 61",
+    "issue": "The draft says the two deblending pipelines and the 'model-free sum of raw pixels' put the dimming on the M3 dwarf, and that the raw-pixel dip map does too. They cannot. Both pipelines assume the source: they fit an M3V PRF at the M3V's position. The 3x3 raw box and the r07 dip map contain the Mira's core, which is 0.85-0.94 px from the M3V. These methods only confine the dip to the M3V/Mira pixel group, i.e. no source more than ~2.5 px (~50\") away. Only the injection-calibrated image fits separate the M3V from the Mira and the pair. That is exactly the separation the Mira-systematics risk turns on, so the headline gives the wrong methods the credit.",
+    "evidence": "r07 docstring and README: 'the 3x3 box at the M3V (the Mira core is 0.85 px away and is inside it)'. r07_pixdepth.json gives m3v_xy and mira_xy about 0.87 px apart in every sector. captions.md (b) itself says 'Only the pixels at the M3V/Mira position dim'. My own check (panel_systematics/scripts/s01_depthimg.py, s02_hyp.py) fitted per-window raw-pixel depth images with templates. The real dip image prefers an M3V PRF over the Mira's empirical image by dchi2 +66.5. Other alternatives: pair A +41, pair B +45, 3.1\" star +16, 5.5\" star +37, 12\" star +53, pure pointing dipole +165. Free-position best fit is (+1, -1)\" from the M3V. 0 of 400 injections with Mira, pair A or 3.1\" star truth reach the real values. So the conclusion holds, but only because of the image fits, not the box sum.",
+    "fix": "README lines 12-14: replace with 'Two deblending pipelines and a model-free sum of raw pixels show the dip in every sector and confine it to the pixels holding the M3 dwarf and the Mira (no pixel more than 2.5 px, ~50″, away dims). Injection-calibrated fits of the transit images, in two separate codes, put it on the M3 dwarf and exclude the Mira, the bound M-dwarf pair 11.7″ away and every other catalogued neighbour.' Lines 46-47: 'The pixel localisation places the dimming on the M3 dwarf. The raw-pixel dip map shows that only the pixels holding the M3 dwarf and the Mira dim, so no source more than ~50″ away is involved. One TESS pixel is 21″.' corrections_to_repo.md line 61: 'Injection-calibrated pixel fits place the source on TIC 214311908; two deblending pipelines and a model-free raw-pixel test confirm the dip in every sector at the M3 dwarf/Mira position.' Line 41, last sentence: 'A model-free test finds the dip only in the raw pixels around the M3 dwarf and the Mira (0.9 px apart); no pixel more than 2.5 px away dims.'"
+   },
+   {
+    "id": "SYS-2",
+    "severity": "major",
+    "location": "writeup/README.md lines 52-53 (per_transit caption); key_numbers.json entry 'by +3.3 to +4.1 ppt (1.5–1.7σ)'",
+    "issue": "The README quotes the late-minus-early depth excess of the PRF photometries as '+3.3 to +4.1 ppt (1.5–1.7σ)'. That range leaves out the referee's REF value including E58: +6.1 ± 2.1 ppt, 3.0σ, sector chi2 15.0/5, p = 0.01. E58 is in the REF light curve used for the adopted 15.8-ppt depth, and +6.1 is the number printed in the legend of per_transit.png directly above this caption. The quoted range also mixes the analyst's clean/ values (+3.3, +3.5) with the referee's, against the stated precedence rule. The caption contradicts its own figure and reports the weakest form of a systematics warning sign.",
+    "evidence": "referee3_clean/out/q14_contrast_all.json: INV contrast +4.10 ± 2.65 (1.55σ), chi2 5.9/5. REF_delivered: +6.15 ± 2.07 (2.97σ), chi2 15.0/5. REF_noE58: +3.39 ± 2.14 (1.58σ). The per_transit.png legend reads 'REF PRF photometry: late−early +6.1 ± 2.1 ppt, sector χ² 15.0/5'. The key_numbers.json value field lists clean INV/REF and referee INV and REF-noE58, but omits referee REF with E58. referee3_clean README: depth 15.8 is the GLS including E58 (15.6 without).",
+    "fix": "Replace with: 'The PRF photometries are deeper in 2026 than in 2021–2023: INV +4.1 ± 2.6 ppt (1.6σ); REF +6.1 ± 2.1 ppt (3.0σ, sector χ² 15.0/5) including the scattered-light event E58, +3.4 ± 2.1 ppt (1.6σ) without it.' Update the key_numbers.json entry to the referee3_clean q14 values: 4.1 ± 2.6, 6.1 ± 2.1, 3.4 ± 2.1."
+   },
+   {
+    "id": "SYS-3",
+    "severity": "minor",
+    "location": "writeup/README.md lines 53-54 ('so the trend comes from modelling the scene, not from the star'); figures/captions.md per_transit.png last sentence",
+    "issue": "The draft asserts the trend comes from modelling the scene. The raw apertures are consistent with a constant depth, but they are also consistent with a 3-4 ppt change; their errors are 2.4-3.8 ppt. The direct test, PRF minus aperture at identical epochs, is only ~2σ, and the split-independent omnibus test gives p 0.06-0.45. The data support 'most likely a scene-modelling effect or noise', not a demonstrated cause.",
+    "evidence": "referee3_clean README: box3 -1.0 ± 2.4 and r<=2.5 -4.9 ± 3.2 ppt; paired INV-minus-aperture +6.6..+7.4 ± 3.1-3.3 (box3); omnibus chi2 4.7-10.7/5, p 0.06-0.45; look-elsewhere p of the post-hoc split 0.31-0.64. My own raw 3x3 box (s01/s02, S104 E62 excluded as in both pipelines) gives 18.8, 22.3, 13.9, 16.0, 17.6 and 12.5 ppt by sector. That is 16.2 ± 1.1 ppt overall, chi2 4.6/5, late-early +0.2 ± 3.8 ppt; without pointing terms, 17.3 ± 0.9 ppt and +2.7 ± 3.0 ppt. Constant depth is allowed, but so is the PRF's +4.",
+    "fix": "Replace the clause with: '...and are consistent with a constant depth (χ² 1.5/5 and 3.9/5). Paired with the apertures at the same epochs, the PRF photometry is deeper by +6.6 to +7.4 ± 3.2 ppt late-minus-early (~2σ), so the trend most likely comes from modelling the scene; the apertures alone (±2.4–3.8 ppt) cannot exclude a 3–4 ppt change.' In captions.md, change 'So the late/early contrast is a property of the PRF/scene-model photometry, not of the pixels' to 'So the late/early contrast is most likely a property of the PRF/scene-model photometry (paired difference ~2σ).'"
+   },
+   {
+    "id": "SYS-4",
+    "severity": "minor",
+    "location": "writeup/README.md line 27 ('3×3 px, no Mira model, no field-wide regressors')",
+    "issue": "The raw-pixel test is described as using 'no field-wide regressors'. That is false. The quoted 13.9 ± 1.4 e-/s (r07) subtracts a per-cadence common mode, the median of all pixels more than 6 px from the Mira. The raw apertures in fold.png and the q02/q14 depths subtract a faint-pixel field background and use a field-star pointing regressor. referee2_search r11 showed the RRab leak enters the raw 3x3 box exactly through such a field-wide common mode. The impact on the 5.69-d transit is nil because the periods are incoherent, but the description is inaccurate, and it is the property the narrative leans on to contrast the raw test with INV's leak.",
+    "evidence": "referee2_search/scripts/r07_pixdepth.py docstring: 'A per-cadence common mode (median of all pixels > 6 px from the Mira) is subtracted first.' r11_rawleak.json: RRab 0.7-0.8 e-/s (p 0.22-0.28) in the raw 3x3 box, but 1.8-2.6 e-/s (p <= 0.01) after the field common mode. referee3_clean q02 docstring: background from faint pixels plus an optional pointing regressor; captions.md fold: 'quadratic plus pointing for the raw box'. My own raw 3x3 light curve, with a faint-pixel background and variables masked within 3.5 px, still shows a BLS peak at 1.29700 d = 2 x P_RRab (power 57.7, the second-highest peak): field-wide terms couple the RRab even into 'raw' apertures.",
+    "fix": "Line 27: replace '(3×3 px, no Mira model, no field-wide regressors)' with '(3×3 px around the M3 dwarf, which also holds the Mira's core; no Mira or PRF model; only a field-median background level and, in the aperture fits, a field-star pointing term are removed)'."
+   },
+   {
+    "id": "SYS-5",
+    "severity": "minor",
+    "location": "writeup/README.md line 29 ('T23/T14 = 0.71–0.74'), line 78 ('T14 = 1.70 ± 0.07 h; T23/T14 = 0.71–0.74'); corrections_to_repo.md lines 37 and 77",
+    "issue": "T14 = 1.70 ± 0.07 h and T23/T14 0.71-0.74 are presented as measurements, but both come from fits with the single-star density prior, which ties T14 to rho* and b. Fits that use only the light curve give a wider spread, and two independent light curves prefer a shorter dip at ~2σ. The ±0.07 h understates the method dependence.",
+    "evidence": "clean README, free-density fits: T14 1.75 ± 0.14 h and T23/T14 0.72 ± 0.13 (INV); 1.65 ± 0.10 h and 0.75 ± 0.08 (REF). referee_loc shape.json, PRF-weighted M3V curve: best T14 1.51 h, with 1.7 h worse by dchi2 +6.5. My raw-pixel aperture light curves (panel_systematics/scripts/s03_rawlc.py, s05_shape.py; per-sector beta 1.0-1.65 applied) give a best trapezoid of T14 1.29 h with flat fraction ~1.0. T14 = 1.7 h is worse by dchi2 2.2-4.4 in 4 aperture/detrending variants; at a flat fraction of 0.72 the best T14 is 1.52 h. A V shape is still disfavoured by dchi2 6.9-12.1, so flat-bottomed is supported.",
+    "fix": "Line 78: 'T14 = 1.70 ± 0.07 h and T23/T14 = 0.71–0.74 with the stellar-density prior. Fits without it give 1.65 ± 0.10 h (REF) and 1.75 ± 0.14 h (INV); raw-pixel apertures prefer 1.3–1.5 h at 1.5–2σ.' Line 29: append '(with the density prior; 0.72–0.75 ± 0.08–0.13 without)'. Apply the same qualifier in corrections_to_repo.md lines 37 and 77."
+   },
+   {
+    "id": "SYS-6",
+    "severity": "minor",
+    "location": "writeup/README.md line 30 ('which excludes this at ≥ 7.7σ')",
+    "issue": "'≥ 7.7σ' is a phase-2 figure, computed against the analyst's +3.3 ± 1.8 ppt. The phase-3 odd/even values the README now relies on give a lower floor, so 'excluded at ≥ 7.7σ in every photometry' no longer holds. The conclusion stands; the number does not.",
+    "evidence": "The required |odd − even| is >= 17 ppt (referee2_search r08). Phase-3 values from referee3_clean/out/q10_oddeven.json: INV +2.85 ± 2.1 gives (17-2.85)/2.1 = 6.7σ; raw r<=2.5 px -0.06 ± 2.8 gives 6.0σ; box3 -1.05 ± 2.2 gives 7.2σ; REF -0.58 ± 1.8 gives 9.1σ. My own raw r<=2.5 px aperture with a 0.75-d spline gives odd − even = -5.1 ± 3.1 ppt, i.e. 3.8σ from -17.",
+    "fix": "'...they agree in every photometry (raw pixels: −1.1 ± 2.2 ppt), which excludes this at ≥ 6σ (6.0σ for the noisiest raw aperture, 6.7σ for INV).'"
+   },
+   {
+    "id": "SYS-7",
+    "severity": "minor",
+    "location": "writeup/README.md 'Caveats and limits', first bullet (lines 244-248)",
+    "issue": "A caveat is missing. The raw-pixel apertures confirm the dip at the known ephemeris, but they do not detect it robustly on their own. A sceptical reader should know that the model-free test is a targeted confirmation, not an independent detection. Its blind-search significance depends on the detrending choice.",
+    "evidence": "My blind astropy BoxLeastSquares search of raw-pixel aperture light curves (s03_rawlc.py, s04_bls.py; 0.8-20 d, 402,360 periods, 30-min bins) gave the following. 3x3 box, 0.75-d spline: top peak 5.69147 d, power 87.9 against 57.7 for the next peak (1.297 d = 2 x P_RRab), SDE 15.8. r<=2.5 px, 0.75-d spline: top peak at 5.69151 d (45.1 vs 31.9). 1.5-d spline: 5.6915 d ranks ~10th in both apertures (66.5 vs 75.9; 40.4 vs 45.4). At the known ephemeris the raw box is significant against fake epochs: r07 13.9 ± 1.4 e-/s, and mine 12.3 ± 0.8 e-/s.",
+    "fix": "Add a sub-bullet: 'The raw apertures confirm the dip at the known ephemeris (≈10σ against fake epochs) but do not detect it robustly on their own. In a blind box search of a 3×3 raw-pixel light curve, 5.69 d is the strongest peak with a 0.75-d detrending spline, but only about tenth with a 1.5-d spline, behind red-noise and RR Lyrae-alias peaks.'"
+   },
+   {
+    "id": "SYS-8",
+    "severity": "minor",
+    "location": "writeup/README.md line 28 ('The 3.1″ star is disfavoured by the pixels at ~3–4σ'); key_numbers.json entry '~3–4σ'",
+    "issue": "'~3–4σ' overstates the lower end of the pixel evidence against the 3.1\" star. The star lies inside the referee's 95% region. Its own hypothesis test reaches p 0.007-0.01 in some methods and variants (~2.5-2.7σ). The key_numbers entry itself cites 10/1000 for the AMP method.",
+    "evidence": "referee_loc README: G17.5 dchi2 +18 to +42 across 23 variants, p_true <= 0.007, and log10 LR 1.4-4.2; baseline 0/1000 with a 99.85% quantile of +6. loc AMP method: 10/1000 (p = 0.01, 2.6σ). The 95% region contains the star (map value 7.4 against a threshold of 13.8). My own test: dchi2 +16.4, 0/400 G175-truth injections reach it, while under M3V truth the real value sits at the 85th percentile.",
+    "fix": "'The 3.1″ star is disfavoured by the pixels at ~2.5–3.5σ (p ≤ 0.007 in the referee's plausible variants, 0.01 in the investigator's AMP method) and excluded by physics...'"
+   },
+   {
+    "id": "SYS-9",
+    "severity": "minor",
+    "location": "writeup/corrections_to_repo.md line 40 (replacement text)",
+    "issue": "The replacement text says the flux loss 'does not follow the Mira's flux, which excludes the Mira as the host at 2.7–3.4σ by this test alone'. That overstates the flux-scaling test. The 2.7-3.4σ comes from clean/'s PRF photometries fitted at the M3V position, whose response to a Mira-hosted dip is not modelled. The referee who tested it under the Mira hypothesis called proportional scaling 'mildly disfavoured but not excluded'. In raw pixels the test cannot discriminate.",
+    "evidence": "referee_loc README, Mira flux scaling: constant chi2 6.2, proportional chi2 16.4 for 5 dof (p ≈ 0.006): 'mildly disfavoured but not excluded'. loc: chi2 11.2 proportional vs 8.6 constant. My raw 3x3 box per-window flux losses (20 windows) against the box's Mira-dominated flux (8,600-16,600 e-/s, a range of only ~2x): slope 0.00050 ± 0.00042 e-/s per e-/s against 0.00111 for proportional; chi2 32.4 constant vs 33.0 proportional.",
+    "fix": "'The flux lost per transit is ≈ 15 e⁻/s (13.9 ± 1.4 e⁻/s in a raw 3×3 box). The PRF photometries show no dependence on the Mira's flux, which disfavours a Mira host at 2.7–3.4σ there (p ≈ 0.006 in the referee's Mira-hypothesis fits). The Mira is excluded mainly by the pixel image (Δχ² +285) and because it cannot host a 5.69-d orbit.'"
+   },
+   {
+    "id": "SYS-10",
+    "severity": "nit",
+    "location": "writeup/README.md line 31 ('χ² 9.9/16 (INV) and 15.4/19 (REF) with injection-calibrated errors') vs figures/captions.md per_transit (a)",
+    "issue": "The README quotes the analyst's TTV chi2. The figure caption, and the referee's errors behind the adopted ephemeris, give 8.9/17 and 12.6/19. By the precedence rule the referee's values apply, and the two documents disagree.",
+    "evidence": "clean/out/timing_clean.json: 9.9/16 and 15.4/19. referee3_clean README item 5 and q05_timing.json: 8.9/17 and 12.6/19. captions.md per_transit (a) uses the latter.",
+    "fix": "'The transit times fit a constant period: χ² 8.9/17 (INV) and 12.6/19 (REF) with the referee's injection-calibrated errors (9.9/16 and 15.4/19 with the analyst's).'"
+   },
+   {
+    "id": "SYS-11",
+    "severity": "nit",
+    "location": "writeup/README.md line 27 ('The raw-pixel flux loss is 13.9 ± 1.4 e⁻/s')",
+    "issue": "13.9 e-/s is the share of the flux loss inside a 3x3 box holding about 74-81% of the M3V's light, with no encircled-energy correction. Next to the planet table's 'flux loss of ≈ 15 e⁻/s', it reads as if raw pixels give a slightly smaller loss. After correction they give a larger one: 16.7-17.5 ppt, i.e. ~16-17 e-/s.",
+    "evidence": "EE of the 3x3 box from the SPOC PRF at the M3V position: 0.744-0.807 by sector (my s03 output; referee3_clean q02 0.76-0.96 for its apertures). q14 AP_box3 EE-corrected global: 16.7 ± 1.1 ppt. Mine: 16.2 ± 1.1 ppt.",
+    "fix": "'The raw-pixel flux loss in the 3×3 box is 13.9 ± 1.4 e⁻/s (the box holds ~78% of the M3 dwarf's light; ≈ 16.7 ppt after this correction) and is constant across the six sectors (χ² 4.2/5).'"
+   },
+   {
+    "id": "SYS-12",
+    "severity": "nit",
+    "location": "writeup/README.md line 68 ('979 e⁻/s in PRF units (catalogue T = 13.01)') and line 149 ('a Mira that is 7–17 times brighter')",
+    "issue": "The parenthetical suggests 979 e-/s comes from T = 13.01. It comes from Gaia XP synthetic photometry calibrated on field-star PRF fluxes; the TIC T on the same scale gives 1035 e-/s. Separately, '7–17×' comes from loc/, which used ~837 e-/s for the M3V; with the adopted 979 e-/s the ratio is 6-14x.",
+    "evidence": "referee_phot README line 89: '979 ± 20 (stat) e-/s ... Gaia XP synthetic photon rate calibrated on 27 field stars; TIC x 1.107 = 1035'. loc README line 112: Mira TESS flux 6,100-13,900 e-/s; 6,100/979 = 6.2 and 13,900/979 = 14.2.",
+    "fix": "Line 68: '979 ± 20 e⁻/s in PRF units, from Gaia XP synthetic photometry calibrated on field stars (TIC T = 13.01)'. Line 149: 'a Mira that is 6–14 times brighter in TESS'."
+   },
+   {
+    "id": "SYS-13",
+    "severity": "nit",
+    "location": "writeup/README.md line 27 ('removing it at the source left the transit unchanged')",
+    "issue": "Removing the RRab leak changed individual INV transit depths substantially; only the global fit was unchanged. A residual RRab-period signal also remains in S93.",
+    "evidence": "clean README: per-transit depths changed by 2.7 ppt rms (max 7.4 ppt); global INV 15.34 → 15.10 ppt; S93 keeps 0.78 ppt at the RRab period (p < 1/120). referee3_clean q06: S93 0.78 ppt, p 0.02.",
+    "fix": "'...removing it at the source left the global depth, shape and timing unchanged (individual transit depths moved by 2.7 ppt rms; a 0.8-ppt residual remains in S93)'."
+   }
+  ],
+  "overall": "I re-derived the key photometric checks with my own code from the raw TESScut cubes and tried to make the signal fail. It did not: the dip behaves like a real, periodic, on-sky dimming at the M3V's position. Scripts and outputs are in <scratch>/panel_systematics/ (scripts/ps_lib.py, s01_depthimg.py, s02_hyp.py, s03_rawlc.py, s04_bls.py, s05_shape.py; summary in out/summary_panel_systematics.json).\n\nWhat I found:\n- **Image fits.** I fitted per-window raw-pixel depth images (21 transits, with fake epochs to measure the noise) against templates. The best-fit position is (+1, −1)″ from the M3V. A dip shaped like the Mira's own empirical image is worse by Δχ² +66.5. The other alternatives are also worse: pair A +41, pair B +45, the 3.1″ star +16, the 5.5″ star +37, the 12″ star +53, and a pure pointing excursion +165. None of 400 injections with the Mira, pair A or the 3.1″ star as the true source reaches the real values. Injections on the M3V reproduce them.\n- **Pointing and momentum dumps.** Pointing excursions during transits match the fake epochs (χ² 20/12). They would add at most −2.2 to +2.0 e⁻/s per sector to the raw box, with no consistent sign. No momentum dump falls within 0.2 d of any accepted transit.\n- **Raw-pixel depth.** The 3×3 raw box gives 16.2 ± 1.1 ppt (17.3 ± 0.9 without pointing terms), constant across sectors (χ² 4.6/5). The dip is flat-bottomed (a V shape is worse by Δχ² 7–12), odd and even depths agree, and the late-minus-early difference is +0.2 ± 3.8 ppt.\n- **Limits.** Comparing the flux loss with the Mira's flux does not discriminate in raw pixels, because the Mira's flux varies by only ~2× there. A blind box search of the raw apertures finds 5.69 d as the top peak only with some detrending choices.\n- **Data note.** FLUX_BKG is zero in all six cubes, so SPOC's background subtraction could not be checked directly. Every raw test subtracts its own field background anyway.\n\nThe problems are in how the draft states and qualifies these results:\n- **Overstated localisation (major).** The headline paragraph and the localisation caption say the deblending pipelines and the raw-pixel sum put the dimming on the M3V. They cannot separate the M3V from the Mira's core, which shares their 3×3 box; only the image fits do.\n- **Selective contrast figure (major).** The README quotes the PRF late/early contrast as +3.3 to +4.1 ppt (1.5–1.7σ). That leaves out the referee's REF value with E58, +6.1 ± 2.1 ppt (3.0σ). E58 is in the REF light curve behind the adopted depth, and +6.1 is printed in the figure the caption describes.\n- **Minor corrections:**\n  - \"Comes from modelling the scene\" needs a qualifier; the paired evidence is only ~2σ.\n  - \"No field-wide regressors\" is false for both raw tests.\n  - T14 ± 0.07 h depends on the stellar-density prior; light-curve-only fits give 1.3–1.75 h.\n  - The 2P exclusion should say ≥ 6σ, not ≥ 7.7σ.\n  - A caveat is missing: the raw-pixel test confirms the dip at the known ephemeris but is not an independent blind detection.\n  - The 3.1″ star should be \"~2.5–3.5σ\", not \"~3–4σ\".\n  - corrections_to_repo.md overstates the Mira flux-scaling test.\n- **Nits:** inconsistent TTV χ² values, the un-corrected 13.9 e⁻/s quoted next to ≈15 e⁻/s, the source of the 979 e⁻/s flux, \"7–17×\" instead of 6–14×, and \"transit unchanged\" after the RR Lyrae removal.\n\nThe draft's central conclusion stands: a strong candidate, not statistically validated, with only a ground-based transit able to test the Mira/systematics risk independently."
+ },
+ {
+  "findings": [
+   {
+    "id": "FPP-1",
+    "severity": "major",
+    "location": "<scratch>/writeup/README.md lines 20-21 (In one paragraph), 137-140 (false_positives caption), 160-161 (Is it validated?); figures/captions.md FPP-ladder table (~lines 90-100); figures/false_positives.png panel b; matching key_numbers.json entries",
+    "issue": "The follow-up FPP ladder does not match the write-up's own adopted brown-dwarf (BD) inputs. Every step after 'now' in referee3_followup's ladder uses a BD rate f_BD = 1e-3, the same e law as the planets, and the uncalibrated r05 shape grid. The scenario table in the same README uses calibrated BD posteriors that are 17-22x smaller. As a result the README overstates the FPP after speckle plus a two-band transit by 3-9x, and it overstates how much 'closing the BD channel' would help. The caption's sentence 'The upper ends start from a brown-dwarf rate of 10^-3' is wrong: both ends of every post-follow-up range use f_BD = 1e-3.",
+    "evidence": "In referee3_followup/out/r05_hri_ladder.json, composition_now BD = 1.33e-4 (REF) and 5.12e-4 (INV). r05_hri_ladder.py line 89 applies f_BD 1.3e-4 only to the 'now' step. I decomposed 'Zorro consB + two-band' REF 1.39e-4 as BD 1.33e-4 x 0.816 + BG 3.0e-5 + PTP 7e-7, which reproduces the value exactly. The README's table has BD 8.0e-6 / 2.35e-5 (referee3_bd s12, Gaia RV median factor). I re-ran the ladder with referee3_followup's own rules and factors (Zorro cons-B 0.883/0.880, BD Zorro factor 0.816/0.841, two-band BFs for empirical g/z, empirical r/z and BT-Settl r/z at sigma 5% and 10%), but with the adopted composition (kipping+bdsp, f_BD 1.3e-4). Script: <scratch>/panel_fpp/p06_ladder.py; output: .../panel_fpp/out/p06_ladder.json. Results (REF / INV): now 1.34e-3 / 3.11e-3; Zorro 5.7e-4 / 8.2e-4; two-band only 0.39-2.0e-4 / 0.57-5.0e-4 (p06b); Zorro + two-band 3.7-5.6e-5 / 5.0-10.3e-5 (published 1.4-1.6e-4 / 4.6-5.2e-4); + BD closed 3.0-4.9e-5 / 3.0-8.3e-5 (unchanged). Closing the BD channel therefore gains only 1.1-1.7x. The floor is the fixed 3e-5 background posterior-equivalent (r05_fpp.py line 176). It is never reduced in the ladder, although speckle imaging would also probe uncatalogued stars in the 1-3\" effective area.",
+    "fix": "README lines 20-21: 'Transits can be observed from April to August 2027. One multi-band ground transit plus 8-m speckle imaging would bring the FPP to about 4–10 × 10⁻⁵ with the adopted brown-dwarf inputs (1.4–5.2 × 10⁻⁴ if the brown-dwarf rate were 10⁻³ with the uncalibrated shape likelihood); the remaining ~3 × 10⁻⁵ is the background-star term carried over from phase 2.' Lines 160-161: 'Together these bring the FPP to 3.7–5.6 × 10⁻⁵ (REF) or 5.0–10 × 10⁻⁵ (INV) with the adopted brown-dwarf rate, eccentricity law and Gaia RV factor (the follow-up referee's ladder gives 1.4–1.6 × 10⁻⁴ / 4.6–5.2 × 10⁻⁴ because it assumed f_BD = 10⁻³ and the uncalibrated shape grid after the first step). Closing the brown-dwarf channel by the ground transit's shape or three low-precision RVs then gives 3–5 × 10⁻⁵ / 3–8 × 10⁻⁵, a gain of at most 1.7×; the floor is the background term (3 × 10⁻⁵), carried over rather than re-derived.' Caption lines 137-140: '...now 1.3 × 10⁻³ / 3.1 × 10⁻³; after Zorro speckle 5.7–7.3 × 10⁻⁴ / 0.8–1.5 × 10⁻³; after speckle and a two-band transit 4–6 × 10⁻⁵ / 5–10 × 10⁻⁵; after also closing the brown-dwarf channel 3–5 × 10⁻⁵ / 3–8 × 10⁻⁵. The follow-up referee's published ladder used a brown-dwarf rate of 10⁻³ and the uncalibrated shape grid for every step after \"now\".' Redraw false_positives.png panel b from panel_fpp/out/p06_ladder.json, or overplot both versions, and update captions.md and key_numbers.json to match."
+   },
+   {
+    "id": "FPP-2",
+    "severity": "major",
+    "location": "README.md line 33 ('64 variants give 0.0007–0.0036'), line 119 (Total FPP row), lines 253-255 (caveat 'The FPP rests on priors'); corrections_to_repo.md lines 102-103; key_numbers.json '64 variants' entry",
+    "issue": "The quoted robustness range covers only light curve x noise model x planet e prior x BD e law x f_BD (referee3_bd s02). The prior dimensions that drive the FPP were last varied before the sign fix: binary fraction, close-binary suppression, Gaia IPD/astrometry companion limits (incl. the IPD-cell calibration mismatch inside 0.25\" flagged by referee2_fpp), occurrence slopes and the WD rate. So were the 1,500 joint prior draws. The write-up never mentions the joint draws. The range 0.0007-0.0036 therefore understates the prior-driven spread by about an order of magnitude at the high end.",
+    "evidence": "I re-ran the referee2_fpp framework with referee3_bd's sign patch. r05_fpp.py is imported read-only and nothing is written to referee2_fpp/. Files: <scratch>/panel_fpp/fpplib.py and p05_variants_draws.py; outputs out/p05_variants.csv, out/p05_draws.csv, out/p05_summary.json, out/p07_draw_stats.json. The re-run reproduces the adopted 0.00134 / 0.00312. Sign-fixed named variants (REF / INV): IPD cells only beyond 0.25\" 0.0029 / 0.0077; IPD off 0.0054 / 0.015; astrometry off 0.0035 / 0.0095; all archival constraints off 0.014 / 0.039; S_close = 1 0.0029 / 0.0073; f_mult 0.45 0.0023 / 0.0060; beta_N = -1 0.0021 / 0.0054; WD rate 2e-4 with dchi2 6 0.0060 / 0.0062; 'PESSIMISTIC realistic' (f_BD 3.5e-4) 0.015 / 0.028, and 0.022 / 0.045 with IPD beyond 0.25\" only. Overall 0.0006-0.045, with 6 of 62 variants >= 0.015. Joint draws: 1,500, r05 ranges, sign fixed, f_BD log-uniform 5e-5 to 3.5e-4, BD e short (80%) or long period, Gaia RV factor 0.25-0.80. Median 0.0022 (REF-beta 0.0014, INV-beta 0.0031), 16-84% 0.00065-0.0060, 5-95% 0.00024-0.012 (INV-beta 95th 0.015). P(FPP < 0.015) = 0.968 (REF-beta 0.995, INV-beta 0.95); P(FPP < 0.01) = 0.93. Before the fix, referee2_fpp had median 0.0037, 95th 0.019 and P(<0.015) 0.92. The adopted point values are representative (medians), but the tail reaches the threshold.",
+    "fix": "Line 33: '...this was found and fixed in phase 3. Over 64 light-curve/eccentricity/brown-dwarf-rate variants the FPP is 0.0007–0.0037; over 1,500 joint draws of all priors (binary statistics, companion limits, occurrence rates, WD and BD rates), re-run after the sign fix, the median is 0.0022, 5–95% 0.0002–0.012, P(FPP < 0.015) = 0.97. Pessimistic prior combinations reach 0.015–0.045.' Line 119 Total row: '...; 64 variants 0.0007–0.0037; joint prior draws median 0.0022 (95th percentile 0.012), pessimistic combinations up to 0.045'. Caveat bullet: add 'The companion limits are the most important prior: dropping the Gaia IPD cells inside 0.25″ (whose calibration stars are closer than the target) doubles the FPP, and dropping the IPD altogether multiplies it by 4–5.' Update corrections_to_repo.md lines 102-103 and key_numbers.json accordingly (source: panel_fpp/out/p05_summary.json, p07_draw_stats.json)."
+   },
+   {
+    "id": "FPP-3",
+    "severity": "major",
+    "location": "README.md line 144 ('The FPP is below the usual 0.015 threshold (Giacalone et al. 2021), and the NFPP is below 0.001, but:') and the 'What would validate it' list (lines 154-162)",
+    "issue": "The comparison with the Giacalone et al. (2021) threshold is not like for like. That threshold is for TRICERATOPS, whose FPP = 1 - (P_TP + P_PTP + P_DTP) counts a planet on the secondary of an unresolved binary (STP) as a false positive. It was set from TOIs with 2-min data, against VESPA's 1% convention. The write-up's FPP counts a planet on any companion within dT <= 0.75 mag as a planet. On the TRICERATOPS-like definition the FPP is a few times larger. Over the prior draws its median sits at the threshold, which strengthens the 'not validated' verdict but contradicts the unqualified 'below the threshold' sentence. The validation recipe also omits reconnaissance spectroscopy (TFOP SG2), which is standard practice and here directly tests the twin hypothesis.",
+    "evidence": "Giacalone et al. 2021 (arXiv:2002.00691) abstract: 'validated planets (FPP < 0.015 and NFPP < 10^-3)'. Sec. II.4 defines FPP = 1 - (P_TP + P_PTP + P_DTP), so STP counts as a false positive. Sec. IV.1 bases the cut on 2-min-cadence TOIs and the VESPA 1% standard. Sec. IV.2 says that for 30-min data 'there does not appear to be a region of parameter space in which planets can be confidently validated' (here S12 is 30-min and S39 is 10-min). r05's FPP_strict (twin-hosted planet counted as FP), sign fixed: 0.0049 (REF) / 0.0093 (INV) at the adopted priors. Over my 1,500 sign-fixed joint draws: median 0.013, 95th 0.11, P(<0.015) = 0.56; with the colour-informed CMD only, median 0.0076 and P(<0.015) 0.77. Counting half the twin term (the primary/secondary choice is arbitrary for a twin): median 0.0078, P(<0.015) = 0.70 (panel_fpp/out/p07_draw_stats.json). TRICERATOPS itself gives 0.002-0.04.",
+    "fix": "Replace line 144 with: '**No.** The Bayesian FPP of this analysis (0.0013–0.0033) is below the 0.015 threshold that Giacalone et al. (2021) set for TRICERATOPS, but the comparison is not like for like: TRICERATOPS counts a planet on an unresolved companion, a near-equal twin included, as a false positive. On that definition the FPP is 0.005 (REF) / 0.009 (INV) at the adopted priors, and over the prior draws its median is 0.013, below 0.015 in only 56% of draws. The NFPP is below 0.001 in the adopted settings (see the false-positive section for its limits). In addition:' Then add item 5: '**Prior dependence.** Pessimistic but plausible prior combinations give FPP 0.015–0.045.' Under 'What would validate it', add: '* Reconnaissance spectroscopy (a TFOP SG2-type spectrum): it excludes a double-lined twin, measures [Fe/H] directly and doubles as the first low-precision RV epoch.'"
+   },
+   {
+    "id": "FPP-4",
+    "severity": "minor",
+    "location": "README.md lines 121-122 (NFPP sentence), line 112 ('the most lenient pixel likelihood was used'); key_numbers.json NFPP entry ('4.0e-4 (REF) / 4.5e-4 (INV)'); corrections_to_repo.md line 103 ('NFPP ~4-5e-4')",
+    "issue": "The NFPP bookkeeping has three problems. (a) The definitions are inconsistent: the lenient value 4-5e-4 adds the unresolved-background term (3e-5), while the 'typical' 1e-7 to 1e-9 does not. In r05 and TRICERATOPS, NFPP covers only resolved neighbours. (b) The t-fit likelihood ratio 10^-3.22 is not the most lenient pixel likelihood: referee2_fpp's systematics-inflated worst variant (10^-2.8) gives NFPP of about 1e-3. (c) In the s02 grid, white-noise REF with circular planet orbits gives NFPP 1.13e-3 > 1e-3. None of this is mentioned, and all pair-A LRs below 10^-3 are extrapolations beyond 0/1000 injections.",
+    "evidence": "r05_fpp.py line 179: NFPP = E['NTP_pairA']/tot. Sign-fixed adopted values: NTP_pairA 3.69e-4 (REF) / 4.16e-4 (INV); +BG gives the README's 4.0 / 4.5e-4. referee3_bd/out/s02_fpp_fixed.csv: NTP_pairA ranges over 2.9e-4 to 1.13e-3, and 12 of 192 fixed rows exceed 1e-3 (all ref_white circ). My sign-fixed re-run: pair-A LR 10^-2.8 gives NFPP 9.4e-4 (REF) / 1.07e-3 (INV); the t-median LR (10^-9.2) gives 3.8e-10 / 4.4e-10. Joint draws: NFPP 95th percentile 5.6e-4, P(NFPP >= 1e-3) = 1.1% (panel_fpp/out/p05_variants.csv, p07_draw_stats.json). referee2_fpp README: 'the most lenient of the 19 referee_loc variants ... 1.2e-3 only in that worst case'.",
+    "fix": "Lines 121-122: 'The NFPP (a planet or eclipsing binary on a resolved neighbour, in practice pair A) is 3.7 × 10⁻⁴ (REF) / 4.2 × 10⁻⁴ (INV) with the Student-t pixel likelihood (10^−3.22, an extrapolation beyond 1,000 injections); 3–7 × 10⁻⁴ across planet eccentricity priors; 0.9–1.1 × 10⁻³ with the systematics-inflated worst-variant likelihood or with white-noise REF and circular orbits; and 10⁻⁷–4 × 10⁻¹⁰ with the median likelihood. The unresolved background term (3 × 10⁻⁵) counts towards the FPP, not the NFPP. A seeing-limited ground transit that resolves pair A at 11.7″ removes this term.' Line 112: 'the most lenient Student-t pixel likelihood (10^−3.22) was used'. key_numbers.json: NFPP 3.7e-4 / 4.2e-4 (source s02 NTP_pairA). corrections_to_repo.md line 103: 'NFPP ~4e-4'."
+   },
+   {
+    "id": "FPP-5",
+    "severity": "minor",
+    "location": "README.md line 33 ('Probability that the occulter is a planet on some star of the bound system: 0.9995'); figures/captions.md line 77; false_positives.png panel a annotation; key_numbers.json 0.9995 entry",
+    "issue": "The label is wrong. P_planet_any_star = TP_single + TP_diluted + TP_twin + PTP excludes a planet on pair A, which the README itself lists as a bound companion (line 70: 754 au, chance alignment 2e-5). The number is P(planet on the M3V or an unresolved companion of it). Counting a planet on any star of the bound system gives 0.9999.",
+    "evidence": "referee3_bd/scripts/s02_fpp_fixed.py: P_planet_any_star = planet + PTP_companion, while FPP_system includes NTP_pairA. Adopted rows: 0.999513 (REF) / 0.999465 (INV). Adding NTP_pairA gives 0.999883 / 0.999880. Over the 64 bdsp variants, 0.9986-0.9996 without pair A and 0.9996-0.9999 with it (panel_fpp/p02_ranges.py, out/p02_ranges.json).",
+    "fix": "'Probability that the occulter is a planet on the M3 dwarf or on an unresolved companion of it: 0.9995 (0.9986–0.9996 over variants); including a planet on the bound pair star A, 0.9999.' Use the same wording in captions.md and in the false_positives.png annotation."
+   },
+   {
+    "id": "FPP-6",
+    "severity": "minor",
+    "location": "README.md line 111 (PTP row: 'a circular orbit transits too briefly, so it mostly needs an eccentric orbit (circular: 3 × 10⁻⁵ / 1.1 × 10⁻³)') and lines 151-152 ('changes 15–30-fold between circular and eccentric orbit priors')",
+    "issue": "In the FPP code the 15-30x circular/eccentric contrast holds only for the REF light curve. For INV the planet-on-companion term survives circular orbits and changes only 2.3x. The 15-30x figure comes from referee3_bd's representative-companion evidence ratio (s06), not from the FPP grid.",
+    "evidence": "s02_fpp_fixed.csv, kipping+bdsp vs circ+bdsp, f_BD 1.3e-4: REF-beta PTP 8.57e-4 / 3.03e-5 = 28x; INV-beta 2.59e-3 / 1.15e-3 = 2.3x; REF-white 280x; INV-white 11.5x (panel_fpp/p02_ranges.py). s06 gives 14.6x (REF) and 26.5x (INV) for a single representative 0.20 Msun companion.",
+    "fix": "Line 111: '...Gaia image and astrometry limits; in REF a circular orbit transits too briefly, so it mostly needs an eccentric orbit (circular: 3 × 10⁻⁵ REF; 1.15 × 10⁻³ INV, where it survives circular orbits)'. Lines 151-152: 'The planet-on-companion term changes 28-fold (REF) but only 2.3-fold (INV) between eccentric (Kipping) and circular orbit priors.'"
+   },
+   {
+    "id": "FPP-7",
+    "severity": "minor",
+    "location": "README.md lines 103-104 ('a Kipping eccentricity prior for planets') and line 119 (Total FPP 0.0013 / 0.0031); figures/captions.md line 75",
+    "issue": "The precedence rule is not followed. referee3_bd states that the M-dwarf-specific Sagear & Ballard (2023) prior should be the adopted planet eccentricity prior, not Kipping (2013), which comes from RV giant planets. The README adopts Kipping and quotes Sagear & Ballard only as a variant.",
+    "evidence": "referee3_bd/README.md section 3 item 4: 'They should be the adopted prior, not Kipping (2013) ... The FPP barely changes (0.0016 against 0.0013 REF).' s02 rayleigh19+bdsp, f_BD 1.3e-4: FPP 0.00162 / 0.00330; PTP 1.20e-3 / 2.85e-3; NTP 2.98e-4 / 3.29e-4; TP_twin 0.0035 / 0.0050.",
+    "fix": "Either adopt Rayleigh sigma = 0.19: Total FPP '**0.0016 / 0.0033** (Sagear & Ballard 2023 M-dwarf eccentricities, as the referee recommends); Kipping 0.0013 / 0.0031; circular 0.0007 / 0.0019', with the PTP row 1.2 × 10⁻³ / 2.85 × 10⁻³ and the NTP row 3.0 × 10⁻⁴ / 3.3 × 10⁻⁴. Or keep Kipping but add 'the referee recommends the Sagear & Ballard prior; with it FPP = 0.0016 / 0.0033', and quote the FPP everywhere as 0.0013–0.0016 (REF) / 0.0031–0.0033 (INV)."
+   },
+   {
+    "id": "FPP-8",
+    "severity": "minor",
+    "location": "README.md line 113 (white-dwarf row: '...the Gaia RV error and a small prior exclude it | 6.5 × 10⁻⁵ / 4.3 × 10⁻⁵')",
+    "issue": "The posterior shown leaves out the Gaia RVS-smearing term that the row cites as one of the exclusions. r05 uses dchi2_wd = 10 (light curve + secondary + RUWE). As computed, the FPP is therefore sensitive to the uncertain WD+M-dwarf rate, while with the RV term the WD channel is about 1e-7.",
+    "evidence": "r05_fpp.py BASE dchi2_wd = 10.0. referee2_shape/README.md: 'Adding the RV-smearing term (>= ~12 at the minimum, 0.3-0.45 Msun) gives >= ~20-25'. Sign-fixed re-run (panel_fpp/out/p05_variants.csv): dchi2_wd = 22 gives FPP 0.00128 / 0.00308 with WD ~1e-7. Without the RV term, r_wd = 2e-4 with dchi2 6 gives FPP 0.0060 / 0.0062.",
+    "fix": "Posterior cell: '6.5 × 10⁻⁵ / 4.3 × 10⁻⁵ without the Gaia RV term (Δχ² 10); ~10⁻⁷ with it (Δχ² ≥ 20)'. Add to the 'What rules it out' cell: 'the posterior shown is conservative; with the RV term the FPP becomes insensitive to the poorly known white-dwarf–M-dwarf rate'."
+   },
+   {
+    "id": "FPP-9",
+    "severity": "minor",
+    "location": "README.md lines 124-126 ('Both used the wrong-sign density relation, which favoured eccentric grazing brown dwarfs by a factor of 9; the first also overstated the chance of an equal twin.')",
+    "issue": "This history is inaccurate. fpp/ (FPP 0.011) had no brown-dwarf class at all; there the wrong sign inflated the eccentric planet-on-companion channel. The 'factor of 9' is the ratio of transit-weighted prior probabilities of rho_c/rho* <= 0.2, not a posterior ratio.",
+    "evidence": "referee2_fpp/README.md: 'Brown-dwarf channels | absent' for the analyst; brown dwarfs were first added by referee2_fpp. referee3_bd s01: P_tw(rho_c/rho* <= 0.2) is 8.0% with the wrong sign vs 0.89% (Kipping). bd/README b10: PTP 1.6e-3 -> 8.4e-4 (REF), 4.2e-3 -> 2.5e-3 (INV); BD total 9.5e-4 -> 1.3e-4 (REF), 2.6e-3 -> 4.3e-4 (INV), i.e. 6-7x.",
+    "fix": "'Both used the wrong-sign density relation, which made long-duration eccentric transits about 9× too likely a priori. It inflated the planet-on-companion channel in both codes (by ~2×) and the grazing brown-dwarf channel that `referee2_fpp` added (by 6–7×). The first also overstated the chance of an equal twin.'"
+   },
+   {
+    "id": "PAR-1",
+    "severity": "nit",
+    "location": "README.md lines 80-81 (Expected mass 21 (16.6–28.3) M⊕; K = 14.8 (11.5–19.7) m/s; TSM 108 (81–139), ESM 9.1); source referee3_followup/scripts/r06_rv_tsm.py line 16",
+    "issue": "Mass, K, TSM and ESM were computed for Rp ~ N(4.90, 0.28), the superseded clean/ radius, with Rp drawn independently of R* (Rp should be k*R*). At the adopted 4.95 R_E every value is 1-4% higher. This does not matter for planning, but the table should be consistent with the radius it quotes.",
+    "evidence": "Own code, panel_fpp/p03_params.py (out/p03_params.json): K(21.34 M_E) = 14.82 m/s, which reproduces r06. With Rp 4.95 and the CK17 Neptunian relation M ∝ R^1.70, M ≈ 21.7 M_E and K ≈ 15.1 m/s. TSM (Kempton+18, scale 1.15, J 11.36, R* 0.383, Teq 472 K) = 112.6 at 21.34 M_E and ≈ 110 at 21.7 M_E. ESM ≈ 9.4-9.5. The other derived quantities reproduce: a 0.0448 au, a/R* 25.28 (R* 0.381), i 88.82 deg, T14 1.704 h (b 0.52), T23/T14 0.719, Teq 471 K, S 8.21 S_E, rho* 9.43 g/cm3, Rp 4.92-4.98 R_E for R* 0.381-0.385, twin-host Rp ≈ 5.28 R_E (Mann+15 radius at M_Ks + 0.753).",
+    "fix": "Add a footnote to the 'Expected mass' and 'Atmosphere metrics' rows: 'computed for Rp = 4.90 R⊕; at the adopted 4.95 R⊕, M ≈ 21.7 M⊕, K ≈ 15.1 m/s, TSM ≈ 110, ESM ≈ 9.4'. Alternatively, re-run r06 with Rp = k·R★ (k ~ N(0.1185, 0.0034)) and quote the new values."
+   },
+   {
+    "id": "PAR-2",
+    "severity": "nit",
+    "location": "README.md line 1 (title 'a Neptune-sized planet candidate') and line 15 ('a Neptune-sized planet')",
+    "issue": "Rp = 4.95 R_E is 1.28 Neptune radii, the size usually called super-Neptune or sub-Saturn (4-8 R_E). corrections_to_repo.md already says 'a little larger than Neptune', so the README and the corrections file are inconsistent.",
+    "evidence": "4.95 / 3.88 = 1.28. corrections_to_repo.md line 44 proposes 'a little larger than Neptune'.",
+    "fix": "Title: '# TIC 214311908: a super-Neptune planet candidate next to a Mira'. Line 15: 'a planet a little larger than Neptune (1.3 Neptune radii) on a 0.045-au orbit'."
+   },
+   {
+    "id": "BOOK-1",
+    "severity": "nit",
+    "location": "README.md lines 110-119 (scenario table) and line 33; figures/captions.md and false_positives.png panel a labels",
+    "issue": "Several small bookkeeping and labelling inconsistencies. (a) The 64-variant maximum is 0.00366, which rounds to 0.0037, not 0.0036. (b) INV circular PTP is 1.15e-3, written as 1.1e-3. (c) The BD row (8e-6 / 2.4e-5) includes the Gaia RV factor, but the Total FPP uses BD without it (1.4e-5 / 4.2e-5); this changes nothing at the quoted precision but is not stated. (d) 'Near-equal twin' is really any companion with dT <= 0.75 mag (q ≳ 0.8), where the planet would be 5.8-6.3 R_E, not 5.2. (e) The acronym 'PTP' in the figure and captions means a planet on the companion, but in TRICERATOPS PTP is a planet on the primary (a true positive) and a planet on the companion is 'STP', so TRICERATOPS users will misread it.",
+    "evidence": "panel_fpp/out/p02_ranges.json (bdsp64 FPP 0.000725-0.00366); s02 inv_beta circ+bdsp PTP 0.00115; s12 BD_total_noRV 1.41e-5 / 4.17e-5 vs RVmed 7.97e-6 / 2.35e-5; r05 BASE dT_twin = 0.75; referee2_fpp README section 5 ('A planet on a dT = 0.75 companion would be ~5.8 R_e ... to ~6.3 R_e'); Giacalone+2021 section II.4 scenario naming.",
+    "fix": "(a) '64 variants 0.0007–0.0037'. (b) '(circular: 3 × 10⁻⁵ / 1.15 × 10⁻³)'. (c) Add a table note: 'brown-dwarf posteriors include the Gaia RV factor (0.49); the total uses them without it'. (d) Twin row: 'Planet on an unresolved companion within 0.75 mag of the M3 dwarf (near-equal twin; Rp 5.2–6.3 R⊕)'. (e) In captions.md and false_positives.png, replace 'PTP' with 'planet on a companion (STP in TRICERATOPS terms)'."
+   }
+  ],
+  "overall": "Three of the problems are major, and all three are in how the false-positive numbers are bookkept or framed. The planet and star parameters are sound, and the 'strong candidate, not validated' verdict is correct; if anything it is better supported than the draft says.\n\nWhat checks out (my own code, <scratch>/panel_fpp/p03_params.py): a 0.0448 au, a/R* 25.3, i 88.8 deg, T14 1.70 h, T23/T14 0.72, Teq 471 K, insolation 8.2, stellar density 9.4, Rp 4.92-4.98 R_E, twin-host Rp about 5.3 R_E, and K = 14.8 m/s at the median mass. Every posterior in the README scenario table matches referee3_bd s02 at the stated settings. The FPP identity holds to 1e-16, and I found no double counting. Scenarios that r05 leaves out (WD on a twin, eclipsing binary on pair A, an eclipsing companion of the M3V, pair B) are each 1e-6 or smaller in fpp/. The only real risk outside the framework is a non-astrophysical signal, and the README states that correctly.\n\nThe three major problems:\n1. Follow-up ladder (FPP-1). Every step after 'now' uses a brown-dwarf rate of 1e-3 with the uncalibrated shape grid. With the adopted calibrated inputs, speckle plus a two-band transit already gives about 4-10e-5, not 1.4-5.2e-4. Closing the brown-dwarf channel then gains at most 1.7x. The remaining floor is the background term, which was carried over and never re-derived. Script: panel_fpp/p06_ladder.py.\n2. Robustness range (FPP-2). '64 variants 0.0007-0.0036' ignores the prior dimensions, which were never re-run after the sign fix. My sign-fixed re-run of the referee2_fpp framework (r05 imported read-only; panel_fpp/fpplib.py, p05_variants_draws.py) gives:\n   - joint prior draws: median 0.0022, 5-95% 0.0002-0.012, P(FPP < 0.015) = 0.97;\n   - pessimistic named variants: 0.015-0.045.\n3. Giacalone comparison (FPP-3). Their threshold is for TRICERATOPS, which counts a planet on a companion, a twin included, as a false positive. On that definition the FPP is 0.005/0.009 at the adopted priors, and in the joint prior draws its median is 0.013 with only a 56% chance of being below 0.015.\n\nMinor problems:\n- NFPP: definitions are inconsistent, 'most lenient' is not true, and some variants give about 1.1e-3.\n- '0.9995 planet on some star of the bound system' leaves out bound pair A; including it gives 0.9999.\n- The 15-30x circular/eccentric factor for the planet-on-companion term holds only for REF; for INV it is 2.3x.\n- The referee's recommended Sagear & Ballard eccentricity prior is not the one adopted.\n- The white-dwarf posterior leaves out the Gaia RV term the README cites.\n- The phase-2 history mis-describes what the sign error affected in fpp/.\n\nNits: mass, K and TSM use the superseded Rp 4.90 (values 1-4% low); 'Neptune-sized' for 1.3 Neptune radii; small rounding and labelling slips, including the 'PTP' acronym, which means the opposite in TRICERATOPS.\n\nThe same numbers are repeated in captions.md, false_positives.png, key_numbers.json and corrections_to_repo.md, so those need the same fixes. Nothing in writeup/ or the repo was modified.\n\nFiles are in <scratch>/panel_fpp/:\n- scripts: fpplib.py, p02_ranges.py, p03_params.py, p05_variants_draws.py, p06_ladder.py, p06b_twoband_only.py, p07_draw_stats.py\n- outputs: out/p02_ranges.json, out/p03_params.json, out/p05_variants.csv, out/p05_draws.csv, out/p05_summary.json, out/p06_ladder.json, out/p07_draw_stats.json"
+ },
+ {
+  "findings": [
+   {
+    "id": "F01",
+    "severity": "major",
+    "location": "writeup/README.md line 71 (Activity row), lines 201-202 (follow-up item 4, rotation), lines 260-261 (Caveats: Activity)",
+    "issue": "The README still uses the eRASS1 X-ray source as the M3 dwarf's activity indicator. The parallel novelty re-check found a newer eRASS:3/DR2 catalogue that makes the attribution roughly a coin flip and halves the flux. The rotation-period advice for the RV campaign rests on the old flux.",
+    "evidence": "novelty/README.md section 7 and out/xray_mdwarf.json: 3eRASS J172353.3-511924 (DET_LIKE 7.6) lies 6.3\" from the M3V and 5.5\" from pair A. Counterpart probability is p_i 0.54 for the M3V and 0.38 for pair A (p_any 0.52). F_X is 2.5e-14 against 5.4e-14 in eRASS1, so log L_X/L_bol is about -3.7 instead of -3.4. novelty/ says the eRASS:3 catalogue supersedes eRASS1 and that the 'active, near saturation' and Rossby statements should be softened. The README was written at 10:00, before novelty/ finished at 10:47. referee2_search/out/r08_2p_xray.json gives P_rot 11.7 d (W11) and 17.2 d (W18) for a -0.30 dex shift, against the 8.5-12.8 d quoted. Half of 11.7-17.2 d is 5.8-8.6 d, which no longer brackets P_orb 5.69 d.",
+    "fix": "Line 71: '| Activity | X-ray source 3eRASS J172353.3−511924 (eRASS:3, Ramos-Ceja et al. 2026; detection likelihood 7.6), 6.3″ from the M3 dwarf and 5.5″ from pair A. Its best counterpart is the M3 dwarf, but only at p = 0.54 (pair A 0.38). If the source is the M3 dwarf, log L_X/L_bol ≈ −3.7 (the earlier eRASS1 source, 4.2″ away, gave −3.4). No measurable rotation; no flares |'. Lines 201-202: '* If the X-ray source is the M3 dwarf, its flux suggests a rotation period of about 12–17 d (8.5–12.8 d from the older eRASS1 flux). Half of that may lie close to the 5.69-d orbit, so model the activity.' Lines 260-261: '* **Activity is unresolved.** The eRASS:3 X-ray source may belong to the M3 dwarf or to pair A (p = 0.54 vs 0.38), and its flux is half the eRASS1 value. The kinematics suggest an old star.' Add matching key_numbers entries that cite novelty/out/xray_mdwarf.json."
+   },
+   {
+    "id": "F02",
+    "severity": "major",
+    "location": "writeup/README.md line 34 ('Not catalogued anywhere' row) and line 262 (Caveats, novelty); bundle_manifest.txt (novelty/ not listed); corrections_to_repo.md line 51 (vetting line 117)",
+    "issue": "The novelty statement overclaims and does not use the completed novelty/ check. The M3 dwarf is in many catalogues. ExoFOP target pages exist. The 'no paper' claim does not cover ADS full text. The caveat also understates what was searched.",
+    "evidence": "novelty/README.md: the M3V is in GCNS, El-Badry+21, Kervella+22, eRASS1, eRASS:3, Medan+21, Hardegree-Ullman+23 and Suissa+20. 'All six TIC pages exist' on ExoFOP, but every community-upload count is 0. ADS full text was not queried (no token) and Semantic Scholar returned HTTP 429. The check also covered the NASA Exoplanet Archive, VizieR (63 catalogues), Gaia DR3 vari/NSS, MAST and a web search. The README row says 'No TOI, CTOI, ExoFOP record, VSX entry or paper', and line 262 says the check covered 'ExoFOP, SIMBAD, VSX and arXiv only'. The README never links novelty/, and the manifest says novelty/ is 'NOT listed or checked'.",
+    "fix": "Line 34: '| Not previously reported as a candidate | No TOI or CTOI, no ExoFOP community data (notes, files, imaging, spectra), no NASA Exoplanet Archive entry, no VSX or Gaia DR3 variability or non-single-star entry, and no hit in arXiv or a web search, for the M3 dwarf, the Mira or the pair (checked 2026-10-16 and 2026-10-17; [`novelty/`](novelty/)). The M3 dwarf appears only in catalogues (Gaia DR3/GCNS, El-Badry et al. 2021, eROSITA, Hardegree-Ullman et al. 2023) | As of those dates; ADS full text not searched; repeat just before any submission |'. Line 262: '* **The novelty check** covered ExoFOP, the NASA Exoplanet Archive, SIMBAD, VizieR, VSX, Gaia DR3, MAST, arXiv and a web search ([`novelty/`](novelty/)). ADS full text was not searched and Semantic Scholar was rate-limited, so a paper that names the star only in its body text cannot be ruled out.' Add novelty/ (README.md, scripts/, out/, and optionally raw/ at 0.7 MB) to bundle_manifest.txt. In corrections_to_repo.md line 51, append '; ADS full text not searched' to the replacement."
+   },
+   {
+    "id": "F03",
+    "severity": "major",
+    "location": "bundle_manifest.txt (analysis files) and writeup/README.md lines 266-268 ('The scripts regenerate them...')",
+    "issue": "417 of the bundled analysis files, including 19 READMEs ('Folder: <scratch>/...'), hard-code the session scratchpad path. Copying them as they are would publish a local path that contains the string '<tool name>', which conflicts with the rule against naming an AI model in any file. The analysis scripts also will not run from analysis/<folder>/, so the README's statement that they regenerate the large data is not true as shipped.",
+    "evidence": "Script panel_audit/a01_links.py plus a grep over every manifest file: 417 files contain '<scratch root>', 19 of them README.md. Apart from that path, no file names a model; the 'gemini' hits are the Gemini-South telescope. writeup/scripts and figscripts are clean (w01/w02 resolve analysis/ relative to themselves).",
+    "fix": "Before committing, rewrite the prefix in the copies only, for example sed -i 's#<scratch>/#../#g' on every copied text file under tic214311908/analysis/. Replace the README 'Folder:' lines with 'Folder: analysis/<name>/'. Then grep the copy for '<tool name>' and '/tmp/' and require zero hits. Change README lines 266-268 to: '...were not committed. The scripts were written for the original working layout; paths may need adjusting before they regenerate these from public MAST and Gaia data.'"
+   },
+   {
+    "id": "F04",
+    "severity": "major",
+    "location": "corrections_to_repo.md line 49 (vetting_2026-10-16/README.md lines 111-112 replacement) vs line 52 (lines 304-308 replacement)",
+    "issue": "The two replacements contradict each other. The first keeps the link to results/214311906/predicted_transits_2027.csv and says its times are corrected (\"updated 2026-10-17\"), which is true only if the old file is overwritten. The second says that same file is kept and superseded by tic214311908/predicted_transits_2027.csv. Applied as written, a public page would state that an uncorrected file is corrected.",
+    "evidence": "My recomputation (panel_audit/a02_utc.py) of the old file's utc_mid against the correct barycentric UTC of its own bjd_tdb gives file minus correct = -3.42 to +7.30 min (matching w02_checks.json). At the recommended June 2027 events the old file is 5-6 min late against the new file: E126 13:02 vs 12:56, E127 05:37 vs 05:32, E131 00:00 vs 23:55.",
+    "fix": "Line 49 replacement: '[`../tic214311908/predicted_transits_2027.csv`](../tic214311908/predicted_transits_2027.csv) lists 42 predicted transits for February–October 2027, each with ±2.9–3.5 min (1σ) timing, in barycentre-corrected geocentric UTC (updated 2026-10-17). The original [`results/214311906/predicted_transits_2027.csv`](results/214311906/predicted_transits_2027.csv) is kept for the record, but its `utc_mid` lacks the barycentric correction (−3.4 to +7.3 min); do not use it. Full observing windows exist only in April–August 2027.' Delete the parenthesis '(The file is replaced by ...)' and add one line: 'Do not overwrite the old file.'"
+   },
+   {
+    "id": "F05",
+    "severity": "minor",
+    "location": "writeup/README.md lines 51-54 (per_transit.png caption)",
+    "issue": "The caption gives the PRF late-minus-early excess as '+3.3 to +4.1 ppt (1.5–1.7σ)'. The figure legend shows REF +6.1 ± 2.1 ppt (2.9σ, sector χ² 15.0/5). The caption leaves out the largest value the reader can see in the figure.",
+    "evidence": "referee3_clean/out/q14_contrast_all.json: REF_delivered contrast 6.15 ± 2.07 (2.97σ), chi2 15.0/5; REF without E58 3.39 ± 2.14; INV 4.10 ± 2.65. The figure legend and captions.md quote +6.1 ± 2.1. The README's range takes clean/'s INV +3.3 and the no-E58 REF value.",
+    "fix": "'...The PRF photometries are deeper in 2026 than in 2021–2023: INV +4.1 ± 2.6 ppt; REF +6.1 ± 2.1 ppt with the scattered-light event E58, +3.4 ± 2.1 ppt without it (1.5–2.9σ, for a split chosen after looking at the data; look-elsewhere p 0.31–0.64). The raw apertures show no such trend (−1.0 ± 2.4 and −4.9 ± 3.2 ppt)...'"
+   },
+   {
+    "id": "F06",
+    "severity": "minor",
+    "location": "writeup/README.md line 31 (timing χ²) vs figures/captions.md per_transit (b); key_numbers entry 52",
+    "issue": "The README quotes the analyst's timing χ² while the figure caption quotes the referee's. By the precedence rule the referee's value should be used.",
+    "evidence": "clean/out/timing_clean.json: INV chi2_cal 9.88/16 (n 18), REF 15.38/19. referee3_clean/out/q05_timing.json: INV 8.88/17 (n 19), REF 12.58/19. referee3_clean README item 5 gives 'no TTVs (chi2 8.9/17, 12.6/19 with my errors)', and captions.md uses 8.9/17 and 12.6/19.",
+    "fix": "'The transit times fit a constant period: χ² 8.9/17 (INV) and 12.6/19 (REF) with the referee's injection-calibrated errors (9.9/16 and 15.4/19 with the analyst's)'. Point key_numbers entry 52 to referee3_clean/out/q05_timing.json."
+   },
+   {
+    "id": "F07",
+    "severity": "minor",
+    "location": "writeup/README.md line 87 (Prediction error row)",
+    "issue": "'use ±10-min margins' is less than 3σ in late 2027 and in all of 2028, by the README's own σ values. The CSVs and observability tables correctly use 3σ.",
+    "evidence": "README: 1σ 2.8–3.7 min (2027) and 3.7–4.6 min (2028), so 3σ is 8.4–11.0 and 11.1–13.8 min. predicted_transits_2026_2028.csv sigma3_min reaches 13.8 min at E227. referee3_followup also advises adding about 1 min of pipeline systematic in quadrature.",
+    "fix": "'| Prediction error | 1σ = 2.8–3.7 min in 2027 and 3.7–4.6 min in 2028 (plus ~1 min pipeline systematic); plan ±3σ margins, about ±10 min in 2027 and ±11–14 min in 2028 (column `sigma3_min`) |'"
+   },
+   {
+    "id": "F08",
+    "severity": "minor",
+    "location": "writeup/README.md lines 20-21 (one-paragraph summary) and lines 160-161",
+    "issue": "The intermediate follow-up FPP (1.4–5.2e-4 after speckle and two-band) comes from the referee's ladder, which uses the pre-calibration brown-dwarf rate f_BD = 1e-3. The headline FPP uses the adopted 1.3e-4. With the adopted rate, speckle and two-band alone already reach about 3e-5 to 1e-4, so the summary overstates how much BD closure is needed.",
+    "evidence": "referee3_followup/out/r05_hri_ladder.json composition_now: BD 1.33e-4 (REF) and 5.12e-4 (INV), i.e. f_BD 1e-3. 'Zorro consB + two-band' is 1.39–1.57e-4 / 4.6–5.2e-4, of which BD×0.82–0.84 is 1.09e-4 / 4.31e-4. Recombined with the adopted s02 BD (1.41e-5 / 4.17e-5, f_BD 1.3e-4): REF 4.2–6.0e-5 and INV 0.66–1.21e-4. With referee3_bd's calibrated BD: REF 3.1–4.9e-5 and INV 3.6–9.2e-5.",
+    "fix": "Lines 20-21: 'If one multi-band ground transit and 8-m speckle imaging both come back clean, the FPP falls to about 4–6 × 10⁻⁵ (REF) / 0.7–1.2 × 10⁻⁴ (INV) with the adopted brown-dwarf rate (1.4–5.2 × 10⁻⁴ with the older rate of 10⁻³ used in the referee's ladder). Closing the brown-dwarf channel, which the same ground light curve can do, gives 3–9 × 10⁻⁵.' Add the same qualifier at lines 160-161."
+   },
+   {
+    "id": "F09",
+    "severity": "minor",
+    "location": "writeup/README.md lines 121-122 (NFPP); key_numbers entries 115-116",
+    "issue": "The two NFPP values use different definitions. '≈ 4–5 × 10⁻⁴' includes the 3e-5 background term, while '10⁻⁷–10⁻⁹ with the typical one' is the pair-A term alone; with the background term included, the typical value cannot fall below about 3e-5. The range across priors (3–7e-4) is also narrowed.",
+    "evidence": "referee2_fpp/scripts/r05_fpp.py line 179 defines NFPP = E['NTP_pairA']/tot, and referee2_fpp README line 62 gives '1e-7 to 1e-9 typically' for that term. key_numbers entry 115: '4.0e-4 / 4.5e-4 = NTP pair A + background', which is 3.7e-4 + 3e-5 and 4.2e-4 + 3e-5. s02: NTP_pairA with circular planet priors is 6.0e-4 / 6.6e-4. referee3_bd README item 7 gives '3-7e-4'.",
+    "fix": "'The probability that the dip comes from the resolved neighbour pair A (the NFPP of Giacalone et al. 2021) is 3.7 × 10⁻⁴ (REF) / 4.2 × 10⁻⁴ (INV) with the most lenient pixel likelihood (3–7 × 10⁻⁴ across priors), and 10⁻⁹–10⁻⁷ with the typical one. Adding the carried-over background term (3 × 10⁻⁵), the chance of any source outside the bound system is ≈ 4–5 × 10⁻⁴ and ≥ 3 × 10⁻⁵ respectively.'"
+   },
+   {
+    "id": "F10",
+    "severity": "minor",
+    "location": "writeup/README.md lines 151-152 ('changes 15–30-fold') and line 111 ('so it mostly needs an eccentric orbit')",
+    "issue": "The circular-versus-eccentric contrast holds for REF only. In INV the planet-on-companion term changes by about 2×, as the README's own table shows.",
+    "evidence": "s02_fpp_fixed.csv (Kipping vs circ, f_BD 1.3e-4): PTP REF 8.57e-4 vs 3.0e-5 (29×); INV 2.59e-3 vs 1.15e-3 (2.3×). referee3_bd README: 'In REF it is mainly an eccentric, apoastron-transit channel'; the 15–30× comes from the s06 representative-companion evidence.",
+    "fix": "Line 151-152: '4. **The residual channels depend on priors.** The planet-on-companion term is ~30 times smaller for circular than for eccentric orbits in REF (3 × 10⁻⁵ vs 8.6 × 10⁻⁴), but only ~2 times in INV (1.1 × 10⁻³ vs 2.6 × 10⁻³).' Line 111: '...in REF it mostly needs an eccentric orbit (circular: 3 × 10⁻⁵ / 1.1 × 10⁻³)'."
+   },
+   {
+    "id": "F11",
+    "severity": "minor",
+    "location": "writeup/README.md line 30 (2P exclusion '≥ 7.7σ'); corrections_to_repo.md new FINDINGS entry ('2P main-sequence EB at >= 7.7 sigma')",
+    "issue": "7.7σ is the phase-2 figure. The phase-3 odd−even measurements the README cites give a lower minimum, and the quoted raw-pixel value does not yield 7.7σ.",
+    "evidence": "referee2_search/out/r08_2p_xray.json: minimum predicted |odd−even| 17.03 ppt; 7.73σ is against search alias.json. Phase 3 (referee3_clean q10): box3 −1.1 ± 2.2 gives (17.03−1.1)/2.2 = 7.2σ; r≤2.5 px −0.1 ± 2.8 gives 6.0σ; INV +2.9 ± 2.1 gives 6.7σ; REF without E58 +2.7 ± 1.9 gives 7.5σ.",
+    "fix": "'...they agree in every photometry (raw 3×3 box: −1.1 ± 2.2 ppt), which excludes this at ≥ 6σ in every cleaned photometry (7.2σ in the raw box).' FINDINGS entry: '2P main-sequence EB excluded at >= 6 sigma in every cleaned photometry'."
+   },
+   {
+    "id": "F12",
+    "severity": "minor",
+    "location": "writeup/README.md line 33 (FPP row: 'in two separate codes')",
+    "issue": "The adopted sign-fixed FPP comes from one framework (referee2_fpp's r05), run independently by bd/ and referee3_bd. The other code (fpp/f04) was never re-run after the fix. 'In two separate codes' overstates how independent the result is.",
+    "evidence": "bd/README.md: 'Re-running r05 read-only with only this sign fixed (b10)'. referee3_bd README: 'r05_fpp.py is imported READ-ONLY (as the analyst's b10 did)'. No sign-fixed f04 output exists.",
+    "fix": "'| FPP 0.0013 (REF) to 0.0033 (INV) | Explicit Bayesian comparison of every scenario. Both phase-2 codes used the photo-eccentric density relation with the wrong sign; this was found and fixed in phase 3. The sign-fixed values come from the referee2_fpp framework, re-run independently by two people (the fpp/ code was not re-run). 64 variants give 0.0007–0.0036...'"
+   },
+   {
+    "id": "F13",
+    "severity": "minor",
+    "location": "writeup/README.md lines 124-126 (history of superseded FPP values)",
+    "issue": "The README says both earlier values were inflated by the sign error favouring eccentric grazing brown dwarfs. fpp/ (0.011) had no grazing-BD channel; its FPP was 93% a planet on a companion, driven by the over-luminosity model. captions.md gives the correct reason, so the README and the caption disagree.",
+    "evidence": "fpp/README.md: 'Dominant residual false positive: PTP ... (posterior 0.0104, 93 % of the FPP)'. referee2_fpp README table: 'Brown-dwarf channels | absent | ... missed scenario'. captions.md: '0.011 (fpp/) used a mis-calibrated over-luminosity likelihood'.",
+    "fix": "'Earlier FPP values are superseded. The phase-2 fpp value, 0.011, came from an over-luminosity model that overstated the chance of an unresolved companion (93% of it was a planet on a companion). The phase-2 referee2_fpp value, 0.003–0.007, came from new brown-dwarf channels that the wrong-sign density relation inflated about 9-fold. Both codes had the sign error.'"
+   },
+   {
+    "id": "F14",
+    "severity": "minor",
+    "location": "writeup/README.md lines 13-14 ('exclude ... every other catalogued neighbour') and line 28 ('~3–4σ')",
+    "issue": "The pixels alone do not exclude the 3.1″ star: it lies inside the referee's 95% region and is disfavoured only by its own hypothesis test. The significance across variants is lower than ~3–4σ.",
+    "evidence": "referee_loc/README.md: the 95% region 'contains the sky position of the G17.5 star'. G17.5 Δχ² is +18 to +42 with p_true ≤ 0.007 in 22 of 23 variants and p = 0.04 in one; Gaussian log10 LR 1.4–4.2. inj_base.npz baseline: injection maximum +6.5 against +35.8 observed (0/1000). loc/: 10/1000 for AMP.",
+    "fix": "Lines 13-14: 'They exclude the Mira, the bound M-dwarf pair 11.7″ away and the 5.5″ star. The faint 3.1″ star lies inside the 95% pixel region; its own pixel test disfavours it, and its colours and the transit shape rule it out.' Line 28: '...disfavoured by the pixels at ~2.5–3.5σ (0/1000 injections at baseline; p ≤ 0.007 in 22 of 23 variants) and excluded by physics: an eclipse 50–55% deep cannot have the observed flat bottom...'."
+   },
+   {
+    "id": "F15",
+    "severity": "minor",
+    "location": "writeup/README.md lines 30-31; corrections_to_repo.md line 39 (vetting 64-65 replacement)",
+    "issue": "Two different phase-0.5 values appear in consecutive rows and sentences without saying what each measures. A reader sees a contradiction.",
+    "evidence": "−0.98 ± 0.78 ppt is a fixed-trapezoid (transit-shaped) fold on phase-2 photometry (referee2_search r04). +0.3 ± 0.8 / +0.3 ± 0.9 ppt is an occultation-shaped fit on the cleaned curves (clean/out/phase_scan.json). The replacement text reads 'Phase 0.5 shows −0.98 ± 0.78 ppt ... No secondary eclipse: +0.3 ± 0.8 ppt at phase 0.5'.",
+    "fix": "Line 30: 'A transit-shaped dip at phase 0.5 measures −0.98 ± 0.78 ppt, against 14.66 ± 0.78 ppt at phase 0 with the same fixed shape: P/2 is excluded at 14σ.' Line 31: 'An occultation-shaped dip at phase 0.5 in the cleaned photometry measures +0.3 ± 0.8 ppt (INV) and +0.3 ± 0.9 ppt (REF)...'. Use the same wording in the vetting 64-65 replacement."
+   },
+   {
+    "id": "F16",
+    "severity": "minor",
+    "location": "writeup/README.md line 211 (followup_2027.png caption); figures/followup_2027.png",
+    "issue": "The caption says the figure covers 'November 2026 to 2028', but it shows only the 2027 and 2028 seasons (about mid-March to September). The figure also uses the analyst's ephemeris and σ: its annotated times are 1–2 min earlier than the README table, and its stated window of 4.9 h compares with 5.0–5.15 h in the observability tables.",
+    "evidence": "Opened the PNG: the x-axes run Apr–Sep for each season, and the subtitle reads 'Window 4.9 h'. obs_*.csv window_h is 4.99–5.15. Annotations read E126 12:55, E127 05:30 and E137 03:30, against 12:56:01, 05:31:39 and 03:31:36 in predicted_transits_2026_2028.csv, which I verified to within 0.4 s by independent BJD_TDB→UTC conversion.",
+    "fix": "Rebuild f7_followup.py from writeup/observability/*.csv (adopted ephemeris and σ). If it is not rebuilt, change the caption to: 'Transit windows at the southern sites in the 2027 and 2028 seasons (March–September), with the Moon's illumination... The figure uses the analyst's combined ephemeris and σ (window 4.9 h); its times are 1–2 min earlier than the table above, which is authoritative.'"
+   },
+   {
+    "id": "F17",
+    "severity": "minor",
+    "location": "writeup/README.md line 149 ('a Mira that is 7–17 times brighter')",
+    "issue": "The ratio comes from the phase-1 M3V flux scale. With the adopted 979 e⁻/s it is 6–14×.",
+    "evidence": "loc/README.md: Mira TESS flux 6,100–13,900 e⁻/s, and '7–17×' was computed against roughly 830 e⁻/s. 6100/979 = 6.2 and 13900/979 = 14.2.",
+    "fix": "'Everything rests on TESS pixels 18″ from a Mira that is 6–14 times brighter in the TESS band (6,100–13,900 e⁻/s against 979 e⁻/s).'"
+   },
+   {
+    "id": "F18",
+    "severity": "minor",
+    "location": "writeup/README.md throughout (lines 10-140)",
+    "issue": "There is too much jargon for a citizen-scientist reader. ppt, PRF, Δχ², T14/T23, b, a/R★, RUWE, XP, BP−RP, Ks, W1, BJD_TDB, 'Kipping eccentricity prior', apoastron, TSM/ESM and K are used without definition. 'brighter than ~2,540 K' and 'position angle 90° ± 10°, where the pair and the M3 dwarf lie' are unclear.",
+    "evidence": "Read the README in full. Only INV/REF, FPP and NFPP are defined in the text.",
+    "fix": "Add a short 'Terms' list after 'In one paragraph', one line each: 'ppt: parts per thousand (15.8 ppt = 1.58%); PRF: the TESS point-spread model used to separate blended stars; Δχ²: how much worse a model fits (for one parameter, +9 ≈ 3σ); T14/T23: total/flat-bottom transit duration; b: impact parameter (0 = central transit); RUWE: Gaia's single-star fit quality; BP−RP, Ks, W1: Gaia blue−red colour, 2MASS and WISE infrared magnitudes; BJD_TDB: time at the Solar System barycentre; K: radial-velocity semi-amplitude.' Line 31: 'hotter than ~2,540 K'. Line 187: '...off the east–west line through the Mira, the pair and the M3 dwarf (position angle 92–98°)'."
+   },
+   {
+    "id": "F19",
+    "severity": "minor",
+    "location": "bundle_manifest.txt header; writeup/README.md 'How it was done'; figures/captions.md; figscripts/common.py",
+    "issue": "The figures, captions.md, figscripts/ and novelty/ are not listed in the manifest. The figures cannot be rebuilt from the bundle: they need clean/lc_M3V_INV_clean.csv (9.1 MB, excluded), the TESScut cubes, referee_loc/out/inj_base.npz, referee_star/data/mdw_cmd.csv and referee_loc/data/gaia_400.csv (all excluded). common.py writes to {root}/writeup/figures, which does not exist in the repo layout.",
+    "evidence": "panel_audit/a01_links.py: the README links resolve only if the seven PNGs are added. Of captions.md's source paths, clean/lc_M3V_INV_clean.csv, referee_loc/out/inj_base.npz, referee_star/data/mdw_cmd.csv and writeup/ephemeris_adopted.json (as written) are not in the manifest. common.py sets B = two levels up and FIG = f'{B}/writeup/figures', with CUBES = '/home/user/work/tesscut5/214311906'.",
+    "fix": "Add figures/*.png, figures/captions.md, figscripts/ (including data/rawap_box3.npz, 163 kB) and novelty/ to the manifest. In the README 'How it was done', add: 'Figures: figures/ (captions in figures/captions.md), made by figscripts/. Rebuilding them needs the cleaned INV light curve (9.1 MB), the TESScut cubes and three injection or data arrays that are not committed.' Make common.py resolve FIG relative to its own folder (../figures)."
+   },
+   {
+    "id": "F20",
+    "severity": "nit",
+    "location": "writeup/README.md line 31 ('an M8 dwarf or earlier')",
+    "issue": "The referee says an M8V is only marginally excluded by the 2,540 K limit. The 2,540 K value also comes from the phase-2 2.5-ppt limit, not the phase-3 limits of 2.8–3.1 ppt quoted in the same sentence.",
+    "evidence": "referee2_shape/README.md line 65: '< 2540 K (r14) revised; M8V (2570 K) only marginally excluded'.",
+    "fix": "'...excludes any occulter hotter than ~2,540 K (about M8 or earlier; an M8V at ~2,570 K is only marginally excluded; limit from the phase-2 2.5-ppt bound).'"
+   },
+   {
+    "id": "F21",
+    "severity": "nit",
+    "location": "writeup/README.md line 30 ('Δχ² ≥ 12,600')",
+    "issue": "The value is rounded up and then given as a lower bound.",
+    "evidence": "referee2_search/out/r04_period.json via key_numbers entry 46: 12,574.",
+    "fix": "'next best worse by Δχ² ≈ 12,600' (or '≥ 12,500')."
+   },
+   {
+    "id": "F22",
+    "severity": "nit",
+    "location": "writeup/README.md line 193 ('white-dwarf channel (K ≈ 73 km/s)')",
+    "issue": "73 km/s applies to a 0.6 M☉ white dwarf only. The best-fit 0.38 M☉ white dwarf gives about 55 km/s, and the range is 35–73 km/s.",
+    "evidence": "referee2_shape README line 121: 'K1 = 35-73 km/s (0.2-0.6 Msun)'. My Kepler check: M1 0.37 and M2 0.38 M☉ at P 5.69 d give K1 ≈ 55 km/s.",
+    "fix": "'...and the white-dwarf channel (K ≈ 35–73 km/s).'"
+   },
+   {
+    "id": "F23",
+    "severity": "nit",
+    "location": "figures/fold.png panel c; figures/captions.md fold (c)",
+    "issue": "Panel c plots only INV and the raw box, but its annotation and the caption also give a REF phase-0.5 value. INV is labelled 18 transits in fold.png and has 19 points in per_transit.png.",
+    "evidence": "Opened fold.png: panel c has INV (18 windows) and raw 3x3 box (22 windows) only, with the text 'REF +0.3 ± 0.9 ppt'. per_transit.png panel a shows 19 INV points (referee q05, n = 19), against clean INV n = 18.",
+    "fix": "Add the REF phase-0.5 curve to panel c, or reword the annotation to 'REF (not shown) +0.3 ± 0.9 ppt'. Say in captions.md that per_transit uses the referee's 19 INV times and fold uses clean/'s 18 transits."
+   },
+   {
+    "id": "F24",
+    "severity": "nit",
+    "location": "figures/captions.md preamble ('INV and REF are the two independent deblending photometries')",
+    "issue": "'Independent' contradicts the README caveat that they are analyses of the same pixels.",
+    "evidence": "README lines 244-245: 'three analyses of the same TESS pixels, not independent measurements'.",
+    "fix": "'INV and REF are two separate deblending photometries of the same TESS pixels'."
+   },
+   {
+    "id": "F25",
+    "severity": "nit",
+    "location": "writeup/observability/obs_*.csv line 1",
+    "issue": "Each per-site CSV starts with a '#' comment line, which breaks plain CSV readers and spreadsheets: pandas read_csv fails without comment='#' or skiprows=1.",
+    "evidence": "pd.read_csv('obs_SAAO.csv') parsed the comment as the header and raised 'no attribute epoch'. The full-window epochs, read with skiprows=1, match w02_checks.json at every site.",
+    "fix": "Move the description lines into a writeup/observability/README.md or a column-description section in the main README, and keep the CSVs header-first. Alternatively, state in the README: 'first line is a comment; read with comment=\"#\"'."
+   },
+   {
+    "id": "F26",
+    "severity": "nit",
+    "location": "corrections_to_repo.md line 7 ('Sources for every replacement number are in tic214311908/key_numbers.json')",
+    "issue": "Several replacement numbers have no entry in key_numbers.json.",
+    "evidence": "grep finds no entry for 'Gaia DR3 gives 326 ± 46 d' (from followup/README.md line 159), 'excludes the Mira ... at 2.7–3.4σ' (from clean/README.md line 458), or 'host density is 6.7 ρ☉' (9.4/1.41).",
+    "fix": "Add key_numbers entries for 326 ± 46 d (followup/README.md; novelty/out/gaia_vari_nss.json), 2.7–3.4σ (clean/out/depth_epoch.json) and 6.7 ρ☉ (star/star_params.json), or reword to 'Sources for the replacement numbers are in key_numbers.json or cited inline'."
+   },
+   {
+    "id": "F27",
+    "severity": "nit",
+    "location": "writeup/novelty/README.md lines 4, section 6 table and section 7 table",
+    "issue": "The novelty README uses the uncorrected 64.5 pc rather than the adopted 64.31 pc, and has two internal inconsistencies.",
+    "evidence": "Line 4: 'at 64.5 pc'; section 7: 'L_X if from the M3V (64.5 pc)'. Section 6 gives the eRASS:3 separation as 5.8″, section 7 as 6.3″, without stating the epochs. Section 7 table gives eRASS1 log L_X/L_bol ≈ −3.3, the text −3.4 (key_numbers: 4.2e-4 = −3.38).",
+    "fix": "Use '64.3 pc (zero-point-corrected parallax)'. State the epoch of each separation, e.g. '5.8″ (J2016 Gaia position) / 6.3″ (moved to the survey epoch)'. Make both eRASS1 values −3.4."
+   },
+   {
+    "id": "F28",
+    "severity": "nit",
+    "location": "writeup/README.md lines 182 and 189 (ground S/N and grazing-BD Δχ² ≥ 108)",
+    "issue": "Two caveats from the referee are missing: the pessimistic red-noise case, and the fact that the Δχ² ≥ 108 forecast is not injection-calibrated.",
+    "evidence": "referee3_followup/README.md section 4: red noise 1.5 ppt gives S/N ~10, σ(r/z) 14% per event and 8 events for 5%. Section 8 caveats: 'Not injection-calibrated ... Asimov data'.",
+    "fix": "Line 182: '* One event gives S/N 13–28 for red noise of 1.0–0.5 ppt (about 10 at 1.5 ppt). Plan ~4 events for a 5% depth ratio (8 at 1.5 ppt).' Line 189: '...(expected Δχ² ≥ 108 from a noise-model forecast, not yet injection-calibrated).'"
+   },
+   {
+    "id": "F29",
+    "severity": "nit",
+    "location": "writeup/README.md line 113 (WD row 'Δχ² +1.1 / +1.5') and line 70 (Bound companions 'chance-alignment probability 2 × 10⁻⁵')",
+    "issue": "The white-dwarf Δχ² values are given in INV/REF order inside a table whose columns read REF/INV. El-Badry et al.'s R is a chance-alignment parameter, not a probability.",
+    "evidence": "referee2_shape README line 62: '+1.1 (INV) / +1.5 (REF)'. novelty/README.md section 6: 'chance-alignment parameter R = 2.0 × 10⁻⁵'.",
+    "fix": "'Fits the light curve (Δχ² +1.5 REF / +1.1 INV)'. '...chance-alignment parameter R = 2 × 10⁻⁵ (El-Badry et al. 2021; bound with near certainty)'."
+   }
+  ],
+  "overall": "Numbers and figures mostly check out. The README is accurate on most core values. I recomputed or traced the depth, radius, geometry, ephemeris, FPP table rows and totals, PTP/NTP/WD/HEB/BG posteriors, TSM, K and the window counts to the source files, and they match. The README needs the four major fixes before publication.\n\nChecks that passed:\n- **Prediction times.** I spot-checked 7 epochs (E89, 118, 126, 127, 137, 149, 227) with my own BJD_TDB to geocentric UTC conversion; all agree within 0.4 s, and the barycentric delays and Moon values agree too. The new 2027 file agrees within rounding. The old repo file's error is −3.42 to +7.30 min (file minus correct), as stated.\n- **Links.** Every README link and every key_numbers source resolves in the manifest, provided the 7 PNGs are added. My coverage check found no README number missing from key_numbers.\n- **Figures.** All 7 PNGs are under 320 kB and largely match their captions.\n\nMajor problems:\n1. **X-ray and activity are out of date.** The README predates novelty/. It still uses eRASS1, which eRASS:3 supersedes; the X-ray source is now roughly a coin flip between the M3 dwarf and pair A. The rotation advice for the RV campaign rests on the old flux.\n2. **The novelty row overclaims.** It says 'Not catalogued anywhere' and 'no paper', although ADS full text was not searched. The caveat also understates what was checked, and novelty/ is neither linked nor in the manifest.\n3. **Scratchpad paths.** 417 bundled files, including 19 READMEs, contain the '<scratch root>' path. Publishing them would expose a path containing '<tool name>', and the scripts will not run from analysis/.\n4. **Contradictory replacement text.** corrections_to_repo.md tells the vetting README to say the old predicted_transits_2027.csv is corrected, while also keeping it as a superseded file. Those times are 5–6 min late at the June 2027 events.\n\nMinor problems:\n- The per_transit caption leaves out the REF +6.1 ± 2.1 ppt late-minus-early value that the figure shows.\n- Timing χ² differs between the README (analyst's values) and the caption (referee's).\n- The ±10-min margins are under 3σ in 2028.\n- The summary's 1.4–5.2e-4 'after speckle and two-band' uses the superseded brown-dwarf rate of 1e-3.\n- The two NFPP values use different definitions.\n- '15–30-fold' and 'mostly eccentric' hold for REF only.\n- The 2P exclusion '≥ 7.7σ' is a phase-2 number; with the phase-3 photometry the minimum is about 6σ.\n- 'In two separate codes' overstates the FPP's independence: only the r05 framework was re-run after the sign fix.\n- The reason given for the superseded 0.011 FPP is wrong for fpp/.\n- 'Every other catalogued neighbour' overclaims for the 3.1″ star.\n- Two phase-0.5 numbers appear without labels.\n- The followup_2027 caption's date range does not match the figure.\n- The Mira's brightness ratio is 6–14×, not 7–17×.\n- The text has a lot of jargon for a citizen-scientist reader.\n- Figures and novelty/ are missing from the manifest, and the figures cannot be rebuilt from the bundle.\n\nThe status framing is honest: a strong candidate, not validated, AI-run and not reviewed by a professional astronomer. No AI model is named in the write-up's own files.\n\nMy audit scripts are in <scratch>/panel_audit/: a01_links.py, a02_utc.py and a03_cover.py."
+ }
+]

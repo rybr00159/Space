@@ -1,0 +1,406 @@
+{
+ "queried_utc": "2026-10-17T10:03:42+00:00",
+ "objects": {
+  "M3V": {
+   "query_name": "Gaia DR3 5925373272850784768",
+   "http_status": 200,
+   "found": true,
+   "basic": {
+    "oid": "23338904",
+    "main_id": "Gaia DR3 5925373272850784768",
+    "otype": "PM*",
+    "sp_type": NaN,
+    "ra": "260.97048213996624",
+    "dec": "-51.32420140257695",
+    "pmra": "-113.671",
+    "pmdec": "85.544",
+    "plx_value": "15.4973",
+    "rvz_radvel": "16.28",
+    "nbref": "1"
+   },
+   "identifiers": [
+    "Gaia DR3 5925373272850784768"
+   ],
+   "otypes": [
+    {
+     "otype": "*",
+     "origin": "from id Gaia DR3 5925373272850784768"
+    },
+    {
+     "otype": "PM*",
+     "origin": "from bibcode ; bibcode=2020yCat.1350....0G"
+    }
+   ],
+   "bibliography": [
+    {
+     "bibcode": "2021A&A...649A...6G",
+     "year": "2021",
+     "journal": "A&A",
+     "title": "Gaia Early Data Release 3. The Gaia Catalogue of Nearby Stars."
+    }
+   ],
+   "mesVar": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesSpT": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesFe_h": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesRot": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesVelocities": {
+    "http_status": 200,
+    "n": 1,
+    "rows": [
+     {
+      "bibcode": "2022yCat.1355....0G",
+      "d": NaN,
+      "meanerror": "2.22",
+      "meanerror_prec": "2",
+      "nature": "s",
+      "nbmes": "21",
+      "obsdate": NaN,
+      "obsdate_prec": "32767",
+      "origin": NaN,
+      "qual": NaN,
+      "quality": "C",
+      "remark": NaN,
+      "remarks": NaN,
+      "resolution": NaN,
+      "veltype": "v  ",
+      "velvalue": "16.28",
+      "velvalue_prec": "2",
+      "wdomain": "O   ",
+      "oidref": "23338904",
+      "mespos": "1"
+     }
+    ]
+   },
+   "mesDistance": {
+    "http_status": 200,
+    "n": 1,
+    "rows": [
+     {
+      "bibcode": "2020yCat.1350....0G",
+      "dist": "64.5274",
+      "dist_prec": "4",
+      "method": "paral   ",
+      "minus_err": "-0.1045",
+      "minus_err_prec": "4",
+      "plus_err": "0.1045",
+      "plus_err_prec": "4",
+      "qual": NaN,
+      "unit": "pc  ",
+      "oidref": "23338904",
+      "mespos": "1"
+     }
+    ]
+   },
+   "mesXmm": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   }
+  },
+  "Mira": {
+   "query_name": "Gaia DR3 5925373268528684288",
+   "http_status": 200,
+   "found": true,
+   "basic": {
+    "oid": "19786683",
+    "main_id": "2MASS J17235464-5119254",
+    "otype": "LP*",
+    "sp_type": NaN,
+    "ra": "260.9776427230679",
+    "dec": "-51.32368874227277",
+    "pmra": "-5.964",
+    "pmdec": "-7.063",
+    "plx_value": "0.1495",
+    "rvz_radvel": NaN,
+    "nbref": "1"
+   },
+   "identifiers": [
+    "Gaia DR3 5925373268528684288",
+    "2MASS J17235464-5119254"
+   ],
+   "otypes": [
+    {
+     "otype": "*",
+     "origin": "from id Gaia DR3 5925373268528684288"
+    },
+    {
+     "otype": "LP*",
+     "origin": "from bibcode ; bibcode=2022yCat.1358....0G"
+    },
+    {
+     "otype": "NIR",
+     "origin": "from id 2MASS J17235464-5119254"
+    }
+   ],
+   "bibliography": [
+    {
+     "bibcode": "2023A&A...674A..15L",
+     "year": "2023",
+     "journal": "A&A",
+     "title": "{\\em Gaia} Data Release 3 The second {\\em Gaia} catalogue of long-period variable candidates."
+    }
+   ],
+   "mesVar": {
+    "http_status": 200,
+    "n": 1,
+    "rows": [
+     {
+      "oidref": "19786683",
+      "mespos": "1",
+      "vartyp": "LPV",
+      "lowvmax": NaN,
+      "vmax": NaN,
+      "vmax_prec": NaN,
+      "r_vmax": NaN,
+      "magtyp": "G",
+      "uppvmin": NaN,
+      "vmin": NaN,
+      "vmin_prec": NaN,
+      "r_vmin": NaN,
+      "upperiod": NaN,
+      "period": "326.17027",
+      "period_prec": "6",
+      "r_period": NaN,
+      "epoch": NaN,
+      "epoch_prec": NaN,
+      "r_epoch": NaN,
+      "raisingtime": NaN,
+      "raisingtime_prec": NaN,
+      "r_raisingtime": NaN,
+      "bibcode": "2022yCat.1358....0G"
+     }
+    ]
+   },
+   "mesSpT": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesFe_h": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesRot": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesVelocities": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesDistance": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesXmm": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   }
+  },
+  "pairA": {
+   "query_name": "Gaia DR3 5925373272850782208",
+   "http_status": 200,
+   "found": true,
+   "basic": {
+    "oid": "23338905",
+    "main_id": "Gaia DR3 5925373272850782208",
+    "otype": "PM*",
+    "sp_type": NaN,
+    "ra": "260.9756756563596",
+    "dec": "-51.32444275018667",
+    "pmra": "-112.796",
+    "pmdec": "87.205",
+    "plx_value": "16.4126",
+    "rvz_radvel": NaN,
+    "nbref": "1"
+   },
+   "identifiers": [
+    "Gaia DR3 5925373272850782208"
+   ],
+   "otypes": [
+    {
+     "otype": "*",
+     "origin": "from id Gaia DR3 5925373272850782208"
+    },
+    {
+     "otype": "PM*",
+     "origin": "from bibcode ; bibcode=2020yCat.1350....0G"
+    }
+   ],
+   "bibliography": [
+    {
+     "bibcode": "2021A&A...649A...6G",
+     "year": "2021",
+     "journal": "A&A",
+     "title": "Gaia Early Data Release 3. The Gaia Catalogue of Nearby Stars."
+    }
+   ],
+   "mesVar": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesSpT": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesFe_h": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesRot": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesVelocities": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   },
+   "mesDistance": {
+    "http_status": 200,
+    "n": 1,
+    "rows": [
+     {
+      "bibcode": "2020yCat.1350....0G",
+      "dist": "60.9288",
+      "dist_prec": "4",
+      "method": "paral   ",
+      "minus_err": "-1.4585",
+      "minus_err_prec": "4",
+      "plus_err": "1.4585",
+      "plus_err_prec": "4",
+      "qual": NaN,
+      "unit": "pc  ",
+      "oidref": "23338905",
+      "mespos": "1"
+     }
+    ]
+   },
+   "mesXmm": {
+    "http_status": 200,
+    "n": 0,
+    "rows": []
+   }
+  },
+  "star_3p1arcsec": {
+   "query_name": "Gaia DR3 5925373272827260544",
+   "http_status": 200,
+   "found": false
+  }
+ },
+ "cone_60arcsec": [
+  {
+   "main_id": "Gaia DR3 5925373272850784768",
+   "otype": "PM*",
+   "sp_type": NaN,
+   "ra": "260.97048213996624",
+   "dec": "-51.32420140257695",
+   "nbref": "1",
+   "sep_arcsec": "0.0073607895025978"
+  },
+  {
+   "main_id": "Gaia DR3 5925373272850782208",
+   "otype": "PM*",
+   "sp_type": NaN,
+   "ra": "260.9756756563596",
+   "dec": "-51.32444275018667",
+   "nbref": "1",
+   "sep_arcsec": "11.70946109183689"
+  },
+  {
+   "main_id": "2MASS J17235464-5119254",
+   "otype": "LP*",
+   "sp_type": NaN,
+   "ra": "260.9776427230679",
+   "dec": "-51.32368874227277",
+   "nbref": "1",
+   "sep_arcsec": "16.20872389293684"
+  },
+  {
+   "main_id": "Gaia DR3 5925373272827278208",
+   "otype": "EB*",
+   "sp_type": NaN,
+   "ra": "260.96765915532666",
+   "dec": "-51.31653302486528",
+   "nbref": "1",
+   "sep_arcsec": "28.33250955616872"
+  },
+  {
+   "main_id": "TYC 8353-2676-1",
+   "otype": "*",
+   "sp_type": NaN,
+   "ra": "260.9918764286899",
+   "dec": "-51.33067624156",
+   "nbref": "0",
+   "sep_arcsec": "53.4673561961785"
+  },
+  {
+   "main_id": "Gaia DR3 5925373204107739648",
+   "otype": "EB*",
+   "sp_type": NaN,
+   "ra": "260.9920844943979",
+   "dec": "-51.33391725153529",
+   "nbref": "1",
+   "sep_arcsec": "59.86511717399405"
+  }
+ ],
+ "planet_or_EB_types_within_30arcmin": {
+  "n": 249,
+  "n_planet_types": 0,
+  "within_3arcmin": [
+   {
+    "main_id": "Gaia DR3 5925373272827278208",
+    "otype": "EB*",
+    "ra": "260.96765915532666",
+    "dec": "-51.31653302486528",
+    "sep_arcmin": "0.4722084926028119"
+   },
+   {
+    "main_id": "Gaia DR3 5925373204107739648",
+    "otype": "EB*",
+    "ra": "260.9920844943979",
+    "dec": "-51.33391725153529",
+    "sep_arcmin": "0.9977519528999008"
+   },
+   {
+    "main_id": "Gaia DR3 5925378392451781120",
+    "otype": "EB*",
+    "ra": "261.04300039264325",
+    "dec": "-51.31439805504306",
+    "sep_arcmin": "2.7821446404502246"
+   },
+   {
+    "main_id": "Gaia DR3 5925384852082638720",
+    "otype": "EB*",
+    "ra": "260.89534759363664",
+    "dec": "-51.32489421704084",
+    "sep_arcmin": "2.817542143417021"
+   }
+  ]
+ }
+}

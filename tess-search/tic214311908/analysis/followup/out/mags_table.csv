@@ -1,0 +1,129 @@
+star,band,mag,err,source,note
+M3V,G,14.281043,0.003,Gaia DR3,Vega
+M3V,BP,15.830741,0.01,Gaia DR3,Vega
+M3V,RP,13.074592,0.01,Gaia DR3,Vega
+M3V,V,15.590686,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+M3V,Rc,14.399225,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+M3V,Ic,12.858676,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+M3V,g,16.363358,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+M3V,r,14.982698,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+M3V,i,13.574788,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+M3V,z,12.814884,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+M3V,y,12.634918,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+M3V,V,15.608053092555906,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+M3V,Ic,12.921638705321548,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+pairA,G,14.654037,0.003,Gaia DR3,Vega
+pairA,BP,15.977035,0.01,Gaia DR3,Vega
+pairA,RP,13.099223,0.01,Gaia DR3,Vega
+pairA,V,15.946725,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+pairA,Rc,14.69974,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+pairA,Ic,13.094182,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+pairA,g,16.442001,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+pairA,r,15.311522,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+pairA,i,13.832687,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+pairA,z,12.883251,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+pairA,y,12.442989,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+pairA,V,16.085787658252336,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+pairA,Ic,13.270096562788424,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+pairB,G,15.740896,0.003,Gaia DR3,Vega
+Mira,G,12.660598,0.003,Gaia DR3,Vega
+Mira,BP,15.611915,0.01,Gaia DR3,Vega
+Mira,RP,10.928166,0.01,Gaia DR3,Vega
+Mira,V,15.885454914393241,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+Mira,Ic,11.257425340619422,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+star3.1,G,17.484058,0.003,Gaia DR3,Vega
+star3.1,BP,17.875881,0.01,Gaia DR3,Vega
+star3.1,RP,16.56004,0.01,Gaia DR3,Vega
+star3.1,V,17.833170184456645,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+star3.1,Ic,16.638073950504378,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+star5.5,G,17.675425,0.003,Gaia DR3,Vega
+star5.5,BP,18.045498,0.01,Gaia DR3,Vega
+star5.5,RP,17.088518,0.01,Gaia DR3,Vega
+star5.5,V,17.87378866344425,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+star5.5,Ic,17.021347184973287,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+star12.0_G17.0,G,17.008398,0.003,Gaia DR3,Vega
+star12.0_G17.0,BP,17.282658,0.01,Gaia DR3,Vega
+star12.0_G17.0,RP,16.15342,0.01,Gaia DR3,Vega
+star12.0_G17.0,V,17.24871,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+star12.0_G17.0,Rc,16.744497,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+star12.0_G17.0,Ic,16.196178,0.02,Gaia DR3 XP synthetic (gspc),JKC Vega
+star12.0_G17.0,g,17.53501,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+star12.0_G17.0,r,16.968008,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+star12.0_G17.0,i,16.662302,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+star12.0_G17.0,z,16.376019,0.02,Gaia DR3 XP synthetic (gspc),SDSS/PS1 AB
+star12.0_G17.0,V,17.273752054371425,0.05,"Gaia G,BP-RP -> V (Riello+21)",sd 0.046 of the fit
+star12.0_G17.0,Ic,16.259017251831317,0.05,"Gaia G,BP-RP -> Ic (Riello+21)",sd 0.037 of the fit
+M3V,g,15.8171,0.0299,SkyMapper DR4 PSF,"AB; FWHM 7.5""; gmmvar 0.1921"
+M3V,r,14.9081,0.0239,SkyMapper DR4 PSF,"AB; FWHM 7.5""; rmmvar 0.1044"
+M3V,i,13.3869,0.01,SkyMapper DR4 PSF,"AB; FWHM 7.5""; immvar 0.0591"
+M3V,z,12.7683,0.0098,SkyMapper DR4 PSF,"AB; FWHM 7.5""; zmmvar 0.0354"
+pairA,g,16.0192,0.0493,SkyMapper DR4 PSF,"AB; FWHM 8.249""; gmmvar 0.224"
+pairA,r,15.0629,0.0265,SkyMapper DR4 PSF,"AB; FWHM 8.249""; rmmvar 0.1288"
+pairA,i,13.3629,0.0321,SkyMapper DR4 PSF,"AB; FWHM 8.249""; immvar 0.0517"
+pairA,z,12.6212,0.0444,SkyMapper DR4 PSF,"AB; FWHM 8.249""; zmmvar 0.0636"
+pairB,g,16.0192,0.0493,SkyMapper DR4 PSF,"AB; FWHM 8.249""; gmmvar 0.224"
+pairB,r,15.0629,0.0265,SkyMapper DR4 PSF,"AB; FWHM 8.249""; rmmvar 0.1288"
+pairB,i,13.3629,0.0321,SkyMapper DR4 PSF,"AB; FWHM 8.249""; immvar 0.0517"
+pairB,z,12.6212,0.0444,SkyMapper DR4 PSF,"AB; FWHM 8.249""; zmmvar 0.0636"
+Mira,g,15.1169,0.3556,SkyMapper DR4 PSF,"AB; FWHM 7.725""; gmmvar 2.9775"
+Mira,r,13.951,0.2605,SkyMapper DR4 PSF,"AB; FWHM 7.725""; rmmvar 2.4615"
+Mira,i,11.1419,0.0465,SkyMapper DR4 PSF,"AB; FWHM 7.725""; immvar 1.1446"
+Mira,z,9.9313,0.1485,SkyMapper DR4 PSF,"AB; FWHM 7.725""; zmmvar 0.6553"
+star5.5,g,18.0898,2.4759e-10,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+star5.5,r,17.589,1.07021e-09,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+star5.5,i,17.4068,1.35716e-09,DECaPS2 mean,AB; nmag_ok_i=5; stdev_i is flux stdev
+star5.5,z,17.3035,3.58633e-09,DECaPS2 mean,AB; nmag_ok_z=5; stdev_z is flux stdev
+star5.5,Y,17.3079,4.37805e-09,DECaPS2 mean,AB; nmag_ok_y=4; stdev_y is flux stdev
+M3V,g,16.1768,1.14153e-09,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+M3V,r,14.7367,9.28696e-09,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+M3V,i,13.3552,1.65697e-09,DECaPS2 mean,AB; nmag_ok_i=2; stdev_i is flux stdev
+M3V,z,12.7613,7.18399e-08,DECaPS2 mean,AB; nmag_ok_z=2; stdev_z is flux stdev
+M3V,Y,12.5631,0.0,DECaPS2 mean,AB; nmag_ok_y=1; stdev_y is flux stdev
+star3.1,g,18.1644,6.13173e-10,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+star3.1,r,17.3522,1.76264e-09,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+star3.1,i,17.1004,4.89893e-09,DECaPS2 mean,AB; nmag_ok_i=5; stdev_i is flux stdev
+star3.1,z,16.9002,2.00879e-08,DECaPS2 mean,AB; nmag_ok_z=5; stdev_z is flux stdev
+star3.1,Y,16.8494,9.44917e-09,DECaPS2 mean,AB; nmag_ok_y=4; stdev_y is flux stdev
+star12.0_G17.0,i,16.5629,0.0,DECaPS2 mean,AB; nmag_ok_i=1; stdev_i is flux stdev
+star12.0_G17.0,z,16.2939,0.0,DECaPS2 mean,AB; nmag_ok_z=1; stdev_z is flux stdev
+star12.0_G17.0,g,17.5262,8.62131e-10,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+star12.0_G17.0,r,16.9019,2.44652e-09,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+star12.0_G17.0,i,16.6759,1.73029e-09,DECaPS2 mean,AB; nmag_ok_i=4; stdev_i is flux stdev
+star12.0_G17.0,z,16.5214,2.60607e-08,DECaPS2 mean,AB; nmag_ok_z=4; stdev_z is flux stdev
+star12.0_G17.0,Y,16.4647,1.24768e-08,DECaPS2 mean,AB; nmag_ok_y=4; stdev_y is flux stdev
+pairA,g,16.3712,9.15729e-10,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+pairA,r,15.0625,1.00688e-07,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+pairB,g,16.3712,9.15729e-10,DECaPS2 mean,AB; nmag_ok_g=4; stdev_g is flux stdev
+pairB,r,15.0625,1.00688e-07,DECaPS2 mean,AB; nmag_ok_r=4; stdev_r is flux stdev
+pairA,r,16.5119,1.55809e-08,DECaPS2 mean,AB; nmag_ok_r=3; stdev_r is flux stdev
+pairB,r,16.5119,1.55809e-08,DECaPS2 mean,AB; nmag_ok_r=3; stdev_r is flux stdev
+Mira,g,15.2222,1.82346e-09,DECaPS2 mean,AB; nmag_ok_g=2; stdev_g is flux stdev
+M3V,J,11.363,0.028,2MASS PSC,"Vega; Qflg AAA, Cflg ddd"
+M3V,H,10.74,0.031,2MASS PSC,"Vega; Qflg AAA, Cflg ddd"
+M3V,Ks,10.482,0.026,2MASS PSC,"Vega; Qflg AAA, Cflg ddd"
+star12.0_G17.0,J,14.829,0.21,2MASS PSC,"Vega; Qflg CUU, Cflg c00"
+star12.0_G17.0,H,10.596,,2MASS PSC,"Vega; Qflg CUU, Cflg c00"
+star12.0_G17.0,Ks,9.736,,2MASS PSC,"Vega; Qflg CUU, Cflg c00"
+pairA,J,9.821,9.998,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+pairA,H,8.768,0.243,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+pairA,Ks,8.678,0.17,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+pairB,J,9.821,9.998,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+pairB,H,8.768,0.243,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+pairB,Ks,8.678,0.17,2MASS PSC,"Vega; Qflg FDC, Cflg ccc"
+Mira,J,8.077,0.021,2MASS PSC,"Vega; Qflg AAA, Cflg 000"
+Mira,H,7.131,0.033,2MASS PSC,"Vega; Qflg AAA, Cflg 000"
+Mira,Ks,6.684,0.02,2MASS PSC,"Vega; Qflg AAA, Cflg 000"
+M3V,J,12.184,0.0011,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+M3V,Ks,10.6255,0.0011,VHS DR6 Kspmag,Vega; saturates near Ks~11
+star3.1,J,17.1706,0.0572,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+star3.1,Ks,14.7106,0.0265,VHS DR6 Kspmag,Vega; saturates near Ks~11
+star5.5,J,16.927,0.0812,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+star5.5,Ks,15.9715,0.0668,VHS DR6 Kspmag,Vega; saturates near Ks~11
+pairA,J,12.188,0.0009,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+pairA,Ks,10.4101,0.0007,VHS DR6 Kspmag,Vega; saturates near Ks~11
+pairB,J,12.188,0.0009,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+pairB,Ks,10.4101,0.0007,VHS DR6 Kspmag,Vega; saturates near Ks~11
+star12.0_G17.0,J,16.605,0.048,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+star12.0_G17.0,Ks,14.0806,0.0248,VHS DR6 Kspmag,Vega; saturates near Ks~11
+Mira,J,10.4464,0.0004,VHS DR6 Jpmag,Vega; saturates near J~12 (M3V/Mira/pair values unreliable)
+Mira,Ks,11.0333,0.0021,VHS DR6 Kspmag,Vega; saturates near Ks~11

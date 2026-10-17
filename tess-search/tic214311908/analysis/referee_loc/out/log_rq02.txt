@@ -1,0 +1,9 @@
+S12: WCS offset (-0.087,+0.068) +- (0.009,0.008) px, variants x[-0.088,-0.018] y[-0.013,+0.068] chi2r 0.2 nstar 474
+   Mira R3: dEN (+0.6,-4.1)+-(3.0,0.4) rad -3.5 tan -2.2 flux 23006 rms 5.3% M3V 1348.6508295938995 pairA -9019.00333934994
+   Mira R3 blur: dEN (+0.6,-4.1) rad -3.5 tan -2.2 blur 0.25px rms 5.3%; centroid (+2.2,-3.0) rad -3.7
+     R2.0_blur0: rad -4.3 tan -1.6 flux 20192 chi2r 3.1
+     R2.0_blur1: rad -4.3 tan -1.6 flux 20192 chi2r 3.7
+     R3.0_blur0: rad -3.5 tan -2.2 flux 23006 chi2r 1.7
+     R3.0_blur1: rad -3.5 tan -2.2 flux 22972 chi2r 1.7
+     R4.0_blur0: rad -3.5 tan -2.2 flux 22199 chi2r 1.2
+     R4.0_blur1: rad -3.5 tan -2.2 flux 22122 chi2r 1.2

@@ -1,0 +1,109 @@
+{
+ "period_fit": {
+  "P_best_d": 313.5,
+  "P_mean_d": 313.5971346919672,
+  "P_sd_d": 0.6031037169417006,
+  "local_minima_P_dchi2": [
+   [
+    313.5,
+    0.0
+   ],
+   [
+    267.75,
+    321.7301628342219
+   ],
+   [
+    249.5,
+    457.6315593864848
+   ]
+  ],
+  "chi2_min": 96.14873521146407,
+  "n_data": 81,
+  "t_max_epoch0_BJD": 2457312.2683068826,
+  "t0_sd_d": 2.137785826670063,
+  "last_max_before_2026_5_BJD": 2461074.2683068826,
+  "G_mean": 12.197641868501924,
+  "G_semi_amp": 0.8702854997855354,
+  "T_flux_mean": 16435.026647511077,
+  "T_flux_semi_amp": 3327.395072823867,
+  "note": "sinusoid; Mira light curves are asymmetric; extra scatter 0.15 mag (G), 8% (TESS flux), 30% (slopes)"
+ },
+ "gaia_lpv": {
+  "frequency": 0.0030658833477751,
+  "period_d": 326.1702702177812,
+  "period_err_d": 45.59798758066317,
+  "amplitude": 0.750167
+ },
+ "vsx": {
+  "V_max": 12.91,
+  "V_min": 17.01,
+  "P_d": 294.0
+ },
+ "ranges": {
+  "V (Vega)": {
+   "bright": 12.91,
+   "faint": 17.01,
+   "source": "VSX (ASAS-SN) max/min"
+  },
+  "BP (Vega)": {
+   "bright": 13.484782,
+   "faint": 17.18653,
+   "source": "Gaia DR3 vari_summary, 39 epochs 2014-17"
+  },
+  "G (Vega)": {
+   "bright": 11.349751,
+   "faint": 13.316888,
+   "source": "Gaia DR3 vari_summary"
+  },
+  "RP (Vega)": {
+   "bright": 9.983914,
+   "faint": 11.727903,
+   "source": "Gaia DR3 vari_summary"
+  },
+  "T (TESS)": {
+   "bright": 9.700399593281078,
+   "faint": 10.146189435337561,
+   "source": "sinusoid fit to 21 TESS epochs (observed 9.66-10.19); zp 20.44"
+  },
+  "g (AB)": {
+   "bright": 13.354781999999998,
+   "faint": 17.056530000000002,
+   "source": "BP range shifted by SkyMapper g mean 15.12 - Gaia BP mean 15.25; SkyMapper g max-min >= 2.98 (8 epochs)"
+  },
+  "r (AB)": {
+   "bright": 12.6,
+   "faint": 15.6,
+   "source": "SkyMapper r mean 13.95 +- 1.5 (amplitude interpolated between BP 3.7 and G 2.0 mag); assumption"
+  },
+  "i (AB)": {
+   "bright": 10.323914,
+   "faint": 12.067903,
+   "source": "RP range shifted by SkyMapper i mean 11.14 - RP mean 10.80; SkyMapper i max-min >= 1.14 (7 epochs)"
+  },
+  "z (AB)": {
+   "bright": 9.3,
+   "faint": 10.6,
+   "source": "SkyMapper z mean 9.93; amplitude ~1.3 assumed (between RP 1.74 and J >=0.5; SkyMapper z max-min >= 0.66, 4 epochs)"
+  },
+  "Ic (Vega)": {
+   "bright": 9.873914000000001,
+   "faint": 11.617903,
+   "source": "i(AB) range - 0.45 (AB->Vega for I); +-0.3 systematic"
+  },
+  "J (Vega)": {
+   "bright": 7.6,
+   "faint": 8.8,
+   "source": "2MASS 1999 8.08, DENIS 1998 8.56 (>= 0.48 apart); amplitude ~1.2 assumed"
+  },
+  "Ks (Vega)": {
+   "bright": 6.3,
+   "faint": 7.3,
+   "source": "2MASS 1999 6.68, DENIS 1998 7.21 (>= 0.53 apart); amplitude ~1.0 assumed"
+  }
+ },
+ "phase_jitter_assumption": "0.05 per cycle random walk (assumed)",
+ "tess_observed_flux_range": [
+  12552.65043,
+  20555.3163
+ ]
+}

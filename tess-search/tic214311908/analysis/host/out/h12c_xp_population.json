@@ -1,0 +1,53 @@
+{
+ "ruwe1.2": {
+  "n_normal": 293,
+  "n_overlum": 290,
+  "w_twin": 0.15742730215803044,
+  "w_twin_boot_16_84": [
+   0.11141797053424184,
+   0.1995739831211427
+  ],
+  "metalrich_mu": 0.1513886359324355,
+  "metalrich_sd_fixed": 0.09711523385464862,
+  "normal_median": -0.0358249958782638,
+  "target_xp_feh": 0.12922249223373056,
+  "free_width_fit": {
+   "w_twin": 1.2215178509138468e-15,
+   "mu": 0.12092177214575067,
+   "sd": 0.15213730745894474,
+   "two_dlnL_vs_fixed": 113.82873822243084
+  },
+  "LR_twin_over_single": 0.4035115199593428,
+  "P_twin_given_xp_and_overlum": 0.0701070305837086
+ },
+ "ruwe1.1": {
+  "n_normal": 116,
+  "n_overlum": 118,
+  "w_twin": 0.17588024913060207,
+  "w_twin_boot_16_84": [
+   0.06135815982491145,
+   0.2661582346791723
+  ],
+  "metalrich_mu": 0.15275854817528478,
+  "metalrich_sd_fixed": 0.1131718309571575,
+  "normal_median": -0.0278477486923942,
+  "target_xp_feh": 0.12922249223373056,
+  "free_width_fit": {
+   "w_twin": 1.4849853746319719e-15,
+   "mu": 0.12000564965263065,
+   "sd": 0.1518910056598822,
+   "two_dlnL_vs_fixed": 17.297555372841856
+  },
+  "LR_twin_over_single": 0.47199552886910784,
+  "P_twin_given_xp_and_overlum": 0.09151310693936415
+ },
+ "mira_contamination": {
+  "eps_target": 0.0013846276291247911,
+  "eps_field_median": -0.00011190671983767086,
+  "eps_field_sd": 0.0012050655622364331,
+  "z": 1.2418696507973421,
+  "mira_flux_fraction_at_800nm_in_target": 0.007103907633697153,
+  "n_field": 84,
+  "note": "eps = fraction of the Mira XP flux added to the M3V; field stars give the null distribution (they have no Mira)"
+ }
+}

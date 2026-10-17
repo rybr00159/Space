@@ -1,0 +1,200 @@
+{
+ "T_decaps_cal": {
+  "coef": [
+   -0.21512934394580552,
+   0.9976702914395129,
+   0.18521768617152914
+  ],
+  "scatter": 0.024312302850579278,
+  "n": 289
+ },
+ "dF_obs": [
+  15.4,
+  0.8
+ ],
+ "n_gaia_30_m3v": 61,
+ "n_gaia_30_union": 92,
+ "n_decaps_only_30": 252,
+ "capable": [
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272827260544",
+   "sep_m3v": 3.134,
+   "sep_mira": 16.748,
+   "T": 16.825,
+   "need_ecl_depth": 0.551,
+   "parallax": 0.655
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272827262208",
+   "sep_m3v": 5.719,
+   "sep_mira": 17.061,
+   "T": 17.178,
+   "need_ecl_depth": 0.763,
+   "parallax": 0.283
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272827256448",
+   "sep_m3v": 10.569,
+   "sep_mira": 8.296,
+   "T": 17.465,
+   "need_ecl_depth": 0.994,
+   "parallax": 0.009
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272827253632",
+   "sep_m3v": 11.354,
+   "sep_mira": 6.855,
+   "T": 14.518,
+   "need_ecl_depth": 0.066,
+   "parallax": NaN
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272850782208",
+   "sep_m3v": 11.728,
+   "sep_mira": 6.252,
+   "T": 13.476,
+   "need_ecl_depth": 0.025,
+   "parallax": 16.413
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272827256576",
+   "sep_m3v": 11.993,
+   "sep_mira": 7.232,
+   "T": 16.431,
+   "need_ecl_depth": 0.384,
+   "parallax": -0.012
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373234168931072",
+   "sep_m3v": 13.462,
+   "sep_mira": 20.964,
+   "T": 17.294,
+   "need_ecl_depth": 0.849,
+   "parallax": 0.234
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373268528684288",
+   "sep_m3v": 17.836,
+   "sep_mira": 0.0,
+   "T": 11.257,
+   "need_ecl_depth": 0.003,
+   "parallax": 0.15
+  },
+  {
+   "catalog": "DECaPS2-only",
+   "source_id": NaN,
+   "sep_m3v": 18.222,
+   "sep_mira": 2.627,
+   "T": 17.122,
+   "need_ecl_depth": 0.725,
+   "parallax": NaN
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373234168929792",
+   "sep_m3v": 21.04,
+   "sep_mira": 36.721,
+   "T": 17.187,
+   "need_ecl_depth": 0.77,
+   "parallax": 0.131
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272850784128",
+   "sep_m3v": 21.868,
+   "sep_mira": 12.824,
+   "T": 17.515,
+   "need_ecl_depth": 1.041,
+   "parallax": 1.614
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373234168924032",
+   "sep_m3v": 25.478,
+   "sep_mira": 22.867,
+   "T": 16.854,
+   "need_ecl_depth": 0.566,
+   "parallax": 0.274
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373204131301504",
+   "sep_m3v": 28.268,
+   "sep_mira": 18.521,
+   "T": 17.215,
+   "need_ecl_depth": 0.79,
+   "parallax": 0.708
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373272850790912",
+   "sep_m3v": 29.352,
+   "sep_mira": 42.393,
+   "T": 16.004,
+   "need_ecl_depth": 0.259,
+   "parallax": 0.835
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373268528706688",
+   "sep_m3v": 31.274,
+   "sep_mira": 23.634,
+   "T": 13.848,
+   "need_ecl_depth": 0.036,
+   "parallax": 0.227
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373238491038976",
+   "sep_m3v": 32.867,
+   "sep_mira": 28.883,
+   "T": 16.498,
+   "need_ecl_depth": 0.408,
+   "parallax": 0.309
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373204131307008",
+   "sep_m3v": 34.446,
+   "sep_mira": 22.441,
+   "T": 16.711,
+   "need_ecl_depth": 0.496,
+   "parallax": 0.245
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373199809186944",
+   "sep_m3v": 35.513,
+   "sep_mira": 24.06,
+   "T": 16.304,
+   "need_ecl_depth": 0.341,
+   "parallax": 0.24
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373199809229824",
+   "sep_m3v": 38.77,
+   "sep_mira": 26.833,
+   "T": 15.277,
+   "need_ecl_depth": 0.132,
+   "parallax": 0.1
+  },
+  {
+   "catalog": "GaiaDR3",
+   "source_id": "5925373302888436608",
+   "sep_m3v": 42.668,
+   "sep_mira": 26.686,
+   "T": 17.163,
+   "need_ecl_depth": 0.753,
+   "parallax": 0.475
+  }
+ ]
+}

@@ -1,0 +1,2942 @@
+{
+ "description": "Every number in writeup/README.md with value, uncertainty, method and source file (paths relative to the tic214/ analysis root; in the repository they live under analysis/<folder>/, writeup files at the folder top level). readme_text is the exact text as it appears in the README.",
+ "n_entries": 273,
+ "entries": [
+  {
+   "readme_text": "Status, 2026-10-17",
+   "quantity": "write-up date (last referee reports)",
+   "value": "2026-10-17",
+   "uncertainty": null,
+   "method": "date of the phase-3 referee reports",
+   "source": [
+    "referee3_clean/README.md",
+    "referee3_bd/README.md",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "TIC 214311908",
+   "quantity": "target",
+   "value": "TIC 214311908",
+   "uncertainty": null,
+   "method": "TIC v8",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "Gaia DR3 5925373272850784768",
+   "quantity": "target Gaia id",
+   "value": "5925373272850784768",
+   "uncertainty": null,
+   "method": "Gaia DR3",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "TIC 214311908 = Gaia DR3 5925373272850784768 = 2MASS J17235292-5119271",
+   "quantity": "identifiers",
+   "value": "TIC 214311908 = Gaia DR3 5925373272850784768 = 2MASS J17235292-5119271",
+   "uncertainty": null,
+   "method": "catalogue cross-match",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "TIC 214311906",
+   "quantity": "the Mira (star searched)",
+   "value": "TIC 214311906",
+   "uncertainty": null,
+   "method": "TIC v8",
+   "source": [
+    "ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "TIC 214311910",
+   "quantity": "bound M-dwarf pair (A; B is Gaia DR3 5925373272827253632)",
+   "value": "TIC 214311910",
+   "uncertainty": null,
+   "method": "TIC v8 / Gaia DR3",
+   "source": [
+    "star/README.md"
+   ]
+  },
+  {
+   "readme_text": "17.8″",
+   "quantity": "M3V-Mira separation at the Gaia DR3 epoch 2016.0",
+   "value": 17.8,
+   "uncertainty": null,
+   "method": "Gaia DR3 positions",
+   "source": [
+    "star/README.md",
+    "star/neighbour_census.csv"
+   ]
+  },
+  {
+   "readme_text": "(17.8″ at the Gaia epoch 2016.0; 19.1″ by mid-2027 because the M3 dwarf moves)",
+   "quantity": "M3V-Mira separation 2016.0 / 2027.5",
+   "value": "17.8 / 19.08 arcsec",
+   "uncertainty": null,
+   "method": "Gaia DR3 positions propagated with proper motion (the Mira is a distant background star)",
+   "source": [
+    "star/README.md",
+    "followup/out/geometry_2027.csv"
+   ]
+  },
+  {
+   "readme_text": "18″ from a Mira",
+   "quantity": "M3V-Mira separation (rounded)",
+   "value": 17.8,
+   "uncertainty": null,
+   "method": "Gaia DR3",
+   "source": [
+    "star/README.md"
+   ]
+  },
+  {
+   "readme_text": "11.7″",
+   "quantity": "M3V-pair A separation",
+   "value": 11.73,
+   "uncertainty": null,
+   "method": "Gaia DR3",
+   "source": [
+    "star/star_params.json",
+    "referee_star/out/r08_kin_wide.json"
+   ]
+  },
+  {
+   "readme_text": "3.1″",
+   "quantity": "separation of the background star Gaia DR3 5925373272827260544 (G 17.48)",
+   "value": 3.13,
+   "uncertainty": null,
+   "method": "Gaia DR3 (3.21 arcsec at 2027.5)",
+   "source": [
+    "star/neighbour_census.csv",
+    "followup/out/geometry_2027.csv"
+   ]
+  },
+  {
+   "readme_text": "5.5″",
+   "quantity": "separation of Gaia DR3 5925373272827262208 (G 17.68)",
+   "value": "5.4-5.7 (5.32 at 2027.5)",
+   "uncertainty": null,
+   "method": "Gaia DR3; the folders quote 5.4-5.7 arcsec depending on epoch",
+   "source": [
+    "star/neighbour_census.csv",
+    "referee_phot/README.md",
+    "followup/out/geometry_2027.csv"
+   ],
+   "note": "called 'the 5.5\" star' throughout, as in the task brief"
+  },
+  {
+   "readme_text": "pixel is 21″",
+   "quantity": "TESS pixel scale",
+   "value": 21,
+   "uncertainty": null,
+   "method": "TESS instrument (11.7 arcsec = 0.55 px)",
+   "source": [
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "A Gaia RR Lyrae star 200″ away",
+   "quantity": "RRab Gaia DR3 5925372615693467904, P 0.6485275 d, 198-204 arcsec S",
+   "value": 200,
+   "uncertainty": null,
+   "method": "whole-cutout harmonic localisation",
+   "source": [
+    "search/README.md",
+    "search/out/pixfull_periodic_p0p6485.json",
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "all six TESS sectors that cover the star (2019–2026)",
+   "quantity": "TESS sectors",
+   "value": "S12, S39, S66, S93, S103, S104 (2019-2026)",
+   "uncertainty": null,
+   "method": "TESScut; tess-point",
+   "source": [
+    "phot/README.md",
+    "ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "(checked 2026-10-16 and 2026-10-17;",
+   "quantity": "novelty checks",
+   "value": "2026-10-16; 2026-10-17",
+   "uncertainty": null,
+   "method": "ExoFOP TOI/CTOI tables and target pages, NASA Exoplanet Archive, SIMBAD, VizieR, VSX, Gaia DR3 vari/NSS, MAST, arXiv, web search",
+   "source": [
+    "writeup/novelty/README.md",
+    "writeup/novelty/out/exofop_status.json",
+    "ctx/out/catalog_status.json",
+    "referee_ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "Eleven investigations ran in three phases",
+   "quantity": "number of investigations",
+   "value": 11,
+   "uncertainty": null,
+   "method": "phot, loc, star, ctx; shape, search, host, fpp; clean, bd, followup",
+   "source": [
+    "phot/README.md",
+    "bd/README.md",
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "fixed in phase 3",
+   "quantity": "phase of the sign-error fix",
+   "value": 3,
+   "uncertainty": null,
+   "method": "bd/ b10, confirmed by referee3_bd",
+   "source": [
+    "bd/README.md",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "Every 5.6915 days",
+   "quantity": "orbital period (rounded)",
+   "value": 5.6915,
+   "uncertainty": null,
+   "method": "adopted ephemeris",
+   "source": [
+    "referee3_clean/README.md",
+    "writeup/ephemeris_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "5.6915 d",
+   "quantity": "orbital period (rounded)",
+   "value": 5.6915,
+   "uncertainty": null,
+   "method": "adopted ephemeris",
+   "source": [
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "dim by 1.6% for",
+   "quantity": "transit depth (rounded)",
+   "value": 0.0158,
+   "uncertainty": null,
+   "method": "15.8 ppt",
+   "source": [
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "1.7 hours",
+   "quantity": "transit duration (rounded)",
+   "value": 1.7,
+   "uncertainty": null,
+   "method": "T14",
+   "source": [
+    "shape/out/final_params.json",
+    "clean/out/final_depth.json"
+   ]
+  },
+  {
+   "readme_text": "64.3 pc",
+   "quantity": "distance (rounded)",
+   "value": 64.31,
+   "uncertainty": 0.15,
+   "method": "zero-point-corrected Gaia parallax",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "4.95 ± 0.24 (stat) +0.25/−0.18 (sys) R⊕",
+   "quantity": "planet radius, single M3V host",
+   "value": 4.95,
+   "uncertainty": "+-0.24 stat, +0.25/-0.18 sys",
+   "method": "k ~0.1185 from GLS of INV/REF batman fits with density prior, R* 0.383; sys from PRF-vs-aperture, LD prior, beta set, normalisation",
+   "source": [
+    "referee3_clean/README.md",
+    "referee3_clean/out/q08_global.json"
+   ],
+   "note": "overrides clean/ 4.90 +- 0.22 +- 0.17"
+  },
+  {
+   "readme_text": "a 0.045-au orbit",
+   "quantity": "semi-major axis (rounded)",
+   "value": 0.0448,
+   "uncertainty": null,
+   "method": "Kepler's law with M* 0.370",
+   "source": [
+    "referee_star/out/r11_planet.json",
+    "star/out/planet_params.json"
+   ]
+  },
+  {
+   "readme_text": "470 K. Every eclipsing-binary",
+   "quantity": "equilibrium temperature (rounded)",
+   "value": 471,
+   "uncertainty": 11,
+   "method": "A=0, full redistribution",
+   "source": [
+    "clean/out/final_depth.json",
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "**0.0013–0.0033**",
+   "quantity": "FPP range (eccentric planet priors, REF to INV)",
+   "value": "0.0013-0.0033",
+   "uncertainty": null,
+   "method": "sign-fixed r05 framework, f_BD 1.3e-4, BD short-period e law",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "FPP 0.0013 (REF) to 0.0033 (INV)",
+   "quantity": "FPP range",
+   "value": "0.0013 (REF, Kipping) - 0.0033 (INV, Rayleigh 0.19)",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "Transits can be observed from April to August 2027.",
+   "quantity": "2027 observing season",
+   "value": "2027-04-17 to 2027-08-14 (full windows)",
+   "uncertainty": null,
+   "method": "observability, adopted ephemeris",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv",
+    "writeup/scripts/w02_checks.json"
+   ]
+  },
+  {
+   "readme_text": "8-m speckle imaging",
+   "quantity": "imaging telescope class (Gemini-South 8.1 m, Zorro)",
+   "value": 8,
+   "uncertainty": null,
+   "method": "instrument choice",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "would bring the FPP to about 3–6 × 10⁻⁵ (REF) or 4–12 × 10⁻⁵ (INV);",
+   "quantity": "FPP after speckle + two-band transit, adopted composition",
+   "value": "REF 3.1e-5 to 6.1e-5; INV 3.6e-5 to 1.18e-4",
+   "uncertainty": null,
+   "method": "referee3_followup ladder rules and factors (Zorro conservative curve B; two-band 5-10%; three colour models) with the adopted sign-fixed composition (f_BD 1.3e-4, BD short-period e law; BD with/without Gaia RV factor and calibrated shape LR)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json",
+    "writeup/scripts/w05_fpp_ladder.py",
+    "referee3_followup/out/r05_hri_ladder.json",
+    "referee3_bd/out/s12_summary.json"
+   ],
+   "note": "the referee's published ladder (f_BD 1e-3, uncalibrated shape grid) gives 1.4-1.6e-4 / 4.6-5.2e-4"
+  },
+  {
+   "readme_text": "The raw-pixel flux loss in the 3×3 box is 13.9 ± 1.4 e⁻/s and constant across the six sectors (χ² 4.2/5)",
+   "quantity": "raw 3x3-pixel flux loss at the M3V/Mira position",
+   "value": 13.9,
+   "uncertainty": 1.4,
+   "method": "common-mode-removed raw cube, local baselines, 80 fake epochs per sector; no encircled-energy correction",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json",
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "3×3 px",
+   "quantity": "raw-pixel box size",
+   "value": "3x3",
+   "uncertainty": null,
+   "method": "model-free pixel sum",
+   "source": [
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "pair A Δχ² +126, pair B +146, Mira +285, the 5.5″ star +87, the 3.1″ star +36",
+   "quantity": "localisation chi2 penalties vs the M3V",
+   "value": "+126.2, +145.5, +284.8, +86.6, +35.8",
+   "uncertainty": null,
+   "method": "referee's injection-calibrated PRF fits of LQ depth images, 6 sectors (investigator: +133, +150, +275, +80, +35)",
+   "source": [
+    "referee_loc/out/summary.json",
+    "referee_loc/README.md",
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "None of 1,000 injections",
+   "quantity": "injections on alternatives reaching the observed chi2",
+   "value": "0/1000",
+   "uncertainty": null,
+   "method": "injection-recovery",
+   "source": [
+    "referee_loc/README.md",
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "Best-fit position 0.7–1.6″ from the M3 dwarf; 95% region within 4.6″",
+   "quantity": "dimming position and 95% localisation region",
+   "value": "0.7 (loc) / 1.6 (referee) arcsec; 95% <= 4.6 arcsec",
+   "uncertainty": null,
+   "method": "free-position fits; injection-calibrated Delta-chi2 map",
+   "source": [
+    "loc/README.md",
+    "referee_loc/out/locregion_base.json",
+    "referee_loc/README.md"
+   ],
+   "note": "the referee's 95% region (4.6\", 99.7% 8.1\") overrides the investigator's 3.2\"/5.1\"; the brief's '~3\" (95%)' follows the investigator"
+  },
+  {
+   "readme_text": "4.6″",
+   "quantity": "95% localisation radius (referee)",
+   "value": 4.6,
+   "uncertainty": null,
+   "method": "injection-calibrated threshold",
+   "source": [
+    "referee_loc/out/locregion_base.json"
+   ]
+  },
+  {
+   "readme_text": "No pixel more than 2.5 px away dims",
+   "quantity": "far-pixel test",
+   "value": "p_far 0.11-0.90",
+   "uncertainty": null,
+   "method": "model-free per-pixel S/N maps vs fake epochs",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json"
+   ]
+  },
+  {
+   "readme_text": "The pixels disfavour it at ~2.5–3.5σ (0 of 1,000 injections at baseline; p ≤ 0.007 in 22 of 23 referee variants, 0.01 in the investigator's amplitude-image method)",
+   "quantity": "pixel disfavouring of the 3.1\" star",
+   "value": "~2.5-3.5 sigma; 0/1000; p <= 0.007 (22/23 variants; 0.04 in the implausible BP-RP 2.76 variant); AMP 10/1000",
+   "uncertainty": null,
+   "method": "own-hypothesis injection tests; Gaussian log10 LR 1.4-4.2 across variants",
+   "source": [
+    "referee_loc/README.md",
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "a 50–55% deep",
+   "quantity": "eclipse depth the 3.1\" star would need",
+   "value": "50-55%",
+   "uncertainty": null,
+   "method": "flux loss / star's TESS flux (28-30 e-/s)",
+   "source": [
+    "loc/README.md",
+    "referee_loc/README.md",
+    "star/README.md",
+    "referee_phot/README.md"
+   ],
+   "note": "loc 51%, referee_loc 54%, star 55%, referee_phot ~50%; the brief's 47-52% is slightly lower"
+  },
+  {
+   "readme_text": "single K dwarf at 1.5 kpc",
+   "quantity": "nature of the 3.1\" star",
+   "value": "K3-4V at 1.5-1.6 kpc",
+   "uncertainty": null,
+   "method": "DECaPS2 colours + Gaia parallax 0.65 +- 0.11 mas",
+   "source": [
+    "shape/README.md",
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "T23/T14 = 0.71–0.74",
+   "quantity": "flat fraction",
+   "value": "0.71-0.74",
+   "uncertainty": null,
+   "method": "batman fits with density prior, INV and REF",
+   "source": [
+    "clean/out/final_depth.json"
+   ]
+  },
+  {
+   "readme_text": "0 of 25 (REF) and 1 of 25 (INV) trials",
+   "quantity": "V-shape truth injections reproducing the observed flat preference",
+   "value": "0/25, 1/25",
+   "uncertainty": null,
+   "method": "shift injections of the ML V-shaped model",
+   "source": [
+    "referee2_shape/README.md",
+    "referee2_shape/out/inject_ref_vshape.json",
+    "referee2_shape/out/inject_inv_vshape.json"
+   ]
+  },
+  {
+   "readme_text": "b ≈ 0.5",
+   "quantity": "impact parameter (rounded)",
+   "value": 0.51,
+   "uncertainty": null,
+   "method": "density-prior fits",
+   "source": [
+    "clean/out/final_depth.json",
+    "referee3_clean/out/q08_global.json"
+   ]
+  },
+  {
+   "readme_text": "The period is 5.6915 d, not half or twice that",
+   "quantity": "period",
+   "value": 5.6915,
+   "uncertainty": null,
+   "method": "alias tests",
+   "source": [
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "A transit-shaped dip at phase 0.5 measures −0.98 ± 0.78 ppt, against 14.66 ± 0.78 ppt at phase 0 with the same fixed shape: P/2 is excluded at 14σ",
+   "quantity": "P/2 test",
+   "value": "-0.98 +- 0.78 vs 14.66 +- 0.78 ppt; 14 sigma",
+   "uncertainty": null,
+   "method": "fixed-trapezoid fold, 400 random phases",
+   "source": [
+    "referee2_search/out/r04_period.json",
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "next best worse by Δχ² ≈ 12,600",
+   "quantity": "next-best cycle assignment",
+   "value": 12574,
+   "uncertainty": null,
+   "method": "timing chi2 over 5.55-5.85 d (phot times; referee times 3.2e4)",
+   "source": [
+    "referee2_search/out/r04_period.json"
+   ]
+  },
+  {
+   "readme_text": "Two main-sequence stars eclipsing at 11.38 d would make odd and even transits differ by ≥ 17 ppt",
+   "quantity": "2P main-sequence EB prediction",
+   "value": ">= 17 ppt",
+   "uncertainty": null,
+   "method": "k <= 0.36 flat-bottom limit, blackbody depth ratios",
+   "source": [
+    "referee2_search/out/r08_2p_xray.json"
+   ]
+  },
+  {
+   "readme_text": "(raw 3×3 box: −1.1 ± 2.2 ppt)",
+   "quantity": "odd-even, raw 3x3 aperture",
+   "value": -1.1,
+   "uncertainty": 2.2,
+   "method": "fixed-shape per-transit, fake-epoch errors",
+   "source": [
+    "referee3_clean/out/q10_oddeven.json"
+   ]
+  },
+  {
+   "readme_text": "which excludes this at ≥ 6σ in every cleaned photometry (6.0σ for the noisiest raw aperture, 6.7σ for INV, 7.2σ for the raw box; a differently detrended raw aperture in the final review gives 3.8σ)",
+   "quantity": "2P EB exclusion",
+   "value": ">= 6 sigma: (17 - |odd-even|)/err = 6.0 (r <= 2.5 px), 6.7 (INV), 7.2 (box3), 9.3 (REF); panel raw r <= 2.5 px with 0.75-d spline -5.1 +- 3.1 -> 3.8",
+   "uncertainty": null,
+   "method": "minimum predicted |odd-even| 17.0 ppt vs phase-3 odd/even",
+   "source": [
+    "referee2_search/out/r08_2p_xray.json",
+    "referee3_clean/out/q10_oddeven.json",
+    "panel_systematics/out/summary_panel_systematics.json"
+   ],
+   "note": "the phase-2 figure (>= 7.7 sigma) was against the analyst's phase-2 odd/even"
+  },
+  {
+   "readme_text": "An occultation-shaped dip at phase 0.5 in the cleaned photometry measures +0.3 ± 0.8 ppt (INV) and +0.3 ± 0.9 ppt (REF); 3σ limits 2.8–3.1 ppt",
+   "quantity": "secondary eclipse depth",
+   "value": "+0.32 +- 0.83 / +0.30 +- 0.93 ppt; 3-sigma 2.8/3.1",
+   "uncertainty": null,
+   "method": "fixed occultation shape on cleaned curves",
+   "source": [
+    "clean/out/phase_scan.json",
+    "clean/README.md"
+   ],
+   "note": "raw apertures: -1.7 +- 1.1 and -2.3 +- 1.4 ppt (referee3_clean q12)"
+  },
+  {
+   "readme_text": "~2,540 K",
+   "quantity": "TESS-band brightness-temperature limit of the occulter",
+   "value": 2540,
+   "uncertainty": null,
+   "method": "3-sigma secondary limit (beta weights), blackbody ratio",
+   "source": [
+    "referee2_shape/out/kprofile_tb.json",
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "χ² 8.9/17 (INV) and 12.6/19 (REF) with the referee's injection-calibrated errors (9.9/16 and 15.4/19 with the analyst's)",
+   "quantity": "TTV chi2",
+   "value": "referee 8.88/17, 12.58/19; analyst 9.88/16, 15.38/19",
+   "uncertainty": null,
+   "method": "linear ephemeris per pipeline, injection-calibrated timing errors",
+   "source": [
+    "referee3_clean/out/q05_timing.json",
+    "clean/out/timing_clean.json"
+   ]
+  },
+  {
+   "readme_text": "It is 0.75 mag brighter than the main sequence",
+   "quantity": "over-luminosity Delta M_Ks",
+   "value": -0.75,
+   "uncertainty": 0.03,
+   "method": "local ridge (referee_star -0.753, referee2_host -0.749, host -0.761)",
+   "source": [
+    "referee_star/out/r09_cmd.json",
+    "referee2_host/out/r01_population.json"
+   ]
+  },
+  {
+   "readme_text": "0.09 mag redder",
+   "quantity": "G-Ks and G-W1 colour residual at fixed BP-RP",
+   "value": "+0.089 to +0.096",
+   "uncertainty": 0.03,
+   "method": "field ridges",
+   "source": [
+    "host/out/h13_colour_feh.json",
+    "referee2_host/out/r01_population.json"
+   ]
+  },
+  {
+   "readme_text": "([Fe/H] ≈ +0.2)",
+   "quantity": "photometric metallicity",
+   "value": 0.2,
+   "uncertainty": 0.1,
+   "method": "colour residuals + XP shape + CMD",
+   "source": [
+    "host/README.md"
+   ]
+  },
+  {
+   "readme_text": "P(twin) ≈ 0.3–1% (0.2–5% over photometric systematics)",
+   "quantity": "probability of an equal twin",
+   "value": "0.3-1% (0.2-5%)",
+   "uncertainty": null,
+   "method": "label-free KDE posterior (referee); analyst prior-based 0.2-2.5%",
+   "source": [
+    "referee2_host/out/r07_empirical_posterior.json",
+    "referee2_host/README.md",
+    "host/out/h15_posterior.json"
+   ],
+   "note": "the brief's '~0.5%' lies inside this range"
+  },
+  {
+   "readme_text": "P(twin) ≈ 0.3–1% from the colours",
+   "quantity": "probability of an equal twin",
+   "value": "0.3-1%",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee2_host/README.md"
+   ]
+  },
+  {
+   "readme_text": "P(twin) 0.3–1%",
+   "quantity": "probability of an equal twin (referee)",
+   "value": "0.3-1%",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee2_host/README.md"
+   ]
+  },
+  {
+   "readme_text": "Over 64 light-curve, eccentricity and brown-dwarf-rate variants the FPP is 0.0007–0.0037.",
+   "quantity": "FPP over the 64 sign-fixed variants",
+   "value": "0.000725-0.00366",
+   "uncertainty": null,
+   "method": "4 light curves x 4 planet e priors x BD short-period law x 4 f_BD",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p02_ranges.json"
+   ]
+  },
+  {
+   "readme_text": "0.9995",
+   "quantity": "P(occulter is a planet on the M3V or an unresolved companion of it) = 1 - FPP_system",
+   "value": 0.9995,
+   "uncertainty": "0.9986-0.9996 over 64 variants",
+   "method": "sign-fixed r05 (planet + PTP; pair A not included)",
+   "source": [
+    "referee3_bd/out/s12_summary.json",
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "depth 15.8 ppt",
+   "quantity": "adopted TESS depth",
+   "value": 15.8,
+   "uncertainty": "+-0.9 stat +1.5/-1.1 sys",
+   "method": "GLS of INV 15.47 and REF 16.08 ppt (rho 0.56)",
+   "source": [
+    "referee3_clean/README.md",
+    "referee3_clean/out/q08_global.json"
+   ],
+   "note": "overrides clean/ 15.23 +- 0.87 +- 1.08"
+  },
+  {
+   "readme_text": "T14 1.70 h",
+   "quantity": "transit duration",
+   "value": 1.7,
+   "uncertainty": 0.07,
+   "method": "batman with density prior",
+   "source": [
+    "shape/out/final_params.json"
+   ]
+  },
+  {
+   "readme_text": "The panel at phase 0.5 shows no",
+   "quantity": "secondary-eclipse phase",
+   "value": 0.5,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "clean/out/phase_scan.json"
+   ]
+  },
+  {
+   "readme_text": "(scatter 8–9 min rms, consistent with the errors)",
+   "quantity": "O-C rms",
+   "value": "8.3 (INV) / 9.0 (REF) min",
+   "uncertainty": null,
+   "method": "linear ephemeris",
+   "source": [
+    "clean/out/timing_clean.json"
+   ]
+  },
+  {
+   "readme_text": "deeper in 2026 than in 2021–2023",
+   "quantity": "epochs of the late/early sector groups",
+   "value": "S103+S104 (2026) vs S39 (2021)+S66 (2023)",
+   "uncertainty": null,
+   "method": "post-hoc split",
+   "source": [
+    "clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "INV by +4.1 ± 2.6 ppt; REF by +6.1 ± 2.1 ppt (sector χ² 15.0/5) including the scattered-light event E58",
+   "quantity": "late-minus-early depth contrast, PRF photometry (referee errors)",
+   "value": "INV +4.10 +- 2.65 (1.55 sigma, chi2 5.9/5); REF +6.15 +- 2.07 (2.97 sigma, chi2 15.0/5)",
+   "uncertainty": null,
+   "method": "fixed-shape sector fits, fake-epoch errors",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json"
+   ],
+   "note": "clean/ gives +3.3 +- 2.1 (INV) and +3.5 +- 2.1 (REF)"
+  },
+  {
+   "readme_text": "(−1.0 ± 2.4 and −4.9 ± 3.2 ppt)",
+   "quantity": "late-minus-early contrast, raw apertures (3x3 box; r <= 2.5 px)",
+   "value": "-1.0 +- 2.4; -4.9 +- 3.2",
+   "uncertainty": null,
+   "method": "PSF-independent raw-pixel apertures, quadratic baselines, fake-epoch errors",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json"
+   ]
+  },
+  {
+   "readme_text": "(χ² 1.5/5 and 3.9/5)",
+   "quantity": "sector-depth chi2, raw apertures",
+   "value": "1.5/5, 3.9/5",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json"
+   ]
+  },
+  {
+   "readme_text": "64.31 ± 0.15 pc (parallax 15.549 ± 0.036 mas after the zero-point correction)",
+   "quantity": "distance; corrected parallax",
+   "value": "64.31 pc; 15.549 mas",
+   "uncertainty": "0.15 pc; 0.036 mas",
+   "method": "Gaia DR3 + Lindegren+21 zero point, MC",
+   "source": [
+    "star/star_params.json",
+    "referee_star/out/r06_star_params.json"
+   ]
+  },
+  {
+   "readme_text": "M3V by luminosity, M3.5V by colour (BP−RP 2.76); 0.75 mag above the main sequence",
+   "quantity": "spectral type; colour; over-luminosity",
+   "value": "M3V / M3.5V; BP-RP 2.76; -0.75 mag",
+   "uncertainty": null,
+   "method": "Mamajek table; CMD ridge",
+   "source": [
+    "star/README.md",
+    "referee_star/out/r09_cmd.json"
+   ]
+  },
+  {
+   "readme_text": "0.381 ± 0.012 R☉ (0.385 ± 0.012 R☉ for [Fe/H] = +0.2), 0.370 ± 0.011 M☉, 9.4 ± 0.9 g/cm³",
+   "quantity": "radius, mass, density",
+   "value": "R 0.381 (0.385 with [Fe/H] +0.2), M 0.370, rho 9.4",
+   "uncertainty": "0.012, 0.012, 0.011, 0.9",
+   "method": "Mann+15 M_Ks-radius, Mann+19 mass, MC",
+   "source": [
+    "star/star_params.json",
+    "referee_star/out/r06_star_params.json",
+    "host/README.md"
+   ]
+  },
+  {
+   "readme_text": "3,350 ± 55 K, 0.0165 ± 0.0003 L☉",
+   "quantity": "Teff, luminosity",
+   "value": "3350 K, 0.0165 Lsun",
+   "uncertainty": "55 K, 0.0003",
+   "method": "SED Fbol + Stefan-Boltzmann with R_Mann",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "[Fe/H] ≈ +0.2 ± 0.1",
+   "quantity": "metallicity (photometric)",
+   "value": 0.2,
+   "uncertainty": 0.1,
+   "method": "colour residuals, XP shape, wide-pair colour, kinematic prior",
+   "source": [
+    "host/README.md",
+    "host/out/h15_posterior.json"
+   ]
+  },
+  {
+   "readme_text": "979 e⁻/s",
+   "quantity": "M3V TESS flux in PRF units",
+   "value": 979,
+   "uncertainty": "20 (stat), +-3% adopted",
+   "method": "Gaia XP synthetic photon rate calibrated on field-star PRF fluxes",
+   "source": [
+    "referee_phot/out/xpflux.json",
+    "referee_phot/README.md"
+   ]
+  },
+  {
+   "readme_text": "979 ± 20 e⁻/s in PRF units, from Gaia XP synthetic photometry calibrated on field stars (TIC T = 13.01)",
+   "quantity": "M3V TESS flux in PRF units; TIC magnitude",
+   "value": "979 e-/s; T 13.0135",
+   "uncertainty": "20 e-/s (stat)",
+   "method": "Gaia XP synthetic photon rate calibrated on 27 field stars' PRF fluxes (TIC x 1.107 = 1035)",
+   "source": [
+    "referee_phot/out/xpflux.json",
+    "referee_phot/README.md",
+    "star/README.md"
+   ]
+  },
+  {
+   "readme_text": "RUWE 1.076; RV 16.3 ± 2.2 km/s; old thin-disk kinematics (58 km/s relative to the local standard of rest)",
+   "quantity": "RUWE; Gaia RV; v_LSR",
+   "value": "1.076; 16.28 km/s; 58.4 km/s",
+   "uncertainty": "RV 2.22 km/s",
+   "method": "Gaia DR3; UVW MC",
+   "source": [
+    "star/star_params.json",
+    "referee_star/out/r08_kin_wide.json"
+   ]
+  },
+  {
+   "readme_text": "TIC 214311910 A at 11.7″ (754 au) with its own companion B at 0.83″ (53 au); chance-alignment parameter R = 2 × 10⁻⁵",
+   "quantity": "wide system",
+   "value": "A 11.73\" = 754 au; B 0.834\" = 53.7 au from A; El-Badry+21 R = 2e-5",
+   "uncertainty": null,
+   "method": "Gaia DR3; El-Badry+21 catalogue",
+   "source": [
+    "star/star_params.json",
+    "referee_star/out/r08_kin_wide.json",
+    "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "X-ray source 3eRASS J172353.3−511924 (eRASS:3, Ramos-Ceja et al. 2026; detection likelihood 7.6), 6.3″ from the M3 dwarf and 5.5″ from pair A",
+   "quantity": "eRASS:3 X-ray source",
+   "value": "DET_LIKE 7.6; 6.3\" / 5.5\" at the survey epoch",
+   "uncertainty": null,
+   "method": "VizieR J/A+A/712/A171",
+   "source": [
+    "writeup/novelty/out/xray_mdwarf.json",
+    "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "Its best counterpart is the M3 dwarf, but only at p = 0.54 (pair A 0.38). If the source is the M3 dwarf, log L_X/L_bol ≈ −3.7 (the earlier eRASS1 source, 4.2″ away, gave −3.4)",
+   "quantity": "X-ray counterpart probabilities; L_X/L_bol",
+   "value": "p_i 0.54 / 0.38; log L_X/L_bol -3.7 (eRASS:3, F_X 2.5e-14) vs -3.4 (eRASS1, F_X 5.4e-14, 4.17\")",
+   "uncertainty": null,
+   "method": "NWAY counterparts (eRASS:3 catalogue); L_bol 0.0165 Lsun",
+   "source": [
+    "writeup/novelty/out/xray_mdwarf.json",
+    "writeup/novelty/README.md",
+    "referee_star/out/r07_xray.json"
+   ]
+  },
+  {
+   "readme_text": "15.8 ± 0.9 (stat) +1.5/−1.1 (sys) ppt of the M3 dwarf's flux, a flux loss of ≈ 15 e⁻/s",
+   "quantity": "adopted depth; flux loss",
+   "value": "15.8 ppt; 15.5 e-/s",
+   "uncertainty": "+-0.9 stat +1.5/-1.1 sys",
+   "method": "GLS of INV/REF batman fits; sys adds PRF-vs-aperture, beta set, LD prior to clean's budget",
+   "source": [
+    "referee3_clean/README.md",
+    "referee3_clean/out/q08_global.json",
+    "clean/out/final_depth.json"
+   ]
+  },
+  {
+   "readme_text": "Rp/R★ ≈ 0.1185",
+   "quantity": "radius ratio",
+   "value": 0.1185,
+   "uncertainty": null,
+   "method": "referee GLS",
+   "source": [
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "(5.2–5.25 R⊕ if the host were an equal twin)",
+   "quantity": "planet radius, twin host",
+   "value": "5.23 +- 0.25 (shape) / 5.25 +- 0.27 (referee)",
+   "uncertainty": null,
+   "method": "twin density prior and dilution 2",
+   "source": [
+    "shape/out/final_params.json",
+    "referee2_shape/out/derived.json"
+   ]
+  },
+  {
+   "readme_text": "b ≈ 0.5 (0.49–0.54); a/R★ = 25.3 ± 0.8; i = 88.8 ± 0.2°",
+   "quantity": "impact parameter, scaled semi-major axis, inclination",
+   "value": "b 0.49-0.54; a/R 25.3; i 88.8",
+   "uncertainty": "a/R 0.8; i 0.2-0.27",
+   "method": "emcee batman fits with density prior (INV, REF)",
+   "source": [
+    "clean/out/final_depth.json",
+    "referee3_clean/out/q08_global.json",
+    "shape/out/final_params.json"
+   ]
+  },
+  {
+   "readme_text": "T14 = 1.70 ± 0.07 h and T23/T14 = 0.71–0.74 with the stellar-density prior. Fits without it give 1.65 ± 0.10 h (REF) and 1.75 ± 0.14 h (INV); raw-pixel apertures prefer 1.3–1.5 h at 1.5–2σ",
+   "quantity": "durations",
+   "value": "1.70 h; 0.71-0.74 (density prior); free density 1.65 +- 0.10 (REF), 1.75 +- 0.14 (INV); raw apertures best 1.29 h, 1.7 h worse by dchi2 2.2-4.4; PRF-weighted phase-1 curve best 1.51 h (1.7 h +6.5)",
+   "uncertainty": "0.07 h",
+   "method": "batman with and without density prior; trapezoid fits of raw apertures",
+   "source": [
+    "shape/out/final_params.json",
+    "clean/out/final_depth.json",
+    "clean/README.md",
+    "panel_systematics/out/summary_panel_systematics.json",
+    "referee_loc/out/shape.json"
+   ]
+  },
+  {
+   "readme_text": "a = 0.0448 au; insolation 8.2 S⊕; Teq = 471 ± 11 K (zero albedo); e < 0.74 (95%)",
+   "quantity": "orbit and temperature",
+   "value": "0.0448 au; 8.2 S_E; 471 K; e < 0.74",
+   "uncertainty": "Teq 11 K",
+   "method": "Kepler; Stefan-Boltzmann; photo-eccentric importance sampling",
+   "source": [
+    "referee_star/out/r11_planet.json",
+    "clean/out/final_depth.json",
+    "shape/out/photoecc.json"
+   ]
+  },
+  {
+   "readme_text": "21 (16.6–28.3) M⊕ from mass–radius relations; RV semi-amplitude K = 14.8 (11.5–19.7) m/s",
+   "quantity": "expected mass and K",
+   "value": "21.3 M_E; 14.8 m/s",
+   "uncertainty": "16-84%: 16.6-28.3 M_E; 11.5-19.7 m/s",
+   "method": "Chen & Kipping 2017 inverted, 14.6% scatter",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json",
+    "followup/out/f08_rv_atmo.json"
+   ]
+  },
+  {
+   "readme_text": "TSM 108 (81–139), ESM 9.1",
+   "quantity": "transmission / emission spectroscopy metrics",
+   "value": "TSM 108; ESM 9.1",
+   "uncertainty": "TSM 81-139 (16-84%)",
+   "method": "Kempton+18, Chen & Kipping mass",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "Mid-transit, epoch 0",
+   "quantity": "epoch numbering",
+   "value": 0,
+   "uncertainty": null,
+   "method": "phase-1 numbering (epoch 0 at BTJD 3840.915)",
+   "source": [
+    "writeup/ephemeris_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "T0 = 2460840.9150 ± 0.0013 BJD_TDB",
+   "quantity": "adopted mid-transit time",
+   "value": 2460840.915,
+   "uncertainty": 0.0013,
+   "method": "referee3_clean planning ephemeris",
+   "source": [
+    "referee3_clean/README.md",
+    "writeup/ephemeris_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "P = 5.691506 ± 0.000011 d (T0–P correlation 0.35)",
+   "quantity": "adopted period; correlation",
+   "value": "5.691506 d; 0.35",
+   "uncertainty": "0.000011 d",
+   "method": "referee3_clean planning ephemeris; rho from referee comb_cor (0.345)",
+   "source": [
+    "referee3_clean/README.md",
+    "referee3_clean/out/q05_timing.json",
+    "writeup/ephemeris_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "1σ = 2.8–3.7 min in 2027 and 3.7–4.6 min in 2028 (add ~1 min of pipeline systematic); plan ±3σ margins, about ±10 min in 2027 and ±11–14 min in 2028",
+   "quantity": "prediction uncertainty",
+   "value": "1 sigma 2.84-3.68 min (2027), 3.70-4.60 min (2028); 3 sigma 8.5-11.0 / 11.1-13.8 min",
+   "uncertainty": null,
+   "method": "full covariance of the adopted ephemeris; ~1 min pipeline systematic from referee3_followup",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv",
+    "writeup/scripts/w02_checks.json",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "(T0 = 2460840.91488 ± 0.00093,",
+   "quantity": "clean/ combined T0",
+   "value": 2460840.91488,
+   "uncertainty": 0.00093,
+   "method": "combined INV+REF per-event times, WLS",
+   "source": [
+    "clean/out/ephemeris_final.json"
+   ]
+  },
+  {
+   "readme_text": "P = 5.6915020 ± 0.0000078 d) shifts by about 1σ in P",
+   "quantity": "clean/ combined P; timing-model shift",
+   "value": "5.6915020 d; ~1 sigma",
+   "uncertainty": "0.0000078 d",
+   "method": "referee's alternative error models give 5.6915097-5.6915111",
+   "source": [
+    "clean/out/ephemeris_final.json",
+    "referee3_clean/out/q05_timing.json"
+   ]
+  },
+  {
+   "readme_text": "0.75–0.84 mag above the M-dwarf main sequence, depending on how the ridge is defined; only 2.5% of",
+   "quantity": "over-luminosity by ridge definition",
+   "value": "-0.749 (local ridge) to -0.838 (KDE-mode ridge, slope 1.53)",
+   "uncertainty": null,
+   "method": "CMD ridges",
+   "source": [
+    "referee2_host/out/r01_population.json",
+    "referee2_fpp/out/r02_cmd_colour.json"
+   ]
+  },
+  {
+   "readme_text": "clean stars of its colour are as bright",
+   "quantity": "fraction of clean stars as bright",
+   "value": "2.5%",
+   "uncertainty": null,
+   "method": "local ridge, 3808 clean stars",
+   "source": [
+    "referee2_host/out/r01_population.json"
+   ]
+  },
+  {
+   "readme_text": "(+0.070 ± 0.044 mag expected at the M3 dwarf's offset)",
+   "quantity": "single-star G-Ks trend at the target's offset",
+   "value": 0.07,
+   "uncertainty": 0.044,
+   "method": "binary-aware mixture of 2126 clean M dwarfs",
+   "source": [
+    "referee2_fpp/out/r02_cmd_colour.json",
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "(+0.089 to +0.097 mag)",
+   "quantity": "target G-Ks residual",
+   "value": "+0.089 (host) to +0.097 (referee2_fpp)",
+   "uncertainty": null,
+   "method": "field ridges",
+   "source": [
+    "host/out/h13_colour_feh.json",
+    "referee2_host/out/r01_population.json",
+    "referee2_fpp/out/r02_cmd_colour.json"
+   ]
+  },
+  {
+   "readme_text": "a brown-dwarf rate of 1.3 × 10⁻⁴ per star",
+   "quantity": "f_BD at P 3-10 d",
+   "value": 0.00013,
+   "uncertainty": "68%: 5e-5 to 2.5e-4",
+   "method": "Bryant+23 giant rate x BD share x period share",
+   "source": [
+    "bd/README.md",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "This is the planet hypothesis | 0.995 / 0.991",
+   "quantity": "P(planet on the M3V, single + diluted)",
+   "value": "0.9951 / 0.9907",
+   "uncertainty": null,
+   "method": "sign-fixed r05, Kipping e, BD short law, f_BD 1.3e-4 (TP_single + TP_diluted)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "P(twin) ≈ 0.3–1% from the colours | 0.0036 / 0.0062",
+   "quantity": "P(planet on near-equal twin)",
+   "value": "0.0036 / 0.0062",
+   "uncertainty": null,
+   "method": "as above (TP_twin)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "(~0.20 M☉, 0.05–0.5″)",
+   "quantity": "PTP companion properties",
+   "value": "0.19-0.22 Msun; 0.047-0.48 arcsec",
+   "uncertainty": null,
+   "method": "posterior-weighted companion draws",
+   "source": [
+    "referee3_bd/out/s07_ptp_followup.json",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "(circular: 3 × 10⁻⁵ REF; 1.15 × 10⁻³ INV, where it survives circular orbits) | 8.6 × 10⁻⁴ / 2.6 × 10⁻³ (Sagear & Ballard: 1.2 × 10⁻³ / 2.85 × 10⁻³)",
+   "quantity": "PTP posterior (Kipping; circular; Rayleigh 0.19)",
+   "value": "8.57e-4 / 2.59e-3; circular 3.03e-5 / 1.15e-3; Rayleigh 0.19 1.20e-3 / 2.85e-3",
+   "uncertainty": null,
+   "method": "sign-fixed r05, f_BD 1.3e-4, BD short law",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "Planet on pair A, 11.7″ away | Pixels: Δχ² +126; the most lenient Student-t pixel likelihood (10^−3.22) was used | 3.7 × 10⁻⁴ / 4.2 × 10⁻⁴",
+   "quantity": "NTP on pair A",
+   "value": "3.69e-4 / 4.16e-4",
+   "uncertainty": null,
+   "method": "t-fit pixel log10 LR -3.22 (most lenient of 19 variants; median -9.2)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "referee2_fpp/out/r01_loc_lr.json",
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "(Δχ² +1.5 REF / +1.1 INV)",
+   "quantity": "WD occultation vs planet, light curve only",
+   "value": "+1.5 (REF) / +1.1 (INV)",
+   "uncertainty": null,
+   "method": "ML fits, cool WD branch, midpoint exposure integration",
+   "source": [
+    "referee2_shape/README.md",
+    "referee2_shape/out/scen_inv_fake.json",
+    "referee2_shape/out/scen_ref_fake.json"
+   ]
+  },
+  {
+   "readme_text": "(combined Δχ² 9–12)",
+   "quantity": "WD: LC + secondary + RUWE (+ XP)",
+   "value": "9-11 (10-12 with XP)",
+   "uncertainty": null,
+   "method": "per-CCD sigma 0.22-0.25 mas; edge-on NSL RUWE model",
+   "source": [
+    "referee2_shape/out/wd_combined.json",
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "| 6.5 × 10⁻⁵ / 4.3 × 10⁻⁵ without the Gaia RV term (Δχ² 10); ~10⁻⁷ with it (Δχ² ≥ 20) |",
+   "quantity": "WD occulted by the M3V posterior",
+   "value": "6.5e-5 / 4.3e-5 (r05 dchi2_wd = 10); 1.6e-7 / 1.1e-7 with dchi2_wd = 22",
+   "uncertainty": null,
+   "method": "sign-fixed r05; RV-smearing term >= ~12 (referee2_shape)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p05_variants.csv",
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "(Δχ² ≥ 19.6 and ≥ 27.4), photographic plates from 1979 and 1992 (no unbound star brighter than T ≈ 18.3 within 3″) | 3 × 10⁻⁵",
+   "quantity": "background scenarios",
+   "value": "bg3 >= 19.6, bg5 >= 27.4; DSS T > 18.27 within 3\"; posterior 3e-5 (carried)",
+   "uncertainty": null,
+   "method": "joint LC + photometry + parallax fits; DSS SERC-I 1979 / AAO-SES R 1992 look-back (referee-corrected)",
+   "source": [
+    "shape/out/summary.json",
+    "referee_star/out/r03_dss_limits.json",
+    "star/README.md",
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ],
+   "note": "the background term is carried from fpp/ and not re-derived"
+  },
+  {
+   "readme_text": "Needs e ≥ 0.50 with the transit at apoastron",
+   "quantity": "eccentricity a grazing BD needs",
+   "value": ">= 0.50",
+   "uncertainty": "0.42-0.62 over the Delta-chi2 <= 4 range",
+   "method": "rho_c profile of the grazing-BD fit",
+   "source": [
+    "referee3_bd/out/s03_fit_real.json",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "(likelihood ratio 0.004 REF / 0.03 INV)",
+   "quantity": "calibrated shape LR(BD/planet)",
+   "value": "0.0038 / 0.032",
+   "uncertainty": null,
+   "method": "BD-truth and planet-truth injections",
+   "source": [
+    "referee3_bd/out/s11_calibration.json"
+   ]
+  },
+  {
+   "readme_text": "| 8 × 10⁻⁶ / 2.4 × 10⁻⁵ (most likely 10⁻⁶–2 × 10⁻⁵; at most 1.5 × 10⁻⁴) |",
+   "quantity": "BD channels posterior",
+   "value": "8.0e-6 / 2.35e-5 (after Gaia RVS factor 0.5); range 1e-6 to 2e-5; envelope 1.5e-4",
+   "uncertainty": null,
+   "method": "sign-fixed r05 x Gaia RVS factor; calibrated shape alternative",
+   "source": [
+    "referee3_bd/out/s12_summary.json",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "Δχ² ≥ 27.5 (INV) / 33.7 (REF) | 8 × 10⁻⁶ / 5 × 10⁻⁶",
+   "quantity": "bound hierarchical EB",
+   "value": "dchi2 27.5/33.7; posterior 7.7e-6 / 5.2e-6",
+   "uncertainty": null,
+   "method": "physical grid with Ks luminosity budget; sign-fixed r05",
+   "source": [
+    "shape/out/bound_eb_inv.csv",
+    "shape/out/bound_eb_ref.csv",
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "(Δχ² ≥ 45), secondary eclipse, equal odd and even depths | < 10⁻⁷",
+   "quantity": "EB on the M3V itself",
+   "value": "dchi2 >= 45; posterior 1.4e-8",
+   "uncertainty": null,
+   "method": "k-profile with density prior; fpp baseline",
+   "source": [
+    "shape/README.md",
+    "fpp/out/fpp_baseline.json"
+   ]
+  },
+  {
+   "readme_text": "5.69-d orbit",
+   "quantity": "orbital period (rounded)",
+   "value": 5.69,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "| 0 / < 10⁻¹¹ |",
+   "quantity": "Mira; pair B posteriors",
+   "value": "0; 1.9e-12",
+   "uncertainty": null,
+   "method": "physically impossible host; pixels log10 LR -10.4",
+   "source": [
+    "fpp/out/fpp_baseline.json",
+    "fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "Kipping prior **0.0013 / 0.0031**; Sagear & Ballard prior (recommended by the referee) **0.0016 / 0.0033**; circular orbits 0.0007 / 0.0019; 64 variants 0.0007–0.0037; joint prior draws median 0.0022 (95th percentile 0.012); pessimistic combinations up to 0.045 | **0.0013–0.0016 / 0.0031–0.0033**",
+   "quantity": "FPP by planet e prior; variant and prior-draw ranges",
+   "value": "Kipping 0.00134/0.00313; Rayleigh 0.19 0.00162/0.00330; circular 0.00073/0.00192; 64 variants 0.00072-0.00366; draws median 0.0022, 95th 0.0119; pessimistic 0.015-0.045",
+   "uncertainty": null,
+   "method": "sign-fixed r05 (referee3_bd); prior draws and named variants re-run after the sign fix in the final review",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "referee3_bd/README.md",
+    "panel_fpp/out/p05_summary.json",
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "is 3.7 × 10⁻⁴",
+   "quantity": "NFPP (REF), adopted",
+   "value": 0.000369,
+   "uncertainty": null,
+   "method": "NTP pair A / total (r05 definition)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "referee2_fpp/scripts/r05_fpp.py"
+   ]
+  },
+  {
+   "readme_text": "(REF) / 4.2 × 10⁻⁴ (INV) with the most lenient Student-t pixel likelihood (10^−3.22, an extrapolation beyond 1,000",
+   "quantity": "NFPP (INV), adopted; LR",
+   "value": "4.16e-4; log10 LR -3.22",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "referee2_fpp/out/r01_loc_lr.json"
+   ]
+  },
+  {
+   "readme_text": "and 3–7 × 10⁻⁴ across planet eccentricity priors. It is 0.9–1.1 × 10⁻³",
+   "quantity": "NFPP range",
+   "value": "2.9e-4 to 6.6e-4 (beta noise); 9.4e-4 / 1.07e-3 with log10 LR -2.8; up to 1.13e-3 for white-noise REF with circular orbits",
+   "uncertainty": null,
+   "method": "sign-fixed r05 grid and named variants",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "10⁻⁹–10⁻⁷ with the typical likelihoods",
+   "quantity": "NFPP with typical pixel LR",
+   "value": "1e-9 to 1e-7 (4e-10 at the median t LR)",
+   "uncertainty": null,
+   "method": "median pixel LR over 19 variants",
+   "source": [
+    "referee2_fpp/README.md",
+    "referee2_fpp/out/r01_loc_lr.json",
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "0.002–0.04",
+   "quantity": "TRICERATOPS FPP span",
+   "value": "0.0016-0.04",
+   "uncertainty": null,
+   "method": "contrast proxy and error convention",
+   "source": [
+    "referee2_fpp/out/r06_tri_check.json",
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "value, 0.011, was 93% a planet on an unresolved",
+   "quantity": "superseded fpp/ FPP and its composition",
+   "value": "0.0111; PTP 0.0104 (93%)",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "fpp/out/fpp_baseline.json",
+    "fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "value, 0.003–0.007, added brown-dwarf channels",
+   "quantity": "superseded referee2_fpp FPP",
+   "value": "0.0031 (REF) / 0.0071 (INV)",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "about 9 times too likely a priori",
+   "quantity": "effect of the sign error on P(rho_c/rho <= 0.2)",
+   "value": "8.0% vs 0.89%",
+   "uncertainty": null,
+   "method": "transit-weighted e draws, Kipping prior",
+   "source": [
+    "referee3_bd/out/s01_sign_tides.json"
+   ]
+  },
+  {
+   "readme_text": "in both codes (by ~2×) and the grazing brown-dwarf channel (by 6–7×)",
+   "quantity": "effect of the sign fix on PTP and BD channels",
+   "value": "PTP 1.6e-3 -> 8.4e-4 (REF), 4.2e-3 -> 2.5e-3 (INV); BD 9.5e-4 -> 1.3e-4 (REF), 2.6e-3 -> 4.3e-4 (INV) at f_BD 1e-3",
+   "uncertainty": null,
+   "method": "r05 re-run with the sign fixed (b10)",
+   "source": [
+    "bd/README.md",
+    "bd/out/b10_r05_eccsign.json"
+   ]
+  },
+  {
+   "readme_text": "1–3-min ingress against ~14 min",
+   "quantity": "ingress durations WD vs planet",
+   "value": "1-3 min vs 13-15 min",
+   "uncertainty": null,
+   "method": "best-fit models",
+   "source": [
+    "shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "likelihood ratio of ~4–6 for the planet",
+   "quantity": "shape LR planet/WD",
+   "value": "4.3-6.5",
+   "uncertainty": null,
+   "method": "30 shift injections per truth",
+   "source": [
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "(1.7–1.8 g/cm³)",
+   "quantity": "apparent density of the grazing-BD solution",
+   "value": "1.71-1.81 g/cm3",
+   "uncertainty": null,
+   "method": "grazing-BD fit, k at 0.19 bound",
+   "source": [
+    "referee3_bd/out/s03_fit_real.json"
+   ]
+  },
+  {
+   "readme_text": "Δχ² +2.8 (INV) and +5.7 (REF)",
+   "quantity": "V shape vs planet",
+   "value": "+2.8 / +5.7",
+   "uncertainty": null,
+   "method": "ML fits",
+   "source": [
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "now 1.3 × 10⁻³ / 3.1 × 10⁻³; after Zorro speckle",
+   "quantity": "FPP ladder: now",
+   "value": "1.33-1.34e-3 / 3.09-3.13e-3",
+   "uncertainty": null,
+   "method": "adopted composition (w05)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json",
+    "writeup/scripts/w05_fpp_ladder.py"
+   ]
+  },
+  {
+   "readme_text": "5–6 × 10⁻⁴ / 0.6–1.0 × 10⁻³; after speckle and a two-band transit 3–6 × 10⁻⁵ / 4–12 × 10⁻⁵; after also closing the",
+   "quantity": "FPP ladder: speckle; speckle + two-band",
+   "value": "4.9-6.4e-4 / 5.8e-4-1.03e-3; 3.1-6.1e-5 / 3.6e-5-1.18e-4",
+   "uncertainty": null,
+   "method": "adopted composition; three Zorro curves (speckle step), curve B (combined)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "brown-dwarf channel 3–5 × 10⁻⁵ / 3–8 × 10⁻⁵",
+   "quantity": "FPP ladder: + BD closed",
+   "value": "3.0-4.9e-5 / 3.0-8.3e-5",
+   "uncertainty": null,
+   "method": "adopted composition (w05)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "Closing the brown-dwarf channel by the ground transit's shape or three low-precision RVs then gives 3–5 × 10⁻⁵ /",
+   "quantity": "FPP after speckle + two-band + BD closed (REF)",
+   "value": "3.0-4.9e-5",
+   "uncertainty": null,
+   "method": "adopted composition (w05)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "3–8 × 10⁻⁵, a gain of at most ~2×",
+   "quantity": "FPP after BD closed (INV); gain",
+   "value": "3.0-8.3e-5; max ratio 2.2 (INV, BD without Gaia factor)",
+   "uncertainty": null,
+   "method": "adopted composition (w05)",
+   "source": [
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "rate of 10⁻³ and the uncalibrated shape grid",
+   "quantity": "BD rate in the published ladder's composition",
+   "value": 0.001,
+   "uncertainty": null,
+   "method": "r05 original f_BD; composition_now BD 1.33e-4 / 5.12e-4",
+   "source": [
+    "referee3_followup/out/r05_hri_ladder.json",
+    "referee3_followup/scripts/r05_hri_ladder.py"
+   ]
+  },
+  {
+   "readme_text": "is below the 0.015 threshold that Giacalone et al. (2021) set",
+   "quantity": "validation threshold",
+   "value": "FPP < 0.015, NFPP < 0.001",
+   "uncertainty": null,
+   "method": "Giacalone et al. 2021 (TRICERATOPS; FPP = 1 - (TP + PTP + DTP), so a planet on a companion counts as a false positive)",
+   "source": [
+    "fpp/README.md",
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "On that definition the FPP is 0.005 (REF) / 0.009 (INV) at the adopted",
+   "quantity": "FPP_strict (companion-hosted planets as false positives)",
+   "value": "0.0049 / 0.0093",
+   "uncertainty": null,
+   "method": "1 - TP_single - TP_diluted, sign-fixed r05",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "over the 1,500 prior draws its median is 0.013, below 0.015 in only 56% of draws",
+   "quantity": "FPP_strict over joint prior draws",
+   "value": "median 0.0127; P(<0.015) 0.557",
+   "uncertainty": null,
+   "method": "1,500 sign-fixed joint prior draws",
+   "source": [
+    "panel_fpp/out/p05_summary.json",
+    "panel_fpp/out/p07_draw_stats.json"
+   ]
+  },
+  {
+   "readme_text": "The NFPP is below 0.001 in",
+   "quantity": "NFPP threshold",
+   "value": 0.001,
+   "uncertainty": null,
+   "method": "Giacalone et al. 2021",
+   "source": [
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "a Mira that is 6–14 times brighter in the",
+   "quantity": "Mira/M3V brightness ratio in TESS",
+   "value": "6.2-14.2",
+   "uncertainty": null,
+   "method": "fitted Mira TESS flux 6,100-13,900 e-/s over the adopted 979 e-/s",
+   "source": [
+    "loc/README.md",
+    "referee_phot/README.md"
+   ]
+  },
+  {
+   "readme_text": "(6,100–13,900 e⁻/s against 979 e⁻/s)",
+   "quantity": "Mira and M3V TESS fluxes",
+   "value": "6,100-13,900; 979 e-/s",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "loc/README.md",
+    "referee_phot/out/xpflux.json"
+   ]
+  },
+  {
+   "readme_text": "The planet-on-companion term is ~30 times smaller for circular than for",
+   "quantity": "PTP circular/eccentric contrast (REF)",
+   "value": "28x (8.57e-4 / 3.03e-5)",
+   "uncertainty": null,
+   "method": "sign-fixed r05 grid",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p02_ranges.json"
+   ],
+   "note": "referee3_bd's representative-companion evidence (s06) gives 15-30x for both light curves"
+  },
+  {
+   "readme_text": "eccentric (Kipping) orbits in REF (3 × 10⁻⁵ against 8.6 × 10⁻⁴), but only ~2 times in INV (1.15 × 10⁻³ against",
+   "quantity": "PTP circular vs Kipping",
+   "value": "REF 3.0e-5 vs 8.6e-4; INV 1.15e-3 vs 2.59e-3 (2.3x)",
+   "uncertainty": null,
+   "method": "sign-fixed r05 grid",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "to ~5% in",
+   "quantity": "target depth-ratio precision",
+   "value": 0.05,
+   "uncertainty": null,
+   "method": "PTP rejection",
+   "source": [
+    "followup/README.md",
+    "referee3_followup/out/r05_hri_ladder.json"
+   ]
+  },
+  {
+   "readme_text": "The follow-up referee's ladder gives 1.4–1.6 × 10⁻⁴ (REF) and",
+   "quantity": "published ladder after Zorro + two-band",
+   "value": "1.39-1.57e-4 / 4.61-5.17e-4",
+   "uncertainty": null,
+   "method": "referee ladder, Zorro conservative B, f_BD 1e-3 composition",
+   "source": [
+    "referee3_followup/out/r05_hri_ladder.json",
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "4.6–5.2 × 10⁻⁴ (INV) because it assumed",
+   "quantity": "published ladder (INV)",
+   "value": "4.61-5.17e-4",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_followup/out/r05_hri_ladder.json"
+   ]
+  },
+  {
+   "readme_text": "Together the transit and the imaging bring the FPP to 3–6 × 10⁻⁵ (REF) or 4–12 × 10⁻⁵ (INV) with the adopted",
+   "quantity": "FPP after Zorro + two-band, adopted composition",
+   "value": "3.1-6.1e-5 / 3.6e-5-1.18e-4",
+   "uncertainty": null,
+   "method": "w05",
+   "source": [
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "2 × 3σ of timing margin and 1.5 h of baseline on each side",
+   "quantity": "full-window definition",
+   "value": "T14 + 2 x 3 sigma + 2 x 1.5 h",
+   "uncertainty": null,
+   "method": "observability",
+   "source": [
+    "writeup/scripts/w02_predictions.py",
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "±3σ of timing margin and 1.5 h of baseline on each side",
+   "quantity": "full-window definition",
+   "value": "T14 + 2 x 3 sigma + 2 x 1.5 h",
+   "uncertainty": null,
+   "method": "observability",
+   "source": [
+    "writeup/scripts/w02_predictions.py"
+   ]
+  },
+  {
+   "readme_text": "at airmass < 2 with the Sun below −18°",
+   "quantity": "full-window criteria",
+   "value": "airmass < 2, Sun < -18 deg",
+   "uncertainty": null,
+   "method": "observability",
+   "source": [
+    "writeup/scripts/w02_predictions.py"
+   ]
+  },
+  {
+   "readme_text": "None occurs before April 2027. In 2027 there are 10 distinct epochs from Chile,",
+   "quantity": "full-window epochs 2027",
+   "value": "first 2027-04-17; 10 epochs excluding Dome C",
+   "uncertainty": null,
+   "method": "adopted ephemeris (identical epoch sets to referee3_followup)",
+   "source": [
+    "writeup/scripts/w02_checks.json",
+    "referee3_followup/out/r01b_network.json"
+   ]
+  },
+  {
+   "readme_text": "SAAO or Siding Spring, and 14 with Dome C",
+   "quantity": "full-window epochs 2027 incl. Dome C",
+   "value": 14,
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "writeup/scripts/w02_checks.json",
+    "referee3_followup/out/r01b_network.json"
+   ]
+  },
+  {
+   "readme_text": "| 118 | 2027-04-17 00:13 | SAAO (first full window) | 82% lit, 104° away |",
+   "quantity": "E118 window",
+   "value": "2027-04-17 00:13:08 UTC; moon 0.82, 104 deg",
+   "uncertainty": "3.1 min",
+   "method": "adopted ephemeris, geocentric UTC",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv"
+   ]
+  },
+  {
+   "readme_text": "| 126 | 2027-06-01 12:56 | Siding Spring (MuSCAT4), Dome C | 14% |",
+   "quantity": "E126 window",
+   "value": "2027-06-01 12:56:01 UTC; moon 0.14",
+   "uncertainty": "3.2 min",
+   "method": "as above",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv"
+   ]
+  },
+  {
+   "readme_text": "| 127 | 2027-06-07 05:32 | CTIO/SOAR/Gemini-S, Las Campanas, La Silla, Paranal | 8% |",
+   "quantity": "E127 window",
+   "value": "2027-06-07 05:31:39 UTC; moon 0.08",
+   "uncertainty": "3.2 min",
+   "method": "as above",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv"
+   ]
+  },
+  {
+   "readme_text": "| 131 | 2027-06-29 23:55 | SAAO | 22% |",
+   "quantity": "E131 window",
+   "value": "2027-06-29 23:54:52 UTC; moon 0.22",
+   "uncertainty": "3.2 min",
+   "method": "as above",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv"
+   ]
+  },
+  {
+   "readme_text": "| 137 | 2027-08-03 03:32 | CTIO/SOAR/Gemini-S, Las Campanas, La Silla, Paranal | 1% |",
+   "quantity": "E137 window",
+   "value": "2027-08-03 03:31:36 UTC; moon 0.01",
+   "uncertainty": "3.3 min",
+   "method": "as above",
+   "source": [
+    "writeup/predicted_transits_2026_2028.csv"
+   ]
+  },
+  {
+   "readme_text": "2-m FTS",
+   "quantity": "Faulkes Telescope South aperture",
+   "value": 2,
+   "uncertainty": null,
+   "method": "instrument facts",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "LCOGT 1-m",
+   "quantity": "LCOGT telescope class",
+   "value": 1,
+   "uncertainty": null,
+   "method": "instrument facts",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "One event gives S/N 13–28 for red noise of 1.0–0.5 ppt (about 10 at 1.5 ppt). Plan ~4 events for a 5% depth",
+   "quantity": "ground S/N per event; events for 5%",
+   "value": "13-28 (red noise 1.0-0.5 ppt), ~10 at 1.5 ppt; 3.7 events at 1 ppt, 8 at 1.5 ppt",
+   "uncertainty": null,
+   "method": "own photometric noise model",
+   "source": [
+    "referee3_followup/out/r07_snr.json",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "ratio (8 at 1.5 ppt)",
+   "quantity": "events for a 5% depth ratio at 1.5 ppt red noise",
+   "value": 8,
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "planet 1 (fit the limb darkening",
+   "quantity": "planet depth ratio",
+   "value": 1,
+   "uncertainty": null,
+   "method": "achromatic k",
+   "source": [
+    "followup/out/chromatic.json"
+   ]
+  },
+  {
+   "readme_text": "~0.2 M☉ companion g/z ≈ 0.77; white dwarf g/TESS ≈ 9; background K-dwarf binary g/z 1.9–2.7",
+   "quantity": "chromatic predictions",
+   "value": "PTP g/z 0.77 (0.71-0.83); WD g/TESS 9.0 (7.0-11.4); bg K EB g/z 1.9-2.7",
+   "uncertainty": null,
+   "method": "empirical 20-pc M-dwarf sequence (PTP, WD); synthetic photometry (bg EB)",
+   "source": [
+    "referee3_followup/out/r08_chroma.json",
+    "followup/out/chromatic.json"
+   ]
+  },
+  {
+   "readme_text": "Use apertures of radius ≤ 2″ or PSF photometry. In g, the 3.1″ star and fainter stars 4–7″ away add 9–19% of the",
+   "quantity": "g-band contamination",
+   "value": "8.7% (FWHM 2\", r 3\") to 18.8% (2.5\", 4\")",
+   "uncertainty": null,
+   "method": "Moffat beta 2.5 integration over all Gaia sources within 25\"",
+   "source": [
+    "referee3_followup/out/r04_contam.csv",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "light in 3–4″ apertures",
+   "quantity": "aperture radii for the contamination numbers",
+   "value": "3-4 arcsec",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "(position angle 92–98°). Keep the Mira's bleed",
+   "quantity": "PA of the Mira-pair-M3V line",
+   "value": "92-98 deg",
+   "uncertainty": null,
+   "method": "geometry",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "off position angles 80–100°",
+   "quantity": "PA range to keep free of Mira bleeds/spikes",
+   "value": "90 +- 10 deg",
+   "uncertainty": null,
+   "method": "geometry (Mira, pair, M3V on an E-W line)",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "(expected Δχ² ≥ 108 from a noise-model forecast,",
+   "quantity": "ground shape test of a grazing BD",
+   "value": ">= 108 (beta 2-3; 970 white)",
+   "uncertainty": null,
+   "method": "Asimov fit, one MuSCAT4 event; not injection-calibrated",
+   "source": [
+    "referee3_followup/out/r09_grazing_ground.json",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "832 and 562 nm",
+   "quantity": "Zorro bands",
+   "value": "832, 562 nm",
+   "uncertainty": null,
+   "method": "instrument facts",
+   "source": [
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "81–97%",
+   "quantity": "PTP fraction excluded by Zorro 832 nm",
+   "value": "0.81-0.97",
+   "uncertainty": null,
+   "method": "PTP posterior vs nominal and conservative curves",
+   "source": [
+    "referee3_followup/out/r05_hri_ladder.json"
+   ]
+  },
+  {
+   "readme_text": "(50–66%)",
+   "quantity": "PTP fraction excluded by SOAR/HRCam",
+   "value": "0.50-0.66",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_followup/out/r05_hri_ladder.json"
+   ]
+  },
+  {
+   "readme_text": "at phases 0.2, 0.5 and 0.8 with σ ≤ 0.3 km/s close the brown-dwarf channel (K 2.8–15.6",
+   "quantity": "low-precision RV design; BD K",
+   "value": "3 epochs, sigma <= 0.3 km/s; K 2.8-15.6 km/s",
+   "uncertainty": null,
+   "method": "RV design simulations",
+   "source": [
+    "referee3_bd/out/s10_rv_design.json",
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "km/s) and the white-dwarf channel (K ≈ 35–73 km/s)",
+   "quantity": "K of a WD companion",
+   "value": "35-73 km/s (0.2-0.6 Msun)",
+   "uncertainty": null,
+   "method": "Kepler",
+   "source": [
+    "referee2_shape/README.md",
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "ESPRESSO needs 9–26 epochs at the median K for 5–10 m/s of stellar jitter; with 10 m/s and K at the low end of",
+   "quantity": "ESPRESSO epochs for 5-sigma K",
+   "value": "9 (jitter 5), 26 (jitter 10)",
+   "uncertainty": null,
+   "method": "sigma_K = sigma_eff sqrt(2/N)",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "its range, 42–81.",
+   "quantity": "ESPRESSO epochs, 84th percentile, jitter 10 m/s",
+   "value": "42 (Chen & Kipping) - 81 (empirical)",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "NIRPS+HARPS needs 16–33 epochs",
+   "quantity": "NIRPS+HARPS epochs",
+   "value": "16-33",
+   "uncertainty": null,
+   "method": "as above (jitter 5-10 m/s)",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json"
+   ]
+  },
+  {
+   "readme_text": "June to November only: from January to May",
+   "quantity": "NIRPS season",
+   "value": "Jun-Nov",
+   "uncertainty": null,
+   "method": "BERV vs systemic velocity +16.3 km/s",
+   "source": [
+    "followup/out/berv_season.csv",
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "Dec −51°",
+   "quantity": "declination",
+   "value": -51.32,
+   "uncertainty": null,
+   "method": "Gaia DR3",
+   "source": [
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "rotation period of about 12–17 d (8.5–12.8 d from the",
+   "quantity": "rotation period implied by X-rays",
+   "value": "11.7 (Wright+11) - 17.2 (Wright+18) d for the eRASS:3 flux (log shift -0.30); 8.5-12.8 d for eRASS1",
+   "uncertainty": null,
+   "method": "Rossby relations",
+   "source": [
+    "referee2_search/out/r08_2p_xray.json",
+    "writeup/novelty/out/xray_mdwarf.json"
+   ]
+  },
+  {
+   "readme_text": "Half of that may lie close to the 5.69-d orbit",
+   "quantity": "half the rotation period vs orbit",
+   "value": "5.8-8.6 d vs 5.69 d",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_search/out/r08_2p_xray.json"
+   ]
+  },
+  {
+   "readme_text": "(2 December 2026)",
+   "quantity": "Gaia DR4 release date",
+   "value": "2026-12-02",
+   "uncertainty": null,
+   "method": "ESA pages (web check)",
+   "source": [
+    "referee3_followup/README.md",
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "(not before the end of 2030) contains an in-transit epoch on 2024-10-29",
+   "quantity": "Gaia DR5 in-transit crossing",
+   "value": "2024-10-29 18:25:32 UTC geocentric, +14.9 min after mid-transit",
+   "uncertainty": null,
+   "method": "Gaia commanded scanning law",
+   "source": [
+    "referee3_followup/out/r01b_network.json",
+    "ctx/out/gaia_in_transit.json",
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "September 2028",
+   "quantity": "no TESS data before",
+   "value": "Sector 134 ends 2028-09-13",
+   "uncertainty": null,
+   "method": "tess-point 0.9.5 pointings",
+   "source": [
+    "ctx/out/future_tess.json",
+    "ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "in the 2027 and 2028 seasons (March–September)",
+   "quantity": "figure date range",
+   "value": "2027 and 2028 seasons",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/observability/obs_SAAO.csv",
+    "writeup/figscripts/f7_followup.py"
+   ]
+  },
+  {
+   "readme_text": "The Mira's period is 313–320 d, not the 294 d in VSX.",
+   "quantity": "Mira period",
+   "value": "313.5-318.0 d (VSX 294 d)",
+   "uncertainty": null,
+   "method": "Gaia+TESS and NEOWISE+Gaia sinusoid fits",
+   "source": [
+    "referee3_followup/out/r03_mira.json",
+    "followup/out/mira.json",
+    "ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "gives 318.0 ± 2.6 d and",
+   "quantity": "Mira period NEOWISE+Gaia",
+   "value": 318.0,
+   "uncertainty": 2.6,
+   "method": "sinusoid with extra scatter",
+   "source": [
+    "referee3_followup/out/r03_mira.json"
+   ]
+  },
+  {
+   "readme_text": "excludes 294 d (Δχ² 82); a fit to Gaia and TESS gives 313.5 ± 0.6 d",
+   "quantity": "VSX period exclusion; Gaia+TESS period",
+   "value": "dchi2 82.2; 313.5 d",
+   "uncertainty": "0.6 d (formal)",
+   "method": "as above",
+   "source": [
+    "referee3_followup/out/r03_mira.json",
+    "followup/out/mira.json"
+   ]
+  },
+  {
+   "readme_text": "5–7.5″",
+   "quantity": "Mira image displacement by lateral colour",
+   "value": "5.0-7.5 arcsec radial",
+   "uncertainty": null,
+   "method": "direct-image PRF fits vs normal-colour WCS",
+   "source": [
+    "loc/README.md",
+    "referee_loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "16–17″",
+   "quantity": "earlier (wrong) colour-shift explanation",
+   "value": "16-17 arcsec",
+   "uncertainty": null,
+   "method": "quoted from the 2026-10-16 vetting",
+   "source": [
+    "writeup/corrections_to_repo.md",
+    "phot/README.md"
+   ]
+  },
+  {
+   "readme_text": "down to 2.2–3.6 R⊕ at P = 0.5–8 d,",
+   "quantity": "R50 completeness, 0.5-8 d",
+   "value": "2.17-3.57 R_E",
+   "uncertainty": null,
+   "method": "band thresholds on the analyst's 800 injections",
+   "source": [
+    "referee2_search/out/r06_thresholds.json"
+   ]
+  },
+  {
+   "readme_text": "4.5 R⊕ at 8–15 d and 5.3 R⊕ at 15–30 d",
+   "quantity": "R50 completeness, 8-30 d",
+   "value": "4.45 / 5.28 R_E",
+   "uncertainty": null,
+   "method": "as above",
+   "source": [
+    "referee2_search/out/r06_thresholds.json"
+   ]
+  },
+  {
+   "readme_text": "Rotation at 8.7 d is not excluded",
+   "quantity": "TARS 8.7-d signal",
+   "value": "UL 1.6% (S12), 0.69% (S93)",
+   "uncertainty": null,
+   "method": "fake-period calibration",
+   "source": [
+    "referee2_search/out/r09_sync.json"
+   ]
+  },
+  {
+   "readme_text": "The 2026-10-16 vetting",
+   "quantity": "vetting date",
+   "value": "2026-10-16",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/corrections_to_repo.md"
+   ]
+  },
+  {
+   "readme_text": "Radius ~5–6 R⊕ becomes **4.95 R⊕**; depth 1.5–1.8% of ~940 e⁻/s becomes **15.8 ppt of 979 e⁻/s**",
+   "quantity": "radius and depth corrections",
+   "value": "5-6 -> 4.95 R_E; 1.5-1.8% of 940 -> 15.8 ppt of 979 e-/s",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/corrections_to_repo.md",
+    "referee3_clean/README.md",
+    "referee_phot/out/xpflux.json"
+   ]
+  },
+  {
+   "readme_text": "T14 1.6 h becomes **1.70 h**, b ≈ 0.6 becomes **≈ 0.5** and Teq ≈ 460 K becomes **≈ 470 K**",
+   "quantity": "shape corrections",
+   "value": "1.6 -> 1.70 h; 0.6 -> 0.5; 460 -> 470 K",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/corrections_to_repo.md",
+    "shape/out/final_params.json",
+    "clean/out/final_depth.json"
+   ]
+  },
+  {
+   "readme_text": "Ephemeris P = 5.691497 ± 0.000014 d becomes **P = 5.691506 ± 0.000011 d**",
+   "quantity": "period correction",
+   "value": "5.691497 -> 5.691506 d",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/corrections_to_repo.md",
+    "writeup/ephemeris_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "They are off by −3.4 to +7.3 min,",
+   "quantity": "error of the old utc_mid column",
+   "value": "-3.42 to +7.30 min",
+   "uncertainty": null,
+   "method": "old utc_mid vs barycentric-correct UTC of its own bjd_tdb",
+   "source": [
+    "writeup/scripts/w02_checks.json",
+    "referee_ctx/README.md"
+   ],
+   "note": "the brief's '-7 to +8 min' is the naive-conversion error over 2026-2028 (followup/README.md), not this file's"
+  },
+  {
+   "readme_text": "with σ 4.2–4.9 min.",
+   "quantity": "old file sigma",
+   "value": "4.2-4.9 min",
+   "uncertainty": null,
+   "method": "chi2-inflated v2 ephemeris",
+   "source": [
+    "writeup/scripts/w02_checks.json"
+   ]
+  },
+  {
+   "readme_text": "epochs, corrected UTC, σ 2.9–3.5 min.",
+   "quantity": "new file sigma (epochs 108-149)",
+   "value": "2.9-3.5 min",
+   "uncertainty": null,
+   "method": "adopted ephemeris",
+   "source": [
+    "writeup/predicted_transits_2027.csv",
+    "writeup/scripts/w02_checks.json"
+   ]
+  },
+  {
+   "readme_text": "The Mira's period is 313–320 d, not 294 d. The M dwarfs are at 64.3 pc, not 62 pc or 64.5 pc.",
+   "quantity": "Mira period and distance corrections",
+   "value": "313-320 d; 64.3 pc",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_followup/out/r03_mira.json",
+    "star/star_params.json",
+    "writeup/corrections_to_repo.md"
+   ]
+  },
+  {
+   "readme_text": "INV shows an odd−even difference of +2.9 ± 2.1 ppt",
+   "quantity": "INV odd-even",
+   "value": 2.9,
+   "uncertainty": 2.1,
+   "method": "fixed-shape per-transit, fake-epoch errors",
+   "source": [
+    "referee3_clean/out/q10_oddeven.json"
+   ]
+  },
+  {
+   "readme_text": "a ~1.5-ppt bump appears near phase 0.49",
+   "quantity": "phase-0.49 bump in PRF photometry",
+   "value": "1.2-2.0 ppt",
+   "uncertainty": null,
+   "method": "phase scans",
+   "source": [
+    "clean/out/phase_scan.json",
+    "referee3_clean/out/q12b_phasescan_ap.json"
+   ]
+  },
+  {
+   "readme_text": "Raw apertures give 16.7–17.5 ppt, the PRF fits 15.5–16.1 ppt. The 979 e⁻/s normalisation is",
+   "quantity": "depth by method",
+   "value": "16.7 +- 1.1 (box3), 17.5 +- 1.4 (r <= 2.5); INV 15.47, REF 16.08",
+   "uncertainty": null,
+   "method": "emcee batman fits",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json",
+    "referee3_clean/out/q08_global.json"
+   ]
+  },
+  {
+   "readme_text": "uncertain by ±3%. Hence Rp +0.25/−0.18 R⊕ (sys).",
+   "quantity": "normalisation uncertainty; Rp sys",
+   "value": "+-3%; +0.25/-0.18 R_E",
+   "uncertainty": null,
+   "method": "systematic budget",
+   "source": [
+    "clean/out/final_depth.json",
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "P(twin) rises to ~5% if",
+   "quantity": "P(twin) with Ks 0.04 mag too bright",
+   "value": "4.0-6.3%",
+   "uncertainty": null,
+   "method": "label-free KDE posterior variant",
+   "source": [
+    "referee2_host/out/r07_empirical_posterior.json"
+   ]
+  },
+  {
+   "readme_text": "the 2MASS Ks magnitude is 0.04 mag too bright",
+   "quantity": "photometric shift tested",
+   "value": 0.04,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_host/README.md"
+   ]
+  },
+  {
+   "readme_text": "4–7 R⊕ planets around mid-M dwarfs (0.1–1%)",
+   "quantity": "occurrence prior",
+   "value": "0.1-1% (best 0.3%)",
+   "uncertainty": null,
+   "method": "literature synthesis",
+   "source": [
+    "ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "the brown-dwarf rate (1.3 × 10⁻⁴, possibly 2×",
+   "quantity": "f_BD and its likely bias",
+   "value": "1.3e-4 (7e-5 from Bryant+23 0.26-0.42 Msun bin)",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "(3 × 10⁻⁵) was carried over",
+   "quantity": "background term",
+   "value": 3e-05,
+   "uncertainty": null,
+   "method": "fixed in r05",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "which makes the FPP differ by ~2.3×",
+   "quantity": "INV/REF FPP ratio",
+   "value": 2.3,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "±0.15 extrapolation",
+   "quantity": "Mira phase uncertainty in 2027",
+   "value": 0.15,
+   "uncertainty": null,
+   "method": "NEOWISE+Gaia vs analyst phase (0.37-0.46 vs 0.54-0.63 in June 2027)",
+   "source": [
+    "referee3_followup/out/r03_mira.json",
+    "referee3_followup/README.md"
+   ]
+  },
+  {
+   "readme_text": "In mid-2027 the Mira is away from maximum",
+   "quantity": "Mira phase in mid-2027",
+   "value": "0.37-0.57 (NEOWISE+Gaia); 0.54-0.74 (Gaia+TESS)",
+   "uncertainty": null,
+   "method": "period fits",
+   "source": [
+    "referee3_followup/out/r03_mira.json",
+    "followup/out/mira_phase_at_transits.csv"
+   ]
+  },
+  {
+   "readme_text": "[Fe/H] ≈ +0.2 is not spectroscopic",
+   "quantity": "metallicity (photometric)",
+   "value": 0.2,
+   "uncertainty": 0.1,
+   "method": "colours, XP",
+   "source": [
+    "host/README.md"
+   ]
+  },
+  {
+   "readme_text": "4.6″ (95%)",
+   "quantity": "95% localisation radius (referee)",
+   "value": 4.6,
+   "uncertainty": null,
+   "method": "injection-calibrated threshold",
+   "source": [
+    "referee_loc/out/locregion_base.json"
+   ]
+  },
+  {
+   "readme_text": "curves over 1.5 MB",
+   "quantity": "bundle size limit per file",
+   "value": 1.5,
+   "uncertainty": null,
+   "method": "bundle rule",
+   "source": [
+    "writeup/bundle_manifest.txt"
+   ]
+  },
+  {
+   "readme_text": "93 Gaia stars",
+   "quantity": "localisation hypotheses",
+   "value": 93,
+   "uncertainty": null,
+   "method": "Gaia stars within 80\" with T < 17.6",
+   "source": [
+    "loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "\"source 7″ north\"",
+   "quantity": "refuted TGLC claim",
+   "value": 7,
+   "uncertainty": null,
+   "method": "TGLC leak model (refuted by referee_ctx)",
+   "source": [
+    "ctx/README.md",
+    "referee_ctx/README.md"
+   ]
+  },
+  {
+   "readme_text": "cut P(twin) from 0.28 to 0.02",
+   "quantity": "P(dT <= 0.3) before/after colour term",
+   "value": "0.28 -> 0.020",
+   "uncertainty": null,
+   "method": "CMD+colour mixture",
+   "source": [
+    "referee2_fpp/README.md",
+    "referee2_fpp/out/r02_cmd_colour.json"
+   ]
+  },
+  {
+   "readme_text": "agrees with both follow-up folders to within 1 s",
+   "quantity": "barycentric conversion check",
+   "value": "0-1 s (rounding)",
+   "uncertainty": null,
+   "method": "same BJD converted by this script vs followup/ and referee3_followup/",
+   "source": [
+    "writeup/scripts/w02_checks.json"
+   ]
+  },
+  {
+   "readme_text": "(no pixel more than 2.5 px, ~50″, away dims)",
+   "quantity": "far-pixel test radius",
+   "value": "2.5 px = 52 arcsec",
+   "uncertainty": null,
+   "method": "model-free per-pixel S/N maps vs fake epochs",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json",
+    "referee2_search/README.md"
+   ]
+  },
+  {
+   "readme_text": "lies inside the 95% pixel region",
+   "quantity": "3.1\" star vs referee 95% region",
+   "value": "inside (map value 7.4 vs threshold 13.8)",
+   "uncertainty": null,
+   "method": "injection-calibrated localisation map",
+   "source": [
+    "referee_loc/README.md",
+    "referee_loc/out/locregion_base.json"
+   ]
+  },
+  {
+   "readme_text": "(1.3 Neptune radii)",
+   "quantity": "Rp in Neptune radii",
+   "value": 1.28,
+   "uncertainty": null,
+   "method": "4.95 / 3.88",
+   "source": [
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "the FPP (0.005–0.009) is not far below its threshold",
+   "quantity": "FPP_strict at adopted priors",
+   "value": "0.0049 (REF) / 0.0093 (INV)",
+   "uncertainty": null,
+   "method": "1 - TP_single - TP_diluted",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "the floor of ~3 × 10⁻⁵ is a background-star term carried over from phase 2",
+   "quantity": "FPP floor after follow-up",
+   "value": 3e-05,
+   "uncertainty": null,
+   "method": "background posterior fixed in r05 (bg_post), not reduced in the ladder",
+   "source": [
+    "referee2_fpp/scripts/r05_fpp.py",
+    "writeup/fpp_ladder_adopted.json"
+   ]
+  },
+  {
+   "readme_text": "(15.8 ppt = 1.58%)",
+   "quantity": "ppt example",
+   "value": "15.8 ppt = 1.58%",
+   "uncertainty": null,
+   "method": "definition",
+   "source": [
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "For one free parameter, +9 corresponds to about 3σ.",
+   "quantity": "Delta-chi2 convention",
+   "value": "9 -> 3 sigma",
+   "uncertainty": null,
+   "method": "chi-square statistics (one parameter)",
+   "source": [
+    "writeup/README.md"
+   ]
+  },
+  {
+   "readme_text": "(0 for a central transit, near 1",
+   "quantity": "impact-parameter definition",
+   "value": "0 / ~1",
+   "uncertainty": null,
+   "method": "definition",
+   "source": [
+    "writeup/README.md"
+   ]
+  },
+  {
+   "readme_text": "(about 1 for a single star)",
+   "quantity": "RUWE definition",
+   "value": 1,
+   "uncertainty": null,
+   "method": "Gaia DR3 documentation",
+   "source": [
+    "star/README.md"
+   ]
+  },
+  {
+   "readme_text": "(Kipping 2013)",
+   "quantity": "Kipping eccentricity prior",
+   "value": 2013,
+   "uncertainty": null,
+   "method": "Beta(0.867, 3.03)",
+   "source": [
+    "referee3_bd/README.md",
+    "panel_fpp/fpplib.py"
+   ]
+  },
+  {
+   "readme_text": "(Sagear & Ballard 2023)",
+   "quantity": "M-dwarf planet eccentricity prior",
+   "value": 2023,
+   "uncertainty": null,
+   "method": "Rayleigh sigma 0.19",
+   "source": [
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "(Kempton et al. 2018)",
+   "quantity": "TSM/ESM definition",
+   "value": 2018,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_followup/scripts/r06_rv_tsm.py"
+   ]
+  },
+  {
+   "readme_text": "3×3 box",
+   "quantity": "raw-pixel box",
+   "value": "3x3 px",
+   "uncertainty": null,
+   "method": "model-free pixel sum (contains the M3V and the Mira core, 0.85-0.94 px apart)",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json",
+    "referee3_clean/out/q02_bigap.json"
+   ]
+  },
+  {
+   "readme_text": "The box holds 76–81% of the M3 dwarf's light; corrected for this, raw apertures give 16.7–17.5 ppt.",
+   "quantity": "encircled energy of the 3x3 box; EE-corrected raw depths",
+   "value": "EE 0.757-0.807; 16.7 +- 1.1 (box3), 17.5 +- 1.4 (r <= 2.5 px)",
+   "uncertainty": null,
+   "method": "SPOC PRF at the M3V position; fixed-shape fits",
+   "source": [
+    "referee3_clean/out/q02_bigap.json",
+    "referee3_clean/out/q14_contrast_all.json"
+   ]
+  },
+  {
+   "readme_text": "(individual transit depths moved by 2.7 ppt rms; a 0.8-ppt residual remains in S93)",
+   "quantity": "effect of the RRab removal",
+   "value": "rms 2.7, max 7.4 ppt; S93 residual 0.78 ppt (p < 1/120; referee p 0.02)",
+   "uncertainty": null,
+   "method": "same fit on all versions; 3-harmonic fit",
+   "source": [
+    "clean/README.md",
+    "clean/out/modes_compare.json",
+    "referee3_clean/out/q06_rrab.json"
+   ]
+  },
+  {
+   "readme_text": "best fit 1.4″ from the M3 dwarf, and none of 400 injections on the Mira, pair A or the 3.1″ star reaches the real values",
+   "quantity": "final-review raw-pixel template fit",
+   "value": "best offset (+1, -1) arcsec; Mira +66.5, pair A +41, 3.1\" star +16 (Delta chi2); 0/400 injections",
+   "uncertainty": null,
+   "method": "per-window raw-pixel depth images vs templates, fake-epoch noise",
+   "source": [
+    "panel_systematics/out/summary_panel_systematics.json",
+    "panel_systematics/scripts/s02_hyp.py"
+   ]
+  },
+  {
+   "readme_text": "(0.72–0.75 ± 0.08–0.13 without)",
+   "quantity": "T23/T14 without density prior",
+   "value": "0.72 +- 0.13 (INV), 0.75 +- 0.08 (REF)",
+   "uncertainty": null,
+   "method": "free-density batman fits",
+   "source": [
+    "clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "an M8 dwarf at ~2,570 K only marginally, and the 2,540 K comes from the phase-2 bound of 2.5 ppt",
+   "quantity": "M8V marginal exclusion; limit basis",
+   "value": "2570 K; 2.5 ppt (beta weights)",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_shape/README.md"
+   ]
+  },
+  {
+   "readme_text": "phase-2",
+   "quantity": "analysis phase",
+   "value": 2,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "Over 1,500 joint draws of all priors (binary statistics, companion limits, occurrence rates, white-dwarf and brown-dwarf rates), re-run after the sign fix, the median is 0.0022, the 5–95% range 0.0002–0.012 and P(FPP < 0.015) = 0.97; pessimistic prior combinations reach 0.015–0.045.",
+   "quantity": "FPP over joint prior draws and pessimistic variants",
+   "value": "median 0.00215; 5-95% 0.00024-0.0119; P(<0.015) 0.968; pessimistic 0.015-0.045 (6 of 62 named variants >= 0.015)",
+   "uncertainty": null,
+   "method": "referee2_fpp prior ranges, sign fixed, BD inputs of referee3_bd",
+   "source": [
+    "panel_fpp/out/p05_summary.json",
+    "panel_fpp/out/p07_draw_stats.json",
+    "panel_fpp/out/p05_variants.csv",
+    "panel_fpp/p05_variants_draws.py"
+   ],
+   "note": "spot-checked: 3 named variants and 3 draws reproduce to machine precision"
+  },
+  {
+   "readme_text": "(0.9986–0.9996 over variants); including a planet on the bound pair star A, 0.9999",
+   "quantity": "P(planet on the bound system incl. pair A)",
+   "value": "0.9986-0.9996; 0.99988 (adopted), 0.9996-0.9999 over variants",
+   "uncertainty": null,
+   "method": "1 - FPP_system (+ NTP pair A)",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv",
+    "panel_fpp/out/p02_ranges.json"
+   ]
+  },
+  {
+   "readme_text": "El-Badry et al. 2021",
+   "quantity": "wide-binary catalogue",
+   "value": 2021,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "Hardegree-Ullman et al. 2023",
+   "quantity": "M-dwarf catalogue with R and M",
+   "value": 2023,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "so no source more than ~50″ away is involved",
+   "quantity": "far-pixel radius",
+   "value": "2.5 px",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json"
+   ]
+  },
+  {
+   "readme_text": "+3.4 ± 2.1 ppt without it. That is 1.5–3.0σ for a split chosen after looking at the data (look-elsewhere p 0.31–0.81).",
+   "quantity": "REF contrast without E58; significance; look-elsewhere p",
+   "value": "+3.39 +- 2.14; 1.55-2.97 sigma; LEE p 0.31-0.81",
+   "uncertainty": null,
+   "method": "q14; q07 (5/31/130-split families)",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json",
+    "referee3_clean/out/q07_lee.json"
+   ]
+  },
+  {
+   "readme_text": "INV is deeper by +6.6 to +7.4 ± 3.1–3.3 ppt",
+   "quantity": "paired INV-minus-aperture contrast (box3)",
+   "value": "+6.6..+7.4 +- 3.1-3.3",
+   "uncertainty": null,
+   "method": "same epochs, paired fake differences, 6 variants",
+   "source": [
+    "referee3_clean/out/q04_paired.json",
+    "referee3_clean/README.md"
+   ]
+  },
+  {
+   "readme_text": "(~2σ; a split-independent test gives p 0.06–0.45)",
+   "quantity": "paired significance; omnibus test",
+   "value": "2.0-2.4 sigma (box3); omnibus chi2 4.7-10.7/5, p 0.06-0.45",
+   "uncertainty": null,
+   "method": "q15 omnibus",
+   "source": [
+    "referee3_clean/out/q15_omnibus.json"
+   ]
+  },
+  {
+   "readme_text": "apertures alone (±2.4–3.2 ppt) cannot exclude a 3–4 ppt change",
+   "quantity": "raw-aperture contrast errors",
+   "value": "2.4 (box3), 3.2 (r <= 2.5)",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_clean/out/q14_contrast_all.json"
+   ]
+  },
+  {
+   "readme_text": "chance-alignment parameter R = 2 × 10⁻⁵ (El-Badry et al. 2021; bound with near certainty)",
+   "quantity": "El-Badry R",
+   "value": 2e-05,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/novelty/README.md",
+    "star/star_params.json"
+   ]
+  },
+  {
+   "readme_text": "Computed for Rp = 4.90 R⊕; at the adopted 4.95 R⊕, M ≈ 21.7 M⊕ and K ≈ 15.1 m/s",
+   "quantity": "mass and K scaled to the adopted radius",
+   "value": "21.7 M_E; 15.1 m/s",
+   "uncertainty": null,
+   "method": "M proportional to R^1.70 (Chen & Kipping Neptunian), K proportional to M",
+   "source": [
+    "referee3_followup/scripts/r06_rv_tsm.py",
+    "panel_fpp/out/p03_params.json"
+   ]
+  },
+  {
+   "readme_text": "(for Rp = 4.90 R⊕; ≈ 110 and ≈ 9.3 at 4.95 R⊕)",
+   "quantity": "TSM and ESM scaled to the adopted radius",
+   "value": "TSM 109-110; ESM 9.3",
+   "uncertainty": null,
+   "method": "TSM proportional to Rp^3/Mp, ESM proportional to (Rp/R*)^2",
+   "source": [
+    "referee3_followup/out/r06_rv_tsm.json",
+    "panel_fpp/out/p03_params.json"
+   ]
+  },
+  {
+   "readme_text": "The referee recommends the",
+   "quantity": "Sagear & Ballard recommendation",
+   "value": "Rayleigh 0.19",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_bd/README.md"
+   ]
+  },
+  {
+   "readme_text": "Planet on an unresolved companion within 0.75 mag of the M3 dwarf (near-equal twin; Rp 5.2–6.3 R⊕)",
+   "quantity": "twin definition",
+   "value": "dT <= 0.75 mag; Rp 5.2-6.3 R_E",
+   "uncertainty": null,
+   "method": "r05 dT_twin; referee2_fpp section 5",
+   "source": [
+    "referee2_fpp/scripts/r05_fpp.py",
+    "referee2_fpp/README.md",
+    "shape/out/final_params.json"
+   ]
+  },
+  {
+   "readme_text": "The brown-dwarf posteriors in the table include the Gaia RV factor (median 0.49); the totals use them without it",
+   "quantity": "BD Gaia RV factor",
+   "value": 0.49,
+   "uncertainty": "0.25-0.80",
+   "method": "mass-averaged RVS smearing likelihood",
+   "source": [
+    "referee3_bd/out/s12_summary.json"
+   ]
+  },
+  {
+   "readme_text": "(1.4 × 10⁻⁵ / 4.2 × 10⁻⁵)",
+   "quantity": "BD total without Gaia RV factor",
+   "value": "1.41e-5 / 4.17e-5",
+   "uncertainty": null,
+   "method": "sign-fixed r05",
+   "source": [
+    "referee3_bd/out/s12_summary.json"
+   ]
+  },
+  {
+   "readme_text": "A seeing-limited ground transit, which resolves pair A at 11.7″, removes the pair-A term.",
+   "quantity": "NTP removal",
+   "value": 11.7,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_followup/scripts/r05_hri_ladder.py"
+   ]
+  },
+  {
+   "readme_text": "P(twin) from 0.28 to 0.02)",
+   "quantity": "P(dT <= 0.3) before/after colour term",
+   "value": "0.28 -> 0.020",
+   "uncertainty": null,
+   "method": "CMD+colour mixture",
+   "source": [
+    "referee2_fpp/README.md",
+    "referee2_fpp/out/r02_cmd_colour.json"
+   ]
+  },
+  {
+   "readme_text": "(0.002–0.04)",
+   "quantity": "TRICERATOPS span",
+   "value": "0.0016-0.04",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "dropping the Gaia IPD limits inside 0.25″ (whose calibration",
+   "quantity": "IPD-cell variant",
+   "value": "FPP 0.0029 / 0.0077 (x2.1 / x2.5)",
+   "uncertainty": null,
+   "method": "sign-fixed r05 named variant",
+   "source": [
+    "panel_fpp/out/p05_variants.csv",
+    "referee2_fpp/README.md"
+   ]
+  },
+  {
+   "readme_text": "dropping the IPD altogether multiplies it by 4–5",
+   "quantity": "IPD off variant",
+   "value": "FPP 0.0054 / 0.0151 (x4.0 / x4.8)",
+   "uncertainty": null,
+   "method": "sign-fixed r05 named variant",
+   "source": [
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "but plausible prior combinations give FPP 0.015–0.045",
+   "quantity": "pessimistic variants",
+   "value": "0.015 / 0.028 (f_BD 3.5e-4); 0.022 / 0.045 with IPD only beyond 0.25\"",
+   "uncertainty": null,
+   "method": "sign-fixed r05 named variants",
+   "source": [
+    "panel_fpp/out/p05_variants.csv"
+   ]
+  },
+  {
+   "readme_text": "the background term (3 × 10⁻⁵), carried over from phase 2",
+   "quantity": "background term",
+   "value": 3e-05,
+   "uncertainty": null,
+   "method": "fixed in r05",
+   "source": [
+    "referee2_fpp/scripts/r05_fpp.py"
+   ]
+  },
+  {
+   "readme_text": "(≈ 10σ against fake epochs)",
+   "quantity": "raw-box significance at the known ephemeris",
+   "value": "13.9 +- 1.4 e-/s (r07); 12.3 +- 0.8 (final review)",
+   "uncertainty": null,
+   "method": "fake epochs",
+   "source": [
+    "referee2_search/out/r07_pixdepth.json"
+   ]
+  },
+  {
+   "readme_text": "5.69 d is the strongest peak with a 0.75-d detrending spline, but only about tenth with a 1.5-d spline",
+   "quantity": "blind BLS of raw apertures",
+   "value": "0.75-d spline: rank 1 (power 87.9 vs 57.7; SDE 15.8); 1.5-d spline: rank 11 (66.5 vs 75.9)",
+   "uncertainty": null,
+   "method": "astropy BoxLeastSquares 0.8-20 d, 30-min bins",
+   "source": [
+    "panel_systematics/out/summary_panel_systematics.json",
+    "panel_systematics/out/s04_bls_box_k0.75.json",
+    "panel_systematics/out/s04_bls_box_k1.5.json"
+   ]
+  },
+  {
+   "readme_text": "(p = 0.54 against",
+   "quantity": "X-ray counterpart probability (caveat)",
+   "value": "0.54 vs 0.38",
+   "uncertainty": null,
+   "method": "eRASS:3 NWAY",
+   "source": [
+    "writeup/novelty/README.md"
+   ]
+  },
+  {
+   "readme_text": "0.38), and its flux is half the eRASS1 value",
+   "quantity": "eRASS:3 vs eRASS1 flux",
+   "value": "2.5e-14 vs 5.4e-14 erg/s/cm2",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/novelty/out/xray_mdwarf.json"
+   ]
+  },
+  {
+   "readme_text": "INV light curve (9.1 MB)",
+   "quantity": "size of the cleaned INV light curve",
+   "value": 9.1,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "writeup/bundle_manifest.txt"
+   ]
+  },
+  {
+   "readme_text": "The 3.1″ star lies inside the 95% region.",
+   "quantity": "3.1\" star vs 95% region",
+   "value": "inside",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee_loc/README.md"
+   ]
+  },
+  {
+   "readme_text": "The unresolved background term (3 × 10⁻⁵) counts towards the FPP, not the NFPP.",
+   "quantity": "background term vs NFPP",
+   "value": 3e-05,
+   "uncertainty": null,
+   "method": "r05: NFPP = NTP_pairA / total",
+   "source": [
+    "referee2_fpp/scripts/r05_fpp.py"
+   ]
+  },
+  {
+   "readme_text": "The Bayesian FPP of this analysis (0.0013–0.0033)",
+   "quantity": "FPP range",
+   "value": "0.0013-0.0033",
+   "uncertainty": null,
+   "method": "sign-fixed r05",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "2.6 × 10⁻³).",
+   "quantity": "PTP, INV, Kipping",
+   "value": 0.00259,
+   "uncertainty": null,
+   "method": "sign-fixed r05",
+   "source": [
+    "referee3_bd/out/s02_fpp_fixed.csv"
+   ]
+  },
+  {
+   "readme_text": "3×3 raw-pixel",
+   "quantity": "raw-pixel box",
+   "value": "3x3 px",
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "panel_systematics/scripts/s03_rawlc.py"
+   ]
+  },
+  {
+   "readme_text": "the Mira's 2027 phase on a",
+   "quantity": "Mira phase year",
+   "value": 2027,
+   "uncertainty": null,
+   "method": "",
+   "source": [
+    "referee3_followup/out/r03_mira.json"
+   ]
+  },
+  {
+   "readme_text": "eRASS:3",
+   "quantity": "eROSITA DR2 / eRASS:3 catalogue",
+   "value": 3,
+   "uncertainty": null,
+   "method": "Ramos-Ceja et al. 2026",
+   "source": [
+    "writeup/novelty/README.md"
+   ]
+  }
+ ]
+}

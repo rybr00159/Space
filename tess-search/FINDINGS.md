@@ -469,3 +469,31 @@ None is a planet.
 - TIC 61141412 ETVs are robust over 18 product/aperture/detrending combinations (linear chi2 90-240, quadratic
   12-31). vbroad 11 km/s against ~23 synchronised gives i ~27 deg, so the SB1 probably does not eclipse.
 - TIC 55829034: source at (+3.2, -5.5)" +- 1-3" (referee).
+
+**Follow-up campaign on TIC 214311908 (2026-10-17).** Full write-up: tess-search/tic214311908/.
+- Eleven investigations in three phases (photometry, localisation, star, context; transit model, planet search,
+  host, FPP; cleaned photometry, brown-dwarf channel, follow-up design), each checked by an adversarial referee.
+- Signal on sky: raw-pixel dip 13.9 +- 1.4 e/s in the 3x3 box holding the M3V and the Mira's core, all six sectors
+  (chi2 4.2/5); no pixel beyond 2.5 px dims. On the M3V: injection-calibrated PRF fits give pair A +126, pair B +146,
+  Mira +285, 5.5" star +87, 3.1" star +36 (Delta chi2 vs M3V); 95% region within 4.6" (contains the 3.1" star, which
+  colours and shape exclude). An RRab 200" away leaked into one pipeline; removed at source, global transit unchanged.
+- Raw pixels confirm the dip at the known ephemeris but are not an independent blind detection.
+- Depth 15.8 +- 0.9 (stat) +1.5/-1.1 (sys) ppt of 979 e/s; Rp 4.95 +- 0.24 (stat) +0.25/-0.18 (sys) Re; b ~0.5;
+  T14 1.70 h, T23/T14 0.71-0.74 (density prior; 1.65-1.75 h without); Teq ~470 K; a 0.0448 au.
+- Star: 64.31 +- 0.15 pc; R 0.381-0.385, M 0.370, Teff 3350 K; 0.75 mag over-luminous, explained by [Fe/H] ~+0.2
+  (colours, XP); P(twin) ~0.3-1%.
+- Ephemeris (conservative): T0 = BJD_TDB 2460840.9150 +- 0.0013, P = 5.691506 +- 0.000011 d; 1 sigma ~3 min in 2027.
+  The old predicted_transits_2027.csv had UTC without barycentric correction (-3.4 to +7.3 min); superseded by
+  tic214311908/predicted_transits_2027.csv, which now also replaces the old file (uncorrected version in git history).
+- P/2 excluded at 14 sigma; 2P main-sequence EB excluded at >= 6 sigma in every cleaned photometry; no secondary
+  (3 sigma < 2.8-3.1 ppt); no TTVs.
+- Both FPP codes had a photo-eccentric sign error (rho_c = rho g^-3 instead of g^+3); fixed. FPP 0.0013 (REF) to
+  0.0033 (INV); 64 variants 0.0007-0.0037; 1,500 joint prior draws: median 0.0022, 95th percentile 0.012,
+  pessimistic combinations up to 0.045. NFPP ~4e-4 (most lenient pixel likelihood). Earlier 0.011 and 0.003-0.007
+  superseded. With planets on unresolved companions counted as false positives (as TRICERATOPS does): 0.005-0.009.
+- After speckle + a two-band ground transit the FPP would be ~3-12e-5 (adopted brown-dwarf inputs); floor 3e-5 from
+  the carried-over background term.
+- Not statistically validated: no ground-based detection, no high-resolution imaging, TRICERATOPS unstable
+  (0.002-0.04). First full windows April-August 2027.
+- Side results: Mira period 313-320 d (not 294 d); Mira TESS image displaced 5-7.5" by colour (not 16-17");
+  the eRASS:3 X-ray source may be the M3V or pair A (p 0.54 vs 0.38).

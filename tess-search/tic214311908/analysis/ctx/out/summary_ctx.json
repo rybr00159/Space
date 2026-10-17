@@ -1,0 +1,632 @@
+{
+ "target": "TIC 214311908 = Gaia DR3 5925373272850784768 (M3V, 64.5 pc); ephemeris P = 5.6914968 d, T0 = BTJD 3840.9153",
+ "1_independent_light_curves": {
+  "products_found": {
+   "QLP": "S12,39,66,93,103,104 for TIC 214311906/08/10 (+ TIC 1515709367 = pair duplicate)",
+   "TGLC": "S12, S39 only (TGLC HLSP covers Sectors 1-55); all six Gaia stars incl. pair B and reference stars",
+   "TARS": "S12,39,66,93, TIC 214311908 only",
+   "GSFC-ELEANOR-LITE": "S12: five TIC IDs, identical RAW/PCA flux (same aperture L_180 centred on col 1588,row 268) = blend",
+   "TEQUILA": "S12, pixel x1515 y0269 (Mira pixel)",
+   "absent": "no SPOC 2-min/20-s, TESS-SPOC, CDIPS, PATHOS, DIAmante, TASOC, T16 products (MAST queries c01/c02)"
+  },
+  "fold_results": {
+   "QLP_M3V_DET_ALL": {
+    "depth_ppm": 13351.0,
+    "err_formal_ppm": 629.0,
+    "err_empirical_ppm": 754.0,
+    "snr_empirical": 17.71,
+    "odd_ppm": 14516.0,
+    "odd_err": 842.0,
+    "even_ppm": 11877.0,
+    "even_err": 947.0,
+    "phase05_ppm": -485.0,
+    "phase05_err": 591.0,
+    "n_in_transit_points": 380,
+    "p_random_phase_ge": 0.0025
+   },
+   "QLP_M3V_SAP_ALL": {
+    "depth_ppm": 13955.0,
+    "err_formal_ppm": 667.0,
+    "err_empirical_ppm": 1523.0,
+    "snr_empirical": 9.16,
+    "odd_ppm": 15288.0,
+    "odd_err": 894.0,
+    "even_ppm": 12285.0,
+    "even_err": 1001.0,
+    "phase05_ppm": -582.0,
+    "phase05_err": 629.0,
+    "n_in_transit_points": 380,
+    "p_random_phase_ge": 0.0025
+   },
+   "QLP_Mira_DET_ALL": {
+    "depth_ppm": 2268.0,
+    "err_formal_ppm": 122.0,
+    "err_empirical_ppm": 136.0,
+    "snr_empirical": 16.74,
+    "odd_ppm": 2133.0,
+    "odd_err": 164.0,
+    "even_ppm": 2435.0,
+    "even_err": 183.0,
+    "phase05_ppm": 98.0,
+    "phase05_err": 113.0,
+    "n_in_transit_points": 380,
+    "p_random_phase_ge": 0.0025
+   },
+   "QLP_pairA_DET_ALL": {
+    "depth_ppm": 17587.0,
+    "err_formal_ppm": 829.0,
+    "err_empirical_ppm": 999.0,
+    "snr_empirical": 17.6,
+    "odd_ppm": 18923.0,
+    "odd_err": 1120.0,
+    "even_ppm": 15966.0,
+    "even_err": 1233.0,
+    "phase05_ppm": -1496.0,
+    "phase05_err": 762.0,
+    "n_in_transit_points": 380,
+    "p_random_phase_ge": 0.0025
+   },
+   "QLP_M3V_DET_S12": {
+    "depth_ppm": 12568.0,
+    "err_formal_ppm": 3533.0,
+    "err_empirical_ppm": 3679.0,
+    "snr_empirical": 3.42,
+    "odd_ppm": 8516.0,
+    "odd_err": 5012.0,
+    "even_ppm": 16570.0,
+    "even_err": 4981.0,
+    "phase05_ppm": -916.0,
+    "phase05_err": 2871.0,
+    "n_in_transit_points": 6,
+    "p_random_phase_ge": 0.005
+   },
+   "TGLC_M3V_psf_S39": {
+    "depth_ppm": 17170.0,
+    "err_formal_ppm": 1693.0,
+    "err_empirical_ppm": 3156.0,
+    "snr_empirical": 5.44,
+    "odd_ppm": 17424.0,
+    "odd_err": 2396.0,
+    "even_ppm": 16916.0,
+    "even_err": 2394.0,
+    "phase05_ppm": 2693.0,
+    "phase05_err": 1693.0,
+    "n_in_transit_points": 33,
+    "p_random_phase_ge": 0.0025
+   },
+   "TGLC_M3V_aper_S39": {
+    "depth_ppm": 19492.0,
+    "err_formal_ppm": 2014.0,
+    "err_empirical_ppm": 4908.0,
+    "snr_empirical": 3.97,
+    "odd_ppm": 21484.0,
+    "odd_err": 2849.0,
+    "even_ppm": 17503.0,
+    "even_err": 2847.0,
+    "phase05_ppm": 4058.0,
+    "phase05_err": 2014.0,
+    "n_in_transit_points": 33,
+    "p_random_phase_ge": 0.0025
+   },
+   "TGLC_M3V_psf_S12": {
+    "depth_ppm": 3548.0,
+    "err_formal_ppm": 9800.0,
+    "err_empirical_ppm": 12106.0,
+    "snr_empirical": 0.29,
+    "odd_ppm": 11263.0,
+    "odd_err": 13716.0,
+    "even_ppm": -4498.0,
+    "even_err": 14007.0,
+    "phase05_ppm": 45769.0,
+    "phase05_err": 8071.0,
+    "n_in_transit_points": 6,
+    "p_random_phase_ge": 0.3616
+   },
+   "TGLC_pairA_psf_S39": {
+    "depth_ppm": 22387.0,
+    "err_formal_ppm": 2330.0,
+    "err_empirical_ppm": 5044.0,
+    "snr_empirical": 4.44,
+    "odd_ppm": 23853.0,
+    "odd_err": 3297.0,
+    "even_ppm": 20925.0,
+    "even_err": 3294.0,
+    "phase05_ppm": 2733.0,
+    "phase05_err": 2330.0,
+    "n_in_transit_points": 33,
+    "p_random_phase_ge": 0.0025
+   },
+   "TGLC_pairB_psf_S39": {
+    "depth_ppm": 69496.0,
+    "err_formal_ppm": 8213.0,
+    "err_empirical_ppm": 19895.0,
+    "snr_empirical": 3.49,
+    "odd_ppm": 35713.0,
+    "odd_err": 14232.0,
+    "even_ppm": 86362.0,
+    "even_err": 10056.0,
+    "phase05_ppm": 8697.0,
+    "phase05_err": 10059.0,
+    "n_in_transit_points": 25,
+    "p_random_phase_ge": 0.0075
+   },
+   "TGLC_Mira_psf_S39": {
+    "depth_ppm": 2295.0,
+    "err_formal_ppm": 383.0,
+    "err_empirical_ppm": 943.0,
+    "snr_empirical": 2.43,
+    "odd_ppm": 2124.0,
+    "odd_err": 542.0,
+    "even_ppm": 2466.0,
+    "even_err": 542.0,
+    "phase05_ppm": 636.0,
+    "phase05_err": 383.0,
+    "n_in_transit_points": 33,
+    "p_random_phase_ge": 0.0025
+   },
+   "TGLC_ref1_psf_S39": {
+    "depth_ppm": -806.0,
+    "err_formal_ppm": 302.0,
+    "err_empirical_ppm": 584.0,
+    "snr_empirical": -1.38,
+    "odd_ppm": -556.0,
+    "odd_err": 427.0,
+    "even_ppm": -1056.0,
+    "even_err": 427.0,
+    "phase05_ppm": 591.0,
+    "phase05_err": 302.0,
+    "n_in_transit_points": 33,
+    "p_random_phase_ge": 0.8504
+   },
+   "TARS_M3V_ALL": {
+    "depth_ppm": 2950.0,
+    "err_formal_ppm": 170.0,
+    "err_empirical_ppm": 187.0,
+    "snr_empirical": 15.75,
+    "odd_ppm": 3092.0,
+    "odd_err": 226.0,
+    "even_ppm": 2768.0,
+    "even_err": 256.0,
+    "phase05_ppm": 93.0,
+    "phase05_err": 167.0,
+    "n_in_transit_points": 214,
+    "p_random_phase_ge": 0.0025
+   },
+   "ELEANORLITE_S12_PCA_blend": {
+    "depth_ppm": 2260.0,
+    "err_formal_ppm": 678.0,
+    "err_empirical_ppm": 732.0,
+    "snr_empirical": 3.09,
+    "odd_ppm": 1701.0,
+    "odd_err": 1053.0,
+    "even_ppm": 2657.0,
+    "even_err": 886.0,
+    "phase05_ppm": 484.0,
+    "phase05_err": 662.0,
+    "n_in_transit_points": 10,
+    "p_random_phase_ge": 0.0025
+   },
+   "ELEANORLITE_S12_CORR_blend": {
+    "depth_ppm": 1745.0,
+    "err_formal_ppm": 523.0,
+    "err_empirical_ppm": 611.0,
+    "snr_empirical": 2.85,
+    "odd_ppm": 1263.0,
+    "odd_err": 813.0,
+    "even_ppm": 2087.0,
+    "even_err": 684.0,
+    "phase05_ppm": -1760.0,
+    "phase05_err": 511.0,
+    "n_in_transit_points": 10,
+    "p_random_phase_ge": 0.0025
+   },
+   "TEQUILA_S12_Mira_pixel": {
+    "depth_ppm": 289.0,
+    "err_formal_ppm": 1126.0,
+    "err_empirical_ppm": 1328.0,
+    "snr_empirical": 0.22,
+    "odd_ppm": -685.0,
+    "odd_err": 1383.0,
+    "even_ppm": 2203.0,
+    "even_err": 1939.0,
+    "phase05_ppm": -754.0,
+    "phase05_err": 1123.0,
+    "n_in_transit_points": 8,
+    "p_random_phase_ge": 0.3815
+   }
+  },
+  "tglc_S39_absolute_flux_loss_e_per_s": {
+   "observed": {
+    "M3V": 14.97,
+    "pairA": 13.92,
+    "pairB": 13.51,
+    "Mira": 12.24,
+    "ref1": -4.47,
+    "ref2": -2.24
+   },
+   "empirical_err": {
+    "M3V": 2.88,
+    "pairA": 3.25,
+    "pairB": 3.19,
+    "Mira": 5.15,
+    "ref1": 3.37,
+    "ref2": 4.03
+   }
+  },
+  "tglc_S39_leak_model_chi2_dof5": {
+   "M3V": 21.4,
+   "pairA": 55.1,
+   "pairB": 62.9,
+   "Mira": 88.1
+  },
+  "tglc_S39_leak_model_faint_stars_chi2": {
+   "G17.5_3.1asec_NE": 13.806273712643293,
+   "G17.7_5.5asec_N": 9.715110797073628
+  },
+  "tglc_S39_free_position_best_EN_from_Mira_arcsec": [
+   -15.0,
+   7.0
+  ],
+  "tglc_S39_free_chi2_min_dof3": 8.125548810734838,
+  "tglc_S39_sim_injected_on_M3V": {
+   "n": 300,
+   "dF_injected": 13.855013932359471,
+   "median_offset_arcsec": 2.5353460102859726,
+   "p68_offset": 3.380358865770702,
+   "p95_offset": 5.514232811776824,
+   "frac_dchi2_at_truth_ge_observed": 0.0033333333333333335,
+   "dchi2_truth_p50_p95": [
+    1.2731212929122486,
+    5.05578286270735
+   ]
+  },
+  "tglc_S39_robustness_M3V_minus_best_dchi2": {
+   "V1_baseline": 13.4,
+   "V2_M3V_colour_shift_2.0": 19.4,
+   "V2_M3V_colour_shift_3.0": 22.2,
+   "V2_M3V_colour_shift_4.0": 27.5,
+   "V3_edge_mask_ratio1.0": 12.9,
+   "V3_edge_mask_ratio2.0": 15.9,
+   "V3_edge_mask_ratio4.0": 15.4,
+   "V4_jitter_0.15_0": 11.8,
+   "V4_jitter_-0.15_0": 12.1,
+   "V4_jitter_0_0.15": 11.4,
+   "V4_jitter_0_-0.15": 10.1
+  },
+  "tglc_S39_psf_shape_variants_M3V_minus_best_dchi2": {
+   "baseline": 13.3,
+   "gauss0.20": 13.3,
+   "gauss0.35": 13.2,
+   "gauss0.50": 12.8,
+   "power0.90_heavier_wings": 12.5,
+   "power1.10_lighter_wings": 14.1
+  },
+  "tglc_S12": "uninformative (30-min cadence; Mira/background systematics dominate; null chi2 21.9/6)",
+  "tars_implied_total_dF_e_per_s": {
+   "M3V": {
+    "S12": [
+     33.9,
+     6.4
+    ],
+    "S39": [
+     16.8,
+     2.5
+    ],
+    "S66": [
+     21.3,
+     2.0
+    ],
+    "S93": [
+     19.0,
+     2.5
+    ]
+   },
+   "pairA": {
+    "S12": [
+     34.1,
+     6.4
+    ],
+    "S39": [
+     20.7,
+     3.1
+    ],
+    "S66": [
+     34.6,
+     3.3
+    ],
+    "S93": [
+     31.5,
+     4.2
+    ]
+   },
+   "Mira": {
+    "S12": [
+     41.6,
+     7.8
+    ],
+    "S39": [
+     29.8,
+     4.4
+    ],
+    "S66": [
+     59.5,
+     5.6
+    ],
+    "S93": [
+     53.8,
+     7.2
+    ]
+   }
+  },
+  "tars_constancy_chi2_S39_S66_S93_dof2": {
+   "M3V": 2.0,
+   "pairA": 10.4,
+   "Mira": 20.0
+  }
+ },
+ "2_other_archival_time_series": {
+  "NEOWISE": {
+   "n": 317,
+   "W1_scatter": 0.08007080361115587,
+   "W2_scatter": 0.05000499761800055,
+   "n_in_transit": 3,
+   "W1_depth": [
+    -0.05295489506887233,
+    0.046228900019130506
+   ],
+   "W2_depth": [
+    0.0172598948332409,
+    0.028870398835579215
+   ],
+   "verdict": "not usable: 5-8% scatter, halo-flagged by the Mira (cc_flags hh00), 3 in-transit points"
+  },
+  "AllWISE_MEP": "28 epochs (2010), none in transit",
+  "Gaia_DR3_epoch_photometry": "exists for the Mira only (has_epoch_photometry=False for the M3V, the pair and the faint neighbours)",
+  "Gaia_DR4_Dec2026": {
+   "n_fov_transits": 96,
+   "in_transit": 0,
+   "nearest_hours_from_mid": 6.7,
+   "verdict": "DR4 epoch photometry (data to 2020-01-20) contains no in-transit epoch"
+  },
+  "Gaia_DR5": {
+   "n_fov_transits": 110,
+   "expected_in_transit": 2.48,
+   "epochs": [
+    {
+     "utc": "2020-02-14 21:26:11.660",
+     "btjd": 1894.394,
+     "fov": 2,
+     "ac_deg": -0.2037,
+     "epoch": -342,
+     "dt_min": -42.3385,
+     "sigma_tc_min": 6.5037,
+     "p_in_transit": 0.8435,
+     "frac_in_transit": 0.4473
+    },
+    {
+     "utc": "2023-07-26 18:38:23.052",
+     "btjd": 3152.2775,
+     "fov": 1,
+     "ac_deg": -0.0646,
+     "epoch": -121,
+     "dt_min": 47.9012,
+     "sigma_tc_min": 2.866,
+     "p_in_transit": 0.6363,
+     "frac_in_transit": 0.0681
+    },
+    {
+     "utc": "2024-10-29 18:20:36.632",
+     "btjd": 3613.2651,
+     "fov": 1,
+     "ac_deg": -0.2486,
+     "epoch": -40,
+     "dt_min": 13.9377,
+     "sigma_tc_min": 2.5148,
+     "p_in_transit": 1.0,
+     "frac_in_transit": 1.0
+    }
+   ],
+   "caveat": "commanded scan law; in the DR3 window 19 of 58 predicted crossings of the Mira have no published epoch"
+  },
+  "scanlaw_validation": {
+   "n_dr3_G_obs": 39,
+   "n_pred_in_dr3_window": 58,
+   "match_dt_seconds_median": 10.630841553211212,
+   "match_dt_seconds_max": 14.378276467323303,
+   "n_obs_matched_within_60s": 39,
+   "n_pred_without_dr3_obs": 19,
+   "g_mag_range": [
+    11.349751748648021,
+    13.316887864910859
+   ],
+   "rejected_by_photometry": 0
+  },
+  "ASAS-SN": "not usable/not accessible: Sky Patrol v2 API timed out (port 9006), service reported down 13 Oct 2026; 8-arcsec pixels blend the Mira (17.8 arcsec, V 12.9-17.0); M3V V~15.6-15.9 gives 0.05-0.1 mag per epoch, ~1% duty cycle -> depth error >~2%",
+  "ATLAS": "forced photometry needs an account (not accessed); pixels 1.86 arcsec would resolve the Mira",
+  "SuperWASP": "not usable: 13.7-arcsec pixels, 48-arcsec aperture blends Mira+pair+M3V; V 15.6 below useful range",
+  "KELT": "not usable: 23-arcsec pixels; target far below KELT's V 8-11 range",
+  "MEarth-South": "not a plausible MEarth target (64.5 pc, 0.38 Rsun); target list not checked",
+  "ZTF/Pan-STARRS": "Dec -51 outside footprint"
+ },
+ "3_future_data": {
+  "TESS": {
+   "tess_point_version": "0.9.5.post1",
+   "observed_sectors": [
+    12,
+    39,
+    66,
+    93,
+    103,
+    104
+   ],
+   "future_sectors_through_134": [],
+   "last_planned_sector_end": "2028 Sep 13 (S134)",
+   "closest_camera_centre_deg": {
+    "114": 20.6,
+    "113": 24.3,
+    "115": 27.6
+   },
+   "heasarc_vs_tess_point_pointing_max_diff_deg": 0.004900000000020555,
+   "verdict": "no TESS data before at least Sept 2028; any later sector depends on a not-yet-scheduled Cycle 11+"
+  },
+  "Gaia_DR4": "Dec 2026: no in-transit epoch (see 2); epoch astrometry/photometry baseline only",
+  "Gaia_DR5": "~2030: 1 full + 1 partial (+1 marginal) in-transit epoch expected"
+ },
+ "4_catalog_status": {
+  "exofop": {
+   "214311906": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "214311908": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "214311910": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   }
+  },
+  "exofop_obsnotes": "'Matched Notes for TIC ID ...' empty for all three (checked 2026-10-17)",
+  "toi_table_rows": 8151,
+  "nearest_toi_arcmin": 19.2,
+  "ctoi_table_rows": 5138,
+  "nearest_ctoi_arcmin": 55.1,
+  "simbad": "Mira = 2MASS J17235464-5119254 (LP*); M3V = Gaia DR3 5925373272850784768 (PM*); refs only Gaia catalogue papers (GCNS 2021, DR3 LPV 2023)",
+  "vsx": "only the Mira: ASASSN-V J172354.64-511925.3, type M:, V 12.91-17.01, P 294 d",
+  "eb_catalogs": "none (no TESS EB catalogue, Gaia DR3 vari or VSX entry for the M3V or the pair)",
+  "arxiv": "no title/abstract/comment hit for any TIC, Gaia or 2MASS identifier; ADS full-text search not available (no token)",
+  "wide_binary": "El-Badry, Rix & Heintz 2021 catalogue lists M3V + TIC 214311910 (Gaia DR3 ...782208) as a wide pair",
+  "xray": "eRASS1 1eRASS J172352.9-511928, 3.6 arcsec from the M3V, coronal (p=0.995), M3V most likely counterpart (p_ij=0.73); F_X=4.9e-14 cgs -> L_X=2.5e28 erg/s, log L_X/L_bol=-3.4 (near saturated; pair 11.7 arcsec away could contribute)"
+ },
+ "5_priors": {
+  "occurrence_4to7Re_Mdwarfs": [
+   "Dressing & Charbonneau 2015 (ApJ 807, 45; arXiv:1501.01623), Kepler early M (<4000 K): bins stop at 4 Re; 3.5-4.0 Re: 0.36 (+0.72/-0.18)% at P 1.7-5.5 d and 0.87 (+1.65/-0.43)% at 5.5-18.2 d per star; text: lack of detections where completeness is high 'implies that hot mini-Neptunes and Neptunes are rare around low-mass stars'",
+   "Gillis, Cloutier, Pass et al. 2026 (arXiv:2602.23364), TESS mid-to-late M (<0.4 Msun, median 0.22): no Neptunes detected; 95% upper limit 0.0341 planets per star for 3-6.5 Re, P 0.2-30 d; sub-Neptunes (1.8-3 Re) 0.148 +- 0.045",
+   "Ment & Charbonneau 2023 (AJ 165, 265; arXiv:2302.04242): 1-sigma upper limit 0.07 planets > 1.5 Re per mid-to-late M dwarf at P 0.5-7 d",
+   "Hardegree-Ullman et al. 2019 (AJ 158, 75; arXiv:1905.05900): 0.5-2.5 Re, P 0.5-10 d: 0.86 (+1.32/-0.68) planets per M3V star (small planets only)",
+   "Hardegree-Ullman et al. 2025 (Scaling K2 VIII, arXiv:2508.05734): short-period sub-Neptune occurrence peaks at Teff 3750 (+153/-97) K and drops for cooler M dwarfs",
+   "Gan, Wang, Wang et al. 2023 (AJ, doi:10.3847/1538-3881/ac9b12; arXiv:2210.08313): hot Jupiters (7 Re-2 RJ, 0.8-10 d) around early M (0.45-0.65 Msun) 0.27 +- 0.09%",
+   "Bryant, Bayliss & Van Eylen 2023 (MNRAS, doi:10.1093/mnras/stad626; arXiv:2303.00659): giants 0.6-2 RJ, P<10 d: 0.108 +- 0.083% for 0.26-0.42 Msun; 0.194 +- 0.072% for 0.088-0.71 Msun",
+   "Sabotta et al. 2021 (A&A 653, A114; arXiv:2107.03802), CARMENES RV: 10-100 Mearth planets 0.18 (+0.07/-0.05) per star (P<1000 d); 'planets more massive than 10 Mearth become rare' for M < 0.34 Msun",
+   "Powers et al. 2023 (AJ 166(2), doi:10.3847/1538-3881/acd8bf; TOI-3785 b): 'rare population of Neptunes (4 < Rp < 7 Re) orbiting ... M-dwarf host stars, of which only ~10 have been confirmed'",
+   "Adopted for FPP (our synthesis, not a published number): f(4-7 Re, P 3-10 d | M3V, 0.37 Msun) ~ 0.1-1% per star, best guess ~0.3%; i.e. between the giant-planet rate (0.1-0.3%) and the 3.5-4 Re Kepler rate (~1% over 1.7-18 d)"
+  ],
+  "known_transiting_4to7Re_P_lt_10d_Teff_lt_4000K": {
+   "n_total": 18,
+   "n_teff_lt_3500": 1,
+   "n_mass_lt_0p45": 2,
+   "list": "out/known_mdwarf_neptunes.csv",
+   "note": "only TOI-3884 b (3180 K, 0.30 Msun, 6.4 Re, 4.54 d) has Teff < 3500 K; TOI-674 b (0.42 Msun) is the only other host < 0.45 Msun. The candidate (3300 K, 0.37 Msun, 5-6 Re, 5.69 d) would be the second such planet."
+  },
+  "multiplicity": [
+   "Winters et al. 2019 (AJ, doi:10.3847/1538-3881/ab05dc): M-dwarf multiplicity 26.8 +- 1.4%, companion rate 32.4 +- 1.4%; primaries 0.30-0.60 Msun: 28.2 +- 2.1% (uncorrected, 25 pc); projected separations log-normal, peak 20 au, sigma_log a = 1.16 (fraction of companions within 65 au = 1 arcsec at 64.5 pc: ~0.67 -> ~19% of M dwarfs with a companion inside 1 arcsec; our calculation from their fit); 37 triples among 1120 primaries (3.3%)",
+   "Shan, Johnson & Morton 2015 (ApJ 813, 75; arXiv:1509.04189): 0.11 (+0.02/-0.04) close (P = 1-90 d) M-dwarf companions per apparently single M dwarf from Kepler EBs; power-law period distribution exponent 0.52 +- 0.22",
+   "Moe & Kratter 2021 (MNRAS, doi:10.1093/mnras/stab2328): binaries with a < 1 au fully suppress S-type planets; a = 10 au at 15%; a > 200 au negligible (the M3V's known companions are at ~725 au)"
+  ],
+  "eb_geometry": "M+M binary at P = 5.69 d (0.3 Msun total): a ~ 0.042 au, eclipse probability (R1+R2)/a ~ 0.04; planet transit probability R*/a = 0.38 Rsun / 0.045 au ~ 0.039"
+ },
+ "6_followup": {
+  "csv_check": {
+   "n_csv": 42,
+   "n_matched": 42,
+   "max_abs_diff_min": 0.0709591805934906,
+   "max_sigma_diff_min": 0.04896998145106224,
+   "csv_epochs": [
+    108,
+    149
+   ],
+   "note": "CSV bjd_tdb is rounded to 1e-4 d (0.14 min); sigma already includes the chi2/dof = 4.86 inflation"
+  },
+  "n_fully_observable_Oct2026_Dec2027": 17,
+  "per_site": {
+   "CTIO": {
+    "sun12": 6,
+    "sun18": 6,
+    "plus2sigma": 5
+   },
+   "La Silla": {
+    "sun12": 6,
+    "sun18": 6,
+    "plus2sigma": 5
+   },
+   "SAAO Sutherland": {
+    "sun12": 6,
+    "sun18": 6,
+    "plus2sigma": 5
+   },
+   "Siding Spring": {
+    "sun12": 5,
+    "sun18": 5,
+    "plus2sigma": 5
+   }
+  },
+  "season": [
+   "2027-04",
+   "2027-05",
+   "2027-06",
+   "2027-07",
+   "2027-08"
+  ],
+  "late_2026": "none observable (best: 2026-11-02 23:04 UTC, 16% of the window from CTIO)",
+  "list": "out/followup_transits.csv",
+  "precision_per_event_snr_depth1p5pct": {
+   "0.4m_g": {
+    "nominal_red": 11.0753,
+    "poor_red": 6.8394,
+    "per_exposure_ppt": 5.884
+   },
+   "0.4m_r": {
+    "nominal_red": 14.9536,
+    "poor_red": 9.0991,
+    "per_exposure_ppt": 3.982
+   },
+   "0.4m_i": {
+    "nominal_red": 20.4281,
+    "poor_red": 11.6811,
+    "per_exposure_ppt": 2.295
+   },
+   "0.4m_z": {
+    "nominal_red": 18.4754,
+    "poor_red": 10.8885,
+    "per_exposure_ppt": 2.826
+   },
+   "1.0m_g": {
+    "nominal_red": 19.5771,
+    "poor_red": 10.9373,
+    "per_exposure_ppt": 3.213
+   },
+   "1.0m_r": {
+    "nominal_red": 22.5105,
+    "poor_red": 12.1536,
+    "per_exposure_ppt": 2.249
+   },
+   "1.0m_i": {
+    "nominal_red": 25.0806,
+    "poor_red": 13.0224,
+    "per_exposure_ppt": 1.37
+   },
+   "1.0m_z": {
+    "nominal_red": 24.3218,
+    "poor_red": 12.7988,
+    "per_exposure_ppt": 1.647
+   }
+  },
+  "mira_contamination": "Moffat beta 2.5, FWHM 2 arcsec, r=3 arcsec: Mira adds 4e-4 (i) to 2.6e-3 (i, Mira at max) of the M3V flux; FWHM 3 arcsec: up to 2-4% at max in i/z (beta 2.5) -> use FWHM < 2.5 arcsec or bluer bands; Mira core saturates in i/z in 60 s on a 1 m (peak ~2e5 e-)"
+ }
+}

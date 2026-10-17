@@ -1,0 +1,70 @@
+{
+ "queried_utc": "2026-10-17T10:03:42+00:00",
+ "pscomppars_cone_10arcmin": {
+  "query": "select pl_name,hostname,tic_id,gaia_dr3_id,ra,dec,disc_year,pl_orbper from pscomppars where ra between 260.70378 and 261.23719 and dec between -51.49087 and -51.15754",
+  "http_status": 200,
+  "n_rows": 0,
+  "rows": []
+ },
+ "pscomppars_by_id": {
+  "query": "select pl_name,hostname,tic_id,gaia_dr3_id from pscomppars where tic_id in ('TIC 214311908','TIC 214311906','TIC 214311910') or gaia_dr3_id like '%5925373272850784768%'",
+  "http_status": 200,
+  "n_rows": 0,
+  "rows": []
+ },
+ "ps_cone_10arcmin": {
+  "query": "select pl_name,hostname,tic_id,default_flag,disc_refname from ps where ra between 260.70378 and 261.23719 and dec between -51.49087 and -51.15754",
+  "http_status": 200,
+  "n_rows": 0,
+  "rows": []
+ },
+ "stellarhosts_cone_10arcmin": {
+  "query": "select sy_name,hostname,tic_id,ra,dec from stellarhosts where ra between 260.70378 and 261.23719 and dec between -51.49087 and -51.15754",
+  "http_status": 200,
+  "n_rows": 0,
+  "rows": []
+ },
+ "toi_by_tid": {
+  "query": "select toi,tid,ra,dec,tfopwg_disp,pl_orbper from toi where tid in (214311908,214311906,214311910,1515709322,1515709367,1515709327)",
+  "http_status": 200,
+  "n_rows": 0,
+  "rows": []
+ },
+ "toi_cone_30arcmin": {
+  "query": "select toi,tid,ra,dec,tfopwg_disp,pl_orbper from toi where ra between 260.17037 and 261.77060 and dec between -51.82420 and -50.82420",
+  "http_status": 200,
+  "n_rows": 1,
+  "rows": [
+   {
+    "toi": "4398.01",
+    "tid": "214243287",
+    "ra": "260.799238",
+    "dec": "-51.024433",
+    "tfopwg_disp": "APC",
+    "pl_orbper": "5.752521"
+   }
+  ]
+ },
+ "toi_table_size": {
+  "query": "select count(*) as n, max(toipfx) as max_toi, max(rowupdate) as last_update from toi",
+  "http_status": 200,
+  "n_rows": 1,
+  "rows": [
+   {
+    "n": "8151",
+    "max_toi": "999",
+    "last_update": "2026-10-09 16:00:03"
+   }
+  ]
+ },
+ "pscomppars_size": {
+  "query": "select count(*) as n from pscomppars",
+  "http_status": 200,
+  "n_rows": 1,
+  "rows": [
+   {
+    "n": "6451"
+   }
+  ]
+ }
+}

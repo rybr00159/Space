@@ -1,0 +1,74 @@
+{
+ "12": {
+  "add_mean_s": -18.429194458879227,
+  "add_min_s": -24.01778885555524,
+  "add_max_s": -13.612119696380546,
+  "investigator_add_mean_s": -18.963428629156144,
+  "diff_vs_investigator_s": 0.5342341702769176,
+  "timecorr_mean_min": 7.5049184959257556,
+  "qlp_minus_referee_median_s": 1.3159698450181168,
+  "qlp_minus_referee_rstd_s": 0.3575563776430499,
+  "n_match": 1289,
+  "n_qlp": 1289
+ },
+ "39": {
+  "add_mean_s": -12.607449410541731,
+  "add_min_s": -17.904211233201124,
+  "add_max_s": -8.245320625269528,
+  "investigator_add_mean_s": -13.155743495970322,
+  "diff_vs_investigator_s": 0.5482940854285907,
+  "timecorr_mean_min": 7.537141197173058,
+  "qlp_minus_referee_median_s": 1.3191157500841655,
+  "qlp_minus_referee_rstd_s": 0.29472628095798425,
+  "n_match": 3879,
+  "n_qlp": 3879
+ },
+ "66": {
+  "add_mean_s": -6.715284061378064,
+  "add_min_s": -16.922685535587675,
+  "add_max_s": 2.6428665326549776,
+  "investigator_add_mean_s": -6.991048683220448,
+  "diff_vs_investigator_s": 0.27576462184238437,
+  "timecorr_mean_min": 7.506765087942936,
+  "qlp_minus_referee_median_s": 1.6257651826890651,
+  "qlp_minus_referee_rstd_s": 0.5968643217245698,
+  "n_match": 12154,
+  "n_qlp": 12154
+ },
+ "93": {
+  "add_mean_s": -7.4064403151819365,
+  "add_min_s": -14.669152815916277,
+  "add_max_s": 1.5941352609231672,
+  "investigator_add_mean_s": -6.9901493275740405,
+  "diff_vs_investigator_s": -0.41629098760789596,
+  "timecorr_mean_min": 7.555465631930874,
+  "qlp_minus_referee_median_s": 2.505526393360924,
+  "qlp_minus_referee_rstd_s": 0.6327956026489846,
+  "n_match": 11047,
+  "n_qlp": 11047
+ },
+ "103": {
+  "add_mean_s": 30.855332433003824,
+  "add_min_s": 28.76592806242951,
+  "add_max_s": 33.561753008961944,
+  "investigator_add_mean_s": 31.400427801815102,
+  "diff_vs_investigator_s": -0.5450953688112783,
+  "timecorr_mean_min": 5.159329572343904,
+  "qlp_minus_referee_median_s": 33.05936506512808,
+  "qlp_minus_referee_rstd_s": 33.04158415936137,
+  "n_match": 8018,
+  "n_qlp": 10964
+ },
+ "104": {
+  "add_mean_s": -13.109917623062973,
+  "add_min_s": -14.004104270398614,
+  "add_max_s": -11.375371503236579,
+  "investigator_add_mean_s": -12.507439460884248,
+  "diff_vs_investigator_s": -0.6024781621787252,
+  "timecorr_mean_min": 7.4149031288821625,
+  "qlp_minus_referee_median_s": -39.75108568556607,
+  "qlp_minus_referee_rstd_s": 16.5845866482344,
+  "n_match": 11219,
+  "n_qlp": 11227
+ }
+}

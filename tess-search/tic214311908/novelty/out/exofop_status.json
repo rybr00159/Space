@@ -1,0 +1,650 @@
+{
+ "queried_utc": "2026-10-17T09:57:03+00:00",
+ "tables": {
+  "toi": {
+   "url": "https://exofop.ipac.caltech.edu/tess/download_toi.php?sort=toi&output=csv",
+   "http_status": 200,
+   "n_rows": 8151,
+   "sha256": "17a99aef6cc321aae70aae1e924877c522db35cc6bba50fb15de428d881abd1d",
+   "columns": [
+    "TIC ID",
+    "TOI",
+    "Previous CTOI",
+    "Master",
+    "SG1A",
+    "SG1B",
+    "SG2",
+    "SG3",
+    "SG4",
+    "SG5",
+    "ESM",
+    "TSM",
+    "Predicted Mass (M_Earth)",
+    "Predicted RV Semi-amplitude (m/s)",
+    "Time Series Observations",
+    "Spectroscopy Observations",
+    "Imaging Observations",
+    "TESS Disposition",
+    "TFOPWG Disposition",
+    "TESS Mag",
+    "TESS Mag err",
+    "Planet Name",
+    "Pipeline Signal ID",
+    "Source",
+    "Detection",
+    "RA",
+    "Dec",
+    "PM RA (mas/yr)",
+    "PM RA err (mas/yr)",
+    "PM Dec (mas/yr)",
+    "PM Dec err (mas/yr)",
+    "Epoch (BJD)",
+    "Epoch (BJD) err",
+    "Period (days)",
+    "Period (days) err",
+    "Duration (hours)",
+    "Duration (hours) err",
+    "Depth (mmag)",
+    "Depth (mmag) err",
+    "Depth (ppm)",
+    "Depth (ppm) err",
+    "Planet Radius (R_Earth)",
+    "Planet Radius (R_Earth) err",
+    "Planet Insolation (Earth Flux)",
+    "Planet Equil Temp (K)",
+    "Planet SNR",
+    "Stellar Distance (pc)",
+    "Stellar Distance (pc) err",
+    "Stellar Eff Temp (K)",
+    "Stellar Eff Temp (K) err",
+    "Stellar log(g) (cm/s^2)",
+    "Stellar log(g) (cm/s^2) err",
+    "Stellar Radius (R_Sun)",
+    "Stellar Radius (R_Sun) err",
+    "Stellar Metallicity",
+    "Stellar Metallicity err",
+    "Stellar Mass (M_Sun)",
+    "Stellar Mass (M_Sun) err",
+    "Sectors",
+    "Date TOI Alerted (UTC)",
+    "Date TOI Updated (UTC)",
+    "Date Modified",
+    "Comments"
+   ],
+   "tic_column": "TIC ID",
+   "matches_by_tic": {
+    "214311908": 0,
+    "214311906": 0,
+    "214311910": 0,
+    "1515709322": 0,
+    "1515709367": 0,
+    "1515709327": 0
+   },
+   "n_within_10arcmin": 0,
+   "n_within_60arcmin": 3,
+   "min_sep_arcmin": 19.10477146641224,
+   "nearest": {
+    "TIC ID": "214243287",
+    "TOI": "4398.01",
+    "TESS Disposition": "PC",
+    "TFOPWG Disposition": "APC",
+    "RA": "17:23:11.82",
+    "Dec": "-51:01:27.96",
+    "Period (days)": "5.752521048570042",
+    "Comments": "Secondary eclipse depth may be consistent with a planet; visual binary; no stellar parameters but  color and parallax are consistent with a G dwarf"
+   },
+   "within_60arcmin": [
+    {
+     "id": "4398.01",
+     "tic": "214243287",
+     "sep_arcmin": 19.1
+    },
+    {
+     "id": "5061.01",
+     "tic": "214218272",
+     "sep_arcmin": 40.51
+    },
+    {
+     "id": "901.01",
+     "tic": "214361331",
+     "sep_arcmin": 56.4
+    }
+   ],
+   "max_id": 7927.01,
+   "latest_dates": {
+    "Date TOI Alerted (UTC)": "2026-10-08",
+    "Date TOI Updated (UTC)": "2026-10-14",
+    "Date Modified": "2026-10-15"
+   },
+   "text_mentions": {
+    "214311908": 0,
+    "214311906": 0,
+    "214311910": 0,
+    "5925373272850784768": 0,
+    "J17235292": 0,
+    "J17235464": 0
+   }
+  },
+  "ctoi": {
+   "url": "https://exofop.ipac.caltech.edu/tess/download_ctoi.php?sort=ctoi&output=csv",
+   "http_status": 200,
+   "n_rows": 5138,
+   "sha256": "1059ac9235aa11d4bf914153ddc0278431709f090607497325a9b7c208911bb4",
+   "columns": [
+    "TIC ID",
+    "CTOI",
+    "Promoted to TOI",
+    "Discovery Data Source",
+    "Candidate Name",
+    "MASTER",
+    "SG1A",
+    "SG1B",
+    "SG2",
+    "SG3",
+    "SG4",
+    "SG5",
+    "User Disposition",
+    "TFOPWG Disposition",
+    "TESS Mag",
+    "TESS Mag err",
+    "RA",
+    "Dec",
+    "PM RA (mas/yr)",
+    "PM RA err (mas/yr)",
+    "PM Dec (mas/yr)",
+    "PM Dec err (mas/yr)",
+    "Transit Epoch (BJD)",
+    "Transit Epoch (BJD) err",
+    "Period (days)",
+    "Period (days) Error",
+    "Depth mmag",
+    "Depth mmag Error",
+    "Depth ppm",
+    "Depth ppm Error",
+    "Duration (hrs)",
+    "Duration (hrs) Error",
+    "Inclination (deg)",
+    "Inclination (deg) Error",
+    "Impact Param",
+    "Impact Param Error",
+    "Rad_p/Rad_s",
+    "Rad_p/Rad_s Error",
+    "a/Rad_s",
+    "a/Rad_s Error",
+    "Planet Radius (R_Earth)",
+    "Planet Radius (R_Earth) Error",
+    "Mass (M_Earth)",
+    "Mass (M_Earth) Error",
+    "Insolation (Earth Flux)",
+    "Insolation (Earth Flux) Error",
+    "Equilibrium Temp (K)",
+    "Equilibrium Temp (K) Error",
+    "Fitted Stellar Density (g/cm^3)",
+    "Fitted Stellar Density (g/cm^3) Error",
+    "Semi-Major Axis (AU)",
+    "Semi-Major Axis (AU) Error",
+    "Eccentricity",
+    "Eccentricity (Error)",
+    "Arg of Periastron",
+    "Arg of Periastron Error",
+    "Time of Periastron (BJD)",
+    "Time of Periastron (BJD) Error",
+    "Velocity Semi-amp (m/s)",
+    "Velocity Semi-amp (m/s) Error",
+    "Stellar Distance (pc)",
+    "Stellar Distance (pc) err",
+    "Stellar Eff Temp (K)",
+    "Stellar Eff Temp (K) err",
+    "Stellar log(g) (cm/s^2)",
+    "Stellar log(g) (cm/s^2) err",
+    "Stellar Radius (R_Sun)",
+    "Stellar Radius (R_Sun) err",
+    "CTOI lastmod",
+    "User",
+    "Group",
+    "Tag",
+    "Paper",
+    "Notes"
+   ],
+   "tic_column": "TIC ID",
+   "matches_by_tic": {
+    "214311908": 0,
+    "214311906": 0,
+    "214311910": 0,
+    "1515709322": 0,
+    "1515709367": 0,
+    "1515709327": 0
+   },
+   "n_within_10arcmin": 0,
+   "n_within_60arcmin": 1,
+   "min_sep_arcmin": 55.31764537612926,
+   "nearest": {
+    "TIC ID": "231274151",
+    "CTOI": "231274151.01",
+    "User Disposition": "PC",
+    "TFOPWG Disposition": "nan",
+    "RA": "41.48366",
+    "Dec": "-50.877522",
+    "Period (days)": "1.23566",
+    "Notes": "DTARPS 247 in Melton+  arXiv:2302.06724"
+   },
+   "within_60arcmin": [
+    {
+     "id": "231274151.01",
+     "tic": "231274151",
+     "sep_arcmin": 55.32
+    }
+   ],
+   "max_id": 2050290974.01,
+   "latest_dates": {
+    "CTOI lastmod": "2026-10-08"
+   },
+   "text_mentions": {
+    "214311908": 0,
+    "214311906": 0,
+    "214311910": 0,
+    "5925373272850784768": 0,
+    "J17235292": 0,
+    "J17235464": 0
+   }
+  }
+ },
+ "targets": {
+  "214311908": {
+   "label": "M3V (target)",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 2,
+    "stellar_companions": 0,
+    "magnitudes": 11,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "214311908",
+    "star_names": "TIC 214311908, 2MASS J17235292-5119271, APASS 24986318, Gaia DR2 5925373272850784768, Gaia DR3 5925373272850784768, UCAC4 194-162330, WISE J172352.86-511926.1",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "2.229999"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n214311908           0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 84,
+    "excerpt": "ExoFOP TIC 214311908 --> TESS --> News Help Login Matched Notes for TIC ID 214311908"
+   }
+  },
+  "214311906": {
+   "label": "Mira",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 2,
+    "stellar_companions": 0,
+    "magnitudes": 11,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "214311906",
+    "star_names": "TIC 214311906, 2MASS J17235464-5119254, APASS 24986319, Gaia DR2 5925373268528684288, UCAC4 194-162350, WISE J172354.61-511925.3",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "none"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n214311906           0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 84,
+    "excerpt": "ExoFOP TIC 214311906 --> TESS --> News Help Login Matched Notes for TIC ID 214311906"
+   }
+  },
+  "214311910": {
+   "label": "pair A/B (TIC 8 'SPLIT' parent)",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 0,
+    "stellar_companions": 0,
+    "magnitudes": 6,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "214311910",
+    "star_names": "TIC 214311910, 2MASS J17235419-5119283, Gaia DR2 5925373272850782208, Gaia DR3 5925373272850782208, UCAC4 194-162344",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "none"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n214311910           0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 84,
+    "excerpt": "ExoFOP TIC 214311910 --> TESS --> News Help Login Matched Notes for TIC ID 214311910"
+   }
+  },
+  "1515709322": {
+   "label": "pair, split entry 1",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 0,
+    "stellar_companions": 0,
+    "magnitudes": 2,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "1515709322",
+    "star_names": "TIC 1515709322, Gaia DR2 5925373272827253632, Gaia DR3 5925373272827253632",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "none"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n1515709322          0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 86,
+    "excerpt": "ExoFOP TIC 1515709322 --> TESS --> News Help Login Matched Notes for TIC ID 1515709322"
+   }
+  },
+  "1515709367": {
+   "label": "pair, split entry 2 (duplicate of 214311910)",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 0,
+    "stellar_companions": 0,
+    "magnitudes": 2,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "1515709367",
+    "star_names": "TIC 1515709367, Gaia DR2 5925373272850782208, Gaia DR3 5925373272850782208",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "none"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n1515709367          0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 86,
+    "excerpt": "ExoFOP TIC 1515709367 --> TESS --> News Help Login Matched Notes for TIC ID 1515709367"
+   }
+  },
+  "1515709327": {
+   "label": "3.1 arcsec neighbour (G=17.5)",
+   "target_json_keys": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_companions": 0,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "all_list_lengths": {
+    "tois": 0,
+    "ctois": 0,
+    "planet_parameters": 0,
+    "stellar_parameters": 2,
+    "stellar_companions": 0,
+    "magnitudes": 3,
+    "imaging": 0,
+    "spectroscopy": 0,
+    "time_series": 0,
+    "files": 0
+   },
+   "basic_info": {
+    "tic_id": "1515709327",
+    "star_names": "TIC 1515709327, Gaia DR2 5925373272827260544, Gaia DR3 5925373272827260544",
+    "confirmed_planets": "",
+    "tic_contamination_ratio": "none"
+   },
+   "uploads": {
+    "http_status": 200,
+    "n_lines": 2,
+    "content": "TIC ID              Time Series Observations      Spectroscopy Observations     Imaging Observations          Files               Observation Notes   Stellar Parameters       Stellar Companion Parameters            Planet Parameters        \n1515709327          0                             0                             0                             0                   0                   0                        0                                       0"
+   },
+   "filelist": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "Type,File Name,File ID,Name,TOI,Date,User,Group,Tag,Description"
+   },
+   "imaging": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Filter,Image Type,Pixel Scale,PSF,Contrast,Obs Date,User,Group,Tag,Notes"
+   },
+   "spect": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Instrument,Spectral resolution,Wavelength coverage,SNR/resolution,SNR wavelength,Appropriate to PRV,Obs date,User,Group,Tag,Notes"
+   },
+   "tseries": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,Name,TOI,Telescope,Camera,Filter,Pixel Scale,PSF,Phot Aperture Rad,Obs Date,Obs Duration,Num Obs,Obs Type,Transit Coverage,Delta Mag,User,Group,Tag,Notes"
+   },
+   "stellarcomp": {
+    "http_status": 200,
+    "n_lines": 1,
+    "content": "TIC ID,TOI,Separation (arcsec),Separation (arcsec) Error,Pos Angle E of N (deg),Pos Angle E of N (deg) Error,Filter,Delta Mag,Delta Mag Error,Observation Date (UT),Date,User,Group,Tag,Notes"
+   },
+   "obsnotes_page": {
+    "http_status": 200,
+    "text_len": 86,
+    "excerpt": "ExoFOP TIC 1515709327 --> TESS --> News Help Login Matched Notes for TIC ID 1515709327"
+   }
+  }
+ }
+}
