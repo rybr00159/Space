@@ -4,8 +4,9 @@ This folder re-checks whether the 5.69-d transit candidate on the M3 dwarf TIC 2
 anywhere. The star is Gaia DR3 5925373272850784768 = 2MASS J17235292-5119271, at 64.3 pc (zero-point-corrected parallax). The check also covers the Mira
 TIC 214311906, which lies 17.8" to the east, and the pair TIC 214311910, 11.7" away.
 
-* All queries were read-only GET requests, run on **2026-10-17 between 09:53 and 10:47 UTC**. The exact time of each
-  query is the `queried_utc` field of the matching `out/*.json` file.
+* All queries were read-only GET requests, run on **2026-10-17 between 09:53 and 10:47 UTC**. The ADS full-text search
+  (row 9) was added later the same day, at 19:28–19:30 UTC. The exact time of each query is the `queried_utc` field of
+  the matching `out/*.json` file.
 * Nothing was submitted, uploaded or posted.
 * An AI agent ran this check. No professional astronomer has reviewed it.
 
@@ -32,9 +33,13 @@ confirmed it. This folder repeats those queries and extends them.
 | 1515709322, 1515709367 | the pair's split TIC entries |
 | 1515709327 | the 3.1" neighbour |
 
+**ADS full text.** No NASA ADS record names the M3V's TIC, Gaia DR3 or 2MASS identifier, or the Mira's TIC number, in
+its full text, acknowledgements, abstract, title or keywords (searched 2026-10-17; section 4).
+
 **Prior mentions of the M3V.** Only catalogues mention it. No paper discusses it.
 
 * SIMBAD lists it only under its Gaia DR3 name, with a single reference: the Gaia Catalogue of Nearby Stars.
+* The ADS full-text search finds no paper that names it in its text.
 * Several catalogue entries are worth citing; they are listed in section 6.
 
 **What changed since the ctx/ check.** One new catalogue matters, and one entry needs context:
@@ -62,7 +67,7 @@ confirmed it. This folder repeats those queries and extends them.
 | 6 | arXiv API (`all:"…"`, i.e. title, abstract, comments, journal ref) | 28 strings: TIC, Gaia DR2/DR3, 2MASS, WISE, UCAC4, APASS, 1eRASS and PIC names of the three stars; coordinate strings | **0 hits for every string.** Positive controls ("TIC 172900988", "TOI-3884") return 5–8 | `out/literature_search.json`, `out/literature_controls.json` |
 | 7 | Web search (general engine) | "TIC 214311908"; "5925373272850784768"; "J17235292-5119271"; "TIC 214311906"/"TIC 214311910"/"ASASSN-V J172354.64-511925.3"; a descriptive query (M3 dwarf, Neptune, 5.69 d) | **No relevant result.** All hits are other objects | summarised here only |
 | 8 | Semantic Scholar snippet search (full text of open-access papers) | Main identifiers plus controls | **Not usable:** the first query (the TOI-3884 control) got HTTP 429 (rate limit) on 5 tries over about 8 min, and a separate single request also got 429, so the run was stopped. See note C | `out/literature_controls.json` |
-| 9 | NASA ADS (full text) | — | **Not queried:** no ADS API token is available in this environment | — |
+| 9 | NASA ADS search API (`/v1/search/query`), field `full` (body text, acknowledgements, abstract, title and keywords); all collections and years | 18 written forms of 214311908, 5925373272850784768, J17235292-5119271 and 214311906 (note F); positive controls of the same forms | **0 records name any of the four identifiers.** The controls return 1–38 records each. The two `TIC-…` forms return the same 21 unrelated records, which match only through the ADS synonym "TIC" = "Tycho Input Catalog" | `out/ads_fulltext.json`, `out/n09.log`, `raw/ads_full_TIC_<TIC>.json` |
 | 10 | Gaia DR3 (ESA TAP) | `gaia_source` flags; all 13 `vari_*` tables; all 4 `nss_*` tables for 7 sources; flagged sources within 60″ | **The M3V is in no vari or NSS table.** Details in section 5 | `out/gaia_vari_nss.json`, `raw/gaia_*.csv` |
 | 11 | VSX | VizieR copy `B/vsx/vsx`, 5′ cone. The AAVSO VSX API returned a Cloudflare challenge (HTTP 403) | **Nothing at the M3V or the pair**; the only VSX star within 16″ is the Mira. 15 entries within 5′ | `out/vsx_status.json`, `raw/vsx_vizier_5arcmin.csv` |
 | 12 | VizieR, all catalogues | 4″ cones at the J2000 and J2016 positions | 63 catalogues, the same set as the ctx/ list (apart from the GUMS simulation). References and rows of the non-survey catalogues fetched | `out/vizier_catalogues_m3v.csv`, `out/vizier_status.json`, `raw/vizier_rows_*.csv` |
@@ -84,6 +89,9 @@ confirmed it. This folder repeats those queries and extends them.
 * **E. Planet Hunters TESS.** This project showed volunteers 2-min cadence light curves. This star never had 2-min data,
   so it was almost certainly never shown there. Any PHT candidate would in any case appear in the CTOI table, which has
   none.
+* **F. ADS written forms.** ADS indexes some forms of one identifier as different words, so each form was searched on
+  its own. `TIC214311908` (no space) and `214311908.01` (a CTOI-style name) are single words, and so is the J-prefixed
+  half of a 2MASS name. Section 4 lists the forms and the controls.
 
 ## 1. ExoFOP
 
@@ -122,15 +130,87 @@ There is no planet-type (Pl, Pl?) object within 30′.
 
 * **arXiv:** 0 hits for all 28 identifier and coordinate strings, while the controls work.
 * **Web search:** no relevant result.
-* **ADS full text:** not checked (no token).
+* **ADS full text:** 0 records for the four identifiers searched, in all 18 written forms, while the controls work
+  (below).
 * **Semantic Scholar full text:** blocked by rate limiting.
 * So "no paper mentions the star" rests on the following:
+  * the ADS full-text search, which covers the text of nearly all refereed astronomy papers and arXiv e-prints;
   * arXiv metadata;
   * a general web search;
   * the SIMBAD bibliography (1 reference);
   * the VizieR holdings, which list every published table containing the star.
-* A paper that names the star only in its full text, without a VizieR table or a SIMBAD link, cannot be excluded.
-  **An ADS full-text search for "214311908" and "5925373272850784768" before submission is recommended.**
+* The ADS full-text search recommended here before submission was run on 2026-10-17 and finds nothing. A paper can
+  still be missed if ADS holds no full text for it (mainly variable-star bulletins; see the coverage table below), or
+  if it names the star only in a machine-readable table.
+
+### ADS full-text search (2026-10-17, 19:28–19:30 UTC)
+
+`scripts/n09_ads_fulltext.py` queried the ADS search API with the field `full`, which covers the body text,
+acknowledgements, abstract, title and keywords. No year or collection filter was used. A hit counts only if the
+highlighted text contains the identifier itself.
+
+| Star | Identifier | Written forms searched | Records naming it |
+|---|---|---|---|
+| M3V | TIC 214311908 | `214311908`, `TIC 214311908`, `TIC214311908`, `TIC-214311908`, `214311908.01` | **0** |
+| M3V | Gaia DR3 5925373272850784768 | `5925373272850784768`, `Gaia DR3 5925373272850784768` | **0** |
+| M3V | 2MASS J17235292-5119271 | `J17235292-5119271`, `2MASS J17235292-5119271`, `2MASSJ17235292-5119271`, `17235292-5119271`, `J17235292`, `5119271` | **0** |
+| Mira | TIC 214311906 | `214311906`, `TIC 214311906`, `TIC214311906`, `TIC-214311906`, `214311906.01` | **0** |
+
+**Why several forms.** ADS indexes some forms of one identifier as different words:
+
+* TIC and the number written without a space (`TIC214311908`) make one word.
+* A decimal such as `214311908.01` (a CTOI-style name) is one word: 847 records contain "700.01" in their body text
+  but not "700".
+* A 2MASS name splits at the hyphen, but its J-prefixed half stays one word: `23062928` finds no record, while
+  `J23062928` finds 35. So the form without the J was searched too, and so were the two halves on their own.
+* A Unicode minus is read like a hyphen: the TRAPPIST-1 control finds 36 records either way.
+
+**The 21 false matches.** Every form except `TIC-…` returns nothing. The two `TIC-…` forms return the same 21
+records. ADS expands "TIC" to its synonym "Tycho Input Catalog", and with a hyphen the synonym alone is enough for a
+match.
+
+* 10 records are VizieR descriptions of Astrographic Catalogue zones reduced to the ACRS (Urban et al., 1995–1996).
+* 11 are papers from 1998–2024 that cite the Tycho Input Catalog.
+* 20 of the 21 have highlighted text naming the Tycho Input Catalog; the 21st returns no snippet.
+* Neither TIC number is in any of them: the bare-number searches return nothing.
+
+**Positive controls.** These use the same written forms, for stars that papers do name.
+
+| Form | Control | `full` | `body` | `body`, not in abstract |
+|---|---|---|---|---|
+| TIC number | `172900988` (TIC 172900988, a TESS circumbinary-planet host) | 35 | 32 | 26 |
+| TIC, no space | `TIC172900988` | 9 | 8 | 5 |
+| Gaia source_id | `2635476908753563008` (TRAPPIST-1) | 4 | 4 | 4 |
+| Gaia source_id | `5853498713190525696` (Proxima Cen) | 2 | 2 | 2 |
+| Gaia source_id | `4472832130942575872` (Barnard's star) | 2 | 2 | 2 |
+| 2MASS name | `J23062928-0502285` (TRAPPIST-1) | 38 | 36 | 32 |
+| 2MASS, J half | `J23062928` | 37 | 35 | 31 |
+| 2MASS, no J | `23062928-0502285` | 1 | 1 | 1 |
+
+* The Gaia IDs are never in an abstract, so the body text alone finds them. One example is "Gaia DR3
+  5853498713190525696 = Proxima Cen" in 2022ApJ...935L...9B.
+* **Freshness:** 9721 of the 9909 arXiv records added to ADS in the 7 days before the search (98%) have indexed full
+  text. The most recent was added on 2026-10-16.
+
+**Full-text coverage.** This is the share of 2019–2026 records with indexed body text (`has:body`).
+
+| Records, 2019–2026 | With full text |
+|---|---|
+| Refereed records in the astronomy collection | 87.7% (235,423 of 268,374) |
+| arXiv e-prints | 97.3% |
+| AJ, ApJ, ApJL, ApJS, PASP, RNAAS | 99.8–100% each |
+| MNRAS, A&A, AN | 97.4–98.8% each |
+| JAAVSO; OEJV | 9.5% (39 of 412); 14.5% (16 of 110) |
+| IBVS; Peremennye Zvezdy | 3 of 15; 2 of 81 |
+| ATel | 0 of 5757 |
+
+**What the ADS search cannot see:**
+
+* **Machine-readable tables.** No catalogue paper in section 6 is returned, although most of them list the M3V under
+  its Gaia, TIC or 2MASS identifier. So ADS does not index those tables.
+* **Variable-star bulletins and ATel.** ADS holds little or no full text for them. This matters mostly for the Mira.
+* **Other names.** Only the four identifiers above were searched in ADS. The pair, the 3.1″ star and the Mira's other
+  names (Gaia DR3, 2MASS, ASAS-SN) were not.
 
 ## 5. Variability and binarity flags
 
@@ -234,13 +314,15 @@ This does not affect the transit analysis.
 
 ## 8. Limits of this check
 
-* ADS full text was not searched (no token), and the Semantic Scholar full-text search was rate-limited.
+* The Semantic Scholar full-text search was rate-limited.
+* ADS full text was searched only for the four identifiers in section 4. It cannot see machine-readable tables or most
+  variable-star bulletins.
 * The AAVSO VSX API was blocked; its VizieR copy was used instead.
 * TESS working-group and TFOP-internal material is not public. A candidate under internal review that has not reached
   the TOI table cannot be seen.
 * QLP and SPOC TCE lists for FFI stars are not public for this star; no SPOC products exist.
-* ExoFOP and NEA tables change daily. This check is valid for 2026-10-17 only and should be repeated just before any
-  submission.
+* ExoFOP and NEA tables change daily, and ADS adds papers daily. This check is valid for 2026-10-17 only and should be
+  repeated just before any submission. `scripts/n09_ads_fulltext.py` repeats the ADS part.
 
 ## Scripts and outputs
 
@@ -257,3 +339,4 @@ All scripts take the folder path as their first argument and are run with `pytho
 | `scripts/n06_mast.py` | MAST product inventory within 5″ | `out/mast_inventory.csv`, `out/mast_status.json`, `out/n06.log` |
 | `scripts/n07_xray_mdwarf.py` | eRASS1 / Freund / Salvato / eRASS:3 rows within 30″; named M-dwarf, variable and EB catalogues (10″) | `out/xray_mdwarf.json`, `out/n07.log`, `raw/vizier_xray_*.csv`, `raw/readme_*.txt` |
 | `scripts/n08_gaia_dispersion.py` | M3V Gaia photometry counters; Maíz Apellániz+23 comparison sample | `out/gaia_dispersion_context.json`, `out/n08.log`, `raw/maiz23_comparison_mdwarfs.csv` |
+| `scripts/n09_ads_fulltext.py` | NASA ADS full-text search (field `full`) for 18 written forms of the four identifiers, with a snippet check of every hit; positive controls, index freshness and full-text coverage by journal. Needs an ADS API token (`ADS_API_TOKEN`, or a proxy that adds it) | `out/ads_fulltext.json`, `out/n09.log`, `raw/ads_full_TIC_<TIC>.json` |

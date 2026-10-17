@@ -1,0 +1,45 @@
+target 'full:"214311908"' 0 identifier in text: 0 [] 
+target 'full:"TIC 214311908"' 0 identifier in text: 0 [] 
+target 'full:"TIC214311908"' 0 identifier in text: 0 [] 
+target 'full:"TIC-214311908"' 21 identifier in text: 0 ['1996yCat.1231....0U', '1996yCat.1228....0U', '1996yCat.1226....0U', '1996yCat.1232....0U', '1996yCat.1227....0U', '1995yCat.1219....0U', '1995yCat.1223....0U', '1995yCat.1222....0U', '1996yCat.1225....0U', '1996yCat.1224....0U'] 
+target 'full:"214311908.01"' 0 identifier in text: 0 [] 
+target 'full:"5925373272850784768"' 0 identifier in text: 0 [] 
+target 'full:"Gaia DR3 5925373272850784768"' 0 identifier in text: 0 [] 
+target 'full:"J17235292-5119271"' 0 identifier in text: 0 [] 
+target 'full:"2MASS J17235292-5119271"' 0 identifier in text: 0 [] 
+target 'full:"2MASSJ17235292-5119271"' 0 identifier in text: 0 [] 
+target 'full:"17235292-5119271"' 0 identifier in text: 0 [] 
+target 'full:"J17235292"' 0 identifier in text: 0 [] 
+target 'full:"5119271"' 0 identifier in text: 0 [] 
+target 'full:"214311906"' 0 identifier in text: 0 [] 
+target 'full:"TIC 214311906"' 0 identifier in text: 0 [] 
+target 'full:"TIC214311906"' 0 identifier in text: 0 [] 
+target 'full:"TIC-214311906"' 21 identifier in text: 0 ['1996yCat.1231....0U', '1996yCat.1228....0U', '1996yCat.1226....0U', '1996yCat.1232....0U', '1996yCat.1227....0U', '1995yCat.1219....0U', '1995yCat.1223....0U', '1995yCat.1222....0U', '1996yCat.1225....0U', '1996yCat.1224....0U'] 
+target 'full:"214311906.01"' 0 identifier in text: 0 [] 
+control TIC '172900988' {'full': 35, 'body': 32, 'abs': 9, 'body_not_abs': 26} [('2021AJ....162..234K', True), ('2024MNRAS.527.2261S', True), ('2023MNRAS.519.3832G', True)]
+control TIC 'TIC 172900988' {'full': 35, 'body': 32, 'abs': 9, 'body_not_abs': 26} [('2021AJ....162..234K', True), ('2024MNRAS.527.2261S', True), ('2025SciA...11..627B', True)]
+control TIC 'TIC172900988' {'full': 9, 'body': 8, 'abs': 4, 'body_not_abs': 5} [('2023MNRAS.519.3832G', True), ('2022MNRAS.511.4396G', True), ('2024MNRAS.527.2261S', False)]
+control Gaia DR3 '2635476908753563008' {'full': 4, 'body': 4, 'abs': 0, 'body_not_abs': 4} [('2021A&A...650A.138S', True), ('2025AJ....170..168L', False), ('2021csss.confE.201S', True)]
+control Gaia DR3 '5853498713190525696' {'full': 2, 'body': 2, 'abs': 0, 'body_not_abs': 2} [('2022ApJ...935L...9B', True), ('2026arXiv260608773D', False)]
+control Gaia DR3 '4472832130942575872' {'full': 2, 'body': 2, 'abs': 0, 'body_not_abs': 2} [('2024A&A...688L..24L', True), ('2024yCat..36920206C', False)]
+control 2MASS 'J23062928-0502285' {'full': 38, 'body': 36, 'abs': 6, 'body_not_abs': 32} [('2017ApJ...841..124V', True), ('2018ARep...62..412D', True), ('2017MNRAS.465L..74W', True)]
+control 2MASS 'J23062928' {'full': 37, 'body': 35, 'abs': 6, 'body_not_abs': 31} [('2016Natur.533..221G', False), ('2017ApJ...841..124V', True), ('2018ARep...62..412D', True)]
+control 2MASS '23062928-0502285' {'full': 1, 'body': 1, 'abs': 0, 'body_not_abs': 1} [('2007PASP..119..828B', True)]
+tokens {'tokens: 700.01 without 700': 847, 'tokens: 23062928 (2MASS half without the J)': 0, 'tokens: J23062928−0502285 (Unicode minus)': 36}
+freshness {'arxiv_entered_last_7d': 9909, 'arxiv_entered_last_7d_with_body': 9721, 'latest_entry': [('2026arXiv261022372L', '2026-10-16T04:02:27Z')]}
+coverage refereed astronomy 2019-2026 {'records': 268374, 'with_body': 235423, 'fraction': 0.877}
+coverage arXiv 2019-2026 {'records': 1282264, 'with_body': 1247761, 'fraction': 0.973}
+coverage AJ 2019-2026 {'records': 4725, 'with_body': 4722, 'fraction': 0.999}
+coverage ApJ 2019-2026 {'records': 27111, 'with_body': 27106, 'fraction': 1.0}
+coverage ApJL 2019-2026 {'records': 5833, 'with_body': 5829, 'fraction': 0.999}
+coverage ApJS 2019-2026 {'records': 2511, 'with_body': 2509, 'fraction': 0.999}
+coverage MNRAS 2019-2026 {'records': 28433, 'with_body': 28039, 'fraction': 0.986}
+coverage A&A 2019-2026 {'records': 21750, 'with_body': 21495, 'fraction': 0.988}
+coverage PASP 2019-2026 {'records': 1140, 'with_body': 1139, 'fraction': 0.999}
+coverage RNAAS 2019-2026 {'records': 2269, 'with_body': 2264, 'fraction': 0.998}
+coverage AN 2019-2026 {'records': 911, 'with_body': 887, 'fraction': 0.974}
+coverage JAVSO 2019-2026 {'records': 412, 'with_body': 39, 'fraction': 0.095}
+coverage OEJV 2019-2026 {'records': 110, 'with_body': 16, 'fraction': 0.145}
+coverage IBVS 2019-2026 {'records': 15, 'with_body': 3, 'fraction': 0.2}
+coverage PZ 2019-2026 {'records': 81, 'with_body': 2, 'fraction': 0.025}
+coverage ATel 2019-2026 {'records': 5757, 'with_body': 0, 'fraction': 0.0}

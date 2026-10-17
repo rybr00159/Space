@@ -1,0 +1,940 @@
+{
+ "queried_utc": "2026-10-17T19:27:56+00:00",
+ "api": "https://api.adsabs.harvard.edu/v1/search/query",
+ "field_full": "body + ack + abstract + title + keywords",
+ "filters": "none (all ADS collections, all years)",
+ "targets": {
+  "M3V TIC 214311908": {
+   "214311908": {
+    "q": "full:\"214311908\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC 214311908": {
+    "q": "full:\"TIC 214311908\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC214311908": {
+    "q": "full:\"TIC214311908\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC-214311908": {
+    "q": "full:\"TIC-214311908\"",
+    "numFound": 21,
+    "n_identifier_in_text": 0,
+    "hits": [
+     {
+      "bibcode": "1996yCat.1231....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Uccle AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1228....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Bordeaux AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1226....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Vatican AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1232....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Toulouse AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1227....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Paris AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1219....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Cape AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1223....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Algiers AC Zone Data Reduced to ACRS (Urban+ 1995)",
+      "identifier_in_text": false,
+      "snippets": [
+       "For cross-identification purposes, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added to each record. (2 data files)."
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1222....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: San Fernando AC Zone Data Reduced to ACRS (Urban+ 1995)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1225....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Oxford 2 AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1224....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Oxford 1 AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "2005AJ....129.1616S",
+      "year": "2005",
+      "doctype": "article",
+      "title": "Confirmation of Errors in Hipparcos Parallaxes from Hubble Space Telescope Fine Guidance Sensor Astrometry of the Pleiades",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant‐dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). 4.3. Assessing Reference Frame Residuals Our"
+      ]
+     },
+     {
+      "bibcode": "2006AJ....132.2206B",
+      "year": "2006",
+      "doctype": "article",
+      "title": "The Extrasolar Planet ∊ Eridani b: Orbit and Mass",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant‐dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref‐14 and ref‐15 are likely luminosity clas"
+      ]
+     },
+     {
+      "bibcode": "2024NewA..10702151Y",
+      "year": "2024",
+      "doctype": "article",
+      "title": "Pulsating components of the eclipsing binaries with long period eccentric orbits",
+      "identifier_in_text": false,
+      "snippets": [
+       "Stars for 1925 ( Dyson, 1935 ). KIC 11671429 is listed with 11 m .70 in V band in the <em>Tycho Input Catalog</em> ( Egret et al., 1992 ). We observed both targets with a thermoelectrically cooled ALT"
+      ]
+     },
+     {
+      "bibcode": "2001AJ....121.1752M",
+      "year": "2001",
+      "doctype": "article",
+      "title": "The Guide Star Catalog, Version 1.2: An Astrometric Recalibration and Other Refinements",
+      "identifier_in_text": false,
+      "snippets": [
+       "come to be used for numerous other purposes, for example, the fainter elements of the <em>Tycho input catalog</em> ( Egret et al. 1992 ), observation planning for fiber optic spectrographs, preparatio"
+      ]
+     },
+     {
+      "bibcode": "2011AJ....141..172M",
+      "year": "2011",
+      "doctype": "article",
+      "title": "Astrometry with the Hubble Space Telescope: Trigonometric Parallaxes of Selected Hyads",
+      "identifier_in_text": false,
+      "snippets": [
+       "arkation between dwarfs (below) and giants (above) from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). The cross in the lower left corner indicates"
+      ]
+     },
+     {
+      "bibcode": "1998ApJ...501..597S",
+      "year": "1998",
+      "doctype": "article",
+      "title": "The Local Luminosity Function at 25 Microns",
+      "identifier_in_text": false,
+      "snippets": [
+       "l identifications added from the Guide Star Catalog (GSC) ( Lasker et al. 1990 ), the <em>Tycho Input Catalog</em> (TIC) ( Egret et al. 1992 ), and the COSMOS/UKST Southern Sky Object Catalogue (COSCA"
+      ]
+     },
+     {
+      "bibcode": "2010ApJ...715.1203M",
+      "year": "2010",
+      "doctype": "article",
+      "title": "New Observational Constraints on the υ Andromedae System with Data from the Hubble Space Telescope and Hobby-Eberly Telescope",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref-112, -108, and -105 are likely luminosit"
+      ]
+     },
+     {
+      "bibcode": "2017ApJ...835..152C",
+      "year": "2017",
+      "doctype": "article",
+      "title": "Testing Metal-Poor Stellar Models and Isochrones with HST Parallaxes of Metal-Poor Stars",
+      "identifier_in_text": false,
+      "snippets": []
+     },
+     {
+      "bibcode": "2009AJ....138..227F",
+      "year": "2009",
+      "doctype": "article",
+      "title": "Stellar Clusters in the NGC 6334 Star-Forming Complex",
+      "identifier_in_text": false,
+      "snippets": [
+       "e 972 coincident with the K s = 7.39 star known variously as TICID 7374-463 from the <em>Tycho Input Catalog,</em> FIR-III 13 from the near-infrared photometric survey of Straw Hyland ( 1989 ), and IR"
+      ]
+     },
+     {
+      "bibcode": "1999A&A...343..496P",
+      "year": "1999",
+      "doctype": "article",
+      "title": "An analysis of the incidence of the VEGA phenomenon among main-sequence and POST main-sequence stars",
+      "identifier_in_text": false,
+      "snippets": [
+       "rom optid come from the Guide Star Catalog (gsc: Lasker et al. 1990), merged with the <em>Tycho Input Catalog</em> (tyc: Egret et al. 1992). The gsc covers the entire sky and is complete for stars wit"
+      ]
+     },
+     {
+      "bibcode": "2014ApJ...795...41M",
+      "year": "2014",
+      "doctype": "article",
+      "title": "Astrometry, Radial Velocity, and Photometry: The HD 128311 System Remixed with Data from HST, HET, and APT",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. R. Ciardi 2004, private communication). 3.3.3. Estimated Reference Frame Absolute"
+      ]
+     }
+    ]
+   },
+   "214311908.01": {
+    "q": "full:\"214311908.01\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   }
+  },
+  "M3V Gaia DR3 5925373272850784768": {
+   "5925373272850784768": {
+    "q": "full:\"5925373272850784768\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "Gaia DR3 5925373272850784768": {
+    "q": "full:\"Gaia DR3 5925373272850784768\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   }
+  },
+  "M3V 2MASS J17235292-5119271": {
+   "J17235292-5119271": {
+    "q": "full:\"J17235292-5119271\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "2MASS J17235292-5119271": {
+    "q": "full:\"2MASS J17235292-5119271\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "2MASSJ17235292-5119271": {
+    "q": "full:\"2MASSJ17235292-5119271\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "17235292-5119271": {
+    "q": "full:\"17235292-5119271\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "J17235292": {
+    "q": "full:\"J17235292\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "5119271": {
+    "q": "full:\"5119271\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   }
+  },
+  "Mira TIC 214311906": {
+   "214311906": {
+    "q": "full:\"214311906\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC 214311906": {
+    "q": "full:\"TIC 214311906\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC214311906": {
+    "q": "full:\"TIC214311906\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   },
+   "TIC-214311906": {
+    "q": "full:\"TIC-214311906\"",
+    "numFound": 21,
+    "n_identifier_in_text": 0,
+    "hits": [
+     {
+      "bibcode": "1996yCat.1231....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Uccle AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1228....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Bordeaux AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1226....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Vatican AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1232....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Toulouse AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1227....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Paris AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1219....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Cape AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1223....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Algiers AC Zone Data Reduced to ACRS (Urban+ 1995)",
+      "identifier_in_text": false,
+      "snippets": [
+       "For cross-identification purposes, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added to each record. (2 data files)."
+      ]
+     },
+     {
+      "bibcode": "1995yCat.1222....0U",
+      "year": "1995",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: San Fernando AC Zone Data Reduced to ACRS (Urban+ 1995)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1225....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Oxford 2 AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "1996yCat.1224....0U",
+      "year": "1996",
+      "doctype": "dataset",
+      "title": "VizieR Online Data Catalog: Oxford 1 AC Zone Data Reduced to ACRS (Urban+ 1996)",
+      "identifier_in_text": false,
+      "snippets": [
+       "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+      ]
+     },
+     {
+      "bibcode": "2005AJ....129.1616S",
+      "year": "2005",
+      "doctype": "article",
+      "title": "Confirmation of Errors in Hipparcos Parallaxes from Hubble Space Telescope Fine Guidance Sensor Astrometry of the Pleiades",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant‐dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). 4.3. Assessing Reference Frame Residuals Our"
+      ]
+     },
+     {
+      "bibcode": "2006AJ....132.2206B",
+      "year": "2006",
+      "doctype": "article",
+      "title": "The Extrasolar Planet ∊ Eridani b: Orbit and Mass",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant‐dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref‐14 and ref‐15 are likely luminosity clas"
+      ]
+     },
+     {
+      "bibcode": "2024NewA..10702151Y",
+      "year": "2024",
+      "doctype": "article",
+      "title": "Pulsating components of the eclipsing binaries with long period eccentric orbits",
+      "identifier_in_text": false,
+      "snippets": [
+       "Stars for 1925 ( Dyson, 1935 ). KIC 11671429 is listed with 11 m .70 in V band in the <em>Tycho Input Catalog</em> ( Egret et al., 1992 ). We observed both targets with a thermoelectrically cooled ALT"
+      ]
+     },
+     {
+      "bibcode": "2001AJ....121.1752M",
+      "year": "2001",
+      "doctype": "article",
+      "title": "The Guide Star Catalog, Version 1.2: An Astrometric Recalibration and Other Refinements",
+      "identifier_in_text": false,
+      "snippets": [
+       "come to be used for numerous other purposes, for example, the fainter elements of the <em>Tycho input catalog</em> ( Egret et al. 1992 ), observation planning for fiber optic spectrographs, preparatio"
+      ]
+     },
+     {
+      "bibcode": "2011AJ....141..172M",
+      "year": "2011",
+      "doctype": "article",
+      "title": "Astrometry with the Hubble Space Telescope: Trigonometric Parallaxes of Selected Hyads",
+      "identifier_in_text": false,
+      "snippets": [
+       "arkation between dwarfs (below) and giants (above) from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). The cross in the lower left corner indicates"
+      ]
+     },
+     {
+      "bibcode": "1998ApJ...501..597S",
+      "year": "1998",
+      "doctype": "article",
+      "title": "The Local Luminosity Function at 25 Microns",
+      "identifier_in_text": false,
+      "snippets": [
+       "l identifications added from the Guide Star Catalog (GSC) ( Lasker et al. 1990 ), the <em>Tycho Input Catalog</em> (TIC) ( Egret et al. 1992 ), and the COSMOS/UKST Southern Sky Object Catalogue (COSCA"
+      ]
+     },
+     {
+      "bibcode": "2010ApJ...715.1203M",
+      "year": "2010",
+      "doctype": "article",
+      "title": "New Observational Constraints on the υ Andromedae System with Data from the Hubble Space Telescope and Hobby-Eberly Telescope",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref-112, -108, and -105 are likely luminosit"
+      ]
+     },
+     {
+      "bibcode": "2017ApJ...835..152C",
+      "year": "2017",
+      "doctype": "article",
+      "title": "Testing Metal-Poor Stellar Models and Isochrones with HST Parallaxes of Metal-Poor Stars",
+      "identifier_in_text": false,
+      "snippets": []
+     },
+     {
+      "bibcode": "2009AJ....138..227F",
+      "year": "2009",
+      "doctype": "article",
+      "title": "Stellar Clusters in the NGC 6334 Star-Forming Complex",
+      "identifier_in_text": false,
+      "snippets": [
+       "e 972 coincident with the K s = 7.39 star known variously as TICID 7374-463 from the <em>Tycho Input Catalog,</em> FIR-III 13 from the near-infrared photometric survey of Straw Hyland ( 1989 ), and IR"
+      ]
+     },
+     {
+      "bibcode": "1999A&A...343..496P",
+      "year": "1999",
+      "doctype": "article",
+      "title": "An analysis of the incidence of the VEGA phenomenon among main-sequence and POST main-sequence stars",
+      "identifier_in_text": false,
+      "snippets": [
+       "rom optid come from the Guide Star Catalog (gsc: Lasker et al. 1990), merged with the <em>Tycho Input Catalog</em> (tyc: Egret et al. 1992). The gsc covers the entire sky and is complete for stars wit"
+      ]
+     },
+     {
+      "bibcode": "2014ApJ...795...41M",
+      "year": "2014",
+      "doctype": "article",
+      "title": "Astrometry, Radial Velocity, and Photometry: The HD 128311 System Remixed with Data from HST, HET, and APT",
+      "identifier_in_text": false,
+      "snippets": [
+       "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. R. Ciardi 2004, private communication). 3.3.3. Estimated Reference Frame Absolute"
+      ]
+     }
+    ]
+   },
+   "214311906.01": {
+    "q": "full:\"214311906.01\"",
+    "numFound": 0,
+    "n_identifier_in_text": 0,
+    "hits": []
+   }
+  }
+ },
+ "controls": {
+  "TIC: 172900988": {
+   "full": 35,
+   "body": 32,
+   "abs": 9,
+   "body_not_abs": 26,
+   "sample": [
+    {
+     "bibcode": "2021AJ....162..234K",
+     "year": "2021",
+     "doctype": "article",
+     "title": "TIC 172900988: A Transiting Circumbinary Planet Detected in One Sector of TESS Data",
+     "identifier_in_text": true,
+     "snippets": [
+      "TIC <em>172900988:</em> A Transiting Circumbinary Planet Detected in One Sector of TESS Data"
+     ]
+    },
+    {
+     "bibcode": "2024MNRAS.527.2261S",
+     "year": "2024",
+     "doctype": "article",
+     "title": "New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC 172900988",
+     "identifier_in_text": true,
+     "snippets": [
+      "in, whereas the second works on cross-correlated spectra. We apply our new methods to TIC <em>172900988,</em> a proposed circumbinary system with a double-lined binary, and detect a circumbinary plane",
+      "New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC <em>172900988</em>"
+     ]
+    },
+    {
+     "bibcode": "2023MNRAS.519.3832G",
+     "year": "2023",
+     "doctype": "article",
+     "title": "Orbits of the TOI-1338 and TIC-172900988 systems",
+     "identifier_in_text": true,
+     "snippets": [
+      "sequently, TOI-1338 is validated as a stable system. 2.2 TIC-<em>172900988</em> The study of the characteristics of TIC-<em>172900988</em> was given by Kostov et al. ( 2021 ). In this case, the eclips",
+      "lts yield R P = 0.4491255225049817 au for TOI-1338 and R P = 0.89982619319084277 au for <em>TIC-172900988,</em> confirming the accuracy of the semimajor axis in Kostov et al. ( 2020 , 2021 ), respecti"
+     ]
+    }
+   ]
+  },
+  "TIC: TIC 172900988": {
+   "full": 35,
+   "body": 32,
+   "abs": 9,
+   "body_not_abs": 26,
+   "sample": [
+    {
+     "bibcode": "2021AJ....162..234K",
+     "year": "2021",
+     "doctype": "article",
+     "title": "TIC 172900988: A Transiting Circumbinary Planet Detected in One Sector of TESS Data",
+     "identifier_in_text": true,
+     "snippets": [
+      "<em>TIC</em> <em>172900988:</em> A Transiting Circumbinary Planet Detected in One Sector of TESS Data"
+     ]
+    },
+    {
+     "bibcode": "2024MNRAS.527.2261S",
+     "year": "2024",
+     "doctype": "article",
+     "title": "New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC 172900988",
+     "identifier_in_text": true,
+     "snippets": [
+      ", whereas the second works on cross-correlated spectra. We apply our new methods to <em>TIC</em> <em>172900988,</em> a proposed circumbinary system with a double-lined binary, and detect a circumbinar",
+      "New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting <em>TIC</em> <em>172900988</em>"
+     ]
+    },
+    {
+     "bibcode": "2025SciA...11..627B",
+     "year": "2025",
+     "doctype": "article",
+     "title": "Evidence for a polar circumbinary exoplanet orbiting a pair of eclipsing brown dwarfs",
+     "identifier_in_text": true,
+     "snippets": [
+      "), confirming the detection of and improving the physical and orbital parameters of <em>TIC</em> <em>172900988</em> b (24), and the first stand-alone radial velocity discovery of BEBOP-1c (25) (the in",
+      "surements of double-lined binaries, and detection of a circumbinary planet orbiting <em>TIC</em> <em>172900988.</em> Monthly Notices of the Royal Astronomical Society 527, 2261– 2278 (2024), aDS Bibco"
+     ]
+    }
+   ]
+  },
+  "TIC: TIC172900988": {
+   "full": 9,
+   "body": 8,
+   "abs": 4,
+   "body_not_abs": 5,
+   "sample": [
+    {
+     "bibcode": "2023MNRAS.519.3832G",
+     "year": "2023",
+     "doctype": "article",
+     "title": "Orbits of the TOI-1338 and TIC-172900988 systems",
+     "identifier_in_text": true,
+     "snippets": [
+      "lts yield R P = 0.4491255225049817 au for TOI-1338 and R P = 0.89982619319084277 au for <em>TIC-172900988,</em> confirming the accuracy of the semimajor axis in Kostov et al. ( 2020 , 2021 ), respecti",
+      "ccuracy of the semimajor axis in Kostov et al. ( 2020 , 2021 ), respectively. The fitting of e free results in 0.09187908049138914 as for TOI-1338 and 0.029170488497153143 for <em>TIC-172900988.</em> "
+     ]
+    },
+    {
+     "bibcode": "2022MNRAS.511.4396G",
+     "year": "2022",
+     "doctype": "article",
+     "title": "Dynamics and habitability of the TESS circumbinary systems TOI-1338 and TIC-172900988",
+     "identifier_in_text": true,
+     "snippets": [
+      "Dynamics and habitability of the TESS circumbinary systems TOI-1338 and <em>TIC-172900988</em>"
+     ]
+    },
+    {
+     "bibcode": "2024MNRAS.527.2261S",
+     "year": "2024",
+     "doctype": "article",
+     "title": "New methods for radial-velocity measurements of double-lined binaries, and detection of a circumbinary planet orbiting TIC 172900988",
+     "identifier_in_text": false,
+     "snippets": []
+    }
+   ]
+  },
+  "Gaia DR3: 2635476908753563008": {
+   "full": 4,
+   "body": 4,
+   "abs": 0,
+   "body_not_abs": 4,
+   "sample": [
+    {
+     "bibcode": "2021A&A...650A.138S",
+     "year": "2021",
+     "doctype": "article",
+     "title": "Activity of TRAPPIST-1 analog stars observed with TESS",
+     "identifier_in_text": true,
+     "snippets": [
+      "The third example is TRAPPIST-1 (2MASS J23062928-0502285; Gaia DR2 <em>2635476908753563008;</em> M8V). This system is known to host seven transiting exoplanets, three of which have equilibrium tempera"
+     ]
+    },
+    {
+     "bibcode": "2025AJ....170..168L",
+     "year": "2025",
+     "doctype": "article",
+     "title": "Rotation Periods of Candidate Single Late-M Dwarfs in TESS",
+     "identifier_in_text": false,
+     "snippets": []
+    },
+    {
+     "bibcode": "2021csss.confE.201S",
+     "year": "2021",
+     "doctype": "inproceedings",
+     "title": "Activity of TRAPPIST-1 analogue stars observed with TESS",
+     "identifier_in_text": true,
+     "snippets": [
+      "The third example is TRAPPIST-1 (2MASS J23062928-0502285; Gaia DR2 <em>2635476908753563008;</em> M8V), that is known to host seven transiting exoplanets, three of which have equilibrium temperatures t"
+     ]
+    }
+   ]
+  },
+  "Gaia DR3: 5853498713190525696": {
+   "full": 2,
+   "body": 2,
+   "abs": 0,
+   "body_not_abs": 2,
+   "sample": [
+    {
+     "bibcode": "2022ApJ...935L...9B",
+     "year": "2022",
+     "doctype": "article",
+     "title": "Stars That Approach within One Parsec of the Sun: New and More Accurate Encounters Identified in Gaia Data Release 3",
+     "identifier_in_text": true,
+     "snippets": [
+      "46 pc of the interstellar object ’Oumuamua (Bailer-Jones et al. 2018a ). 56: Gaia DR3 <em>5853498713190525696</em> = Proxima Cen. It appears that our closest neighbor will get slightly closer in 27 ky"
+     ]
+    },
+    {
+     "bibcode": "2026arXiv260608773D",
+     "year": "2026",
+     "doctype": "eprint",
+     "title": "Mapping the Landscape of M Dwarf X-ray Flares: New Discoveries in Context",
+     "identifier_in_text": false,
+     "snippets": []
+    }
+   ]
+  },
+  "Gaia DR3: 4472832130942575872": {
+   "full": 2,
+   "body": 2,
+   "abs": 0,
+   "body_not_abs": 2,
+   "sample": [
+    {
+     "bibcode": "2024A&A...688L..24L",
+     "year": "2024",
+     "doctype": "article",
+     "title": "Secular aberration drift in stellar proper motions. An additional term due to the change in line-of-sight direction",
+     "identifier_in_text": true,
+     "snippets": [
+      "ia DR3, the source with the largest total proper motion is Barnard’s star ( Gaia DR3 <em>4472832130942575872),</em> whose total proper motion is approximately 10393.349 mas yr −1 with a formal uncerta"
+     ]
+    },
+    {
+     "bibcode": "2024yCat..36920206C",
+     "year": "2024",
+     "doctype": "dataset",
+     "title": "VizieR Online Data Catalog: CARMENES input cat. of M dwarfs VIII (Cortes-Contreras+, 2024)",
+     "identifier_in_text": false,
+     "snippets": []
+    }
+   ]
+  },
+  "2MASS: J23062928-0502285": {
+   "full": 38,
+   "body": 36,
+   "abs": 6,
+   "body_not_abs": 32,
+   "sample": [
+    {
+     "bibcode": "2017ApJ...841..124V",
+     "year": "2017",
+     "doctype": "article",
+     "title": "Frequent Flaring in the TRAPPIST-1 System—Unsuited for Life?",
+     "identifier_in_text": true,
+     "snippets": [
+      "1. Introduction TRAPPIST-1 (2MASS <em>J23062928-0502285)</em> is an ultracool, M8-type dwarf, which is known to host seven terrestrial planets, of which three of them have equilibrium temperatures tha"
+     ]
+    },
+    {
+     "bibcode": "2018ARep...62..412D",
+     "year": "2018",
+     "doctype": "article",
+     "title": "Activity of the M8 Dwarf TRAPPIST-1",
+     "identifier_in_text": true,
+     "snippets": [
+      "DOI: 10.1134/S1063772918060033 1. INTRODUCTION TRAPPIST-1 (2MASS <em>J23062928–0502285)</em> is a cool M8 dwarf surrounded by at least seven planets. The system has been the subject of numerous studie",
+      "ysis of observations of TRAPPIST-1 with the Kepler Space Telescope. TRAPPIST-1 (2MASS <em>J23062928–0502285)</em> is a cool M8 dwarf that has at least seven planets. In total, these observations inclu"
+     ]
+    },
+    {
+     "bibcode": "2017MNRAS.465L..74W",
+     "year": "2017",
+     "doctype": "article",
+     "title": "Strong XUV irradiation of the Earth-sized exoplanets orbiting the ultracool dwarf TRAPPIST-1",
+     "identifier_in_text": true,
+     "snippets": [
+      "Earth-sized exoplanets. 2 OBSERVATIONS The host star of the TRAPPIST-1 system (=2MASS <em>J23062928–0502285)</em> was observed with XMM–Newton for 30 ks on 2014 December 17 (ObsID: 0743900401; PI: Ste"
+     ]
+    }
+   ]
+  },
+  "2MASS: J23062928": {
+   "full": 37,
+   "body": 35,
+   "abs": 6,
+   "body_not_abs": 31,
+   "sample": [
+    {
+     "bibcode": "2016Natur.533..221G",
+     "year": "2016",
+     "doctype": "article",
+     "title": "Temperate Earth-sized planets transiting a nearby ultracool dwarf star",
+     "identifier_in_text": false,
+     "snippets": []
+    },
+    {
+     "bibcode": "2017ApJ...841..124V",
+     "year": "2017",
+     "doctype": "article",
+     "title": "Frequent Flaring in the TRAPPIST-1 System—Unsuited for Life?",
+     "identifier_in_text": true,
+     "snippets": [
+      "1. Introduction TRAPPIST-1 (2MASS <em>J23062928-0502285)</em> is an ultracool, M8-type dwarf, which is known to host seven terrestrial planets, of which three of them have equilibrium temperatures tha"
+     ]
+    },
+    {
+     "bibcode": "2018ARep...62..412D",
+     "year": "2018",
+     "doctype": "article",
+     "title": "Activity of the M8 Dwarf TRAPPIST-1",
+     "identifier_in_text": true,
+     "snippets": [
+      "DOI: 10.1134/S1063772918060033 1. INTRODUCTION TRAPPIST-1 (2MASS <em>J23062928–0502285)</em> is a cool M8 dwarf surrounded by at least seven planets. The system has been the subject of numerous studie",
+      "ysis of observations of TRAPPIST-1 with the Kepler Space Telescope. TRAPPIST-1 (2MASS <em>J23062928–0502285)</em> is a cool M8 dwarf that has at least seven planets. In total, these observations inclu"
+     ]
+    }
+   ]
+  },
+  "2MASS: 23062928-0502285": {
+   "full": 1,
+   "body": 1,
+   "abs": 0,
+   "body_not_abs": 1,
+   "sample": [
+    {
+     "bibcode": "2007PASP..119..828B",
+     "year": "2007",
+     "doctype": "article",
+     "title": "Knowing Our Neighbors: Fundamental Properties of Nearby Stars",
+     "identifier_in_text": true,
+     "snippets": [
+      "t nine stars have proper motions greater than 0.5 yr 1 , with 2MASS 025114900352459 and <em>230629280502285</em> moving more than 1.0 yr 1 . For this subsample, the proper motions convert to tangentia",
+      "2 M dwarfs of the subsample, which range from M3.0 V for LP 776025 to M8.5 V for 2MASS <em>230629280502285.</em> At least 70% of the stars in the solar neighborhood are expected to be M dwarfs (Henry "
+     ]
+    }
+   ]
+  },
+  "tokens: 700.01 without 700": 847,
+  "tokens: 23062928 (2MASS half without the J)": 0,
+  "tokens: J23062928−0502285 (Unicode minus)": 36
+ },
+ "freshness": {
+  "arxiv_entered_last_7d": 9909,
+  "arxiv_entered_last_7d_with_body": 9721,
+  "latest_entry": [
+   [
+    "2026arXiv261022372L",
+    "2026-10-16T04:02:27Z"
+   ]
+  ]
+ },
+ "coverage_has_body": {
+  "refereed astronomy 2019-2026": {
+   "records": 268374,
+   "with_body": 235423,
+   "fraction": 0.877
+  },
+  "arXiv 2019-2026": {
+   "records": 1282264,
+   "with_body": 1247761,
+   "fraction": 0.973
+  },
+  "AJ 2019-2026": {
+   "records": 4725,
+   "with_body": 4722,
+   "fraction": 0.999
+  },
+  "ApJ 2019-2026": {
+   "records": 27111,
+   "with_body": 27106,
+   "fraction": 1.0
+  },
+  "ApJL 2019-2026": {
+   "records": 5833,
+   "with_body": 5829,
+   "fraction": 0.999
+  },
+  "ApJS 2019-2026": {
+   "records": 2511,
+   "with_body": 2509,
+   "fraction": 0.999
+  },
+  "MNRAS 2019-2026": {
+   "records": 28433,
+   "with_body": 28039,
+   "fraction": 0.986
+  },
+  "A&A 2019-2026": {
+   "records": 21750,
+   "with_body": 21495,
+   "fraction": 0.988
+  },
+  "PASP 2019-2026": {
+   "records": 1140,
+   "with_body": 1139,
+   "fraction": 0.999
+  },
+  "RNAAS 2019-2026": {
+   "records": 2269,
+   "with_body": 2264,
+   "fraction": 0.998
+  },
+  "AN 2019-2026": {
+   "records": 911,
+   "with_body": 887,
+   "fraction": 0.974
+  },
+  "JAVSO 2019-2026": {
+   "records": 412,
+   "with_body": 39,
+   "fraction": 0.095
+  },
+  "OEJV 2019-2026": {
+   "records": 110,
+   "with_body": 16,
+   "fraction": 0.145
+  },
+  "IBVS 2019-2026": {
+   "records": 15,
+   "with_body": 3,
+   "fraction": 0.2
+  },
+  "PZ 2019-2026": {
+   "records": 81,
+   "with_body": 2,
+   "fraction": 0.025
+  },
+  "ATel 2019-2026": {
+   "records": 5757,
+   "with_body": 0,
+   "fraction": 0.0
+  }
+ },
+ "queried_utc_end": "2026-10-17T19:30:20+00:00"
+}

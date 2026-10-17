@@ -2,7 +2,7 @@
   - arXiv API (export.arxiv.org): searches all metadata fields (title, abstract, comments, journal-ref) for each identifier.
   - Semantic Scholar snippet search (full-text passages of open-access papers): moved to n04c (its public API rate-limits
     hard; the keyword paper search ignores quotes and returned only irrelevant "TiC"/"tic" papers, so it was dropped).
-ADS is not queried: no ADS API token is available in this environment.
+ADS is not queried here (no ADS API token was available when this ran); see n09_ads_fulltext.py.
 Outputs: out/literature_search.json, raw/arxiv_*.xml (only non-empty responses), raw/s2_*.json
 Usage: python -I n04_literature.py <novelty_dir>
 """

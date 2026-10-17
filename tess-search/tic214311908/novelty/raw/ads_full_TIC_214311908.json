@@ -1,0 +1,356 @@
+{
+ "responseHeader": {
+  "status": 0,
+  "QTime": 1285,
+  "params": {
+   "hl.snippets": "3",
+   "q": "full:\"TIC-214311908\"",
+   "hl": "true",
+   "fl": "id,bibcode,title,year,doctype,pub,publisher",
+   "hl.q": "full:\"TIC-214311908\"",
+   "hl.fragsize": "200",
+   "start": "0",
+   "internal_logging_params": "X-Amzn-Trace-Id=Root=1-6ad3cc42-7a620c9d69632a07498e23f3",
+   "hl.fl": "body,abstract,title,ack",
+   "rows": "100",
+   "hl.maxHighlightCharacters": "800",
+   "wt": "json"
+  }
+ },
+ "response": {
+  "numFound": 21,
+  "start": 0,
+  "numFoundExact": true,
+  "docs": [
+   {
+    "bibcode": "1996yCat.1231....0U",
+    "doctype": "dataset",
+    "id": "901669",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Uccle AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1996yCat.1228....0U",
+    "doctype": "dataset",
+    "id": "901630",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Bordeaux AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1996yCat.1226....0U",
+    "doctype": "dataset",
+    "id": "901650",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Vatican AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1996yCat.1232....0U",
+    "doctype": "dataset",
+    "id": "901639",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Toulouse AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1996yCat.1227....0U",
+    "doctype": "dataset",
+    "id": "901586",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Paris AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1995yCat.1219....0U",
+    "doctype": "dataset",
+    "id": "901583",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Cape AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1995"
+   },
+   {
+    "bibcode": "1995yCat.1223....0U",
+    "doctype": "dataset",
+    "id": "901582",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Algiers AC Zone Data Reduced to ACRS (Urban+ 1995)"
+    ],
+    "year": "1995"
+   },
+   {
+    "bibcode": "1995yCat.1222....0U",
+    "doctype": "dataset",
+    "id": "901573",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: San Fernando AC Zone Data Reduced to ACRS (Urban+ 1995)"
+    ],
+    "year": "1995"
+   },
+   {
+    "bibcode": "1996yCat.1225....0U",
+    "doctype": "dataset",
+    "id": "901590",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Oxford 2 AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "1996yCat.1224....0U",
+    "doctype": "dataset",
+    "id": "901624",
+    "pub": "VizieR Online Data Catalog",
+    "title": [
+     "VizieR Online Data Catalog: Oxford 1 AC Zone Data Reduced to ACRS (Urban+ 1996)"
+    ],
+    "year": "1996"
+   },
+   {
+    "bibcode": "2005AJ....129.1616S",
+    "doctype": "article",
+    "id": "11852013",
+    "pub": "The Astronomical Journal",
+    "title": [
+     "Confirmation of Errors in Hipparcos Parallaxes from Hubble Space Telescope Fine Guidance Sensor Astrometry of the Pleiades"
+    ],
+    "year": "2005",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2006AJ....132.2206B",
+    "doctype": "article",
+    "id": "2425082",
+    "pub": "The Astronomical Journal",
+    "title": [
+     "The Extrasolar Planet \u220a Eridani b: Orbit and Mass"
+    ],
+    "year": "2006",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2024NewA..10702151Y",
+    "doctype": "article",
+    "id": "25568651",
+    "pub": "New Astronomy",
+    "title": [
+     "Pulsating components of the eclipsing binaries with long period eccentric orbits"
+    ],
+    "year": "2024",
+    "publisher": "Elsevier"
+   },
+   {
+    "bibcode": "2001AJ....121.1752M",
+    "doctype": "article",
+    "id": "2190312",
+    "pub": "The Astronomical Journal",
+    "title": [
+     "The Guide Star Catalog, Version 1.2: An Astrometric Recalibration and Other Refinements"
+    ],
+    "year": "2001",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2011AJ....141..172M",
+    "doctype": "article",
+    "id": "12164609",
+    "pub": "The Astronomical Journal",
+    "title": [
+     "Astrometry with the Hubble Space Telescope: Trigonometric Parallaxes of Selected Hyads"
+    ],
+    "year": "2011",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "1998ApJ...501..597S",
+    "doctype": "article",
+    "id": "11633772",
+    "pub": "The Astrophysical Journal",
+    "title": [
+     "The Local Luminosity Function at 25 Microns"
+    ],
+    "year": "1998",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2010ApJ...715.1203M",
+    "doctype": "article",
+    "id": "2627192",
+    "pub": "The Astrophysical Journal",
+    "title": [
+     "New Observational Constraints on the \u03c5 Andromedae System with Data from the Hubble Space Telescope and Hobby-Eberly Telescope"
+    ],
+    "year": "2010",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2017ApJ...835..152C",
+    "doctype": "article",
+    "id": "2690937",
+    "pub": "The Astrophysical Journal",
+    "title": [
+     "Testing Metal-Poor Stellar Models and Isochrones with HST Parallaxes of Metal-Poor Stars"
+    ],
+    "year": "2017",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "2009AJ....138..227F",
+    "doctype": "article",
+    "id": "12045576",
+    "pub": "The Astronomical Journal",
+    "title": [
+     "Stellar Clusters in the NGC 6334 Star-Forming Complex"
+    ],
+    "year": "2009",
+    "publisher": "IOP"
+   },
+   {
+    "bibcode": "1999A&A...343..496P",
+    "doctype": "article",
+    "id": "2098854",
+    "pub": "Astronomy and Astrophysics",
+    "title": [
+     "An analysis of the incidence of the VEGA phenomenon among main-sequence and POST main-sequence stars"
+    ],
+    "year": "1999",
+    "publisher": "EDP"
+   },
+   {
+    "bibcode": "2014ApJ...795...41M",
+    "doctype": "article",
+    "id": "484893",
+    "pub": "The Astrophysical Journal",
+    "title": [
+     "Astrometry, Radial Velocity, and Photometry: The HD 128311 System Remixed with Data from HST, HET, and APT"
+    ],
+    "year": "2014",
+    "publisher": "IOP"
+   }
+  ]
+ },
+ "highlighting": {
+  "901669": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901630": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901650": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901639": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901586": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901583": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901582": {
+   "abstract": [
+    "For cross-identification purposes, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added to each record. (2 data files)."
+   ]
+  },
+  "901573": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901590": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "901624": {
+   "abstract": [
+    "J2000.0, epoch of observation. Additionally, all stars have been matched with the <em>Tycho Input Catalog</em> (revised); those numbers have been added for additional identification purposes. (2 data "
+   ]
+  },
+  "11852013": {
+   "body": [
+    "l dashed line is a giant\u2010dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). 4.3. Assessing Reference Frame Residuals Our"
+   ]
+  },
+  "2425082": {
+   "body": [
+    "l dashed line is a giant\u2010dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref\u201014 and ref\u201015 are likely luminosity clas"
+   ]
+  },
+  "25568651": {
+   "body": [
+    "Stars for 1925 ( Dyson, 1935 ). KIC 11671429 is listed with 11 m .70 in V band in the <em>Tycho Input Catalog</em> ( Egret et al., 1992 ). We observed both targets with a thermoelectrically cooled ALT"
+   ]
+  },
+  "2190312": {
+   "body": [
+    "come to be used for numerous other purposes, for example, the fainter elements of the <em>Tycho input catalog</em> ( Egret et al. 1992 ), observation planning for fiber optic spectrographs, preparatio"
+   ]
+  },
+  "12164609": {
+   "body": [
+    "arkation between dwarfs (below) and giants (above) from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). The cross in the lower left corner indicates"
+   ]
+  },
+  "11633772": {
+   "body": [
+    "l identifications added from the Guide Star Catalog (GSC) ( Lasker et al. 1990 ), the <em>Tycho Input Catalog</em> (TIC) ( Egret et al. 1992 ), and the COSMOS/UKST Southern Sky Object Catalogue (COSCA"
+   ]
+  },
+  "2627192": {
+   "body": [
+    "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. Ciardi 2004, private communication). Ref-112, -108, and -105 are likely luminosit"
+   ]
+  },
+  "2690937": {},
+  "12045576": {
+   "body": [
+    "e 972 coincident with the K s = 7.39 star known variously as TICID 7374-463 from the <em>Tycho Input Catalog,</em> FIR-III 13 from the near-infrared photometric survey of Straw Hyland ( 1989 ), and IR"
+   ]
+  },
+  "2098854": {
+   "body": [
+    "rom optid come from the Guide Star Catalog (gsc: Lasker et al. 1990), merged with the <em>Tycho Input Catalog</em> (tyc: Egret et al. 1992). The gsc covers the entire sky and is complete for stars wit"
+   ]
+  },
+  "484893": {
+   "body": [
+    "l dashed line is a giant-dwarf demarcation derived from a statistical analysis of the <em>Tycho input catalog</em> (D. R. Ciardi 2004, private communication). 3.3.3. Estimated Reference Frame Absolute"
+   ]
+  }
+ },
+ "allocatedBytes": 298118648,
+ "filtered": "true",
+ "access_modality": "api",
+ "_http_status": 200,
+ "_ratelimit_remaining": "4843"
+}
